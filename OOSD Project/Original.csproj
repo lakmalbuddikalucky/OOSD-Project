@@ -88,6 +88,12 @@
     <Compile Include="DBTableClass\Transport.cs" />
     <Compile Include="DBTableClass\WorkingExperience.cs" />
     <Compile Include="DBTableClass\WorkstationDetails.cs" />
+    <Compile Include="frmDisciplinaryDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisciplinaryDetails.Designer.cs">
+      <DependentUpon>frmDisciplinaryDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEmployeeFinanceDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,18 @@
     </Compile>
     <Compile Include="frmEmployeeSpecialDetails.Designer.cs">
       <DependentUpon>frmEmployeeSpecialDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInterdict_Suspend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInterdict_Suspend.Designer.cs">
+      <DependentUpon>frmInterdict_Suspend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJobStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJobStatus.Designer.cs">
+      <DependentUpon>frmJobStatus.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -118,17 +136,41 @@
     <Compile Include="frmPassportDetails.Designer.cs">
       <DependentUpon>frmPassportDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPension_Death.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPension_Death.Designer.cs">
+      <DependentUpon>frmPension_Death.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRe-Appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRe-Appointment.Designer.cs">
+      <DependentUpon>frmRe-Appointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRemuneration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRemuneration.Designer.cs">
       <DependentUpon>frmRemuneration.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmResignation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResignation.Designer.cs">
+      <DependentUpon>frmResignation.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSearch.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSearch.designer.cs">
       <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTraining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTraining.Designer.cs">
+      <DependentUpon>frmTraining.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTransport.cs">
       <SubType>Form</SubType>
@@ -148,11 +190,20 @@
     <Compile Include="UserLogin\LoginSession.cs" />
     <Compile Include="UserLogin\LoginValidator.cs" />
     <Compile Include="UserLogin\UserLog.cs" />
+    <EmbeddedResource Include="frmDisciplinaryDetails.resx">
+      <DependentUpon>frmDisciplinaryDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEmployeeFinanceDetails.resx">
       <DependentUpon>frmEmployeeFinanceDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmployeeSpecialDetails.resx">
       <DependentUpon>frmEmployeeSpecialDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInterdict_Suspend.resx">
+      <DependentUpon>frmInterdict_Suspend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJobStatus.resx">
+      <DependentUpon>frmJobStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -163,11 +214,23 @@
     <EmbeddedResource Include="frmPassportDetails.resx">
       <DependentUpon>frmPassportDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPension_Death.resx">
+      <DependentUpon>frmPension_Death.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRe-Appointment.resx">
+      <DependentUpon>frmRe-Appointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRemuneration.resx">
       <DependentUpon>frmRemuneration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmResignation.resx">
+      <DependentUpon>frmResignation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSearch.resx">
       <DependentUpon>frmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTraining.resx">
+      <DependentUpon>frmTraining.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTransport.resx">
       <DependentUpon>frmTransport.cs</DependentUpon>

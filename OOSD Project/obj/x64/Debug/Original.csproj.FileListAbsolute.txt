@@ -33,3 +33,6 @@ D:\C# Programs\OOSD_with)DB\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project
 D:\C# Programs\OOSD_with)DB\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.Properties.Resources.resources
 D:\C# Programs\OOSD_with)DB\OOSD Project\OOSD Project\obj\x64\Debug\Original.csproj.GenerateResource.Cache
 D:\C# Programs\OOSD_with)DB\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmSearch.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\bin\x64\Debug\OOSD Project.exe.config
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD Project.exe
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD Project.pdb

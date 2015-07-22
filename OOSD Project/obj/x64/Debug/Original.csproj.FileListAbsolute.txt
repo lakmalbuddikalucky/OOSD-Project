@@ -36,3 +36,25 @@ D:\C# Programs\OOSD_with)DB\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project
 G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\bin\x64\Debug\OOSD Project.exe.config
 G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD Project.exe
 G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD Project.pdb
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\bin\x64\Debug\OOSD Project.exe
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\bin\x64\Debug\OOSD Project.pdb
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\bin\x64\Debug\MySql.Data.dll
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\Original.csprojResolveAssemblyReference.cache
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmDisciplinaryDetails.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeeFinanceDetails.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeeSpecialDetails.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmInterdict_Suspend.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmJobStatus.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmLogin.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmMain.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmPassportDetails.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmPension_Death.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmRe_Appointment.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeeRemunerationAndBenefits.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmResignation.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmSearch.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmTraining.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmTransport.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeePersonalDetails.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.Properties.Resources.resources
+G:\Semester 3\OOSD\Group Project\OOSD Project\OOSD-Project\OOSD Project\obj\x64\Debug\Original.csproj.GenerateResource.Cache

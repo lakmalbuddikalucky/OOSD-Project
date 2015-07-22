@@ -8,17 +8,17 @@ namespace OOSD_Project.DBTableClass
 {
     class Membership
     {
-        string institute;
-        string post_name;
-        string method;
-        string member_id;
-        string contribution;
-        DateTime begin_date;
-        DateTime renewal_date;
-        string status;
-        bool personal_payment;
-        DateTime active_date_person;
-        bool institutional_payment;
-        DateTime active_date_insti;
+        public string institute { set; get; }
+        public string post_name { set; get; }
+        public string method { set; get; }
+        public string member_id { set; get; }
+        public string contribution { set; get; }
+        public DateTime begin_date { set; get; }
+        public DateTime renewal_date { set; get; }
+        public string status { set; get; }
+        public bool personal_payment { set; get; }
+        public DateTime active_date_person { set; get; }
+        public bool institutional_payment { set; get; }
+        public DateTime active_date_insti { set; get; }
     }
 }

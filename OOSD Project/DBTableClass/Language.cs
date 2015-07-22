@@ -8,6 +8,6 @@ namespace OOSD_Project.DBTableClass
 {
     class Language
     {
-        string language_name;
+        public string language_name { set; get; }
     }
 }

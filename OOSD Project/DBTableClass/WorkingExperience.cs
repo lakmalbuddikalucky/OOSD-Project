@@ -8,18 +8,18 @@ namespace OOSD_Project.DBTableClass
 {
     class WorkingExperience
     {
-        string institute;
-        string address;
-        string telephone;
-        string email;
-        string department;
-        string contact;
-        DateTime date_from;
-        DateTime date_to;
-        DateTime date_perma;
-        string resign_reason;
-        string responsibility;
-        bool occupation_relevant;
-        string award;
+        public string institute { set; get; }
+        public string address { set; get; }
+        public string telephone { set; get; }
+        public string email { set; get; }
+        public string department { set; get; }
+        public string contact { set; get; }
+        public DateTime date_from { set; get; }
+        public DateTime date_to { set; get; }
+        public DateTime date_perma { set; get; }
+        public string resign_reason { set; get; }
+        public string responsibility { set; get; }
+        public bool occupation_relevant { set; get; }
+        public string award { set; get; }
     }
 }

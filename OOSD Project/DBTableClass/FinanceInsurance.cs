@@ -8,11 +8,11 @@ namespace OOSD_Project.DBTableClass
 {
     class FinanceInsurance
     {
-        string type;
-        double value;
-        DateTime begin_date;
-        DateTime end_date;
-        string note;
+        public string type { set; get; }
+        public double value { set; get; }
+        public DateTime begin_date { set; get; }
+        public DateTime end_date { set; get; }
+        public string note { set; get; }
 
     }
 }

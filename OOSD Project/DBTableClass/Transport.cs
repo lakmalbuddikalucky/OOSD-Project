@@ -8,15 +8,15 @@ namespace OOSD_Project.DBTableClass
 {
     class Transport
     {
-        string route;
-        string transport_method;
-        string distance_to_home;
-        string time_spent;
-        string nearest_station;
-        string official_transport_method;
-        string type_of_vehicle;
-        string year_of_manufacture;
-        string type_of_fuel;
-        string fuel_limit;
+        public string route { set; get; }
+        public string transport_method { set; get; }
+        public string distance_to_home { set; get; }
+        public string time_spent { set; get; }
+        public string nearest_station { set; get; }
+        public string official_transport_method { set; get; }
+        public string type_of_vehicle { set; get; }
+        public string year_of_manufacture { set; get; }
+        public string type_of_fuel { set; get; }
+        public string fuel_limit { set; get; }
     }
 }

@@ -8,13 +8,26 @@ namespace OOSD_Project.DBTableClass
 {
     class WorkstationDetails
     {
-        string rank;
-        string division;
-        string post;
-        DateTime date_of_post;
-        string salary_station;
-        string responsibility;
-        string power;
+        public string rank { set; get; }
+        public string division { set; get; }
+        public string post { set; get; }
+        
+        
+        private string date_of_post;
+        public string getDate_of_post()
+        {
+            return this.date_of_post;
+        }
+        public void setDate_of_post(string year, string month, string date)
+        {
+            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
+            this.date_of_post = dt.ToString("yyyy-MM-dd");
+        }
+
+
+        public string salary_station { set; get; }
+        public string responsibility { set; get; }
+        public string power { set; get; }
 
     }
 }

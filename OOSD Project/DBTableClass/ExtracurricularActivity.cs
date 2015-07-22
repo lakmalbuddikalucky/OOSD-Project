@@ -8,8 +8,8 @@ namespace OOSD_Project.DBTableClass
 {
     class ExtracurricularActivity
     {
-        string type;
-        string method;
-        string award;
+        public string type { set; get; }
+        public string method { set; get; }
+        public string award { set; get; }
     }
 }

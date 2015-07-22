@@ -9,7 +9,7 @@ namespace OOSD_Project.DBTableClass
     class Employee
     {
 
-        public static int employee_id;
+        public static int employee_id=8;
 
 
         string employee_no;

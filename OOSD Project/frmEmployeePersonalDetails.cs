@@ -18,7 +18,7 @@ namespace OOSD_Project
         public frmEmployeePersonalDetails()
         {
             InitializeComponent();
-            btnNext.Enabled = false;
+            //btnNext.Enabled = false;
             //btnSave2.Enabled = false;
             //btnSave3.Enabled = false;
             //btnSave4.Enabled = false;

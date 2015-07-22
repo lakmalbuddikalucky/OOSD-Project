@@ -18,7 +18,8 @@ namespace OOSD_Project
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            //Application.Run(new frmLogin());
+            Application.Run(new frmEmployeeSpecialDetails());
         }
     }
 }

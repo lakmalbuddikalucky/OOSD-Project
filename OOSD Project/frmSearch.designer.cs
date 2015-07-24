@@ -37,58 +37,78 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.btnPensionAndDeath = new System.Windows.Forms.Button();
+            this.cbxPensionAndDeath = new System.Windows.Forms.CheckBox();
+            this.btnReAppoinment = new System.Windows.Forms.Button();
+            this.cbxReAppoinment = new System.Windows.Forms.CheckBox();
+            this.btnResignation = new System.Windows.Forms.Button();
+            this.cbxResignation = new System.Windows.Forms.CheckBox();
+            this.btnInterdict = new System.Windows.Forms.Button();
+            this.cbxInterdict = new System.Windows.Forms.CheckBox();
+            this.btnJobStatus = new System.Windows.Forms.Button();
+            this.cbxJobStatus = new System.Windows.Forms.CheckBox();
+            this.btnTraining = new System.Windows.Forms.Button();
+            this.cbxTraining = new System.Windows.Forms.CheckBox();
+            this.btnDisciplinaryAction = new System.Windows.Forms.Button();
+            this.cbxDeciplinaryAction = new System.Windows.Forms.CheckBox();
+            this.btnLeaveRequest = new System.Windows.Forms.Button();
+            this.cbxLeaveRequest = new System.Windows.Forms.CheckBox();
+            this.btnVisaDetails = new System.Windows.Forms.Button();
+            this.cbxVisaDetails = new System.Windows.Forms.CheckBox();
+            this.btnEditDetails = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.employee_nic = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.employee_name = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.employee_no = new System.Windows.Forms.ComboBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label21 = new System.Windows.Forms.Label();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.blood_group = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.religion = new System.Windows.Forms.TextBox();
+            this.date_issued = new System.Windows.Forms.TextBox();
+            this.old_employee_no = new System.Windows.Forms.TextBox();
+            this.place_of_birth = new System.Windows.Forms.TextBox();
+            this.initials = new System.Windows.Forms.TextBox();
+            this.first_name = new System.Windows.Forms.TextBox();
+            this.last_name = new System.Windows.Forms.TextBox();
+            this.nic_no = new System.Windows.Forms.TextBox();
+            this.nationality = new System.Windows.Forms.TextBox();
+            this.epf_no = new System.Windows.Forms.TextBox();
+            this.txt_em_no = new System.Windows.Forms.TextBox();
+            this.date_of_marriage_d = new System.Windows.Forms.ComboBox();
+            this.date_of_marriage_m = new System.Windows.Forms.ComboBox();
+            this.date_of_marriage_y = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
+            this.action_status = new System.Windows.Forms.ComboBox();
+            this.married = new System.Windows.Forms.CheckBox();
+            this.date_of_birth_d = new System.Windows.Forms.ComboBox();
+            this.date_of_birth_m = new System.Windows.Forms.ComboBox();
+            this.date_of_birth_y = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
-            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.occupation = new System.Windows.Forms.ComboBox();
+            this.employee_type = new System.Windows.Forms.ComboBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.salutation = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
@@ -470,26 +490,6 @@
             this.textBox88 = new System.Windows.Forms.TextBox();
             this.textBox89 = new System.Windows.Forms.TextBox();
             this.textBox106 = new System.Windows.Forms.TextBox();
-            this.btnEditDetails = new System.Windows.Forms.Button();
-            this.cbxVisaDetails = new System.Windows.Forms.CheckBox();
-            this.btnVisaDetails = new System.Windows.Forms.Button();
-            this.btnLeaveRequest = new System.Windows.Forms.Button();
-            this.cbxLeaveRequest = new System.Windows.Forms.CheckBox();
-            this.btnDisciplinaryAction = new System.Windows.Forms.Button();
-            this.cbxDeciplinaryAction = new System.Windows.Forms.CheckBox();
-            this.btnTraining = new System.Windows.Forms.Button();
-            this.cbxTraining = new System.Windows.Forms.CheckBox();
-            this.btnJobStatus = new System.Windows.Forms.Button();
-            this.cbxJobStatus = new System.Windows.Forms.CheckBox();
-            this.btnInterdict = new System.Windows.Forms.Button();
-            this.cbxInterdict = new System.Windows.Forms.CheckBox();
-            this.btnResignation = new System.Windows.Forms.Button();
-            this.cbxResignation = new System.Windows.Forms.CheckBox();
-            this.btnReAppoinment = new System.Windows.Forms.Button();
-            this.cbxReAppoinment = new System.Windows.Forms.CheckBox();
-            this.btnPensionAndDeath = new System.Windows.Forms.Button();
-            this.cbxPensionAndDeath = new System.Windows.Forms.CheckBox();
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -636,6 +636,225 @@
             this.panel4.Size = new System.Drawing.Size(278, 638);
             this.panel4.TabIndex = 6;
             // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 638);
+            this.splitter1.TabIndex = 19;
+            this.splitter1.TabStop = false;
+            // 
+            // btnPensionAndDeath
+            // 
+            this.btnPensionAndDeath.BackColor = System.Drawing.Color.Teal;
+            this.btnPensionAndDeath.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPensionAndDeath.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPensionAndDeath.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPensionAndDeath.Location = new System.Drawing.Point(45, 584);
+            this.btnPensionAndDeath.Name = "btnPensionAndDeath";
+            this.btnPensionAndDeath.Size = new System.Drawing.Size(222, 42);
+            this.btnPensionAndDeath.TabIndex = 18;
+            this.btnPensionAndDeath.Text = "Pension and Death";
+            this.btnPensionAndDeath.UseVisualStyleBackColor = false;
+            // 
+            // cbxPensionAndDeath
+            // 
+            this.cbxPensionAndDeath.AutoSize = true;
+            this.cbxPensionAndDeath.Location = new System.Drawing.Point(17, 598);
+            this.cbxPensionAndDeath.Name = "cbxPensionAndDeath";
+            this.cbxPensionAndDeath.Size = new System.Drawing.Size(15, 14);
+            this.cbxPensionAndDeath.TabIndex = 17;
+            this.cbxPensionAndDeath.UseVisualStyleBackColor = true;
+            // 
+            // btnReAppoinment
+            // 
+            this.btnReAppoinment.BackColor = System.Drawing.Color.Teal;
+            this.btnReAppoinment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReAppoinment.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReAppoinment.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnReAppoinment.Location = new System.Drawing.Point(45, 536);
+            this.btnReAppoinment.Name = "btnReAppoinment";
+            this.btnReAppoinment.Size = new System.Drawing.Size(222, 42);
+            this.btnReAppoinment.TabIndex = 16;
+            this.btnReAppoinment.Text = "Re-appoinment";
+            this.btnReAppoinment.UseVisualStyleBackColor = false;
+            // 
+            // cbxReAppoinment
+            // 
+            this.cbxReAppoinment.AutoSize = true;
+            this.cbxReAppoinment.Location = new System.Drawing.Point(17, 550);
+            this.cbxReAppoinment.Name = "cbxReAppoinment";
+            this.cbxReAppoinment.Size = new System.Drawing.Size(15, 14);
+            this.cbxReAppoinment.TabIndex = 15;
+            this.cbxReAppoinment.UseVisualStyleBackColor = true;
+            // 
+            // btnResignation
+            // 
+            this.btnResignation.BackColor = System.Drawing.Color.Teal;
+            this.btnResignation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResignation.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResignation.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnResignation.Location = new System.Drawing.Point(45, 488);
+            this.btnResignation.Name = "btnResignation";
+            this.btnResignation.Size = new System.Drawing.Size(222, 42);
+            this.btnResignation.TabIndex = 14;
+            this.btnResignation.Text = "Resignation";
+            this.btnResignation.UseVisualStyleBackColor = false;
+            // 
+            // cbxResignation
+            // 
+            this.cbxResignation.AutoSize = true;
+            this.cbxResignation.Location = new System.Drawing.Point(17, 502);
+            this.cbxResignation.Name = "cbxResignation";
+            this.cbxResignation.Size = new System.Drawing.Size(15, 14);
+            this.cbxResignation.TabIndex = 13;
+            this.cbxResignation.UseVisualStyleBackColor = true;
+            // 
+            // btnInterdict
+            // 
+            this.btnInterdict.BackColor = System.Drawing.Color.Teal;
+            this.btnInterdict.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInterdict.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInterdict.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnInterdict.Location = new System.Drawing.Point(45, 440);
+            this.btnInterdict.Name = "btnInterdict";
+            this.btnInterdict.Size = new System.Drawing.Size(222, 42);
+            this.btnInterdict.TabIndex = 12;
+            this.btnInterdict.Text = "Interdict/Suspend";
+            this.btnInterdict.UseVisualStyleBackColor = false;
+            // 
+            // cbxInterdict
+            // 
+            this.cbxInterdict.AutoSize = true;
+            this.cbxInterdict.Location = new System.Drawing.Point(17, 454);
+            this.cbxInterdict.Name = "cbxInterdict";
+            this.cbxInterdict.Size = new System.Drawing.Size(15, 14);
+            this.cbxInterdict.TabIndex = 11;
+            this.cbxInterdict.UseVisualStyleBackColor = true;
+            // 
+            // btnJobStatus
+            // 
+            this.btnJobStatus.BackColor = System.Drawing.Color.Teal;
+            this.btnJobStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJobStatus.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJobStatus.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnJobStatus.Location = new System.Drawing.Point(45, 392);
+            this.btnJobStatus.Name = "btnJobStatus";
+            this.btnJobStatus.Size = new System.Drawing.Size(222, 42);
+            this.btnJobStatus.TabIndex = 10;
+            this.btnJobStatus.Text = "Job Status";
+            this.btnJobStatus.UseVisualStyleBackColor = false;
+            // 
+            // cbxJobStatus
+            // 
+            this.cbxJobStatus.AutoSize = true;
+            this.cbxJobStatus.Location = new System.Drawing.Point(17, 406);
+            this.cbxJobStatus.Name = "cbxJobStatus";
+            this.cbxJobStatus.Size = new System.Drawing.Size(15, 14);
+            this.cbxJobStatus.TabIndex = 9;
+            this.cbxJobStatus.UseVisualStyleBackColor = true;
+            // 
+            // btnTraining
+            // 
+            this.btnTraining.BackColor = System.Drawing.Color.Teal;
+            this.btnTraining.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTraining.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTraining.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnTraining.Location = new System.Drawing.Point(45, 344);
+            this.btnTraining.Name = "btnTraining";
+            this.btnTraining.Size = new System.Drawing.Size(222, 42);
+            this.btnTraining.TabIndex = 8;
+            this.btnTraining.Text = "Training";
+            this.btnTraining.UseVisualStyleBackColor = false;
+            // 
+            // cbxTraining
+            // 
+            this.cbxTraining.AutoSize = true;
+            this.cbxTraining.Location = new System.Drawing.Point(17, 358);
+            this.cbxTraining.Name = "cbxTraining";
+            this.cbxTraining.Size = new System.Drawing.Size(15, 14);
+            this.cbxTraining.TabIndex = 7;
+            this.cbxTraining.UseVisualStyleBackColor = true;
+            // 
+            // btnDisciplinaryAction
+            // 
+            this.btnDisciplinaryAction.BackColor = System.Drawing.Color.Teal;
+            this.btnDisciplinaryAction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDisciplinaryAction.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDisciplinaryAction.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDisciplinaryAction.Location = new System.Drawing.Point(45, 296);
+            this.btnDisciplinaryAction.Name = "btnDisciplinaryAction";
+            this.btnDisciplinaryAction.Size = new System.Drawing.Size(222, 42);
+            this.btnDisciplinaryAction.TabIndex = 6;
+            this.btnDisciplinaryAction.Text = "Deciplinary Action";
+            this.btnDisciplinaryAction.UseVisualStyleBackColor = false;
+            // 
+            // cbxDeciplinaryAction
+            // 
+            this.cbxDeciplinaryAction.AutoSize = true;
+            this.cbxDeciplinaryAction.Location = new System.Drawing.Point(17, 310);
+            this.cbxDeciplinaryAction.Name = "cbxDeciplinaryAction";
+            this.cbxDeciplinaryAction.Size = new System.Drawing.Size(15, 14);
+            this.cbxDeciplinaryAction.TabIndex = 5;
+            this.cbxDeciplinaryAction.UseVisualStyleBackColor = true;
+            // 
+            // btnLeaveRequest
+            // 
+            this.btnLeaveRequest.BackColor = System.Drawing.Color.Teal;
+            this.btnLeaveRequest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLeaveRequest.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLeaveRequest.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnLeaveRequest.Location = new System.Drawing.Point(45, 248);
+            this.btnLeaveRequest.Name = "btnLeaveRequest";
+            this.btnLeaveRequest.Size = new System.Drawing.Size(222, 42);
+            this.btnLeaveRequest.TabIndex = 4;
+            this.btnLeaveRequest.Text = "Leave Request";
+            this.btnLeaveRequest.UseVisualStyleBackColor = false;
+            // 
+            // cbxLeaveRequest
+            // 
+            this.cbxLeaveRequest.AutoSize = true;
+            this.cbxLeaveRequest.Location = new System.Drawing.Point(17, 262);
+            this.cbxLeaveRequest.Name = "cbxLeaveRequest";
+            this.cbxLeaveRequest.Size = new System.Drawing.Size(15, 14);
+            this.cbxLeaveRequest.TabIndex = 3;
+            this.cbxLeaveRequest.UseVisualStyleBackColor = true;
+            // 
+            // btnVisaDetails
+            // 
+            this.btnVisaDetails.BackColor = System.Drawing.Color.Teal;
+            this.btnVisaDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVisaDetails.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVisaDetails.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnVisaDetails.Location = new System.Drawing.Point(45, 200);
+            this.btnVisaDetails.Name = "btnVisaDetails";
+            this.btnVisaDetails.Size = new System.Drawing.Size(222, 42);
+            this.btnVisaDetails.TabIndex = 2;
+            this.btnVisaDetails.Text = "Visa Details";
+            this.btnVisaDetails.UseVisualStyleBackColor = false;
+            // 
+            // cbxVisaDetails
+            // 
+            this.cbxVisaDetails.AutoSize = true;
+            this.cbxVisaDetails.Location = new System.Drawing.Point(17, 214);
+            this.cbxVisaDetails.Name = "cbxVisaDetails";
+            this.cbxVisaDetails.Size = new System.Drawing.Size(15, 14);
+            this.cbxVisaDetails.TabIndex = 1;
+            this.cbxVisaDetails.UseVisualStyleBackColor = true;
+            // 
+            // btnEditDetails
+            // 
+            this.btnEditDetails.BackColor = System.Drawing.Color.Teal;
+            this.btnEditDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditDetails.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditDetails.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEditDetails.Location = new System.Drawing.Point(5, 0);
+            this.btnEditDetails.Name = "btnEditDetails";
+            this.btnEditDetails.Size = new System.Drawing.Size(262, 194);
+            this.btnEditDetails.TabIndex = 0;
+            this.btnEditDetails.Text = "Edit Details";
+            this.btnEditDetails.UseVisualStyleBackColor = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -671,11 +890,11 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.comboBox4);
+            this.panel1.Controls.Add(this.employee_nic);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.employee_name);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.employee_no);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1049, 78);
@@ -692,14 +911,14 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "ජා.හැ. අංකය";
             // 
-            // comboBox4
+            // employee_nic
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(875, 20);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(150, 32);
-            this.comboBox4.TabIndex = 11;
+            this.employee_nic.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_nic.FormattingEnabled = true;
+            this.employee_nic.Location = new System.Drawing.Point(875, 20);
+            this.employee_nic.Name = "employee_nic";
+            this.employee_nic.Size = new System.Drawing.Size(150, 32);
+            this.employee_nic.TabIndex = 11;
             // 
             // label3
             // 
@@ -712,14 +931,14 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "නම";
             // 
-            // comboBox3
+            // employee_name
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(403, 20);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(293, 32);
-            this.comboBox3.TabIndex = 9;
+            this.employee_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_name.FormattingEnabled = true;
+            this.employee_name.Location = new System.Drawing.Point(403, 20);
+            this.employee_name.Name = "employee_name";
+            this.employee_name.Size = new System.Drawing.Size(293, 32);
+            this.employee_name.TabIndex = 9;
             // 
             // label2
             // 
@@ -732,14 +951,15 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "සේවක අංකය";
             // 
-            // comboBox1
+            // employee_no
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(136, 20);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 32);
-            this.comboBox1.TabIndex = 7;
+            this.employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_no.FormattingEnabled = true;
+            this.employee_no.Location = new System.Drawing.Point(136, 20);
+            this.employee_no.Name = "employee_no";
+            this.employee_no.Size = new System.Drawing.Size(150, 32);
+            this.employee_no.TabIndex = 7;
+            this.employee_no.SelectedIndexChanged += new System.EventHandler(this.employee_no_SelectedIndexChanged);
             // 
             // panel9
             // 
@@ -789,43 +1009,43 @@
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.label21);
-            this.tabPage1.Controls.Add(this.comboBox14);
+            this.tabPage1.Controls.Add(this.blood_group);
             this.tabPage1.Controls.Add(this.label18);
-            this.tabPage1.Controls.Add(this.textBox14);
-            this.tabPage1.Controls.Add(this.textBox12);
-            this.tabPage1.Controls.Add(this.textBox11);
-            this.tabPage1.Controls.Add(this.textBox10);
-            this.tabPage1.Controls.Add(this.textBox8);
-            this.tabPage1.Controls.Add(this.textBox4);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.textBox6);
-            this.tabPage1.Controls.Add(this.textBox5);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.comboBox15);
-            this.tabPage1.Controls.Add(this.comboBox16);
-            this.tabPage1.Controls.Add(this.comboBox17);
+            this.tabPage1.Controls.Add(this.religion);
+            this.tabPage1.Controls.Add(this.date_issued);
+            this.tabPage1.Controls.Add(this.old_employee_no);
+            this.tabPage1.Controls.Add(this.place_of_birth);
+            this.tabPage1.Controls.Add(this.initials);
+            this.tabPage1.Controls.Add(this.first_name);
+            this.tabPage1.Controls.Add(this.last_name);
+            this.tabPage1.Controls.Add(this.nic_no);
+            this.tabPage1.Controls.Add(this.nationality);
+            this.tabPage1.Controls.Add(this.epf_no);
+            this.tabPage1.Controls.Add(this.txt_em_no);
+            this.tabPage1.Controls.Add(this.date_of_marriage_d);
+            this.tabPage1.Controls.Add(this.date_of_marriage_m);
+            this.tabPage1.Controls.Add(this.date_of_marriage_y);
             this.tabPage1.Controls.Add(this.label22);
             this.tabPage1.Controls.Add(this.label23);
             this.tabPage1.Controls.Add(this.label24);
-            this.tabPage1.Controls.Add(this.comboBox18);
-            this.tabPage1.Controls.Add(this.checkBox1);
-            this.tabPage1.Controls.Add(this.comboBox19);
-            this.tabPage1.Controls.Add(this.comboBox20);
-            this.tabPage1.Controls.Add(this.comboBox21);
+            this.tabPage1.Controls.Add(this.action_status);
+            this.tabPage1.Controls.Add(this.married);
+            this.tabPage1.Controls.Add(this.date_of_birth_d);
+            this.tabPage1.Controls.Add(this.date_of_birth_m);
+            this.tabPage1.Controls.Add(this.date_of_birth_y);
             this.tabPage1.Controls.Add(this.label25);
             this.tabPage1.Controls.Add(this.label26);
             this.tabPage1.Controls.Add(this.label27);
             this.tabPage1.Controls.Add(this.label28);
             this.tabPage1.Controls.Add(this.label29);
             this.tabPage1.Controls.Add(this.label30);
-            this.tabPage1.Controls.Add(this.comboBox22);
-            this.tabPage1.Controls.Add(this.comboBox23);
+            this.tabPage1.Controls.Add(this.occupation);
+            this.tabPage1.Controls.Add(this.employee_type);
             this.tabPage1.Controls.Add(this.label31);
             this.tabPage1.Controls.Add(this.label32);
             this.tabPage1.Controls.Add(this.label33);
             this.tabPage1.Controls.Add(this.label34);
-            this.tabPage1.Controls.Add(this.comboBox24);
+            this.tabPage1.Controls.Add(this.salutation);
             this.tabPage1.Controls.Add(this.label35);
             this.tabPage1.Controls.Add(this.label36);
             this.tabPage1.Controls.Add(this.label37);
@@ -846,10 +1066,10 @@
             this.label21.TabIndex = 51;
             this.label21.Text = "ලේ වර්ගය";
             // 
-            // comboBox14
+            // blood_group
             // 
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.blood_group.FormattingEnabled = true;
+            this.blood_group.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -925,10 +1145,10 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox14.Location = new System.Drawing.Point(788, 566);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(200, 34);
-            this.comboBox14.TabIndex = 50;
+            this.blood_group.Location = new System.Drawing.Point(788, 566);
+            this.blood_group.Name = "blood_group";
+            this.blood_group.Size = new System.Drawing.Size(200, 34);
+            this.blood_group.TabIndex = 50;
             // 
             // label18
             // 
@@ -939,88 +1159,88 @@
             this.label18.TabIndex = 49;
             this.label18.Text = "ආගම";
             // 
-            // textBox14
+            // religion
             // 
-            this.textBox14.Location = new System.Drawing.Point(785, 419);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(200, 33);
-            this.textBox14.TabIndex = 48;
+            this.religion.Location = new System.Drawing.Point(785, 419);
+            this.religion.Name = "religion";
+            this.religion.Size = new System.Drawing.Size(200, 33);
+            this.religion.TabIndex = 48;
             // 
-            // textBox12
+            // date_issued
             // 
-            this.textBox12.Location = new System.Drawing.Point(785, 380);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(200, 33);
-            this.textBox12.TabIndex = 41;
+            this.date_issued.Location = new System.Drawing.Point(785, 380);
+            this.date_issued.Name = "date_issued";
+            this.date_issued.Size = new System.Drawing.Size(200, 33);
+            this.date_issued.TabIndex = 41;
             // 
-            // textBox11
+            // old_employee_no
             // 
-            this.textBox11.Location = new System.Drawing.Point(785, 68);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(200, 33);
-            this.textBox11.TabIndex = 29;
+            this.old_employee_no.Location = new System.Drawing.Point(785, 68);
+            this.old_employee_no.Name = "old_employee_no";
+            this.old_employee_no.Size = new System.Drawing.Size(200, 33);
+            this.old_employee_no.TabIndex = 29;
             // 
-            // textBox10
+            // place_of_birth
             // 
-            this.textBox10.Location = new System.Drawing.Point(785, 458);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(200, 33);
-            this.textBox10.TabIndex = 27;
+            this.place_of_birth.Location = new System.Drawing.Point(785, 458);
+            this.place_of_birth.Name = "place_of_birth";
+            this.place_of_birth.Size = new System.Drawing.Size(200, 33);
+            this.place_of_birth.TabIndex = 27;
             // 
-            // textBox8
+            // initials
             // 
-            this.textBox8.Location = new System.Drawing.Point(243, 226);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(200, 33);
-            this.textBox8.TabIndex = 24;
+            this.initials.Location = new System.Drawing.Point(243, 226);
+            this.initials.Name = "initials";
+            this.initials.Size = new System.Drawing.Size(200, 33);
+            this.initials.TabIndex = 24;
             // 
-            // textBox4
+            // first_name
             // 
-            this.textBox4.Location = new System.Drawing.Point(243, 265);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(301, 33);
-            this.textBox4.TabIndex = 23;
+            this.first_name.Location = new System.Drawing.Point(243, 265);
+            this.first_name.Name = "first_name";
+            this.first_name.Size = new System.Drawing.Size(301, 33);
+            this.first_name.TabIndex = 23;
             // 
-            // textBox1
+            // last_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(243, 304);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(301, 33);
-            this.textBox1.TabIndex = 22;
+            this.last_name.Location = new System.Drawing.Point(243, 304);
+            this.last_name.Name = "last_name";
+            this.last_name.Size = new System.Drawing.Size(301, 33);
+            this.last_name.TabIndex = 22;
             // 
-            // textBox6
+            // nic_no
             // 
-            this.textBox6.Location = new System.Drawing.Point(243, 343);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 33);
-            this.textBox6.TabIndex = 15;
+            this.nic_no.Location = new System.Drawing.Point(243, 343);
+            this.nic_no.Name = "nic_no";
+            this.nic_no.Size = new System.Drawing.Size(200, 33);
+            this.nic_no.TabIndex = 15;
             // 
-            // textBox5
+            // nationality
             // 
-            this.textBox5.Location = new System.Drawing.Point(243, 382);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 33);
-            this.textBox5.TabIndex = 14;
+            this.nationality.Location = new System.Drawing.Point(243, 382);
+            this.nationality.Name = "nationality";
+            this.nationality.Size = new System.Drawing.Size(200, 33);
+            this.nationality.TabIndex = 14;
             // 
-            // textBox3
+            // epf_no
             // 
-            this.textBox3.Location = new System.Drawing.Point(243, 108);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 33);
-            this.textBox3.TabIndex = 7;
+            this.epf_no.Location = new System.Drawing.Point(243, 108);
+            this.epf_no.Name = "epf_no";
+            this.epf_no.Size = new System.Drawing.Size(200, 33);
+            this.epf_no.TabIndex = 7;
             // 
-            // textBox2
+            // txt_em_no
             // 
-            this.textBox2.Location = new System.Drawing.Point(243, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 33);
-            this.textBox2.TabIndex = 5;
+            this.txt_em_no.Location = new System.Drawing.Point(243, 30);
+            this.txt_em_no.Name = "txt_em_no";
+            this.txt_em_no.Size = new System.Drawing.Size(201, 33);
+            this.txt_em_no.TabIndex = 5;
             // 
-            // comboBox15
+            // date_of_marriage_d
             // 
-            this.comboBox15.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Items.AddRange(new object[] {
+            this.date_of_marriage_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.date_of_marriage_d.FormattingEnabled = true;
+            this.date_of_marriage_d.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -1052,17 +1272,17 @@
             "29",
             "30",
             "31"});
-            this.comboBox15.Location = new System.Drawing.Point(452, 489);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(91, 34);
-            this.comboBox15.TabIndex = 47;
-            this.comboBox15.Text = "    දිනය";
+            this.date_of_marriage_d.Location = new System.Drawing.Point(452, 489);
+            this.date_of_marriage_d.Name = "date_of_marriage_d";
+            this.date_of_marriage_d.Size = new System.Drawing.Size(91, 34);
+            this.date_of_marriage_d.TabIndex = 47;
+            this.date_of_marriage_d.Text = "    දිනය";
             // 
-            // comboBox16
+            // date_of_marriage_m
             // 
-            this.comboBox16.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Items.AddRange(new object[] {
+            this.date_of_marriage_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.date_of_marriage_m.FormattingEnabled = true;
+            this.date_of_marriage_m.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -1075,17 +1295,17 @@
             "October",
             "November",
             "December"});
-            this.comboBox16.Location = new System.Drawing.Point(355, 489);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(91, 34);
-            this.comboBox16.TabIndex = 46;
-            this.comboBox16.Text = "   මාසය";
+            this.date_of_marriage_m.Location = new System.Drawing.Point(355, 489);
+            this.date_of_marriage_m.Name = "date_of_marriage_m";
+            this.date_of_marriage_m.Size = new System.Drawing.Size(91, 34);
+            this.date_of_marriage_m.TabIndex = 46;
+            this.date_of_marriage_m.Text = "   මාසය";
             // 
-            // comboBox17
+            // date_of_marriage_y
             // 
-            this.comboBox17.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Items.AddRange(new object[] {
+            this.date_of_marriage_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.date_of_marriage_y.FormattingEnabled = true;
+            this.date_of_marriage_y.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -1161,11 +1381,11 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox17.Location = new System.Drawing.Point(244, 489);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(105, 34);
-            this.comboBox17.TabIndex = 45;
-            this.comboBox17.Text = "   වර්ෂය";
+            this.date_of_marriage_y.Location = new System.Drawing.Point(244, 489);
+            this.date_of_marriage_y.Name = "date_of_marriage_y";
+            this.date_of_marriage_y.Size = new System.Drawing.Size(105, 34);
+            this.date_of_marriage_y.TabIndex = 45;
+            this.date_of_marriage_y.Text = "   වර්ෂය";
             // 
             // label22
             // 
@@ -1194,10 +1414,10 @@
             this.label24.TabIndex = 40;
             this.label24.Text = "ක්‍රියාකාරී තත්වය";
             // 
-            // comboBox18
+            // action_status
             // 
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Items.AddRange(new object[] {
+            this.action_status.FormattingEnabled = true;
+            this.action_status.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -1273,27 +1493,27 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox18.Location = new System.Drawing.Point(243, 529);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(204, 34);
-            this.comboBox18.TabIndex = 39;
+            this.action_status.Location = new System.Drawing.Point(243, 529);
+            this.action_status.Name = "action_status";
+            this.action_status.Size = new System.Drawing.Size(204, 34);
+            this.action_status.TabIndex = 39;
             // 
-            // checkBox1
+            // married
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Location = new System.Drawing.Point(155, 460);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(104, 30);
-            this.checkBox1.TabIndex = 38;
-            this.checkBox1.Text = "විවාහක ";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.married.AutoSize = true;
+            this.married.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.married.Location = new System.Drawing.Point(155, 460);
+            this.married.Name = "married";
+            this.married.Size = new System.Drawing.Size(104, 30);
+            this.married.TabIndex = 38;
+            this.married.Text = "විවාහක ";
+            this.married.UseVisualStyleBackColor = true;
             // 
-            // comboBox19
+            // date_of_birth_d
             // 
-            this.comboBox19.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Items.AddRange(new object[] {
+            this.date_of_birth_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.date_of_birth_d.FormattingEnabled = true;
+            this.date_of_birth_d.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -1325,17 +1545,17 @@
             "29",
             "30",
             "31"});
-            this.comboBox19.Location = new System.Drawing.Point(450, 421);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(91, 34);
-            this.comboBox19.TabIndex = 36;
-            this.comboBox19.Text = "    දිනය";
+            this.date_of_birth_d.Location = new System.Drawing.Point(450, 421);
+            this.date_of_birth_d.Name = "date_of_birth_d";
+            this.date_of_birth_d.Size = new System.Drawing.Size(91, 34);
+            this.date_of_birth_d.TabIndex = 36;
+            this.date_of_birth_d.Text = "    දිනය";
             // 
-            // comboBox20
+            // date_of_birth_m
             // 
-            this.comboBox20.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Items.AddRange(new object[] {
+            this.date_of_birth_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.date_of_birth_m.FormattingEnabled = true;
+            this.date_of_birth_m.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -1348,17 +1568,17 @@
             "October",
             "November",
             "December"});
-            this.comboBox20.Location = new System.Drawing.Point(353, 421);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(91, 34);
-            this.comboBox20.TabIndex = 33;
-            this.comboBox20.Text = "   මාසය";
+            this.date_of_birth_m.Location = new System.Drawing.Point(353, 421);
+            this.date_of_birth_m.Name = "date_of_birth_m";
+            this.date_of_birth_m.Size = new System.Drawing.Size(91, 34);
+            this.date_of_birth_m.TabIndex = 33;
+            this.date_of_birth_m.Text = "   මාසය";
             // 
-            // comboBox21
+            // date_of_birth_y
             // 
-            this.comboBox21.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Items.AddRange(new object[] {
+            this.date_of_birth_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.date_of_birth_y.FormattingEnabled = true;
+            this.date_of_birth_y.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -1434,11 +1654,11 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox21.Location = new System.Drawing.Point(244, 421);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(103, 34);
-            this.comboBox21.TabIndex = 32;
-            this.comboBox21.Text = "   වර්ෂය";
+            this.date_of_birth_y.Location = new System.Drawing.Point(244, 421);
+            this.date_of_birth_y.Name = "date_of_birth_y";
+            this.date_of_birth_y.Size = new System.Drawing.Size(103, 34);
+            this.date_of_birth_y.TabIndex = 32;
+            this.date_of_birth_y.Text = "   වර්ෂය";
             // 
             // label25
             // 
@@ -1494,21 +1714,21 @@
             this.label30.TabIndex = 21;
             this.label30.Text = "වෘත්තීය";
             // 
-            // comboBox22
+            // occupation
             // 
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Location = new System.Drawing.Point(243, 186);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(200, 34);
-            this.comboBox22.TabIndex = 20;
+            this.occupation.FormattingEnabled = true;
+            this.occupation.Location = new System.Drawing.Point(243, 186);
+            this.occupation.Name = "occupation";
+            this.occupation.Size = new System.Drawing.Size(200, 34);
+            this.occupation.TabIndex = 20;
             // 
-            // comboBox23
+            // employee_type
             // 
-            this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Location = new System.Drawing.Point(243, 69);
-            this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(200, 34);
-            this.comboBox23.TabIndex = 19;
+            this.employee_type.FormattingEnabled = true;
+            this.employee_type.Location = new System.Drawing.Point(243, 69);
+            this.employee_type.Name = "employee_type";
+            this.employee_type.Size = new System.Drawing.Size(200, 34);
+            this.employee_type.TabIndex = 19;
             // 
             // label31
             // 
@@ -1546,13 +1766,13 @@
             this.label34.TabIndex = 10;
             this.label34.Text = "ආමන්ත්‍රණය";
             // 
-            // comboBox24
+            // salutation
             // 
-            this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Location = new System.Drawing.Point(243, 147);
-            this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(201, 34);
-            this.comboBox24.TabIndex = 9;
+            this.salutation.FormattingEnabled = true;
+            this.salutation.Location = new System.Drawing.Point(243, 147);
+            this.salutation.Name = "salutation";
+            this.salutation.Size = new System.Drawing.Size(201, 34);
+            this.salutation.TabIndex = 9;
             // 
             // label35
             // 
@@ -6978,225 +7198,6 @@
             this.textBox106.Size = new System.Drawing.Size(282, 33);
             this.textBox106.TabIndex = 17;
             // 
-            // btnEditDetails
-            // 
-            this.btnEditDetails.BackColor = System.Drawing.Color.Teal;
-            this.btnEditDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditDetails.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditDetails.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEditDetails.Location = new System.Drawing.Point(5, 0);
-            this.btnEditDetails.Name = "btnEditDetails";
-            this.btnEditDetails.Size = new System.Drawing.Size(262, 194);
-            this.btnEditDetails.TabIndex = 0;
-            this.btnEditDetails.Text = "Edit Details";
-            this.btnEditDetails.UseVisualStyleBackColor = false;
-            // 
-            // cbxVisaDetails
-            // 
-            this.cbxVisaDetails.AutoSize = true;
-            this.cbxVisaDetails.Location = new System.Drawing.Point(17, 214);
-            this.cbxVisaDetails.Name = "cbxVisaDetails";
-            this.cbxVisaDetails.Size = new System.Drawing.Size(15, 14);
-            this.cbxVisaDetails.TabIndex = 1;
-            this.cbxVisaDetails.UseVisualStyleBackColor = true;
-            // 
-            // btnVisaDetails
-            // 
-            this.btnVisaDetails.BackColor = System.Drawing.Color.Teal;
-            this.btnVisaDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVisaDetails.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVisaDetails.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnVisaDetails.Location = new System.Drawing.Point(45, 200);
-            this.btnVisaDetails.Name = "btnVisaDetails";
-            this.btnVisaDetails.Size = new System.Drawing.Size(222, 42);
-            this.btnVisaDetails.TabIndex = 2;
-            this.btnVisaDetails.Text = "Visa Details";
-            this.btnVisaDetails.UseVisualStyleBackColor = false;
-            // 
-            // btnLeaveRequest
-            // 
-            this.btnLeaveRequest.BackColor = System.Drawing.Color.Teal;
-            this.btnLeaveRequest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLeaveRequest.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLeaveRequest.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLeaveRequest.Location = new System.Drawing.Point(45, 248);
-            this.btnLeaveRequest.Name = "btnLeaveRequest";
-            this.btnLeaveRequest.Size = new System.Drawing.Size(222, 42);
-            this.btnLeaveRequest.TabIndex = 4;
-            this.btnLeaveRequest.Text = "Leave Request";
-            this.btnLeaveRequest.UseVisualStyleBackColor = false;
-            // 
-            // cbxLeaveRequest
-            // 
-            this.cbxLeaveRequest.AutoSize = true;
-            this.cbxLeaveRequest.Location = new System.Drawing.Point(17, 262);
-            this.cbxLeaveRequest.Name = "cbxLeaveRequest";
-            this.cbxLeaveRequest.Size = new System.Drawing.Size(15, 14);
-            this.cbxLeaveRequest.TabIndex = 3;
-            this.cbxLeaveRequest.UseVisualStyleBackColor = true;
-            // 
-            // btnDisciplinaryAction
-            // 
-            this.btnDisciplinaryAction.BackColor = System.Drawing.Color.Teal;
-            this.btnDisciplinaryAction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDisciplinaryAction.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDisciplinaryAction.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDisciplinaryAction.Location = new System.Drawing.Point(45, 296);
-            this.btnDisciplinaryAction.Name = "btnDisciplinaryAction";
-            this.btnDisciplinaryAction.Size = new System.Drawing.Size(222, 42);
-            this.btnDisciplinaryAction.TabIndex = 6;
-            this.btnDisciplinaryAction.Text = "Deciplinary Action";
-            this.btnDisciplinaryAction.UseVisualStyleBackColor = false;
-            // 
-            // cbxDeciplinaryAction
-            // 
-            this.cbxDeciplinaryAction.AutoSize = true;
-            this.cbxDeciplinaryAction.Location = new System.Drawing.Point(17, 310);
-            this.cbxDeciplinaryAction.Name = "cbxDeciplinaryAction";
-            this.cbxDeciplinaryAction.Size = new System.Drawing.Size(15, 14);
-            this.cbxDeciplinaryAction.TabIndex = 5;
-            this.cbxDeciplinaryAction.UseVisualStyleBackColor = true;
-            // 
-            // btnTraining
-            // 
-            this.btnTraining.BackColor = System.Drawing.Color.Teal;
-            this.btnTraining.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTraining.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTraining.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTraining.Location = new System.Drawing.Point(45, 344);
-            this.btnTraining.Name = "btnTraining";
-            this.btnTraining.Size = new System.Drawing.Size(222, 42);
-            this.btnTraining.TabIndex = 8;
-            this.btnTraining.Text = "Training";
-            this.btnTraining.UseVisualStyleBackColor = false;
-            // 
-            // cbxTraining
-            // 
-            this.cbxTraining.AutoSize = true;
-            this.cbxTraining.Location = new System.Drawing.Point(17, 358);
-            this.cbxTraining.Name = "cbxTraining";
-            this.cbxTraining.Size = new System.Drawing.Size(15, 14);
-            this.cbxTraining.TabIndex = 7;
-            this.cbxTraining.UseVisualStyleBackColor = true;
-            // 
-            // btnJobStatus
-            // 
-            this.btnJobStatus.BackColor = System.Drawing.Color.Teal;
-            this.btnJobStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnJobStatus.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnJobStatus.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnJobStatus.Location = new System.Drawing.Point(45, 392);
-            this.btnJobStatus.Name = "btnJobStatus";
-            this.btnJobStatus.Size = new System.Drawing.Size(222, 42);
-            this.btnJobStatus.TabIndex = 10;
-            this.btnJobStatus.Text = "Job Status";
-            this.btnJobStatus.UseVisualStyleBackColor = false;
-            // 
-            // cbxJobStatus
-            // 
-            this.cbxJobStatus.AutoSize = true;
-            this.cbxJobStatus.Location = new System.Drawing.Point(17, 406);
-            this.cbxJobStatus.Name = "cbxJobStatus";
-            this.cbxJobStatus.Size = new System.Drawing.Size(15, 14);
-            this.cbxJobStatus.TabIndex = 9;
-            this.cbxJobStatus.UseVisualStyleBackColor = true;
-            // 
-            // btnInterdict
-            // 
-            this.btnInterdict.BackColor = System.Drawing.Color.Teal;
-            this.btnInterdict.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInterdict.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInterdict.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnInterdict.Location = new System.Drawing.Point(45, 440);
-            this.btnInterdict.Name = "btnInterdict";
-            this.btnInterdict.Size = new System.Drawing.Size(222, 42);
-            this.btnInterdict.TabIndex = 12;
-            this.btnInterdict.Text = "Interdict/Suspend";
-            this.btnInterdict.UseVisualStyleBackColor = false;
-            // 
-            // cbxInterdict
-            // 
-            this.cbxInterdict.AutoSize = true;
-            this.cbxInterdict.Location = new System.Drawing.Point(17, 454);
-            this.cbxInterdict.Name = "cbxInterdict";
-            this.cbxInterdict.Size = new System.Drawing.Size(15, 14);
-            this.cbxInterdict.TabIndex = 11;
-            this.cbxInterdict.UseVisualStyleBackColor = true;
-            // 
-            // btnResignation
-            // 
-            this.btnResignation.BackColor = System.Drawing.Color.Teal;
-            this.btnResignation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResignation.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResignation.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnResignation.Location = new System.Drawing.Point(45, 488);
-            this.btnResignation.Name = "btnResignation";
-            this.btnResignation.Size = new System.Drawing.Size(222, 42);
-            this.btnResignation.TabIndex = 14;
-            this.btnResignation.Text = "Resignation";
-            this.btnResignation.UseVisualStyleBackColor = false;
-            // 
-            // cbxResignation
-            // 
-            this.cbxResignation.AutoSize = true;
-            this.cbxResignation.Location = new System.Drawing.Point(17, 502);
-            this.cbxResignation.Name = "cbxResignation";
-            this.cbxResignation.Size = new System.Drawing.Size(15, 14);
-            this.cbxResignation.TabIndex = 13;
-            this.cbxResignation.UseVisualStyleBackColor = true;
-            // 
-            // btnReAppoinment
-            // 
-            this.btnReAppoinment.BackColor = System.Drawing.Color.Teal;
-            this.btnReAppoinment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReAppoinment.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReAppoinment.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnReAppoinment.Location = new System.Drawing.Point(45, 536);
-            this.btnReAppoinment.Name = "btnReAppoinment";
-            this.btnReAppoinment.Size = new System.Drawing.Size(222, 42);
-            this.btnReAppoinment.TabIndex = 16;
-            this.btnReAppoinment.Text = "Re-appoinment";
-            this.btnReAppoinment.UseVisualStyleBackColor = false;
-            // 
-            // cbxReAppoinment
-            // 
-            this.cbxReAppoinment.AutoSize = true;
-            this.cbxReAppoinment.Location = new System.Drawing.Point(17, 550);
-            this.cbxReAppoinment.Name = "cbxReAppoinment";
-            this.cbxReAppoinment.Size = new System.Drawing.Size(15, 14);
-            this.cbxReAppoinment.TabIndex = 15;
-            this.cbxReAppoinment.UseVisualStyleBackColor = true;
-            // 
-            // btnPensionAndDeath
-            // 
-            this.btnPensionAndDeath.BackColor = System.Drawing.Color.Teal;
-            this.btnPensionAndDeath.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPensionAndDeath.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPensionAndDeath.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPensionAndDeath.Location = new System.Drawing.Point(45, 584);
-            this.btnPensionAndDeath.Name = "btnPensionAndDeath";
-            this.btnPensionAndDeath.Size = new System.Drawing.Size(222, 42);
-            this.btnPensionAndDeath.TabIndex = 18;
-            this.btnPensionAndDeath.Text = "Pension and Death";
-            this.btnPensionAndDeath.UseVisualStyleBackColor = false;
-            // 
-            // cbxPensionAndDeath
-            // 
-            this.cbxPensionAndDeath.AutoSize = true;
-            this.cbxPensionAndDeath.Location = new System.Drawing.Point(17, 598);
-            this.cbxPensionAndDeath.Name = "cbxPensionAndDeath";
-            this.cbxPensionAndDeath.Size = new System.Drawing.Size(15, 14);
-            this.cbxPensionAndDeath.TabIndex = 17;
-            this.cbxPensionAndDeath.UseVisualStyleBackColor = true;
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 638);
-            this.splitter1.TabIndex = 19;
-            this.splitter1.TabStop = false;
-            // 
             // frmSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7292,53 +7293,53 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox employee_nic;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox employee_name;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.ComboBox blood_group;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.ComboBox comboBox17;
+        private System.Windows.Forms.TextBox religion;
+        private System.Windows.Forms.TextBox date_issued;
+        private System.Windows.Forms.TextBox old_employee_no;
+        private System.Windows.Forms.TextBox place_of_birth;
+        private System.Windows.Forms.TextBox initials;
+        private System.Windows.Forms.TextBox first_name;
+        private System.Windows.Forms.TextBox last_name;
+        private System.Windows.Forms.TextBox nic_no;
+        private System.Windows.Forms.TextBox nationality;
+        private System.Windows.Forms.TextBox epf_no;
+        private System.Windows.Forms.TextBox txt_em_no;
+        private System.Windows.Forms.ComboBox date_of_marriage_d;
+        private System.Windows.Forms.ComboBox date_of_marriage_m;
+        private System.Windows.Forms.ComboBox date_of_marriage_y;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.ComboBox comboBox18;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.ComboBox comboBox19;
-        private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.ComboBox comboBox21;
+        private System.Windows.Forms.ComboBox action_status;
+        private System.Windows.Forms.CheckBox married;
+        private System.Windows.Forms.ComboBox date_of_birth_d;
+        private System.Windows.Forms.ComboBox date_of_birth_m;
+        private System.Windows.Forms.ComboBox date_of_birth_y;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ComboBox comboBox22;
-        private System.Windows.Forms.ComboBox comboBox23;
+        private System.Windows.Forms.ComboBox occupation;
+        private System.Windows.Forms.ComboBox employee_type;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.ComboBox comboBox24;
+        private System.Windows.Forms.ComboBox salutation;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;

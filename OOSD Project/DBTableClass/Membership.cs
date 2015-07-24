@@ -15,7 +15,7 @@ namespace OOSD_Project.DBTableClass
         public string contribution { set; get; }
 
 
-        string begin_date;
+        public string begin_date;
         public string getBegin_date()
         {
             return begin_date;
@@ -27,7 +27,7 @@ namespace OOSD_Project.DBTableClass
         }
 
 
-        string renewal_date;
+        public string renewal_date;
         public string getRenewal_date()
         {
             return renewal_date;
@@ -43,7 +43,7 @@ namespace OOSD_Project.DBTableClass
         public bool personal_payment { set; get; }
 
 
-        string active_date_person;
+        public string active_date_person;
         public string getActive_date_person()
         {
             return active_date_person;
@@ -58,7 +58,7 @@ namespace OOSD_Project.DBTableClass
         public bool institutional_payment { set; get; }
 
 
-        string active_date_insti;
+        public string active_date_insti;
         public string getActive_date_insti()
         {
             return active_date_insti;

@@ -189,11 +189,41 @@ namespace OOSD_Project
             we_institute.Text = we.institute;
             we_resign_reason.Text = we.resign_reason;
             we_telephone.Text = we.telephone;
-            
+
+
+            //Load extra curricular activity details
+            ExtracurricularActivity ea = ExtracurricularActivityHandler.getExtracurricularActivity();
+
+            ea_award.Text = ea.award;
+            ea_method.Text = ea.method;
+            ea_type.Text = ea.type;
+
+
+
+            //Load membership details
+            /*Membership mem = MembershipHandler.getMembership();
+
+            member_contribution.Text = mem.contribution;
+            member_id.Text = mem.member_id;
+            member_institute.Text = mem.institute;
+            member_method.Text = mem.method;
+            member_status.Text = mem.status;
+            memebr_post_name.Text = mem.post_name;
+
+            if (mem.personal_payment == true) { member_personal_payment.Checked = true; }
+            else { member_personal_payment.Checked = false; }
+
+            if (mem.institutional_payment == true) { member_institutional_payment.Checked = true; }
+            else { member_institutional_payment.Checked = false; }*/
 
         }
 
         private void wsd_rank_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox64_TextChanged(object sender, EventArgs e)
         {
 
         }

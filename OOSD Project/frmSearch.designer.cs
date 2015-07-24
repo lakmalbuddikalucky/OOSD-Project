@@ -327,46 +327,46 @@
             this.we_institute = new System.Windows.Forms.TextBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.label108 = new System.Windows.Forms.Label();
-            this.textBox60 = new System.Windows.Forms.TextBox();
-            this.textBox61 = new System.Windows.Forms.TextBox();
+            this.ea_award = new System.Windows.Forms.TextBox();
+            this.ea_method = new System.Windows.Forms.TextBox();
             this.label109 = new System.Windows.Forms.Label();
-            this.comboBox55 = new System.Windows.Forms.ComboBox();
+            this.ea_type = new System.Windows.Forms.ComboBox();
             this.label110 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.comboBox56 = new System.Windows.Forms.ComboBox();
-            this.comboBox57 = new System.Windows.Forms.ComboBox();
-            this.comboBox58 = new System.Windows.Forms.ComboBox();
-            this.comboBox59 = new System.Windows.Forms.ComboBox();
-            this.comboBox60 = new System.Windows.Forms.ComboBox();
-            this.comboBox61 = new System.Windows.Forms.ComboBox();
-            this.comboBox62 = new System.Windows.Forms.ComboBox();
-            this.comboBox63 = new System.Windows.Forms.ComboBox();
-            this.comboBox64 = new System.Windows.Forms.ComboBox();
-            this.comboBox65 = new System.Windows.Forms.ComboBox();
-            this.comboBox66 = new System.Windows.Forms.ComboBox();
-            this.comboBox67 = new System.Windows.Forms.ComboBox();
+            this.member_active_date_insti_d = new System.Windows.Forms.ComboBox();
+            this.member_active_date_insti_m = new System.Windows.Forms.ComboBox();
+            this.member_active_date_insti_y = new System.Windows.Forms.ComboBox();
+            this.member_active_date_person_d = new System.Windows.Forms.ComboBox();
+            this.member_active_date_person_m = new System.Windows.Forms.ComboBox();
+            this.member_active_date_person_y = new System.Windows.Forms.ComboBox();
+            this.member_renewal_date_d = new System.Windows.Forms.ComboBox();
+            this.member_renewal_date_m = new System.Windows.Forms.ComboBox();
+            this.member_renewal_date_y = new System.Windows.Forms.ComboBox();
+            this.member_begin_date_d = new System.Windows.Forms.ComboBox();
+            this.member_begin_date_m = new System.Windows.Forms.ComboBox();
+            this.member_begin_date_y = new System.Windows.Forms.ComboBox();
             this.label111 = new System.Windows.Forms.Label();
             this.label112 = new System.Windows.Forms.Label();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.member_institutional_payment = new System.Windows.Forms.CheckBox();
+            this.member_personal_payment = new System.Windows.Forms.CheckBox();
             this.label113 = new System.Windows.Forms.Label();
-            this.comboBox68 = new System.Windows.Forms.ComboBox();
+            this.member_status = new System.Windows.Forms.ComboBox();
             this.label114 = new System.Windows.Forms.Label();
             this.label115 = new System.Windows.Forms.Label();
             this.label116 = new System.Windows.Forms.Label();
-            this.textBox62 = new System.Windows.Forms.TextBox();
+            this.member_contribution = new System.Windows.Forms.TextBox();
             this.label117 = new System.Windows.Forms.Label();
-            this.textBox63 = new System.Windows.Forms.TextBox();
+            this.member_id = new System.Windows.Forms.TextBox();
             this.label118 = new System.Windows.Forms.Label();
-            this.comboBox69 = new System.Windows.Forms.ComboBox();
+            this.member_method = new System.Windows.Forms.ComboBox();
             this.label119 = new System.Windows.Forms.Label();
-            this.comboBox70 = new System.Windows.Forms.ComboBox();
+            this.memebr_post_name = new System.Windows.Forms.ComboBox();
             this.label120 = new System.Windows.Forms.Label();
-            this.textBox64 = new System.Windows.Forms.TextBox();
+            this.member_institute = new System.Windows.Forms.TextBox();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
             this.label121 = new System.Windows.Forms.Label();
-            this.comboBox71 = new System.Windows.Forms.ComboBox();
+            this.language_name = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label141 = new System.Windows.Forms.Label();
             this.tabControl3 = new System.Windows.Forms.TabControl();
@@ -4273,10 +4273,10 @@
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.label108);
-            this.tabPage8.Controls.Add(this.textBox60);
-            this.tabPage8.Controls.Add(this.textBox61);
+            this.tabPage8.Controls.Add(this.ea_award);
+            this.tabPage8.Controls.Add(this.ea_method);
             this.tabPage8.Controls.Add(this.label109);
-            this.tabPage8.Controls.Add(this.comboBox55);
+            this.tabPage8.Controls.Add(this.ea_type);
             this.tabPage8.Controls.Add(this.label110);
             this.tabPage8.Location = new System.Drawing.Point(4, 34);
             this.tabPage8.Name = "tabPage8";
@@ -4294,20 +4294,20 @@
             this.label108.TabIndex = 7;
             this.label108.Text = "ජයග්‍රහණ";
             // 
-            // textBox60
+            // ea_award
             // 
-            this.textBox60.Location = new System.Drawing.Point(306, 109);
-            this.textBox60.Multiline = true;
-            this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(350, 200);
-            this.textBox60.TabIndex = 6;
+            this.ea_award.Location = new System.Drawing.Point(306, 109);
+            this.ea_award.Multiline = true;
+            this.ea_award.Name = "ea_award";
+            this.ea_award.Size = new System.Drawing.Size(350, 200);
+            this.ea_award.TabIndex = 6;
             // 
-            // textBox61
+            // ea_method
             // 
-            this.textBox61.Location = new System.Drawing.Point(306, 70);
-            this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(200, 33);
-            this.textBox61.TabIndex = 5;
+            this.ea_method.Location = new System.Drawing.Point(306, 70);
+            this.ea_method.Name = "ea_method";
+            this.ea_method.Size = new System.Drawing.Size(200, 33);
+            this.ea_method.TabIndex = 5;
             // 
             // label109
             // 
@@ -4318,13 +4318,13 @@
             this.label109.TabIndex = 4;
             this.label109.Text = "ආකාරය";
             // 
-            // comboBox55
+            // ea_type
             // 
-            this.comboBox55.FormattingEnabled = true;
-            this.comboBox55.Location = new System.Drawing.Point(306, 30);
-            this.comboBox55.Name = "comboBox55";
-            this.comboBox55.Size = new System.Drawing.Size(121, 34);
-            this.comboBox55.TabIndex = 3;
+            this.ea_type.FormattingEnabled = true;
+            this.ea_type.Location = new System.Drawing.Point(306, 30);
+            this.ea_type.Name = "ea_type";
+            this.ea_type.Size = new System.Drawing.Size(121, 34);
+            this.ea_type.TabIndex = 3;
             // 
             // label110
             // 
@@ -4337,36 +4337,36 @@
             // 
             // tabPage9
             // 
-            this.tabPage9.Controls.Add(this.comboBox56);
-            this.tabPage9.Controls.Add(this.comboBox57);
-            this.tabPage9.Controls.Add(this.comboBox58);
-            this.tabPage9.Controls.Add(this.comboBox59);
-            this.tabPage9.Controls.Add(this.comboBox60);
-            this.tabPage9.Controls.Add(this.comboBox61);
-            this.tabPage9.Controls.Add(this.comboBox62);
-            this.tabPage9.Controls.Add(this.comboBox63);
-            this.tabPage9.Controls.Add(this.comboBox64);
-            this.tabPage9.Controls.Add(this.comboBox65);
-            this.tabPage9.Controls.Add(this.comboBox66);
-            this.tabPage9.Controls.Add(this.comboBox67);
+            this.tabPage9.Controls.Add(this.member_active_date_insti_d);
+            this.tabPage9.Controls.Add(this.member_active_date_insti_m);
+            this.tabPage9.Controls.Add(this.member_active_date_insti_y);
+            this.tabPage9.Controls.Add(this.member_active_date_person_d);
+            this.tabPage9.Controls.Add(this.member_active_date_person_m);
+            this.tabPage9.Controls.Add(this.member_active_date_person_y);
+            this.tabPage9.Controls.Add(this.member_renewal_date_d);
+            this.tabPage9.Controls.Add(this.member_renewal_date_m);
+            this.tabPage9.Controls.Add(this.member_renewal_date_y);
+            this.tabPage9.Controls.Add(this.member_begin_date_d);
+            this.tabPage9.Controls.Add(this.member_begin_date_m);
+            this.tabPage9.Controls.Add(this.member_begin_date_y);
             this.tabPage9.Controls.Add(this.label111);
             this.tabPage9.Controls.Add(this.label112);
-            this.tabPage9.Controls.Add(this.checkBox7);
-            this.tabPage9.Controls.Add(this.checkBox8);
+            this.tabPage9.Controls.Add(this.member_institutional_payment);
+            this.tabPage9.Controls.Add(this.member_personal_payment);
             this.tabPage9.Controls.Add(this.label113);
-            this.tabPage9.Controls.Add(this.comboBox68);
+            this.tabPage9.Controls.Add(this.member_status);
             this.tabPage9.Controls.Add(this.label114);
             this.tabPage9.Controls.Add(this.label115);
             this.tabPage9.Controls.Add(this.label116);
-            this.tabPage9.Controls.Add(this.textBox62);
+            this.tabPage9.Controls.Add(this.member_contribution);
             this.tabPage9.Controls.Add(this.label117);
-            this.tabPage9.Controls.Add(this.textBox63);
+            this.tabPage9.Controls.Add(this.member_id);
             this.tabPage9.Controls.Add(this.label118);
-            this.tabPage9.Controls.Add(this.comboBox69);
+            this.tabPage9.Controls.Add(this.member_method);
             this.tabPage9.Controls.Add(this.label119);
-            this.tabPage9.Controls.Add(this.comboBox70);
+            this.tabPage9.Controls.Add(this.memebr_post_name);
             this.tabPage9.Controls.Add(this.label120);
-            this.tabPage9.Controls.Add(this.textBox64);
+            this.tabPage9.Controls.Add(this.member_institute);
             this.tabPage9.Location = new System.Drawing.Point(4, 34);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Size = new System.Drawing.Size(1041, 518);
@@ -4374,11 +4374,11 @@
             this.tabPage9.Text = "Membership";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
-            // comboBox56
+            // member_active_date_insti_d
             // 
-            this.comboBox56.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox56.FormattingEnabled = true;
-            this.comboBox56.Items.AddRange(new object[] {
+            this.member_active_date_insti_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.member_active_date_insti_d.FormattingEnabled = true;
+            this.member_active_date_insti_d.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -4410,17 +4410,17 @@
             "29",
             "30",
             "31"});
-            this.comboBox56.Location = new System.Drawing.Point(716, 379);
-            this.comboBox56.Name = "comboBox56";
-            this.comboBox56.Size = new System.Drawing.Size(91, 34);
-            this.comboBox56.TabIndex = 48;
-            this.comboBox56.Text = "    දිනය";
+            this.member_active_date_insti_d.Location = new System.Drawing.Point(716, 379);
+            this.member_active_date_insti_d.Name = "member_active_date_insti_d";
+            this.member_active_date_insti_d.Size = new System.Drawing.Size(91, 34);
+            this.member_active_date_insti_d.TabIndex = 48;
+            this.member_active_date_insti_d.Text = "    දිනය";
             // 
-            // comboBox57
+            // member_active_date_insti_m
             // 
-            this.comboBox57.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox57.FormattingEnabled = true;
-            this.comboBox57.Items.AddRange(new object[] {
+            this.member_active_date_insti_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.member_active_date_insti_m.FormattingEnabled = true;
+            this.member_active_date_insti_m.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -4433,17 +4433,17 @@
             "October",
             "November",
             "December"});
-            this.comboBox57.Location = new System.Drawing.Point(619, 379);
-            this.comboBox57.Name = "comboBox57";
-            this.comboBox57.Size = new System.Drawing.Size(91, 34);
-            this.comboBox57.TabIndex = 47;
-            this.comboBox57.Text = "   මාසය";
+            this.member_active_date_insti_m.Location = new System.Drawing.Point(619, 379);
+            this.member_active_date_insti_m.Name = "member_active_date_insti_m";
+            this.member_active_date_insti_m.Size = new System.Drawing.Size(91, 34);
+            this.member_active_date_insti_m.TabIndex = 47;
+            this.member_active_date_insti_m.Text = "   මාසය";
             // 
-            // comboBox58
+            // member_active_date_insti_y
             // 
-            this.comboBox58.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox58.FormattingEnabled = true;
-            this.comboBox58.Items.AddRange(new object[] {
+            this.member_active_date_insti_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.member_active_date_insti_y.FormattingEnabled = true;
+            this.member_active_date_insti_y.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -4519,17 +4519,17 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox58.Location = new System.Drawing.Point(510, 379);
-            this.comboBox58.Name = "comboBox58";
-            this.comboBox58.Size = new System.Drawing.Size(103, 34);
-            this.comboBox58.TabIndex = 46;
-            this.comboBox58.Text = "   වර්ෂය";
+            this.member_active_date_insti_y.Location = new System.Drawing.Point(510, 379);
+            this.member_active_date_insti_y.Name = "member_active_date_insti_y";
+            this.member_active_date_insti_y.Size = new System.Drawing.Size(103, 34);
+            this.member_active_date_insti_y.TabIndex = 46;
+            this.member_active_date_insti_y.Text = "   වර්ෂය";
             // 
-            // comboBox59
+            // member_active_date_person_d
             // 
-            this.comboBox59.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox59.FormattingEnabled = true;
-            this.comboBox59.Items.AddRange(new object[] {
+            this.member_active_date_person_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.member_active_date_person_d.FormattingEnabled = true;
+            this.member_active_date_person_d.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -4561,17 +4561,17 @@
             "29",
             "30",
             "31"});
-            this.comboBox59.Location = new System.Drawing.Point(716, 338);
-            this.comboBox59.Name = "comboBox59";
-            this.comboBox59.Size = new System.Drawing.Size(91, 34);
-            this.comboBox59.TabIndex = 45;
-            this.comboBox59.Text = "    දිනය";
+            this.member_active_date_person_d.Location = new System.Drawing.Point(716, 338);
+            this.member_active_date_person_d.Name = "member_active_date_person_d";
+            this.member_active_date_person_d.Size = new System.Drawing.Size(91, 34);
+            this.member_active_date_person_d.TabIndex = 45;
+            this.member_active_date_person_d.Text = "    දිනය";
             // 
-            // comboBox60
+            // member_active_date_person_m
             // 
-            this.comboBox60.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox60.FormattingEnabled = true;
-            this.comboBox60.Items.AddRange(new object[] {
+            this.member_active_date_person_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.member_active_date_person_m.FormattingEnabled = true;
+            this.member_active_date_person_m.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -4584,17 +4584,17 @@
             "October",
             "November",
             "December"});
-            this.comboBox60.Location = new System.Drawing.Point(619, 338);
-            this.comboBox60.Name = "comboBox60";
-            this.comboBox60.Size = new System.Drawing.Size(91, 34);
-            this.comboBox60.TabIndex = 44;
-            this.comboBox60.Text = "   මාසය";
+            this.member_active_date_person_m.Location = new System.Drawing.Point(619, 338);
+            this.member_active_date_person_m.Name = "member_active_date_person_m";
+            this.member_active_date_person_m.Size = new System.Drawing.Size(91, 34);
+            this.member_active_date_person_m.TabIndex = 44;
+            this.member_active_date_person_m.Text = "   මාසය";
             // 
-            // comboBox61
+            // member_active_date_person_y
             // 
-            this.comboBox61.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox61.FormattingEnabled = true;
-            this.comboBox61.Items.AddRange(new object[] {
+            this.member_active_date_person_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.member_active_date_person_y.FormattingEnabled = true;
+            this.member_active_date_person_y.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -4670,17 +4670,17 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox61.Location = new System.Drawing.Point(510, 338);
-            this.comboBox61.Name = "comboBox61";
-            this.comboBox61.Size = new System.Drawing.Size(103, 34);
-            this.comboBox61.TabIndex = 43;
-            this.comboBox61.Text = "   වර්ෂය";
+            this.member_active_date_person_y.Location = new System.Drawing.Point(510, 338);
+            this.member_active_date_person_y.Name = "member_active_date_person_y";
+            this.member_active_date_person_y.Size = new System.Drawing.Size(103, 34);
+            this.member_active_date_person_y.TabIndex = 43;
+            this.member_active_date_person_y.Text = "   වර්ෂය";
             // 
-            // comboBox62
+            // member_renewal_date_d
             // 
-            this.comboBox62.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox62.FormattingEnabled = true;
-            this.comboBox62.Items.AddRange(new object[] {
+            this.member_renewal_date_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.member_renewal_date_d.FormattingEnabled = true;
+            this.member_renewal_date_d.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -4712,17 +4712,17 @@
             "29",
             "30",
             "31"});
-            this.comboBox62.Location = new System.Drawing.Point(512, 267);
-            this.comboBox62.Name = "comboBox62";
-            this.comboBox62.Size = new System.Drawing.Size(91, 34);
-            this.comboBox62.TabIndex = 42;
-            this.comboBox62.Text = "    දිනය";
+            this.member_renewal_date_d.Location = new System.Drawing.Point(512, 267);
+            this.member_renewal_date_d.Name = "member_renewal_date_d";
+            this.member_renewal_date_d.Size = new System.Drawing.Size(91, 34);
+            this.member_renewal_date_d.TabIndex = 42;
+            this.member_renewal_date_d.Text = "    දිනය";
             // 
-            // comboBox63
+            // member_renewal_date_m
             // 
-            this.comboBox63.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox63.FormattingEnabled = true;
-            this.comboBox63.Items.AddRange(new object[] {
+            this.member_renewal_date_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.member_renewal_date_m.FormattingEnabled = true;
+            this.member_renewal_date_m.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -4735,17 +4735,17 @@
             "October",
             "November",
             "December"});
-            this.comboBox63.Location = new System.Drawing.Point(415, 267);
-            this.comboBox63.Name = "comboBox63";
-            this.comboBox63.Size = new System.Drawing.Size(91, 34);
-            this.comboBox63.TabIndex = 41;
-            this.comboBox63.Text = "   මාසය";
+            this.member_renewal_date_m.Location = new System.Drawing.Point(415, 267);
+            this.member_renewal_date_m.Name = "member_renewal_date_m";
+            this.member_renewal_date_m.Size = new System.Drawing.Size(91, 34);
+            this.member_renewal_date_m.TabIndex = 41;
+            this.member_renewal_date_m.Text = "   මාසය";
             // 
-            // comboBox64
+            // member_renewal_date_y
             // 
-            this.comboBox64.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox64.FormattingEnabled = true;
-            this.comboBox64.Items.AddRange(new object[] {
+            this.member_renewal_date_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.member_renewal_date_y.FormattingEnabled = true;
+            this.member_renewal_date_y.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -4821,17 +4821,17 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox64.Location = new System.Drawing.Point(306, 267);
-            this.comboBox64.Name = "comboBox64";
-            this.comboBox64.Size = new System.Drawing.Size(103, 34);
-            this.comboBox64.TabIndex = 40;
-            this.comboBox64.Text = "   වර්ෂය";
+            this.member_renewal_date_y.Location = new System.Drawing.Point(306, 267);
+            this.member_renewal_date_y.Name = "member_renewal_date_y";
+            this.member_renewal_date_y.Size = new System.Drawing.Size(103, 34);
+            this.member_renewal_date_y.TabIndex = 40;
+            this.member_renewal_date_y.Text = "   වර්ෂය";
             // 
-            // comboBox65
+            // member_begin_date_d
             // 
-            this.comboBox65.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox65.FormattingEnabled = true;
-            this.comboBox65.Items.AddRange(new object[] {
+            this.member_begin_date_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.member_begin_date_d.FormattingEnabled = true;
+            this.member_begin_date_d.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -4863,17 +4863,17 @@
             "29",
             "30",
             "31"});
-            this.comboBox65.Location = new System.Drawing.Point(512, 227);
-            this.comboBox65.Name = "comboBox65";
-            this.comboBox65.Size = new System.Drawing.Size(91, 34);
-            this.comboBox65.TabIndex = 39;
-            this.comboBox65.Text = "    දිනය";
+            this.member_begin_date_d.Location = new System.Drawing.Point(512, 227);
+            this.member_begin_date_d.Name = "member_begin_date_d";
+            this.member_begin_date_d.Size = new System.Drawing.Size(91, 34);
+            this.member_begin_date_d.TabIndex = 39;
+            this.member_begin_date_d.Text = "    දිනය";
             // 
-            // comboBox66
+            // member_begin_date_m
             // 
-            this.comboBox66.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox66.FormattingEnabled = true;
-            this.comboBox66.Items.AddRange(new object[] {
+            this.member_begin_date_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.member_begin_date_m.FormattingEnabled = true;
+            this.member_begin_date_m.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -4886,17 +4886,17 @@
             "October",
             "November",
             "December"});
-            this.comboBox66.Location = new System.Drawing.Point(415, 227);
-            this.comboBox66.Name = "comboBox66";
-            this.comboBox66.Size = new System.Drawing.Size(91, 34);
-            this.comboBox66.TabIndex = 38;
-            this.comboBox66.Text = "   මාසය";
+            this.member_begin_date_m.Location = new System.Drawing.Point(415, 227);
+            this.member_begin_date_m.Name = "member_begin_date_m";
+            this.member_begin_date_m.Size = new System.Drawing.Size(91, 34);
+            this.member_begin_date_m.TabIndex = 38;
+            this.member_begin_date_m.Text = "   මාසය";
             // 
-            // comboBox67
+            // member_begin_date_y
             // 
-            this.comboBox67.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox67.FormattingEnabled = true;
-            this.comboBox67.Items.AddRange(new object[] {
+            this.member_begin_date_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.member_begin_date_y.FormattingEnabled = true;
+            this.member_begin_date_y.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -4972,11 +4972,11 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox67.Location = new System.Drawing.Point(306, 227);
-            this.comboBox67.Name = "comboBox67";
-            this.comboBox67.Size = new System.Drawing.Size(103, 34);
-            this.comboBox67.TabIndex = 37;
-            this.comboBox67.Text = "   වර්ෂය";
+            this.member_begin_date_y.Location = new System.Drawing.Point(306, 227);
+            this.member_begin_date_y.Name = "member_begin_date_y";
+            this.member_begin_date_y.Size = new System.Drawing.Size(103, 34);
+            this.member_begin_date_y.TabIndex = 37;
+            this.member_begin_date_y.Text = "   වර්ෂය";
             // 
             // label111
             // 
@@ -4996,27 +4996,27 @@
             this.label112.TabIndex = 21;
             this.label112.Text = "ක්‍රියාත්මක දිනය";
             // 
-            // checkBox7
+            // member_institutional_payment
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(95, 381);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox7.Size = new System.Drawing.Size(224, 30);
-            this.checkBox7.TabIndex = 18;
-            this.checkBox7.Text = "ගෙවීම ආයතනය මගින්";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.member_institutional_payment.AutoSize = true;
+            this.member_institutional_payment.Location = new System.Drawing.Point(95, 381);
+            this.member_institutional_payment.Name = "member_institutional_payment";
+            this.member_institutional_payment.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.member_institutional_payment.Size = new System.Drawing.Size(224, 30);
+            this.member_institutional_payment.TabIndex = 18;
+            this.member_institutional_payment.Text = "ගෙවීම ආයතනය මගින්";
+            this.member_institutional_payment.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // member_personal_payment
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(122, 345);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox8.Size = new System.Drawing.Size(197, 30);
-            this.checkBox8.TabIndex = 17;
-            this.checkBox8.Text = "ගෙවීම පෞද්ගලිකව";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.member_personal_payment.AutoSize = true;
+            this.member_personal_payment.Location = new System.Drawing.Point(122, 345);
+            this.member_personal_payment.Name = "member_personal_payment";
+            this.member_personal_payment.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.member_personal_payment.Size = new System.Drawing.Size(197, 30);
+            this.member_personal_payment.TabIndex = 17;
+            this.member_personal_payment.Text = "ගෙවීම පෞද්ගලිකව";
+            this.member_personal_payment.UseVisualStyleBackColor = true;
             // 
             // label113
             // 
@@ -5027,13 +5027,13 @@
             this.label113.TabIndex = 16;
             this.label113.Text = "සාමාජික තත්වය";
             // 
-            // comboBox68
+            // member_status
             // 
-            this.comboBox68.FormattingEnabled = true;
-            this.comboBox68.Location = new System.Drawing.Point(306, 305);
-            this.comboBox68.Name = "comboBox68";
-            this.comboBox68.Size = new System.Drawing.Size(121, 34);
-            this.comboBox68.TabIndex = 15;
+            this.member_status.FormattingEnabled = true;
+            this.member_status.Location = new System.Drawing.Point(306, 305);
+            this.member_status.Name = "member_status";
+            this.member_status.Size = new System.Drawing.Size(121, 34);
+            this.member_status.TabIndex = 15;
             // 
             // label114
             // 
@@ -5062,12 +5062,12 @@
             this.label116.TabIndex = 10;
             this.label116.Text = "දායකත්වය";
             // 
-            // textBox62
+            // member_contribution
             // 
-            this.textBox62.Location = new System.Drawing.Point(306, 188);
-            this.textBox62.Name = "textBox62";
-            this.textBox62.Size = new System.Drawing.Size(200, 33);
-            this.textBox62.TabIndex = 9;
+            this.member_contribution.Location = new System.Drawing.Point(306, 188);
+            this.member_contribution.Name = "member_contribution";
+            this.member_contribution.Size = new System.Drawing.Size(200, 33);
+            this.member_contribution.TabIndex = 9;
             // 
             // label117
             // 
@@ -5078,12 +5078,12 @@
             this.label117.TabIndex = 8;
             this.label117.Text = "සාමාජිකත්ව හැඳුනුම් අංකය";
             // 
-            // textBox63
+            // member_id
             // 
-            this.textBox63.Location = new System.Drawing.Point(306, 149);
-            this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(200, 33);
-            this.textBox63.TabIndex = 7;
+            this.member_id.Location = new System.Drawing.Point(306, 149);
+            this.member_id.Name = "member_id";
+            this.member_id.Size = new System.Drawing.Size(200, 33);
+            this.member_id.TabIndex = 7;
             // 
             // label118
             // 
@@ -5094,13 +5094,13 @@
             this.label118.TabIndex = 6;
             this.label118.Text = "සාමාජිකත්ව ආකාරය";
             // 
-            // comboBox69
+            // member_method
             // 
-            this.comboBox69.FormattingEnabled = true;
-            this.comboBox69.Location = new System.Drawing.Point(306, 109);
-            this.comboBox69.Name = "comboBox69";
-            this.comboBox69.Size = new System.Drawing.Size(121, 34);
-            this.comboBox69.TabIndex = 5;
+            this.member_method.FormattingEnabled = true;
+            this.member_method.Location = new System.Drawing.Point(306, 109);
+            this.member_method.Name = "member_method";
+            this.member_method.Size = new System.Drawing.Size(121, 34);
+            this.member_method.TabIndex = 5;
             // 
             // label119
             // 
@@ -5111,13 +5111,13 @@
             this.label119.TabIndex = 4;
             this.label119.Text = "සාමාජිකත්ව පදවි නාමය";
             // 
-            // comboBox70
+            // memebr_post_name
             // 
-            this.comboBox70.FormattingEnabled = true;
-            this.comboBox70.Location = new System.Drawing.Point(306, 69);
-            this.comboBox70.Name = "comboBox70";
-            this.comboBox70.Size = new System.Drawing.Size(121, 34);
-            this.comboBox70.TabIndex = 3;
+            this.memebr_post_name.FormattingEnabled = true;
+            this.memebr_post_name.Location = new System.Drawing.Point(306, 69);
+            this.memebr_post_name.Name = "memebr_post_name";
+            this.memebr_post_name.Size = new System.Drawing.Size(121, 34);
+            this.memebr_post_name.TabIndex = 3;
             // 
             // label120
             // 
@@ -5128,18 +5128,19 @@
             this.label120.TabIndex = 2;
             this.label120.Text = "සාමාජිකත්වය දැරූ ආයතනය";
             // 
-            // textBox64
+            // member_institute
             // 
-            this.textBox64.Location = new System.Drawing.Point(306, 30);
-            this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(200, 33);
-            this.textBox64.TabIndex = 1;
+            this.member_institute.Location = new System.Drawing.Point(306, 30);
+            this.member_institute.Name = "member_institute";
+            this.member_institute.Size = new System.Drawing.Size(200, 33);
+            this.member_institute.TabIndex = 1;
+            this.member_institute.TextChanged += new System.EventHandler(this.textBox64_TextChanged);
             // 
             // tabPage10
             // 
             this.tabPage10.Controls.Add(this.button3);
             this.tabPage10.Controls.Add(this.label121);
-            this.tabPage10.Controls.Add(this.comboBox71);
+            this.tabPage10.Controls.Add(this.language_name);
             this.tabPage10.Location = new System.Drawing.Point(4, 34);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Size = new System.Drawing.Size(1041, 518);
@@ -5165,13 +5166,13 @@
             this.label121.TabIndex = 11;
             this.label121.Text = "භාෂාව";
             // 
-            // comboBox71
+            // language_name
             // 
-            this.comboBox71.FormattingEnabled = true;
-            this.comboBox71.Location = new System.Drawing.Point(306, 30);
-            this.comboBox71.Name = "comboBox71";
-            this.comboBox71.Size = new System.Drawing.Size(121, 34);
-            this.comboBox71.TabIndex = 0;
+            this.language_name.FormattingEnabled = true;
+            this.language_name.Location = new System.Drawing.Point(306, 30);
+            this.language_name.Name = "language_name";
+            this.language_name.Size = new System.Drawing.Size(121, 34);
+            this.language_name.TabIndex = 0;
             // 
             // panel7
             // 
@@ -7527,46 +7528,46 @@
         private System.Windows.Forms.TextBox we_institute;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.Label label108;
-        private System.Windows.Forms.TextBox textBox60;
-        private System.Windows.Forms.TextBox textBox61;
+        private System.Windows.Forms.TextBox ea_award;
+        private System.Windows.Forms.TextBox ea_method;
         private System.Windows.Forms.Label label109;
-        private System.Windows.Forms.ComboBox comboBox55;
+        private System.Windows.Forms.ComboBox ea_type;
         private System.Windows.Forms.Label label110;
         private System.Windows.Forms.TabPage tabPage9;
-        private System.Windows.Forms.ComboBox comboBox56;
-        private System.Windows.Forms.ComboBox comboBox57;
-        private System.Windows.Forms.ComboBox comboBox58;
-        private System.Windows.Forms.ComboBox comboBox59;
-        private System.Windows.Forms.ComboBox comboBox60;
-        private System.Windows.Forms.ComboBox comboBox61;
-        private System.Windows.Forms.ComboBox comboBox62;
-        private System.Windows.Forms.ComboBox comboBox63;
-        private System.Windows.Forms.ComboBox comboBox64;
-        private System.Windows.Forms.ComboBox comboBox65;
-        private System.Windows.Forms.ComboBox comboBox66;
-        private System.Windows.Forms.ComboBox comboBox67;
+        private System.Windows.Forms.ComboBox member_active_date_insti_d;
+        private System.Windows.Forms.ComboBox member_active_date_insti_m;
+        private System.Windows.Forms.ComboBox member_active_date_insti_y;
+        private System.Windows.Forms.ComboBox member_active_date_person_d;
+        private System.Windows.Forms.ComboBox member_active_date_person_m;
+        private System.Windows.Forms.ComboBox member_active_date_person_y;
+        private System.Windows.Forms.ComboBox member_renewal_date_d;
+        private System.Windows.Forms.ComboBox member_renewal_date_m;
+        private System.Windows.Forms.ComboBox member_renewal_date_y;
+        private System.Windows.Forms.ComboBox member_begin_date_d;
+        private System.Windows.Forms.ComboBox member_begin_date_m;
+        private System.Windows.Forms.ComboBox member_begin_date_y;
         private System.Windows.Forms.Label label111;
         private System.Windows.Forms.Label label112;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox member_institutional_payment;
+        private System.Windows.Forms.CheckBox member_personal_payment;
         private System.Windows.Forms.Label label113;
-        private System.Windows.Forms.ComboBox comboBox68;
+        private System.Windows.Forms.ComboBox member_status;
         private System.Windows.Forms.Label label114;
         private System.Windows.Forms.Label label115;
         private System.Windows.Forms.Label label116;
-        private System.Windows.Forms.TextBox textBox62;
+        private System.Windows.Forms.TextBox member_contribution;
         private System.Windows.Forms.Label label117;
-        private System.Windows.Forms.TextBox textBox63;
+        private System.Windows.Forms.TextBox member_id;
         private System.Windows.Forms.Label label118;
-        private System.Windows.Forms.ComboBox comboBox69;
+        private System.Windows.Forms.ComboBox member_method;
         private System.Windows.Forms.Label label119;
-        private System.Windows.Forms.ComboBox comboBox70;
+        private System.Windows.Forms.ComboBox memebr_post_name;
         private System.Windows.Forms.Label label120;
-        private System.Windows.Forms.TextBox textBox64;
+        private System.Windows.Forms.TextBox member_institute;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label121;
-        private System.Windows.Forms.ComboBox comboBox71;
+        private System.Windows.Forms.ComboBox language_name;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label141;
         private System.Windows.Forms.TabControl tabControl3;

@@ -16,7 +16,7 @@ namespace OOSD_Project.DBTableClass
         public string contact { set; get; }
         
         
-        private string date_from;
+        public string date_from;
         public string getDate_from()
         {
             return date_from;
@@ -28,7 +28,7 @@ namespace OOSD_Project.DBTableClass
         }
 
 
-        private string date_to;
+        public string date_to;
         public string getDate_to()
         {
             return date_to;
@@ -39,7 +39,7 @@ namespace OOSD_Project.DBTableClass
             this.date_to = dt.ToString("yyyy-MM-dd");
         }
 
-        private string date_perma;
+        public string date_perma;
         public string getDate_perma()
         {
             return date_perma;

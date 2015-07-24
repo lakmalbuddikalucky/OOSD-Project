@@ -178,6 +178,19 @@ namespace OOSD_Project
             else { qual_occupation_relevant.Checked = false; }
 
 
+            //Load working experience details
+            WorkingExperience we = WorkingExperienceHandler.getWorkingExperience();
+
+            we_address.Text = we.address;
+            we_award.Text = we.award;
+            we_contact.Text = we.contact;
+            we_department.Text = we.department;
+            we_email.Text = we.email;
+            we_institute.Text = we.institute;
+            we_resign_reason.Text = we.resign_reason;
+            we_telephone.Text = we.telephone;
+            
+
         }
 
         private void wsd_rank_SelectedIndexChanged(object sender, EventArgs e)

@@ -164,23 +164,23 @@
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.depend_medical = new System.Windows.Forms.CheckBox();
+            this.depend_deathade = new System.Windows.Forms.CheckBox();
             this.label69 = new System.Windows.Forms.Label();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.depend_office_tp = new System.Windows.Forms.TextBox();
+            this.depend_official_address = new System.Windows.Forms.TextBox();
+            this.depend_full_name = new System.Windows.Forms.TextBox();
+            this.depend_marriage_certificate = new System.Windows.Forms.TextBox();
+            this.depend_birth_certificate = new System.Windows.Forms.TextBox();
+            this.depend_note = new System.Windows.Forms.TextBox();
+            this.depend_education = new System.Windows.Forms.TextBox();
+            this.depend_personal_tp = new System.Windows.Forms.TextBox();
+            this.depend_personal_address = new System.Windows.Forms.TextBox();
+            this.depend_nic_no = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.comboBox35 = new System.Windows.Forms.ComboBox();
-            this.comboBox36 = new System.Windows.Forms.ComboBox();
-            this.comboBox37 = new System.Windows.Forms.ComboBox();
+            this.depend_date_of_post_d = new System.Windows.Forms.ComboBox();
+            this.depend_date_of_post_m = new System.Windows.Forms.ComboBox();
+            this.depend_date_of_post_y = new System.Windows.Forms.ComboBox();
             this.label67 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -189,30 +189,30 @@
             this.label64 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
-            this.comboBox38 = new System.Windows.Forms.ComboBox();
+            this.depend_status = new System.Windows.Forms.ComboBox();
             this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
-            this.comboBox39 = new System.Windows.Forms.ComboBox();
+            this.depend_relation = new System.Windows.Forms.ComboBox();
             this.label77 = new System.Windows.Forms.Label();
-            this.comboBox40 = new System.Windows.Forms.ComboBox();
+            this.depend_salutation = new System.Windows.Forms.ComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label81 = new System.Windows.Forms.Label();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.emg_employee_no = new System.Windows.Forms.TextBox();
+            this.emg_office_tp = new System.Windows.Forms.TextBox();
+            this.emg_mobile_no = new System.Windows.Forms.TextBox();
+            this.emg_personal_tp = new System.Windows.Forms.TextBox();
+            this.emg_official_address = new System.Windows.Forms.TextBox();
+            this.emg_full_name = new System.Windows.Forms.TextBox();
+            this.emg_personal_address = new System.Windows.Forms.TextBox();
+            this.emg_nic_no = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
-            this.comboBox41 = new System.Windows.Forms.ComboBox();
+            this.emg_priority = new System.Windows.Forms.ComboBox();
             this.label78 = new System.Windows.Forms.Label();
-            this.comboBox42 = new System.Windows.Forms.ComboBox();
+            this.emg_int_ext = new System.Windows.Forms.ComboBox();
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
@@ -220,25 +220,25 @@
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
-            this.comboBox43 = new System.Windows.Forms.ComboBox();
+            this.emg_relation = new System.Windows.Forms.ComboBox();
             this.label89 = new System.Windows.Forms.Label();
-            this.comboBox44 = new System.Windows.Forms.ComboBox();
+            this.emg_salutation = new System.Windows.Forms.ComboBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.comboBox45 = new System.Windows.Forms.ComboBox();
-            this.comboBox46 = new System.Windows.Forms.ComboBox();
-            this.comboBox47 = new System.Windows.Forms.ComboBox();
+            this.wsd_date_of_post_d = new System.Windows.Forms.ComboBox();
+            this.wsd_date_of_post_m = new System.Windows.Forms.ComboBox();
+            this.wsd_date_of_post_y = new System.Windows.Forms.ComboBox();
             this.label90 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
-            this.comboBox48 = new System.Windows.Forms.ComboBox();
-            this.comboBox49 = new System.Windows.Forms.ComboBox();
-            this.comboBox50 = new System.Windows.Forms.ComboBox();
-            this.comboBox51 = new System.Windows.Forms.ComboBox();
-            this.comboBox52 = new System.Windows.Forms.ComboBox();
+            this.wsd_power = new System.Windows.Forms.ComboBox();
+            this.wsd_post = new System.Windows.Forms.ComboBox();
+            this.wsd_responsibility = new System.Windows.Forms.ComboBox();
+            this.wsd_salary_station = new System.Windows.Forms.ComboBox();
+            this.wsd_rank = new System.Windows.Forms.ComboBox();
             this.label95 = new System.Windows.Forms.Label();
-            this.comboBox53 = new System.Windows.Forms.ComboBox();
+            this.wsd_division = new System.Windows.Forms.ComboBox();
             this.label96 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label122 = new System.Windows.Forms.Label();
@@ -2278,23 +2278,23 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.checkBox3);
-            this.tabPage3.Controls.Add(this.checkBox2);
+            this.tabPage3.Controls.Add(this.depend_medical);
+            this.tabPage3.Controls.Add(this.depend_deathade);
             this.tabPage3.Controls.Add(this.label69);
-            this.tabPage3.Controls.Add(this.textBox36);
-            this.tabPage3.Controls.Add(this.textBox35);
-            this.tabPage3.Controls.Add(this.textBox34);
-            this.tabPage3.Controls.Add(this.textBox33);
-            this.tabPage3.Controls.Add(this.textBox32);
-            this.tabPage3.Controls.Add(this.textBox31);
-            this.tabPage3.Controls.Add(this.textBox30);
-            this.tabPage3.Controls.Add(this.textBox29);
-            this.tabPage3.Controls.Add(this.textBox28);
-            this.tabPage3.Controls.Add(this.textBox27);
+            this.tabPage3.Controls.Add(this.depend_office_tp);
+            this.tabPage3.Controls.Add(this.depend_official_address);
+            this.tabPage3.Controls.Add(this.depend_full_name);
+            this.tabPage3.Controls.Add(this.depend_marriage_certificate);
+            this.tabPage3.Controls.Add(this.depend_birth_certificate);
+            this.tabPage3.Controls.Add(this.depend_note);
+            this.tabPage3.Controls.Add(this.depend_education);
+            this.tabPage3.Controls.Add(this.depend_personal_tp);
+            this.tabPage3.Controls.Add(this.depend_personal_address);
+            this.tabPage3.Controls.Add(this.depend_nic_no);
             this.tabPage3.Controls.Add(this.label68);
-            this.tabPage3.Controls.Add(this.comboBox35);
-            this.tabPage3.Controls.Add(this.comboBox36);
-            this.tabPage3.Controls.Add(this.comboBox37);
+            this.tabPage3.Controls.Add(this.depend_date_of_post_d);
+            this.tabPage3.Controls.Add(this.depend_date_of_post_m);
+            this.tabPage3.Controls.Add(this.depend_date_of_post_y);
             this.tabPage3.Controls.Add(this.label67);
             this.tabPage3.Controls.Add(this.label66);
             this.tabPage3.Controls.Add(this.button2);
@@ -2303,15 +2303,15 @@
             this.tabPage3.Controls.Add(this.label64);
             this.tabPage3.Controls.Add(this.label70);
             this.tabPage3.Controls.Add(this.label71);
-            this.tabPage3.Controls.Add(this.comboBox38);
+            this.tabPage3.Controls.Add(this.depend_status);
             this.tabPage3.Controls.Add(this.label72);
             this.tabPage3.Controls.Add(this.label73);
             this.tabPage3.Controls.Add(this.label74);
             this.tabPage3.Controls.Add(this.label75);
             this.tabPage3.Controls.Add(this.label76);
-            this.tabPage3.Controls.Add(this.comboBox39);
+            this.tabPage3.Controls.Add(this.depend_relation);
             this.tabPage3.Controls.Add(this.label77);
-            this.tabPage3.Controls.Add(this.comboBox40);
+            this.tabPage3.Controls.Add(this.depend_salutation);
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1041, 670);
@@ -2319,25 +2319,25 @@
             this.tabPage3.Text = "Dependent Details";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // depend_medical
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(930, 257);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(89, 30);
-            this.checkBox3.TabIndex = 33;
-            this.checkBox3.Text = "වෛද්‍ය";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.depend_medical.AutoSize = true;
+            this.depend_medical.Location = new System.Drawing.Point(930, 257);
+            this.depend_medical.Name = "depend_medical";
+            this.depend_medical.Size = new System.Drawing.Size(89, 30);
+            this.depend_medical.TabIndex = 33;
+            this.depend_medical.Text = "වෛද්‍ය";
+            this.depend_medical.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // depend_deathade
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(719, 258);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(118, 30);
-            this.checkBox2.TabIndex = 32;
-            this.checkBox2.Text = "මරණාධාර";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.depend_deathade.AutoSize = true;
+            this.depend_deathade.Location = new System.Drawing.Point(719, 258);
+            this.depend_deathade.Name = "depend_deathade";
+            this.depend_deathade.Size = new System.Drawing.Size(118, 30);
+            this.depend_deathade.TabIndex = 32;
+            this.depend_deathade.Text = "මරණාධාර";
+            this.depend_deathade.UseVisualStyleBackColor = true;
             // 
             // label69
             // 
@@ -2348,78 +2348,78 @@
             this.label69.TabIndex = 31;
             this.label69.Text = "කාර්යාලීය දු.අ.";
             // 
-            // textBox36
+            // depend_office_tp
             // 
-            this.textBox36.Location = new System.Drawing.Point(719, 111);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(200, 33);
-            this.textBox36.TabIndex = 30;
+            this.depend_office_tp.Location = new System.Drawing.Point(719, 111);
+            this.depend_office_tp.Name = "depend_office_tp";
+            this.depend_office_tp.Size = new System.Drawing.Size(200, 33);
+            this.depend_office_tp.TabIndex = 30;
             // 
-            // textBox35
+            // depend_official_address
             // 
-            this.textBox35.Location = new System.Drawing.Point(719, 147);
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(300, 99);
-            this.textBox35.TabIndex = 28;
+            this.depend_official_address.Location = new System.Drawing.Point(719, 147);
+            this.depend_official_address.Multiline = true;
+            this.depend_official_address.Name = "depend_official_address";
+            this.depend_official_address.Size = new System.Drawing.Size(300, 99);
+            this.depend_official_address.TabIndex = 28;
             // 
-            // textBox34
+            // depend_full_name
             // 
-            this.textBox34.Location = new System.Drawing.Point(719, 30);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(200, 33);
-            this.textBox34.TabIndex = 22;
+            this.depend_full_name.Location = new System.Drawing.Point(719, 30);
+            this.depend_full_name.Name = "depend_full_name";
+            this.depend_full_name.Size = new System.Drawing.Size(200, 33);
+            this.depend_full_name.TabIndex = 22;
             // 
-            // textBox33
+            // depend_marriage_certificate
             // 
-            this.textBox33.Location = new System.Drawing.Point(243, 518);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(600, 33);
-            this.textBox33.TabIndex = 19;
+            this.depend_marriage_certificate.Location = new System.Drawing.Point(243, 518);
+            this.depend_marriage_certificate.Name = "depend_marriage_certificate";
+            this.depend_marriage_certificate.Size = new System.Drawing.Size(600, 33);
+            this.depend_marriage_certificate.TabIndex = 19;
             // 
-            // textBox32
+            // depend_birth_certificate
             // 
-            this.textBox32.Location = new System.Drawing.Point(243, 479);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(600, 33);
-            this.textBox32.TabIndex = 17;
+            this.depend_birth_certificate.Location = new System.Drawing.Point(243, 479);
+            this.depend_birth_certificate.Name = "depend_birth_certificate";
+            this.depend_birth_certificate.Size = new System.Drawing.Size(600, 33);
+            this.depend_birth_certificate.TabIndex = 17;
             // 
-            // textBox31
+            // depend_note
             // 
-            this.textBox31.Location = new System.Drawing.Point(243, 374);
-            this.textBox31.Multiline = true;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(600, 99);
-            this.textBox31.TabIndex = 14;
+            this.depend_note.Location = new System.Drawing.Point(243, 374);
+            this.depend_note.Multiline = true;
+            this.depend_note.Name = "depend_note";
+            this.depend_note.Size = new System.Drawing.Size(600, 99);
+            this.depend_note.TabIndex = 14;
             // 
-            // textBox30
+            // depend_education
             // 
-            this.textBox30.Location = new System.Drawing.Point(243, 295);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(200, 33);
-            this.textBox30.TabIndex = 10;
+            this.depend_education.Location = new System.Drawing.Point(243, 295);
+            this.depend_education.Name = "depend_education";
+            this.depend_education.Size = new System.Drawing.Size(200, 33);
+            this.depend_education.TabIndex = 10;
             // 
-            // textBox29
+            // depend_personal_tp
             // 
-            this.textBox29.Location = new System.Drawing.Point(243, 255);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(200, 33);
-            this.textBox29.TabIndex = 8;
+            this.depend_personal_tp.Location = new System.Drawing.Point(243, 255);
+            this.depend_personal_tp.Name = "depend_personal_tp";
+            this.depend_personal_tp.Size = new System.Drawing.Size(200, 33);
+            this.depend_personal_tp.TabIndex = 8;
             // 
-            // textBox28
+            // depend_personal_address
             // 
-            this.textBox28.Location = new System.Drawing.Point(243, 150);
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(300, 99);
-            this.textBox28.TabIndex = 6;
+            this.depend_personal_address.Location = new System.Drawing.Point(243, 150);
+            this.depend_personal_address.Multiline = true;
+            this.depend_personal_address.Name = "depend_personal_address";
+            this.depend_personal_address.Size = new System.Drawing.Size(300, 99);
+            this.depend_personal_address.TabIndex = 6;
             // 
-            // textBox27
+            // depend_nic_no
             // 
-            this.textBox27.Location = new System.Drawing.Point(243, 111);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(200, 33);
-            this.textBox27.TabIndex = 4;
+            this.depend_nic_no.Location = new System.Drawing.Point(243, 111);
+            this.depend_nic_no.Name = "depend_nic_no";
+            this.depend_nic_no.Size = new System.Drawing.Size(200, 33);
+            this.depend_nic_no.TabIndex = 4;
             // 
             // label68
             // 
@@ -2430,35 +2430,35 @@
             this.label68.TabIndex = 29;
             this.label68.Text = "කාර්යාලීය ලිපිනය";
             // 
-            // comboBox35
+            // depend_date_of_post_d
             // 
-            this.comboBox35.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox35.FormattingEnabled = true;
-            this.comboBox35.Location = new System.Drawing.Point(941, 70);
-            this.comboBox35.Name = "comboBox35";
-            this.comboBox35.Size = new System.Drawing.Size(105, 34);
-            this.comboBox35.TabIndex = 27;
-            this.comboBox35.Text = "   දිනය";
+            this.depend_date_of_post_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.depend_date_of_post_d.FormattingEnabled = true;
+            this.depend_date_of_post_d.Location = new System.Drawing.Point(941, 70);
+            this.depend_date_of_post_d.Name = "depend_date_of_post_d";
+            this.depend_date_of_post_d.Size = new System.Drawing.Size(105, 34);
+            this.depend_date_of_post_d.TabIndex = 27;
+            this.depend_date_of_post_d.Text = "   දිනය";
             // 
-            // comboBox36
+            // depend_date_of_post_m
             // 
-            this.comboBox36.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox36.FormattingEnabled = true;
-            this.comboBox36.Location = new System.Drawing.Point(830, 70);
-            this.comboBox36.Name = "comboBox36";
-            this.comboBox36.Size = new System.Drawing.Size(105, 34);
-            this.comboBox36.TabIndex = 26;
-            this.comboBox36.Text = "   මාසය";
+            this.depend_date_of_post_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.depend_date_of_post_m.FormattingEnabled = true;
+            this.depend_date_of_post_m.Location = new System.Drawing.Point(830, 70);
+            this.depend_date_of_post_m.Name = "depend_date_of_post_m";
+            this.depend_date_of_post_m.Size = new System.Drawing.Size(105, 34);
+            this.depend_date_of_post_m.TabIndex = 26;
+            this.depend_date_of_post_m.Text = "   මාසය";
             // 
-            // comboBox37
+            // depend_date_of_post_y
             // 
-            this.comboBox37.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox37.FormattingEnabled = true;
-            this.comboBox37.Location = new System.Drawing.Point(719, 70);
-            this.comboBox37.Name = "comboBox37";
-            this.comboBox37.Size = new System.Drawing.Size(105, 34);
-            this.comboBox37.TabIndex = 25;
-            this.comboBox37.Text = "   වර්ෂය";
+            this.depend_date_of_post_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.depend_date_of_post_y.FormattingEnabled = true;
+            this.depend_date_of_post_y.Location = new System.Drawing.Point(719, 70);
+            this.depend_date_of_post_y.Name = "depend_date_of_post_y";
+            this.depend_date_of_post_y.Size = new System.Drawing.Size(105, 34);
+            this.depend_date_of_post_y.TabIndex = 25;
+            this.depend_date_of_post_y.Text = "   වර්ෂය";
             // 
             // label67
             // 
@@ -2532,13 +2532,13 @@
             this.label71.TabIndex = 13;
             this.label71.Text = "තත්ත්වය";
             // 
-            // comboBox38
+            // depend_status
             // 
-            this.comboBox38.FormattingEnabled = true;
-            this.comboBox38.Location = new System.Drawing.Point(243, 334);
-            this.comboBox38.Name = "comboBox38";
-            this.comboBox38.Size = new System.Drawing.Size(200, 34);
-            this.comboBox38.TabIndex = 12;
+            this.depend_status.FormattingEnabled = true;
+            this.depend_status.Location = new System.Drawing.Point(243, 334);
+            this.depend_status.Name = "depend_status";
+            this.depend_status.Size = new System.Drawing.Size(200, 34);
+            this.depend_status.TabIndex = 12;
             // 
             // label72
             // 
@@ -2585,13 +2585,13 @@
             this.label76.TabIndex = 3;
             this.label76.Text = "ඥාතිත්වය";
             // 
-            // comboBox39
+            // depend_relation
             // 
-            this.comboBox39.FormattingEnabled = true;
-            this.comboBox39.Location = new System.Drawing.Point(243, 70);
-            this.comboBox39.Name = "comboBox39";
-            this.comboBox39.Size = new System.Drawing.Size(200, 34);
-            this.comboBox39.TabIndex = 2;
+            this.depend_relation.FormattingEnabled = true;
+            this.depend_relation.Location = new System.Drawing.Point(243, 70);
+            this.depend_relation.Name = "depend_relation";
+            this.depend_relation.Size = new System.Drawing.Size(200, 34);
+            this.depend_relation.TabIndex = 2;
             // 
             // label77
             // 
@@ -2602,30 +2602,30 @@
             this.label77.TabIndex = 1;
             this.label77.Text = "ආමන්ත්‍රණය";
             // 
-            // comboBox40
+            // depend_salutation
             // 
-            this.comboBox40.FormattingEnabled = true;
-            this.comboBox40.Location = new System.Drawing.Point(243, 30);
-            this.comboBox40.Name = "comboBox40";
-            this.comboBox40.Size = new System.Drawing.Size(200, 34);
-            this.comboBox40.TabIndex = 0;
+            this.depend_salutation.FormattingEnabled = true;
+            this.depend_salutation.Location = new System.Drawing.Point(243, 30);
+            this.depend_salutation.Name = "depend_salutation";
+            this.depend_salutation.Size = new System.Drawing.Size(200, 34);
+            this.depend_salutation.TabIndex = 0;
             // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.label81);
-            this.tabPage4.Controls.Add(this.textBox44);
-            this.tabPage4.Controls.Add(this.textBox43);
-            this.tabPage4.Controls.Add(this.textBox42);
-            this.tabPage4.Controls.Add(this.textBox41);
-            this.tabPage4.Controls.Add(this.textBox37);
-            this.tabPage4.Controls.Add(this.textBox38);
-            this.tabPage4.Controls.Add(this.textBox39);
-            this.tabPage4.Controls.Add(this.textBox40);
+            this.tabPage4.Controls.Add(this.emg_employee_no);
+            this.tabPage4.Controls.Add(this.emg_office_tp);
+            this.tabPage4.Controls.Add(this.emg_mobile_no);
+            this.tabPage4.Controls.Add(this.emg_personal_tp);
+            this.tabPage4.Controls.Add(this.emg_official_address);
+            this.tabPage4.Controls.Add(this.emg_full_name);
+            this.tabPage4.Controls.Add(this.emg_personal_address);
+            this.tabPage4.Controls.Add(this.emg_nic_no);
             this.tabPage4.Controls.Add(this.label80);
             this.tabPage4.Controls.Add(this.label79);
-            this.tabPage4.Controls.Add(this.comboBox41);
+            this.tabPage4.Controls.Add(this.emg_priority);
             this.tabPage4.Controls.Add(this.label78);
-            this.tabPage4.Controls.Add(this.comboBox42);
+            this.tabPage4.Controls.Add(this.emg_int_ext);
             this.tabPage4.Controls.Add(this.label82);
             this.tabPage4.Controls.Add(this.label83);
             this.tabPage4.Controls.Add(this.label84);
@@ -2633,9 +2633,9 @@
             this.tabPage4.Controls.Add(this.label86);
             this.tabPage4.Controls.Add(this.label87);
             this.tabPage4.Controls.Add(this.label88);
-            this.tabPage4.Controls.Add(this.comboBox43);
+            this.tabPage4.Controls.Add(this.emg_relation);
             this.tabPage4.Controls.Add(this.label89);
-            this.tabPage4.Controls.Add(this.comboBox44);
+            this.tabPage4.Controls.Add(this.emg_salutation);
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1041, 670);
@@ -2652,63 +2652,63 @@
             this.label81.TabIndex = 53;
             this.label81.Text = "සේවක අංකය";
             // 
-            // textBox44
+            // emg_employee_no
             // 
-            this.textBox44.Location = new System.Drawing.Point(722, 301);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(200, 33);
-            this.textBox44.TabIndex = 52;
+            this.emg_employee_no.Location = new System.Drawing.Point(722, 301);
+            this.emg_employee_no.Name = "emg_employee_no";
+            this.emg_employee_no.Size = new System.Drawing.Size(200, 33);
+            this.emg_employee_no.TabIndex = 52;
             // 
-            // textBox43
+            // emg_office_tp
             // 
-            this.textBox43.Location = new System.Drawing.Point(722, 262);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(200, 33);
-            this.textBox43.TabIndex = 50;
+            this.emg_office_tp.Location = new System.Drawing.Point(722, 262);
+            this.emg_office_tp.Name = "emg_office_tp";
+            this.emg_office_tp.Size = new System.Drawing.Size(200, 33);
+            this.emg_office_tp.TabIndex = 50;
             // 
-            // textBox42
+            // emg_mobile_no
             // 
-            this.textBox42.Location = new System.Drawing.Point(246, 301);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(200, 33);
-            this.textBox42.TabIndex = 44;
+            this.emg_mobile_no.Location = new System.Drawing.Point(246, 301);
+            this.emg_mobile_no.Name = "emg_mobile_no";
+            this.emg_mobile_no.Size = new System.Drawing.Size(200, 33);
+            this.emg_mobile_no.TabIndex = 44;
             // 
-            // textBox41
+            // emg_personal_tp
             // 
-            this.textBox41.Location = new System.Drawing.Point(246, 262);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(200, 33);
-            this.textBox41.TabIndex = 42;
+            this.emg_personal_tp.Location = new System.Drawing.Point(246, 262);
+            this.emg_personal_tp.Name = "emg_personal_tp";
+            this.emg_personal_tp.Size = new System.Drawing.Size(200, 33);
+            this.emg_personal_tp.TabIndex = 42;
             // 
-            // textBox37
+            // emg_official_address
             // 
-            this.textBox37.Location = new System.Drawing.Point(722, 154);
-            this.textBox37.Multiline = true;
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(300, 99);
-            this.textBox37.TabIndex = 40;
+            this.emg_official_address.Location = new System.Drawing.Point(722, 154);
+            this.emg_official_address.Multiline = true;
+            this.emg_official_address.Name = "emg_official_address";
+            this.emg_official_address.Size = new System.Drawing.Size(300, 99);
+            this.emg_official_address.TabIndex = 40;
             // 
-            // textBox38
+            // emg_full_name
             // 
-            this.textBox38.Location = new System.Drawing.Point(722, 37);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(200, 33);
-            this.textBox38.TabIndex = 38;
+            this.emg_full_name.Location = new System.Drawing.Point(722, 37);
+            this.emg_full_name.Name = "emg_full_name";
+            this.emg_full_name.Size = new System.Drawing.Size(200, 33);
+            this.emg_full_name.TabIndex = 38;
             // 
-            // textBox39
+            // emg_personal_address
             // 
-            this.textBox39.Location = new System.Drawing.Point(246, 157);
-            this.textBox39.Multiline = true;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(300, 99);
-            this.textBox39.TabIndex = 36;
+            this.emg_personal_address.Location = new System.Drawing.Point(246, 157);
+            this.emg_personal_address.Multiline = true;
+            this.emg_personal_address.Name = "emg_personal_address";
+            this.emg_personal_address.Size = new System.Drawing.Size(300, 99);
+            this.emg_personal_address.TabIndex = 36;
             // 
-            // textBox40
+            // emg_nic_no
             // 
-            this.textBox40.Location = new System.Drawing.Point(246, 118);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(200, 33);
-            this.textBox40.TabIndex = 34;
+            this.emg_nic_no.Location = new System.Drawing.Point(246, 118);
+            this.emg_nic_no.Name = "emg_nic_no";
+            this.emg_nic_no.Size = new System.Drawing.Size(200, 33);
+            this.emg_nic_no.TabIndex = 34;
             // 
             // label80
             // 
@@ -2728,13 +2728,13 @@
             this.label79.TabIndex = 49;
             this.label79.Text = "ප්‍රමුකතාව";
             // 
-            // comboBox41
+            // emg_priority
             // 
-            this.comboBox41.FormattingEnabled = true;
-            this.comboBox41.Location = new System.Drawing.Point(246, 380);
-            this.comboBox41.Name = "comboBox41";
-            this.comboBox41.Size = new System.Drawing.Size(200, 34);
-            this.comboBox41.TabIndex = 48;
+            this.emg_priority.FormattingEnabled = true;
+            this.emg_priority.Location = new System.Drawing.Point(246, 380);
+            this.emg_priority.Name = "emg_priority";
+            this.emg_priority.Size = new System.Drawing.Size(200, 34);
+            this.emg_priority.TabIndex = 48;
             // 
             // label78
             // 
@@ -2745,13 +2745,13 @@
             this.label78.TabIndex = 47;
             this.label78.Text = "අභ්‍යන්තර/බාහිර";
             // 
-            // comboBox42
+            // emg_int_ext
             // 
-            this.comboBox42.FormattingEnabled = true;
-            this.comboBox42.Location = new System.Drawing.Point(246, 340);
-            this.comboBox42.Name = "comboBox42";
-            this.comboBox42.Size = new System.Drawing.Size(200, 34);
-            this.comboBox42.TabIndex = 46;
+            this.emg_int_ext.FormattingEnabled = true;
+            this.emg_int_ext.Location = new System.Drawing.Point(246, 340);
+            this.emg_int_ext.Name = "emg_int_ext";
+            this.emg_int_ext.Size = new System.Drawing.Size(200, 34);
+            this.emg_int_ext.TabIndex = 46;
             // 
             // label82
             // 
@@ -2816,13 +2816,13 @@
             this.label88.TabIndex = 33;
             this.label88.Text = "ඥාතිත්වය";
             // 
-            // comboBox43
+            // emg_relation
             // 
-            this.comboBox43.FormattingEnabled = true;
-            this.comboBox43.Location = new System.Drawing.Point(246, 77);
-            this.comboBox43.Name = "comboBox43";
-            this.comboBox43.Size = new System.Drawing.Size(200, 34);
-            this.comboBox43.TabIndex = 32;
+            this.emg_relation.FormattingEnabled = true;
+            this.emg_relation.Location = new System.Drawing.Point(246, 77);
+            this.emg_relation.Name = "emg_relation";
+            this.emg_relation.Size = new System.Drawing.Size(200, 34);
+            this.emg_relation.TabIndex = 32;
             // 
             // label89
             // 
@@ -2833,31 +2833,31 @@
             this.label89.TabIndex = 31;
             this.label89.Text = "ආමන්ත්‍රණය";
             // 
-            // comboBox44
+            // emg_salutation
             // 
-            this.comboBox44.FormattingEnabled = true;
-            this.comboBox44.Location = new System.Drawing.Point(246, 37);
-            this.comboBox44.Name = "comboBox44";
-            this.comboBox44.Size = new System.Drawing.Size(200, 34);
-            this.comboBox44.TabIndex = 30;
+            this.emg_salutation.FormattingEnabled = true;
+            this.emg_salutation.Location = new System.Drawing.Point(246, 37);
+            this.emg_salutation.Name = "emg_salutation";
+            this.emg_salutation.Size = new System.Drawing.Size(200, 34);
+            this.emg_salutation.TabIndex = 30;
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.comboBox45);
-            this.tabPage5.Controls.Add(this.comboBox46);
-            this.tabPage5.Controls.Add(this.comboBox47);
+            this.tabPage5.Controls.Add(this.wsd_date_of_post_d);
+            this.tabPage5.Controls.Add(this.wsd_date_of_post_m);
+            this.tabPage5.Controls.Add(this.wsd_date_of_post_y);
             this.tabPage5.Controls.Add(this.label90);
             this.tabPage5.Controls.Add(this.label91);
             this.tabPage5.Controls.Add(this.label92);
             this.tabPage5.Controls.Add(this.label93);
             this.tabPage5.Controls.Add(this.label94);
-            this.tabPage5.Controls.Add(this.comboBox48);
-            this.tabPage5.Controls.Add(this.comboBox49);
-            this.tabPage5.Controls.Add(this.comboBox50);
-            this.tabPage5.Controls.Add(this.comboBox51);
-            this.tabPage5.Controls.Add(this.comboBox52);
+            this.tabPage5.Controls.Add(this.wsd_power);
+            this.tabPage5.Controls.Add(this.wsd_post);
+            this.tabPage5.Controls.Add(this.wsd_responsibility);
+            this.tabPage5.Controls.Add(this.wsd_salary_station);
+            this.tabPage5.Controls.Add(this.wsd_rank);
             this.tabPage5.Controls.Add(this.label95);
-            this.tabPage5.Controls.Add(this.comboBox53);
+            this.tabPage5.Controls.Add(this.wsd_division);
             this.tabPage5.Controls.Add(this.label96);
             this.tabPage5.Location = new System.Drawing.Point(4, 34);
             this.tabPage5.Name = "tabPage5";
@@ -2866,35 +2866,35 @@
             this.tabPage5.Text = "WorkstationDetails";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // comboBox45
+            // wsd_date_of_post_d
             // 
-            this.comboBox45.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox45.FormattingEnabled = true;
-            this.comboBox45.Location = new System.Drawing.Point(465, 150);
-            this.comboBox45.Name = "comboBox45";
-            this.comboBox45.Size = new System.Drawing.Size(105, 34);
-            this.comboBox45.TabIndex = 16;
-            this.comboBox45.Text = "   දිනය";
+            this.wsd_date_of_post_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.wsd_date_of_post_d.FormattingEnabled = true;
+            this.wsd_date_of_post_d.Location = new System.Drawing.Point(465, 150);
+            this.wsd_date_of_post_d.Name = "wsd_date_of_post_d";
+            this.wsd_date_of_post_d.Size = new System.Drawing.Size(105, 34);
+            this.wsd_date_of_post_d.TabIndex = 16;
+            this.wsd_date_of_post_d.Text = "   දිනය";
             // 
-            // comboBox46
+            // wsd_date_of_post_m
             // 
-            this.comboBox46.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox46.FormattingEnabled = true;
-            this.comboBox46.Location = new System.Drawing.Point(354, 150);
-            this.comboBox46.Name = "comboBox46";
-            this.comboBox46.Size = new System.Drawing.Size(105, 34);
-            this.comboBox46.TabIndex = 15;
-            this.comboBox46.Text = "   මාසය";
+            this.wsd_date_of_post_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.wsd_date_of_post_m.FormattingEnabled = true;
+            this.wsd_date_of_post_m.Location = new System.Drawing.Point(354, 150);
+            this.wsd_date_of_post_m.Name = "wsd_date_of_post_m";
+            this.wsd_date_of_post_m.Size = new System.Drawing.Size(105, 34);
+            this.wsd_date_of_post_m.TabIndex = 15;
+            this.wsd_date_of_post_m.Text = "   මාසය";
             // 
-            // comboBox47
+            // wsd_date_of_post_y
             // 
-            this.comboBox47.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox47.FormattingEnabled = true;
-            this.comboBox47.Location = new System.Drawing.Point(243, 150);
-            this.comboBox47.Name = "comboBox47";
-            this.comboBox47.Size = new System.Drawing.Size(105, 34);
-            this.comboBox47.TabIndex = 14;
-            this.comboBox47.Text = "   වර්ෂය";
+            this.wsd_date_of_post_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.wsd_date_of_post_y.FormattingEnabled = true;
+            this.wsd_date_of_post_y.Location = new System.Drawing.Point(243, 150);
+            this.wsd_date_of_post_y.Name = "wsd_date_of_post_y";
+            this.wsd_date_of_post_y.Size = new System.Drawing.Size(105, 34);
+            this.wsd_date_of_post_y.TabIndex = 14;
+            this.wsd_date_of_post_y.Text = "   වර්ෂය";
             // 
             // label90
             // 
@@ -2941,45 +2941,46 @@
             this.label94.TabIndex = 9;
             this.label94.Text = "වගකීම";
             // 
-            // comboBox48
+            // wsd_power
             // 
-            this.comboBox48.FormattingEnabled = true;
-            this.comboBox48.Location = new System.Drawing.Point(243, 269);
-            this.comboBox48.Name = "comboBox48";
-            this.comboBox48.Size = new System.Drawing.Size(200, 34);
-            this.comboBox48.TabIndex = 8;
+            this.wsd_power.FormattingEnabled = true;
+            this.wsd_power.Location = new System.Drawing.Point(243, 269);
+            this.wsd_power.Name = "wsd_power";
+            this.wsd_power.Size = new System.Drawing.Size(200, 34);
+            this.wsd_power.TabIndex = 8;
             // 
-            // comboBox49
+            // wsd_post
             // 
-            this.comboBox49.FormattingEnabled = true;
-            this.comboBox49.Location = new System.Drawing.Point(243, 110);
-            this.comboBox49.Name = "comboBox49";
-            this.comboBox49.Size = new System.Drawing.Size(200, 34);
-            this.comboBox49.TabIndex = 7;
+            this.wsd_post.FormattingEnabled = true;
+            this.wsd_post.Location = new System.Drawing.Point(243, 110);
+            this.wsd_post.Name = "wsd_post";
+            this.wsd_post.Size = new System.Drawing.Size(200, 34);
+            this.wsd_post.TabIndex = 7;
             // 
-            // comboBox50
+            // wsd_responsibility
             // 
-            this.comboBox50.FormattingEnabled = true;
-            this.comboBox50.Location = new System.Drawing.Point(243, 229);
-            this.comboBox50.Name = "comboBox50";
-            this.comboBox50.Size = new System.Drawing.Size(200, 34);
-            this.comboBox50.TabIndex = 6;
+            this.wsd_responsibility.FormattingEnabled = true;
+            this.wsd_responsibility.Location = new System.Drawing.Point(243, 229);
+            this.wsd_responsibility.Name = "wsd_responsibility";
+            this.wsd_responsibility.Size = new System.Drawing.Size(200, 34);
+            this.wsd_responsibility.TabIndex = 6;
             // 
-            // comboBox51
+            // wsd_salary_station
             // 
-            this.comboBox51.FormattingEnabled = true;
-            this.comboBox51.Location = new System.Drawing.Point(243, 189);
-            this.comboBox51.Name = "comboBox51";
-            this.comboBox51.Size = new System.Drawing.Size(200, 34);
-            this.comboBox51.TabIndex = 5;
+            this.wsd_salary_station.FormattingEnabled = true;
+            this.wsd_salary_station.Location = new System.Drawing.Point(243, 189);
+            this.wsd_salary_station.Name = "wsd_salary_station";
+            this.wsd_salary_station.Size = new System.Drawing.Size(200, 34);
+            this.wsd_salary_station.TabIndex = 5;
             // 
-            // comboBox52
+            // wsd_rank
             // 
-            this.comboBox52.FormattingEnabled = true;
-            this.comboBox52.Location = new System.Drawing.Point(243, 30);
-            this.comboBox52.Name = "comboBox52";
-            this.comboBox52.Size = new System.Drawing.Size(200, 34);
-            this.comboBox52.TabIndex = 4;
+            this.wsd_rank.FormattingEnabled = true;
+            this.wsd_rank.Location = new System.Drawing.Point(243, 30);
+            this.wsd_rank.Name = "wsd_rank";
+            this.wsd_rank.Size = new System.Drawing.Size(200, 34);
+            this.wsd_rank.TabIndex = 4;
+            this.wsd_rank.SelectedIndexChanged += new System.EventHandler(this.wsd_rank_SelectedIndexChanged);
             // 
             // label95
             // 
@@ -2990,13 +2991,13 @@
             this.label95.TabIndex = 3;
             this.label95.Text = "කොට්ඨාශය";
             // 
-            // comboBox53
+            // wsd_division
             // 
-            this.comboBox53.FormattingEnabled = true;
-            this.comboBox53.Location = new System.Drawing.Point(243, 70);
-            this.comboBox53.Name = "comboBox53";
-            this.comboBox53.Size = new System.Drawing.Size(200, 34);
-            this.comboBox53.TabIndex = 2;
+            this.wsd_division.FormattingEnabled = true;
+            this.wsd_division.Location = new System.Drawing.Point(243, 70);
+            this.wsd_division.Name = "wsd_division";
+            this.wsd_division.Size = new System.Drawing.Size(200, 34);
+            this.wsd_division.TabIndex = 2;
             // 
             // label96
             // 
@@ -7395,23 +7396,23 @@
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox depend_medical;
+        private System.Windows.Forms.CheckBox depend_deathade;
         private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox depend_office_tp;
+        private System.Windows.Forms.TextBox depend_official_address;
+        private System.Windows.Forms.TextBox depend_full_name;
+        private System.Windows.Forms.TextBox depend_marriage_certificate;
+        private System.Windows.Forms.TextBox depend_birth_certificate;
+        private System.Windows.Forms.TextBox depend_note;
+        private System.Windows.Forms.TextBox depend_education;
+        private System.Windows.Forms.TextBox depend_personal_tp;
+        private System.Windows.Forms.TextBox depend_personal_address;
+        private System.Windows.Forms.TextBox depend_nic_no;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.ComboBox comboBox35;
-        private System.Windows.Forms.ComboBox comboBox36;
-        private System.Windows.Forms.ComboBox comboBox37;
+        private System.Windows.Forms.ComboBox depend_date_of_post_d;
+        private System.Windows.Forms.ComboBox depend_date_of_post_m;
+        private System.Windows.Forms.ComboBox depend_date_of_post_y;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Button button2;
@@ -7420,30 +7421,30 @@
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.ComboBox comboBox38;
+        private System.Windows.Forms.ComboBox depend_status;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.ComboBox comboBox39;
+        private System.Windows.Forms.ComboBox depend_relation;
         private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.ComboBox comboBox40;
+        private System.Windows.Forms.ComboBox depend_salutation;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox40;
+        private System.Windows.Forms.TextBox emg_employee_no;
+        private System.Windows.Forms.TextBox emg_office_tp;
+        private System.Windows.Forms.TextBox emg_mobile_no;
+        private System.Windows.Forms.TextBox emg_personal_tp;
+        private System.Windows.Forms.TextBox emg_official_address;
+        private System.Windows.Forms.TextBox emg_full_name;
+        private System.Windows.Forms.TextBox emg_personal_address;
+        private System.Windows.Forms.TextBox emg_nic_no;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.ComboBox comboBox41;
+        private System.Windows.Forms.ComboBox emg_priority;
         private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.ComboBox comboBox42;
+        private System.Windows.Forms.ComboBox emg_int_ext;
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label84;
@@ -7451,25 +7452,25 @@
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label87;
         private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.ComboBox comboBox43;
+        private System.Windows.Forms.ComboBox emg_relation;
         private System.Windows.Forms.Label label89;
-        private System.Windows.Forms.ComboBox comboBox44;
+        private System.Windows.Forms.ComboBox emg_salutation;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.ComboBox comboBox45;
-        private System.Windows.Forms.ComboBox comboBox46;
-        private System.Windows.Forms.ComboBox comboBox47;
+        private System.Windows.Forms.ComboBox wsd_date_of_post_d;
+        private System.Windows.Forms.ComboBox wsd_date_of_post_m;
+        private System.Windows.Forms.ComboBox wsd_date_of_post_y;
         private System.Windows.Forms.Label label90;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.ComboBox comboBox48;
-        private System.Windows.Forms.ComboBox comboBox49;
-        private System.Windows.Forms.ComboBox comboBox50;
-        private System.Windows.Forms.ComboBox comboBox51;
-        private System.Windows.Forms.ComboBox comboBox52;
+        private System.Windows.Forms.ComboBox wsd_power;
+        private System.Windows.Forms.ComboBox wsd_post;
+        private System.Windows.Forms.ComboBox wsd_responsibility;
+        private System.Windows.Forms.ComboBox wsd_salary_station;
+        private System.Windows.Forms.ComboBox wsd_rank;
         private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.ComboBox comboBox53;
+        private System.Windows.Forms.ComboBox wsd_division;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label122;

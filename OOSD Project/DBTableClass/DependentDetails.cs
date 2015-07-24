@@ -15,7 +15,7 @@ namespace OOSD_Project.DBTableClass
         public string relation { set; get; }
 
         
-        string date_of_post;
+        public string date_of_post;
         public void setDate_of_post(string year, string month, string date)
         {
             DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);

@@ -80,31 +80,61 @@ namespace OOSD_Project
 
             Console.Write(cd.cur_province+"\n");
 
-            perm_address.Text = cd.perm_address;
-            perm_city.Text = cd.perm_city;
-            perm_district.Text = cd.perm_district;
-            perm_email.Text = cd.perm_email;
-            perm_fax.Text = cd.perm_fax;
-            perm_grama.Text = cd.perm_grama;
-            perm_home_no.Text = cd.perm_home_no;
-            perm_mobile.Text = cd.perm_mobile;
-            perm_polling_division.Text = cd.perm_polling_division;
-            perm_province.Text = cd.perm_province;
-            perm_teleophone.Text = cd.perm_teleophone;
-            perm_uc.Text = cd.perm_uc;
-            cur_address.Text = cd.cur_address;
-            cur_city.Text = cd.cur_city;
-            cur_district.Text = cd.cur_district;
-            cur_email.Text = cd.cur_email;
-            cur_fax.Text = cd.cur_fax;
-            cur_grama.Text = cd.cur_grama;
-            cur_home_no.Text = cd.cur_home_no;
-            cur_mobile.Text = cd.cur_mobile;
-            cur_polling_division.Text = cd.cur_polling_division;
-            cur_province.Text = cd.cur_province;
-            cur_teleophone.Text = cd.cur_teleophone;
-            cur_uc.Text = cd.cur_uc;
-           
+            this.perm_address.Text = cd.perm_address;
+            this.perm_city.Text = cd.perm_city;
+            this.perm_district.Text = cd.perm_district;
+            this.perm_email.Text = cd.perm_email;
+            this.perm_fax.Text = cd.perm_fax;
+            this.perm_grama.Text = cd.perm_grama;
+            this.perm_home_no.Text = cd.perm_home_no;
+            this.perm_mobile.Text = cd.perm_mobile;
+            this.perm_polling_division.Text = cd.perm_polling_division;
+            this.perm_province.Text = cd.perm_province;
+            this.perm_teleophone.Text = cd.perm_teleophone;
+            this.perm_uc.Text = cd.perm_uc;
+            this.cur_address.Text = cd.cur_address;
+            this.cur_city.Text = cd.cur_city;
+            this.cur_district.Text = cd.cur_district;
+            this.cur_email.Text = cd.cur_email;
+            this.cur_fax.Text = cd.cur_fax;
+            this.cur_grama.Text = cd.cur_grama;
+            this.cur_home_no.Text = cd.cur_home_no;
+            this.cur_mobile.Text = cd.cur_mobile;
+            this.cur_polling_division.Text = cd.cur_polling_division;
+            this.cur_province.Text = cd.cur_province;
+            this.cur_teleophone.Text = cd.cur_teleophone;
+            this.cur_uc.Text = cd.cur_uc;
+
+
+            //Load dependent details
+            DependentDetails dd = DependentDetailsHandler.getDependentDetails();
+
+            depend_birth_certificate.Text = dd.birth_certificate;
+
+            if (dd.deathade == true) { depend_deathade.Checked = true; }
+            else { depend_deathade.Checked = false; }
+
+            if (dd.doctor == true) { depend_medical.Checked = true; }
+            else { depend_medical.Checked = false; }
+
+            depend_education.Text = dd.education;
+            depend_full_name.Text = dd.full_name;
+            depend_marriage_certificate.Text = dd.marriage_certificate;
+            depend_nic_no.Text = dd.nic_no;
+            depend_note.Text = dd.note;
+            depend_office_tp.Text = dd.office_tp;
+            depend_official_address.Text = dd.official_address;
+            depend_personal_address.Text = dd.personal_address;
+            depend_personal_tp.Text = dd.personal_tp;
+            depend_relation.Text = dd.relation;
+            depend_salutation.Text = dd.salutation;
+            depend_status.Text = dd.status;
+            depe
+
+        }
+
+        private void wsd_rank_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

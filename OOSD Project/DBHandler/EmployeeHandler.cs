@@ -81,6 +81,8 @@ namespace OOSD_Project.Database
 
                 if (reader.Read())
                 {
+                    Employee.employee_id = int.Parse(reader["idemployee"].ToString());
+
                     e.setAction_status(reader["action_status"].ToString());
                     e.setBlood_grouph(reader["blood_group"].ToString());
                     e.setDate_issued(reader["date_issued"].ToString());

@@ -1,4 +1,5 @@
 ﻿using OOSD_Project.Database;
+using OOSD_Project.DBHandler;
 using OOSD_Project.DBTableClass;
 using System;
 using System.Collections.Generic;
@@ -48,7 +49,8 @@ namespace OOSD_Project
 
         private void employee_no_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Console.Write("Combo");
+            
+            //Load personal details
             Employee em = EmployeeHandler.getEmployee(employee_no.Text);
 
             this.action_status.Text = em.getAction_status();
@@ -71,6 +73,38 @@ namespace OOSD_Project
 
             if (em.getMarried() == 1) { this.married.Checked = true; }
             else { { this.married.Checked = false; } }
+
+
+            //Load contact details
+            ContactDetails cd = ContactDetailsHandler.getContactDetails();
+
+            Console.Write(cd.cur_province+"\n");
+
+            perm_address.Text = cd.perm_address;
+            perm_city.Text = cd.perm_city;
+            perm_district.Text = cd.perm_district;
+            perm_email.Text = cd.perm_email;
+            perm_fax.Text = cd.perm_fax;
+            perm_grama.Text = cd.perm_grama;
+            perm_home_no.Text = cd.perm_home_no;
+            perm_mobile.Text = cd.perm_mobile;
+            perm_polling_division.Text = cd.perm_polling_division;
+            perm_province.Text = cd.perm_province;
+            perm_teleophone.Text = cd.perm_teleophone;
+            perm_uc.Text = cd.perm_uc;
+            cur_address.Text = cd.cur_address;
+            cur_city.Text = cd.cur_city;
+            cur_district.Text = cd.cur_district;
+            cur_email.Text = cd.cur_email;
+            cur_fax.Text = cd.cur_fax;
+            cur_grama.Text = cd.cur_grama;
+            cur_home_no.Text = cd.cur_home_no;
+            cur_mobile.Text = cd.cur_mobile;
+            cur_polling_division.Text = cd.cur_polling_division;
+            cur_province.Text = cd.cur_province;
+            cur_teleophone.Text = cd.cur_teleophone;
+            cur_uc.Text = cd.cur_uc;
+           
 
         }
     }

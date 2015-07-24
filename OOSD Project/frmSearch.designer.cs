@@ -115,33 +115,33 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.cur_email = new System.Windows.Forms.TextBox();
+            this.cur_fax = new System.Windows.Forms.TextBox();
+            this.cur_mobile = new System.Windows.Forms.TextBox();
+            this.cur_teleophone = new System.Windows.Forms.TextBox();
+            this.cur_city = new System.Windows.Forms.TextBox();
+            this.cur_address = new System.Windows.Forms.TextBox();
+            this.cur_home_no = new System.Windows.Forms.TextBox();
+            this.perm_email = new System.Windows.Forms.TextBox();
+            this.perm_fax = new System.Windows.Forms.TextBox();
+            this.perm_mobile = new System.Windows.Forms.TextBox();
+            this.perm_teleophone = new System.Windows.Forms.TextBox();
+            this.perm_city = new System.Windows.Forms.TextBox();
+            this.perm_address = new System.Windows.Forms.TextBox();
+            this.perm_home_no = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
-            this.comboBox25 = new System.Windows.Forms.ComboBox();
+            this.cur_polling_division = new System.Windows.Forms.ComboBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.cur_grama = new System.Windows.Forms.ComboBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.comboBox27 = new System.Windows.Forms.ComboBox();
+            this.cur_uc = new System.Windows.Forms.ComboBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.cur_district = new System.Windows.Forms.ComboBox();
             this.label47 = new System.Windows.Forms.Label();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.cur_province = new System.Windows.Forms.ComboBox();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
@@ -151,15 +151,15 @@
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.perm_polling_division = new System.Windows.Forms.ComboBox();
             this.label57 = new System.Windows.Forms.Label();
-            this.comboBox31 = new System.Windows.Forms.ComboBox();
+            this.perm_grama = new System.Windows.Forms.ComboBox();
             this.label58 = new System.Windows.Forms.Label();
-            this.comboBox32 = new System.Windows.Forms.ComboBox();
+            this.perm_uc = new System.Windows.Forms.ComboBox();
             this.label59 = new System.Windows.Forms.Label();
-            this.comboBox33 = new System.Windows.Forms.ComboBox();
+            this.perm_district = new System.Windows.Forms.ComboBox();
             this.label60 = new System.Windows.Forms.Label();
-            this.comboBox34 = new System.Windows.Forms.ComboBox();
+            this.perm_province = new System.Windows.Forms.ComboBox();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
@@ -1806,33 +1806,33 @@
             this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.label38);
             this.tabPage2.Controls.Add(this.label39);
-            this.tabPage2.Controls.Add(this.textBox20);
-            this.tabPage2.Controls.Add(this.textBox21);
-            this.tabPage2.Controls.Add(this.textBox22);
-            this.tabPage2.Controls.Add(this.textBox23);
-            this.tabPage2.Controls.Add(this.textBox24);
-            this.tabPage2.Controls.Add(this.textBox25);
-            this.tabPage2.Controls.Add(this.textBox26);
-            this.tabPage2.Controls.Add(this.textBox18);
-            this.tabPage2.Controls.Add(this.textBox19);
-            this.tabPage2.Controls.Add(this.textBox17);
-            this.tabPage2.Controls.Add(this.textBox15);
-            this.tabPage2.Controls.Add(this.textBox16);
-            this.tabPage2.Controls.Add(this.textBox13);
-            this.tabPage2.Controls.Add(this.textBox7);
+            this.tabPage2.Controls.Add(this.cur_email);
+            this.tabPage2.Controls.Add(this.cur_fax);
+            this.tabPage2.Controls.Add(this.cur_mobile);
+            this.tabPage2.Controls.Add(this.cur_teleophone);
+            this.tabPage2.Controls.Add(this.cur_city);
+            this.tabPage2.Controls.Add(this.cur_address);
+            this.tabPage2.Controls.Add(this.cur_home_no);
+            this.tabPage2.Controls.Add(this.perm_email);
+            this.tabPage2.Controls.Add(this.perm_fax);
+            this.tabPage2.Controls.Add(this.perm_mobile);
+            this.tabPage2.Controls.Add(this.perm_teleophone);
+            this.tabPage2.Controls.Add(this.perm_city);
+            this.tabPage2.Controls.Add(this.perm_address);
+            this.tabPage2.Controls.Add(this.perm_home_no);
             this.tabPage2.Controls.Add(this.label40);
             this.tabPage2.Controls.Add(this.label41);
             this.tabPage2.Controls.Add(this.label42);
             this.tabPage2.Controls.Add(this.label43);
-            this.tabPage2.Controls.Add(this.comboBox25);
+            this.tabPage2.Controls.Add(this.cur_polling_division);
             this.tabPage2.Controls.Add(this.label44);
-            this.tabPage2.Controls.Add(this.comboBox26);
+            this.tabPage2.Controls.Add(this.cur_grama);
             this.tabPage2.Controls.Add(this.label45);
-            this.tabPage2.Controls.Add(this.comboBox27);
+            this.tabPage2.Controls.Add(this.cur_uc);
             this.tabPage2.Controls.Add(this.label46);
-            this.tabPage2.Controls.Add(this.comboBox28);
+            this.tabPage2.Controls.Add(this.cur_district);
             this.tabPage2.Controls.Add(this.label47);
-            this.tabPage2.Controls.Add(this.comboBox29);
+            this.tabPage2.Controls.Add(this.cur_province);
             this.tabPage2.Controls.Add(this.label48);
             this.tabPage2.Controls.Add(this.label49);
             this.tabPage2.Controls.Add(this.label50);
@@ -1842,15 +1842,15 @@
             this.tabPage2.Controls.Add(this.label54);
             this.tabPage2.Controls.Add(this.label55);
             this.tabPage2.Controls.Add(this.label56);
-            this.tabPage2.Controls.Add(this.comboBox30);
+            this.tabPage2.Controls.Add(this.perm_polling_division);
             this.tabPage2.Controls.Add(this.label57);
-            this.tabPage2.Controls.Add(this.comboBox31);
+            this.tabPage2.Controls.Add(this.perm_grama);
             this.tabPage2.Controls.Add(this.label58);
-            this.tabPage2.Controls.Add(this.comboBox32);
+            this.tabPage2.Controls.Add(this.perm_uc);
             this.tabPage2.Controls.Add(this.label59);
-            this.tabPage2.Controls.Add(this.comboBox33);
+            this.tabPage2.Controls.Add(this.perm_district);
             this.tabPage2.Controls.Add(this.label60);
-            this.tabPage2.Controls.Add(this.comboBox34);
+            this.tabPage2.Controls.Add(this.perm_province);
             this.tabPage2.Controls.Add(this.label61);
             this.tabPage2.Controls.Add(this.label62);
             this.tabPage2.Controls.Add(this.label63);
@@ -1879,105 +1879,105 @@
             this.label39.TabIndex = 50;
             this.label39.Text = "ඊ-මේල් ලිපිනය";
             // 
-            // textBox20
+            // cur_email
             // 
-            this.textBox20.Location = new System.Drawing.Point(690, 542);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(200, 33);
-            this.textBox20.TabIndex = 49;
+            this.cur_email.Location = new System.Drawing.Point(690, 542);
+            this.cur_email.Name = "cur_email";
+            this.cur_email.Size = new System.Drawing.Size(200, 33);
+            this.cur_email.TabIndex = 49;
             // 
-            // textBox21
+            // cur_fax
             // 
-            this.textBox21.Location = new System.Drawing.Point(690, 503);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(200, 33);
-            this.textBox21.TabIndex = 47;
+            this.cur_fax.Location = new System.Drawing.Point(690, 503);
+            this.cur_fax.Name = "cur_fax";
+            this.cur_fax.Size = new System.Drawing.Size(200, 33);
+            this.cur_fax.TabIndex = 47;
             // 
-            // textBox22
+            // cur_mobile
             // 
-            this.textBox22.Location = new System.Drawing.Point(690, 464);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(200, 33);
-            this.textBox22.TabIndex = 45;
+            this.cur_mobile.Location = new System.Drawing.Point(690, 464);
+            this.cur_mobile.Name = "cur_mobile";
+            this.cur_mobile.Size = new System.Drawing.Size(200, 33);
+            this.cur_mobile.TabIndex = 45;
             // 
-            // textBox23
+            // cur_teleophone
             // 
-            this.textBox23.Location = new System.Drawing.Point(690, 425);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(200, 33);
-            this.textBox23.TabIndex = 43;
+            this.cur_teleophone.Location = new System.Drawing.Point(690, 425);
+            this.cur_teleophone.Name = "cur_teleophone";
+            this.cur_teleophone.Size = new System.Drawing.Size(200, 33);
+            this.cur_teleophone.TabIndex = 43;
             // 
-            // textBox24
+            // cur_city
             // 
-            this.textBox24.Location = new System.Drawing.Point(690, 185);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(200, 33);
-            this.textBox24.TabIndex = 31;
+            this.cur_city.Location = new System.Drawing.Point(690, 185);
+            this.cur_city.Name = "cur_city";
+            this.cur_city.Size = new System.Drawing.Size(200, 33);
+            this.cur_city.TabIndex = 31;
             // 
-            // textBox25
+            // cur_address
             // 
-            this.textBox25.Location = new System.Drawing.Point(690, 97);
-            this.textBox25.Multiline = true;
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(350, 82);
-            this.textBox25.TabIndex = 29;
+            this.cur_address.Location = new System.Drawing.Point(690, 97);
+            this.cur_address.Multiline = true;
+            this.cur_address.Name = "cur_address";
+            this.cur_address.Size = new System.Drawing.Size(350, 82);
+            this.cur_address.TabIndex = 29;
             // 
-            // textBox26
+            // cur_home_no
             // 
-            this.textBox26.Location = new System.Drawing.Point(690, 58);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(200, 33);
-            this.textBox26.TabIndex = 27;
+            this.cur_home_no.Location = new System.Drawing.Point(690, 58);
+            this.cur_home_no.Name = "cur_home_no";
+            this.cur_home_no.Size = new System.Drawing.Size(200, 33);
+            this.cur_home_no.TabIndex = 27;
             // 
-            // textBox18
+            // perm_email
             // 
-            this.textBox18.Location = new System.Drawing.Point(234, 542);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(200, 33);
-            this.textBox18.TabIndex = 24;
+            this.perm_email.Location = new System.Drawing.Point(234, 542);
+            this.perm_email.Name = "perm_email";
+            this.perm_email.Size = new System.Drawing.Size(200, 33);
+            this.perm_email.TabIndex = 24;
             // 
-            // textBox19
+            // perm_fax
             // 
-            this.textBox19.Location = new System.Drawing.Point(234, 503);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(200, 33);
-            this.textBox19.TabIndex = 22;
+            this.perm_fax.Location = new System.Drawing.Point(234, 503);
+            this.perm_fax.Name = "perm_fax";
+            this.perm_fax.Size = new System.Drawing.Size(200, 33);
+            this.perm_fax.TabIndex = 22;
             // 
-            // textBox17
+            // perm_mobile
             // 
-            this.textBox17.Location = new System.Drawing.Point(233, 463);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(200, 33);
-            this.textBox17.TabIndex = 20;
+            this.perm_mobile.Location = new System.Drawing.Point(233, 463);
+            this.perm_mobile.Name = "perm_mobile";
+            this.perm_mobile.Size = new System.Drawing.Size(200, 33);
+            this.perm_mobile.TabIndex = 20;
             // 
-            // textBox15
+            // perm_teleophone
             // 
-            this.textBox15.Location = new System.Drawing.Point(233, 424);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(200, 33);
-            this.textBox15.TabIndex = 18;
+            this.perm_teleophone.Location = new System.Drawing.Point(233, 424);
+            this.perm_teleophone.Name = "perm_teleophone";
+            this.perm_teleophone.Size = new System.Drawing.Size(200, 33);
+            this.perm_teleophone.TabIndex = 18;
             // 
-            // textBox16
+            // perm_city
             // 
-            this.textBox16.Location = new System.Drawing.Point(233, 185);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(200, 33);
-            this.textBox16.TabIndex = 6;
+            this.perm_city.Location = new System.Drawing.Point(233, 185);
+            this.perm_city.Name = "perm_city";
+            this.perm_city.Size = new System.Drawing.Size(200, 33);
+            this.perm_city.TabIndex = 6;
             // 
-            // textBox13
+            // perm_address
             // 
-            this.textBox13.Location = new System.Drawing.Point(233, 97);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(350, 82);
-            this.textBox13.TabIndex = 2;
+            this.perm_address.Location = new System.Drawing.Point(233, 97);
+            this.perm_address.Multiline = true;
+            this.perm_address.Name = "perm_address";
+            this.perm_address.Size = new System.Drawing.Size(350, 82);
+            this.perm_address.TabIndex = 2;
             // 
-            // textBox7
+            // perm_home_no
             // 
-            this.textBox7.Location = new System.Drawing.Point(233, 58);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(200, 33);
-            this.textBox7.TabIndex = 0;
+            this.perm_home_no.Location = new System.Drawing.Point(233, 58);
+            this.perm_home_no.Name = "perm_home_no";
+            this.perm_home_no.Size = new System.Drawing.Size(200, 33);
+            this.perm_home_no.TabIndex = 0;
             // 
             // label40
             // 
@@ -2015,13 +2015,13 @@
             this.label43.TabIndex = 42;
             this.label43.Text = "මැතිවරණ කොට්ඨාශය";
             // 
-            // comboBox25
+            // cur_polling_division
             // 
-            this.comboBox25.FormattingEnabled = true;
-            this.comboBox25.Location = new System.Drawing.Point(690, 385);
-            this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(200, 34);
-            this.comboBox25.TabIndex = 41;
+            this.cur_polling_division.FormattingEnabled = true;
+            this.cur_polling_division.Location = new System.Drawing.Point(690, 385);
+            this.cur_polling_division.Name = "cur_polling_division";
+            this.cur_polling_division.Size = new System.Drawing.Size(200, 34);
+            this.cur_polling_division.TabIndex = 41;
             // 
             // label44
             // 
@@ -2032,13 +2032,13 @@
             this.label44.TabIndex = 40;
             this.label44.Text = "ග්‍රාම නිලධාරී වසම";
             // 
-            // comboBox26
+            // cur_grama
             // 
-            this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.Location = new System.Drawing.Point(690, 345);
-            this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(200, 34);
-            this.comboBox26.TabIndex = 39;
+            this.cur_grama.FormattingEnabled = true;
+            this.cur_grama.Location = new System.Drawing.Point(690, 345);
+            this.cur_grama.Name = "cur_grama";
+            this.cur_grama.Size = new System.Drawing.Size(200, 34);
+            this.cur_grama.TabIndex = 39;
             // 
             // label45
             // 
@@ -2049,13 +2049,13 @@
             this.label45.TabIndex = 38;
             this.label45.Text = "ප්‍රා. ලේ. කොට්ඨාශය";
             // 
-            // comboBox27
+            // cur_uc
             // 
-            this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Location = new System.Drawing.Point(690, 305);
-            this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(200, 34);
-            this.comboBox27.TabIndex = 37;
+            this.cur_uc.FormattingEnabled = true;
+            this.cur_uc.Location = new System.Drawing.Point(690, 305);
+            this.cur_uc.Name = "cur_uc";
+            this.cur_uc.Size = new System.Drawing.Size(200, 34);
+            this.cur_uc.TabIndex = 37;
             // 
             // label46
             // 
@@ -2066,13 +2066,13 @@
             this.label46.TabIndex = 36;
             this.label46.Text = "දිස්ත්‍රික්කය";
             // 
-            // comboBox28
+            // cur_district
             // 
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Location = new System.Drawing.Point(690, 265);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(200, 34);
-            this.comboBox28.TabIndex = 35;
+            this.cur_district.FormattingEnabled = true;
+            this.cur_district.Location = new System.Drawing.Point(690, 265);
+            this.cur_district.Name = "cur_district";
+            this.cur_district.Size = new System.Drawing.Size(200, 34);
+            this.cur_district.TabIndex = 35;
             // 
             // label47
             // 
@@ -2083,13 +2083,13 @@
             this.label47.TabIndex = 34;
             this.label47.Text = "පළාත";
             // 
-            // comboBox29
+            // cur_province
             // 
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Location = new System.Drawing.Point(690, 225);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(200, 34);
-            this.comboBox29.TabIndex = 33;
+            this.cur_province.FormattingEnabled = true;
+            this.cur_province.Location = new System.Drawing.Point(690, 225);
+            this.cur_province.Name = "cur_province";
+            this.cur_province.Size = new System.Drawing.Size(200, 34);
+            this.cur_province.TabIndex = 33;
             // 
             // label48
             // 
@@ -2172,13 +2172,13 @@
             this.label56.TabIndex = 17;
             this.label56.Text = "මැතිවරණ කොට්ඨාශය";
             // 
-            // comboBox30
+            // perm_polling_division
             // 
-            this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Location = new System.Drawing.Point(233, 384);
-            this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(200, 34);
-            this.comboBox30.TabIndex = 16;
+            this.perm_polling_division.FormattingEnabled = true;
+            this.perm_polling_division.Location = new System.Drawing.Point(233, 384);
+            this.perm_polling_division.Name = "perm_polling_division";
+            this.perm_polling_division.Size = new System.Drawing.Size(200, 34);
+            this.perm_polling_division.TabIndex = 16;
             // 
             // label57
             // 
@@ -2189,13 +2189,13 @@
             this.label57.TabIndex = 15;
             this.label57.Text = "ග්‍රාම නිලධාරී වසම";
             // 
-            // comboBox31
+            // perm_grama
             // 
-            this.comboBox31.FormattingEnabled = true;
-            this.comboBox31.Location = new System.Drawing.Point(233, 344);
-            this.comboBox31.Name = "comboBox31";
-            this.comboBox31.Size = new System.Drawing.Size(200, 34);
-            this.comboBox31.TabIndex = 14;
+            this.perm_grama.FormattingEnabled = true;
+            this.perm_grama.Location = new System.Drawing.Point(233, 344);
+            this.perm_grama.Name = "perm_grama";
+            this.perm_grama.Size = new System.Drawing.Size(200, 34);
+            this.perm_grama.TabIndex = 14;
             // 
             // label58
             // 
@@ -2206,13 +2206,13 @@
             this.label58.TabIndex = 13;
             this.label58.Text = "ප්‍රා. ලේ. කොට්ඨාශය";
             // 
-            // comboBox32
+            // perm_uc
             // 
-            this.comboBox32.FormattingEnabled = true;
-            this.comboBox32.Location = new System.Drawing.Point(233, 304);
-            this.comboBox32.Name = "comboBox32";
-            this.comboBox32.Size = new System.Drawing.Size(200, 34);
-            this.comboBox32.TabIndex = 12;
+            this.perm_uc.FormattingEnabled = true;
+            this.perm_uc.Location = new System.Drawing.Point(233, 304);
+            this.perm_uc.Name = "perm_uc";
+            this.perm_uc.Size = new System.Drawing.Size(200, 34);
+            this.perm_uc.TabIndex = 12;
             // 
             // label59
             // 
@@ -2223,13 +2223,13 @@
             this.label59.TabIndex = 11;
             this.label59.Text = "දිස්ත්‍රික්කය";
             // 
-            // comboBox33
+            // perm_district
             // 
-            this.comboBox33.FormattingEnabled = true;
-            this.comboBox33.Location = new System.Drawing.Point(233, 264);
-            this.comboBox33.Name = "comboBox33";
-            this.comboBox33.Size = new System.Drawing.Size(200, 34);
-            this.comboBox33.TabIndex = 10;
+            this.perm_district.FormattingEnabled = true;
+            this.perm_district.Location = new System.Drawing.Point(233, 264);
+            this.perm_district.Name = "perm_district";
+            this.perm_district.Size = new System.Drawing.Size(200, 34);
+            this.perm_district.TabIndex = 10;
             // 
             // label60
             // 
@@ -2240,14 +2240,14 @@
             this.label60.TabIndex = 9;
             this.label60.Text = "පළාත";
             // 
-            // comboBox34
+            // perm_province
             // 
-            this.comboBox34.FormattingEnabled = true;
-            this.comboBox34.ItemHeight = 26;
-            this.comboBox34.Location = new System.Drawing.Point(233, 224);
-            this.comboBox34.Name = "comboBox34";
-            this.comboBox34.Size = new System.Drawing.Size(200, 34);
-            this.comboBox34.TabIndex = 8;
+            this.perm_province.FormattingEnabled = true;
+            this.perm_province.ItemHeight = 26;
+            this.perm_province.Location = new System.Drawing.Point(233, 224);
+            this.perm_province.Name = "perm_province";
+            this.perm_province.Size = new System.Drawing.Size(200, 34);
+            this.perm_province.TabIndex = 8;
             // 
             // label61
             // 
@@ -7346,33 +7346,33 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox cur_email;
+        private System.Windows.Forms.TextBox cur_fax;
+        private System.Windows.Forms.TextBox cur_mobile;
+        private System.Windows.Forms.TextBox cur_teleophone;
+        private System.Windows.Forms.TextBox cur_city;
+        private System.Windows.Forms.TextBox cur_address;
+        private System.Windows.Forms.TextBox cur_home_no;
+        private System.Windows.Forms.TextBox perm_email;
+        private System.Windows.Forms.TextBox perm_fax;
+        private System.Windows.Forms.TextBox perm_mobile;
+        private System.Windows.Forms.TextBox perm_teleophone;
+        private System.Windows.Forms.TextBox perm_city;
+        private System.Windows.Forms.TextBox perm_address;
+        private System.Windows.Forms.TextBox perm_home_no;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.ComboBox comboBox25;
+        private System.Windows.Forms.ComboBox cur_polling_division;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.ComboBox comboBox26;
+        private System.Windows.Forms.ComboBox cur_grama;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.ComboBox comboBox27;
+        private System.Windows.Forms.ComboBox cur_uc;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.ComboBox comboBox28;
+        private System.Windows.Forms.ComboBox cur_district;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.ComboBox cur_province;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
@@ -7382,15 +7382,15 @@
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.ComboBox comboBox30;
+        private System.Windows.Forms.ComboBox perm_polling_division;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.ComboBox comboBox31;
+        private System.Windows.Forms.ComboBox perm_grama;
         private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.ComboBox comboBox32;
+        private System.Windows.Forms.ComboBox perm_uc;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.ComboBox comboBox33;
+        private System.Windows.Forms.ComboBox perm_district;
         private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.ComboBox comboBox34;
+        private System.Windows.Forms.ComboBox perm_province;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;

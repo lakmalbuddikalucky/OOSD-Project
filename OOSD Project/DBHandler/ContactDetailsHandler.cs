@@ -44,5 +44,80 @@ namespace OOSD_Project.DBHandler
 
         }
 
+
+        public static ContactDetails getContactDetails()
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "SELECT * FROM contact_details WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                Console.Write(Employee.employee_id+"\n");
+
+                ContactDetails cd = new ContactDetails();
+
+                if (reader.Read())
+                {
+
+                    cd.cur_address=reader["cur_address"].ToString();
+                    cd.cur_city = reader["cur_city"].ToString();
+                    cd.cur_district = reader["cur_district"].ToString();
+                    cd.cur_email = reader["cur_email"].ToString();
+                    cd.cur_fax = reader["cur_fax"].ToString();
+                    cd.cur_grama = reader["cur_grama"].ToString();
+                    cd.cur_home_no = reader["cur_home_no"].ToString();
+                    cd.cur_mobile = reader["cur_mobile"].ToString();
+                    cd.cur_polling_division = reader["cur_polling_division"].ToString();
+                    cd.cur_province = reader["cur_province"].ToString();
+                    cd.cur_teleophone = reader["cur_teleophone"].ToString();
+                    cd.cur_uc = reader["cur_uc"].ToString();
+                    cd.perm_address = reader["perm_address"].ToString();
+                    cd.perm_city = reader["perm_city"].ToString();
+                    cd.perm_district = reader["perm_district"].ToString();
+                    cd.perm_email = reader["perm_email"].ToString();
+                    cd.perm_fax = reader["perm_fax"].ToString();
+                    cd.perm_grama = reader["perm_grama"].ToString();
+                    cd.perm_home_no = reader["perm_home_no"].ToString();
+                    cd.perm_mobile = reader["perm_mobile"].ToString();
+                    cd.perm_polling_division = reader["perm_polling_division"].ToString();
+                    cd.perm_province = reader["perm_province"].ToString();
+                    cd.perm_teleophone = reader["perm_teleophone"].ToString();
+                    cd.perm_uc = reader["perm_uc"].ToString();
+                    
+
+                }
+
+                reader.Close();
+
+                dbcon.closeConnection();
+
+                return cd;
+            }
+            else
+            {
+
+                return null;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return null;
+            //}
+
+        }
+
+
     }
 }

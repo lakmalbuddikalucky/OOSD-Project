@@ -129,7 +129,25 @@ namespace OOSD_Project
             depend_relation.Text = dd.relation;
             depend_salutation.Text = dd.salutation;
             depend_status.Text = dd.status;
-            depe
+
+
+            //Load emergency contact details
+            EmergencyContact ec = EmergencyContactHandler.getEmergencyContact();
+
+            emg_employee_no.Text = ec.employee_no;
+            emg_full_name.Text = ec.full_name;
+            emg_int_ext.Text = ec.int_ext;
+            emg_mobile_no.Text = ec.mobile_no;
+            emg_nic_no.Text = ec.nic_no;
+            emg_office_tp.Text = ec.office_tp;
+            emg_official_address.Text = ec.official_address;
+            emg_personal_address.Text = ec.personal_address;
+            emg_personal_tp.Text = ec.personal_tp;
+            emg_priority.Text = ec.priority;
+            emg_relation.Text = ec.relation;
+            emg_salutation.Text = ec.salutation;
+
+
 
         }
 

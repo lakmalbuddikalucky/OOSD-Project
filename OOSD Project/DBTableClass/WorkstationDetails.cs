@@ -13,7 +13,7 @@ namespace OOSD_Project.DBTableClass
         public string post { set; get; }
         
         
-        private string date_of_post;
+        public string date_of_post;
         public string getDate_of_post()
         {
             return this.date_of_post;

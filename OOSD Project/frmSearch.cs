@@ -147,7 +147,16 @@ namespace OOSD_Project
             emg_relation.Text = ec.relation;
             emg_salutation.Text = ec.salutation;
 
+            //Load workstation details
+            WorkstationDetails wsd = WorkstationDetailsHandler.getWorkstationDetails();
 
+            wsd_division.Text = wsd.division;
+            wsd_post.Text = wsd.post;
+            wsd_power.Text = wsd.power;
+            wsd_rank.Text = wsd.rank;
+            wsd_responsibility.Text = wsd.responsibility;
+            wsd_salary_station.Text = wsd.salary_station;
+            
 
         }
 

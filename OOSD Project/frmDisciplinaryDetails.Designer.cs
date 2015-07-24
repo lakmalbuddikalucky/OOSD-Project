@@ -46,11 +46,11 @@
             this.rank = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.inquiry_officer = new System.Windows.Forms.TextBox();
+            this.verdict_of_director_general = new System.Windows.Forms.TextBox();
+            this.desciplinary_breaking = new System.Windows.Forms.TextBox();
+            this.given_sentence = new System.Windows.Forms.TextBox();
+            this.request_of_main_administration_officer = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.label35 = new System.Windows.Forms.Label();
@@ -63,26 +63,26 @@
             this.label34 = new System.Windows.Forms.Label();
             this.lblCaption = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.rejoined__day = new System.Windows.Forms.ComboBox();
+            this.rejoined__month = new System.Windows.Forms.ComboBox();
+            this.rejoined_year = new System.Windows.Forms.ComboBox();
+            this.suspended_day = new System.Windows.Forms.ComboBox();
+            this.suspended_month = new System.Windows.Forms.ComboBox();
+            this.suspended_year = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.suspended_time = new System.Windows.Forms.TextBox();
+            this.verdict_of_director_general_year = new System.Windows.Forms.ComboBox();
+            this.verdict_of_director_general_month = new System.Windows.Forms.ComboBox();
+            this.verdict_of_director_general_day = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.given_sentence_year = new System.Windows.Forms.ComboBox();
+            this.given_sentence_month = new System.Windows.Forms.ComboBox();
+            this.given_sentence_day = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.desciplinary_breaking_year = new System.Windows.Forms.ComboBox();
+            this.desciplinary_breaking_month = new System.Windows.Forms.ComboBox();
+            this.desciplinary_breaking_day = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -277,49 +277,49 @@
             this.label7.Text = "සේවක අංකය";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox15
+            // inquiry_officer
             // 
-            this.textBox15.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox15.Location = new System.Drawing.Point(561, 477);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(249, 33);
-            this.textBox15.TabIndex = 18;
+            this.inquiry_officer.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.inquiry_officer.Location = new System.Drawing.Point(561, 477);
+            this.inquiry_officer.Name = "inquiry_officer";
+            this.inquiry_officer.Size = new System.Drawing.Size(249, 33);
+            this.inquiry_officer.TabIndex = 18;
             // 
-            // textBox12
+            // verdict_of_director_general
             // 
-            this.textBox12.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox12.Location = new System.Drawing.Point(562, 421);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(249, 50);
-            this.textBox12.TabIndex = 14;
+            this.verdict_of_director_general.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.verdict_of_director_general.Location = new System.Drawing.Point(562, 421);
+            this.verdict_of_director_general.Multiline = true;
+            this.verdict_of_director_general.Name = "verdict_of_director_general";
+            this.verdict_of_director_general.Size = new System.Drawing.Size(249, 50);
+            this.verdict_of_director_general.TabIndex = 14;
             // 
-            // textBox9
+            // desciplinary_breaking
             // 
-            this.textBox9.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox9.Location = new System.Drawing.Point(561, 253);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(250, 50);
-            this.textBox9.TabIndex = 5;
+            this.desciplinary_breaking.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_breaking.Location = new System.Drawing.Point(561, 253);
+            this.desciplinary_breaking.Multiline = true;
+            this.desciplinary_breaking.Name = "desciplinary_breaking";
+            this.desciplinary_breaking.Size = new System.Drawing.Size(250, 50);
+            this.desciplinary_breaking.TabIndex = 5;
             // 
-            // textBox11
+            // given_sentence
             // 
-            this.textBox11.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox11.Location = new System.Drawing.Point(561, 365);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(250, 50);
-            this.textBox11.TabIndex = 10;
+            this.given_sentence.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.given_sentence.Location = new System.Drawing.Point(561, 365);
+            this.given_sentence.Multiline = true;
+            this.given_sentence.Name = "given_sentence";
+            this.given_sentence.Size = new System.Drawing.Size(250, 50);
+            this.given_sentence.TabIndex = 10;
             // 
-            // textBox10
+            // request_of_main_administration_officer
             // 
-            this.textBox10.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox10.Location = new System.Drawing.Point(561, 309);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(250, 50);
-            this.textBox10.TabIndex = 9;
+            this.request_of_main_administration_officer.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.request_of_main_administration_officer.Location = new System.Drawing.Point(561, 309);
+            this.request_of_main_administration_officer.Multiline = true;
+            this.request_of_main_administration_officer.Name = "request_of_main_administration_officer";
+            this.request_of_main_administration_officer.Size = new System.Drawing.Size(250, 50);
+            this.request_of_main_administration_officer.TabIndex = 9;
             // 
             // panel2
             // 
@@ -437,16 +437,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox15);
-            this.groupBox1.Controls.Add(this.comboBox16);
-            this.groupBox1.Controls.Add(this.comboBox17);
-            this.groupBox1.Controls.Add(this.comboBox9);
-            this.groupBox1.Controls.Add(this.comboBox13);
-            this.groupBox1.Controls.Add(this.comboBox14);
+            this.groupBox1.Controls.Add(this.rejoined__day);
+            this.groupBox1.Controls.Add(this.rejoined__month);
+            this.groupBox1.Controls.Add(this.rejoined_year);
+            this.groupBox1.Controls.Add(this.suspended_day);
+            this.groupBox1.Controls.Add(this.suspended_month);
+            this.groupBox1.Controls.Add(this.suspended_year);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.suspended_time);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12.75F);
             this.groupBox1.Location = new System.Drawing.Point(351, 539);
             this.groupBox1.Name = "groupBox1";
@@ -455,12 +455,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "තාවකාලිකව සේවය අත්හිටවූවා නම්:";
             // 
-            // comboBox15
+            // rejoined__day
             // 
-            this.comboBox15.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox15.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Items.AddRange(new object[] {
+            this.rejoined__day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.rejoined__day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.rejoined__day.FormattingEnabled = true;
+            this.rejoined__day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -492,18 +492,18 @@
             "29",
             "30",
             "31"});
-            this.comboBox15.Location = new System.Drawing.Point(463, 81);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(91, 34);
-            this.comboBox15.TabIndex = 24;
-            this.comboBox15.Text = "    දිනය";
+            this.rejoined__day.Location = new System.Drawing.Point(463, 81);
+            this.rejoined__day.Name = "rejoined__day";
+            this.rejoined__day.Size = new System.Drawing.Size(91, 34);
+            this.rejoined__day.TabIndex = 24;
+            this.rejoined__day.Text = "    දිනය";
             // 
-            // comboBox16
+            // rejoined__month
             // 
-            this.comboBox16.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox16.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Items.AddRange(new object[] {
+            this.rejoined__month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.rejoined__month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.rejoined__month.FormattingEnabled = true;
+            this.rejoined__month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -516,18 +516,18 @@
             "October",
             "November",
             "December"});
-            this.comboBox16.Location = new System.Drawing.Point(366, 81);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(91, 34);
-            this.comboBox16.TabIndex = 23;
-            this.comboBox16.Text = "   මාසය";
+            this.rejoined__month.Location = new System.Drawing.Point(366, 81);
+            this.rejoined__month.Name = "rejoined__month";
+            this.rejoined__month.Size = new System.Drawing.Size(91, 34);
+            this.rejoined__month.TabIndex = 23;
+            this.rejoined__month.Text = "   මාසය";
             // 
-            // comboBox17
+            // rejoined_year
             // 
-            this.comboBox17.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox17.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Items.AddRange(new object[] {
+            this.rejoined_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.rejoined_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.rejoined_year.FormattingEnabled = true;
+            this.rejoined_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -603,18 +603,18 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox17.Location = new System.Drawing.Point(257, 81);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(103, 34);
-            this.comboBox17.TabIndex = 22;
-            this.comboBox17.Text = "   වර්ෂය";
+            this.rejoined_year.Location = new System.Drawing.Point(257, 81);
+            this.rejoined_year.Name = "rejoined_year";
+            this.rejoined_year.Size = new System.Drawing.Size(103, 34);
+            this.rejoined_year.TabIndex = 22;
+            this.rejoined_year.Text = "   වර්ෂය";
             // 
-            // comboBox9
+            // suspended_day
             // 
-            this.comboBox9.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox9.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.suspended_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.suspended_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.suspended_day.FormattingEnabled = true;
+            this.suspended_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -646,18 +646,18 @@
             "29",
             "30",
             "31"});
-            this.comboBox9.Location = new System.Drawing.Point(463, 41);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(91, 34);
-            this.comboBox9.TabIndex = 21;
-            this.comboBox9.Text = "    දිනය";
+            this.suspended_day.Location = new System.Drawing.Point(463, 41);
+            this.suspended_day.Name = "suspended_day";
+            this.suspended_day.Size = new System.Drawing.Size(91, 34);
+            this.suspended_day.TabIndex = 21;
+            this.suspended_day.Text = "    දිනය";
             // 
-            // comboBox13
+            // suspended_month
             // 
-            this.comboBox13.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox13.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.suspended_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.suspended_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.suspended_month.FormattingEnabled = true;
+            this.suspended_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -670,18 +670,18 @@
             "October",
             "November",
             "December"});
-            this.comboBox13.Location = new System.Drawing.Point(366, 41);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(91, 34);
-            this.comboBox13.TabIndex = 20;
-            this.comboBox13.Text = "   මාසය";
+            this.suspended_month.Location = new System.Drawing.Point(366, 41);
+            this.suspended_month.Name = "suspended_month";
+            this.suspended_month.Size = new System.Drawing.Size(91, 34);
+            this.suspended_month.TabIndex = 20;
+            this.suspended_month.Text = "   මාසය";
             // 
-            // comboBox14
+            // suspended_year
             // 
-            this.comboBox14.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox14.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.suspended_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.suspended_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.suspended_year.FormattingEnabled = true;
+            this.suspended_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -757,11 +757,11 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox14.Location = new System.Drawing.Point(257, 41);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(103, 34);
-            this.comboBox14.TabIndex = 19;
-            this.comboBox14.Text = "   වර්ෂය";
+            this.suspended_year.Location = new System.Drawing.Point(257, 41);
+            this.suspended_year.Name = "suspended_year";
+            this.suspended_year.Size = new System.Drawing.Size(103, 34);
+            this.suspended_year.TabIndex = 19;
+            this.suspended_year.Text = "   වර්ෂය";
             // 
             // label6
             // 
@@ -787,20 +787,20 @@
             this.label10.Text = "සේවය අත්හිටවූ කාලය ";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox5
+            // suspended_time
             // 
-            this.textBox5.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox5.Location = new System.Drawing.Point(257, 121);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 33);
-            this.textBox5.TabIndex = 25;
+            this.suspended_time.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.suspended_time.Location = new System.Drawing.Point(257, 121);
+            this.suspended_time.Name = "suspended_time";
+            this.suspended_time.Size = new System.Drawing.Size(150, 33);
+            this.suspended_time.TabIndex = 25;
             // 
-            // comboBox6
+            // verdict_of_director_general_year
             // 
-            this.comboBox6.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox6.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.verdict_of_director_general_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.verdict_of_director_general_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.verdict_of_director_general_year.FormattingEnabled = true;
+            this.verdict_of_director_general_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -876,18 +876,18 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox6.Location = new System.Drawing.Point(948, 421);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(103, 34);
-            this.comboBox6.TabIndex = 15;
-            this.comboBox6.Text = "   වර්ෂය";
+            this.verdict_of_director_general_year.Location = new System.Drawing.Point(948, 421);
+            this.verdict_of_director_general_year.Name = "verdict_of_director_general_year";
+            this.verdict_of_director_general_year.Size = new System.Drawing.Size(103, 34);
+            this.verdict_of_director_general_year.TabIndex = 15;
+            this.verdict_of_director_general_year.Text = "   වර්ෂය";
             // 
-            // comboBox7
+            // verdict_of_director_general_month
             // 
-            this.comboBox7.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox7.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.verdict_of_director_general_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.verdict_of_director_general_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.verdict_of_director_general_month.FormattingEnabled = true;
+            this.verdict_of_director_general_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -900,18 +900,18 @@
             "October",
             "November",
             "December"});
-            this.comboBox7.Location = new System.Drawing.Point(1057, 421);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(91, 34);
-            this.comboBox7.TabIndex = 16;
-            this.comboBox7.Text = "   මාසය";
+            this.verdict_of_director_general_month.Location = new System.Drawing.Point(1057, 421);
+            this.verdict_of_director_general_month.Name = "verdict_of_director_general_month";
+            this.verdict_of_director_general_month.Size = new System.Drawing.Size(91, 34);
+            this.verdict_of_director_general_month.TabIndex = 16;
+            this.verdict_of_director_general_month.Text = "   මාසය";
             // 
-            // comboBox8
+            // verdict_of_director_general_day
             // 
-            this.comboBox8.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox8.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.verdict_of_director_general_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.verdict_of_director_general_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.verdict_of_director_general_day.FormattingEnabled = true;
+            this.verdict_of_director_general_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -943,11 +943,11 @@
             "29",
             "30",
             "31"});
-            this.comboBox8.Location = new System.Drawing.Point(1154, 421);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(91, 34);
-            this.comboBox8.TabIndex = 17;
-            this.comboBox8.Text = "    දිනය";
+            this.verdict_of_director_general_day.Location = new System.Drawing.Point(1154, 421);
+            this.verdict_of_director_general_day.Name = "verdict_of_director_general_day";
+            this.verdict_of_director_general_day.Size = new System.Drawing.Size(91, 34);
+            this.verdict_of_director_general_day.TabIndex = 17;
+            this.verdict_of_director_general_day.Text = "    දිනය";
             // 
             // label2
             // 
@@ -961,12 +961,12 @@
             this.label2.Text = "දිනය";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBox3
+            // given_sentence_year
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox3.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.given_sentence_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.given_sentence_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.given_sentence_year.FormattingEnabled = true;
+            this.given_sentence_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -1042,18 +1042,18 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox3.Location = new System.Drawing.Point(948, 365);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(103, 34);
-            this.comboBox3.TabIndex = 11;
-            this.comboBox3.Text = "   වර්ෂය";
+            this.given_sentence_year.Location = new System.Drawing.Point(948, 365);
+            this.given_sentence_year.Name = "given_sentence_year";
+            this.given_sentence_year.Size = new System.Drawing.Size(103, 34);
+            this.given_sentence_year.TabIndex = 11;
+            this.given_sentence_year.Text = "   වර්ෂය";
             // 
-            // comboBox4
+            // given_sentence_month
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox4.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.given_sentence_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.given_sentence_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.given_sentence_month.FormattingEnabled = true;
+            this.given_sentence_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -1066,18 +1066,18 @@
             "October",
             "November",
             "December"});
-            this.comboBox4.Location = new System.Drawing.Point(1057, 365);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(91, 34);
-            this.comboBox4.TabIndex = 12;
-            this.comboBox4.Text = "   මාසය";
+            this.given_sentence_month.Location = new System.Drawing.Point(1057, 365);
+            this.given_sentence_month.Name = "given_sentence_month";
+            this.given_sentence_month.Size = new System.Drawing.Size(91, 34);
+            this.given_sentence_month.TabIndex = 12;
+            this.given_sentence_month.Text = "   මාසය";
             // 
-            // comboBox5
+            // given_sentence_day
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox5.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.given_sentence_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.given_sentence_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.given_sentence_day.FormattingEnabled = true;
+            this.given_sentence_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -1109,11 +1109,11 @@
             "29",
             "30",
             "31"});
-            this.comboBox5.Location = new System.Drawing.Point(1154, 365);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(91, 34);
-            this.comboBox5.TabIndex = 13;
-            this.comboBox5.Text = "    දිනය";
+            this.given_sentence_day.Location = new System.Drawing.Point(1154, 365);
+            this.given_sentence_day.Name = "given_sentence_day";
+            this.given_sentence_day.Size = new System.Drawing.Size(91, 34);
+            this.given_sentence_day.TabIndex = 13;
+            this.given_sentence_day.Text = "    දිනය";
             // 
             // label3
             // 
@@ -1127,12 +1127,12 @@
             this.label3.Text = "දිනය";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBox10
+            // desciplinary_breaking_year
             // 
-            this.comboBox10.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox10.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.desciplinary_breaking_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_breaking_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_breaking_year.FormattingEnabled = true;
+            this.desciplinary_breaking_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -1208,18 +1208,18 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox10.Location = new System.Drawing.Point(948, 253);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(103, 34);
-            this.comboBox10.TabIndex = 6;
-            this.comboBox10.Text = "   වර්ෂය";
+            this.desciplinary_breaking_year.Location = new System.Drawing.Point(948, 253);
+            this.desciplinary_breaking_year.Name = "desciplinary_breaking_year";
+            this.desciplinary_breaking_year.Size = new System.Drawing.Size(103, 34);
+            this.desciplinary_breaking_year.TabIndex = 6;
+            this.desciplinary_breaking_year.Text = "   වර්ෂය";
             // 
-            // comboBox11
+            // desciplinary_breaking_month
             // 
-            this.comboBox11.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox11.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.desciplinary_breaking_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_breaking_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_breaking_month.FormattingEnabled = true;
+            this.desciplinary_breaking_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -1232,18 +1232,18 @@
             "October",
             "November",
             "December"});
-            this.comboBox11.Location = new System.Drawing.Point(1057, 253);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(91, 34);
-            this.comboBox11.TabIndex = 7;
-            this.comboBox11.Text = "   මාසය";
+            this.desciplinary_breaking_month.Location = new System.Drawing.Point(1057, 253);
+            this.desciplinary_breaking_month.Name = "desciplinary_breaking_month";
+            this.desciplinary_breaking_month.Size = new System.Drawing.Size(91, 34);
+            this.desciplinary_breaking_month.TabIndex = 7;
+            this.desciplinary_breaking_month.Text = "   මාසය";
             // 
-            // comboBox12
+            // desciplinary_breaking_day
             // 
-            this.comboBox12.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox12.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
+            this.desciplinary_breaking_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_breaking_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_breaking_day.FormattingEnabled = true;
+            this.desciplinary_breaking_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -1275,26 +1275,26 @@
             "29",
             "30",
             "31"});
-            this.comboBox12.Location = new System.Drawing.Point(1154, 253);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(91, 34);
-            this.comboBox12.TabIndex = 8;
-            this.comboBox12.Text = "    දිනය";
+            this.desciplinary_breaking_day.Location = new System.Drawing.Point(1154, 253);
+            this.desciplinary_breaking_day.Name = "desciplinary_breaking_day";
+            this.desciplinary_breaking_day.Size = new System.Drawing.Size(91, 34);
+            this.desciplinary_breaking_day.TabIndex = 8;
+            this.desciplinary_breaking_day.Text = "    දිනය";
             // 
             // frmDisciplinaryDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 768);
-            this.Controls.Add(this.comboBox12);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox8);
-            this.Controls.Add(this.comboBox11);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox10);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.desciplinary_breaking_day);
+            this.Controls.Add(this.given_sentence_day);
+            this.Controls.Add(this.verdict_of_director_general_day);
+            this.Controls.Add(this.desciplinary_breaking_month);
+            this.Controls.Add(this.given_sentence_month);
+            this.Controls.Add(this.verdict_of_director_general_month);
+            this.Controls.Add(this.desciplinary_breaking_year);
+            this.Controls.Add(this.given_sentence_year);
+            this.Controls.Add(this.verdict_of_director_general_year);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
@@ -1312,11 +1312,11 @@
             this.Controls.Add(this.rank);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.inquiry_officer);
+            this.Controls.Add(this.verdict_of_director_general);
+            this.Controls.Add(this.desciplinary_breaking);
+            this.Controls.Add(this.given_sentence);
+            this.Controls.Add(this.request_of_main_administration_officer);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.panel3);
@@ -1356,11 +1356,11 @@
         private System.Windows.Forms.TextBox rank;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox inquiry_officer;
+        private System.Windows.Forms.TextBox verdict_of_director_general;
+        private System.Windows.Forms.TextBox desciplinary_breaking;
+        private System.Windows.Forms.TextBox given_sentence;
+        private System.Windows.Forms.TextBox request_of_main_administration_officer;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label35;
@@ -1375,23 +1375,23 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.ComboBox comboBox17;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.TextBox suspended_time;
+        private System.Windows.Forms.ComboBox verdict_of_director_general_year;
+        private System.Windows.Forms.ComboBox verdict_of_director_general_month;
+        private System.Windows.Forms.ComboBox verdict_of_director_general_day;
+        private System.Windows.Forms.ComboBox rejoined__day;
+        private System.Windows.Forms.ComboBox rejoined__month;
+        private System.Windows.Forms.ComboBox rejoined_year;
+        private System.Windows.Forms.ComboBox suspended_day;
+        private System.Windows.Forms.ComboBox suspended_month;
+        private System.Windows.Forms.ComboBox suspended_year;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox given_sentence_year;
+        private System.Windows.Forms.ComboBox given_sentence_month;
+        private System.Windows.Forms.ComboBox given_sentence_day;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox desciplinary_breaking_year;
+        private System.Windows.Forms.ComboBox desciplinary_breaking_month;
+        private System.Windows.Forms.ComboBox desciplinary_breaking_day;
     }
 }

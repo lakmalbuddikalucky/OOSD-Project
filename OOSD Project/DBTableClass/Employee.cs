@@ -9,14 +9,16 @@ namespace OOSD_Project.DBTableClass
     class Employee
     {
 
-        static int employee_id;
+        public static int employee_id=8;
 
 
         string employee_no;
-        public string getEmployee_no() {
+        public string getEmployee_no()
+        {
             return employee_no;
         }
-        public void setEmployee_no(string value) {
+        public void setEmployee_no(string value)
+        {
             this.employee_no = value;
         }
 
@@ -183,7 +185,7 @@ namespace OOSD_Project.DBTableClass
         }
         public void setDate_of_birth(string year, string month, string date)
         {
-            DateTime dt = Convert.ToDateTime(month+"/"+date+"/"+year);
+            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
             this.date_of_birth = dt.ToString("yyyy-MM-dd");
         }
 

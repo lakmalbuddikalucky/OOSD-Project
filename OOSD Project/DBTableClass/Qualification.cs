@@ -8,14 +8,14 @@ namespace OOSD_Project.DBTableClass
 {
     class Qualification
     {
-        string qualification_no;
-        string institute;
-        string months;
-        bool occupation_relevant;
-        bool highest_qualification;
-        string status;
-        string note;
-        string qualification;
-        string year;
+        public string qualification_no { set; get; }
+        public string institute { set; get; }
+        public string months { set; get; }
+        public bool occupation_relevant { set; get; }
+        public bool highest_qualification { set; get; }
+        public string status { set; get; }
+        public string note { set; get; }
+        public string qualification { set; get; }
+        public string year { set; get; }
     }
 }

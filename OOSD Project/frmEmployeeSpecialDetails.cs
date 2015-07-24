@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OOSD_Project.DBHandler;
+using OOSD_Project.DBTableClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +31,191 @@ namespace OOSD_Project
             frmEmployeePersonalDetails form6 = new frmEmployeePersonalDetails();
             form6.Show();
             this.Dispose();
+        }
+
+        private void btnSave1_Click(object sender, EventArgs e)
+        {
+            Qualification q = new Qualification();
+
+            if (qual_highest_qualification.Checked) { q.highest_qualification = true; }
+            else { q.highest_qualification = false; }
+
+            if (qual_occupation_relevant.Checked) { q.occupation_relevant = true; }
+            else { q.occupation_relevant = false; }
+
+            q.institute = qual_institute.Text;
+            q.months = qual_months.Text;
+            q.note = qual_note.Text;
+            q.qualification = qual_qualification.Text;
+            q.qualification_no = qualification_no.Text;
+            q.status = qual_status.Text;
+            q.year = qual_year.Text;
+
+            bool status = QualificationsHandler.addQualification(q);
+
+            if (status)
+            {
+                MessageBox.Show("Qualification details added successfully...!");
+                //btnSave4.Enabled = true;
+                //btnSave5.Enabled = true;
+            }
+            else { MessageBox.Show("Failed to add qualification details...!"); }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            WorkingExperience we = new WorkingExperience();
+
+            we.address = we_address.Text;
+            we.award = we_award.Text;
+            we.contact = we_contact.Text;
+            we.department = we_department.Text;
+            we.email = we_department.Text;
+            we.institute = we_institute.Text;
+
+            if (we_occupation_relevant.Checked) { we.occupation_relevant = true; }
+            else { we.occupation_relevant = false; }
+
+            we.resign_reason = we_resign_reason.Text;
+            we.responsibility = we_responsibility.Text;
+            we.telephone = we_telephone.Text;
+
+            we.setDate_from(we_date_from_y.Text, we_date_from_m.Text, we_date_from_d.Text);
+            we.setDate_to(we_date_to_y.Text, we_date_to_m.Text, we_date_to_d.Text);
+            we.setDate_perma(we_date_perma_y.Text, we_date_perma_m.Text, we_date_perma_d.Text);
+            
+            
+
+            bool status = WorkingExperienceHandler.addWorkingExperience(we);
+
+            if (status)
+            {
+                MessageBox.Show("Working experience details added successfully...!");
+                //btnSave4.Enabled = true;
+                //btnSave5.Enabled = true;
+            }
+            else { MessageBox.Show("Failed to add working experience details...!"); }
+        }
+
+        private void btnSave3_Click(object sender, EventArgs e)
+        {
+
+            ExtracurricularActivity eca = new ExtracurricularActivity();
+
+            eca.award = ea_award.Text;
+            eca.method = ea_method.Text;
+            eca.type = ea_type.Text;
+
+            bool status = ExtracurricularActivityHandler.addExtracurricularActivity(eca);
+
+            if (status)
+            {
+                MessageBox.Show("Extracurricular ectivity details added successfully...!");
+                //btnSave4.Enabled = true;
+                //btnSave5.Enabled = true;
+            }
+            else { MessageBox.Show("Failed to add extracurricular ectivity experience details...!"); }
+
+        }
+
+        private void btnClear3_Click(object sender, EventArgs e)
+        {
+            ea_type.Text = null;
+            ea_method.Text = null;
+            ea_award.Text = null;
+        }
+
+        private void btnClear2_Click(object sender, EventArgs e)
+        {
+            we_address.Text=null;
+            we_award.Text = null;
+            we_contact.Text = null;
+            we_department.Text = null;
+            we_department.Text = null;
+            we_institute.Text = null;
+            we_occupation_relevant.Checked=false;
+
+            we_resign_reason.Text = null;
+            we_responsibility.Text = null;
+            we_telephone.Text = null;
+
+            we_date_from_y.Text = null;
+            we_date_from_m.Text = null;
+            we_date_from_d.Text = null;
+            we_date_to_y.Text = null;
+            we_date_to_m.Text = null;
+            we_date_to_d.Text = null;
+            we_date_perma_y.Text = null;
+            we_date_perma_m.Text = null;
+            we_date_perma_d.Text = null;
+
+        }
+
+        private void btnClear1_Click(object sender, EventArgs e)
+        {
+            qual_highest_qualification.Checked=false;
+            qual_occupation_relevant.Checked=false;
+
+            qual_institute.Text = null;
+            qual_months.Text = null;
+            qual_note.Text = null;
+            qual_qualification.Text = null;
+            qualification_no.Text = null;
+            qual_status.Text = null;
+            qual_year.Text = null;
+        }
+
+        private void btnSave4_Click(object sender, EventArgs e)
+        {
+
+            Membership m = new Membership();
+
+            m.contribution = member_contribution.Text;
+            m.institute = member_institute.Text;
+            m.member_id = member_id.Text;
+            m.post_name = memebr_post_name.Text;
+            m.method = member_method.Text;
+
+            if (member_institutional_payment.Checked) { m.institutional_payment = true; }
+            else { m.institutional_payment = false; }
+
+            if (member_personal_payment.Checked) { m.personal_payment = true; }
+            else { m.personal_payment = false; }
+
+            m.setActive_date_insti(member_active_date_insti_y.Text, member_active_date_insti_m.Text, member_active_date_insti_d.Text);
+            m.setActive_date_person(member_active_date_person_y.Text, member_active_date_person_m.Text, member_active_date_person_d.Text);
+
+            m.setBegin_date(member_begin_date_y.Text, member_begin_date_m.Text, member_begin_date_d.Text);
+            m.setRenewal_date(member_renewal_date_y.Text, member_renewal_date_m.Text, member_renewal_date_d.Text);
+
+            m.status = member_status.Text;
+            
+            bool status = MembershipHandler.addMembership(m);
+
+            if (status)
+            {
+                MessageBox.Show("Membership details added successfully...!");
+                //btnSave4.Enabled = true;
+                //btnSave5.Enabled = true;
+            }
+            else { MessageBox.Show("Failed to add membership details...!"); }
+        }
+
+        private void btnAddLan_Click(object sender, EventArgs e)
+        {
+            Language l = new Language();
+            l.language_name = language_name.Text;
+
+            bool status = LanguageHandler.addLanguage(l);
+
+            if (status)
+            {
+                MessageBox.Show("Language details added successfully...!");
+                //btnSave4.Enabled = true;
+                //btnSave5.Enabled = true;
+            }
+            else { MessageBox.Show("Failed to add language details...!"); }
         }
 
     }

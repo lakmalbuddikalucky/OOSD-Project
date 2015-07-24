@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDisciplinaryDetails));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.employee_no = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -41,9 +41,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.full_name = new System.Windows.Forms.TextBox();
+            this.post = new System.Windows.Forms.TextBox();
+            this.rank = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -90,14 +90,14 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // employee_no
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(561, 98);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 32);
-            this.comboBox1.TabIndex = 1;
+            this.employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_no.FormattingEnabled = true;
+            this.employee_no.Location = new System.Drawing.Point(561, 98);
+            this.employee_no.Name = "employee_no";
+            this.employee_no.Size = new System.Drawing.Size(200, 32);
+            this.employee_no.TabIndex = 1;
             // 
             // label17
             // 
@@ -229,29 +229,29 @@
             this.label9.Text = "විනය කඩ කීරීම";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox17
+            // full_name
             // 
-            this.textBox17.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox17.Location = new System.Drawing.Point(561, 136);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(300, 33);
-            this.textBox17.TabIndex = 2;
+            this.full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.full_name.Location = new System.Drawing.Point(561, 136);
+            this.full_name.Name = "full_name";
+            this.full_name.Size = new System.Drawing.Size(300, 33);
+            this.full_name.TabIndex = 2;
             // 
-            // textBox16
+            // post
             // 
-            this.textBox16.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox16.Location = new System.Drawing.Point(561, 175);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(150, 33);
-            this.textBox16.TabIndex = 3;
+            this.post.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.post.Location = new System.Drawing.Point(561, 175);
+            this.post.Name = "post";
+            this.post.Size = new System.Drawing.Size(150, 33);
+            this.post.TabIndex = 3;
             // 
-            // textBox8
+            // rank
             // 
-            this.textBox8.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox8.Location = new System.Drawing.Point(561, 214);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(150, 33);
-            this.textBox8.TabIndex = 4;
+            this.rank.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.rank.Location = new System.Drawing.Point(561, 214);
+            this.rank.Name = "rank";
+            this.rank.Size = new System.Drawing.Size(150, 33);
+            this.rank.TabIndex = 4;
             // 
             // label13
             // 
@@ -1298,7 +1298,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.employee_no);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label1);
@@ -1307,9 +1307,9 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.full_name);
+            this.Controls.Add(this.post);
+            this.Controls.Add(this.rank);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox15);
@@ -1339,7 +1339,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label16;
@@ -1351,9 +1351,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox full_name;
+        private System.Windows.Forms.TextBox post;
+        private System.Windows.Forms.TextBox rank;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox15;

@@ -8,9 +8,9 @@ namespace OOSD_Project.DBTableClass
 {
     class NonCashBenefit
     {
-        string approved_benefit;
-        DateTime date_issued;
-        string amount;
-        string price;
+        public string approved_benefit { set; get; }
+        public DateTime date_issued { set; get; }
+        public string amount { set; get; }
+        public string price { set; get; }
     }
 }

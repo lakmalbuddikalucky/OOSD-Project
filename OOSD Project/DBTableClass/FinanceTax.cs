@@ -8,11 +8,11 @@ namespace OOSD_Project.DBTableClass
 {
     class FinanceTax
     {
-        string type;
-        string number;
-        string payment_method;
-        string status;
-        string note;
+        public string type { set; get; }
+        public string number { set; get; }
+        public string payment_method { set; get; }
+        public string status { set; get; }
+        public string note { set; get; }
 
     }
 }

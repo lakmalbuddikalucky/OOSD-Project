@@ -8,13 +8,13 @@ namespace OOSD_Project.DBTableClass
 {
     class Passport
     {
-        string rank;
-        string post;
-        string number;
-        string place_of_issue;
-        DateTime date_of_issue;
-        DateTime date_of_renewal;
-        bool status;
+        public string rank { set; get; }
+        public string post { set; get; }
+        public string number { set; get; }
+        public string place_of_issue { set; get; }
+        public DateTime date_of_issue { set; get; }
+        public DateTime date_of_renewal { set; get; }
+        public bool status { set; get; }
 
     }
 }

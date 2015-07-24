@@ -9,14 +9,14 @@ namespace OOSD_Project.DBTableClass
     class FinanceBank
     {
 
-        string bank_name;
-        string branch_name;
-        string account_number;
-        string account_type;
-        DateTime begin_date;
-        DateTime end_date;
-        string qualification;
-        DateTime qual_date;
+        public string bank_name { set; get; }
+        public string branch_name { set; get; }
+        public string account_number { set; get; }
+        public string account_type { set; get; }
+        public DateTime begin_date { set; get; }
+        public DateTime end_date { set; get; }
+        public string qualification { set; get; }
+        public DateTime qual_date { set; get; }
 
     }
 }

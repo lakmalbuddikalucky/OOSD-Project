@@ -69,7 +69,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\DBConnector.cs" />
+    <Compile Include="DBHandler\CashBenefitHandler.cs" />
+    <Compile Include="DBHandler\ContactDetailsHandler.cs" />
+    <Compile Include="DBHandler\DependentDetailsHandler.cs" />
+    <Compile Include="DBHandler\EmergencyContactHandler.cs" />
     <Compile Include="DBHandler\EmployeeHandler.cs" />
+    <Compile Include="DBHandler\ExtracurricularActivityHandler.cs" />
+    <Compile Include="DBHandler\LanguageHandler.cs" />
+    <Compile Include="DBHandler\MembershipHandler.cs" />
+    <Compile Include="DBHandler\QualificationsHandler.cs" />
+    <Compile Include="DBHandler\WorkingExperienceHandler.cs" />
+    <Compile Include="DBHandler\WorkstationDetailsHandler.cs" />
     <Compile Include="DBTableClass\CashBenefit.cs" />
     <Compile Include="DBTableClass\ContactDetails.cs" />
     <Compile Include="DBTableClass\DependentDetails.cs" />

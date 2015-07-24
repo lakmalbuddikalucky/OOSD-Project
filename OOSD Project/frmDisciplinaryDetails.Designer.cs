@@ -157,6 +157,7 @@
             this.btnNext.TabIndex = 8;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPrev
             // 
@@ -168,6 +169,7 @@
             this.btnPrev.TabIndex = 7;
             this.btnPrev.Text = "Previous";
             this.btnPrev.UseVisualStyleBackColor = false;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // label12
             // 

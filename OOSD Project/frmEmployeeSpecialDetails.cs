@@ -14,23 +14,32 @@ namespace OOSD_Project
 {
     public partial class frmEmployeeSpecialDetails : Form
     {
+        private static frmEmployeeSpecialDetails form;
+
         public frmEmployeeSpecialDetails()
         {
             InitializeComponent();
         }
 
+        public static frmEmployeeSpecialDetails getForm()
+        {
+            if (form == null)
+            {
+                form = new frmEmployeeSpecialDetails();
+            }
+            return form;
+        }
+
         private void btnNext_Click(object sender, EventArgs e)
         {
-            frmEmployeeFinanceDetails form5 = new frmEmployeeFinanceDetails();
-            form5.Show();
-            this.Dispose();
+            frmEmployeeFinanceDetails.getForm().Show();
+            this.Hide();
         }
 
         private void btnPrev_Click(object sender, EventArgs e)
         {
-            frmEmployeePersonalDetails form6 = new frmEmployeePersonalDetails();
-            form6.Show();
-            this.Dispose();
+            frmEmployeePersonalDetails.getForm().Show();
+            this.Hide();
         }
 
         private void btnSave1_Click(object sender, EventArgs e)

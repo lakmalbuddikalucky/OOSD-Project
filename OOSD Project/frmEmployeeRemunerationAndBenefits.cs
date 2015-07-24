@@ -12,9 +12,20 @@ namespace OOSD_Project
 {
     public partial class frmEmployeeRemunerationAndBenefits : Form
     {
+        private static frmEmployeeRemunerationAndBenefits form;
+
         public frmEmployeeRemunerationAndBenefits()
         {
             InitializeComponent();
+        }
+
+        public static frmEmployeeRemunerationAndBenefits getForm()
+        {
+            if (form == null)
+            {
+                form = new frmEmployeeRemunerationAndBenefits();
+            }
+            return form;
         }
 
         private void label2_Click_1(object sender, EventArgs e)
@@ -43,15 +54,13 @@ namespace OOSD_Project
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            frmPassportDetails form8 = new frmPassportDetails();
-            form8.Show();
+            frmPassportDetails.getForm().Show();
             this.Hide();
         }
 
         private void btnPrev_Click(object sender, EventArgs e)
         {
-            frmEmployeeFinanceDetails form7 = new frmEmployeeFinanceDetails();
-            form7.Show();
+            frmEmployeeFinanceDetails.getForm().Show();
             this.Hide();
         }
     }

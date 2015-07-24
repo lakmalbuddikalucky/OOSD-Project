@@ -12,9 +12,25 @@ namespace OOSD_Project
 {
     public partial class frmPension_Death : Form
     {
+        private static frmPension_Death form;
+
         public frmPension_Death()
         {
             InitializeComponent();
+        }
+
+        public static frmPension_Death getForm()
+        {
+            if (form == null)
+            {
+                form = new frmPension_Death();
+            }
+            return form;
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

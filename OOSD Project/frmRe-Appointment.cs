@@ -12,9 +12,25 @@ namespace OOSD_Project
 {
     public partial class frmRe_Appointment : Form
     {
+        private static frmRe_Appointment form;
+
         public frmRe_Appointment()
         {
             InitializeComponent();
+        }
+
+        public static frmRe_Appointment getForm()
+        {
+            if (form == null)
+            {
+                form = new frmRe_Appointment();
+            }
+            return form;
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

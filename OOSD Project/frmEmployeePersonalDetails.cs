@@ -15,6 +15,8 @@ namespace OOSD_Project
 {
     public partial class frmEmployeePersonalDetails : Form
     {
+        private static frmEmployeePersonalDetails form;
+
         public frmEmployeePersonalDetails()
         {
             InitializeComponent();
@@ -27,6 +29,91 @@ namespace OOSD_Project
             
         }
 
+        public static frmEmployeePersonalDetails getForm()
+        {
+            if (form == null)
+            {
+                form = new frmEmployeePersonalDetails();
+            }
+            return form;
+        }
+
+        private bool validate()
+        {
+            if (employee_no.Text == "")
+            {
+                employee_no.BackColor = Color.RosyBrown;
+                return false;
+            }
+
+            if (employee_type.Text == "")
+            {
+                employee_type.BackColor = Color.RosyBrown;
+                return false;
+            }
+
+            if (epf_no.Text == "")
+            {
+                epf_no.BackColor = Color.RosyBrown; ;
+                return false;
+            }
+
+            if (salutation.Text == "")
+            {
+                salutation.BackColor = Color.RosyBrown; ;
+                return false;
+            }
+
+            if (occupation.Text == "")
+            {
+                occupation.BackColor = Color.RosyBrown; ;
+                return false;
+            }
+
+            if (first_name.Text == "")
+            {
+                first_name.BackColor = Color.RosyBrown;
+                return false;
+            }
+
+            if (nic_no.Text == "")
+            {
+                nic_no.BackColor = Color.RosyBrown;
+                return false;
+            }
+
+            if (dob_year.Text == "")
+            {
+                dob_year.BackColor = Color.RosyBrown;
+                return false;
+            }
+
+            if (dob_month.Text == "")
+            {
+                dob_month.BackColor = Color.RosyBrown;
+                return false;
+            }
+
+            if (dob_date.Text == "")
+            {
+                dob_date.BackColor = Color.RosyBrown;
+                return false;
+            }
+
+
+            if (action_status.Text == "")
+            {
+                action_status.BackColor = Color.RosyBrown;
+                return false;
+            }
+
+            if (blood_group.Text == "")
+            {
+                blood_group.BackColor = Color.RosyBrown;
+                return false;
+            }
+            return true;
+        }
         private void btnSave_Click(object sender, EventArgs e)
         {
 
@@ -37,7 +124,7 @@ namespace OOSD_Project
             employee.setDate_issued(date_issued.Text);
             employee.setDate_of_birth(dob_year.Text, dob_month.Text, dob_date.Text);
             employee.setDate_of_marriage(marry_year.Text, marry_month.Text, marry_date.Text);
-            employee.setEmployee_no(employee_no_txt.Text);
+            employee.setEmployee_no(employee_no.Text);
             employee.setEmployee_type(employee_type.Text);
             employee.setEpf_no(epf_no.Text);
             employee.setFirst_name(first_name.Text);
@@ -117,17 +204,19 @@ namespace OOSD_Project
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            frmEmployeeSpecialDetails form3 = new frmEmployeeSpecialDetails();
-            form3.Show();
-            this.Dispose();
+            //frmEmployeeSpecialDetails form3 = new frmEmployeeSpecialDetails();
+            //form3.Show();
+            frmEmployeeSpecialDetails.getForm().Show();
+            this.Hide();
             
         }
 
         private void btnPrev_Click(object sender, EventArgs e)
         {
-            frmMain form4 = new frmMain();
-            form4.Show();
-            this.Dispose();
+            //frmMain form4 = new frmMain();
+            //form4.Show();
+            frmMain.getForm().Show();
+            this.Hide();
 
         }
 
@@ -138,18 +227,18 @@ namespace OOSD_Project
 
         private void employee_no_combo_KeyUp(object sender, KeyEventArgs e)
         {
-            employee_no_txt.Text = employee_no_combo.Text;
+            employee_no.Text = employee_no_combo.Text;
             bool exists = EmployeeHandler.checkEmployee(employee_no_combo.Text);
 
             if (exists)
             {
                 employee_no_combo.ForeColor = Color.Red;
-                employee_no_txt.ForeColor = Color.Red;
+                employee_no.ForeColor = Color.Red;
             }
             else
             {
                 employee_no_combo.ForeColor = Color.Black;
-                employee_no_txt.ForeColor = Color.Black;
+                employee_no.ForeColor = Color.Black;
             }
         }
 
@@ -303,6 +392,71 @@ namespace OOSD_Project
                 btnNext.Enabled = true;
             }
             else { MessageBox.Show("Failed to add workstation details...!"); }
+        }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            validate();
+        }
+
+        private void employee_no_TextChanged(object sender, EventArgs e)
+        {
+            employee_no.BackColor = Color.White;
+        }
+
+        private void employee_type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            employee_type.BackColor = Color.White;
+        }
+
+        private void epf_no_TextChanged(object sender, EventArgs e)
+        {
+            epf_no.BackColor = Color.White;
+        }
+
+        private void salutation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            salutation.BackColor = Color.White;
+        }
+
+        private void occupation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            occupation.BackColor = Color.White;
+        }
+
+        private void first_name_TextChanged(object sender, EventArgs e)
+        {
+            first_name.BackColor = Color.White;
+        }
+
+        private void nic_no_TextChanged(object sender, EventArgs e)
+        {
+            nic_no.BackColor = Color.White;
+        }
+
+        private void dob_year_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dob_year.BackColor = Color.White;
+        }
+
+        private void dob_month_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dob_month.BackColor = Color.White;
+        }
+
+        private void dob_date_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dob_date.BackColor = Color.White;
+        }
+
+        private void action_status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            action_status.BackColor = Color.White;
+        }
+
+        private void blood_group_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            blood_group.BackColor = Color.White;
         }
     }
 }

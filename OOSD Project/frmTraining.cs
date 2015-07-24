@@ -12,9 +12,25 @@ namespace OOSD_Project
 {
     public partial class frmTraining : Form
     {
+        private static frmTraining form;
+
         public frmTraining()
         {
             InitializeComponent();
+        }
+
+        public static frmTraining getForm()
+        {
+            if (form == null)
+            {
+                form = new frmTraining();
+            }
+            return form;
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

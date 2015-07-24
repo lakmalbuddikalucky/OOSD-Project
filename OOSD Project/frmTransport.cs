@@ -12,9 +12,19 @@ namespace OOSD_Project
 {
     public partial class frmTransport : Form
     {
+        private static frmTransport form;
         public frmTransport()
         {
             InitializeComponent();
+        }
+
+        public static frmTransport getForm()
+        {
+            if (form == null)
+            {
+                form = new frmTransport();
+            }
+            return form;
         }
 
         private void btnPrev_Click(object sender, EventArgs e)

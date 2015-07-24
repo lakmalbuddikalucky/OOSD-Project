@@ -12,17 +12,29 @@ namespace OOSD_Project
 {
     public partial class frmSearch : Form
     {
+        private static frmSearch form;
+
         public frmSearch()
         {
             //search
             InitializeComponent();
         }
 
+        public static frmSearch getForm()
+        {
+            if (form == null)
+            {
+                form = new frmSearch();
+            }
+            return form;
+        }
         private void btnPrev_Click(object sender, EventArgs e)
         {
-            frmEmployeeFinanceDetails form9 = new frmEmployeeFinanceDetails();
-            form9.Show();
-            this.Dispose();
+            //frmEmployeeFinanceDetails form9 = new frmEmployeeFinanceDetails();
+            //form9.Show();
+            //this.Dispose();
+            frmMain.getForm().Show();
+            this.Hide();
             
         }
 

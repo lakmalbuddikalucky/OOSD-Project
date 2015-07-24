@@ -39,8 +39,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnClear1 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.blood_group = new System.Windows.Forms.ComboBox();
+            this.btnSave1 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.religion = new System.Windows.Forms.TextBox();
             this.date_issued = new System.Windows.Forms.TextBox();
@@ -52,7 +54,7 @@
             this.nic_no = new System.Windows.Forms.TextBox();
             this.nationality = new System.Windows.Forms.TextBox();
             this.epf_no = new System.Windows.Forms.TextBox();
-            this.employee_no_txt = new System.Windows.Forms.TextBox();
+            this.employee_no = new System.Windows.Forms.TextBox();
             this.marry_date = new System.Windows.Forms.ComboBox();
             this.marry_month = new System.Windows.Forms.ComboBox();
             this.marry_year = new System.Windows.Forms.ComboBox();
@@ -81,6 +83,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnSave2 = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.cur_email = new System.Windows.Forms.TextBox();
@@ -132,6 +135,8 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnClear3 = new System.Windows.Forms.Button();
+            this.btnSave3 = new System.Windows.Forms.Button();
             this.depend_medical = new System.Windows.Forms.CheckBox();
             this.depend_deathade = new System.Windows.Forms.CheckBox();
             this.label69 = new System.Windows.Forms.Label();
@@ -167,6 +172,7 @@
             this.label56 = new System.Windows.Forms.Label();
             this.depend_salutation = new System.Windows.Forms.ComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnSave4 = new System.Windows.Forms.Button();
             this.label81 = new System.Windows.Forms.Label();
             this.emg_employee_no = new System.Windows.Forms.TextBox();
             this.emg_office_tp = new System.Windows.Forms.TextBox();
@@ -192,6 +198,7 @@
             this.label75 = new System.Windows.Forms.Label();
             this.emg_salutation = new System.Windows.Forms.ComboBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnSave5 = new System.Windows.Forms.Button();
             this.wsd_date_of_post_d = new System.Windows.Forms.ComboBox();
             this.wsd_date_of_post_m = new System.Windows.Forms.ComboBox();
             this.wsd_date_of_post_y = new System.Windows.Forms.ComboBox();
@@ -211,16 +218,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
-            this.btnSave1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSave2 = new System.Windows.Forms.Button();
-            this.btnSave3 = new System.Windows.Forms.Button();
-            this.btnClear3 = new System.Windows.Forms.Button();
-            this.btnClear1 = new System.Windows.Forms.Button();
-            this.btnSave4 = new System.Windows.Forms.Button();
-            this.btnSave5 = new System.Windows.Forms.Button();
+            this.btnCheck = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -334,6 +335,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.btnCheck);
             this.tabPage1.Controls.Add(this.btnClear1);
             this.tabPage1.Controls.Add(this.label21);
             this.tabPage1.Controls.Add(this.blood_group);
@@ -349,7 +351,7 @@
             this.tabPage1.Controls.Add(this.nic_no);
             this.tabPage1.Controls.Add(this.nationality);
             this.tabPage1.Controls.Add(this.epf_no);
-            this.tabPage1.Controls.Add(this.employee_no_txt);
+            this.tabPage1.Controls.Add(this.employee_no);
             this.tabPage1.Controls.Add(this.marry_date);
             this.tabPage1.Controls.Add(this.marry_month);
             this.tabPage1.Controls.Add(this.marry_year);
@@ -385,6 +387,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Personal Details";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // btnClear1
+            // 
+            this.btnClear1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear1.Location = new System.Drawing.Point(740, 573);
+            this.btnClear1.Name = "btnClear1";
+            this.btnClear1.Size = new System.Drawing.Size(150, 35);
+            this.btnClear1.TabIndex = 55;
+            this.btnClear1.Text = "අවලංගු කරන්න";
+            this.btnClear1.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -474,10 +486,22 @@
             "1948",
             "1947",
             "1946"});
-            this.blood_group.Location = new System.Drawing.Point(785, 497);
+            this.blood_group.Location = new System.Drawing.Point(784, 497);
             this.blood_group.Name = "blood_group";
             this.blood_group.Size = new System.Drawing.Size(200, 34);
             this.blood_group.TabIndex = 50;
+            this.blood_group.SelectedIndexChanged += new System.EventHandler(this.blood_group_SelectedIndexChanged);
+            // 
+            // btnSave1
+            // 
+            this.btnSave1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave1.Location = new System.Drawing.Point(896, 573);
+            this.btnSave1.Name = "btnSave1";
+            this.btnSave1.Size = new System.Drawing.Size(150, 35);
+            this.btnSave1.TabIndex = 0;
+            this.btnSave1.Text = "තැන්පතු කරන්න ";
+            this.btnSave1.UseVisualStyleBackColor = true;
+            this.btnSave1.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label20
             // 
@@ -529,6 +553,7 @@
             this.first_name.Name = "first_name";
             this.first_name.Size = new System.Drawing.Size(301, 33);
             this.first_name.TabIndex = 23;
+            this.first_name.TextChanged += new System.EventHandler(this.first_name_TextChanged);
             // 
             // last_name
             // 
@@ -543,6 +568,7 @@
             this.nic_no.Name = "nic_no";
             this.nic_no.Size = new System.Drawing.Size(200, 33);
             this.nic_no.TabIndex = 15;
+            this.nic_no.TextChanged += new System.EventHandler(this.nic_no_TextChanged);
             // 
             // nationality
             // 
@@ -557,13 +583,15 @@
             this.epf_no.Name = "epf_no";
             this.epf_no.Size = new System.Drawing.Size(200, 33);
             this.epf_no.TabIndex = 7;
+            this.epf_no.TextChanged += new System.EventHandler(this.epf_no_TextChanged);
             // 
-            // employee_no_txt
+            // employee_no
             // 
-            this.employee_no_txt.Location = new System.Drawing.Point(243, 30);
-            this.employee_no_txt.Name = "employee_no_txt";
-            this.employee_no_txt.Size = new System.Drawing.Size(201, 33);
-            this.employee_no_txt.TabIndex = 5;
+            this.employee_no.Location = new System.Drawing.Point(243, 30);
+            this.employee_no.Name = "employee_no";
+            this.employee_no.Size = new System.Drawing.Size(201, 33);
+            this.employee_no.TabIndex = 5;
+            this.employee_no.TextChanged += new System.EventHandler(this.employee_no_TextChanged);
             // 
             // marry_date
             // 
@@ -826,6 +854,7 @@
             this.action_status.Name = "action_status";
             this.action_status.Size = new System.Drawing.Size(204, 34);
             this.action_status.TabIndex = 39;
+            this.action_status.SelectedIndexChanged += new System.EventHandler(this.action_status_SelectedIndexChanged);
             // 
             // married
             // 
@@ -879,6 +908,7 @@
             this.dob_date.Size = new System.Drawing.Size(91, 34);
             this.dob_date.TabIndex = 36;
             this.dob_date.Text = "    දිනය";
+            this.dob_date.SelectedIndexChanged += new System.EventHandler(this.dob_date_SelectedIndexChanged);
             // 
             // dob_month
             // 
@@ -902,6 +932,7 @@
             this.dob_month.Size = new System.Drawing.Size(91, 34);
             this.dob_month.TabIndex = 33;
             this.dob_month.Text = "   මාසය";
+            this.dob_month.SelectedIndexChanged += new System.EventHandler(this.dob_month_SelectedIndexChanged);
             // 
             // dob_year
             // 
@@ -988,6 +1019,7 @@
             this.dob_year.Size = new System.Drawing.Size(103, 34);
             this.dob_year.TabIndex = 32;
             this.dob_year.Text = "   වර්ෂය";
+            this.dob_year.SelectedIndexChanged += new System.EventHandler(this.dob_year_SelectedIndexChanged);
             // 
             // label18
             // 
@@ -1050,6 +1082,7 @@
             this.occupation.Name = "occupation";
             this.occupation.Size = new System.Drawing.Size(200, 34);
             this.occupation.TabIndex = 20;
+            this.occupation.SelectedIndexChanged += new System.EventHandler(this.occupation_SelectedIndexChanged);
             // 
             // employee_type
             // 
@@ -1058,6 +1091,7 @@
             this.employee_type.Name = "employee_type";
             this.employee_type.Size = new System.Drawing.Size(200, 34);
             this.employee_type.TabIndex = 19;
+            this.employee_type.SelectedIndexChanged += new System.EventHandler(this.employee_type_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -1102,6 +1136,7 @@
             this.salutation.Name = "salutation";
             this.salutation.Size = new System.Drawing.Size(201, 34);
             this.salutation.TabIndex = 9;
+            this.salutation.SelectedIndexChanged += new System.EventHandler(this.salutation_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -1190,6 +1225,17 @@
             this.tabPage2.Size = new System.Drawing.Size(1067, 670);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Contact Details";
+            // 
+            // btnSave2
+            // 
+            this.btnSave2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave2.Location = new System.Drawing.Point(896, 573);
+            this.btnSave2.Name = "btnSave2";
+            this.btnSave2.Size = new System.Drawing.Size(150, 35);
+            this.btnSave2.TabIndex = 52;
+            this.btnSave2.Text = "තැන්පතු කරන්න";
+            this.btnSave2.UseVisualStyleBackColor = true;
+            this.btnSave2.Click += new System.EventHandler(this.btnSave2_Click);
             // 
             // label36
             // 
@@ -1651,6 +1697,28 @@
             this.tabPage3.Text = "Dependent Details";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // btnClear3
+            // 
+            this.btnClear3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear3.Location = new System.Drawing.Point(740, 573);
+            this.btnClear3.Name = "btnClear3";
+            this.btnClear3.Size = new System.Drawing.Size(150, 35);
+            this.btnClear3.TabIndex = 54;
+            this.btnClear3.Text = "අවලංගු කරන්න";
+            this.btnClear3.UseVisualStyleBackColor = true;
+            this.btnClear3.Click += new System.EventHandler(this.btnClear3_Click);
+            // 
+            // btnSave3
+            // 
+            this.btnSave3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave3.Location = new System.Drawing.Point(896, 573);
+            this.btnSave3.Name = "btnSave3";
+            this.btnSave3.Size = new System.Drawing.Size(150, 35);
+            this.btnSave3.TabIndex = 53;
+            this.btnSave3.Text = "තැන්පතු කරන්න";
+            this.btnSave3.UseVisualStyleBackColor = true;
+            this.btnSave3.Click += new System.EventHandler(this.btnSave3_Click);
+            // 
             // depend_medical
             // 
             this.depend_medical.AutoSize = true;
@@ -1977,6 +2045,17 @@
             this.tabPage4.UseVisualStyleBackColor = true;
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
+            // btnSave4
+            // 
+            this.btnSave4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave4.Location = new System.Drawing.Point(896, 573);
+            this.btnSave4.Name = "btnSave4";
+            this.btnSave4.Size = new System.Drawing.Size(150, 35);
+            this.btnSave4.TabIndex = 54;
+            this.btnSave4.Text = "තැන්පතු කරන්න";
+            this.btnSave4.UseVisualStyleBackColor = true;
+            this.btnSave4.Click += new System.EventHandler(this.button3_Click);
+            // 
             // label81
             // 
             this.label81.AutoSize = true;
@@ -2203,6 +2282,17 @@
             this.tabPage5.Text = "WorkstationDetails";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // btnSave5
+            // 
+            this.btnSave5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave5.Location = new System.Drawing.Point(896, 573);
+            this.btnSave5.Name = "btnSave5";
+            this.btnSave5.Size = new System.Drawing.Size(150, 35);
+            this.btnSave5.TabIndex = 55;
+            this.btnSave5.Text = "තැන්පතු කරන්න";
+            this.btnSave5.UseVisualStyleBackColor = true;
+            this.btnSave5.Click += new System.EventHandler(this.btnSave5_Click);
+            // 
             // wsd_date_of_post_d
             // 
             this.wsd_date_of_post_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
@@ -2379,17 +2469,6 @@
             this.btnPrev.UseVisualStyleBackColor = false;
             this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
-            // btnSave1
-            // 
-            this.btnSave1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave1.Location = new System.Drawing.Point(896, 573);
-            this.btnSave1.Name = "btnSave1";
-            this.btnSave1.Size = new System.Drawing.Size(150, 35);
-            this.btnSave1.TabIndex = 0;
-            this.btnSave1.Text = "තැන්පතු කරන්න ";
-            this.btnSave1.UseVisualStyleBackColor = true;
-            this.btnSave1.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Teal;
@@ -2423,70 +2502,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee";
             // 
-            // btnSave2
+            // btnCheck
             // 
-            this.btnSave2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave2.Location = new System.Drawing.Point(896, 573);
-            this.btnSave2.Name = "btnSave2";
-            this.btnSave2.Size = new System.Drawing.Size(150, 35);
-            this.btnSave2.TabIndex = 52;
-            this.btnSave2.Text = "තැන්පතු කරන්න";
-            this.btnSave2.UseVisualStyleBackColor = true;
-            this.btnSave2.Click += new System.EventHandler(this.btnSave2_Click);
-            // 
-            // btnSave3
-            // 
-            this.btnSave3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave3.Location = new System.Drawing.Point(896, 573);
-            this.btnSave3.Name = "btnSave3";
-            this.btnSave3.Size = new System.Drawing.Size(150, 35);
-            this.btnSave3.TabIndex = 53;
-            this.btnSave3.Text = "තැන්පතු කරන්න";
-            this.btnSave3.UseVisualStyleBackColor = true;
-            this.btnSave3.Click += new System.EventHandler(this.btnSave3_Click);
-            // 
-            // btnClear3
-            // 
-            this.btnClear3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear3.Location = new System.Drawing.Point(740, 573);
-            this.btnClear3.Name = "btnClear3";
-            this.btnClear3.Size = new System.Drawing.Size(150, 35);
-            this.btnClear3.TabIndex = 54;
-            this.btnClear3.Text = "අවලංගු කරන්න";
-            this.btnClear3.UseVisualStyleBackColor = true;
-            this.btnClear3.Click += new System.EventHandler(this.btnClear3_Click);
-            // 
-            // btnClear1
-            // 
-            this.btnClear1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear1.Location = new System.Drawing.Point(740, 573);
-            this.btnClear1.Name = "btnClear1";
-            this.btnClear1.Size = new System.Drawing.Size(150, 35);
-            this.btnClear1.TabIndex = 55;
-            this.btnClear1.Text = "අවලංගු කරන්න";
-            this.btnClear1.UseVisualStyleBackColor = true;
-            // 
-            // btnSave4
-            // 
-            this.btnSave4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave4.Location = new System.Drawing.Point(896, 573);
-            this.btnSave4.Name = "btnSave4";
-            this.btnSave4.Size = new System.Drawing.Size(150, 35);
-            this.btnSave4.TabIndex = 54;
-            this.btnSave4.Text = "තැන්පතු කරන්න";
-            this.btnSave4.UseVisualStyleBackColor = true;
-            this.btnSave4.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnSave5
-            // 
-            this.btnSave5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave5.Location = new System.Drawing.Point(896, 573);
-            this.btnSave5.Name = "btnSave5";
-            this.btnSave5.Size = new System.Drawing.Size(150, 35);
-            this.btnSave5.TabIndex = 55;
-            this.btnSave5.Text = "තැන්පතු කරන්න";
-            this.btnSave5.UseVisualStyleBackColor = true;
-            this.btnSave5.Click += new System.EventHandler(this.btnSave5_Click);
+            this.btnCheck.Location = new System.Drawing.Point(243, 569);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(75, 33);
+            this.btnCheck.TabIndex = 56;
+            this.btnCheck.Text = "Check";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // frmEmployeePersonalDetails
             // 
@@ -2553,7 +2577,7 @@
         private System.Windows.Forms.TextBox nic_no;
         private System.Windows.Forms.TextBox nationality;
         private System.Windows.Forms.TextBox epf_no;
-        private System.Windows.Forms.TextBox employee_no_txt;
+        private System.Windows.Forms.TextBox employee_no;
         private System.Windows.Forms.ComboBox marry_date;
         private System.Windows.Forms.ComboBox marry_month;
         private System.Windows.Forms.ComboBox marry_year;
@@ -2717,6 +2741,7 @@
         private System.Windows.Forms.Button btnSave3;
         private System.Windows.Forms.Button btnSave4;
         private System.Windows.Forms.Button btnSave5;
+        private System.Windows.Forms.Button btnCheck;
     }
 }
 

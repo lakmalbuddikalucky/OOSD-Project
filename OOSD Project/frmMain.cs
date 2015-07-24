@@ -13,17 +13,40 @@ namespace OOSD_Project
 {
     public partial class frmMain : Form
     {
+        private static frmMain form;
+
         public frmMain()
         {
             InitializeComponent();
+            frmEmployeePersonalDetails.getForm();
+            frmSearch.getForm();
+            frmEmployeeSpecialDetails.getForm();
+            frmEmployeeFinanceDetails.getForm();
+            frmEmployeeRemunerationAndBenefits.getForm();
+            frmPassportDetails.getForm();
+            frmDisciplinaryDetails.getForm();
+            frmInterdict_Suspend.getForm();
+            frmJobStatus.getForm();
+            frmPension_Death.getForm();
+            frmRe_Appointment.getForm();
+            frmResignation.getForm();
+            frmTraining.getForm();
+            frmTransport.getForm();
+            frmMain.form = this;
         }
 
+        public static frmMain getForm()
+        {
+            if (form == null)
+            {
+                form = new frmMain();
+            }
+            return form;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            frmEmployeePersonalDetails form2 = new frmEmployeePersonalDetails();
-            form2.Show();
-            this.Dispose();
-
+            frmEmployeePersonalDetails.getForm().Show();
+            this.Hide();
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
@@ -38,8 +61,9 @@ namespace OOSD_Project
 
         private void button4_Click(object sender, EventArgs e)
         {
-            frmSearch form = new frmSearch();
-            form.Show();
+            //frmSearch form = new frmSearch();
+            //form.Show();
+            frmSearch.getForm().Show();
             this.Hide();
         }
     }

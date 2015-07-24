@@ -83,3 +83,28 @@ C:\Users\User\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Proj
 C:\Users\User\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeePersonalDetails.resources
 C:\Users\User\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.Properties.Resources.resources
 C:\Users\User\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\Original.csproj.GenerateResource.Cache
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\bin\x64\Debug\OOSD Project.exe.config
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD Project.exe
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD Project.pdb
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\bin\x64\Debug\OOSD Project.exe
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\bin\x64\Debug\OOSD Project.pdb
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\bin\x64\Debug\MySql.Data.dll
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\Original.csprojResolveAssemblyReference.cache
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmDisciplinaryDetails.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeeFinanceDetails.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeeSpecialDetails.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmInterdict_Suspend.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmJobStatus.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmLogin.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmMain.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmPassportDetails.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmPension_Death.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmRe_Appointment.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeeRemunerationAndBenefits.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmResignation.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmSearch.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmTraining.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmTransport.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeePersonalDetails.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.Properties.Resources.resources
+D:\OOSD PROJECT\OOSD-Project\OOSD Project\obj\x64\Debug\Original.csproj.GenerateResource.Cache

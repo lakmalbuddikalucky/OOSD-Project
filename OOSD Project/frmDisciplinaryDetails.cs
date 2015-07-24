@@ -12,9 +12,30 @@ namespace OOSD_Project
 {
     public partial class frmDisciplinaryDetails : Form
     {
+        private static frmDisciplinaryDetails form;
+
         public frmDisciplinaryDetails()
         {
             InitializeComponent();
+        }
+
+        public static frmDisciplinaryDetails getForm()
+        {
+            if (form == null)
+            {
+                form = new frmDisciplinaryDetails();
+            }
+            return form;
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

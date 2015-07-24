@@ -74,10 +74,10 @@ namespace OOSD_Project.DBHandler
 
                     dd.birth_certificate = reader["birth_certificate"].ToString();
 
-                    if (reader["deathade"].ToString() == "1") { dd.deathade = true; }
+                    if (reader["deathade"].ToString() == "True") { dd.deathade = true; }
                     else { dd.deathade = false; }
 
-                    if (reader["doctor"].ToString() == "1") { dd.doctor = true; }
+                    if (reader["doctor"].ToString() == "True") { dd.doctor = true; }
                     else { dd.doctor = false; }
 
                     dd.full_name = reader["full_name"].ToString();

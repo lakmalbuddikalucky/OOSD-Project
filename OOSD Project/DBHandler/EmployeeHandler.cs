@@ -98,7 +98,7 @@ namespace OOSD_Project.Database
                     e.setImg_url(reader["image_url"].ToString());
                     e.setInitials(reader["initials"].ToString());
 
-                    if (reader["married"].ToString() == "1") { e.setMarried(1); }
+                    if (reader["married"].ToString() == "True") { e.setMarried(1); }
                     else { e.setMarried(0); }
 
                     e.setNationality(reader["nationality"].ToString());

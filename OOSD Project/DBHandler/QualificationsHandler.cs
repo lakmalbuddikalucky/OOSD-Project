@@ -45,5 +45,68 @@ namespace OOSD_Project.DBHandler
 
         }
 
+
+
+        public static Qualification getQualification()
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "SELECT * FROM qualification WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                Console.Write(Employee.employee_id + "\n");
+
+                Qualification q = new Qualification();
+
+                if (reader.Read())
+                {
+                    q.institute = reader["institute"].ToString();
+                    q.months = reader["months"].ToString();
+                    q.status = reader["status"].ToString();
+                    q.note = reader["note"].ToString();
+                    q.qualification = reader["qualification"].ToString();
+                    q.year = reader["year"].ToString();
+
+                    Console.Write("dfsdf   " + reader["occupation_relevant"].ToString() + "\n");
+
+                    if (reader["occupation_relevant"].ToString() == "True") { q.occupation_relevant = true; }
+                    else { q.occupation_relevant = false; }
+
+                    if (reader["highest_qualification"].ToString() == "True") { q.highest_qualification = true; }
+                    else { q.highest_qualification = false; }
+
+                }
+
+                reader.Close();
+
+                dbcon.closeConnection();
+
+                return q;
+            }
+            else
+            {
+
+                return null;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return null;
+            //}
+
+        }
+
     }
 }

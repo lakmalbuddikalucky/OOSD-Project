@@ -277,21 +277,21 @@
             this.textBox84 = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.label10 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.qual_highest_qualification = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.qual_year = new System.Windows.Forms.TextBox();
+            this.qual_qualification = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.qual_note = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.textBox48 = new System.Windows.Forms.TextBox();
+            this.qual_status = new System.Windows.Forms.ComboBox();
+            this.qual_occupation_relevant = new System.Windows.Forms.CheckBox();
+            this.qual_months = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.qualification_no = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox50 = new System.Windows.Forms.TextBox();
+            this.qual_institute = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
@@ -3420,21 +3420,21 @@
             // 
             this.tabPage6.BackColor = System.Drawing.Color.White;
             this.tabPage6.Controls.Add(this.label10);
-            this.tabPage6.Controls.Add(this.checkBox4);
+            this.tabPage6.Controls.Add(this.qual_highest_qualification);
             this.tabPage6.Controls.Add(this.label8);
-            this.tabPage6.Controls.Add(this.textBox45);
-            this.tabPage6.Controls.Add(this.textBox46);
+            this.tabPage6.Controls.Add(this.qual_year);
+            this.tabPage6.Controls.Add(this.qual_qualification);
             this.tabPage6.Controls.Add(this.label7);
-            this.tabPage6.Controls.Add(this.textBox47);
+            this.tabPage6.Controls.Add(this.qual_note);
             this.tabPage6.Controls.Add(this.label5);
             this.tabPage6.Controls.Add(this.label6);
-            this.tabPage6.Controls.Add(this.comboBox5);
-            this.tabPage6.Controls.Add(this.checkBox5);
-            this.tabPage6.Controls.Add(this.textBox48);
+            this.tabPage6.Controls.Add(this.qual_status);
+            this.tabPage6.Controls.Add(this.qual_occupation_relevant);
+            this.tabPage6.Controls.Add(this.qual_months);
             this.tabPage6.Controls.Add(this.label9);
-            this.tabPage6.Controls.Add(this.textBox49);
+            this.tabPage6.Controls.Add(this.qualification_no);
             this.tabPage6.Controls.Add(this.label14);
-            this.tabPage6.Controls.Add(this.textBox50);
+            this.tabPage6.Controls.Add(this.qual_institute);
             this.tabPage6.Controls.Add(this.label15);
             this.tabPage6.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage6.Location = new System.Drawing.Point(4, 34);
@@ -3453,17 +3453,17 @@
             this.label10.TabIndex = 18;
             this.label10.Text = "මාස";
             // 
-            // checkBox4
+            // qual_highest_qualification
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.checkBox4.Location = new System.Drawing.Point(317, 146);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox4.Size = new System.Drawing.Size(233, 31);
-            this.checkBox4.TabIndex = 17;
-            this.checkBox4.Text = "ප්‍රමුඛතම සුදුසුකම         ";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.qual_highest_qualification.AutoSize = true;
+            this.qual_highest_qualification.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.qual_highest_qualification.Location = new System.Drawing.Point(317, 146);
+            this.qual_highest_qualification.Name = "qual_highest_qualification";
+            this.qual_highest_qualification.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.qual_highest_qualification.Size = new System.Drawing.Size(233, 31);
+            this.qual_highest_qualification.TabIndex = 17;
+            this.qual_highest_qualification.Text = "ප්‍රමුඛතම සුදුසුකම         ";
+            this.qual_highest_qualification.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -3474,19 +3474,19 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "සුදුසුකම් ලැබූ වර්ෂය";
             // 
-            // textBox45
+            // qual_year
             // 
-            this.textBox45.Location = new System.Drawing.Point(306, 473);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(120, 33);
-            this.textBox45.TabIndex = 15;
+            this.qual_year.Location = new System.Drawing.Point(306, 473);
+            this.qual_year.Name = "qual_year";
+            this.qual_year.Size = new System.Drawing.Size(120, 33);
+            this.qual_year.TabIndex = 15;
             // 
-            // textBox46
+            // qual_qualification
             // 
-            this.textBox46.Location = new System.Drawing.Point(306, 434);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(200, 33);
-            this.textBox46.TabIndex = 14;
+            this.qual_qualification.Location = new System.Drawing.Point(306, 434);
+            this.qual_qualification.Name = "qual_qualification";
+            this.qual_qualification.Size = new System.Drawing.Size(200, 33);
+            this.qual_qualification.TabIndex = 14;
             // 
             // label7
             // 
@@ -3497,13 +3497,13 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "සුදුසුකම";
             // 
-            // textBox47
+            // qual_note
             // 
-            this.textBox47.Location = new System.Drawing.Point(306, 223);
-            this.textBox47.Multiline = true;
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(350, 200);
-            this.textBox47.TabIndex = 12;
+            this.qual_note.Location = new System.Drawing.Point(306, 223);
+            this.qual_note.Multiline = true;
+            this.qual_note.Name = "qual_note";
+            this.qual_note.Size = new System.Drawing.Size(350, 200);
+            this.qual_note.TabIndex = 12;
             // 
             // label5
             // 
@@ -3523,32 +3523,32 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "තත්වය";
             // 
-            // comboBox5
+            // qual_status
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(306, 183);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(200, 34);
-            this.comboBox5.TabIndex = 9;
+            this.qual_status.FormattingEnabled = true;
+            this.qual_status.Location = new System.Drawing.Point(306, 183);
+            this.qual_status.Name = "qual_status";
+            this.qual_status.Size = new System.Drawing.Size(200, 34);
+            this.qual_status.TabIndex = 9;
             // 
-            // checkBox5
+            // qual_occupation_relevant
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.checkBox5.Location = new System.Drawing.Point(81, 146);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox5.Size = new System.Drawing.Size(230, 31);
-            this.checkBox5.TabIndex = 8;
-            this.checkBox5.Text = "රැකියාවට අනුකූල         ";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.qual_occupation_relevant.AutoSize = true;
+            this.qual_occupation_relevant.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.qual_occupation_relevant.Location = new System.Drawing.Point(81, 146);
+            this.qual_occupation_relevant.Name = "qual_occupation_relevant";
+            this.qual_occupation_relevant.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.qual_occupation_relevant.Size = new System.Drawing.Size(230, 31);
+            this.qual_occupation_relevant.TabIndex = 8;
+            this.qual_occupation_relevant.Text = "රැකියාවට අනුකූල         ";
+            this.qual_occupation_relevant.UseVisualStyleBackColor = true;
             // 
-            // textBox48
+            // qual_months
             // 
-            this.textBox48.Location = new System.Drawing.Point(306, 107);
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(100, 33);
-            this.textBox48.TabIndex = 7;
+            this.qual_months.Location = new System.Drawing.Point(306, 107);
+            this.qual_months.Name = "qual_months";
+            this.qual_months.Size = new System.Drawing.Size(100, 33);
+            this.qual_months.TabIndex = 7;
             // 
             // label9
             // 
@@ -3559,12 +3559,12 @@
             this.label9.TabIndex = 6;
             this.label9.Text = "කාල සීමාව";
             // 
-            // textBox49
+            // qualification_no
             // 
-            this.textBox49.Location = new System.Drawing.Point(306, 30);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(200, 33);
-            this.textBox49.TabIndex = 5;
+            this.qualification_no.Location = new System.Drawing.Point(306, 30);
+            this.qualification_no.Name = "qualification_no";
+            this.qualification_no.Size = new System.Drawing.Size(200, 33);
+            this.qualification_no.TabIndex = 5;
             // 
             // label14
             // 
@@ -3575,12 +3575,12 @@
             this.label14.TabIndex = 4;
             this.label14.Text = "පාසැල / උසස් අධ්‍යාපන ආයතනය";
             // 
-            // textBox50
+            // qual_institute
             // 
-            this.textBox50.Location = new System.Drawing.Point(306, 69);
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(200, 33);
-            this.textBox50.TabIndex = 1;
+            this.qual_institute.Location = new System.Drawing.Point(306, 69);
+            this.qual_institute.Name = "qual_institute";
+            this.qual_institute.Size = new System.Drawing.Size(200, 33);
+            this.qual_institute.TabIndex = 1;
             // 
             // label15
             // 
@@ -7477,21 +7477,21 @@
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox qual_highest_qualification;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox45;
-        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.TextBox qual_year;
+        private System.Windows.Forms.TextBox qual_qualification;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.TextBox qual_note;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.TextBox textBox48;
+        private System.Windows.Forms.ComboBox qual_status;
+        private System.Windows.Forms.CheckBox qual_occupation_relevant;
+        private System.Windows.Forms.TextBox qual_months;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox49;
+        private System.Windows.Forms.TextBox qualification_no;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox50;
+        private System.Windows.Forms.TextBox qual_institute;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.ComboBox comboBox6;

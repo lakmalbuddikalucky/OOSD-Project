@@ -156,7 +156,27 @@ namespace OOSD_Project
             wsd_rank.Text = wsd.rank;
             wsd_responsibility.Text = wsd.responsibility;
             wsd_salary_station.Text = wsd.salary_station;
-            
+
+
+            //Load qualification details
+            Qualification q = QualificationsHandler.getQualification();
+
+            qualification_no.Text = q.qualification_no;
+            qual_institute.Text = q.institute;
+            qual_months.Text = q.months;
+            qual_note.Text = q.note;
+            qual_qualification.Text = q.qualification;
+            qual_status.Text = q.status;
+            qual_year.Text = q.year;
+
+            Console.Write(q.highest_qualification + "\n");
+
+            if (q.highest_qualification == true) { qual_highest_qualification.Checked = true; }
+            else { qual_highest_qualification.Checked = false; }
+
+            if (q.occupation_relevant == true) { qual_occupation_relevant.Checked = true; }
+            else { qual_occupation_relevant.Checked = false; }
+
 
         }
 

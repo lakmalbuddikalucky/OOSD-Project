@@ -144,7 +144,7 @@ namespace OOSD_Project.DBTableClass
         }
 
 
-        string date_issued;
+        public string date_issued;
         public string getDate_issued()
         {
             return date_issued;
@@ -178,7 +178,7 @@ namespace OOSD_Project.DBTableClass
         }
 
 
-        string date_of_birth;
+        public string date_of_birth;
         public string getDate_of_birth()
         {
             return date_of_birth;
@@ -212,7 +212,7 @@ namespace OOSD_Project.DBTableClass
         }
 
 
-        string date_of_marriage;
+        public string date_of_marriage;
         public string getDate_of_marriage()
         {
             return date_of_marriage;

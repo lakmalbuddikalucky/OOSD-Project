@@ -46,5 +46,60 @@ namespace OOSD_Project.DBHandler
 
         }
 
+
+
+        public static WorkstationDetails getWorkstationDetails()
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "SELECT * FROM workstation_details WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                Console.Write(Employee.employee_id + "\n");
+
+                WorkstationDetails wd = new WorkstationDetails();
+
+                if (reader.Read())
+                {
+                    wd.division = reader["division"].ToString();
+                    wd.post = reader["post"].ToString();
+                    wd.power = reader["power"].ToString();
+                    wd.rank = reader["rank"].ToString();
+                    wd.responsibility = reader["responsibility"].ToString();
+                    wd.salary_station = reader["salary_station"].ToString();
+                    wd.date_of_post = reader["date_of_post"].ToString();
+                }
+
+                reader.Close();
+
+                dbcon.closeConnection();
+
+                return wd;
+            }
+            else
+            {
+
+                return null;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return null;
+            //}
+
+        }
+
     }
 }

@@ -47,5 +47,67 @@ namespace OOSD_Project.DBHandler
         }
 
 
+        public static EmergencyContact getEmergencyContact()
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "SELECT * FROM emergency_contact WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                Console.Write(Employee.employee_id + "\n");
+
+                EmergencyContact ec = new EmergencyContact();
+
+                if (reader.Read())
+                {
+
+                    ec.full_name = reader["full_name"].ToString();
+                    ec.int_ext = reader["int_ext"].ToString();
+                    ec.mobile_no = reader["mobile_no"].ToString();
+                    ec.nic_no = reader["nic_no"].ToString();
+                    ec.office_tp = reader["official_tp"].ToString();
+                    ec.official_address = reader["official_address"].ToString();
+                    ec.personal_address = reader["personal_address"].ToString();
+                    ec.personal_tp = reader["personal_tp"].ToString();
+                    ec.priority = reader["priority"].ToString();
+                    ec.relation = reader["relation"].ToString();
+                    ec.salutation = reader["salutation"].ToString();
+                    ec.employee_no = reader["employee_no"].ToString();
+
+                }
+
+                reader.Close();
+
+                dbcon.closeConnection();
+
+                return ec;
+            }
+            else
+            {
+
+                return null;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return null;
+            //}
+
+        }
+
+
+
     }
 }

@@ -18,8 +18,13 @@ namespace OOSD_Project
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new frmLogin());
             //Application.Run(new frmMain());
+=======
+            //Application.Run(new frmLogin());
+            Application.Run(new frmSearch());
+>>>>>>> origin/master
         }
     }
 }

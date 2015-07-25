@@ -19,7 +19,7 @@ namespace OOSD_Project
             password.PasswordChar = '*';
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin(object sender, EventArgs e)
         {
 
             UserLog ul = new UserLog();
@@ -61,6 +61,32 @@ namespace OOSD_Project
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void username_Leave(object sender, EventArgs e)
+        {
+            if (username.Text == "")
+            {
+                username.Text = "UserName";
+            }
+        }
+
+        private void password_Leave(object sender, EventArgs e)
+        {
+            if (password.Text == "")
+            {
+                password.Text = "********";
+            }
+        }
+
+        private void username_Enter(object sender, EventArgs e)
+        {
+            username.Text = "";
+        }
+
+        private void password_Enter(object sender, EventArgs e)
+        {
+            password.Text = "";
         }
     }
 }

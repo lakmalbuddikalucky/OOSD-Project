@@ -62,6 +62,8 @@
             this.qual_institute = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnClear2 = new System.Windows.Forms.Button();
+            this.btnSave2 = new System.Windows.Forms.Button();
             this.we_date_perma_d = new System.Windows.Forms.ComboBox();
             this.we_date_perma_m = new System.Windows.Forms.ComboBox();
             this.we_date_perma_y = new System.Windows.Forms.ComboBox();
@@ -94,6 +96,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.we_institute = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnClear3 = new System.Windows.Forms.Button();
+            this.btnSave3 = new System.Windows.Forms.Button();
             this.label37 = new System.Windows.Forms.Label();
             this.ea_award = new System.Windows.Forms.TextBox();
             this.ea_method = new System.Windows.Forms.TextBox();
@@ -101,6 +105,8 @@
             this.ea_type = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnClear4 = new System.Windows.Forms.Button();
+            this.btnSave4 = new System.Windows.Forms.Button();
             this.member_active_date_insti_d = new System.Windows.Forms.ComboBox();
             this.member_active_date_insti_m = new System.Windows.Forms.ComboBox();
             this.member_active_date_insti_y = new System.Windows.Forms.ComboBox();
@@ -138,12 +144,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
-            this.btnClear2 = new System.Windows.Forms.Button();
-            this.btnSave2 = new System.Windows.Forms.Button();
-            this.btnClear3 = new System.Windows.Forms.Button();
-            this.btnSave3 = new System.Windows.Forms.Button();
-            this.btnClear4 = new System.Windows.Forms.Button();
-            this.btnSave4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -526,6 +526,28 @@
             this.tabPage2.Size = new System.Drawing.Size(1062, 670);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Working Experience";
+            // 
+            // btnClear2
+            // 
+            this.btnClear2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear2.Location = new System.Drawing.Point(740, 570);
+            this.btnClear2.Name = "btnClear2";
+            this.btnClear2.Size = new System.Drawing.Size(150, 35);
+            this.btnClear2.TabIndex = 59;
+            this.btnClear2.Text = "අවලංගු කරන්න";
+            this.btnClear2.UseVisualStyleBackColor = true;
+            this.btnClear2.Click += new System.EventHandler(this.btnClear2_Click);
+            // 
+            // btnSave2
+            // 
+            this.btnSave2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave2.Location = new System.Drawing.Point(896, 570);
+            this.btnSave2.Name = "btnSave2";
+            this.btnSave2.Size = new System.Drawing.Size(150, 35);
+            this.btnSave2.TabIndex = 58;
+            this.btnSave2.Text = "තැන්පතු කරන්න ";
+            this.btnSave2.UseVisualStyleBackColor = true;
+            this.btnSave2.Click += new System.EventHandler(this.button3_Click);
             // 
             // we_date_perma_d
             // 
@@ -1182,6 +1204,28 @@
             this.tabPage3.Text = "Extra Curricular Activities";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // btnClear3
+            // 
+            this.btnClear3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear3.Location = new System.Drawing.Point(740, 569);
+            this.btnClear3.Name = "btnClear3";
+            this.btnClear3.Size = new System.Drawing.Size(150, 35);
+            this.btnClear3.TabIndex = 61;
+            this.btnClear3.Text = "අවලංගු කරන්න";
+            this.btnClear3.UseVisualStyleBackColor = true;
+            this.btnClear3.Click += new System.EventHandler(this.btnClear3_Click);
+            // 
+            // btnSave3
+            // 
+            this.btnSave3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave3.Location = new System.Drawing.Point(896, 569);
+            this.btnSave3.Name = "btnSave3";
+            this.btnSave3.Size = new System.Drawing.Size(150, 35);
+            this.btnSave3.TabIndex = 60;
+            this.btnSave3.Text = "තැන්පතු කරන්න ";
+            this.btnSave3.UseVisualStyleBackColor = true;
+            this.btnSave3.Click += new System.EventHandler(this.btnSave3_Click);
+            // 
             // label37
             // 
             this.label37.AutoSize = true;
@@ -1272,6 +1316,27 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Membership";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // btnClear4
+            // 
+            this.btnClear4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear4.Location = new System.Drawing.Point(740, 570);
+            this.btnClear4.Name = "btnClear4";
+            this.btnClear4.Size = new System.Drawing.Size(150, 35);
+            this.btnClear4.TabIndex = 63;
+            this.btnClear4.Text = "අවලංගු කරන්න";
+            this.btnClear4.UseVisualStyleBackColor = true;
+            // 
+            // btnSave4
+            // 
+            this.btnSave4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave4.Location = new System.Drawing.Point(896, 570);
+            this.btnSave4.Name = "btnSave4";
+            this.btnSave4.Size = new System.Drawing.Size(150, 35);
+            this.btnSave4.TabIndex = 62;
+            this.btnSave4.Text = "තැන්පතු කරන්න ";
+            this.btnSave4.UseVisualStyleBackColor = true;
+            this.btnSave4.Click += new System.EventHandler(this.btnSave4_Click);
             // 
             // member_active_date_insti_d
             // 
@@ -2088,7 +2153,7 @@
             // 
             this.btnNext.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnNext.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(1273, 10);
+            this.btnNext.Location = new System.Drawing.Point(93, 10);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 42);
             this.btnNext.TabIndex = 6;
@@ -2107,71 +2172,6 @@
             this.btnPrev.Text = "Previous";
             this.btnPrev.UseVisualStyleBackColor = false;
             this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
-            // 
-            // btnClear2
-            // 
-            this.btnClear2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear2.Location = new System.Drawing.Point(740, 570);
-            this.btnClear2.Name = "btnClear2";
-            this.btnClear2.Size = new System.Drawing.Size(150, 35);
-            this.btnClear2.TabIndex = 59;
-            this.btnClear2.Text = "අවලංගු කරන්න";
-            this.btnClear2.UseVisualStyleBackColor = true;
-            this.btnClear2.Click += new System.EventHandler(this.btnClear2_Click);
-            // 
-            // btnSave2
-            // 
-            this.btnSave2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave2.Location = new System.Drawing.Point(896, 570);
-            this.btnSave2.Name = "btnSave2";
-            this.btnSave2.Size = new System.Drawing.Size(150, 35);
-            this.btnSave2.TabIndex = 58;
-            this.btnSave2.Text = "තැන්පතු කරන්න ";
-            this.btnSave2.UseVisualStyleBackColor = true;
-            this.btnSave2.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnClear3
-            // 
-            this.btnClear3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear3.Location = new System.Drawing.Point(740, 569);
-            this.btnClear3.Name = "btnClear3";
-            this.btnClear3.Size = new System.Drawing.Size(150, 35);
-            this.btnClear3.TabIndex = 61;
-            this.btnClear3.Text = "අවලංගු කරන්න";
-            this.btnClear3.UseVisualStyleBackColor = true;
-            this.btnClear3.Click += new System.EventHandler(this.btnClear3_Click);
-            // 
-            // btnSave3
-            // 
-            this.btnSave3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave3.Location = new System.Drawing.Point(896, 569);
-            this.btnSave3.Name = "btnSave3";
-            this.btnSave3.Size = new System.Drawing.Size(150, 35);
-            this.btnSave3.TabIndex = 60;
-            this.btnSave3.Text = "තැන්පතු කරන්න ";
-            this.btnSave3.UseVisualStyleBackColor = true;
-            this.btnSave3.Click += new System.EventHandler(this.btnSave3_Click);
-            // 
-            // btnClear4
-            // 
-            this.btnClear4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear4.Location = new System.Drawing.Point(740, 570);
-            this.btnClear4.Name = "btnClear4";
-            this.btnClear4.Size = new System.Drawing.Size(150, 35);
-            this.btnClear4.TabIndex = 63;
-            this.btnClear4.Text = "අවලංගු කරන්න";
-            this.btnClear4.UseVisualStyleBackColor = true;
-            // 
-            // btnSave4
-            // 
-            this.btnSave4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave4.Location = new System.Drawing.Point(896, 570);
-            this.btnSave4.Name = "btnSave4";
-            this.btnSave4.Size = new System.Drawing.Size(150, 35);
-            this.btnSave4.TabIndex = 62;
-            this.btnSave4.Text = "තැන්පතු කරන්න ";
-            this.btnSave4.UseVisualStyleBackColor = true;
-            this.btnSave4.Click += new System.EventHandler(this.btnSave4_Click);
             // 
             // frmEmployeeSpecialDetails
             // 

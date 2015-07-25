@@ -52,7 +52,7 @@
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1370, 60);
+            this.panel5.Size = new System.Drawing.Size(1362, 60);
             this.panel5.TabIndex = 4;
             // 
             // label13
@@ -82,10 +82,10 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 689);
+            this.panel2.Location = new System.Drawing.Point(0, 681);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1370, 60);
+            this.panel2.Size = new System.Drawing.Size(1362, 60);
             this.panel2.TabIndex = 5;
             // 
             // panel4
@@ -108,10 +108,10 @@
             this.loginButton.Margin = new System.Windows.Forms.Padding(5);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(417, 44);
-            this.loginButton.TabIndex = 8;
+            this.loginButton.TabIndex = 4;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = true;
-            this.loginButton.Click += new System.EventHandler(this.button1_Click);
+            this.loginButton.Click += new System.EventHandler(this.btnLogin);
             // 
             // label3
             // 
@@ -145,8 +145,10 @@
             this.username.Margin = new System.Windows.Forms.Padding(5);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(414, 31);
-            this.username.TabIndex = 5;
+            this.username.TabIndex = 2;
             this.username.Text = "Username";
+            this.username.Enter += new System.EventHandler(this.username_Enter);
+            this.username.Leave += new System.EventHandler(this.username_Leave);
             // 
             // password
             // 
@@ -156,16 +158,18 @@
             this.password.Margin = new System.Windows.Forms.Padding(5);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(414, 31);
-            this.password.TabIndex = 4;
+            this.password.TabIndex = 3;
             this.password.Text = "Password";
             this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
+            this.password.Enter += new System.EventHandler(this.password_Enter);
+            this.password.Leave += new System.EventHandler(this.password_Leave);
             // 
             // buttonExit
             // 
             this.buttonExit.Location = new System.Drawing.Point(1228, 621);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(108, 39);
-            this.buttonExit.TabIndex = 7;
+            this.buttonExit.TabIndex = 1;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
@@ -175,7 +179,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);

@@ -39,6 +39,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnCheck = new System.Windows.Forms.Button();
             this.btnClear1 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.blood_group = new System.Windows.Forms.ComboBox();
@@ -221,7 +222,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCheck = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -387,6 +387,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Personal Details";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Location = new System.Drawing.Point(243, 569);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(75, 33);
+            this.btnCheck.TabIndex = 56;
+            this.btnCheck.Text = "Check";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // btnClear1
             // 
@@ -2449,7 +2459,7 @@
             // 
             this.btnNext.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnNext.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(1273, 11);
+            this.btnNext.Location = new System.Drawing.Point(89, 11);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 42);
             this.btnNext.TabIndex = 2;
@@ -2501,16 +2511,6 @@
             this.label1.Size = new System.Drawing.Size(168, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee";
-            // 
-            // btnCheck
-            // 
-            this.btnCheck.Location = new System.Drawing.Point(243, 569);
-            this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(75, 33);
-            this.btnCheck.TabIndex = 56;
-            this.btnCheck.Text = "Check";
-            this.btnCheck.UseVisualStyleBackColor = true;
-            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // frmEmployeePersonalDetails
             // 

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDisciplinaryDetails));
-            this.employee_no = new System.Windows.Forms.ComboBox();
+            this.desciplinary_employee_no = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -41,44 +41,44 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.full_name = new System.Windows.Forms.TextBox();
-            this.post = new System.Windows.Forms.TextBox();
-            this.rank = new System.Windows.Forms.TextBox();
+            this.desciplinary_full_name = new System.Windows.Forms.TextBox();
+            this.desciplinary_post = new System.Windows.Forms.TextBox();
+            this.desciplinary_rank = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.inquiry_officer = new System.Windows.Forms.TextBox();
-            this.verdict_of_director_general = new System.Windows.Forms.TextBox();
+            this.desciplinary_inquiry_officer = new System.Windows.Forms.TextBox();
+            this.desciplinary_verdict_of_director_general = new System.Windows.Forms.TextBox();
             this.desciplinary_breaking = new System.Windows.Forms.TextBox();
-            this.given_sentence = new System.Windows.Forms.TextBox();
-            this.request_of_main_administration_officer = new System.Windows.Forms.TextBox();
+            this.desciplinary_given_sentence = new System.Windows.Forms.TextBox();
+            this.desciplinary_request_of_main_administration_officer = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.label35 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.full_name = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.employee_no = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.lblCaption = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rejoined__day = new System.Windows.Forms.ComboBox();
-            this.rejoined__month = new System.Windows.Forms.ComboBox();
-            this.rejoined_year = new System.Windows.Forms.ComboBox();
-            this.suspended_day = new System.Windows.Forms.ComboBox();
-            this.suspended_month = new System.Windows.Forms.ComboBox();
-            this.suspended_year = new System.Windows.Forms.ComboBox();
+            this.desciplinary_rejoined__day = new System.Windows.Forms.ComboBox();
+            this.desciplinary_rejoined__month = new System.Windows.Forms.ComboBox();
+            this.desciplinary_rejoined_year = new System.Windows.Forms.ComboBox();
+            this.desciplinary_suspended_day = new System.Windows.Forms.ComboBox();
+            this.desciplinary_suspended_month = new System.Windows.Forms.ComboBox();
+            this.desciplinary_suspended_year = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.suspended_time = new System.Windows.Forms.TextBox();
-            this.verdict_of_director_general_year = new System.Windows.Forms.ComboBox();
-            this.verdict_of_director_general_month = new System.Windows.Forms.ComboBox();
-            this.verdict_of_director_general_day = new System.Windows.Forms.ComboBox();
+            this.desciplinary_suspended_time = new System.Windows.Forms.TextBox();
+            this.desciplinary_verdict_of_director_general_year = new System.Windows.Forms.ComboBox();
+            this.desciplinary_verdict_of_director_general_month = new System.Windows.Forms.ComboBox();
+            this.desciplinary_verdict_of_director_general_day = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.given_sentence_year = new System.Windows.Forms.ComboBox();
-            this.given_sentence_month = new System.Windows.Forms.ComboBox();
-            this.given_sentence_day = new System.Windows.Forms.ComboBox();
+            this.desciplinary_given_sentence_year = new System.Windows.Forms.ComboBox();
+            this.desciplinary_given_sentence_month = new System.Windows.Forms.ComboBox();
+            this.desciplinary_given_sentence_day = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.desciplinary_breaking_year = new System.Windows.Forms.ComboBox();
             this.desciplinary_breaking_month = new System.Windows.Forms.ComboBox();
@@ -90,14 +90,14 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // employee_no
+            // desciplinary_employee_no
             // 
-            this.employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employee_no.FormattingEnabled = true;
-            this.employee_no.Location = new System.Drawing.Point(561, 98);
-            this.employee_no.Name = "employee_no";
-            this.employee_no.Size = new System.Drawing.Size(200, 32);
-            this.employee_no.TabIndex = 1;
+            this.desciplinary_employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.desciplinary_employee_no.FormattingEnabled = true;
+            this.desciplinary_employee_no.Location = new System.Drawing.Point(561, 98);
+            this.desciplinary_employee_no.Name = "desciplinary_employee_no";
+            this.desciplinary_employee_no.Size = new System.Drawing.Size(200, 32);
+            this.desciplinary_employee_no.TabIndex = 1;
             // 
             // label17
             // 
@@ -231,29 +231,29 @@
             this.label9.Text = "විනය කඩ කීරීම";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // full_name
+            // desciplinary_full_name
             // 
-            this.full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.full_name.Location = new System.Drawing.Point(561, 136);
-            this.full_name.Name = "full_name";
-            this.full_name.Size = new System.Drawing.Size(300, 33);
-            this.full_name.TabIndex = 2;
+            this.desciplinary_full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_full_name.Location = new System.Drawing.Point(561, 136);
+            this.desciplinary_full_name.Name = "desciplinary_full_name";
+            this.desciplinary_full_name.Size = new System.Drawing.Size(300, 33);
+            this.desciplinary_full_name.TabIndex = 2;
             // 
-            // post
+            // desciplinary_post
             // 
-            this.post.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.post.Location = new System.Drawing.Point(561, 175);
-            this.post.Name = "post";
-            this.post.Size = new System.Drawing.Size(150, 33);
-            this.post.TabIndex = 3;
+            this.desciplinary_post.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_post.Location = new System.Drawing.Point(561, 175);
+            this.desciplinary_post.Name = "desciplinary_post";
+            this.desciplinary_post.Size = new System.Drawing.Size(150, 33);
+            this.desciplinary_post.TabIndex = 3;
             // 
-            // rank
+            // desciplinary_rank
             // 
-            this.rank.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.rank.Location = new System.Drawing.Point(561, 214);
-            this.rank.Name = "rank";
-            this.rank.Size = new System.Drawing.Size(150, 33);
-            this.rank.TabIndex = 4;
+            this.desciplinary_rank.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_rank.Location = new System.Drawing.Point(561, 214);
+            this.desciplinary_rank.Name = "desciplinary_rank";
+            this.desciplinary_rank.Size = new System.Drawing.Size(150, 33);
+            this.desciplinary_rank.TabIndex = 4;
             // 
             // label13
             // 
@@ -279,22 +279,22 @@
             this.label7.Text = "සේවක අංකය";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // inquiry_officer
+            // desciplinary_inquiry_officer
             // 
-            this.inquiry_officer.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.inquiry_officer.Location = new System.Drawing.Point(561, 477);
-            this.inquiry_officer.Name = "inquiry_officer";
-            this.inquiry_officer.Size = new System.Drawing.Size(249, 33);
-            this.inquiry_officer.TabIndex = 18;
+            this.desciplinary_inquiry_officer.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_inquiry_officer.Location = new System.Drawing.Point(561, 477);
+            this.desciplinary_inquiry_officer.Name = "desciplinary_inquiry_officer";
+            this.desciplinary_inquiry_officer.Size = new System.Drawing.Size(249, 33);
+            this.desciplinary_inquiry_officer.TabIndex = 18;
             // 
-            // verdict_of_director_general
+            // desciplinary_verdict_of_director_general
             // 
-            this.verdict_of_director_general.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.verdict_of_director_general.Location = new System.Drawing.Point(562, 421);
-            this.verdict_of_director_general.Multiline = true;
-            this.verdict_of_director_general.Name = "verdict_of_director_general";
-            this.verdict_of_director_general.Size = new System.Drawing.Size(249, 50);
-            this.verdict_of_director_general.TabIndex = 14;
+            this.desciplinary_verdict_of_director_general.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_verdict_of_director_general.Location = new System.Drawing.Point(562, 421);
+            this.desciplinary_verdict_of_director_general.Multiline = true;
+            this.desciplinary_verdict_of_director_general.Name = "desciplinary_verdict_of_director_general";
+            this.desciplinary_verdict_of_director_general.Size = new System.Drawing.Size(249, 50);
+            this.desciplinary_verdict_of_director_general.TabIndex = 14;
             // 
             // desciplinary_breaking
             // 
@@ -305,23 +305,23 @@
             this.desciplinary_breaking.Size = new System.Drawing.Size(250, 50);
             this.desciplinary_breaking.TabIndex = 5;
             // 
-            // given_sentence
+            // desciplinary_given_sentence
             // 
-            this.given_sentence.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.given_sentence.Location = new System.Drawing.Point(561, 365);
-            this.given_sentence.Multiline = true;
-            this.given_sentence.Name = "given_sentence";
-            this.given_sentence.Size = new System.Drawing.Size(250, 50);
-            this.given_sentence.TabIndex = 10;
+            this.desciplinary_given_sentence.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_given_sentence.Location = new System.Drawing.Point(561, 365);
+            this.desciplinary_given_sentence.Multiline = true;
+            this.desciplinary_given_sentence.Name = "desciplinary_given_sentence";
+            this.desciplinary_given_sentence.Size = new System.Drawing.Size(250, 50);
+            this.desciplinary_given_sentence.TabIndex = 10;
             // 
-            // request_of_main_administration_officer
+            // desciplinary_request_of_main_administration_officer
             // 
-            this.request_of_main_administration_officer.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.request_of_main_administration_officer.Location = new System.Drawing.Point(561, 309);
-            this.request_of_main_administration_officer.Multiline = true;
-            this.request_of_main_administration_officer.Name = "request_of_main_administration_officer";
-            this.request_of_main_administration_officer.Size = new System.Drawing.Size(250, 50);
-            this.request_of_main_administration_officer.TabIndex = 9;
+            this.desciplinary_request_of_main_administration_officer.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_request_of_main_administration_officer.Location = new System.Drawing.Point(561, 309);
+            this.desciplinary_request_of_main_administration_officer.Multiline = true;
+            this.desciplinary_request_of_main_administration_officer.Name = "desciplinary_request_of_main_administration_officer";
+            this.desciplinary_request_of_main_administration_officer.Size = new System.Drawing.Size(250, 50);
+            this.desciplinary_request_of_main_administration_officer.TabIndex = 9;
             // 
             // panel2
             // 
@@ -370,9 +370,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.textBox23);
+            this.panel4.Controls.Add(this.full_name);
             this.panel4.Controls.Add(this.label33);
-            this.panel4.Controls.Add(this.comboBox2);
+            this.panel4.Controls.Add(this.employee_no);
             this.panel4.Controls.Add(this.label34);
             this.panel4.Location = new System.Drawing.Point(8, 8);
             this.panel4.Name = "panel4";
@@ -388,13 +388,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox23
+            // full_name
             // 
-            this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(14, 355);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(250, 29);
-            this.textBox23.TabIndex = 4;
+            this.full_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.full_name.Location = new System.Drawing.Point(14, 355);
+            this.full_name.Name = "full_name";
+            this.full_name.Size = new System.Drawing.Size(250, 29);
+            this.full_name.TabIndex = 4;
             // 
             // label33
             // 
@@ -406,14 +406,14 @@
             this.label33.TabIndex = 1;
             this.label33.Text = "සේවක අංකය";
             // 
-            // comboBox2
+            // employee_no
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(18, 276);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 32);
-            this.comboBox2.TabIndex = 5;
+            this.employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_no.FormattingEnabled = true;
+            this.employee_no.Location = new System.Drawing.Point(18, 276);
+            this.employee_no.Name = "employee_no";
+            this.employee_no.Size = new System.Drawing.Size(150, 32);
+            this.employee_no.TabIndex = 5;
             // 
             // label34
             // 
@@ -439,16 +439,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.rejoined__day);
-            this.groupBox1.Controls.Add(this.rejoined__month);
-            this.groupBox1.Controls.Add(this.rejoined_year);
-            this.groupBox1.Controls.Add(this.suspended_day);
-            this.groupBox1.Controls.Add(this.suspended_month);
-            this.groupBox1.Controls.Add(this.suspended_year);
+            this.groupBox1.Controls.Add(this.desciplinary_rejoined__day);
+            this.groupBox1.Controls.Add(this.desciplinary_rejoined__month);
+            this.groupBox1.Controls.Add(this.desciplinary_rejoined_year);
+            this.groupBox1.Controls.Add(this.desciplinary_suspended_day);
+            this.groupBox1.Controls.Add(this.desciplinary_suspended_month);
+            this.groupBox1.Controls.Add(this.desciplinary_suspended_year);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.suspended_time);
+            this.groupBox1.Controls.Add(this.desciplinary_suspended_time);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12.75F);
             this.groupBox1.Location = new System.Drawing.Point(351, 539);
             this.groupBox1.Name = "groupBox1";
@@ -457,12 +457,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "තාවකාලිකව සේවය අත්හිටවූවා නම්:";
             // 
-            // rejoined__day
+            // desciplinary_rejoined__day
             // 
-            this.rejoined__day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.rejoined__day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.rejoined__day.FormattingEnabled = true;
-            this.rejoined__day.Items.AddRange(new object[] {
+            this.desciplinary_rejoined__day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_rejoined__day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_rejoined__day.FormattingEnabled = true;
+            this.desciplinary_rejoined__day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -494,18 +494,18 @@
             "29",
             "30",
             "31"});
-            this.rejoined__day.Location = new System.Drawing.Point(463, 81);
-            this.rejoined__day.Name = "rejoined__day";
-            this.rejoined__day.Size = new System.Drawing.Size(91, 34);
-            this.rejoined__day.TabIndex = 24;
-            this.rejoined__day.Text = "    දිනය";
+            this.desciplinary_rejoined__day.Location = new System.Drawing.Point(463, 81);
+            this.desciplinary_rejoined__day.Name = "desciplinary_rejoined__day";
+            this.desciplinary_rejoined__day.Size = new System.Drawing.Size(91, 34);
+            this.desciplinary_rejoined__day.TabIndex = 24;
+            this.desciplinary_rejoined__day.Text = "    දිනය";
             // 
-            // rejoined__month
+            // desciplinary_rejoined__month
             // 
-            this.rejoined__month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.rejoined__month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.rejoined__month.FormattingEnabled = true;
-            this.rejoined__month.Items.AddRange(new object[] {
+            this.desciplinary_rejoined__month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_rejoined__month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_rejoined__month.FormattingEnabled = true;
+            this.desciplinary_rejoined__month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -518,18 +518,18 @@
             "October",
             "November",
             "December"});
-            this.rejoined__month.Location = new System.Drawing.Point(366, 81);
-            this.rejoined__month.Name = "rejoined__month";
-            this.rejoined__month.Size = new System.Drawing.Size(91, 34);
-            this.rejoined__month.TabIndex = 23;
-            this.rejoined__month.Text = "   මාසය";
+            this.desciplinary_rejoined__month.Location = new System.Drawing.Point(366, 81);
+            this.desciplinary_rejoined__month.Name = "desciplinary_rejoined__month";
+            this.desciplinary_rejoined__month.Size = new System.Drawing.Size(91, 34);
+            this.desciplinary_rejoined__month.TabIndex = 23;
+            this.desciplinary_rejoined__month.Text = "   මාසය";
             // 
-            // rejoined_year
+            // desciplinary_rejoined_year
             // 
-            this.rejoined_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.rejoined_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.rejoined_year.FormattingEnabled = true;
-            this.rejoined_year.Items.AddRange(new object[] {
+            this.desciplinary_rejoined_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_rejoined_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_rejoined_year.FormattingEnabled = true;
+            this.desciplinary_rejoined_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -605,18 +605,18 @@
             "1948",
             "1947",
             "1946"});
-            this.rejoined_year.Location = new System.Drawing.Point(257, 81);
-            this.rejoined_year.Name = "rejoined_year";
-            this.rejoined_year.Size = new System.Drawing.Size(103, 34);
-            this.rejoined_year.TabIndex = 22;
-            this.rejoined_year.Text = "   වර්ෂය";
+            this.desciplinary_rejoined_year.Location = new System.Drawing.Point(257, 81);
+            this.desciplinary_rejoined_year.Name = "desciplinary_rejoined_year";
+            this.desciplinary_rejoined_year.Size = new System.Drawing.Size(103, 34);
+            this.desciplinary_rejoined_year.TabIndex = 22;
+            this.desciplinary_rejoined_year.Text = "   වර්ෂය";
             // 
-            // suspended_day
+            // desciplinary_suspended_day
             // 
-            this.suspended_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.suspended_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.suspended_day.FormattingEnabled = true;
-            this.suspended_day.Items.AddRange(new object[] {
+            this.desciplinary_suspended_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_suspended_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_suspended_day.FormattingEnabled = true;
+            this.desciplinary_suspended_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -648,18 +648,18 @@
             "29",
             "30",
             "31"});
-            this.suspended_day.Location = new System.Drawing.Point(463, 41);
-            this.suspended_day.Name = "suspended_day";
-            this.suspended_day.Size = new System.Drawing.Size(91, 34);
-            this.suspended_day.TabIndex = 21;
-            this.suspended_day.Text = "    දිනය";
+            this.desciplinary_suspended_day.Location = new System.Drawing.Point(463, 41);
+            this.desciplinary_suspended_day.Name = "desciplinary_suspended_day";
+            this.desciplinary_suspended_day.Size = new System.Drawing.Size(91, 34);
+            this.desciplinary_suspended_day.TabIndex = 21;
+            this.desciplinary_suspended_day.Text = "    දිනය";
             // 
-            // suspended_month
+            // desciplinary_suspended_month
             // 
-            this.suspended_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.suspended_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.suspended_month.FormattingEnabled = true;
-            this.suspended_month.Items.AddRange(new object[] {
+            this.desciplinary_suspended_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_suspended_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_suspended_month.FormattingEnabled = true;
+            this.desciplinary_suspended_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -672,18 +672,18 @@
             "October",
             "November",
             "December"});
-            this.suspended_month.Location = new System.Drawing.Point(366, 41);
-            this.suspended_month.Name = "suspended_month";
-            this.suspended_month.Size = new System.Drawing.Size(91, 34);
-            this.suspended_month.TabIndex = 20;
-            this.suspended_month.Text = "   මාසය";
+            this.desciplinary_suspended_month.Location = new System.Drawing.Point(366, 41);
+            this.desciplinary_suspended_month.Name = "desciplinary_suspended_month";
+            this.desciplinary_suspended_month.Size = new System.Drawing.Size(91, 34);
+            this.desciplinary_suspended_month.TabIndex = 20;
+            this.desciplinary_suspended_month.Text = "   මාසය";
             // 
-            // suspended_year
+            // desciplinary_suspended_year
             // 
-            this.suspended_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.suspended_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.suspended_year.FormattingEnabled = true;
-            this.suspended_year.Items.AddRange(new object[] {
+            this.desciplinary_suspended_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_suspended_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_suspended_year.FormattingEnabled = true;
+            this.desciplinary_suspended_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -759,11 +759,11 @@
             "1948",
             "1947",
             "1946"});
-            this.suspended_year.Location = new System.Drawing.Point(257, 41);
-            this.suspended_year.Name = "suspended_year";
-            this.suspended_year.Size = new System.Drawing.Size(103, 34);
-            this.suspended_year.TabIndex = 19;
-            this.suspended_year.Text = "   වර්ෂය";
+            this.desciplinary_suspended_year.Location = new System.Drawing.Point(257, 41);
+            this.desciplinary_suspended_year.Name = "desciplinary_suspended_year";
+            this.desciplinary_suspended_year.Size = new System.Drawing.Size(103, 34);
+            this.desciplinary_suspended_year.TabIndex = 19;
+            this.desciplinary_suspended_year.Text = "   වර්ෂය";
             // 
             // label6
             // 
@@ -789,20 +789,20 @@
             this.label10.Text = "සේවය අත්හිටවූ කාලය ";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // suspended_time
+            // desciplinary_suspended_time
             // 
-            this.suspended_time.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.suspended_time.Location = new System.Drawing.Point(257, 121);
-            this.suspended_time.Name = "suspended_time";
-            this.suspended_time.Size = new System.Drawing.Size(150, 33);
-            this.suspended_time.TabIndex = 25;
+            this.desciplinary_suspended_time.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_suspended_time.Location = new System.Drawing.Point(257, 121);
+            this.desciplinary_suspended_time.Name = "desciplinary_suspended_time";
+            this.desciplinary_suspended_time.Size = new System.Drawing.Size(150, 33);
+            this.desciplinary_suspended_time.TabIndex = 25;
             // 
-            // verdict_of_director_general_year
+            // desciplinary_verdict_of_director_general_year
             // 
-            this.verdict_of_director_general_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.verdict_of_director_general_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.verdict_of_director_general_year.FormattingEnabled = true;
-            this.verdict_of_director_general_year.Items.AddRange(new object[] {
+            this.desciplinary_verdict_of_director_general_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_verdict_of_director_general_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_verdict_of_director_general_year.FormattingEnabled = true;
+            this.desciplinary_verdict_of_director_general_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -878,18 +878,18 @@
             "1948",
             "1947",
             "1946"});
-            this.verdict_of_director_general_year.Location = new System.Drawing.Point(948, 421);
-            this.verdict_of_director_general_year.Name = "verdict_of_director_general_year";
-            this.verdict_of_director_general_year.Size = new System.Drawing.Size(103, 34);
-            this.verdict_of_director_general_year.TabIndex = 15;
-            this.verdict_of_director_general_year.Text = "   වර්ෂය";
+            this.desciplinary_verdict_of_director_general_year.Location = new System.Drawing.Point(948, 421);
+            this.desciplinary_verdict_of_director_general_year.Name = "desciplinary_verdict_of_director_general_year";
+            this.desciplinary_verdict_of_director_general_year.Size = new System.Drawing.Size(103, 34);
+            this.desciplinary_verdict_of_director_general_year.TabIndex = 15;
+            this.desciplinary_verdict_of_director_general_year.Text = "   වර්ෂය";
             // 
-            // verdict_of_director_general_month
+            // desciplinary_verdict_of_director_general_month
             // 
-            this.verdict_of_director_general_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.verdict_of_director_general_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.verdict_of_director_general_month.FormattingEnabled = true;
-            this.verdict_of_director_general_month.Items.AddRange(new object[] {
+            this.desciplinary_verdict_of_director_general_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_verdict_of_director_general_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_verdict_of_director_general_month.FormattingEnabled = true;
+            this.desciplinary_verdict_of_director_general_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -902,18 +902,18 @@
             "October",
             "November",
             "December"});
-            this.verdict_of_director_general_month.Location = new System.Drawing.Point(1057, 421);
-            this.verdict_of_director_general_month.Name = "verdict_of_director_general_month";
-            this.verdict_of_director_general_month.Size = new System.Drawing.Size(91, 34);
-            this.verdict_of_director_general_month.TabIndex = 16;
-            this.verdict_of_director_general_month.Text = "   මාසය";
+            this.desciplinary_verdict_of_director_general_month.Location = new System.Drawing.Point(1057, 421);
+            this.desciplinary_verdict_of_director_general_month.Name = "desciplinary_verdict_of_director_general_month";
+            this.desciplinary_verdict_of_director_general_month.Size = new System.Drawing.Size(91, 34);
+            this.desciplinary_verdict_of_director_general_month.TabIndex = 16;
+            this.desciplinary_verdict_of_director_general_month.Text = "   මාසය";
             // 
-            // verdict_of_director_general_day
+            // desciplinary_verdict_of_director_general_day
             // 
-            this.verdict_of_director_general_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.verdict_of_director_general_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.verdict_of_director_general_day.FormattingEnabled = true;
-            this.verdict_of_director_general_day.Items.AddRange(new object[] {
+            this.desciplinary_verdict_of_director_general_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_verdict_of_director_general_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_verdict_of_director_general_day.FormattingEnabled = true;
+            this.desciplinary_verdict_of_director_general_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -945,11 +945,11 @@
             "29",
             "30",
             "31"});
-            this.verdict_of_director_general_day.Location = new System.Drawing.Point(1154, 421);
-            this.verdict_of_director_general_day.Name = "verdict_of_director_general_day";
-            this.verdict_of_director_general_day.Size = new System.Drawing.Size(91, 34);
-            this.verdict_of_director_general_day.TabIndex = 17;
-            this.verdict_of_director_general_day.Text = "    දිනය";
+            this.desciplinary_verdict_of_director_general_day.Location = new System.Drawing.Point(1154, 421);
+            this.desciplinary_verdict_of_director_general_day.Name = "desciplinary_verdict_of_director_general_day";
+            this.desciplinary_verdict_of_director_general_day.Size = new System.Drawing.Size(91, 34);
+            this.desciplinary_verdict_of_director_general_day.TabIndex = 17;
+            this.desciplinary_verdict_of_director_general_day.Text = "    දිනය";
             // 
             // label2
             // 
@@ -963,12 +963,12 @@
             this.label2.Text = "දිනය";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // given_sentence_year
+            // desciplinary_given_sentence_year
             // 
-            this.given_sentence_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.given_sentence_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.given_sentence_year.FormattingEnabled = true;
-            this.given_sentence_year.Items.AddRange(new object[] {
+            this.desciplinary_given_sentence_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_given_sentence_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_given_sentence_year.FormattingEnabled = true;
+            this.desciplinary_given_sentence_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -1044,18 +1044,18 @@
             "1948",
             "1947",
             "1946"});
-            this.given_sentence_year.Location = new System.Drawing.Point(948, 365);
-            this.given_sentence_year.Name = "given_sentence_year";
-            this.given_sentence_year.Size = new System.Drawing.Size(103, 34);
-            this.given_sentence_year.TabIndex = 11;
-            this.given_sentence_year.Text = "   වර්ෂය";
+            this.desciplinary_given_sentence_year.Location = new System.Drawing.Point(948, 365);
+            this.desciplinary_given_sentence_year.Name = "desciplinary_given_sentence_year";
+            this.desciplinary_given_sentence_year.Size = new System.Drawing.Size(103, 34);
+            this.desciplinary_given_sentence_year.TabIndex = 11;
+            this.desciplinary_given_sentence_year.Text = "   වර්ෂය";
             // 
-            // given_sentence_month
+            // desciplinary_given_sentence_month
             // 
-            this.given_sentence_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.given_sentence_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.given_sentence_month.FormattingEnabled = true;
-            this.given_sentence_month.Items.AddRange(new object[] {
+            this.desciplinary_given_sentence_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_given_sentence_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_given_sentence_month.FormattingEnabled = true;
+            this.desciplinary_given_sentence_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -1068,18 +1068,18 @@
             "October",
             "November",
             "December"});
-            this.given_sentence_month.Location = new System.Drawing.Point(1057, 365);
-            this.given_sentence_month.Name = "given_sentence_month";
-            this.given_sentence_month.Size = new System.Drawing.Size(91, 34);
-            this.given_sentence_month.TabIndex = 12;
-            this.given_sentence_month.Text = "   මාසය";
+            this.desciplinary_given_sentence_month.Location = new System.Drawing.Point(1057, 365);
+            this.desciplinary_given_sentence_month.Name = "desciplinary_given_sentence_month";
+            this.desciplinary_given_sentence_month.Size = new System.Drawing.Size(91, 34);
+            this.desciplinary_given_sentence_month.TabIndex = 12;
+            this.desciplinary_given_sentence_month.Text = "   මාසය";
             // 
-            // given_sentence_day
+            // desciplinary_given_sentence_day
             // 
-            this.given_sentence_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.given_sentence_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.given_sentence_day.FormattingEnabled = true;
-            this.given_sentence_day.Items.AddRange(new object[] {
+            this.desciplinary_given_sentence_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.desciplinary_given_sentence_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.desciplinary_given_sentence_day.FormattingEnabled = true;
+            this.desciplinary_given_sentence_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -1111,11 +1111,11 @@
             "29",
             "30",
             "31"});
-            this.given_sentence_day.Location = new System.Drawing.Point(1154, 365);
-            this.given_sentence_day.Name = "given_sentence_day";
-            this.given_sentence_day.Size = new System.Drawing.Size(91, 34);
-            this.given_sentence_day.TabIndex = 13;
-            this.given_sentence_day.Text = "    දිනය";
+            this.desciplinary_given_sentence_day.Location = new System.Drawing.Point(1154, 365);
+            this.desciplinary_given_sentence_day.Name = "desciplinary_given_sentence_day";
+            this.desciplinary_given_sentence_day.Size = new System.Drawing.Size(91, 34);
+            this.desciplinary_given_sentence_day.TabIndex = 13;
+            this.desciplinary_given_sentence_day.Text = "    දිනය";
             // 
             // label3
             // 
@@ -1289,18 +1289,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 768);
             this.Controls.Add(this.desciplinary_breaking_day);
-            this.Controls.Add(this.given_sentence_day);
-            this.Controls.Add(this.verdict_of_director_general_day);
+            this.Controls.Add(this.desciplinary_given_sentence_day);
+            this.Controls.Add(this.desciplinary_verdict_of_director_general_day);
             this.Controls.Add(this.desciplinary_breaking_month);
-            this.Controls.Add(this.given_sentence_month);
-            this.Controls.Add(this.verdict_of_director_general_month);
+            this.Controls.Add(this.desciplinary_given_sentence_month);
+            this.Controls.Add(this.desciplinary_verdict_of_director_general_month);
             this.Controls.Add(this.desciplinary_breaking_year);
-            this.Controls.Add(this.given_sentence_year);
-            this.Controls.Add(this.verdict_of_director_general_year);
+            this.Controls.Add(this.desciplinary_given_sentence_year);
+            this.Controls.Add(this.desciplinary_verdict_of_director_general_year);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.employee_no);
+            this.Controls.Add(this.desciplinary_employee_no);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label1);
@@ -1309,16 +1309,16 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.full_name);
-            this.Controls.Add(this.post);
-            this.Controls.Add(this.rank);
+            this.Controls.Add(this.desciplinary_full_name);
+            this.Controls.Add(this.desciplinary_post);
+            this.Controls.Add(this.desciplinary_rank);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.inquiry_officer);
-            this.Controls.Add(this.verdict_of_director_general);
+            this.Controls.Add(this.desciplinary_inquiry_officer);
+            this.Controls.Add(this.desciplinary_verdict_of_director_general);
             this.Controls.Add(this.desciplinary_breaking);
-            this.Controls.Add(this.given_sentence);
-            this.Controls.Add(this.request_of_main_administration_officer);
+            this.Controls.Add(this.desciplinary_given_sentence);
+            this.Controls.Add(this.desciplinary_request_of_main_administration_officer);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.panel3);
@@ -1341,7 +1341,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox employee_no;
+        private System.Windows.Forms.ComboBox desciplinary_employee_no;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label16;
@@ -1353,44 +1353,44 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox full_name;
-        private System.Windows.Forms.TextBox post;
-        private System.Windows.Forms.TextBox rank;
+        private System.Windows.Forms.TextBox desciplinary_full_name;
+        private System.Windows.Forms.TextBox desciplinary_post;
+        private System.Windows.Forms.TextBox desciplinary_rank;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox inquiry_officer;
-        private System.Windows.Forms.TextBox verdict_of_director_general;
+        private System.Windows.Forms.TextBox desciplinary_inquiry_officer;
+        private System.Windows.Forms.TextBox desciplinary_verdict_of_director_general;
         private System.Windows.Forms.TextBox desciplinary_breaking;
-        private System.Windows.Forms.TextBox given_sentence;
-        private System.Windows.Forms.TextBox request_of_main_administration_officer;
+        private System.Windows.Forms.TextBox desciplinary_given_sentence;
+        private System.Windows.Forms.TextBox desciplinary_request_of_main_administration_officer;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox full_name;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label lblCaption;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox suspended_time;
-        private System.Windows.Forms.ComboBox verdict_of_director_general_year;
-        private System.Windows.Forms.ComboBox verdict_of_director_general_month;
-        private System.Windows.Forms.ComboBox verdict_of_director_general_day;
-        private System.Windows.Forms.ComboBox rejoined__day;
-        private System.Windows.Forms.ComboBox rejoined__month;
-        private System.Windows.Forms.ComboBox rejoined_year;
-        private System.Windows.Forms.ComboBox suspended_day;
-        private System.Windows.Forms.ComboBox suspended_month;
-        private System.Windows.Forms.ComboBox suspended_year;
+        private System.Windows.Forms.TextBox desciplinary_suspended_time;
+        private System.Windows.Forms.ComboBox desciplinary_verdict_of_director_general_year;
+        private System.Windows.Forms.ComboBox desciplinary_verdict_of_director_general_month;
+        private System.Windows.Forms.ComboBox desciplinary_verdict_of_director_general_day;
+        private System.Windows.Forms.ComboBox desciplinary_rejoined__day;
+        private System.Windows.Forms.ComboBox desciplinary_rejoined__month;
+        private System.Windows.Forms.ComboBox desciplinary_rejoined_year;
+        private System.Windows.Forms.ComboBox desciplinary_suspended_day;
+        private System.Windows.Forms.ComboBox desciplinary_suspended_month;
+        private System.Windows.Forms.ComboBox desciplinary_suspended_year;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox given_sentence_year;
-        private System.Windows.Forms.ComboBox given_sentence_month;
-        private System.Windows.Forms.ComboBox given_sentence_day;
+        private System.Windows.Forms.ComboBox desciplinary_given_sentence_year;
+        private System.Windows.Forms.ComboBox desciplinary_given_sentence_month;
+        private System.Windows.Forms.ComboBox desciplinary_given_sentence_day;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox desciplinary_breaking_year;
         private System.Windows.Forms.ComboBox desciplinary_breaking_month;

@@ -30,15 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeRemunerationAndBenefits));
             this.lblCaption = new System.Windows.Forms.Label();
-            this.tabRemuneration = new System.Windows.Forms.TabControl();
+            this.tabRemunerationAndBenefits = new System.Windows.Forms.TabControl();
             this.tabPersonalDetails = new System.Windows.Forms.TabPage();
+            this.remun_salary_increased_day = new System.Windows.Forms.ComboBox();
+            this.remun_salary_increased_month = new System.Windows.Forms.ComboBox();
+            this.remun_salary_increased_year = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -50,56 +52,55 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.remun_salary_no = new System.Windows.Forms.TextBox();
+            this.remun_salary_grade = new System.Windows.Forms.TextBox();
+            this.remun_transport_allowance = new System.Windows.Forms.TextBox();
+            this.remun_basic_salary = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.remun_telephone_allowance = new System.Windows.Forms.TextBox();
+            this.remun_present_salary = new System.Windows.Forms.TextBox();
+            this.remun_increased_by = new System.Windows.Forms.TextBox();
+            this.remun_fuel_allowance = new System.Windows.Forms.TextBox();
+            this.remun_other_allowances = new System.Windows.Forms.TextBox();
+            this.remun_house_allowance = new System.Windows.Forms.TextBox();
             this.tabCashBenefits = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cash_issued_day = new System.Windows.Forms.ComboBox();
+            this.cash_issued_month = new System.Windows.Forms.ComboBox();
+            this.cash_issued_year = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cash_issued_price = new System.Windows.Forms.TextBox();
+            this.cash_approved_benefit = new System.Windows.Forms.TextBox();
             this.tabNonCashBenefits = new System.Windows.Forms.TabPage();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.noncash_issued_day = new System.Windows.Forms.ComboBox();
+            this.noncash_issued_month = new System.Windows.Forms.ComboBox();
+            this.noncash_issued_year = new System.Windows.Forms.ComboBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.noncash_price = new System.Windows.Forms.TextBox();
+            this.noncash_quantity = new System.Windows.Forms.TextBox();
+            this.noncash_approved_benefit = new System.Windows.Forms.TextBox();
+            this.remun_rank = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.remun_post = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.full_name = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.employee_no = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
-            this.tabRemuneration.SuspendLayout();
+            this.tabRemunerationAndBenefits.SuspendLayout();
             this.tabPersonalDetails.SuspendLayout();
             this.tabCashBenefits.SuspendLayout();
             this.tabNonCashBenefits.SuspendLayout();
@@ -121,32 +122,34 @@
             this.lblCaption.TabIndex = 1;
             this.lblCaption.Text = "               Remuneration and Benefits";
             // 
-            // tabRemuneration
+            // tabRemunerationAndBenefits
             // 
-            this.tabRemuneration.Controls.Add(this.tabPersonalDetails);
-            this.tabRemuneration.Controls.Add(this.tabCashBenefits);
-            this.tabRemuneration.Controls.Add(this.tabNonCashBenefits);
-            this.tabRemuneration.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabRemuneration.ItemSize = new System.Drawing.Size(200, 30);
-            this.tabRemuneration.Location = new System.Drawing.Point(298, 243);
-            this.tabRemuneration.Name = "tabRemuneration";
-            this.tabRemuneration.Padding = new System.Drawing.Point(0, 0);
-            this.tabRemuneration.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.tabRemuneration.SelectedIndex = 0;
-            this.tabRemuneration.Size = new System.Drawing.Size(1132, 460);
-            this.tabRemuneration.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabRemuneration.TabIndex = 16;
+            this.tabRemunerationAndBenefits.Controls.Add(this.tabPersonalDetails);
+            this.tabRemunerationAndBenefits.Controls.Add(this.tabCashBenefits);
+            this.tabRemunerationAndBenefits.Controls.Add(this.tabNonCashBenefits);
+            this.tabRemunerationAndBenefits.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabRemunerationAndBenefits.ItemSize = new System.Drawing.Size(200, 30);
+            this.tabRemunerationAndBenefits.Location = new System.Drawing.Point(298, 243);
+            this.tabRemunerationAndBenefits.Name = "tabRemunerationAndBenefits";
+            this.tabRemunerationAndBenefits.Padding = new System.Drawing.Point(0, 0);
+            this.tabRemunerationAndBenefits.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.tabRemunerationAndBenefits.SelectedIndex = 0;
+            this.tabRemunerationAndBenefits.Size = new System.Drawing.Size(1132, 460);
+            this.tabRemunerationAndBenefits.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabRemunerationAndBenefits.TabIndex = 16;
             // 
             // tabPersonalDetails
             // 
             this.tabPersonalDetails.BackColor = System.Drawing.Color.White;
+            this.tabPersonalDetails.Controls.Add(this.remun_salary_increased_day);
+            this.tabPersonalDetails.Controls.Add(this.remun_salary_increased_month);
+            this.tabPersonalDetails.Controls.Add(this.remun_salary_increased_year);
             this.tabPersonalDetails.Controls.Add(this.label23);
             this.tabPersonalDetails.Controls.Add(this.label24);
             this.tabPersonalDetails.Controls.Add(this.label25);
             this.tabPersonalDetails.Controls.Add(this.label26);
             this.tabPersonalDetails.Controls.Add(this.label22);
             this.tabPersonalDetails.Controls.Add(this.label21);
-            this.tabPersonalDetails.Controls.Add(this.label20);
             this.tabPersonalDetails.Controls.Add(this.label19);
             this.tabPersonalDetails.Controls.Add(this.label18);
             this.tabPersonalDetails.Controls.Add(this.label17);
@@ -158,19 +161,18 @@
             this.tabPersonalDetails.Controls.Add(this.label8);
             this.tabPersonalDetails.Controls.Add(this.label14);
             this.tabPersonalDetails.Controls.Add(this.label9);
-            this.tabPersonalDetails.Controls.Add(this.textBox17);
-            this.tabPersonalDetails.Controls.Add(this.textBox7);
-            this.tabPersonalDetails.Controls.Add(this.textBox16);
-            this.tabPersonalDetails.Controls.Add(this.textBox8);
+            this.tabPersonalDetails.Controls.Add(this.remun_salary_no);
+            this.tabPersonalDetails.Controls.Add(this.remun_salary_grade);
+            this.tabPersonalDetails.Controls.Add(this.remun_transport_allowance);
+            this.tabPersonalDetails.Controls.Add(this.remun_basic_salary);
             this.tabPersonalDetails.Controls.Add(this.label13);
             this.tabPersonalDetails.Controls.Add(this.label7);
-            this.tabPersonalDetails.Controls.Add(this.textBox15);
-            this.tabPersonalDetails.Controls.Add(this.textBox12);
-            this.tabPersonalDetails.Controls.Add(this.textBox14);
-            this.tabPersonalDetails.Controls.Add(this.textBox9);
-            this.tabPersonalDetails.Controls.Add(this.textBox13);
-            this.tabPersonalDetails.Controls.Add(this.textBox11);
-            this.tabPersonalDetails.Controls.Add(this.textBox10);
+            this.tabPersonalDetails.Controls.Add(this.remun_telephone_allowance);
+            this.tabPersonalDetails.Controls.Add(this.remun_present_salary);
+            this.tabPersonalDetails.Controls.Add(this.remun_increased_by);
+            this.tabPersonalDetails.Controls.Add(this.remun_fuel_allowance);
+            this.tabPersonalDetails.Controls.Add(this.remun_other_allowances);
+            this.tabPersonalDetails.Controls.Add(this.remun_house_allowance);
             this.tabPersonalDetails.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPersonalDetails.ForeColor = System.Drawing.Color.Transparent;
             this.tabPersonalDetails.Location = new System.Drawing.Point(4, 34);
@@ -180,6 +182,157 @@
             this.tabPersonalDetails.TabIndex = 0;
             this.tabPersonalDetails.Text = "Remuneration";
             this.tabPersonalDetails.Click += new System.EventHandler(this.tabPersonalDetails_Click);
+            // 
+            // remun_salary_increased_day
+            // 
+            this.remun_salary_increased_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.remun_salary_increased_day.FormattingEnabled = true;
+            this.remun_salary_increased_day.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.remun_salary_increased_day.Location = new System.Drawing.Point(427, 183);
+            this.remun_salary_increased_day.Name = "remun_salary_increased_day";
+            this.remun_salary_increased_day.Size = new System.Drawing.Size(91, 32);
+            this.remun_salary_increased_day.TabIndex = 45;
+            this.remun_salary_increased_day.Text = "    දිනය";
+            // 
+            // remun_salary_increased_month
+            // 
+            this.remun_salary_increased_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.remun_salary_increased_month.FormattingEnabled = true;
+            this.remun_salary_increased_month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.remun_salary_increased_month.Location = new System.Drawing.Point(330, 183);
+            this.remun_salary_increased_month.Name = "remun_salary_increased_month";
+            this.remun_salary_increased_month.Size = new System.Drawing.Size(91, 32);
+            this.remun_salary_increased_month.TabIndex = 44;
+            this.remun_salary_increased_month.Text = "   මාසය";
+            // 
+            // remun_salary_increased_year
+            // 
+            this.remun_salary_increased_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.remun_salary_increased_year.FormattingEnabled = true;
+            this.remun_salary_increased_year.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946"});
+            this.remun_salary_increased_year.Location = new System.Drawing.Point(221, 183);
+            this.remun_salary_increased_year.Name = "remun_salary_increased_year";
+            this.remun_salary_increased_year.Size = new System.Drawing.Size(103, 32);
+            this.remun_salary_increased_year.TabIndex = 43;
+            this.remun_salary_increased_year.Text = "   වර්ෂය";
             // 
             // label23
             // 
@@ -222,7 +375,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(180, 225);
+            this.label26.Location = new System.Drawing.Point(180, 224);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(35, 26);
             this.label26.TabIndex = 9;
@@ -234,7 +387,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(624, 69);
+            this.label22.Location = new System.Drawing.Point(690, 69);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(35, 26);
             this.label22.TabIndex = 5;
@@ -246,32 +399,19 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(624, 108);
+            this.label21.Location = new System.Drawing.Point(690, 108);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(35, 26);
             this.label21.TabIndex = 5;
             this.label21.Text = ".රු";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(619, 108);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(35, 26);
-            this.label20.TabIndex = 5;
-            this.label20.Text = ".රු";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label20.Click += new System.EventHandler(this.label2_Click_1);
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(624, 147);
+            this.label19.Location = new System.Drawing.Point(690, 147);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(35, 26);
             this.label19.TabIndex = 5;
@@ -283,7 +423,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(624, 186);
+            this.label18.Location = new System.Drawing.Point(690, 186);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(35, 26);
             this.label18.TabIndex = 5;
@@ -295,7 +435,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(468, 186);
+            this.label17.Location = new System.Drawing.Point(534, 186);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(150, 26);
             this.label17.TabIndex = 5;
@@ -319,7 +459,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(494, 147);
+            this.label16.Location = new System.Drawing.Point(560, 147);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(124, 26);
             this.label16.TabIndex = 5;
@@ -343,7 +483,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(10, 225);
+            this.label12.Location = new System.Drawing.Point(10, 224);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(174, 26);
             this.label12.TabIndex = 5;
@@ -355,7 +495,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(472, 69);
+            this.label15.Location = new System.Drawing.Point(538, 69);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(146, 26);
             this.label15.TabIndex = 5;
@@ -379,7 +519,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(412, 108);
+            this.label14.Location = new System.Drawing.Point(478, 108);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(206, 26);
             this.label14.TabIndex = 5;
@@ -398,44 +538,44 @@
             this.label9.Text = "ඉන්ධන දීමනාව";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox17
+            // remun_salary_no
             // 
-            this.textBox17.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox17.Location = new System.Drawing.Point(660, 27);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(150, 33);
-            this.textBox17.TabIndex = 10;
+            this.remun_salary_no.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_salary_no.Location = new System.Drawing.Point(726, 27);
+            this.remun_salary_no.Name = "remun_salary_no";
+            this.remun_salary_no.Size = new System.Drawing.Size(150, 33);
+            this.remun_salary_no.TabIndex = 10;
             // 
-            // textBox7
+            // remun_salary_grade
             // 
-            this.textBox7.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox7.Location = new System.Drawing.Point(221, 27);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 33);
-            this.textBox7.TabIndex = 4;
+            this.remun_salary_grade.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_salary_grade.Location = new System.Drawing.Point(221, 27);
+            this.remun_salary_grade.Name = "remun_salary_grade";
+            this.remun_salary_grade.Size = new System.Drawing.Size(150, 33);
+            this.remun_salary_grade.TabIndex = 4;
             // 
-            // textBox16
+            // remun_transport_allowance
             // 
-            this.textBox16.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox16.Location = new System.Drawing.Point(660, 66);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(150, 33);
-            this.textBox16.TabIndex = 11;
+            this.remun_transport_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_transport_allowance.Location = new System.Drawing.Point(726, 66);
+            this.remun_transport_allowance.Name = "remun_transport_allowance";
+            this.remun_transport_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_transport_allowance.TabIndex = 11;
             // 
-            // textBox8
+            // remun_basic_salary
             // 
-            this.textBox8.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox8.Location = new System.Drawing.Point(221, 66);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(150, 33);
-            this.textBox8.TabIndex = 5;
+            this.remun_basic_salary.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_basic_salary.Location = new System.Drawing.Point(221, 66);
+            this.remun_basic_salary.Name = "remun_basic_salary";
+            this.remun_basic_salary.Size = new System.Drawing.Size(150, 33);
+            this.remun_basic_salary.TabIndex = 5;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(517, 30);
+            this.label13.Location = new System.Drawing.Point(583, 30);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(134, 26);
             this.label13.TabIndex = 5;
@@ -454,73 +594,65 @@
             this.label7.Text = "වැටුප් ශ්‍රේණිය";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox15
+            // remun_telephone_allowance
             // 
-            this.textBox15.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox15.Location = new System.Drawing.Point(660, 105);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(150, 33);
-            this.textBox15.TabIndex = 12;
+            this.remun_telephone_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_telephone_allowance.Location = new System.Drawing.Point(726, 105);
+            this.remun_telephone_allowance.Name = "remun_telephone_allowance";
+            this.remun_telephone_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_telephone_allowance.TabIndex = 12;
             // 
-            // textBox12
+            // remun_present_salary
             // 
-            this.textBox12.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox12.Location = new System.Drawing.Point(221, 222);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(150, 33);
-            this.textBox12.TabIndex = 9;
+            this.remun_present_salary.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_present_salary.Location = new System.Drawing.Point(221, 221);
+            this.remun_present_salary.Name = "remun_present_salary";
+            this.remun_present_salary.Size = new System.Drawing.Size(150, 33);
+            this.remun_present_salary.TabIndex = 9;
             // 
-            // textBox14
+            // remun_increased_by
             // 
-            this.textBox14.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox14.Location = new System.Drawing.Point(660, 183);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(150, 33);
-            this.textBox14.TabIndex = 14;
+            this.remun_increased_by.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_increased_by.Location = new System.Drawing.Point(726, 183);
+            this.remun_increased_by.Name = "remun_increased_by";
+            this.remun_increased_by.Size = new System.Drawing.Size(150, 33);
+            this.remun_increased_by.TabIndex = 14;
             // 
-            // textBox9
+            // remun_fuel_allowance
             // 
-            this.textBox9.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox9.Location = new System.Drawing.Point(221, 105);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(150, 33);
-            this.textBox9.TabIndex = 6;
+            this.remun_fuel_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_fuel_allowance.Location = new System.Drawing.Point(221, 105);
+            this.remun_fuel_allowance.Name = "remun_fuel_allowance";
+            this.remun_fuel_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_fuel_allowance.TabIndex = 6;
             // 
-            // textBox13
+            // remun_other_allowances
             // 
-            this.textBox13.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox13.Location = new System.Drawing.Point(660, 144);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(150, 33);
-            this.textBox13.TabIndex = 13;
+            this.remun_other_allowances.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_other_allowances.Location = new System.Drawing.Point(726, 144);
+            this.remun_other_allowances.Name = "remun_other_allowances";
+            this.remun_other_allowances.Size = new System.Drawing.Size(150, 33);
+            this.remun_other_allowances.TabIndex = 13;
             // 
-            // textBox11
+            // remun_house_allowance
             // 
-            this.textBox11.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox11.Location = new System.Drawing.Point(221, 183);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(150, 33);
-            this.textBox11.TabIndex = 8;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox10.Location = new System.Drawing.Point(221, 144);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(150, 33);
-            this.textBox10.TabIndex = 7;
+            this.remun_house_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_house_allowance.Location = new System.Drawing.Point(221, 144);
+            this.remun_house_allowance.Name = "remun_house_allowance";
+            this.remun_house_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_house_allowance.TabIndex = 7;
             // 
             // tabCashBenefits
             // 
             this.tabCashBenefits.BackColor = System.Drawing.Color.White;
-            this.tabCashBenefits.Controls.Add(this.comboBox1);
-            this.tabCashBenefits.Controls.Add(this.comboBox3);
-            this.tabCashBenefits.Controls.Add(this.comboBox4);
+            this.tabCashBenefits.Controls.Add(this.cash_issued_day);
+            this.tabCashBenefits.Controls.Add(this.cash_issued_month);
+            this.tabCashBenefits.Controls.Add(this.cash_issued_year);
             this.tabCashBenefits.Controls.Add(this.label27);
             this.tabCashBenefits.Controls.Add(this.label3);
             this.tabCashBenefits.Controls.Add(this.label1);
-            this.tabCashBenefits.Controls.Add(this.textBox18);
-            this.tabCashBenefits.Controls.Add(this.textBox1);
+            this.tabCashBenefits.Controls.Add(this.cash_issued_price);
+            this.tabCashBenefits.Controls.Add(this.cash_approved_benefit);
             this.tabCashBenefits.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabCashBenefits.Location = new System.Drawing.Point(4, 34);
             this.tabCashBenefits.Name = "tabCashBenefits";
@@ -529,11 +661,11 @@
             this.tabCashBenefits.TabIndex = 1;
             this.tabCashBenefits.Text = "Cash Benefits";
             // 
-            // comboBox1
+            // cash_issued_day
             // 
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cash_issued_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.cash_issued_day.FormattingEnabled = true;
+            this.cash_issued_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -565,17 +697,17 @@
             "29",
             "30",
             "31"});
-            this.comboBox1.Location = new System.Drawing.Point(383, 65);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(91, 34);
-            this.comboBox1.TabIndex = 42;
-            this.comboBox1.Text = "    දිනය";
+            this.cash_issued_day.Location = new System.Drawing.Point(383, 65);
+            this.cash_issued_day.Name = "cash_issued_day";
+            this.cash_issued_day.Size = new System.Drawing.Size(91, 34);
+            this.cash_issued_day.TabIndex = 42;
+            this.cash_issued_day.Text = "    දිනය";
             // 
-            // comboBox3
+            // cash_issued_month
             // 
-            this.comboBox3.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cash_issued_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.cash_issued_month.FormattingEnabled = true;
+            this.cash_issued_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -588,17 +720,17 @@
             "October",
             "November",
             "December"});
-            this.comboBox3.Location = new System.Drawing.Point(286, 65);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(91, 34);
-            this.comboBox3.TabIndex = 41;
-            this.comboBox3.Text = "   මාසය";
+            this.cash_issued_month.Location = new System.Drawing.Point(286, 65);
+            this.cash_issued_month.Name = "cash_issued_month";
+            this.cash_issued_month.Size = new System.Drawing.Size(91, 34);
+            this.cash_issued_month.TabIndex = 41;
+            this.cash_issued_month.Text = "   මාසය";
             // 
-            // comboBox4
+            // cash_issued_year
             // 
-            this.comboBox4.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cash_issued_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.cash_issued_year.FormattingEnabled = true;
+            this.cash_issued_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -674,11 +806,11 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox4.Location = new System.Drawing.Point(177, 65);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(103, 34);
-            this.comboBox4.TabIndex = 40;
-            this.comboBox4.Text = "   වර්ෂය";
+            this.cash_issued_year.Location = new System.Drawing.Point(177, 65);
+            this.cash_issued_year.Name = "cash_issued_year";
+            this.cash_issued_year.Size = new System.Drawing.Size(103, 34);
+            this.cash_issued_year.TabIndex = 40;
+            this.cash_issued_year.Text = "   වර්ෂය";
             // 
             // label27
             // 
@@ -710,33 +842,33 @@
             this.label1.Text = "අනුමත ප්‍රතිලාභය";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox18
+            // cash_issued_price
             // 
-            this.textBox18.Location = new System.Drawing.Point(177, 105);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(200, 33);
-            this.textBox18.TabIndex = 17;
+            this.cash_issued_price.Location = new System.Drawing.Point(177, 105);
+            this.cash_issued_price.Name = "cash_issued_price";
+            this.cash_issued_price.Size = new System.Drawing.Size(200, 33);
+            this.cash_issued_price.TabIndex = 17;
             // 
-            // textBox1
+            // cash_approved_benefit
             // 
-            this.textBox1.Location = new System.Drawing.Point(177, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 33);
-            this.textBox1.TabIndex = 15;
+            this.cash_approved_benefit.Location = new System.Drawing.Point(177, 26);
+            this.cash_approved_benefit.Name = "cash_approved_benefit";
+            this.cash_approved_benefit.Size = new System.Drawing.Size(200, 33);
+            this.cash_approved_benefit.TabIndex = 15;
             // 
             // tabNonCashBenefits
             // 
             this.tabNonCashBenefits.AutoScroll = true;
-            this.tabNonCashBenefits.Controls.Add(this.comboBox7);
-            this.tabNonCashBenefits.Controls.Add(this.comboBox6);
-            this.tabNonCashBenefits.Controls.Add(this.comboBox5);
+            this.tabNonCashBenefits.Controls.Add(this.noncash_issued_day);
+            this.tabNonCashBenefits.Controls.Add(this.noncash_issued_month);
+            this.tabNonCashBenefits.Controls.Add(this.noncash_issued_year);
             this.tabNonCashBenefits.Controls.Add(this.label31);
             this.tabNonCashBenefits.Controls.Add(this.label28);
             this.tabNonCashBenefits.Controls.Add(this.label29);
             this.tabNonCashBenefits.Controls.Add(this.label30);
-            this.tabNonCashBenefits.Controls.Add(this.textBox19);
-            this.tabNonCashBenefits.Controls.Add(this.textBox20);
-            this.tabNonCashBenefits.Controls.Add(this.textBox21);
+            this.tabNonCashBenefits.Controls.Add(this.noncash_price);
+            this.tabNonCashBenefits.Controls.Add(this.noncash_quantity);
+            this.tabNonCashBenefits.Controls.Add(this.noncash_approved_benefit);
             this.tabNonCashBenefits.Location = new System.Drawing.Point(4, 34);
             this.tabNonCashBenefits.Name = "tabNonCashBenefits";
             this.tabNonCashBenefits.Size = new System.Drawing.Size(1124, 422);
@@ -745,11 +877,11 @@
             this.tabNonCashBenefits.UseVisualStyleBackColor = true;
             this.tabNonCashBenefits.Click += new System.EventHandler(this.tabNonCashBenefits_Click);
             // 
-            // comboBox7
+            // noncash_issued_day
             // 
-            this.comboBox7.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.noncash_issued_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.noncash_issued_day.FormattingEnabled = true;
+            this.noncash_issued_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -781,17 +913,17 @@
             "29",
             "30",
             "31"});
-            this.comboBox7.Location = new System.Drawing.Point(383, 65);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(91, 34);
-            this.comboBox7.TabIndex = 39;
-            this.comboBox7.Text = "    දිනය";
+            this.noncash_issued_day.Location = new System.Drawing.Point(383, 65);
+            this.noncash_issued_day.Name = "noncash_issued_day";
+            this.noncash_issued_day.Size = new System.Drawing.Size(91, 34);
+            this.noncash_issued_day.TabIndex = 39;
+            this.noncash_issued_day.Text = "    දිනය";
             // 
-            // comboBox6
+            // noncash_issued_month
             // 
-            this.comboBox6.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.noncash_issued_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.noncash_issued_month.FormattingEnabled = true;
+            this.noncash_issued_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -804,17 +936,17 @@
             "October",
             "November",
             "December"});
-            this.comboBox6.Location = new System.Drawing.Point(286, 65);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(91, 34);
-            this.comboBox6.TabIndex = 38;
-            this.comboBox6.Text = "   මාසය";
+            this.noncash_issued_month.Location = new System.Drawing.Point(286, 65);
+            this.noncash_issued_month.Name = "noncash_issued_month";
+            this.noncash_issued_month.Size = new System.Drawing.Size(91, 34);
+            this.noncash_issued_month.TabIndex = 38;
+            this.noncash_issued_month.Text = "   මාසය";
             // 
-            // comboBox5
+            // noncash_issued_year
             // 
-            this.comboBox5.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.noncash_issued_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.noncash_issued_year.FormattingEnabled = true;
+            this.noncash_issued_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -890,11 +1022,11 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox5.Location = new System.Drawing.Point(177, 65);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(103, 34);
-            this.comboBox5.TabIndex = 37;
-            this.comboBox5.Text = "   වර්ෂය";
+            this.noncash_issued_year.Location = new System.Drawing.Point(177, 65);
+            this.noncash_issued_year.Name = "noncash_issued_year";
+            this.noncash_issued_year.Size = new System.Drawing.Size(103, 34);
+            this.noncash_issued_year.TabIndex = 37;
+            this.noncash_issued_year.Text = "   වර්ෂය";
             // 
             // label31
             // 
@@ -936,34 +1068,34 @@
             this.label30.Text = "අනුමත ප්‍රතිලාභය";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox19
+            // noncash_price
             // 
-            this.textBox19.Location = new System.Drawing.Point(177, 144);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 33);
-            this.textBox19.TabIndex = 21;
+            this.noncash_price.Location = new System.Drawing.Point(177, 144);
+            this.noncash_price.Name = "noncash_price";
+            this.noncash_price.Size = new System.Drawing.Size(100, 33);
+            this.noncash_price.TabIndex = 21;
             // 
-            // textBox20
+            // noncash_quantity
             // 
-            this.textBox20.Location = new System.Drawing.Point(177, 105);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 33);
-            this.textBox20.TabIndex = 20;
+            this.noncash_quantity.Location = new System.Drawing.Point(177, 105);
+            this.noncash_quantity.Name = "noncash_quantity";
+            this.noncash_quantity.Size = new System.Drawing.Size(100, 33);
+            this.noncash_quantity.TabIndex = 20;
             // 
-            // textBox21
+            // noncash_approved_benefit
             // 
-            this.textBox21.Location = new System.Drawing.Point(177, 26);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(200, 33);
-            this.textBox21.TabIndex = 18;
+            this.noncash_approved_benefit.Location = new System.Drawing.Point(177, 26);
+            this.noncash_approved_benefit.Name = "noncash_approved_benefit";
+            this.noncash_approved_benefit.Size = new System.Drawing.Size(200, 33);
+            this.noncash_approved_benefit.TabIndex = 18;
             // 
-            // textBox5
+            // remun_rank
             // 
-            this.textBox5.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox5.Location = new System.Drawing.Point(501, 98);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 33);
-            this.textBox5.TabIndex = 2;
+            this.remun_rank.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_rank.Location = new System.Drawing.Point(501, 98);
+            this.remun_rank.Name = "remun_rank";
+            this.remun_rank.Size = new System.Drawing.Size(200, 33);
+            this.remun_rank.TabIndex = 2;
             // 
             // label5
             // 
@@ -976,13 +1108,13 @@
             this.label5.Text = "නිලය";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // textBox6
+            // remun_post
             // 
-            this.textBox6.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox6.Location = new System.Drawing.Point(501, 137);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 33);
-            this.textBox6.TabIndex = 3;
+            this.remun_post.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_post.Location = new System.Drawing.Point(501, 137);
+            this.remun_post.Name = "remun_post";
+            this.remun_post.Size = new System.Drawing.Size(200, 33);
+            this.remun_post.TabIndex = 3;
             // 
             // label6
             // 
@@ -1008,9 +1140,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.textBox23);
+            this.panel4.Controls.Add(this.full_name);
             this.panel4.Controls.Add(this.label33);
-            this.panel4.Controls.Add(this.comboBox2);
+            this.panel4.Controls.Add(this.employee_no);
             this.panel4.Controls.Add(this.label34);
             this.panel4.Location = new System.Drawing.Point(8, 8);
             this.panel4.Name = "panel4";
@@ -1026,13 +1158,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox23
+            // full_name
             // 
-            this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(14, 355);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(250, 29);
-            this.textBox23.TabIndex = 4;
+            this.full_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.full_name.Location = new System.Drawing.Point(14, 355);
+            this.full_name.Name = "full_name";
+            this.full_name.Size = new System.Drawing.Size(250, 29);
+            this.full_name.TabIndex = 4;
             // 
             // label33
             // 
@@ -1044,14 +1176,14 @@
             this.label33.TabIndex = 1;
             this.label33.Text = "සේවක අංකය";
             // 
-            // comboBox2
+            // employee_no
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(18, 276);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 32);
-            this.comboBox2.TabIndex = 5;
+            this.employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_no.FormattingEnabled = true;
+            this.employee_no.Location = new System.Drawing.Point(18, 276);
+            this.employee_no.Name = "employee_no";
+            this.employee_no.Size = new System.Drawing.Size(150, 32);
+            this.employee_no.TabIndex = 5;
             // 
             // label34
             // 
@@ -1131,19 +1263,19 @@
             this.ClientSize = new System.Drawing.Size(1062, 670);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.tabRemuneration);
+            this.Controls.Add(this.tabRemunerationAndBenefits);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.remun_post);
+            this.Controls.Add(this.remun_rank);
             this.Controls.Add(this.lblCaption);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEmployeeRemunerationAndBenefits";
             this.Text = "Passport Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.tabRemuneration.ResumeLayout(false);
+            this.tabRemunerationAndBenefits.ResumeLayout(false);
             this.tabPersonalDetails.ResumeLayout(false);
             this.tabPersonalDetails.PerformLayout();
             this.tabCashBenefits.ResumeLayout(false);
@@ -1163,39 +1295,38 @@
         #endregion
 
         private System.Windows.Forms.Label lblCaption;
-        private System.Windows.Forms.TabControl tabRemuneration;
+        private System.Windows.Forms.TabControl tabRemunerationAndBenefits;
         private System.Windows.Forms.TabPage tabPersonalDetails;
         private System.Windows.Forms.TabPage tabCashBenefits;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox cash_approved_benefit;
+        private System.Windows.Forms.TextBox remun_rank;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox remun_post;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TabPage tabNonCashBenefits;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox remun_salary_grade;
+        private System.Windows.Forms.TextBox remun_basic_salary;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox remun_fuel_allowance;
+        private System.Windows.Forms.TextBox remun_house_allowance;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox remun_present_salary;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox remun_salary_no;
+        private System.Windows.Forms.TextBox remun_transport_allowance;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox remun_telephone_allowance;
+        private System.Windows.Forms.TextBox remun_increased_by;
+        private System.Windows.Forms.TextBox remun_other_allowances;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
@@ -1203,35 +1334,37 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox cash_issued_price;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox noncash_price;
+        private System.Windows.Forms.TextBox noncash_quantity;
+        private System.Windows.Forms.TextBox noncash_approved_benefit;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox full_name;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cash_issued_day;
+        private System.Windows.Forms.ComboBox cash_issued_month;
+        private System.Windows.Forms.ComboBox cash_issued_year;
+        private System.Windows.Forms.ComboBox noncash_issued_day;
+        private System.Windows.Forms.ComboBox noncash_issued_month;
+        private System.Windows.Forms.ComboBox noncash_issued_year;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
+        private System.Windows.Forms.ComboBox remun_salary_increased_day;
+        private System.Windows.Forms.ComboBox remun_salary_increased_month;
+        private System.Windows.Forms.ComboBox remun_salary_increased_year;
 
     }
 }

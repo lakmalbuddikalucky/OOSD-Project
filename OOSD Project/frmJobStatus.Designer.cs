@@ -57,9 +57,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.full_name = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.employee_no = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.lblCaption = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -737,9 +737,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.textBox23);
+            this.panel4.Controls.Add(this.full_name);
             this.panel4.Controls.Add(this.label33);
-            this.panel4.Controls.Add(this.comboBox2);
+            this.panel4.Controls.Add(this.employee_no);
             this.panel4.Controls.Add(this.label34);
             this.panel4.Location = new System.Drawing.Point(8, 8);
             this.panel4.Name = "panel4";
@@ -755,13 +755,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox23
+            // full_name
             // 
-            this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(14, 355);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(250, 29);
-            this.textBox23.TabIndex = 4;
+            this.full_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.full_name.Location = new System.Drawing.Point(14, 355);
+            this.full_name.Name = "full_name";
+            this.full_name.Size = new System.Drawing.Size(250, 29);
+            this.full_name.TabIndex = 4;
             // 
             // label33
             // 
@@ -773,14 +773,14 @@
             this.label33.TabIndex = 1;
             this.label33.Text = "සේවක අංකය";
             // 
-            // comboBox2
+            // employee_no
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(18, 276);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 32);
-            this.comboBox2.TabIndex = 5;
+            this.employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_no.FormattingEnabled = true;
+            this.employee_no.Location = new System.Drawing.Point(18, 276);
+            this.employee_no.Name = "employee_no";
+            this.employee_no.Size = new System.Drawing.Size(150, 32);
+            this.employee_no.TabIndex = 5;
             // 
             // label34
             // 
@@ -1446,9 +1446,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox full_name;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label lblCaption;
         private System.Windows.Forms.Panel panel3;

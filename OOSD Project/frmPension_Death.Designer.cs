@@ -31,33 +31,33 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPension_Death));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.employee_no = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.lblCaption = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.pension_informed_day = new System.Windows.Forms.ComboBox();
+            this.pension_informed_year = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.full_name = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pension_employee_no = new System.Windows.Forms.ComboBox();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.pension_informed_month = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.pension_full_name = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.pension_notes = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.label35 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.pension_dead = new System.Windows.Forms.RadioButton();
+            this.pension_retired = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.pension_died_day = new System.Windows.Forms.ComboBox();
+            this.pension_died_month = new System.Windows.Forms.ComboBox();
+            this.pension_died_year = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -85,14 +85,14 @@
             this.label33.TabIndex = 1;
             this.label33.Text = "සේවක අංකය";
             // 
-            // comboBox2
+            // employee_no
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(18, 276);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 32);
-            this.comboBox2.TabIndex = 5;
+            this.employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_no.FormattingEnabled = true;
+            this.employee_no.Location = new System.Drawing.Point(18, 276);
+            this.employee_no.Name = "employee_no";
+            this.employee_no.Size = new System.Drawing.Size(150, 32);
+            this.employee_no.TabIndex = 5;
             // 
             // label34
             // 
@@ -116,12 +116,12 @@
             this.lblCaption.TabIndex = 84;
             this.lblCaption.Text = "               Pension && Deaths";
             // 
-            // comboBox5
+            // pension_informed_day
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox5.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.pension_informed_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.pension_informed_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.pension_informed_day.FormattingEnabled = true;
+            this.pension_informed_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -153,18 +153,18 @@
             "29",
             "30",
             "31"});
-            this.comboBox5.Location = new System.Drawing.Point(819, 89);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(91, 34);
-            this.comboBox5.TabIndex = 7;
-            this.comboBox5.Text = "    දිනය";
+            this.pension_informed_day.Location = new System.Drawing.Point(818, 128);
+            this.pension_informed_day.Name = "pension_informed_day";
+            this.pension_informed_day.Size = new System.Drawing.Size(91, 34);
+            this.pension_informed_day.TabIndex = 7;
+            this.pension_informed_day.Text = "    දිනය";
             // 
-            // comboBox10
+            // pension_informed_year
             // 
-            this.comboBox10.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox10.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.pension_informed_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.pension_informed_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.pension_informed_year.FormattingEnabled = true;
+            this.pension_informed_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -240,53 +240,53 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox10.Location = new System.Drawing.Point(613, 89);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(103, 34);
-            this.comboBox10.TabIndex = 5;
-            this.comboBox10.Text = "   වර්ෂය";
+            this.pension_informed_year.Location = new System.Drawing.Point(612, 128);
+            this.pension_informed_year.Name = "pension_informed_year";
+            this.pension_informed_year.Size = new System.Drawing.Size(103, 34);
+            this.pension_informed_year.TabIndex = 5;
+            this.pension_informed_year.Text = "   වර්ෂය";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(471, 92);
+            this.label3.Location = new System.Drawing.Point(470, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(136, 26);
             this.label3.TabIndex = 98;
             this.label3.Text = "දැනුම් දුන් දිනය";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox23
+            // full_name
             // 
-            this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(14, 355);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(250, 29);
-            this.textBox23.TabIndex = 4;
+            this.full_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.full_name.Location = new System.Drawing.Point(14, 355);
+            this.full_name.Name = "full_name";
+            this.full_name.Size = new System.Drawing.Size(250, 29);
+            this.full_name.TabIndex = 4;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.textBox23);
+            this.panel4.Controls.Add(this.full_name);
             this.panel4.Controls.Add(this.label33);
-            this.panel4.Controls.Add(this.comboBox2);
+            this.panel4.Controls.Add(this.employee_no);
             this.panel4.Controls.Add(this.label34);
             this.panel4.Location = new System.Drawing.Point(8, 8);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(284, 633);
             this.panel4.TabIndex = 6;
             // 
-            // comboBox1
+            // pension_employee_no
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(145, 51);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 32);
-            this.comboBox1.TabIndex = 3;
+            this.pension_employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pension_employee_no.FormattingEnabled = true;
+            this.pension_employee_no.Location = new System.Drawing.Point(145, 51);
+            this.pension_employee_no.Name = "pension_employee_no";
+            this.pension_employee_no.Size = new System.Drawing.Size(200, 32);
+            this.pension_employee_no.TabIndex = 3;
             // 
             // btnNext
             // 
@@ -311,12 +311,12 @@
             this.btnPrev.Text = "Previous";
             this.btnPrev.UseVisualStyleBackColor = false;
             // 
-            // comboBox11
+            // pension_informed_month
             // 
-            this.comboBox11.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox11.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.pension_informed_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.pension_informed_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.pension_informed_month.FormattingEnabled = true;
+            this.pension_informed_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -329,11 +329,11 @@
             "October",
             "November",
             "December"});
-            this.comboBox11.Location = new System.Drawing.Point(722, 89);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(91, 34);
-            this.comboBox11.TabIndex = 6;
-            this.comboBox11.Text = "   මාසය";
+            this.pension_informed_month.Location = new System.Drawing.Point(721, 128);
+            this.pension_informed_month.Name = "pension_informed_month";
+            this.pension_informed_month.Size = new System.Drawing.Size(91, 34);
+            this.pension_informed_month.TabIndex = 6;
+            this.pension_informed_month.Text = "   මාසය";
             // 
             // label9
             // 
@@ -347,13 +347,13 @@
             this.label9.Text = "සටහන්";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox17
+            // pension_full_name
             // 
-            this.textBox17.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox17.Location = new System.Drawing.Point(145, 89);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(300, 33);
-            this.textBox17.TabIndex = 4;
+            this.pension_full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.pension_full_name.Location = new System.Drawing.Point(145, 89);
+            this.pension_full_name.Name = "pension_full_name";
+            this.pension_full_name.Size = new System.Drawing.Size(300, 33);
+            this.pension_full_name.TabIndex = 4;
             // 
             // label13
             // 
@@ -379,14 +379,14 @@
             this.label7.Text = "සේවක අංකය";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox10
+            // pension_notes
             // 
-            this.textBox10.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox10.Location = new System.Drawing.Point(145, 168);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(250, 50);
-            this.textBox10.TabIndex = 11;
+            this.pension_notes.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.pension_notes.Location = new System.Drawing.Point(145, 168);
+            this.pension_notes.Multiline = true;
+            this.pension_notes.Name = "pension_notes";
+            this.pension_notes.Size = new System.Drawing.Size(297, 142);
+            this.pension_notes.TabIndex = 11;
             // 
             // panel2
             // 
@@ -431,60 +431,60 @@
             this.panel3.Size = new System.Drawing.Size(300, 708);
             this.panel3.TabIndex = 86;
             // 
-            // radioButton2
+            // pension_dead
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.radioButton2.Location = new System.Drawing.Point(6, 0);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(108, 30);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "මියගොස්";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.pension_dead.AutoSize = true;
+            this.pension_dead.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.pension_dead.Location = new System.Drawing.Point(6, 0);
+            this.pension_dead.Name = "pension_dead";
+            this.pension_dead.Size = new System.Drawing.Size(108, 30);
+            this.pension_dead.TabIndex = 2;
+            this.pension_dead.TabStop = true;
+            this.pension_dead.Text = "මියගොස්";
+            this.pension_dead.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // pension_retired
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.radioButton1.Location = new System.Drawing.Point(331, 98);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(98, 30);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "විශ්‍රාමික";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.pension_retired.AutoSize = true;
+            this.pension_retired.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.pension_retired.Location = new System.Drawing.Point(331, 98);
+            this.pension_retired.Name = "pension_retired";
+            this.pension_retired.Size = new System.Drawing.Size(98, 30);
+            this.pension_retired.TabIndex = 1;
+            this.pension_retired.TabStop = true;
+            this.pension_retired.Text = "විශ්‍රාමික";
+            this.pension_retired.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox15);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.comboBox5);
-            this.groupBox1.Controls.Add(this.comboBox16);
-            this.groupBox1.Controls.Add(this.comboBox10);
+            this.groupBox1.Controls.Add(this.pension_died_day);
+            this.groupBox1.Controls.Add(this.pension_dead);
+            this.groupBox1.Controls.Add(this.pension_informed_day);
+            this.groupBox1.Controls.Add(this.pension_died_month);
+            this.groupBox1.Controls.Add(this.pension_informed_year);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.comboBox17);
+            this.groupBox1.Controls.Add(this.pension_died_year);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.comboBox11);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.pension_informed_month);
+            this.groupBox1.Controls.Add(this.pension_employee_no);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.pension_notes);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.textBox17);
+            this.groupBox1.Controls.Add(this.pension_full_name);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12.75F);
             this.groupBox1.Location = new System.Drawing.Point(325, 136);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(949, 230);
+            this.groupBox1.Size = new System.Drawing.Size(949, 316);
             this.groupBox1.TabIndex = 102;
             this.groupBox1.TabStop = false;
             // 
-            // comboBox15
+            // pension_died_day
             // 
-            this.comboBox15.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox15.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Items.AddRange(new object[] {
+            this.pension_died_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.pension_died_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.pension_died_day.FormattingEnabled = true;
+            this.pension_died_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -516,18 +516,18 @@
             "29",
             "30",
             "31"});
-            this.comboBox15.Location = new System.Drawing.Point(351, 128);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(91, 34);
-            this.comboBox15.TabIndex = 10;
-            this.comboBox15.Text = "    දිනය";
+            this.pension_died_day.Location = new System.Drawing.Point(351, 128);
+            this.pension_died_day.Name = "pension_died_day";
+            this.pension_died_day.Size = new System.Drawing.Size(91, 34);
+            this.pension_died_day.TabIndex = 10;
+            this.pension_died_day.Text = "    දිනය";
             // 
-            // comboBox16
+            // pension_died_month
             // 
-            this.comboBox16.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox16.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Items.AddRange(new object[] {
+            this.pension_died_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.pension_died_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.pension_died_month.FormattingEnabled = true;
+            this.pension_died_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -540,18 +540,18 @@
             "October",
             "November",
             "December"});
-            this.comboBox16.Location = new System.Drawing.Point(254, 128);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(91, 34);
-            this.comboBox16.TabIndex = 9;
-            this.comboBox16.Text = "   මාසය";
+            this.pension_died_month.Location = new System.Drawing.Point(254, 128);
+            this.pension_died_month.Name = "pension_died_month";
+            this.pension_died_month.Size = new System.Drawing.Size(91, 34);
+            this.pension_died_month.TabIndex = 9;
+            this.pension_died_month.Text = "   මාසය";
             // 
-            // comboBox17
+            // pension_died_year
             // 
-            this.comboBox17.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox17.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Items.AddRange(new object[] {
+            this.pension_died_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.pension_died_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.pension_died_year.FormattingEnabled = true;
+            this.pension_died_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -627,11 +627,11 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox17.Location = new System.Drawing.Point(145, 128);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(103, 34);
-            this.comboBox17.TabIndex = 8;
-            this.comboBox17.Text = "   වර්ෂය";
+            this.pension_died_year.Location = new System.Drawing.Point(145, 128);
+            this.pension_died_year.Name = "pension_died_year";
+            this.pension_died_year.Size = new System.Drawing.Size(103, 34);
+            this.pension_died_year.TabIndex = 8;
+            this.pension_died_year.Text = "   වර්ෂය";
             // 
             // label6
             // 
@@ -651,7 +651,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 768);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.pension_retired);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.panel3);
@@ -676,33 +676,33 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label lblCaption;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox pension_informed_day;
+        private System.Windows.Forms.ComboBox pension_informed_year;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox full_name;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox pension_employee_no;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
-        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox pension_informed_month;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox pension_full_name;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox pension_notes;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton pension_dead;
+        private System.Windows.Forms.RadioButton pension_retired;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.ComboBox comboBox17;
+        private System.Windows.Forms.ComboBox pension_died_day;
+        private System.Windows.Forms.ComboBox pension_died_month;
+        private System.Windows.Forms.ComboBox pension_died_year;
         private System.Windows.Forms.Label label6;
     }
 }

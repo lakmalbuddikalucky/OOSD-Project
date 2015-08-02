@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmResignation));
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.resignation_day = new System.Windows.Forms.ComboBox();
+            this.resignation_month = new System.Windows.Forms.ComboBox();
+            this.resignation_year = new System.Windows.Forms.ComboBox();
+            this.resignation_employee_no = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.full_name = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.employee_no = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnNext = new System.Windows.Forms.Button();
@@ -47,34 +47,34 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.resignation_full_name = new System.Windows.Forms.TextBox();
+            this.resignation_post = new System.Windows.Forms.TextBox();
+            this.resignation_rank = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.resignation_letter = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.resignation_reason = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblCaption = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.resignation_letter_submitted_year = new System.Windows.Forms.ComboBox();
+            this.resignation_letter_submitted_month = new System.Windows.Forms.ComboBox();
+            this.resignation_letter_submitted_day = new System.Windows.Forms.ComboBox();
+            this.btn_resignation_browse = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox11
+            // resignation_day
             // 
-            this.comboBox11.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox11.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.resignation_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.resignation_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.resignation_day.FormattingEnabled = true;
+            this.resignation_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -106,18 +106,18 @@
             "29",
             "30",
             "31"});
-            this.comboBox11.Location = new System.Drawing.Point(812, 293);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(91, 34);
-            this.comboBox11.TabIndex = 137;
-            this.comboBox11.Text = "    දිනය";
+            this.resignation_day.Location = new System.Drawing.Point(812, 293);
+            this.resignation_day.Name = "resignation_day";
+            this.resignation_day.Size = new System.Drawing.Size(91, 34);
+            this.resignation_day.TabIndex = 137;
+            this.resignation_day.Text = "    දිනය";
             // 
-            // comboBox10
+            // resignation_month
             // 
-            this.comboBox10.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox10.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.resignation_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.resignation_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.resignation_month.FormattingEnabled = true;
+            this.resignation_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -130,18 +130,18 @@
             "October",
             "November",
             "December"});
-            this.comboBox10.Location = new System.Drawing.Point(715, 293);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(91, 34);
-            this.comboBox10.TabIndex = 136;
-            this.comboBox10.Text = "   මාසය";
+            this.resignation_month.Location = new System.Drawing.Point(715, 293);
+            this.resignation_month.Name = "resignation_month";
+            this.resignation_month.Size = new System.Drawing.Size(91, 34);
+            this.resignation_month.TabIndex = 136;
+            this.resignation_month.Text = "   මාසය";
             // 
-            // comboBox9
+            // resignation_year
             // 
-            this.comboBox9.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox9.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.resignation_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.resignation_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.resignation_year.FormattingEnabled = true;
+            this.resignation_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -217,20 +217,20 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox9.Location = new System.Drawing.Point(606, 293);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(103, 34);
-            this.comboBox9.TabIndex = 135;
-            this.comboBox9.Text = "   වර්ෂය";
+            this.resignation_year.Location = new System.Drawing.Point(606, 293);
+            this.resignation_year.Name = "resignation_year";
+            this.resignation_year.Size = new System.Drawing.Size(103, 34);
+            this.resignation_year.TabIndex = 135;
+            this.resignation_year.Text = "   වර්ෂය";
             // 
-            // comboBox1
+            // resignation_employee_no
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(606, 98);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 32);
-            this.comboBox1.TabIndex = 128;
+            this.resignation_employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resignation_employee_no.FormattingEnabled = true;
+            this.resignation_employee_no.Location = new System.Drawing.Point(606, 98);
+            this.resignation_employee_no.Name = "resignation_employee_no";
+            this.resignation_employee_no.Size = new System.Drawing.Size(200, 32);
+            this.resignation_employee_no.TabIndex = 128;
             // 
             // label1
             // 
@@ -253,13 +253,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox23
+            // full_name
             // 
-            this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(14, 355);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(250, 29);
-            this.textBox23.TabIndex = 4;
+            this.full_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.full_name.Location = new System.Drawing.Point(14, 355);
+            this.full_name.Name = "full_name";
+            this.full_name.Size = new System.Drawing.Size(250, 29);
+            this.full_name.TabIndex = 4;
             // 
             // label33
             // 
@@ -271,14 +271,14 @@
             this.label33.TabIndex = 1;
             this.label33.Text = "සේවක අංකය";
             // 
-            // comboBox2
+            // employee_no
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(18, 276);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 32);
-            this.comboBox2.TabIndex = 5;
+            this.employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_no.FormattingEnabled = true;
+            this.employee_no.Location = new System.Drawing.Point(18, 276);
+            this.employee_no.Name = "employee_no";
+            this.employee_no.Size = new System.Drawing.Size(150, 32);
+            this.employee_no.TabIndex = 5;
             // 
             // label34
             // 
@@ -294,9 +294,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.textBox23);
+            this.panel4.Controls.Add(this.full_name);
             this.panel4.Controls.Add(this.label33);
-            this.panel4.Controls.Add(this.comboBox2);
+            this.panel4.Controls.Add(this.employee_no);
             this.panel4.Controls.Add(this.label34);
             this.panel4.Location = new System.Drawing.Point(8, 8);
             this.panel4.Name = "panel4";
@@ -384,29 +384,29 @@
             this.label9.Text = "හේතුව";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox17
+            // resignation_full_name
             // 
-            this.textBox17.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox17.Location = new System.Drawing.Point(606, 136);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(300, 33);
-            this.textBox17.TabIndex = 129;
+            this.resignation_full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.resignation_full_name.Location = new System.Drawing.Point(606, 136);
+            this.resignation_full_name.Name = "resignation_full_name";
+            this.resignation_full_name.Size = new System.Drawing.Size(300, 33);
+            this.resignation_full_name.TabIndex = 129;
             // 
-            // textBox16
+            // resignation_post
             // 
-            this.textBox16.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox16.Location = new System.Drawing.Point(606, 175);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(150, 33);
-            this.textBox16.TabIndex = 130;
+            this.resignation_post.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.resignation_post.Location = new System.Drawing.Point(606, 175);
+            this.resignation_post.Name = "resignation_post";
+            this.resignation_post.Size = new System.Drawing.Size(150, 33);
+            this.resignation_post.TabIndex = 130;
             // 
-            // textBox8
+            // resignation_rank
             // 
-            this.textBox8.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox8.Location = new System.Drawing.Point(606, 214);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(150, 33);
-            this.textBox8.TabIndex = 131;
+            this.resignation_rank.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.resignation_rank.Location = new System.Drawing.Point(606, 214);
+            this.resignation_rank.Name = "resignation_rank";
+            this.resignation_rank.Size = new System.Drawing.Size(150, 33);
+            this.resignation_rank.TabIndex = 131;
             // 
             // label13
             // 
@@ -420,13 +420,13 @@
             this.label13.Text = "සම්පූර්ණ නම";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox2
+            // resignation_letter
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox2.Location = new System.Drawing.Point(606, 389);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 33);
-            this.textBox2.TabIndex = 134;
+            this.resignation_letter.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.resignation_letter.Location = new System.Drawing.Point(606, 389);
+            this.resignation_letter.Name = "resignation_letter";
+            this.resignation_letter.Size = new System.Drawing.Size(300, 33);
+            this.resignation_letter.TabIndex = 134;
             // 
             // label7
             // 
@@ -440,14 +440,14 @@
             this.label7.Text = "සේවක අංකය";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox9
+            // resignation_reason
             // 
-            this.textBox9.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox9.Location = new System.Drawing.Point(606, 333);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(250, 50);
-            this.textBox9.TabIndex = 133;
+            this.resignation_reason.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.resignation_reason.Location = new System.Drawing.Point(606, 333);
+            this.resignation_reason.Multiline = true;
+            this.resignation_reason.Name = "resignation_reason";
+            this.resignation_reason.Size = new System.Drawing.Size(250, 50);
+            this.resignation_reason.TabIndex = 133;
             // 
             // label35
             // 
@@ -506,12 +506,12 @@
             this.label2.Text = "ඉල්ලා අස්වීමේ ලිපිය භාරදුන් දිනය";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBox3
+            // resignation_letter_submitted_year
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox3.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.resignation_letter_submitted_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.resignation_letter_submitted_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.resignation_letter_submitted_year.FormattingEnabled = true;
+            this.resignation_letter_submitted_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -587,18 +587,18 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox3.Location = new System.Drawing.Point(606, 253);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(103, 34);
-            this.comboBox3.TabIndex = 135;
-            this.comboBox3.Text = "   වර්ෂය";
+            this.resignation_letter_submitted_year.Location = new System.Drawing.Point(606, 253);
+            this.resignation_letter_submitted_year.Name = "resignation_letter_submitted_year";
+            this.resignation_letter_submitted_year.Size = new System.Drawing.Size(103, 34);
+            this.resignation_letter_submitted_year.TabIndex = 135;
+            this.resignation_letter_submitted_year.Text = "   වර්ෂය";
             // 
-            // comboBox4
+            // resignation_letter_submitted_month
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox4.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.resignation_letter_submitted_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.resignation_letter_submitted_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.resignation_letter_submitted_month.FormattingEnabled = true;
+            this.resignation_letter_submitted_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -611,18 +611,18 @@
             "October",
             "November",
             "December"});
-            this.comboBox4.Location = new System.Drawing.Point(715, 253);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(91, 34);
-            this.comboBox4.TabIndex = 136;
-            this.comboBox4.Text = "   මාසය";
+            this.resignation_letter_submitted_month.Location = new System.Drawing.Point(715, 253);
+            this.resignation_letter_submitted_month.Name = "resignation_letter_submitted_month";
+            this.resignation_letter_submitted_month.Size = new System.Drawing.Size(91, 34);
+            this.resignation_letter_submitted_month.TabIndex = 136;
+            this.resignation_letter_submitted_month.Text = "   මාසය";
             // 
-            // comboBox5
+            // resignation_letter_submitted_day
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox5.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.resignation_letter_submitted_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.resignation_letter_submitted_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.resignation_letter_submitted_day.FormattingEnabled = true;
+            this.resignation_letter_submitted_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -654,47 +654,47 @@
             "29",
             "30",
             "31"});
-            this.comboBox5.Location = new System.Drawing.Point(812, 253);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(91, 34);
-            this.comboBox5.TabIndex = 137;
-            this.comboBox5.Text = "    දිනය";
+            this.resignation_letter_submitted_day.Location = new System.Drawing.Point(812, 253);
+            this.resignation_letter_submitted_day.Name = "resignation_letter_submitted_day";
+            this.resignation_letter_submitted_day.Size = new System.Drawing.Size(91, 34);
+            this.resignation_letter_submitted_day.TabIndex = 137;
+            this.resignation_letter_submitted_day.Text = "    දිනය";
             // 
-            // button1
+            // btn_resignation_browse
             // 
-            this.button1.Location = new System.Drawing.Point(912, 391);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 29);
-            this.button1.TabIndex = 152;
-            this.button1.Text = "Browse";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_resignation_browse.Location = new System.Drawing.Point(912, 391);
+            this.btn_resignation_browse.Name = "btn_resignation_browse";
+            this.btn_resignation_browse.Size = new System.Drawing.Size(63, 29);
+            this.btn_resignation_browse.TabIndex = 152;
+            this.btn_resignation_browse.Text = "Browse";
+            this.btn_resignation_browse.UseVisualStyleBackColor = true;
             // 
             // frmResignation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 768);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox11);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox10);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox9);
+            this.Controls.Add(this.btn_resignation_browse);
+            this.Controls.Add(this.resignation_letter_submitted_day);
+            this.Controls.Add(this.resignation_day);
+            this.Controls.Add(this.resignation_letter_submitted_month);
+            this.Controls.Add(this.resignation_month);
+            this.Controls.Add(this.resignation_letter_submitted_year);
+            this.Controls.Add(this.resignation_year);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.resignation_employee_no);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.resignation_full_name);
+            this.Controls.Add(this.resignation_post);
+            this.Controls.Add(this.resignation_rank);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.resignation_letter);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.resignation_reason);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblCaption);
@@ -715,15 +715,15 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox resignation_day;
+        private System.Windows.Forms.ComboBox resignation_month;
+        private System.Windows.Forms.ComboBox resignation_year;
+        private System.Windows.Forms.ComboBox resignation_employee_no;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox full_name;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnNext;
@@ -733,21 +733,21 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox resignation_full_name;
+        private System.Windows.Forms.TextBox resignation_post;
+        private System.Windows.Forms.TextBox resignation_rank;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox resignation_letter;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox resignation_reason;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblCaption;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox resignation_letter_submitted_year;
+        private System.Windows.Forms.ComboBox resignation_letter_submitted_month;
+        private System.Windows.Forms.ComboBox resignation_letter_submitted_day;
+        private System.Windows.Forms.Button btn_resignation_browse;
     }
 }

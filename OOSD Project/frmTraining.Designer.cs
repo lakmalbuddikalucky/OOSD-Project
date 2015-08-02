@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTraining));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.training_employee_no = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -44,50 +44,50 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.training_full_name = new System.Windows.Forms.TextBox();
+            this.training_course_name = new System.Windows.Forms.TextBox();
+            this.training_course_type = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.training_country = new System.Windows.Forms.TextBox();
+            this.training_extended_days = new System.Windows.Forms.TextBox();
+            this.training_institute = new System.Windows.Forms.TextBox();
+            this.training_result = new System.Windows.Forms.TextBox();
+            this.training_payments = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.label35 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.full_name = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.employee_no = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.lblCaption = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.training_started_day = new System.Windows.Forms.ComboBox();
+            this.training_started_month = new System.Windows.Forms.ComboBox();
+            this.training_started_year = new System.Windows.Forms.ComboBox();
+            this.training_ending_year = new System.Windows.Forms.ComboBox();
+            this.training_ending_month = new System.Windows.Forms.ComboBox();
+            this.training_ending_day = new System.Windows.Forms.ComboBox();
+            this.training_new_ending_year = new System.Windows.Forms.ComboBox();
+            this.training_new_ending_month = new System.Windows.Forms.ComboBox();
+            this.training_new_ending_day = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // training_employee_no
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(475, 76);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 32);
-            this.comboBox1.TabIndex = 1;
+            this.training_employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.training_employee_no.FormattingEnabled = true;
+            this.training_employee_no.Location = new System.Drawing.Point(475, 76);
+            this.training_employee_no.Name = "training_employee_no";
+            this.training_employee_no.Size = new System.Drawing.Size(200, 32);
+            this.training_employee_no.TabIndex = 1;
             // 
             // label4
             // 
@@ -256,29 +256,29 @@
             this.label9.Text = "ආයතනය";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox17
+            // training_full_name
             // 
-            this.textBox17.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox17.Location = new System.Drawing.Point(475, 114);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(250, 33);
-            this.textBox17.TabIndex = 2;
+            this.training_full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_full_name.Location = new System.Drawing.Point(475, 114);
+            this.training_full_name.Name = "training_full_name";
+            this.training_full_name.Size = new System.Drawing.Size(250, 33);
+            this.training_full_name.TabIndex = 2;
             // 
-            // textBox16
+            // training_course_name
             // 
-            this.textBox16.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox16.Location = new System.Drawing.Point(475, 153);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(150, 33);
-            this.textBox16.TabIndex = 3;
+            this.training_course_name.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_course_name.Location = new System.Drawing.Point(475, 153);
+            this.training_course_name.Name = "training_course_name";
+            this.training_course_name.Size = new System.Drawing.Size(150, 33);
+            this.training_course_name.TabIndex = 3;
             // 
-            // textBox8
+            // training_course_type
             // 
-            this.textBox8.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox8.Location = new System.Drawing.Point(475, 192);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(150, 33);
-            this.textBox8.TabIndex = 4;
+            this.training_course_type.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_course_type.Location = new System.Drawing.Point(475, 192);
+            this.training_course_type.Name = "training_course_type";
+            this.training_course_type.Size = new System.Drawing.Size(150, 33);
+            this.training_course_type.TabIndex = 4;
             // 
             // label13
             // 
@@ -304,45 +304,45 @@
             this.label7.Text = "සේවක අංකය";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox15
+            // training_country
             // 
-            this.textBox15.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox15.Location = new System.Drawing.Point(475, 388);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(150, 33);
-            this.textBox15.TabIndex = 17;
+            this.training_country.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_country.Location = new System.Drawing.Point(475, 388);
+            this.training_country.Name = "training_country";
+            this.training_country.Size = new System.Drawing.Size(150, 33);
+            this.training_country.TabIndex = 17;
             // 
-            // textBox12
+            // training_extended_days
             // 
-            this.textBox12.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox12.Location = new System.Drawing.Point(475, 349);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 33);
-            this.textBox12.TabIndex = 13;
+            this.training_extended_days.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_extended_days.Location = new System.Drawing.Point(475, 349);
+            this.training_extended_days.Name = "training_extended_days";
+            this.training_extended_days.Size = new System.Drawing.Size(100, 33);
+            this.training_extended_days.TabIndex = 13;
             // 
-            // textBox9
+            // training_institute
             // 
-            this.textBox9.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox9.Location = new System.Drawing.Point(475, 231);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(150, 33);
-            this.textBox9.TabIndex = 5;
+            this.training_institute.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_institute.Location = new System.Drawing.Point(475, 231);
+            this.training_institute.Name = "training_institute";
+            this.training_institute.Size = new System.Drawing.Size(150, 33);
+            this.training_institute.TabIndex = 5;
             // 
-            // textBox13
+            // training_result
             // 
-            this.textBox13.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox13.Location = new System.Drawing.Point(475, 427);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(150, 33);
-            this.textBox13.TabIndex = 18;
+            this.training_result.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_result.Location = new System.Drawing.Point(475, 427);
+            this.training_result.Name = "training_result";
+            this.training_result.Size = new System.Drawing.Size(150, 33);
+            this.training_result.TabIndex = 18;
             // 
-            // textBox10
+            // training_payments
             // 
-            this.textBox10.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox10.Location = new System.Drawing.Point(475, 270);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(150, 33);
-            this.textBox10.TabIndex = 6;
+            this.training_payments.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_payments.Location = new System.Drawing.Point(475, 270);
+            this.training_payments.Name = "training_payments";
+            this.training_payments.Size = new System.Drawing.Size(150, 33);
+            this.training_payments.TabIndex = 6;
             // 
             // panel2
             // 
@@ -391,9 +391,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.textBox23);
+            this.panel4.Controls.Add(this.full_name);
             this.panel4.Controls.Add(this.label33);
-            this.panel4.Controls.Add(this.comboBox2);
+            this.panel4.Controls.Add(this.employee_no);
             this.panel4.Controls.Add(this.label34);
             this.panel4.Location = new System.Drawing.Point(8, 8);
             this.panel4.Name = "panel4";
@@ -409,13 +409,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox23
+            // full_name
             // 
-            this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(14, 355);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(250, 29);
-            this.textBox23.TabIndex = 4;
+            this.full_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.full_name.Location = new System.Drawing.Point(14, 355);
+            this.full_name.Name = "full_name";
+            this.full_name.Size = new System.Drawing.Size(250, 29);
+            this.full_name.TabIndex = 4;
             // 
             // label33
             // 
@@ -427,14 +427,14 @@
             this.label33.TabIndex = 1;
             this.label33.Text = "සේවක අංකය";
             // 
-            // comboBox2
+            // employee_no
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(18, 276);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 32);
-            this.comboBox2.TabIndex = 5;
+            this.employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_no.FormattingEnabled = true;
+            this.employee_no.Location = new System.Drawing.Point(18, 276);
+            this.employee_no.Name = "employee_no";
+            this.employee_no.Size = new System.Drawing.Size(150, 32);
+            this.employee_no.TabIndex = 5;
             // 
             // label34
             // 
@@ -458,12 +458,12 @@
             this.lblCaption.TabIndex = 35;
             this.lblCaption.Text = "               Training";
             // 
-            // comboBox5
+            // training_started_day
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox5.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.training_started_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_started_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.training_started_day.FormattingEnabled = true;
+            this.training_started_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -495,18 +495,18 @@
             "29",
             "30",
             "31"});
-            this.comboBox5.Location = new System.Drawing.Point(681, 309);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(91, 34);
-            this.comboBox5.TabIndex = 9;
-            this.comboBox5.Text = "    දිනය";
+            this.training_started_day.Location = new System.Drawing.Point(681, 309);
+            this.training_started_day.Name = "training_started_day";
+            this.training_started_day.Size = new System.Drawing.Size(91, 34);
+            this.training_started_day.TabIndex = 9;
+            this.training_started_day.Text = "    දිනය";
             // 
-            // comboBox4
+            // training_started_month
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox4.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.training_started_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_started_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.training_started_month.FormattingEnabled = true;
+            this.training_started_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -519,18 +519,18 @@
             "October",
             "November",
             "December"});
-            this.comboBox4.Location = new System.Drawing.Point(584, 309);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(91, 34);
-            this.comboBox4.TabIndex = 8;
-            this.comboBox4.Text = "   මාසය";
+            this.training_started_month.Location = new System.Drawing.Point(584, 309);
+            this.training_started_month.Name = "training_started_month";
+            this.training_started_month.Size = new System.Drawing.Size(91, 34);
+            this.training_started_month.TabIndex = 8;
+            this.training_started_month.Text = "   මාසය";
             // 
-            // comboBox3
+            // training_started_year
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox3.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.training_started_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_started_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.training_started_year.FormattingEnabled = true;
+            this.training_started_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -606,18 +606,18 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox3.Location = new System.Drawing.Point(475, 309);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(103, 34);
-            this.comboBox3.TabIndex = 7;
-            this.comboBox3.Text = "   වර්ෂය";
+            this.training_started_year.Location = new System.Drawing.Point(475, 309);
+            this.training_started_year.Name = "training_started_year";
+            this.training_started_year.Size = new System.Drawing.Size(103, 34);
+            this.training_started_year.TabIndex = 7;
+            this.training_started_year.Text = "   වර්ෂය";
             // 
-            // comboBox6
+            // training_ending_year
             // 
-            this.comboBox6.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox6.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.training_ending_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_ending_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.training_ending_year.FormattingEnabled = true;
+            this.training_ending_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -693,18 +693,18 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox6.Location = new System.Drawing.Point(978, 309);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(103, 34);
-            this.comboBox6.TabIndex = 10;
-            this.comboBox6.Text = "   වර්ෂය";
+            this.training_ending_year.Location = new System.Drawing.Point(978, 309);
+            this.training_ending_year.Name = "training_ending_year";
+            this.training_ending_year.Size = new System.Drawing.Size(103, 34);
+            this.training_ending_year.TabIndex = 10;
+            this.training_ending_year.Text = "   වර්ෂය";
             // 
-            // comboBox7
+            // training_ending_month
             // 
-            this.comboBox7.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox7.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.training_ending_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_ending_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.training_ending_month.FormattingEnabled = true;
+            this.training_ending_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -717,18 +717,18 @@
             "October",
             "November",
             "December"});
-            this.comboBox7.Location = new System.Drawing.Point(1087, 309);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(91, 34);
-            this.comboBox7.TabIndex = 11;
-            this.comboBox7.Text = "   මාසය";
+            this.training_ending_month.Location = new System.Drawing.Point(1087, 309);
+            this.training_ending_month.Name = "training_ending_month";
+            this.training_ending_month.Size = new System.Drawing.Size(91, 34);
+            this.training_ending_month.TabIndex = 11;
+            this.training_ending_month.Text = "   මාසය";
             // 
-            // comboBox8
+            // training_ending_day
             // 
-            this.comboBox8.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox8.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.training_ending_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_ending_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.training_ending_day.FormattingEnabled = true;
+            this.training_ending_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -760,18 +760,18 @@
             "29",
             "30",
             "31"});
-            this.comboBox8.Location = new System.Drawing.Point(1184, 309);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(91, 34);
-            this.comboBox8.TabIndex = 12;
-            this.comboBox8.Text = "    දිනය";
+            this.training_ending_day.Location = new System.Drawing.Point(1184, 309);
+            this.training_ending_day.Name = "training_ending_day";
+            this.training_ending_day.Size = new System.Drawing.Size(91, 34);
+            this.training_ending_day.TabIndex = 12;
+            this.training_ending_day.Text = "    දිනය";
             // 
-            // comboBox9
+            // training_new_ending_year
             // 
-            this.comboBox9.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox9.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.training_new_ending_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_new_ending_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.training_new_ending_year.FormattingEnabled = true;
+            this.training_new_ending_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -847,18 +847,18 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox9.Location = new System.Drawing.Point(978, 349);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(103, 34);
-            this.comboBox9.TabIndex = 14;
-            this.comboBox9.Text = "   වර්ෂය";
+            this.training_new_ending_year.Location = new System.Drawing.Point(978, 349);
+            this.training_new_ending_year.Name = "training_new_ending_year";
+            this.training_new_ending_year.Size = new System.Drawing.Size(103, 34);
+            this.training_new_ending_year.TabIndex = 14;
+            this.training_new_ending_year.Text = "   වර්ෂය";
             // 
-            // comboBox10
+            // training_new_ending_month
             // 
-            this.comboBox10.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox10.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.training_new_ending_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_new_ending_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.training_new_ending_month.FormattingEnabled = true;
+            this.training_new_ending_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -871,18 +871,18 @@
             "October",
             "November",
             "December"});
-            this.comboBox10.Location = new System.Drawing.Point(1087, 349);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(91, 34);
-            this.comboBox10.TabIndex = 15;
-            this.comboBox10.Text = "   මාසය";
+            this.training_new_ending_month.Location = new System.Drawing.Point(1087, 349);
+            this.training_new_ending_month.Name = "training_new_ending_month";
+            this.training_new_ending_month.Size = new System.Drawing.Size(91, 34);
+            this.training_new_ending_month.TabIndex = 15;
+            this.training_new_ending_month.Text = "   මාසය";
             // 
-            // comboBox11
+            // training_new_ending_day
             // 
-            this.comboBox11.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox11.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.training_new_ending_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.training_new_ending_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.training_new_ending_day.FormattingEnabled = true;
+            this.training_new_ending_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -914,27 +914,27 @@
             "29",
             "30",
             "31"});
-            this.comboBox11.Location = new System.Drawing.Point(1184, 349);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(91, 34);
-            this.comboBox11.TabIndex = 16;
-            this.comboBox11.Text = "    දිනය";
+            this.training_new_ending_day.Location = new System.Drawing.Point(1184, 349);
+            this.training_new_ending_day.Name = "training_new_ending_day";
+            this.training_new_ending_day.Size = new System.Drawing.Size(91, 34);
+            this.training_new_ending_day.TabIndex = 16;
+            this.training_new_ending_day.Text = "    දිනය";
             // 
             // frmTraining
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 768);
-            this.Controls.Add(this.comboBox11);
-            this.Controls.Add(this.comboBox8);
-            this.Controls.Add(this.comboBox10);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox9);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.training_new_ending_day);
+            this.Controls.Add(this.training_ending_day);
+            this.Controls.Add(this.training_new_ending_month);
+            this.Controls.Add(this.training_ending_month);
+            this.Controls.Add(this.training_started_day);
+            this.Controls.Add(this.training_new_ending_year);
+            this.Controls.Add(this.training_ending_year);
+            this.Controls.Add(this.training_started_month);
+            this.Controls.Add(this.training_started_year);
+            this.Controls.Add(this.training_employee_no);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label11);
@@ -947,16 +947,16 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.training_full_name);
+            this.Controls.Add(this.training_course_name);
+            this.Controls.Add(this.training_course_type);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.training_country);
+            this.Controls.Add(this.training_extended_days);
+            this.Controls.Add(this.training_institute);
+            this.Controls.Add(this.training_result);
+            this.Controls.Add(this.training_payments);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.panel3);
@@ -977,7 +977,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox training_employee_no;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label11;
@@ -992,35 +992,35 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox training_full_name;
+        private System.Windows.Forms.TextBox training_course_name;
+        private System.Windows.Forms.TextBox training_course_type;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox training_country;
+        private System.Windows.Forms.TextBox training_extended_days;
+        private System.Windows.Forms.TextBox training_institute;
+        private System.Windows.Forms.TextBox training_result;
+        private System.Windows.Forms.TextBox training_payments;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox full_name;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label lblCaption;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox training_started_day;
+        private System.Windows.Forms.ComboBox training_started_month;
+        private System.Windows.Forms.ComboBox training_started_year;
+        private System.Windows.Forms.ComboBox training_ending_year;
+        private System.Windows.Forms.ComboBox training_ending_month;
+        private System.Windows.Forms.ComboBox training_ending_day;
+        private System.Windows.Forms.ComboBox training_new_ending_year;
+        private System.Windows.Forms.ComboBox training_new_ending_month;
+        private System.Windows.Forms.ComboBox training_new_ending_day;
     }
 }

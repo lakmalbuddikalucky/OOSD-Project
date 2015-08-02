@@ -38,38 +38,38 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.full_name = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.employee_no = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.transport_fuel_limit = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.transport_vehicle_manufactured_year = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.transport_time = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.transport_method_when_working = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.transport_method = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.transport_fuel_type = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.transport_vehicle_type = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.transport_nearest_bus_train_station = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.transport_distance = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.transport_route = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.transport_rank = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.transport_post = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.transport_full_name = new System.Windows.Forms.TextBox();
+            this.transport_employee_no = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
@@ -162,9 +162,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.textBox9);
+            this.panel4.Controls.Add(this.full_name);
             this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.comboBox2);
+            this.panel4.Controls.Add(this.employee_no);
             this.panel4.Controls.Add(this.label12);
             this.panel4.Location = new System.Drawing.Point(8, 9);
             this.panel4.Name = "panel4";
@@ -180,13 +180,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox9
+            // full_name
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(14, 355);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(250, 29);
-            this.textBox9.TabIndex = 4;
+            this.full_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.full_name.Location = new System.Drawing.Point(14, 355);
+            this.full_name.Name = "full_name";
+            this.full_name.Size = new System.Drawing.Size(250, 29);
+            this.full_name.TabIndex = 4;
             // 
             // label11
             // 
@@ -198,14 +198,14 @@
             this.label11.TabIndex = 1;
             this.label11.Text = "සේවක අංකය";
             // 
-            // comboBox2
+            // employee_no
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(18, 276);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 32);
-            this.comboBox2.TabIndex = 5;
+            this.employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_no.FormattingEnabled = true;
+            this.employee_no.Location = new System.Drawing.Point(18, 276);
+            this.employee_no.Name = "employee_no";
+            this.employee_no.Size = new System.Drawing.Size(150, 32);
+            this.employee_no.TabIndex = 5;
             // 
             // label12
             // 
@@ -230,32 +230,32 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox11);
+            this.tabPage1.Controls.Add(this.transport_fuel_limit);
             this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.textBox12);
+            this.tabPage1.Controls.Add(this.transport_vehicle_manufactured_year);
             this.tabPage1.Controls.Add(this.label18);
-            this.tabPage1.Controls.Add(this.textBox10);
+            this.tabPage1.Controls.Add(this.transport_time);
             this.tabPage1.Controls.Add(this.label16);
-            this.tabPage1.Controls.Add(this.comboBox4);
+            this.tabPage1.Controls.Add(this.transport_method_when_working);
             this.tabPage1.Controls.Add(this.label15);
-            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.transport_method);
             this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.textBox8);
+            this.tabPage1.Controls.Add(this.transport_fuel_type);
             this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.textBox7);
+            this.tabPage1.Controls.Add(this.transport_vehicle_type);
             this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.textBox6);
+            this.tabPage1.Controls.Add(this.transport_nearest_bus_train_station);
             this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.textBox5);
+            this.tabPage1.Controls.Add(this.transport_distance);
             this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.textBox4);
+            this.tabPage1.Controls.Add(this.transport_route);
             this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.textBox3);
+            this.tabPage1.Controls.Add(this.transport_rank);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.transport_post);
             this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.comboBox3);
+            this.tabPage1.Controls.Add(this.transport_full_name);
+            this.tabPage1.Controls.Add(this.transport_employee_no);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
@@ -266,12 +266,12 @@
             this.tabPage1.Text = "Transport Details";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox11
+            // transport_fuel_limit
             // 
-            this.textBox11.Location = new System.Drawing.Point(726, 454);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(200, 33);
-            this.textBox11.TabIndex = 47;
+            this.transport_fuel_limit.Location = new System.Drawing.Point(726, 454);
+            this.transport_fuel_limit.Name = "transport_fuel_limit";
+            this.transport_fuel_limit.Size = new System.Drawing.Size(200, 33);
+            this.transport_fuel_limit.TabIndex = 47;
             // 
             // label17
             // 
@@ -282,12 +282,12 @@
             this.label17.TabIndex = 46;
             this.label17.Text = "ඉන්දන සීමාව";
             // 
-            // textBox12
+            // transport_vehicle_manufactured_year
             // 
-            this.textBox12.Location = new System.Drawing.Point(726, 415);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(200, 33);
-            this.textBox12.TabIndex = 45;
+            this.transport_vehicle_manufactured_year.Location = new System.Drawing.Point(726, 415);
+            this.transport_vehicle_manufactured_year.Name = "transport_vehicle_manufactured_year";
+            this.transport_vehicle_manufactured_year.Size = new System.Drawing.Size(200, 33);
+            this.transport_vehicle_manufactured_year.TabIndex = 45;
             // 
             // label18
             // 
@@ -298,12 +298,12 @@
             this.label18.TabIndex = 44;
             this.label18.Text = "නිෂ්පාදිත වසර";
             // 
-            // textBox10
+            // transport_time
             // 
-            this.textBox10.Location = new System.Drawing.Point(726, 337);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(200, 33);
-            this.textBox10.TabIndex = 43;
+            this.transport_time.Location = new System.Drawing.Point(726, 337);
+            this.transport_time.Name = "transport_time";
+            this.transport_time.Size = new System.Drawing.Size(200, 33);
+            this.transport_time.TabIndex = 43;
             // 
             // label16
             // 
@@ -314,13 +314,13 @@
             this.label16.TabIndex = 42;
             this.label16.Text = "ගත වන කාලය";
             // 
-            // comboBox4
+            // transport_method_when_working
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(726, 376);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(200, 34);
-            this.comboBox4.TabIndex = 41;
+            this.transport_method_when_working.FormattingEnabled = true;
+            this.transport_method_when_working.Location = new System.Drawing.Point(726, 376);
+            this.transport_method_when_working.Name = "transport_method_when_working";
+            this.transport_method_when_working.Size = new System.Drawing.Size(200, 34);
+            this.transport_method_when_working.TabIndex = 41;
             // 
             // label15
             // 
@@ -331,13 +331,13 @@
             this.label15.TabIndex = 40;
             this.label15.Text = "රාජකාරී ප්‍රවාහන ආකාරය";
             // 
-            // comboBox1
+            // transport_method
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(726, 298);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 34);
-            this.comboBox1.TabIndex = 39;
+            this.transport_method.FormattingEnabled = true;
+            this.transport_method.Location = new System.Drawing.Point(726, 298);
+            this.transport_method.Name = "transport_method";
+            this.transport_method.Size = new System.Drawing.Size(200, 34);
+            this.transport_method.TabIndex = 39;
             // 
             // label14
             // 
@@ -348,12 +348,12 @@
             this.label14.TabIndex = 38;
             this.label14.Text = "ප්‍රවාහන ක්‍රමය";
             // 
-            // textBox8
+            // transport_fuel_type
             // 
-            this.textBox8.Location = new System.Drawing.Point(262, 454);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(200, 33);
-            this.textBox8.TabIndex = 37;
+            this.transport_fuel_type.Location = new System.Drawing.Point(262, 454);
+            this.transport_fuel_type.Name = "transport_fuel_type";
+            this.transport_fuel_type.Size = new System.Drawing.Size(200, 33);
+            this.transport_fuel_type.TabIndex = 37;
             // 
             // label10
             // 
@@ -364,12 +364,12 @@
             this.label10.TabIndex = 36;
             this.label10.Text = "ඉන්දන වර්ගය";
             // 
-            // textBox7
+            // transport_vehicle_type
             // 
-            this.textBox7.Location = new System.Drawing.Point(262, 415);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(200, 33);
-            this.textBox7.TabIndex = 35;
+            this.transport_vehicle_type.Location = new System.Drawing.Point(262, 415);
+            this.transport_vehicle_type.Name = "transport_vehicle_type";
+            this.transport_vehicle_type.Size = new System.Drawing.Size(200, 33);
+            this.transport_vehicle_type.TabIndex = 35;
             // 
             // label9
             // 
@@ -380,12 +380,12 @@
             this.label9.TabIndex = 34;
             this.label9.Text = "වාහනයේ  වර්ගය";
             // 
-            // textBox6
+            // transport_nearest_bus_train_station
             // 
-            this.textBox6.Location = new System.Drawing.Point(262, 376);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 33);
-            this.textBox6.TabIndex = 33;
+            this.transport_nearest_bus_train_station.Location = new System.Drawing.Point(262, 376);
+            this.transport_nearest_bus_train_station.Name = "transport_nearest_bus_train_station";
+            this.transport_nearest_bus_train_station.Size = new System.Drawing.Size(200, 33);
+            this.transport_nearest_bus_train_station.TabIndex = 33;
             // 
             // label8
             // 
@@ -396,12 +396,12 @@
             this.label8.TabIndex = 32;
             this.label8.Text = "ලඟම බස් හෝ දුම්රිය ස්ථානය";
             // 
-            // textBox5
+            // transport_distance
             // 
-            this.textBox5.Location = new System.Drawing.Point(262, 337);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 33);
-            this.textBox5.TabIndex = 31;
+            this.transport_distance.Location = new System.Drawing.Point(262, 337);
+            this.transport_distance.Name = "transport_distance";
+            this.transport_distance.Size = new System.Drawing.Size(200, 33);
+            this.transport_distance.TabIndex = 31;
             // 
             // label7
             // 
@@ -412,12 +412,12 @@
             this.label7.TabIndex = 30;
             this.label7.Text = "පදිංචි නිවසේ සිට දුර";
             // 
-            // textBox4
+            // transport_route
             // 
-            this.textBox4.Location = new System.Drawing.Point(262, 298);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 33);
-            this.textBox4.TabIndex = 29;
+            this.transport_route.Location = new System.Drawing.Point(262, 298);
+            this.transport_route.Name = "transport_route";
+            this.transport_route.Size = new System.Drawing.Size(200, 33);
+            this.transport_route.TabIndex = 29;
             // 
             // label6
             // 
@@ -428,12 +428,12 @@
             this.label6.TabIndex = 28;
             this.label6.Text = "ගමන් මාර්ගය";
             // 
-            // textBox3
+            // transport_rank
             // 
-            this.textBox3.Location = new System.Drawing.Point(262, 150);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 33);
-            this.textBox3.TabIndex = 27;
+            this.transport_rank.Location = new System.Drawing.Point(262, 150);
+            this.transport_rank.Name = "transport_rank";
+            this.transport_rank.Size = new System.Drawing.Size(200, 33);
+            this.transport_rank.TabIndex = 27;
             // 
             // label4
             // 
@@ -444,12 +444,12 @@
             this.label4.TabIndex = 26;
             this.label4.Text = "නිලය";
             // 
-            // textBox1
+            // transport_post
             // 
-            this.textBox1.Location = new System.Drawing.Point(262, 111);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 33);
-            this.textBox1.TabIndex = 25;
+            this.transport_post.Location = new System.Drawing.Point(262, 111);
+            this.transport_post.Name = "transport_post";
+            this.transport_post.Size = new System.Drawing.Size(200, 33);
+            this.transport_post.TabIndex = 25;
             // 
             // label3
             // 
@@ -460,20 +460,20 @@
             this.label3.TabIndex = 24;
             this.label3.Text = "තනතුර";
             // 
-            // textBox2
+            // transport_full_name
             // 
-            this.textBox2.Location = new System.Drawing.Point(262, 72);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(400, 33);
-            this.textBox2.TabIndex = 22;
+            this.transport_full_name.Location = new System.Drawing.Point(262, 72);
+            this.transport_full_name.Name = "transport_full_name";
+            this.transport_full_name.Size = new System.Drawing.Size(400, 33);
+            this.transport_full_name.TabIndex = 22;
             // 
-            // comboBox3
+            // transport_employee_no
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(262, 35);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(200, 34);
-            this.comboBox3.TabIndex = 23;
+            this.transport_employee_no.FormattingEnabled = true;
+            this.transport_employee_no.Location = new System.Drawing.Point(262, 35);
+            this.transport_employee_no.Name = "transport_employee_no";
+            this.transport_employee_no.Size = new System.Drawing.Size(200, 34);
+            this.transport_employee_no.TabIndex = 23;
             // 
             // label5
             // 
@@ -533,38 +533,38 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox full_name;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox transport_fuel_limit;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox transport_vehicle_manufactured_year;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox transport_time;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox transport_method_when_working;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox transport_method;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox transport_fuel_type;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox transport_vehicle_type;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox transport_nearest_bus_train_station;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox transport_distance;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox transport_route;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox transport_rank;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox transport_post;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox transport_full_name;
+        private System.Windows.Forms.ComboBox transport_employee_no;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnPrev;

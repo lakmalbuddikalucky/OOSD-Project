@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRe_Appointment));
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.reappointment_rojoining_day = new System.Windows.Forms.ComboBox();
+            this.reappointment_rojoining_month = new System.Windows.Forms.ComboBox();
+            this.reappointment_rojoining_year = new System.Windows.Forms.ComboBox();
+            this.reappointment_employee_no = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.reappointment_full_name = new System.Windows.Forms.TextBox();
+            this.reappointment_post = new System.Windows.Forms.TextBox();
+            this.reappointment_rank = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.reappointment_notes = new System.Windows.Forms.TextBox();
+            this.reappointment_suspension_reason = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
@@ -52,15 +52,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.full_name = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.employee_no = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.lblCaption = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.reappointment_suspension__system = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.reappointment_suspension_approved_note = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -68,12 +68,12 @@
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox11
+            // reappointment_rojoining_day
             // 
-            this.comboBox11.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox11.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.reappointment_rojoining_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.reappointment_rojoining_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.reappointment_rojoining_day.FormattingEnabled = true;
+            this.reappointment_rojoining_day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -105,18 +105,18 @@
             "29",
             "30",
             "31"});
-            this.comboBox11.Location = new System.Drawing.Point(862, 404);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(91, 34);
-            this.comboBox11.TabIndex = 10;
-            this.comboBox11.Text = "    දිනය";
+            this.reappointment_rojoining_day.Location = new System.Drawing.Point(862, 404);
+            this.reappointment_rojoining_day.Name = "reappointment_rojoining_day";
+            this.reappointment_rojoining_day.Size = new System.Drawing.Size(91, 34);
+            this.reappointment_rojoining_day.TabIndex = 10;
+            this.reappointment_rojoining_day.Text = "    දිනය";
             // 
-            // comboBox10
+            // reappointment_rojoining_month
             // 
-            this.comboBox10.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox10.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.reappointment_rojoining_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.reappointment_rojoining_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.reappointment_rojoining_month.FormattingEnabled = true;
+            this.reappointment_rojoining_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -129,18 +129,18 @@
             "October",
             "November",
             "December"});
-            this.comboBox10.Location = new System.Drawing.Point(765, 404);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(91, 34);
-            this.comboBox10.TabIndex = 9;
-            this.comboBox10.Text = "   මාසය";
+            this.reappointment_rojoining_month.Location = new System.Drawing.Point(765, 404);
+            this.reappointment_rojoining_month.Name = "reappointment_rojoining_month";
+            this.reappointment_rojoining_month.Size = new System.Drawing.Size(91, 34);
+            this.reappointment_rojoining_month.TabIndex = 9;
+            this.reappointment_rojoining_month.Text = "   මාසය";
             // 
-            // comboBox9
+            // reappointment_rojoining_year
             // 
-            this.comboBox9.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.comboBox9.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.reappointment_rojoining_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.reappointment_rojoining_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.reappointment_rojoining_year.FormattingEnabled = true;
+            this.reappointment_rojoining_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -216,20 +216,20 @@
             "1948",
             "1947",
             "1946"});
-            this.comboBox9.Location = new System.Drawing.Point(656, 404);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(103, 34);
-            this.comboBox9.TabIndex = 8;
-            this.comboBox9.Text = "   වර්ෂය";
+            this.reappointment_rojoining_year.Location = new System.Drawing.Point(656, 404);
+            this.reappointment_rojoining_year.Name = "reappointment_rojoining_year";
+            this.reappointment_rojoining_year.Size = new System.Drawing.Size(103, 34);
+            this.reappointment_rojoining_year.TabIndex = 8;
+            this.reappointment_rojoining_year.Text = "   වර්ෂය";
             // 
-            // comboBox1
+            // reappointment_employee_no
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(656, 98);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 32);
-            this.comboBox1.TabIndex = 1;
+            this.reappointment_employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reappointment_employee_no.FormattingEnabled = true;
+            this.reappointment_employee_no.Location = new System.Drawing.Point(656, 98);
+            this.reappointment_employee_no.Name = "reappointment_employee_no";
+            this.reappointment_employee_no.Size = new System.Drawing.Size(200, 32);
+            this.reappointment_employee_no.TabIndex = 1;
             // 
             // label1
             // 
@@ -291,29 +291,29 @@
             this.label9.Text = "හේතුව";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox17
+            // reappointment_full_name
             // 
-            this.textBox17.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox17.Location = new System.Drawing.Point(656, 136);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(300, 33);
-            this.textBox17.TabIndex = 2;
+            this.reappointment_full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.reappointment_full_name.Location = new System.Drawing.Point(656, 136);
+            this.reappointment_full_name.Name = "reappointment_full_name";
+            this.reappointment_full_name.Size = new System.Drawing.Size(300, 33);
+            this.reappointment_full_name.TabIndex = 2;
             // 
-            // textBox16
+            // reappointment_post
             // 
-            this.textBox16.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox16.Location = new System.Drawing.Point(656, 175);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(150, 33);
-            this.textBox16.TabIndex = 3;
+            this.reappointment_post.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.reappointment_post.Location = new System.Drawing.Point(656, 175);
+            this.reappointment_post.Name = "reappointment_post";
+            this.reappointment_post.Size = new System.Drawing.Size(150, 33);
+            this.reappointment_post.TabIndex = 3;
             // 
-            // textBox8
+            // reappointment_rank
             // 
-            this.textBox8.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox8.Location = new System.Drawing.Point(656, 214);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(150, 33);
-            this.textBox8.TabIndex = 4;
+            this.reappointment_rank.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.reappointment_rank.Location = new System.Drawing.Point(656, 214);
+            this.reappointment_rank.Name = "reappointment_rank";
+            this.reappointment_rank.Size = new System.Drawing.Size(150, 33);
+            this.reappointment_rank.TabIndex = 4;
             // 
             // label13
             // 
@@ -339,23 +339,23 @@
             this.label7.Text = "සේවක අංකය";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox12
+            // reappointment_notes
             // 
-            this.textBox12.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox12.Location = new System.Drawing.Point(656, 444);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(250, 50);
-            this.textBox12.TabIndex = 11;
+            this.reappointment_notes.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.reappointment_notes.Location = new System.Drawing.Point(656, 444);
+            this.reappointment_notes.Multiline = true;
+            this.reappointment_notes.Name = "reappointment_notes";
+            this.reappointment_notes.Size = new System.Drawing.Size(297, 157);
+            this.reappointment_notes.TabIndex = 11;
             // 
-            // textBox9
+            // reappointment_suspension_reason
             // 
-            this.textBox9.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox9.Location = new System.Drawing.Point(656, 292);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(250, 50);
-            this.textBox9.TabIndex = 6;
+            this.reappointment_suspension_reason.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.reappointment_suspension_reason.Location = new System.Drawing.Point(656, 292);
+            this.reappointment_suspension_reason.Multiline = true;
+            this.reappointment_suspension_reason.Name = "reappointment_suspension_reason";
+            this.reappointment_suspension_reason.Size = new System.Drawing.Size(250, 50);
+            this.reappointment_suspension_reason.TabIndex = 6;
             // 
             // label35
             // 
@@ -418,9 +418,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.textBox23);
+            this.panel4.Controls.Add(this.full_name);
             this.panel4.Controls.Add(this.label33);
-            this.panel4.Controls.Add(this.comboBox2);
+            this.panel4.Controls.Add(this.employee_no);
             this.panel4.Controls.Add(this.label34);
             this.panel4.Location = new System.Drawing.Point(8, 8);
             this.panel4.Name = "panel4";
@@ -436,13 +436,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox23
+            // full_name
             // 
-            this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(14, 355);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(250, 29);
-            this.textBox23.TabIndex = 4;
+            this.full_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.full_name.Location = new System.Drawing.Point(14, 355);
+            this.full_name.Name = "full_name";
+            this.full_name.Size = new System.Drawing.Size(250, 29);
+            this.full_name.TabIndex = 4;
             // 
             // label33
             // 
@@ -454,14 +454,14 @@
             this.label33.TabIndex = 1;
             this.label33.Text = "සේවක අංකය";
             // 
-            // comboBox2
+            // employee_no
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(18, 276);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 32);
-            this.comboBox2.TabIndex = 5;
+            this.employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_no.FormattingEnabled = true;
+            this.employee_no.Location = new System.Drawing.Point(18, 276);
+            this.employee_no.Name = "employee_no";
+            this.employee_no.Size = new System.Drawing.Size(150, 32);
+            this.employee_no.TabIndex = 5;
             // 
             // label34
             // 
@@ -494,13 +494,13 @@
             this.panel3.Size = new System.Drawing.Size(300, 708);
             this.panel3.TabIndex = 116;
             // 
-            // textBox1
+            // reappointment_suspension__system
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox1.Location = new System.Drawing.Point(656, 253);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 33);
-            this.textBox1.TabIndex = 5;
+            this.reappointment_suspension__system.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.reappointment_suspension__system.Location = new System.Drawing.Point(656, 253);
+            this.reappointment_suspension__system.Name = "reappointment_suspension__system";
+            this.reappointment_suspension__system.Size = new System.Drawing.Size(150, 33);
+            this.reappointment_suspension__system.TabIndex = 5;
             // 
             // label2
             // 
@@ -514,14 +514,14 @@
             this.label2.Text = "සේවය අත්හිටවීමේ ආකාරය";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox2
+            // reappointment_suspension_approved_note
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox2.Location = new System.Drawing.Point(656, 348);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 50);
-            this.textBox2.TabIndex = 7;
+            this.reappointment_suspension_approved_note.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.reappointment_suspension_approved_note.Location = new System.Drawing.Point(656, 348);
+            this.reappointment_suspension_approved_note.Multiline = true;
+            this.reappointment_suspension_approved_note.Name = "reappointment_suspension_approved_note";
+            this.reappointment_suspension_approved_note.Size = new System.Drawing.Size(250, 50);
+            this.reappointment_suspension_approved_note.TabIndex = 7;
             // 
             // label3
             // 
@@ -540,10 +540,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 768);
-            this.Controls.Add(this.comboBox11);
-            this.Controls.Add(this.comboBox10);
-            this.Controls.Add(this.comboBox9);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.reappointment_rojoining_day);
+            this.Controls.Add(this.reappointment_rojoining_month);
+            this.Controls.Add(this.reappointment_rojoining_year);
+            this.Controls.Add(this.reappointment_employee_no);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label12);
@@ -551,15 +551,15 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.reappointment_full_name);
+            this.Controls.Add(this.reappointment_post);
+            this.Controls.Add(this.reappointment_suspension__system);
+            this.Controls.Add(this.reappointment_rank);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.reappointment_suspension_approved_note);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.reappointment_notes);
+            this.Controls.Add(this.reappointment_suspension_reason);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblCaption);
@@ -580,22 +580,22 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox reappointment_rojoining_day;
+        private System.Windows.Forms.ComboBox reappointment_rojoining_month;
+        private System.Windows.Forms.ComboBox reappointment_rojoining_year;
+        private System.Windows.Forms.ComboBox reappointment_employee_no;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox reappointment_full_name;
+        private System.Windows.Forms.TextBox reappointment_post;
+        private System.Windows.Forms.TextBox reappointment_rank;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox reappointment_notes;
+        private System.Windows.Forms.TextBox reappointment_suspension_reason;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
@@ -603,15 +603,15 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox full_name;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label lblCaption;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox reappointment_suspension__system;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox reappointment_suspension_approved_note;
         private System.Windows.Forms.Label label3;
     }
 }

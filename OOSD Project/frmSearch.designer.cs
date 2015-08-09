@@ -244,7 +244,56 @@
             this.label122 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPersonalDetails = new System.Windows.Forms.TabPage();
+            this.remun_salary_increased_day = new System.Windows.Forms.ComboBox();
+            this.remun_salary_increased_month = new System.Windows.Forms.ComboBox();
+            this.remun_salary_increased_year = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label142 = new System.Windows.Forms.Label();
+            this.label143 = new System.Windows.Forms.Label();
+            this.label144 = new System.Windows.Forms.Label();
+            this.label145 = new System.Windows.Forms.Label();
+            this.label146 = new System.Windows.Forms.Label();
+            this.label147 = new System.Windows.Forms.Label();
+            this.label148 = new System.Windows.Forms.Label();
+            this.label149 = new System.Windows.Forms.Label();
+            this.label150 = new System.Windows.Forms.Label();
+            this.label151 = new System.Windows.Forms.Label();
+            this.label152 = new System.Windows.Forms.Label();
+            this.label153 = new System.Windows.Forms.Label();
+            this.label154 = new System.Windows.Forms.Label();
+            this.remun_salary_no = new System.Windows.Forms.TextBox();
+            this.remun_salary_grade = new System.Windows.Forms.TextBox();
+            this.remun_transport_allowance = new System.Windows.Forms.TextBox();
+            this.remun_basic_salary = new System.Windows.Forms.TextBox();
+            this.label155 = new System.Windows.Forms.Label();
+            this.label156 = new System.Windows.Forms.Label();
+            this.remun_telephone_allowance = new System.Windows.Forms.TextBox();
+            this.remun_present_salary = new System.Windows.Forms.TextBox();
+            this.remun_increased_by = new System.Windows.Forms.TextBox();
+            this.remun_fuel_allowance = new System.Windows.Forms.TextBox();
+            this.remun_other_allowances = new System.Windows.Forms.TextBox();
+            this.remun_house_allowance = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
+            this.qual_highest_qualification = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.qual_year = new System.Windows.Forms.TextBox();
+            this.qual_qualification = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.qual_note = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.qual_status = new System.Windows.Forms.ComboBox();
+            this.qual_occupation_relevant = new System.Windows.Forms.CheckBox();
+            this.qual_months = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.qualification_no = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.qual_institute = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.we_date_perma_d = new System.Windows.Forms.ComboBox();
             this.we_date_perma_m = new System.Windows.Forms.ComboBox();
@@ -323,56 +372,69 @@
             this.label141 = new System.Windows.Forms.Label();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.comboBox72 = new System.Windows.Forms.ComboBox();
-            this.comboBox73 = new System.Windows.Forms.ComboBox();
-            this.comboBox74 = new System.Windows.Forms.ComboBox();
-            this.comboBox75 = new System.Windows.Forms.ComboBox();
-            this.comboBox76 = new System.Windows.Forms.ComboBox();
-            this.comboBox77 = new System.Windows.Forms.ComboBox();
-            this.label123 = new System.Windows.Forms.Label();
-            this.textBox65 = new System.Windows.Forms.TextBox();
-            this.label124 = new System.Windows.Forms.Label();
-            this.comboBox78 = new System.Windows.Forms.ComboBox();
-            this.comboBox79 = new System.Windows.Forms.ComboBox();
-            this.label125 = new System.Windows.Forms.Label();
-            this.textBox66 = new System.Windows.Forms.TextBox();
-            this.textBox67 = new System.Windows.Forms.TextBox();
-            this.label126 = new System.Windows.Forms.Label();
-            this.label127 = new System.Windows.Forms.Label();
-            this.textBox68 = new System.Windows.Forms.TextBox();
-            this.label128 = new System.Windows.Forms.Label();
-            this.label129 = new System.Windows.Forms.Label();
-            this.label130 = new System.Windows.Forms.Label();
             this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.comboBox80 = new System.Windows.Forms.ComboBox();
-            this.comboBox81 = new System.Windows.Forms.ComboBox();
-            this.comboBox82 = new System.Windows.Forms.ComboBox();
-            this.comboBox83 = new System.Windows.Forms.ComboBox();
-            this.comboBox84 = new System.Windows.Forms.ComboBox();
-            this.comboBox85 = new System.Windows.Forms.ComboBox();
-            this.comboBox86 = new System.Windows.Forms.ComboBox();
-            this.label131 = new System.Windows.Forms.Label();
-            this.label132 = new System.Windows.Forms.Label();
-            this.textBox69 = new System.Windows.Forms.TextBox();
-            this.label133 = new System.Windows.Forms.Label();
-            this.textBox70 = new System.Windows.Forms.TextBox();
-            this.label134 = new System.Windows.Forms.Label();
-            this.label135 = new System.Windows.Forms.Label();
             this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.label136 = new System.Windows.Forms.Label();
-            this.label137 = new System.Windows.Forms.Label();
-            this.textBox71 = new System.Windows.Forms.TextBox();
-            this.comboBox87 = new System.Windows.Forms.ComboBox();
-            this.label138 = new System.Windows.Forms.Label();
-            this.textBox72 = new System.Windows.Forms.TextBox();
-            this.textBox73 = new System.Windows.Forms.TextBox();
-            this.label139 = new System.Windows.Forms.Label();
-            this.comboBox88 = new System.Windows.Forms.ComboBox();
-            this.label140 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label169 = new System.Windows.Forms.Label();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.tabPage16 = new System.Windows.Forms.TabPage();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label197 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.day = new System.Windows.Forms.ComboBox();
+            this.insurance_ended_month = new System.Windows.Forms.ComboBox();
+            this.insurance_ended_year = new System.Windows.Forms.ComboBox();
+            this.insurance_started_day = new System.Windows.Forms.ComboBox();
+            this.insurance_started_month = new System.Windows.Forms.ComboBox();
+            this.insurance_started_year = new System.Windows.Forms.ComboBox();
+            this.insurance_type = new System.Windows.Forms.ComboBox();
+            this.label131 = new System.Windows.Forms.Label();
+            this.label132 = new System.Windows.Forms.Label();
+            this.insurance_notes = new System.Windows.Forms.TextBox();
+            this.label133 = new System.Windows.Forms.Label();
+            this.insurance_value = new System.Windows.Forms.TextBox();
+            this.label134 = new System.Windows.Forms.Label();
+            this.label135 = new System.Windows.Forms.Label();
+            this.bank_account_closed_day = new System.Windows.Forms.ComboBox();
+            this.bank_account_closed_month = new System.Windows.Forms.ComboBox();
+            this.bank_account_closed_year = new System.Windows.Forms.ComboBox();
+            this.bank_account_created_day = new System.Windows.Forms.ComboBox();
+            this.bank_account_created_month = new System.Windows.Forms.ComboBox();
+            this.bank_account_created_year = new System.Windows.Forms.ComboBox();
+            this.label123 = new System.Windows.Forms.Label();
+            this.bank_account_name = new System.Windows.Forms.TextBox();
+            this.label124 = new System.Windows.Forms.Label();
+            this.bank_account_type = new System.Windows.Forms.ComboBox();
+            this.bank_name = new System.Windows.Forms.ComboBox();
+            this.label125 = new System.Windows.Forms.Label();
+            this.bank_branch_name = new System.Windows.Forms.TextBox();
+            this.label126 = new System.Windows.Forms.Label();
+            this.label127 = new System.Windows.Forms.Label();
+            this.label128 = new System.Windows.Forms.Label();
+            this.label129 = new System.Windows.Forms.Label();
+            this.bank_qualified_year = new System.Windows.Forms.TextBox();
+            this.bank_qualification = new System.Windows.Forms.TextBox();
+            this.label130 = new System.Windows.Forms.Label();
+            this.label136 = new System.Windows.Forms.Label();
+            this.label137 = new System.Windows.Forms.Label();
+            this.tax_no = new System.Windows.Forms.TextBox();
+            this.tax_status = new System.Windows.Forms.ComboBox();
+            this.label138 = new System.Windows.Forms.Label();
+            this.tax_notes = new System.Windows.Forms.TextBox();
+            this.tax_type = new System.Windows.Forms.TextBox();
+            this.label139 = new System.Windows.Forms.Label();
+            this.tax_paying_method = new System.Windows.Forms.ComboBox();
+            this.label140 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label157 = new System.Windows.Forms.Label();
+            this.label158 = new System.Windows.Forms.Label();
+            this.label159 = new System.Windows.Forms.Label();
+            this.label160 = new System.Windows.Forms.Label();
+            this.label161 = new System.Windows.Forms.Label();
             this.label170 = new System.Windows.Forms.Label();
             this.label171 = new System.Windows.Forms.Label();
             this.label172 = new System.Windows.Forms.Label();
@@ -385,50 +447,44 @@
             this.label179 = new System.Windows.Forms.Label();
             this.label180 = new System.Windows.Forms.Label();
             this.label181 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label182 = new System.Windows.Forms.Label();
             this.label183 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.cash_issued_day = new System.Windows.Forms.ComboBox();
+            this.cash_issued_month = new System.Windows.Forms.ComboBox();
+            this.cash_issued_year = new System.Windows.Forms.ComboBox();
             this.label184 = new System.Windows.Forms.Label();
             this.label185 = new System.Windows.Forms.Label();
             this.label186 = new System.Windows.Forms.Label();
+            this.cash_issued_price = new System.Windows.Forms.TextBox();
+            this.cash_approved_benefit = new System.Windows.Forms.TextBox();
+            this.noncash_issued_day = new System.Windows.Forms.ComboBox();
+            this.noncash_issued_month = new System.Windows.Forms.ComboBox();
+            this.noncash_issued_year = new System.Windows.Forms.ComboBox();
             this.label187 = new System.Windows.Forms.Label();
-            this.textBox90 = new System.Windows.Forms.TextBox();
-            this.textBox91 = new System.Windows.Forms.TextBox();
-            this.textBox92 = new System.Windows.Forms.TextBox();
-            this.textBox93 = new System.Windows.Forms.TextBox();
             this.label188 = new System.Windows.Forms.Label();
             this.label189 = new System.Windows.Forms.Label();
-            this.textBox94 = new System.Windows.Forms.TextBox();
-            this.textBox95 = new System.Windows.Forms.TextBox();
-            this.textBox96 = new System.Windows.Forms.TextBox();
-            this.textBox97 = new System.Windows.Forms.TextBox();
-            this.textBox98 = new System.Windows.Forms.TextBox();
-            this.textBox99 = new System.Windows.Forms.TextBox();
-            this.textBox100 = new System.Windows.Forms.TextBox();
-            this.tabPage15 = new System.Windows.Forms.TabPage();
-            this.comboBox95 = new System.Windows.Forms.ComboBox();
-            this.comboBox96 = new System.Windows.Forms.ComboBox();
-            this.comboBox97 = new System.Windows.Forms.ComboBox();
             this.label190 = new System.Windows.Forms.Label();
-            this.label191 = new System.Windows.Forms.Label();
-            this.label192 = new System.Windows.Forms.Label();
-            this.textBox101 = new System.Windows.Forms.TextBox();
-            this.textBox102 = new System.Windows.Forms.TextBox();
-            this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.comboBox98 = new System.Windows.Forms.ComboBox();
-            this.comboBox99 = new System.Windows.Forms.ComboBox();
-            this.comboBox100 = new System.Windows.Forms.ComboBox();
-            this.label193 = new System.Windows.Forms.Label();
-            this.label194 = new System.Windows.Forms.Label();
-            this.label195 = new System.Windows.Forms.Label();
-            this.label196 = new System.Windows.Forms.Label();
-            this.textBox103 = new System.Windows.Forms.TextBox();
-            this.textBox104 = new System.Windows.Forms.TextBox();
-            this.textBox105 = new System.Windows.Forms.TextBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label197 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.noncash_price = new System.Windows.Forms.TextBox();
+            this.noncash_quantity = new System.Windows.Forms.TextBox();
+            this.noncash_approved_benefit = new System.Windows.Forms.TextBox();
+            this.passport_renewal_day = new System.Windows.Forms.ComboBox();
+            this.passport_issued_day = new System.Windows.Forms.ComboBox();
+            this.passport_renewal_month = new System.Windows.Forms.ComboBox();
+            this.passport_issued_month = new System.Windows.Forms.ComboBox();
+            this.passport_renewal_year = new System.Windows.Forms.ComboBox();
+            this.passport_issued_year = new System.Windows.Forms.ComboBox();
+            this.passport_status_deactive = new System.Windows.Forms.RadioButton();
+            this.passport_status_active = new System.Windows.Forms.RadioButton();
             this.label162 = new System.Windows.Forms.Label();
             this.label163 = new System.Windows.Forms.Label();
             this.label164 = new System.Windows.Forms.Label();
@@ -436,61 +492,10 @@
             this.label166 = new System.Windows.Forms.Label();
             this.label167 = new System.Windows.Forms.Label();
             this.label168 = new System.Windows.Forms.Label();
-            this.textBox85 = new System.Windows.Forms.TextBox();
-            this.textBox86 = new System.Windows.Forms.TextBox();
-            this.textBox87 = new System.Windows.Forms.TextBox();
-            this.textBox88 = new System.Windows.Forms.TextBox();
-            this.textBox89 = new System.Windows.Forms.TextBox();
-            this.textBox106 = new System.Windows.Forms.TextBox();
-            this.remun_salary_increased_day = new System.Windows.Forms.ComboBox();
-            this.remun_salary_increased_month = new System.Windows.Forms.ComboBox();
-            this.remun_salary_increased_year = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label142 = new System.Windows.Forms.Label();
-            this.label143 = new System.Windows.Forms.Label();
-            this.label144 = new System.Windows.Forms.Label();
-            this.label145 = new System.Windows.Forms.Label();
-            this.label146 = new System.Windows.Forms.Label();
-            this.label147 = new System.Windows.Forms.Label();
-            this.label148 = new System.Windows.Forms.Label();
-            this.label149 = new System.Windows.Forms.Label();
-            this.label150 = new System.Windows.Forms.Label();
-            this.label151 = new System.Windows.Forms.Label();
-            this.label152 = new System.Windows.Forms.Label();
-            this.label153 = new System.Windows.Forms.Label();
-            this.label154 = new System.Windows.Forms.Label();
-            this.remun_salary_no = new System.Windows.Forms.TextBox();
-            this.remun_salary_grade = new System.Windows.Forms.TextBox();
-            this.remun_transport_allowance = new System.Windows.Forms.TextBox();
-            this.remun_basic_salary = new System.Windows.Forms.TextBox();
-            this.label155 = new System.Windows.Forms.Label();
-            this.label156 = new System.Windows.Forms.Label();
-            this.remun_telephone_allowance = new System.Windows.Forms.TextBox();
-            this.remun_present_salary = new System.Windows.Forms.TextBox();
-            this.remun_increased_by = new System.Windows.Forms.TextBox();
-            this.remun_fuel_allowance = new System.Windows.Forms.TextBox();
-            this.remun_other_allowances = new System.Windows.Forms.TextBox();
-            this.remun_house_allowance = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.qual_highest_qualification = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.qual_year = new System.Windows.Forms.TextBox();
-            this.qual_qualification = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.qual_note = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.qual_status = new System.Windows.Forms.ComboBox();
-            this.qual_occupation_relevant = new System.Windows.Forms.CheckBox();
-            this.qual_months = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.qualification_no = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.qual_institute = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.passport_post = new System.Windows.Forms.TextBox();
+            this.passport_rank = new System.Windows.Forms.TextBox();
+            this.passport_issued_place = new System.Windows.Forms.TextBox();
+            this.passport_no = new System.Windows.Forms.TextBox();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -861,7 +866,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(457, 14);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 200);
+            this.pictureBox1.Size = new System.Drawing.Size(150, 154);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -3090,6 +3095,465 @@
             this.tabPersonalDetails.TabIndex = 0;
             this.tabPersonalDetails.Text = "Remuneration";
             // 
+            // remun_salary_increased_day
+            // 
+            this.remun_salary_increased_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.remun_salary_increased_day.FormattingEnabled = true;
+            this.remun_salary_increased_day.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.remun_salary_increased_day.Location = new System.Drawing.Point(433, 192);
+            this.remun_salary_increased_day.Name = "remun_salary_increased_day";
+            this.remun_salary_increased_day.Size = new System.Drawing.Size(91, 32);
+            this.remun_salary_increased_day.TabIndex = 77;
+            this.remun_salary_increased_day.Text = "    දිනය";
+            // 
+            // remun_salary_increased_month
+            // 
+            this.remun_salary_increased_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.remun_salary_increased_month.FormattingEnabled = true;
+            this.remun_salary_increased_month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.remun_salary_increased_month.Location = new System.Drawing.Point(336, 192);
+            this.remun_salary_increased_month.Name = "remun_salary_increased_month";
+            this.remun_salary_increased_month.Size = new System.Drawing.Size(91, 32);
+            this.remun_salary_increased_month.TabIndex = 76;
+            this.remun_salary_increased_month.Text = "   මාසය";
+            // 
+            // remun_salary_increased_year
+            // 
+            this.remun_salary_increased_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.remun_salary_increased_year.FormattingEnabled = true;
+            this.remun_salary_increased_year.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946"});
+            this.remun_salary_increased_year.Location = new System.Drawing.Point(227, 192);
+            this.remun_salary_increased_year.Name = "remun_salary_increased_year";
+            this.remun_salary_increased_year.Size = new System.Drawing.Size(103, 32);
+            this.remun_salary_increased_year.TabIndex = 75;
+            this.remun_salary_increased_year.Text = "   වර්ෂය";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(186, 78);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(34, 26);
+            this.label11.TabIndex = 63;
+            this.label11.Text = ".රු";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(186, 117);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(34, 26);
+            this.label12.TabIndex = 66;
+            this.label12.Text = ".රු";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(186, 156);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(34, 26);
+            this.label19.TabIndex = 67;
+            this.label19.Text = ".රු";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(186, 233);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(34, 26);
+            this.label20.TabIndex = 68;
+            this.label20.Text = ".රු";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label142
+            // 
+            this.label142.AutoSize = true;
+            this.label142.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label142.ForeColor = System.Drawing.Color.Black;
+            this.label142.Location = new System.Drawing.Point(696, 78);
+            this.label142.Name = "label142";
+            this.label142.Size = new System.Drawing.Size(34, 26);
+            this.label142.TabIndex = 57;
+            this.label142.Text = ".රු";
+            this.label142.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label143
+            // 
+            this.label143.AutoSize = true;
+            this.label143.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label143.ForeColor = System.Drawing.Color.Black;
+            this.label143.Location = new System.Drawing.Point(696, 117);
+            this.label143.Name = "label143";
+            this.label143.Size = new System.Drawing.Size(34, 26);
+            this.label143.TabIndex = 56;
+            this.label143.Text = ".රු";
+            this.label143.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label144
+            // 
+            this.label144.AutoSize = true;
+            this.label144.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label144.ForeColor = System.Drawing.Color.Black;
+            this.label144.Location = new System.Drawing.Point(696, 156);
+            this.label144.Name = "label144";
+            this.label144.Size = new System.Drawing.Size(34, 26);
+            this.label144.TabIndex = 55;
+            this.label144.Text = ".රු";
+            this.label144.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label145
+            // 
+            this.label145.AutoSize = true;
+            this.label145.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label145.ForeColor = System.Drawing.Color.Black;
+            this.label145.Location = new System.Drawing.Point(696, 195);
+            this.label145.Name = "label145";
+            this.label145.Size = new System.Drawing.Size(34, 26);
+            this.label145.TabIndex = 54;
+            this.label145.Text = ".රු";
+            this.label145.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label146
+            // 
+            this.label146.AutoSize = true;
+            this.label146.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label146.ForeColor = System.Drawing.Color.Black;
+            this.label146.Location = new System.Drawing.Point(540, 195);
+            this.label146.Name = "label146";
+            this.label146.Size = new System.Drawing.Size(150, 26);
+            this.label146.TabIndex = 53;
+            this.label146.Text = "වැටුප් වැඩිවූ මුදල";
+            this.label146.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label147
+            // 
+            this.label147.AutoSize = true;
+            this.label147.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label147.ForeColor = System.Drawing.Color.Black;
+            this.label147.Location = new System.Drawing.Point(67, 195);
+            this.label147.Name = "label147";
+            this.label147.Size = new System.Drawing.Size(154, 26);
+            this.label147.TabIndex = 52;
+            this.label147.Text = "වැටුප් වැඩිවූ දිනය";
+            this.label147.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label148
+            // 
+            this.label148.AutoSize = true;
+            this.label148.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label148.ForeColor = System.Drawing.Color.Black;
+            this.label148.Location = new System.Drawing.Point(566, 156);
+            this.label148.Name = "label148";
+            this.label148.Size = new System.Drawing.Size(124, 26);
+            this.label148.TabIndex = 51;
+            this.label148.Text = "වෙනත් දීමනා";
+            this.label148.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label149
+            // 
+            this.label149.AutoSize = true;
+            this.label149.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label149.ForeColor = System.Drawing.Color.Black;
+            this.label149.Location = new System.Drawing.Point(60, 156);
+            this.label149.Name = "label149";
+            this.label149.Size = new System.Drawing.Size(130, 26);
+            this.label149.TabIndex = 50;
+            this.label149.Text = "නිවාස දීමනාව";
+            this.label149.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label150
+            // 
+            this.label150.AutoSize = true;
+            this.label150.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label150.ForeColor = System.Drawing.Color.Black;
+            this.label150.Location = new System.Drawing.Point(16, 233);
+            this.label150.Name = "label150";
+            this.label150.Size = new System.Drawing.Size(174, 26);
+            this.label150.TabIndex = 47;
+            this.label150.Text = "වර්තමාන මුලු වැටුප";
+            this.label150.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label151
+            // 
+            this.label151.AutoSize = true;
+            this.label151.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label151.ForeColor = System.Drawing.Color.Black;
+            this.label151.Location = new System.Drawing.Point(544, 78);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(146, 26);
+            this.label151.TabIndex = 48;
+            this.label151.Text = "ප්‍රවාහන දීමනාව";
+            this.label151.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label152
+            // 
+            this.label152.AutoSize = true;
+            this.label152.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label152.ForeColor = System.Drawing.Color.Black;
+            this.label152.Location = new System.Drawing.Point(83, 78);
+            this.label152.Name = "label152";
+            this.label152.Size = new System.Drawing.Size(107, 26);
+            this.label152.TabIndex = 61;
+            this.label152.Text = "මූලික වැටුප";
+            this.label152.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label153
+            // 
+            this.label153.AutoSize = true;
+            this.label153.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label153.ForeColor = System.Drawing.Color.Black;
+            this.label153.Location = new System.Drawing.Point(484, 117);
+            this.label153.Name = "label153";
+            this.label153.Size = new System.Drawing.Size(206, 26);
+            this.label153.TabIndex = 62;
+            this.label153.Text = "ජංගම දුරකථන දීමනාව";
+            this.label153.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label154
+            // 
+            this.label154.AutoSize = true;
+            this.label154.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label154.ForeColor = System.Drawing.Color.Black;
+            this.label154.Location = new System.Drawing.Point(51, 117);
+            this.label154.Name = "label154";
+            this.label154.Size = new System.Drawing.Size(139, 26);
+            this.label154.TabIndex = 49;
+            this.label154.Text = "ඉන්ධන දීමනාව";
+            this.label154.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // remun_salary_no
+            // 
+            this.remun_salary_no.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_salary_no.Location = new System.Drawing.Point(732, 36);
+            this.remun_salary_no.Name = "remun_salary_no";
+            this.remun_salary_no.Size = new System.Drawing.Size(150, 33);
+            this.remun_salary_no.TabIndex = 70;
+            // 
+            // remun_salary_grade
+            // 
+            this.remun_salary_grade.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_salary_grade.Location = new System.Drawing.Point(227, 36);
+            this.remun_salary_grade.Name = "remun_salary_grade";
+            this.remun_salary_grade.Size = new System.Drawing.Size(150, 33);
+            this.remun_salary_grade.TabIndex = 46;
+            // 
+            // remun_transport_allowance
+            // 
+            this.remun_transport_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_transport_allowance.Location = new System.Drawing.Point(732, 75);
+            this.remun_transport_allowance.Name = "remun_transport_allowance";
+            this.remun_transport_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_transport_allowance.TabIndex = 71;
+            // 
+            // remun_basic_salary
+            // 
+            this.remun_basic_salary.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_basic_salary.Location = new System.Drawing.Point(227, 75);
+            this.remun_basic_salary.Name = "remun_basic_salary";
+            this.remun_basic_salary.Size = new System.Drawing.Size(150, 33);
+            this.remun_basic_salary.TabIndex = 58;
+            // 
+            // label155
+            // 
+            this.label155.AutoSize = true;
+            this.label155.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label155.ForeColor = System.Drawing.Color.Black;
+            this.label155.Location = new System.Drawing.Point(589, 39);
+            this.label155.Name = "label155";
+            this.label155.Size = new System.Drawing.Size(134, 26);
+            this.label155.TabIndex = 59;
+            this.label155.Text = "පඩි පත් අංකය";
+            this.label155.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label156
+            // 
+            this.label156.AutoSize = true;
+            this.label156.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label156.ForeColor = System.Drawing.Color.Black;
+            this.label156.Location = new System.Drawing.Point(96, 39);
+            this.label156.Name = "label156";
+            this.label156.Size = new System.Drawing.Size(125, 26);
+            this.label156.TabIndex = 60;
+            this.label156.Text = "වැටුප් ශ්‍රේණිය";
+            this.label156.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // remun_telephone_allowance
+            // 
+            this.remun_telephone_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_telephone_allowance.Location = new System.Drawing.Point(732, 114);
+            this.remun_telephone_allowance.Name = "remun_telephone_allowance";
+            this.remun_telephone_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_telephone_allowance.TabIndex = 72;
+            // 
+            // remun_present_salary
+            // 
+            this.remun_present_salary.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_present_salary.Location = new System.Drawing.Point(227, 230);
+            this.remun_present_salary.Name = "remun_present_salary";
+            this.remun_present_salary.Size = new System.Drawing.Size(150, 33);
+            this.remun_present_salary.TabIndex = 69;
+            // 
+            // remun_increased_by
+            // 
+            this.remun_increased_by.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_increased_by.Location = new System.Drawing.Point(732, 192);
+            this.remun_increased_by.Name = "remun_increased_by";
+            this.remun_increased_by.Size = new System.Drawing.Size(150, 33);
+            this.remun_increased_by.TabIndex = 74;
+            // 
+            // remun_fuel_allowance
+            // 
+            this.remun_fuel_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_fuel_allowance.Location = new System.Drawing.Point(227, 114);
+            this.remun_fuel_allowance.Name = "remun_fuel_allowance";
+            this.remun_fuel_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_fuel_allowance.TabIndex = 64;
+            // 
+            // remun_other_allowances
+            // 
+            this.remun_other_allowances.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_other_allowances.Location = new System.Drawing.Point(732, 153);
+            this.remun_other_allowances.Name = "remun_other_allowances";
+            this.remun_other_allowances.Size = new System.Drawing.Size(150, 33);
+            this.remun_other_allowances.TabIndex = 73;
+            // 
+            // remun_house_allowance
+            // 
+            this.remun_house_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_house_allowance.Location = new System.Drawing.Point(227, 153);
+            this.remun_house_allowance.Name = "remun_house_allowance";
+            this.remun_house_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_house_allowance.TabIndex = 65;
+            // 
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.White;
@@ -3117,6 +3581,153 @@
             this.tabPage6.Size = new System.Drawing.Size(1041, 518);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "Qualifications";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(425, 114);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 26);
+            this.label10.TabIndex = 35;
+            this.label10.Text = "මාස";
+            // 
+            // qual_highest_qualification
+            // 
+            this.qual_highest_qualification.AutoSize = true;
+            this.qual_highest_qualification.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.qual_highest_qualification.Location = new System.Drawing.Point(330, 150);
+            this.qual_highest_qualification.Name = "qual_highest_qualification";
+            this.qual_highest_qualification.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.qual_highest_qualification.Size = new System.Drawing.Size(233, 31);
+            this.qual_highest_qualification.TabIndex = 34;
+            this.qual_highest_qualification.Text = "ප්‍රමුඛතම සුදුසුකම         ";
+            this.qual_highest_qualification.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(133, 484);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(180, 26);
+            this.label8.TabIndex = 33;
+            this.label8.Text = "සුදුසුකම් ලැබූ වර්ෂය";
+            // 
+            // qual_year
+            // 
+            this.qual_year.Location = new System.Drawing.Point(319, 477);
+            this.qual_year.Name = "qual_year";
+            this.qual_year.Size = new System.Drawing.Size(120, 33);
+            this.qual_year.TabIndex = 32;
+            // 
+            // qual_qualification
+            // 
+            this.qual_qualification.Location = new System.Drawing.Point(319, 438);
+            this.qual_qualification.Name = "qual_qualification";
+            this.qual_qualification.Size = new System.Drawing.Size(200, 33);
+            this.qual_qualification.TabIndex = 31;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(230, 441);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(84, 26);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "සුදුසුකම";
+            // 
+            // qual_note
+            // 
+            this.qual_note.Location = new System.Drawing.Point(319, 227);
+            this.qual_note.Multiline = true;
+            this.qual_note.Name = "qual_note";
+            this.qual_note.Size = new System.Drawing.Size(350, 200);
+            this.qual_note.TabIndex = 29;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(240, 225);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 26);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "සටහන්";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(240, 190);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 26);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "තත්වය";
+            // 
+            // qual_status
+            // 
+            this.qual_status.FormattingEnabled = true;
+            this.qual_status.Location = new System.Drawing.Point(319, 187);
+            this.qual_status.Name = "qual_status";
+            this.qual_status.Size = new System.Drawing.Size(200, 34);
+            this.qual_status.TabIndex = 26;
+            // 
+            // qual_occupation_relevant
+            // 
+            this.qual_occupation_relevant.AutoSize = true;
+            this.qual_occupation_relevant.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.qual_occupation_relevant.Location = new System.Drawing.Point(94, 150);
+            this.qual_occupation_relevant.Name = "qual_occupation_relevant";
+            this.qual_occupation_relevant.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.qual_occupation_relevant.Size = new System.Drawing.Size(230, 31);
+            this.qual_occupation_relevant.TabIndex = 25;
+            this.qual_occupation_relevant.Text = "රැකියාවට අනුකූල         ";
+            this.qual_occupation_relevant.UseVisualStyleBackColor = true;
+            // 
+            // qual_months
+            // 
+            this.qual_months.Location = new System.Drawing.Point(319, 111);
+            this.qual_months.Name = "qual_months";
+            this.qual_months.Size = new System.Drawing.Size(100, 33);
+            this.qual_months.TabIndex = 24;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(209, 114);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(104, 26);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "කාල සීමාව";
+            // 
+            // qualification_no
+            // 
+            this.qualification_no.Location = new System.Drawing.Point(319, 34);
+            this.qualification_no.Name = "qualification_no";
+            this.qualification_no.Size = new System.Drawing.Size(200, 33);
+            this.qualification_no.TabIndex = 22;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(21, 76);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(292, 26);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "පාසැල / උසස් අධ්‍යාපන ආයතනය";
+            // 
+            // qual_institute
+            // 
+            this.qual_institute.Location = new System.Drawing.Point(319, 73);
+            this.qual_institute.Name = "qual_institute";
+            this.qual_institute.Size = new System.Drawing.Size(200, 33);
+            this.qual_institute.TabIndex = 20;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(172, 41);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(141, 26);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "සුදුසුකම් අංකය";
             // 
             // tabPage7
             // 
@@ -4738,26 +5349,26 @@
             // tabPage11
             // 
             this.tabPage11.BackColor = System.Drawing.Color.White;
-            this.tabPage11.Controls.Add(this.comboBox72);
-            this.tabPage11.Controls.Add(this.comboBox73);
-            this.tabPage11.Controls.Add(this.comboBox74);
-            this.tabPage11.Controls.Add(this.comboBox75);
-            this.tabPage11.Controls.Add(this.comboBox76);
-            this.tabPage11.Controls.Add(this.comboBox77);
+            this.tabPage11.Controls.Add(this.label129);
+            this.tabPage11.Controls.Add(this.bank_qualified_year);
+            this.tabPage11.Controls.Add(this.bank_qualification);
+            this.tabPage11.Controls.Add(this.label130);
+            this.tabPage11.Controls.Add(this.bank_account_closed_day);
+            this.tabPage11.Controls.Add(this.bank_account_closed_month);
+            this.tabPage11.Controls.Add(this.bank_account_closed_year);
+            this.tabPage11.Controls.Add(this.bank_account_created_day);
+            this.tabPage11.Controls.Add(this.bank_account_created_month);
+            this.tabPage11.Controls.Add(this.bank_account_created_year);
             this.tabPage11.Controls.Add(this.label123);
-            this.tabPage11.Controls.Add(this.textBox65);
+            this.tabPage11.Controls.Add(this.bank_account_name);
             this.tabPage11.Controls.Add(this.label124);
-            this.tabPage11.Controls.Add(this.comboBox78);
-            this.tabPage11.Controls.Add(this.comboBox79);
+            this.tabPage11.Controls.Add(this.bank_account_type);
+            this.tabPage11.Controls.Add(this.bank_name);
             this.tabPage11.Controls.Add(this.label125);
-            this.tabPage11.Controls.Add(this.textBox66);
-            this.tabPage11.Controls.Add(this.textBox67);
+            this.tabPage11.Controls.Add(this.bank_branch_name);
             this.tabPage11.Controls.Add(this.label126);
             this.tabPage11.Controls.Add(this.label127);
-            this.tabPage11.Controls.Add(this.textBox68);
             this.tabPage11.Controls.Add(this.label128);
-            this.tabPage11.Controls.Add(this.label129);
-            this.tabPage11.Controls.Add(this.label130);
             this.tabPage11.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage11.Location = new System.Drawing.Point(4, 34);
             this.tabPage11.Name = "tabPage11";
@@ -4766,439 +5377,21 @@
             this.tabPage11.TabIndex = 0;
             this.tabPage11.Text = "Bank";
             // 
-            // comboBox72
-            // 
-            this.comboBox72.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox72.FormattingEnabled = true;
-            this.comboBox72.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.comboBox72.Location = new System.Drawing.Point(512, 230);
-            this.comboBox72.Name = "comboBox72";
-            this.comboBox72.Size = new System.Drawing.Size(91, 34);
-            this.comboBox72.TabIndex = 42;
-            this.comboBox72.Text = "    දිනය";
-            // 
-            // comboBox73
-            // 
-            this.comboBox73.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox73.FormattingEnabled = true;
-            this.comboBox73.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.comboBox73.Location = new System.Drawing.Point(415, 230);
-            this.comboBox73.Name = "comboBox73";
-            this.comboBox73.Size = new System.Drawing.Size(91, 34);
-            this.comboBox73.TabIndex = 41;
-            this.comboBox73.Text = "   මාසය";
-            // 
-            // comboBox74
-            // 
-            this.comboBox74.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox74.FormattingEnabled = true;
-            this.comboBox74.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.comboBox74.Location = new System.Drawing.Point(306, 230);
-            this.comboBox74.Name = "comboBox74";
-            this.comboBox74.Size = new System.Drawing.Size(103, 34);
-            this.comboBox74.TabIndex = 40;
-            this.comboBox74.Text = "   වර්ෂය";
-            // 
-            // comboBox75
-            // 
-            this.comboBox75.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox75.FormattingEnabled = true;
-            this.comboBox75.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.comboBox75.Location = new System.Drawing.Point(512, 191);
-            this.comboBox75.Name = "comboBox75";
-            this.comboBox75.Size = new System.Drawing.Size(91, 34);
-            this.comboBox75.TabIndex = 39;
-            this.comboBox75.Text = "    දිනය";
-            // 
-            // comboBox76
-            // 
-            this.comboBox76.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox76.FormattingEnabled = true;
-            this.comboBox76.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.comboBox76.Location = new System.Drawing.Point(415, 191);
-            this.comboBox76.Name = "comboBox76";
-            this.comboBox76.Size = new System.Drawing.Size(91, 34);
-            this.comboBox76.TabIndex = 38;
-            this.comboBox76.Text = "   මාසය";
-            // 
-            // comboBox77
-            // 
-            this.comboBox77.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox77.FormattingEnabled = true;
-            this.comboBox77.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.comboBox77.Location = new System.Drawing.Point(306, 191);
-            this.comboBox77.Name = "comboBox77";
-            this.comboBox77.Size = new System.Drawing.Size(103, 34);
-            this.comboBox77.TabIndex = 37;
-            this.comboBox77.Text = "   වර්ෂය";
-            // 
-            // label123
-            // 
-            this.label123.AutoSize = true;
-            this.label123.Location = new System.Drawing.Point(178, 114);
-            this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(120, 26);
-            this.label123.TabIndex = 25;
-            this.label123.Text = "ගිණුම් අංකය";
-            // 
-            // textBox65
-            // 
-            this.textBox65.Location = new System.Drawing.Point(306, 111);
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(200, 33);
-            this.textBox65.TabIndex = 24;
-            // 
-            // label124
-            // 
-            this.label124.AutoSize = true;
-            this.label124.Location = new System.Drawing.Point(163, 194);
-            this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(138, 26);
-            this.label124.TabIndex = 22;
-            this.label124.Text = "ආරම්භක දිනය";
-            // 
-            // comboBox78
-            // 
-            this.comboBox78.FormattingEnabled = true;
-            this.comboBox78.Location = new System.Drawing.Point(306, 149);
-            this.comboBox78.Name = "comboBox78";
-            this.comboBox78.Size = new System.Drawing.Size(200, 34);
-            this.comboBox78.TabIndex = 20;
-            // 
-            // comboBox79
-            // 
-            this.comboBox79.FormattingEnabled = true;
-            this.comboBox79.Location = new System.Drawing.Point(306, 30);
-            this.comboBox79.Name = "comboBox79";
-            this.comboBox79.Size = new System.Drawing.Size(200, 34);
-            this.comboBox79.TabIndex = 19;
-            // 
-            // label125
-            // 
-            this.label125.AutoSize = true;
-            this.label125.Location = new System.Drawing.Point(118, 312);
-            this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(180, 26);
-            this.label125.TabIndex = 16;
-            this.label125.Text = "සුදුසුකම් ලැබූ වර්ෂය";
-            // 
-            // textBox66
-            // 
-            this.textBox66.Location = new System.Drawing.Point(306, 309);
-            this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(120, 33);
-            this.textBox66.TabIndex = 15;
-            // 
-            // textBox67
-            // 
-            this.textBox67.Location = new System.Drawing.Point(306, 270);
-            this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(200, 33);
-            this.textBox67.TabIndex = 14;
-            // 
-            // label126
-            // 
-            this.label126.AutoSize = true;
-            this.label126.Location = new System.Drawing.Point(214, 273);
-            this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(84, 26);
-            this.label126.TabIndex = 13;
-            this.label126.Text = "සුදුසුකම";
-            // 
-            // label127
-            // 
-            this.label127.AutoSize = true;
-            this.label127.Location = new System.Drawing.Point(178, 233);
-            this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(122, 26);
-            this.label127.TabIndex = 10;
-            this.label127.Text = "අවසාන දිනය";
-            // 
-            // textBox68
-            // 
-            this.textBox68.Location = new System.Drawing.Point(306, 72);
-            this.textBox68.Name = "textBox68";
-            this.textBox68.Size = new System.Drawing.Size(200, 33);
-            this.textBox68.TabIndex = 7;
-            // 
-            // label128
-            // 
-            this.label128.AutoSize = true;
-            this.label128.Location = new System.Drawing.Point(183, 75);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(118, 26);
-            this.label128.TabIndex = 6;
-            this.label128.Text = "ශාඛාවේ නම";
-            // 
-            // label129
-            // 
-            this.label129.AutoSize = true;
-            this.label129.Location = new System.Drawing.Point(181, 152);
-            this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(123, 26);
-            this.label129.TabIndex = 4;
-            this.label129.Text = "ගිණුම් වර්ගය";
-            // 
-            // label130
-            // 
-            this.label130.AutoSize = true;
-            this.label130.Location = new System.Drawing.Point(181, 33);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(119, 26);
-            this.label130.TabIndex = 0;
-            this.label130.Text = "බැංකුවේ නම";
-            // 
             // tabPage12
             // 
             this.tabPage12.BackColor = System.Drawing.Color.White;
-            this.tabPage12.Controls.Add(this.comboBox80);
-            this.tabPage12.Controls.Add(this.comboBox81);
-            this.tabPage12.Controls.Add(this.comboBox82);
-            this.tabPage12.Controls.Add(this.comboBox83);
-            this.tabPage12.Controls.Add(this.comboBox84);
-            this.tabPage12.Controls.Add(this.comboBox85);
-            this.tabPage12.Controls.Add(this.comboBox86);
+            this.tabPage12.Controls.Add(this.day);
+            this.tabPage12.Controls.Add(this.insurance_ended_month);
+            this.tabPage12.Controls.Add(this.insurance_ended_year);
+            this.tabPage12.Controls.Add(this.insurance_started_day);
+            this.tabPage12.Controls.Add(this.insurance_started_month);
+            this.tabPage12.Controls.Add(this.insurance_started_year);
+            this.tabPage12.Controls.Add(this.insurance_type);
             this.tabPage12.Controls.Add(this.label131);
             this.tabPage12.Controls.Add(this.label132);
-            this.tabPage12.Controls.Add(this.textBox69);
+            this.tabPage12.Controls.Add(this.insurance_notes);
             this.tabPage12.Controls.Add(this.label133);
-            this.tabPage12.Controls.Add(this.textBox70);
+            this.tabPage12.Controls.Add(this.insurance_value);
             this.tabPage12.Controls.Add(this.label134);
             this.tabPage12.Controls.Add(this.label135);
             this.tabPage12.Location = new System.Drawing.Point(4, 34);
@@ -5208,387 +5401,17 @@
             this.tabPage12.TabIndex = 1;
             this.tabPage12.Text = "Insurance";
             // 
-            // comboBox80
-            // 
-            this.comboBox80.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox80.FormattingEnabled = true;
-            this.comboBox80.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.comboBox80.Location = new System.Drawing.Point(512, 147);
-            this.comboBox80.Name = "comboBox80";
-            this.comboBox80.Size = new System.Drawing.Size(91, 34);
-            this.comboBox80.TabIndex = 42;
-            this.comboBox80.Text = "    දිනය";
-            // 
-            // comboBox81
-            // 
-            this.comboBox81.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox81.FormattingEnabled = true;
-            this.comboBox81.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.comboBox81.Location = new System.Drawing.Point(415, 147);
-            this.comboBox81.Name = "comboBox81";
-            this.comboBox81.Size = new System.Drawing.Size(91, 34);
-            this.comboBox81.TabIndex = 41;
-            this.comboBox81.Text = "   මාසය";
-            // 
-            // comboBox82
-            // 
-            this.comboBox82.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox82.FormattingEnabled = true;
-            this.comboBox82.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.comboBox82.Location = new System.Drawing.Point(306, 147);
-            this.comboBox82.Name = "comboBox82";
-            this.comboBox82.Size = new System.Drawing.Size(103, 34);
-            this.comboBox82.TabIndex = 40;
-            this.comboBox82.Text = "   වර්ෂය";
-            // 
-            // comboBox83
-            // 
-            this.comboBox83.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox83.FormattingEnabled = true;
-            this.comboBox83.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.comboBox83.Location = new System.Drawing.Point(512, 108);
-            this.comboBox83.Name = "comboBox83";
-            this.comboBox83.Size = new System.Drawing.Size(91, 34);
-            this.comboBox83.TabIndex = 39;
-            this.comboBox83.Text = "    දිනය";
-            // 
-            // comboBox84
-            // 
-            this.comboBox84.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox84.FormattingEnabled = true;
-            this.comboBox84.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.comboBox84.Location = new System.Drawing.Point(415, 108);
-            this.comboBox84.Name = "comboBox84";
-            this.comboBox84.Size = new System.Drawing.Size(91, 34);
-            this.comboBox84.TabIndex = 38;
-            this.comboBox84.Text = "   මාසය";
-            // 
-            // comboBox85
-            // 
-            this.comboBox85.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox85.FormattingEnabled = true;
-            this.comboBox85.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.comboBox85.Location = new System.Drawing.Point(306, 108);
-            this.comboBox85.Name = "comboBox85";
-            this.comboBox85.Size = new System.Drawing.Size(103, 34);
-            this.comboBox85.TabIndex = 37;
-            this.comboBox85.Text = "   වර්ෂය";
-            // 
-            // comboBox86
-            // 
-            this.comboBox86.FormattingEnabled = true;
-            this.comboBox86.Location = new System.Drawing.Point(306, 30);
-            this.comboBox86.Name = "comboBox86";
-            this.comboBox86.Size = new System.Drawing.Size(121, 34);
-            this.comboBox86.TabIndex = 26;
-            // 
-            // label131
-            // 
-            this.label131.AutoSize = true;
-            this.label131.Location = new System.Drawing.Point(228, 190);
-            this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(74, 26);
-            this.label131.TabIndex = 9;
-            this.label131.Text = "සටහන්";
-            // 
-            // label132
-            // 
-            this.label132.AutoSize = true;
-            this.label132.Location = new System.Drawing.Point(10, 153);
-            this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(292, 26);
-            this.label132.TabIndex = 7;
-            this.label132.Text = "රක්ෂණය කල් ඉකුත්වන කළ දිනය";
-            // 
-            // textBox69
-            // 
-            this.textBox69.Location = new System.Drawing.Point(306, 187);
-            this.textBox69.Multiline = true;
-            this.textBox69.Name = "textBox69";
-            this.textBox69.Size = new System.Drawing.Size(350, 200);
-            this.textBox69.TabIndex = 6;
-            // 
-            // label133
-            // 
-            this.label133.AutoSize = true;
-            this.label133.Location = new System.Drawing.Point(42, 114);
-            this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(258, 26);
-            this.label133.TabIndex = 5;
-            this.label133.Text = "රක්ෂණය ආරම්භක කළ දිනය";
-            // 
-            // textBox70
-            // 
-            this.textBox70.Location = new System.Drawing.Point(306, 70);
-            this.textBox70.Name = "textBox70";
-            this.textBox70.Size = new System.Drawing.Size(200, 33);
-            this.textBox70.TabIndex = 4;
-            // 
-            // label134
-            // 
-            this.label134.AutoSize = true;
-            this.label134.Location = new System.Drawing.Point(73, 73);
-            this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(227, 26);
-            this.label134.TabIndex = 3;
-            this.label134.Text = "රක්ෂණයේ වටිනාකම (රු.)";
-            // 
-            // label135
-            // 
-            this.label135.AutoSize = true;
-            this.label135.Location = new System.Drawing.Point(165, 33);
-            this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(137, 26);
-            this.label135.TabIndex = 1;
-            this.label135.Text = "රක්ෂණ වර්ගය";
-            // 
             // tabPage13
             // 
             this.tabPage13.Controls.Add(this.label136);
             this.tabPage13.Controls.Add(this.label137);
-            this.tabPage13.Controls.Add(this.textBox71);
-            this.tabPage13.Controls.Add(this.comboBox87);
+            this.tabPage13.Controls.Add(this.tax_no);
+            this.tabPage13.Controls.Add(this.tax_status);
             this.tabPage13.Controls.Add(this.label138);
-            this.tabPage13.Controls.Add(this.textBox72);
-            this.tabPage13.Controls.Add(this.textBox73);
+            this.tabPage13.Controls.Add(this.tax_notes);
+            this.tabPage13.Controls.Add(this.tax_type);
             this.tabPage13.Controls.Add(this.label139);
-            this.tabPage13.Controls.Add(this.comboBox88);
+            this.tabPage13.Controls.Add(this.tax_paying_method);
             this.tabPage13.Controls.Add(this.label140);
             this.tabPage13.Location = new System.Drawing.Point(4, 34);
             this.tabPage13.Name = "tabPage13";
@@ -5596,89 +5419,6 @@
             this.tabPage13.TabIndex = 2;
             this.tabPage13.Text = "Tax";
             this.tabPage13.UseVisualStyleBackColor = true;
-            // 
-            // label136
-            // 
-            this.label136.AutoSize = true;
-            this.label136.Location = new System.Drawing.Point(227, 191);
-            this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(74, 26);
-            this.label136.TabIndex = 11;
-            this.label136.Text = "සටහන්";
-            // 
-            // label137
-            // 
-            this.label137.AutoSize = true;
-            this.label137.Location = new System.Drawing.Point(206, 72);
-            this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(94, 26);
-            this.label137.TabIndex = 10;
-            this.label137.Text = "බදු අංකය";
-            // 
-            // textBox71
-            // 
-            this.textBox71.Location = new System.Drawing.Point(306, 69);
-            this.textBox71.Name = "textBox71";
-            this.textBox71.Size = new System.Drawing.Size(200, 33);
-            this.textBox71.TabIndex = 9;
-            // 
-            // comboBox87
-            // 
-            this.comboBox87.FormattingEnabled = true;
-            this.comboBox87.Location = new System.Drawing.Point(306, 148);
-            this.comboBox87.Name = "comboBox87";
-            this.comboBox87.Size = new System.Drawing.Size(121, 34);
-            this.comboBox87.TabIndex = 8;
-            // 
-            // label138
-            // 
-            this.label138.AutoSize = true;
-            this.label138.Location = new System.Drawing.Point(227, 151);
-            this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(73, 26);
-            this.label138.TabIndex = 7;
-            this.label138.Text = "තත්වය";
-            // 
-            // textBox72
-            // 
-            this.textBox72.Location = new System.Drawing.Point(306, 188);
-            this.textBox72.Multiline = true;
-            this.textBox72.Name = "textBox72";
-            this.textBox72.Size = new System.Drawing.Size(350, 200);
-            this.textBox72.TabIndex = 6;
-            // 
-            // textBox73
-            // 
-            this.textBox73.Location = new System.Drawing.Point(306, 30);
-            this.textBox73.Name = "textBox73";
-            this.textBox73.Size = new System.Drawing.Size(200, 33);
-            this.textBox73.TabIndex = 5;
-            // 
-            // label139
-            // 
-            this.label139.AutoSize = true;
-            this.label139.Location = new System.Drawing.Point(158, 111);
-            this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(142, 26);
-            this.label139.TabIndex = 4;
-            this.label139.Text = "ගෙවීම් ආකාරය";
-            // 
-            // comboBox88
-            // 
-            this.comboBox88.FormattingEnabled = true;
-            this.comboBox88.Location = new System.Drawing.Point(306, 108);
-            this.comboBox88.Name = "comboBox88";
-            this.comboBox88.Size = new System.Drawing.Size(121, 34);
-            this.comboBox88.TabIndex = 3;
-            // 
-            // label140
-            // 
-            this.label140.AutoSize = true;
-            this.label140.Location = new System.Drawing.Point(203, 33);
-            this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(97, 26);
-            this.label140.TabIndex = 2;
-            this.label140.Text = "බදු වර්ගය";
             // 
             // panel8
             // 
@@ -5720,6 +5460,14 @@
             // tabPage14
             // 
             this.tabPage14.BackColor = System.Drawing.Color.White;
+            this.tabPage14.Controls.Add(this.comboBox1);
+            this.tabPage14.Controls.Add(this.comboBox2);
+            this.tabPage14.Controls.Add(this.comboBox3);
+            this.tabPage14.Controls.Add(this.label157);
+            this.tabPage14.Controls.Add(this.label158);
+            this.tabPage14.Controls.Add(this.label159);
+            this.tabPage14.Controls.Add(this.label160);
+            this.tabPage14.Controls.Add(this.label161);
             this.tabPage14.Controls.Add(this.label170);
             this.tabPage14.Controls.Add(this.label171);
             this.tabPage14.Controls.Add(this.label172);
@@ -5732,25 +5480,18 @@
             this.tabPage14.Controls.Add(this.label179);
             this.tabPage14.Controls.Add(this.label180);
             this.tabPage14.Controls.Add(this.label181);
+            this.tabPage14.Controls.Add(this.textBox1);
+            this.tabPage14.Controls.Add(this.textBox2);
+            this.tabPage14.Controls.Add(this.textBox3);
+            this.tabPage14.Controls.Add(this.textBox4);
             this.tabPage14.Controls.Add(this.label182);
             this.tabPage14.Controls.Add(this.label183);
-            this.tabPage14.Controls.Add(this.label184);
-            this.tabPage14.Controls.Add(this.label185);
-            this.tabPage14.Controls.Add(this.label186);
-            this.tabPage14.Controls.Add(this.label187);
-            this.tabPage14.Controls.Add(this.textBox90);
-            this.tabPage14.Controls.Add(this.textBox91);
-            this.tabPage14.Controls.Add(this.textBox92);
-            this.tabPage14.Controls.Add(this.textBox93);
-            this.tabPage14.Controls.Add(this.label188);
-            this.tabPage14.Controls.Add(this.label189);
-            this.tabPage14.Controls.Add(this.textBox94);
-            this.tabPage14.Controls.Add(this.textBox95);
-            this.tabPage14.Controls.Add(this.textBox96);
-            this.tabPage14.Controls.Add(this.textBox97);
-            this.tabPage14.Controls.Add(this.textBox98);
-            this.tabPage14.Controls.Add(this.textBox99);
-            this.tabPage14.Controls.Add(this.textBox100);
+            this.tabPage14.Controls.Add(this.textBox5);
+            this.tabPage14.Controls.Add(this.textBox6);
+            this.tabPage14.Controls.Add(this.textBox7);
+            this.tabPage14.Controls.Add(this.textBox8);
+            this.tabPage14.Controls.Add(this.textBox9);
+            this.tabPage14.Controls.Add(this.textBox10);
             this.tabPage14.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage14.ForeColor = System.Drawing.Color.Transparent;
             this.tabPage14.Location = new System.Drawing.Point(4, 34);
@@ -5760,345 +5501,17 @@
             this.tabPage14.TabIndex = 0;
             this.tabPage14.Text = "Remuneration";
             // 
-            // label170
-            // 
-            this.label170.AutoSize = true;
-            this.label170.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label170.ForeColor = System.Drawing.Color.Black;
-            this.label170.Location = new System.Drawing.Point(180, 69);
-            this.label170.Name = "label170";
-            this.label170.Size = new System.Drawing.Size(35, 26);
-            this.label170.TabIndex = 6;
-            this.label170.Text = ".රු";
-            this.label170.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label171
-            // 
-            this.label171.AutoSize = true;
-            this.label171.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label171.ForeColor = System.Drawing.Color.Black;
-            this.label171.Location = new System.Drawing.Point(180, 108);
-            this.label171.Name = "label171";
-            this.label171.Size = new System.Drawing.Size(35, 26);
-            this.label171.TabIndex = 7;
-            this.label171.Text = ".රු";
-            this.label171.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label172
-            // 
-            this.label172.AutoSize = true;
-            this.label172.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label172.ForeColor = System.Drawing.Color.Black;
-            this.label172.Location = new System.Drawing.Point(180, 147);
-            this.label172.Name = "label172";
-            this.label172.Size = new System.Drawing.Size(35, 26);
-            this.label172.TabIndex = 8;
-            this.label172.Text = ".රු";
-            this.label172.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label173
-            // 
-            this.label173.AutoSize = true;
-            this.label173.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label173.ForeColor = System.Drawing.Color.Black;
-            this.label173.Location = new System.Drawing.Point(180, 225);
-            this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(35, 26);
-            this.label173.TabIndex = 9;
-            this.label173.Text = ".රු";
-            this.label173.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label174
-            // 
-            this.label174.AutoSize = true;
-            this.label174.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label174.ForeColor = System.Drawing.Color.Black;
-            this.label174.Location = new System.Drawing.Point(624, 69);
-            this.label174.Name = "label174";
-            this.label174.Size = new System.Drawing.Size(35, 26);
-            this.label174.TabIndex = 5;
-            this.label174.Text = ".රු";
-            this.label174.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label175
-            // 
-            this.label175.AutoSize = true;
-            this.label175.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label175.ForeColor = System.Drawing.Color.Black;
-            this.label175.Location = new System.Drawing.Point(624, 108);
-            this.label175.Name = "label175";
-            this.label175.Size = new System.Drawing.Size(35, 26);
-            this.label175.TabIndex = 5;
-            this.label175.Text = ".රු";
-            this.label175.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label176
-            // 
-            this.label176.AutoSize = true;
-            this.label176.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label176.ForeColor = System.Drawing.Color.Black;
-            this.label176.Location = new System.Drawing.Point(619, 108);
-            this.label176.Name = "label176";
-            this.label176.Size = new System.Drawing.Size(35, 26);
-            this.label176.TabIndex = 5;
-            this.label176.Text = ".රු";
-            this.label176.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label177
-            // 
-            this.label177.AutoSize = true;
-            this.label177.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label177.ForeColor = System.Drawing.Color.Black;
-            this.label177.Location = new System.Drawing.Point(624, 147);
-            this.label177.Name = "label177";
-            this.label177.Size = new System.Drawing.Size(35, 26);
-            this.label177.TabIndex = 5;
-            this.label177.Text = ".රු";
-            this.label177.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label178
-            // 
-            this.label178.AutoSize = true;
-            this.label178.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label178.ForeColor = System.Drawing.Color.Black;
-            this.label178.Location = new System.Drawing.Point(624, 186);
-            this.label178.Name = "label178";
-            this.label178.Size = new System.Drawing.Size(35, 26);
-            this.label178.TabIndex = 5;
-            this.label178.Text = ".රු";
-            this.label178.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label179
-            // 
-            this.label179.AutoSize = true;
-            this.label179.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label179.ForeColor = System.Drawing.Color.Black;
-            this.label179.Location = new System.Drawing.Point(468, 186);
-            this.label179.Name = "label179";
-            this.label179.Size = new System.Drawing.Size(150, 26);
-            this.label179.TabIndex = 5;
-            this.label179.Text = "වැටුප් වැඩිවූ මුදල";
-            this.label179.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label180
-            // 
-            this.label180.AutoSize = true;
-            this.label180.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label180.ForeColor = System.Drawing.Color.Black;
-            this.label180.Location = new System.Drawing.Point(61, 186);
-            this.label180.Name = "label180";
-            this.label180.Size = new System.Drawing.Size(154, 26);
-            this.label180.TabIndex = 5;
-            this.label180.Text = "වැටුප් වැඩිවූ දිනය";
-            this.label180.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label181
-            // 
-            this.label181.AutoSize = true;
-            this.label181.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label181.ForeColor = System.Drawing.Color.Black;
-            this.label181.Location = new System.Drawing.Point(494, 147);
-            this.label181.Name = "label181";
-            this.label181.Size = new System.Drawing.Size(124, 26);
-            this.label181.TabIndex = 5;
-            this.label181.Text = "වෙනත් දීමනා";
-            this.label181.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label182
-            // 
-            this.label182.AutoSize = true;
-            this.label182.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label182.ForeColor = System.Drawing.Color.Black;
-            this.label182.Location = new System.Drawing.Point(54, 147);
-            this.label182.Name = "label182";
-            this.label182.Size = new System.Drawing.Size(130, 26);
-            this.label182.TabIndex = 5;
-            this.label182.Text = "නිවාස දීමනාව";
-            this.label182.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label183
-            // 
-            this.label183.AutoSize = true;
-            this.label183.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label183.ForeColor = System.Drawing.Color.Black;
-            this.label183.Location = new System.Drawing.Point(10, 225);
-            this.label183.Name = "label183";
-            this.label183.Size = new System.Drawing.Size(174, 26);
-            this.label183.TabIndex = 5;
-            this.label183.Text = "වර්තමාන මුලු වැටුප";
-            this.label183.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label184
-            // 
-            this.label184.AutoSize = true;
-            this.label184.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label184.ForeColor = System.Drawing.Color.Black;
-            this.label184.Location = new System.Drawing.Point(472, 69);
-            this.label184.Name = "label184";
-            this.label184.Size = new System.Drawing.Size(146, 26);
-            this.label184.TabIndex = 5;
-            this.label184.Text = "ප්‍රවාහන දීමනාව";
-            this.label184.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label185
-            // 
-            this.label185.AutoSize = true;
-            this.label185.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label185.ForeColor = System.Drawing.Color.Black;
-            this.label185.Location = new System.Drawing.Point(77, 69);
-            this.label185.Name = "label185";
-            this.label185.Size = new System.Drawing.Size(107, 26);
-            this.label185.TabIndex = 5;
-            this.label185.Text = "මූලික වැටුප";
-            this.label185.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label186
-            // 
-            this.label186.AutoSize = true;
-            this.label186.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label186.ForeColor = System.Drawing.Color.Black;
-            this.label186.Location = new System.Drawing.Point(412, 108);
-            this.label186.Name = "label186";
-            this.label186.Size = new System.Drawing.Size(206, 26);
-            this.label186.TabIndex = 5;
-            this.label186.Text = "ජංගම දුරකථන දීමනාව";
-            this.label186.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label187
-            // 
-            this.label187.AutoSize = true;
-            this.label187.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label187.ForeColor = System.Drawing.Color.Black;
-            this.label187.Location = new System.Drawing.Point(45, 108);
-            this.label187.Name = "label187";
-            this.label187.Size = new System.Drawing.Size(139, 26);
-            this.label187.TabIndex = 5;
-            this.label187.Text = "ඉන්ධන දීමනාව";
-            this.label187.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBox90
-            // 
-            this.textBox90.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox90.Location = new System.Drawing.Point(660, 27);
-            this.textBox90.Name = "textBox90";
-            this.textBox90.Size = new System.Drawing.Size(150, 33);
-            this.textBox90.TabIndex = 10;
-            // 
-            // textBox91
-            // 
-            this.textBox91.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox91.Location = new System.Drawing.Point(221, 27);
-            this.textBox91.Name = "textBox91";
-            this.textBox91.Size = new System.Drawing.Size(150, 33);
-            this.textBox91.TabIndex = 4;
-            // 
-            // textBox92
-            // 
-            this.textBox92.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox92.Location = new System.Drawing.Point(660, 66);
-            this.textBox92.Name = "textBox92";
-            this.textBox92.Size = new System.Drawing.Size(150, 33);
-            this.textBox92.TabIndex = 11;
-            // 
-            // textBox93
-            // 
-            this.textBox93.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox93.Location = new System.Drawing.Point(221, 66);
-            this.textBox93.Name = "textBox93";
-            this.textBox93.Size = new System.Drawing.Size(150, 33);
-            this.textBox93.TabIndex = 5;
-            // 
-            // label188
-            // 
-            this.label188.AutoSize = true;
-            this.label188.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label188.ForeColor = System.Drawing.Color.Black;
-            this.label188.Location = new System.Drawing.Point(517, 30);
-            this.label188.Name = "label188";
-            this.label188.Size = new System.Drawing.Size(134, 26);
-            this.label188.TabIndex = 5;
-            this.label188.Text = "පඩි පත් අංකය";
-            this.label188.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label189
-            // 
-            this.label189.AutoSize = true;
-            this.label189.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label189.ForeColor = System.Drawing.Color.Black;
-            this.label189.Location = new System.Drawing.Point(90, 30);
-            this.label189.Name = "label189";
-            this.label189.Size = new System.Drawing.Size(125, 26);
-            this.label189.TabIndex = 5;
-            this.label189.Text = "වැටුප් ශ්‍රේණිය";
-            this.label189.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBox94
-            // 
-            this.textBox94.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox94.Location = new System.Drawing.Point(660, 105);
-            this.textBox94.Name = "textBox94";
-            this.textBox94.Size = new System.Drawing.Size(150, 33);
-            this.textBox94.TabIndex = 12;
-            // 
-            // textBox95
-            // 
-            this.textBox95.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox95.Location = new System.Drawing.Point(221, 222);
-            this.textBox95.Name = "textBox95";
-            this.textBox95.Size = new System.Drawing.Size(150, 33);
-            this.textBox95.TabIndex = 9;
-            // 
-            // textBox96
-            // 
-            this.textBox96.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox96.Location = new System.Drawing.Point(660, 183);
-            this.textBox96.Name = "textBox96";
-            this.textBox96.Size = new System.Drawing.Size(150, 33);
-            this.textBox96.TabIndex = 14;
-            // 
-            // textBox97
-            // 
-            this.textBox97.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox97.Location = new System.Drawing.Point(221, 105);
-            this.textBox97.Name = "textBox97";
-            this.textBox97.Size = new System.Drawing.Size(150, 33);
-            this.textBox97.TabIndex = 6;
-            // 
-            // textBox98
-            // 
-            this.textBox98.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox98.Location = new System.Drawing.Point(660, 144);
-            this.textBox98.Name = "textBox98";
-            this.textBox98.Size = new System.Drawing.Size(150, 33);
-            this.textBox98.TabIndex = 13;
-            // 
-            // textBox99
-            // 
-            this.textBox99.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox99.Location = new System.Drawing.Point(221, 183);
-            this.textBox99.Name = "textBox99";
-            this.textBox99.Size = new System.Drawing.Size(150, 33);
-            this.textBox99.TabIndex = 8;
-            // 
-            // textBox100
-            // 
-            this.textBox100.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox100.Location = new System.Drawing.Point(221, 144);
-            this.textBox100.Name = "textBox100";
-            this.textBox100.Size = new System.Drawing.Size(150, 33);
-            this.textBox100.TabIndex = 7;
-            // 
             // tabPage15
             // 
             this.tabPage15.BackColor = System.Drawing.Color.White;
-            this.tabPage15.Controls.Add(this.comboBox95);
-            this.tabPage15.Controls.Add(this.comboBox96);
-            this.tabPage15.Controls.Add(this.comboBox97);
-            this.tabPage15.Controls.Add(this.label190);
-            this.tabPage15.Controls.Add(this.label191);
-            this.tabPage15.Controls.Add(this.label192);
-            this.tabPage15.Controls.Add(this.textBox101);
-            this.tabPage15.Controls.Add(this.textBox102);
+            this.tabPage15.Controls.Add(this.cash_issued_day);
+            this.tabPage15.Controls.Add(this.cash_issued_month);
+            this.tabPage15.Controls.Add(this.cash_issued_year);
+            this.tabPage15.Controls.Add(this.label184);
+            this.tabPage15.Controls.Add(this.label185);
+            this.tabPage15.Controls.Add(this.label186);
+            this.tabPage15.Controls.Add(this.cash_issued_price);
+            this.tabPage15.Controls.Add(this.cash_approved_benefit);
             this.tabPage15.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage15.Location = new System.Drawing.Point(4, 34);
             this.tabPage15.Name = "tabPage15";
@@ -6107,432 +5520,25 @@
             this.tabPage15.TabIndex = 1;
             this.tabPage15.Text = "Cash Benefits";
             // 
-            // comboBox95
-            // 
-            this.comboBox95.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox95.FormattingEnabled = true;
-            this.comboBox95.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.comboBox95.Location = new System.Drawing.Point(383, 65);
-            this.comboBox95.Name = "comboBox95";
-            this.comboBox95.Size = new System.Drawing.Size(91, 34);
-            this.comboBox95.TabIndex = 42;
-            this.comboBox95.Text = "    දිනය";
-            // 
-            // comboBox96
-            // 
-            this.comboBox96.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox96.FormattingEnabled = true;
-            this.comboBox96.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.comboBox96.Location = new System.Drawing.Point(286, 65);
-            this.comboBox96.Name = "comboBox96";
-            this.comboBox96.Size = new System.Drawing.Size(91, 34);
-            this.comboBox96.TabIndex = 41;
-            this.comboBox96.Text = "   මාසය";
-            // 
-            // comboBox97
-            // 
-            this.comboBox97.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox97.FormattingEnabled = true;
-            this.comboBox97.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.comboBox97.Location = new System.Drawing.Point(177, 65);
-            this.comboBox97.Name = "comboBox97";
-            this.comboBox97.Size = new System.Drawing.Size(103, 34);
-            this.comboBox97.TabIndex = 40;
-            this.comboBox97.Text = "   වර්ෂය";
-            // 
-            // label190
-            // 
-            this.label190.AutoSize = true;
-            this.label190.Location = new System.Drawing.Point(132, 107);
-            this.label190.Name = "label190";
-            this.label190.Size = new System.Drawing.Size(39, 26);
-            this.label190.TabIndex = 4;
-            this.label190.Text = "මිල";
-            this.label190.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label191
-            // 
-            this.label191.AutoSize = true;
-            this.label191.Location = new System.Drawing.Point(25, 68);
-            this.label191.Name = "label191";
-            this.label191.Size = new System.Drawing.Size(146, 26);
-            this.label191.TabIndex = 4;
-            this.label191.Text = "නිකුත් කළ දිනය";
-            this.label191.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label192
-            // 
-            this.label192.AutoSize = true;
-            this.label192.Location = new System.Drawing.Point(12, 29);
-            this.label192.Name = "label192";
-            this.label192.Size = new System.Drawing.Size(159, 26);
-            this.label192.TabIndex = 3;
-            this.label192.Text = "අනුමත ප්‍රතිලාභය";
-            this.label192.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBox101
-            // 
-            this.textBox101.Location = new System.Drawing.Point(177, 105);
-            this.textBox101.Name = "textBox101";
-            this.textBox101.Size = new System.Drawing.Size(200, 33);
-            this.textBox101.TabIndex = 17;
-            // 
-            // textBox102
-            // 
-            this.textBox102.Location = new System.Drawing.Point(177, 26);
-            this.textBox102.Name = "textBox102";
-            this.textBox102.Size = new System.Drawing.Size(200, 33);
-            this.textBox102.TabIndex = 15;
-            // 
             // tabPage16
             // 
             this.tabPage16.AutoScroll = true;
-            this.tabPage16.Controls.Add(this.comboBox98);
-            this.tabPage16.Controls.Add(this.comboBox99);
-            this.tabPage16.Controls.Add(this.comboBox100);
-            this.tabPage16.Controls.Add(this.label193);
-            this.tabPage16.Controls.Add(this.label194);
-            this.tabPage16.Controls.Add(this.label195);
-            this.tabPage16.Controls.Add(this.label196);
-            this.tabPage16.Controls.Add(this.textBox103);
-            this.tabPage16.Controls.Add(this.textBox104);
-            this.tabPage16.Controls.Add(this.textBox105);
+            this.tabPage16.Controls.Add(this.noncash_issued_day);
+            this.tabPage16.Controls.Add(this.noncash_issued_month);
+            this.tabPage16.Controls.Add(this.noncash_issued_year);
+            this.tabPage16.Controls.Add(this.label187);
+            this.tabPage16.Controls.Add(this.label188);
+            this.tabPage16.Controls.Add(this.label189);
+            this.tabPage16.Controls.Add(this.label190);
+            this.tabPage16.Controls.Add(this.noncash_price);
+            this.tabPage16.Controls.Add(this.noncash_quantity);
+            this.tabPage16.Controls.Add(this.noncash_approved_benefit);
             this.tabPage16.Location = new System.Drawing.Point(4, 34);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Size = new System.Drawing.Size(1041, 409);
             this.tabPage16.TabIndex = 2;
             this.tabPage16.Text = "Non Cash Benefits";
             this.tabPage16.UseVisualStyleBackColor = true;
-            // 
-            // comboBox98
-            // 
-            this.comboBox98.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox98.FormattingEnabled = true;
-            this.comboBox98.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.comboBox98.Location = new System.Drawing.Point(383, 65);
-            this.comboBox98.Name = "comboBox98";
-            this.comboBox98.Size = new System.Drawing.Size(91, 34);
-            this.comboBox98.TabIndex = 39;
-            this.comboBox98.Text = "    දිනය";
-            // 
-            // comboBox99
-            // 
-            this.comboBox99.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox99.FormattingEnabled = true;
-            this.comboBox99.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.comboBox99.Location = new System.Drawing.Point(286, 65);
-            this.comboBox99.Name = "comboBox99";
-            this.comboBox99.Size = new System.Drawing.Size(91, 34);
-            this.comboBox99.TabIndex = 38;
-            this.comboBox99.Text = "   මාසය";
-            // 
-            // comboBox100
-            // 
-            this.comboBox100.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox100.FormattingEnabled = true;
-            this.comboBox100.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.comboBox100.Location = new System.Drawing.Point(177, 65);
-            this.comboBox100.Name = "comboBox100";
-            this.comboBox100.Size = new System.Drawing.Size(103, 34);
-            this.comboBox100.TabIndex = 37;
-            this.comboBox100.Text = "   වර්ෂය";
-            // 
-            // label193
-            // 
-            this.label193.AutoSize = true;
-            this.label193.Location = new System.Drawing.Point(25, 68);
-            this.label193.Name = "label193";
-            this.label193.Size = new System.Drawing.Size(146, 26);
-            this.label193.TabIndex = 21;
-            this.label193.Text = "නිකුත් කළ දිනය";
-            this.label193.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label194
-            // 
-            this.label194.AutoSize = true;
-            this.label194.Location = new System.Drawing.Point(132, 147);
-            this.label194.Name = "label194";
-            this.label194.Size = new System.Drawing.Size(39, 26);
-            this.label194.TabIndex = 9;
-            this.label194.Text = "මිල";
-            this.label194.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label195
-            // 
-            this.label195.AutoSize = true;
-            this.label195.Location = new System.Drawing.Point(89, 108);
-            this.label195.Name = "label195";
-            this.label195.Size = new System.Drawing.Size(82, 26);
-            this.label195.TabIndex = 10;
-            this.label195.Text = "ප්‍රමාණය";
-            this.label195.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label196
-            // 
-            this.label196.AutoSize = true;
-            this.label196.Location = new System.Drawing.Point(12, 29);
-            this.label196.Name = "label196";
-            this.label196.Size = new System.Drawing.Size(159, 26);
-            this.label196.TabIndex = 8;
-            this.label196.Text = "අනුමත ප්‍රතිලාභය";
-            this.label196.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBox103
-            // 
-            this.textBox103.Location = new System.Drawing.Point(177, 144);
-            this.textBox103.Name = "textBox103";
-            this.textBox103.Size = new System.Drawing.Size(100, 33);
-            this.textBox103.TabIndex = 21;
-            // 
-            // textBox104
-            // 
-            this.textBox104.Location = new System.Drawing.Point(177, 105);
-            this.textBox104.Name = "textBox104";
-            this.textBox104.Size = new System.Drawing.Size(100, 33);
-            this.textBox104.TabIndex = 20;
-            // 
-            // textBox105
-            // 
-            this.textBox105.Location = new System.Drawing.Point(177, 26);
-            this.textBox105.Name = "textBox105";
-            this.textBox105.Size = new System.Drawing.Size(200, 33);
-            this.textBox105.TabIndex = 18;
             // 
             // panel11
             // 
@@ -6558,8 +5564,14 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel10.Controls.Add(this.radioButton2);
-            this.panel10.Controls.Add(this.radioButton1);
+            this.panel10.Controls.Add(this.passport_renewal_day);
+            this.panel10.Controls.Add(this.passport_issued_day);
+            this.panel10.Controls.Add(this.passport_renewal_month);
+            this.panel10.Controls.Add(this.passport_issued_month);
+            this.panel10.Controls.Add(this.passport_renewal_year);
+            this.panel10.Controls.Add(this.passport_issued_year);
+            this.panel10.Controls.Add(this.passport_status_deactive);
+            this.panel10.Controls.Add(this.passport_status_active);
             this.panel10.Controls.Add(this.label162);
             this.panel10.Controls.Add(this.label163);
             this.panel10.Controls.Add(this.label164);
@@ -6567,171 +5579,20 @@
             this.panel10.Controls.Add(this.label166);
             this.panel10.Controls.Add(this.label167);
             this.panel10.Controls.Add(this.label168);
-            this.panel10.Controls.Add(this.textBox85);
-            this.panel10.Controls.Add(this.textBox86);
-            this.panel10.Controls.Add(this.textBox87);
-            this.panel10.Controls.Add(this.textBox88);
-            this.panel10.Controls.Add(this.textBox89);
-            this.panel10.Controls.Add(this.textBox106);
+            this.panel10.Controls.Add(this.passport_post);
+            this.panel10.Controls.Add(this.passport_rank);
+            this.panel10.Controls.Add(this.passport_issued_place);
+            this.panel10.Controls.Add(this.passport_no);
             this.panel10.Location = new System.Drawing.Point(3, 2654);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1049, 362);
             this.panel10.TabIndex = 21;
             // 
-            // radioButton2
+            // day
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.radioButton2.Location = new System.Drawing.Point(418, 284);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(74, 30);
-            this.radioButton2.TabIndex = 34;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "අක්‍රීය";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.radioButton1.Location = new System.Drawing.Point(275, 285);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(77, 30);
-            this.radioButton1.TabIndex = 33;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "සක්‍රීය";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // label162
-            // 
-            this.label162.AutoSize = true;
-            this.label162.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label162.Location = new System.Drawing.Point(193, 286);
-            this.label162.Name = "label162";
-            this.label162.Size = new System.Drawing.Size(73, 26);
-            this.label162.TabIndex = 24;
-            this.label162.Text = "තත්වය";
-            this.label162.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label163
-            // 
-            this.label163.AutoSize = true;
-            this.label163.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label163.Location = new System.Drawing.Point(128, 249);
-            this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(138, 26);
-            this.label163.TabIndex = 25;
-            this.label163.Text = "අළුත් කළ දිනය";
-            this.label163.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label164
-            // 
-            this.label164.AutoSize = true;
-            this.label164.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label164.Location = new System.Drawing.Point(191, 93);
-            this.label164.Name = "label164";
-            this.label164.Size = new System.Drawing.Size(75, 26);
-            this.label164.TabIndex = 26;
-            this.label164.Text = "තනතුර";
-            this.label164.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label165
-            // 
-            this.label165.AutoSize = true;
-            this.label165.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label165.Location = new System.Drawing.Point(120, 210);
-            this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(146, 26);
-            this.label165.TabIndex = 27;
-            this.label165.Text = "නිකුත් කළ දිනය";
-            this.label165.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label166
-            // 
-            this.label166.AutoSize = true;
-            this.label166.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label166.Location = new System.Drawing.Point(210, 54);
-            this.label166.Name = "label166";
-            this.label166.Size = new System.Drawing.Size(56, 26);
-            this.label166.TabIndex = 28;
-            this.label166.Text = "නිලය";
-            this.label166.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label167
-            // 
-            this.label167.AutoSize = true;
-            this.label167.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label167.Location = new System.Drawing.Point(94, 171);
-            this.label167.Name = "label167";
-            this.label167.Size = new System.Drawing.Size(172, 26);
-            this.label167.TabIndex = 29;
-            this.label167.Text = "නිකුත් කළ ස්ථානය";
-            this.label167.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label168
-            // 
-            this.label168.AutoSize = true;
-            this.label168.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label168.Location = new System.Drawing.Point(29, 132);
-            this.label168.Name = "label168";
-            this.label168.Size = new System.Drawing.Size(241, 26);
-            this.label168.TabIndex = 31;
-            this.label168.Text = "විදේශ ගමන් බලපත්‍ර අංකය ";
-            this.label168.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBox85
-            // 
-            this.textBox85.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox85.Location = new System.Drawing.Point(275, 246);
-            this.textBox85.Name = "textBox85";
-            this.textBox85.Size = new System.Drawing.Size(282, 33);
-            this.textBox85.TabIndex = 22;
-            // 
-            // textBox86
-            // 
-            this.textBox86.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox86.Location = new System.Drawing.Point(275, 90);
-            this.textBox86.Name = "textBox86";
-            this.textBox86.Size = new System.Drawing.Size(282, 33);
-            this.textBox86.TabIndex = 23;
-            // 
-            // textBox87
-            // 
-            this.textBox87.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox87.Location = new System.Drawing.Point(275, 207);
-            this.textBox87.Name = "textBox87";
-            this.textBox87.Size = new System.Drawing.Size(282, 33);
-            this.textBox87.TabIndex = 20;
-            // 
-            // textBox88
-            // 
-            this.textBox88.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox88.Location = new System.Drawing.Point(275, 51);
-            this.textBox88.Name = "textBox88";
-            this.textBox88.Size = new System.Drawing.Size(282, 33);
-            this.textBox88.TabIndex = 21;
-            // 
-            // textBox89
-            // 
-            this.textBox89.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox89.Location = new System.Drawing.Point(275, 168);
-            this.textBox89.Name = "textBox89";
-            this.textBox89.Size = new System.Drawing.Size(282, 33);
-            this.textBox89.TabIndex = 19;
-            // 
-            // textBox106
-            // 
-            this.textBox106.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox106.Location = new System.Drawing.Point(275, 129);
-            this.textBox106.Name = "textBox106";
-            this.textBox106.Size = new System.Drawing.Size(282, 33);
-            this.textBox106.TabIndex = 17;
-            // 
-            // remun_salary_increased_day
-            // 
-            this.remun_salary_increased_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.remun_salary_increased_day.FormattingEnabled = true;
-            this.remun_salary_increased_day.Items.AddRange(new object[] {
+            this.day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.day.FormattingEnabled = true;
+            this.day.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -6763,17 +5624,17 @@
             "29",
             "30",
             "31"});
-            this.remun_salary_increased_day.Location = new System.Drawing.Point(433, 192);
-            this.remun_salary_increased_day.Name = "remun_salary_increased_day";
-            this.remun_salary_increased_day.Size = new System.Drawing.Size(91, 32);
-            this.remun_salary_increased_day.TabIndex = 77;
-            this.remun_salary_increased_day.Text = "    දිනය";
+            this.day.Location = new System.Drawing.Point(532, 139);
+            this.day.Name = "day";
+            this.day.Size = new System.Drawing.Size(91, 34);
+            this.day.TabIndex = 56;
+            this.day.Text = "    දිනය";
             // 
-            // remun_salary_increased_month
+            // insurance_ended_month
             // 
-            this.remun_salary_increased_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.remun_salary_increased_month.FormattingEnabled = true;
-            this.remun_salary_increased_month.Items.AddRange(new object[] {
+            this.insurance_ended_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.insurance_ended_month.FormattingEnabled = true;
+            this.insurance_ended_month.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -6786,17 +5647,17 @@
             "October",
             "November",
             "December"});
-            this.remun_salary_increased_month.Location = new System.Drawing.Point(336, 192);
-            this.remun_salary_increased_month.Name = "remun_salary_increased_month";
-            this.remun_salary_increased_month.Size = new System.Drawing.Size(91, 32);
-            this.remun_salary_increased_month.TabIndex = 76;
-            this.remun_salary_increased_month.Text = "   මාසය";
+            this.insurance_ended_month.Location = new System.Drawing.Point(435, 139);
+            this.insurance_ended_month.Name = "insurance_ended_month";
+            this.insurance_ended_month.Size = new System.Drawing.Size(91, 34);
+            this.insurance_ended_month.TabIndex = 55;
+            this.insurance_ended_month.Text = "   මාසය";
             // 
-            // remun_salary_increased_year
+            // insurance_ended_year
             // 
-            this.remun_salary_increased_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.remun_salary_increased_year.FormattingEnabled = true;
-            this.remun_salary_increased_year.Items.AddRange(new object[] {
+            this.insurance_ended_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.insurance_ended_year.FormattingEnabled = true;
+            this.insurance_ended_year.Items.AddRange(new object[] {
             "2020",
             "2019",
             "2018",
@@ -6872,466 +5733,2038 @@
             "1948",
             "1947",
             "1946"});
-            this.remun_salary_increased_year.Location = new System.Drawing.Point(227, 192);
-            this.remun_salary_increased_year.Name = "remun_salary_increased_year";
-            this.remun_salary_increased_year.Size = new System.Drawing.Size(103, 32);
-            this.remun_salary_increased_year.TabIndex = 75;
-            this.remun_salary_increased_year.Text = "   වර්ෂය";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(186, 78);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(34, 26);
-            this.label11.TabIndex = 63;
-            this.label11.Text = ".රු";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(186, 117);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(34, 26);
-            this.label12.TabIndex = 66;
-            this.label12.Text = ".රු";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(186, 156);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(34, 26);
-            this.label19.TabIndex = 67;
-            this.label19.Text = ".රු";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(186, 233);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(34, 26);
-            this.label20.TabIndex = 68;
-            this.label20.Text = ".රු";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label142
-            // 
-            this.label142.AutoSize = true;
-            this.label142.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label142.ForeColor = System.Drawing.Color.Black;
-            this.label142.Location = new System.Drawing.Point(696, 78);
-            this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(34, 26);
-            this.label142.TabIndex = 57;
-            this.label142.Text = ".රු";
-            this.label142.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label143
-            // 
-            this.label143.AutoSize = true;
-            this.label143.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label143.ForeColor = System.Drawing.Color.Black;
-            this.label143.Location = new System.Drawing.Point(696, 117);
-            this.label143.Name = "label143";
-            this.label143.Size = new System.Drawing.Size(34, 26);
-            this.label143.TabIndex = 56;
-            this.label143.Text = ".රු";
-            this.label143.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label144
-            // 
-            this.label144.AutoSize = true;
-            this.label144.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label144.ForeColor = System.Drawing.Color.Black;
-            this.label144.Location = new System.Drawing.Point(696, 156);
-            this.label144.Name = "label144";
-            this.label144.Size = new System.Drawing.Size(34, 26);
-            this.label144.TabIndex = 55;
-            this.label144.Text = ".රු";
-            this.label144.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label145
-            // 
-            this.label145.AutoSize = true;
-            this.label145.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label145.ForeColor = System.Drawing.Color.Black;
-            this.label145.Location = new System.Drawing.Point(696, 195);
-            this.label145.Name = "label145";
-            this.label145.Size = new System.Drawing.Size(34, 26);
-            this.label145.TabIndex = 54;
-            this.label145.Text = ".රු";
-            this.label145.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label146
-            // 
-            this.label146.AutoSize = true;
-            this.label146.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label146.ForeColor = System.Drawing.Color.Black;
-            this.label146.Location = new System.Drawing.Point(540, 195);
-            this.label146.Name = "label146";
-            this.label146.Size = new System.Drawing.Size(150, 26);
-            this.label146.TabIndex = 53;
-            this.label146.Text = "වැටුප් වැඩිවූ මුදල";
-            this.label146.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label147
-            // 
-            this.label147.AutoSize = true;
-            this.label147.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label147.ForeColor = System.Drawing.Color.Black;
-            this.label147.Location = new System.Drawing.Point(67, 195);
-            this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(154, 26);
-            this.label147.TabIndex = 52;
-            this.label147.Text = "වැටුප් වැඩිවූ දිනය";
-            this.label147.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label148
-            // 
-            this.label148.AutoSize = true;
-            this.label148.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label148.ForeColor = System.Drawing.Color.Black;
-            this.label148.Location = new System.Drawing.Point(566, 156);
-            this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(124, 26);
-            this.label148.TabIndex = 51;
-            this.label148.Text = "වෙනත් දීමනා";
-            this.label148.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label149
-            // 
-            this.label149.AutoSize = true;
-            this.label149.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label149.ForeColor = System.Drawing.Color.Black;
-            this.label149.Location = new System.Drawing.Point(60, 156);
-            this.label149.Name = "label149";
-            this.label149.Size = new System.Drawing.Size(130, 26);
-            this.label149.TabIndex = 50;
-            this.label149.Text = "නිවාස දීමනාව";
-            this.label149.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label150
-            // 
-            this.label150.AutoSize = true;
-            this.label150.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label150.ForeColor = System.Drawing.Color.Black;
-            this.label150.Location = new System.Drawing.Point(16, 233);
-            this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(174, 26);
-            this.label150.TabIndex = 47;
-            this.label150.Text = "වර්තමාන මුලු වැටුප";
-            this.label150.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label151
-            // 
-            this.label151.AutoSize = true;
-            this.label151.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label151.ForeColor = System.Drawing.Color.Black;
-            this.label151.Location = new System.Drawing.Point(544, 78);
-            this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(146, 26);
-            this.label151.TabIndex = 48;
-            this.label151.Text = "ප්‍රවාහන දීමනාව";
-            this.label151.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label152
-            // 
-            this.label152.AutoSize = true;
-            this.label152.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label152.ForeColor = System.Drawing.Color.Black;
-            this.label152.Location = new System.Drawing.Point(83, 78);
-            this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(107, 26);
-            this.label152.TabIndex = 61;
-            this.label152.Text = "මූලික වැටුප";
-            this.label152.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label153
-            // 
-            this.label153.AutoSize = true;
-            this.label153.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label153.ForeColor = System.Drawing.Color.Black;
-            this.label153.Location = new System.Drawing.Point(484, 117);
-            this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(206, 26);
-            this.label153.TabIndex = 62;
-            this.label153.Text = "ජංගම දුරකථන දීමනාව";
-            this.label153.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label154
-            // 
-            this.label154.AutoSize = true;
-            this.label154.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label154.ForeColor = System.Drawing.Color.Black;
-            this.label154.Location = new System.Drawing.Point(51, 117);
-            this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(139, 26);
-            this.label154.TabIndex = 49;
-            this.label154.Text = "ඉන්ධන දීමනාව";
-            this.label154.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // remun_salary_no
-            // 
-            this.remun_salary_no.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_salary_no.Location = new System.Drawing.Point(732, 36);
-            this.remun_salary_no.Name = "remun_salary_no";
-            this.remun_salary_no.Size = new System.Drawing.Size(150, 33);
-            this.remun_salary_no.TabIndex = 70;
-            // 
-            // remun_salary_grade
-            // 
-            this.remun_salary_grade.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_salary_grade.Location = new System.Drawing.Point(227, 36);
-            this.remun_salary_grade.Name = "remun_salary_grade";
-            this.remun_salary_grade.Size = new System.Drawing.Size(150, 33);
-            this.remun_salary_grade.TabIndex = 46;
-            // 
-            // remun_transport_allowance
-            // 
-            this.remun_transport_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_transport_allowance.Location = new System.Drawing.Point(732, 75);
-            this.remun_transport_allowance.Name = "remun_transport_allowance";
-            this.remun_transport_allowance.Size = new System.Drawing.Size(150, 33);
-            this.remun_transport_allowance.TabIndex = 71;
-            // 
-            // remun_basic_salary
-            // 
-            this.remun_basic_salary.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_basic_salary.Location = new System.Drawing.Point(227, 75);
-            this.remun_basic_salary.Name = "remun_basic_salary";
-            this.remun_basic_salary.Size = new System.Drawing.Size(150, 33);
-            this.remun_basic_salary.TabIndex = 58;
-            // 
-            // label155
-            // 
-            this.label155.AutoSize = true;
-            this.label155.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label155.ForeColor = System.Drawing.Color.Black;
-            this.label155.Location = new System.Drawing.Point(589, 39);
-            this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(134, 26);
-            this.label155.TabIndex = 59;
-            this.label155.Text = "පඩි පත් අංකය";
-            this.label155.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label156
-            // 
-            this.label156.AutoSize = true;
-            this.label156.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label156.ForeColor = System.Drawing.Color.Black;
-            this.label156.Location = new System.Drawing.Point(96, 39);
-            this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(125, 26);
-            this.label156.TabIndex = 60;
-            this.label156.Text = "වැටුප් ශ්‍රේණිය";
-            this.label156.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // remun_telephone_allowance
-            // 
-            this.remun_telephone_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_telephone_allowance.Location = new System.Drawing.Point(732, 114);
-            this.remun_telephone_allowance.Name = "remun_telephone_allowance";
-            this.remun_telephone_allowance.Size = new System.Drawing.Size(150, 33);
-            this.remun_telephone_allowance.TabIndex = 72;
-            // 
-            // remun_present_salary
-            // 
-            this.remun_present_salary.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_present_salary.Location = new System.Drawing.Point(227, 230);
-            this.remun_present_salary.Name = "remun_present_salary";
-            this.remun_present_salary.Size = new System.Drawing.Size(150, 33);
-            this.remun_present_salary.TabIndex = 69;
-            // 
-            // remun_increased_by
-            // 
-            this.remun_increased_by.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_increased_by.Location = new System.Drawing.Point(732, 192);
-            this.remun_increased_by.Name = "remun_increased_by";
-            this.remun_increased_by.Size = new System.Drawing.Size(150, 33);
-            this.remun_increased_by.TabIndex = 74;
-            // 
-            // remun_fuel_allowance
-            // 
-            this.remun_fuel_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_fuel_allowance.Location = new System.Drawing.Point(227, 114);
-            this.remun_fuel_allowance.Name = "remun_fuel_allowance";
-            this.remun_fuel_allowance.Size = new System.Drawing.Size(150, 33);
-            this.remun_fuel_allowance.TabIndex = 64;
-            // 
-            // remun_other_allowances
-            // 
-            this.remun_other_allowances.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_other_allowances.Location = new System.Drawing.Point(732, 153);
-            this.remun_other_allowances.Name = "remun_other_allowances";
-            this.remun_other_allowances.Size = new System.Drawing.Size(150, 33);
-            this.remun_other_allowances.TabIndex = 73;
-            // 
-            // remun_house_allowance
-            // 
-            this.remun_house_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_house_allowance.Location = new System.Drawing.Point(227, 153);
-            this.remun_house_allowance.Name = "remun_house_allowance";
-            this.remun_house_allowance.Size = new System.Drawing.Size(150, 33);
-            this.remun_house_allowance.TabIndex = 65;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(425, 114);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 26);
-            this.label10.TabIndex = 35;
-            this.label10.Text = "මාස";
-            // 
-            // qual_highest_qualification
-            // 
-            this.qual_highest_qualification.AutoSize = true;
-            this.qual_highest_qualification.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.qual_highest_qualification.Location = new System.Drawing.Point(330, 150);
-            this.qual_highest_qualification.Name = "qual_highest_qualification";
-            this.qual_highest_qualification.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.qual_highest_qualification.Size = new System.Drawing.Size(233, 31);
-            this.qual_highest_qualification.TabIndex = 34;
-            this.qual_highest_qualification.Text = "ප්‍රමුඛතම සුදුසුකම         ";
-            this.qual_highest_qualification.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(133, 484);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(180, 26);
-            this.label8.TabIndex = 33;
-            this.label8.Text = "සුදුසුකම් ලැබූ වර්ෂය";
-            // 
-            // qual_year
-            // 
-            this.qual_year.Location = new System.Drawing.Point(319, 477);
-            this.qual_year.Name = "qual_year";
-            this.qual_year.Size = new System.Drawing.Size(120, 33);
-            this.qual_year.TabIndex = 32;
-            // 
-            // qual_qualification
-            // 
-            this.qual_qualification.Location = new System.Drawing.Point(319, 438);
-            this.qual_qualification.Name = "qual_qualification";
-            this.qual_qualification.Size = new System.Drawing.Size(200, 33);
-            this.qual_qualification.TabIndex = 31;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(230, 441);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 26);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "සුදුසුකම";
-            // 
-            // qual_note
-            // 
-            this.qual_note.Location = new System.Drawing.Point(319, 227);
-            this.qual_note.Multiline = true;
-            this.qual_note.Name = "qual_note";
-            this.qual_note.Size = new System.Drawing.Size(350, 200);
-            this.qual_note.TabIndex = 29;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(240, 225);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 26);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "සටහන්";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(240, 190);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 26);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "තත්වය";
-            // 
-            // qual_status
-            // 
-            this.qual_status.FormattingEnabled = true;
-            this.qual_status.Location = new System.Drawing.Point(319, 187);
-            this.qual_status.Name = "qual_status";
-            this.qual_status.Size = new System.Drawing.Size(200, 34);
-            this.qual_status.TabIndex = 26;
-            // 
-            // qual_occupation_relevant
-            // 
-            this.qual_occupation_relevant.AutoSize = true;
-            this.qual_occupation_relevant.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.qual_occupation_relevant.Location = new System.Drawing.Point(94, 150);
-            this.qual_occupation_relevant.Name = "qual_occupation_relevant";
-            this.qual_occupation_relevant.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.qual_occupation_relevant.Size = new System.Drawing.Size(230, 31);
-            this.qual_occupation_relevant.TabIndex = 25;
-            this.qual_occupation_relevant.Text = "රැකියාවට අනුකූල         ";
-            this.qual_occupation_relevant.UseVisualStyleBackColor = true;
-            // 
-            // qual_months
-            // 
-            this.qual_months.Location = new System.Drawing.Point(319, 111);
-            this.qual_months.Name = "qual_months";
-            this.qual_months.Size = new System.Drawing.Size(100, 33);
-            this.qual_months.TabIndex = 24;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(209, 114);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 26);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "කාල සීමාව";
-            // 
-            // qualification_no
-            // 
-            this.qualification_no.Location = new System.Drawing.Point(319, 34);
-            this.qualification_no.Name = "qualification_no";
-            this.qualification_no.Size = new System.Drawing.Size(200, 33);
-            this.qualification_no.TabIndex = 22;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(21, 76);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(292, 26);
-            this.label14.TabIndex = 21;
-            this.label14.Text = "පාසැල / උසස් අධ්‍යාපන ආයතනය";
-            // 
-            // qual_institute
-            // 
-            this.qual_institute.Location = new System.Drawing.Point(319, 73);
-            this.qual_institute.Name = "qual_institute";
-            this.qual_institute.Size = new System.Drawing.Size(200, 33);
-            this.qual_institute.TabIndex = 20;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(172, 41);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(141, 26);
-            this.label15.TabIndex = 19;
-            this.label15.Text = "සුදුසුකම් අංකය";
+            this.insurance_ended_year.Location = new System.Drawing.Point(326, 139);
+            this.insurance_ended_year.Name = "insurance_ended_year";
+            this.insurance_ended_year.Size = new System.Drawing.Size(103, 34);
+            this.insurance_ended_year.TabIndex = 54;
+            this.insurance_ended_year.Text = "   වර්ෂය";
+            // 
+            // insurance_started_day
+            // 
+            this.insurance_started_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.insurance_started_day.FormattingEnabled = true;
+            this.insurance_started_day.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.insurance_started_day.Location = new System.Drawing.Point(532, 100);
+            this.insurance_started_day.Name = "insurance_started_day";
+            this.insurance_started_day.Size = new System.Drawing.Size(91, 34);
+            this.insurance_started_day.TabIndex = 53;
+            this.insurance_started_day.Text = "    දිනය";
+            // 
+            // insurance_started_month
+            // 
+            this.insurance_started_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.insurance_started_month.FormattingEnabled = true;
+            this.insurance_started_month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.insurance_started_month.Location = new System.Drawing.Point(435, 100);
+            this.insurance_started_month.Name = "insurance_started_month";
+            this.insurance_started_month.Size = new System.Drawing.Size(91, 34);
+            this.insurance_started_month.TabIndex = 52;
+            this.insurance_started_month.Text = "   මාසය";
+            // 
+            // insurance_started_year
+            // 
+            this.insurance_started_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.insurance_started_year.FormattingEnabled = true;
+            this.insurance_started_year.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946"});
+            this.insurance_started_year.Location = new System.Drawing.Point(326, 100);
+            this.insurance_started_year.Name = "insurance_started_year";
+            this.insurance_started_year.Size = new System.Drawing.Size(103, 34);
+            this.insurance_started_year.TabIndex = 51;
+            this.insurance_started_year.Text = "   වර්ෂය";
+            // 
+            // insurance_type
+            // 
+            this.insurance_type.FormattingEnabled = true;
+            this.insurance_type.Location = new System.Drawing.Point(326, 22);
+            this.insurance_type.Name = "insurance_type";
+            this.insurance_type.Size = new System.Drawing.Size(121, 34);
+            this.insurance_type.TabIndex = 50;
+            // 
+            // label131
+            // 
+            this.label131.AutoSize = true;
+            this.label131.Location = new System.Drawing.Point(248, 182);
+            this.label131.Name = "label131";
+            this.label131.Size = new System.Drawing.Size(74, 26);
+            this.label131.TabIndex = 49;
+            this.label131.Text = "සටහන්";
+            // 
+            // label132
+            // 
+            this.label132.AutoSize = true;
+            this.label132.Location = new System.Drawing.Point(30, 145);
+            this.label132.Name = "label132";
+            this.label132.Size = new System.Drawing.Size(292, 26);
+            this.label132.TabIndex = 48;
+            this.label132.Text = "රක්ෂණය කල් ඉකුත්වන කළ දිනය";
+            // 
+            // insurance_notes
+            // 
+            this.insurance_notes.Location = new System.Drawing.Point(326, 179);
+            this.insurance_notes.Multiline = true;
+            this.insurance_notes.Name = "insurance_notes";
+            this.insurance_notes.Size = new System.Drawing.Size(350, 159);
+            this.insurance_notes.TabIndex = 47;
+            // 
+            // label133
+            // 
+            this.label133.AutoSize = true;
+            this.label133.Location = new System.Drawing.Point(62, 106);
+            this.label133.Name = "label133";
+            this.label133.Size = new System.Drawing.Size(258, 26);
+            this.label133.TabIndex = 46;
+            this.label133.Text = "රක්ෂණය ආරම්භක කළ දිනය";
+            // 
+            // insurance_value
+            // 
+            this.insurance_value.Location = new System.Drawing.Point(326, 62);
+            this.insurance_value.Name = "insurance_value";
+            this.insurance_value.Size = new System.Drawing.Size(200, 33);
+            this.insurance_value.TabIndex = 45;
+            // 
+            // label134
+            // 
+            this.label134.AutoSize = true;
+            this.label134.Location = new System.Drawing.Point(93, 65);
+            this.label134.Name = "label134";
+            this.label134.Size = new System.Drawing.Size(227, 26);
+            this.label134.TabIndex = 44;
+            this.label134.Text = "රක්ෂණයේ වටිනාකම (රු.)";
+            // 
+            // label135
+            // 
+            this.label135.AutoSize = true;
+            this.label135.Location = new System.Drawing.Point(185, 25);
+            this.label135.Name = "label135";
+            this.label135.Size = new System.Drawing.Size(137, 26);
+            this.label135.TabIndex = 43;
+            this.label135.Text = "රක්ෂණ වර්ගය";
+            // 
+            // bank_account_closed_day
+            // 
+            this.bank_account_closed_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.bank_account_closed_day.FormattingEnabled = true;
+            this.bank_account_closed_day.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.bank_account_closed_day.Location = new System.Drawing.Point(417, 222);
+            this.bank_account_closed_day.Name = "bank_account_closed_day";
+            this.bank_account_closed_day.Size = new System.Drawing.Size(91, 34);
+            this.bank_account_closed_day.TabIndex = 58;
+            this.bank_account_closed_day.Text = "    දිනය";
+            // 
+            // bank_account_closed_month
+            // 
+            this.bank_account_closed_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.bank_account_closed_month.FormattingEnabled = true;
+            this.bank_account_closed_month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.bank_account_closed_month.Location = new System.Drawing.Point(320, 222);
+            this.bank_account_closed_month.Name = "bank_account_closed_month";
+            this.bank_account_closed_month.Size = new System.Drawing.Size(91, 34);
+            this.bank_account_closed_month.TabIndex = 57;
+            this.bank_account_closed_month.Text = "   මාසය";
+            // 
+            // bank_account_closed_year
+            // 
+            this.bank_account_closed_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.bank_account_closed_year.FormattingEnabled = true;
+            this.bank_account_closed_year.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946"});
+            this.bank_account_closed_year.Location = new System.Drawing.Point(211, 222);
+            this.bank_account_closed_year.Name = "bank_account_closed_year";
+            this.bank_account_closed_year.Size = new System.Drawing.Size(103, 34);
+            this.bank_account_closed_year.TabIndex = 56;
+            this.bank_account_closed_year.Text = "   වර්ෂය";
+            // 
+            // bank_account_created_day
+            // 
+            this.bank_account_created_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.bank_account_created_day.FormattingEnabled = true;
+            this.bank_account_created_day.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.bank_account_created_day.Location = new System.Drawing.Point(417, 183);
+            this.bank_account_created_day.Name = "bank_account_created_day";
+            this.bank_account_created_day.Size = new System.Drawing.Size(91, 34);
+            this.bank_account_created_day.TabIndex = 55;
+            this.bank_account_created_day.Text = "    දිනය";
+            // 
+            // bank_account_created_month
+            // 
+            this.bank_account_created_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.bank_account_created_month.FormattingEnabled = true;
+            this.bank_account_created_month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.bank_account_created_month.Location = new System.Drawing.Point(320, 183);
+            this.bank_account_created_month.Name = "bank_account_created_month";
+            this.bank_account_created_month.Size = new System.Drawing.Size(91, 34);
+            this.bank_account_created_month.TabIndex = 54;
+            this.bank_account_created_month.Text = "   මාසය";
+            // 
+            // bank_account_created_year
+            // 
+            this.bank_account_created_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.bank_account_created_year.FormattingEnabled = true;
+            this.bank_account_created_year.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946"});
+            this.bank_account_created_year.Location = new System.Drawing.Point(211, 183);
+            this.bank_account_created_year.Name = "bank_account_created_year";
+            this.bank_account_created_year.Size = new System.Drawing.Size(103, 34);
+            this.bank_account_created_year.TabIndex = 53;
+            this.bank_account_created_year.Text = "   වර්ෂය";
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Location = new System.Drawing.Point(83, 106);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(120, 26);
+            this.label123.TabIndex = 52;
+            this.label123.Text = "ගිණුම් අංකය";
+            // 
+            // bank_account_name
+            // 
+            this.bank_account_name.Location = new System.Drawing.Point(211, 103);
+            this.bank_account_name.Name = "bank_account_name";
+            this.bank_account_name.Size = new System.Drawing.Size(200, 33);
+            this.bank_account_name.TabIndex = 51;
+            // 
+            // label124
+            // 
+            this.label124.AutoSize = true;
+            this.label124.Location = new System.Drawing.Point(68, 186);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(138, 26);
+            this.label124.TabIndex = 50;
+            this.label124.Text = "ආරම්භක දිනය";
+            // 
+            // bank_account_type
+            // 
+            this.bank_account_type.FormattingEnabled = true;
+            this.bank_account_type.Location = new System.Drawing.Point(211, 141);
+            this.bank_account_type.Name = "bank_account_type";
+            this.bank_account_type.Size = new System.Drawing.Size(200, 34);
+            this.bank_account_type.TabIndex = 49;
+            // 
+            // bank_name
+            // 
+            this.bank_name.FormattingEnabled = true;
+            this.bank_name.Location = new System.Drawing.Point(211, 22);
+            this.bank_name.Name = "bank_name";
+            this.bank_name.Size = new System.Drawing.Size(200, 34);
+            this.bank_name.TabIndex = 48;
+            // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Location = new System.Drawing.Point(83, 225);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(122, 26);
+            this.label125.TabIndex = 47;
+            this.label125.Text = "අවසාන දිනය";
+            // 
+            // bank_branch_name
+            // 
+            this.bank_branch_name.Location = new System.Drawing.Point(211, 64);
+            this.bank_branch_name.Name = "bank_branch_name";
+            this.bank_branch_name.Size = new System.Drawing.Size(200, 33);
+            this.bank_branch_name.TabIndex = 46;
+            // 
+            // label126
+            // 
+            this.label126.AutoSize = true;
+            this.label126.Location = new System.Drawing.Point(88, 67);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(118, 26);
+            this.label126.TabIndex = 45;
+            this.label126.Text = "ශාඛාවේ නම";
+            // 
+            // label127
+            // 
+            this.label127.AutoSize = true;
+            this.label127.Location = new System.Drawing.Point(86, 144);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(123, 26);
+            this.label127.TabIndex = 44;
+            this.label127.Text = "ගිණුම් වර්ගය";
+            // 
+            // label128
+            // 
+            this.label128.AutoSize = true;
+            this.label128.Location = new System.Drawing.Point(86, 25);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(119, 26);
+            this.label128.TabIndex = 43;
+            this.label128.Text = "බැංකුවේ නම";
+            // 
+            // label129
+            // 
+            this.label129.AutoSize = true;
+            this.label129.Location = new System.Drawing.Point(25, 308);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(180, 26);
+            this.label129.TabIndex = 62;
+            this.label129.Text = "සුදුසුකම් ලැබූ වර්ෂය";
+            // 
+            // bank_qualified_year
+            // 
+            this.bank_qualified_year.Location = new System.Drawing.Point(211, 301);
+            this.bank_qualified_year.Name = "bank_qualified_year";
+            this.bank_qualified_year.Size = new System.Drawing.Size(120, 33);
+            this.bank_qualified_year.TabIndex = 61;
+            // 
+            // bank_qualification
+            // 
+            this.bank_qualification.Location = new System.Drawing.Point(211, 262);
+            this.bank_qualification.Name = "bank_qualification";
+            this.bank_qualification.Size = new System.Drawing.Size(200, 33);
+            this.bank_qualification.TabIndex = 60;
+            // 
+            // label130
+            // 
+            this.label130.AutoSize = true;
+            this.label130.Location = new System.Drawing.Point(122, 265);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(84, 26);
+            this.label130.TabIndex = 59;
+            this.label130.Text = "සුදුසුකම";
+            // 
+            // label136
+            // 
+            this.label136.AutoSize = true;
+            this.label136.Location = new System.Drawing.Point(86, 183);
+            this.label136.Name = "label136";
+            this.label136.Size = new System.Drawing.Size(74, 26);
+            this.label136.TabIndex = 21;
+            this.label136.Text = "සටහන්";
+            // 
+            // label137
+            // 
+            this.label137.AutoSize = true;
+            this.label137.Location = new System.Drawing.Point(65, 64);
+            this.label137.Name = "label137";
+            this.label137.Size = new System.Drawing.Size(94, 26);
+            this.label137.TabIndex = 20;
+            this.label137.Text = "බදු අංකය";
+            // 
+            // tax_no
+            // 
+            this.tax_no.Location = new System.Drawing.Point(165, 61);
+            this.tax_no.Name = "tax_no";
+            this.tax_no.Size = new System.Drawing.Size(200, 33);
+            this.tax_no.TabIndex = 19;
+            // 
+            // tax_status
+            // 
+            this.tax_status.FormattingEnabled = true;
+            this.tax_status.Location = new System.Drawing.Point(165, 140);
+            this.tax_status.Name = "tax_status";
+            this.tax_status.Size = new System.Drawing.Size(121, 34);
+            this.tax_status.TabIndex = 18;
+            // 
+            // label138
+            // 
+            this.label138.AutoSize = true;
+            this.label138.Location = new System.Drawing.Point(86, 143);
+            this.label138.Name = "label138";
+            this.label138.Size = new System.Drawing.Size(73, 26);
+            this.label138.TabIndex = 17;
+            this.label138.Text = "තත්වය";
+            // 
+            // tax_notes
+            // 
+            this.tax_notes.Location = new System.Drawing.Point(165, 180);
+            this.tax_notes.Multiline = true;
+            this.tax_notes.Name = "tax_notes";
+            this.tax_notes.Size = new System.Drawing.Size(350, 158);
+            this.tax_notes.TabIndex = 16;
+            // 
+            // tax_type
+            // 
+            this.tax_type.Location = new System.Drawing.Point(165, 22);
+            this.tax_type.Name = "tax_type";
+            this.tax_type.Size = new System.Drawing.Size(200, 33);
+            this.tax_type.TabIndex = 15;
+            // 
+            // label139
+            // 
+            this.label139.AutoSize = true;
+            this.label139.Location = new System.Drawing.Point(17, 103);
+            this.label139.Name = "label139";
+            this.label139.Size = new System.Drawing.Size(142, 26);
+            this.label139.TabIndex = 14;
+            this.label139.Text = "ගෙවීම් ආකාරය";
+            // 
+            // tax_paying_method
+            // 
+            this.tax_paying_method.FormattingEnabled = true;
+            this.tax_paying_method.Location = new System.Drawing.Point(165, 100);
+            this.tax_paying_method.Name = "tax_paying_method";
+            this.tax_paying_method.Size = new System.Drawing.Size(121, 34);
+            this.tax_paying_method.TabIndex = 13;
+            // 
+            // label140
+            // 
+            this.label140.AutoSize = true;
+            this.label140.Location = new System.Drawing.Point(62, 25);
+            this.label140.Name = "label140";
+            this.label140.Size = new System.Drawing.Size(97, 26);
+            this.label140.TabIndex = 12;
+            this.label140.Text = "බදු වර්ගය";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.comboBox1.Location = new System.Drawing.Point(449, 178);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(91, 32);
+            this.comboBox1.TabIndex = 109;
+            this.comboBox1.Text = "    දිනය";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.comboBox2.Location = new System.Drawing.Point(352, 178);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(91, 32);
+            this.comboBox2.TabIndex = 108;
+            this.comboBox2.Text = "   මාසය";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946"});
+            this.comboBox3.Location = new System.Drawing.Point(243, 178);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(103, 32);
+            this.comboBox3.TabIndex = 107;
+            this.comboBox3.Text = "   වර්ෂය";
+            // 
+            // label157
+            // 
+            this.label157.AutoSize = true;
+            this.label157.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label157.ForeColor = System.Drawing.Color.Black;
+            this.label157.Location = new System.Drawing.Point(202, 64);
+            this.label157.Name = "label157";
+            this.label157.Size = new System.Drawing.Size(35, 26);
+            this.label157.TabIndex = 95;
+            this.label157.Text = ".රු";
+            this.label157.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label158
+            // 
+            this.label158.AutoSize = true;
+            this.label158.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label158.ForeColor = System.Drawing.Color.Black;
+            this.label158.Location = new System.Drawing.Point(202, 103);
+            this.label158.Name = "label158";
+            this.label158.Size = new System.Drawing.Size(35, 26);
+            this.label158.TabIndex = 98;
+            this.label158.Text = ".රු";
+            this.label158.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label159
+            // 
+            this.label159.AutoSize = true;
+            this.label159.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label159.ForeColor = System.Drawing.Color.Black;
+            this.label159.Location = new System.Drawing.Point(202, 142);
+            this.label159.Name = "label159";
+            this.label159.Size = new System.Drawing.Size(35, 26);
+            this.label159.TabIndex = 99;
+            this.label159.Text = ".රු";
+            this.label159.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label160
+            // 
+            this.label160.AutoSize = true;
+            this.label160.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label160.ForeColor = System.Drawing.Color.Black;
+            this.label160.Location = new System.Drawing.Point(202, 219);
+            this.label160.Name = "label160";
+            this.label160.Size = new System.Drawing.Size(35, 26);
+            this.label160.TabIndex = 100;
+            this.label160.Text = ".රු";
+            this.label160.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label161
+            // 
+            this.label161.AutoSize = true;
+            this.label161.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label161.ForeColor = System.Drawing.Color.Black;
+            this.label161.Location = new System.Drawing.Point(712, 64);
+            this.label161.Name = "label161";
+            this.label161.Size = new System.Drawing.Size(35, 26);
+            this.label161.TabIndex = 89;
+            this.label161.Text = ".රු";
+            this.label161.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label170
+            // 
+            this.label170.AutoSize = true;
+            this.label170.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label170.ForeColor = System.Drawing.Color.Black;
+            this.label170.Location = new System.Drawing.Point(712, 103);
+            this.label170.Name = "label170";
+            this.label170.Size = new System.Drawing.Size(35, 26);
+            this.label170.TabIndex = 88;
+            this.label170.Text = ".රු";
+            this.label170.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label171
+            // 
+            this.label171.AutoSize = true;
+            this.label171.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label171.ForeColor = System.Drawing.Color.Black;
+            this.label171.Location = new System.Drawing.Point(712, 142);
+            this.label171.Name = "label171";
+            this.label171.Size = new System.Drawing.Size(35, 26);
+            this.label171.TabIndex = 87;
+            this.label171.Text = ".රු";
+            this.label171.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label172
+            // 
+            this.label172.AutoSize = true;
+            this.label172.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label172.ForeColor = System.Drawing.Color.Black;
+            this.label172.Location = new System.Drawing.Point(712, 181);
+            this.label172.Name = "label172";
+            this.label172.Size = new System.Drawing.Size(35, 26);
+            this.label172.TabIndex = 86;
+            this.label172.Text = ".රු";
+            this.label172.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label173
+            // 
+            this.label173.AutoSize = true;
+            this.label173.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label173.ForeColor = System.Drawing.Color.Black;
+            this.label173.Location = new System.Drawing.Point(556, 181);
+            this.label173.Name = "label173";
+            this.label173.Size = new System.Drawing.Size(150, 26);
+            this.label173.TabIndex = 85;
+            this.label173.Text = "වැටුප් වැඩිවූ මුදල";
+            this.label173.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label174
+            // 
+            this.label174.AutoSize = true;
+            this.label174.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label174.ForeColor = System.Drawing.Color.Black;
+            this.label174.Location = new System.Drawing.Point(83, 181);
+            this.label174.Name = "label174";
+            this.label174.Size = new System.Drawing.Size(154, 26);
+            this.label174.TabIndex = 84;
+            this.label174.Text = "වැටුප් වැඩිවූ දිනය";
+            this.label174.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label175
+            // 
+            this.label175.AutoSize = true;
+            this.label175.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label175.ForeColor = System.Drawing.Color.Black;
+            this.label175.Location = new System.Drawing.Point(582, 142);
+            this.label175.Name = "label175";
+            this.label175.Size = new System.Drawing.Size(124, 26);
+            this.label175.TabIndex = 83;
+            this.label175.Text = "වෙනත් දීමනා";
+            this.label175.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label176
+            // 
+            this.label176.AutoSize = true;
+            this.label176.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label176.ForeColor = System.Drawing.Color.Black;
+            this.label176.Location = new System.Drawing.Point(76, 142);
+            this.label176.Name = "label176";
+            this.label176.Size = new System.Drawing.Size(130, 26);
+            this.label176.TabIndex = 82;
+            this.label176.Text = "නිවාස දීමනාව";
+            this.label176.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label177
+            // 
+            this.label177.AutoSize = true;
+            this.label177.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label177.ForeColor = System.Drawing.Color.Black;
+            this.label177.Location = new System.Drawing.Point(32, 219);
+            this.label177.Name = "label177";
+            this.label177.Size = new System.Drawing.Size(174, 26);
+            this.label177.TabIndex = 79;
+            this.label177.Text = "වර්තමාන මුලු වැටුප";
+            this.label177.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label178
+            // 
+            this.label178.AutoSize = true;
+            this.label178.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label178.ForeColor = System.Drawing.Color.Black;
+            this.label178.Location = new System.Drawing.Point(560, 64);
+            this.label178.Name = "label178";
+            this.label178.Size = new System.Drawing.Size(146, 26);
+            this.label178.TabIndex = 80;
+            this.label178.Text = "ප්‍රවාහන දීමනාව";
+            this.label178.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label179
+            // 
+            this.label179.AutoSize = true;
+            this.label179.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label179.ForeColor = System.Drawing.Color.Black;
+            this.label179.Location = new System.Drawing.Point(99, 64);
+            this.label179.Name = "label179";
+            this.label179.Size = new System.Drawing.Size(107, 26);
+            this.label179.TabIndex = 93;
+            this.label179.Text = "මූලික වැටුප";
+            this.label179.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label180
+            // 
+            this.label180.AutoSize = true;
+            this.label180.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label180.ForeColor = System.Drawing.Color.Black;
+            this.label180.Location = new System.Drawing.Point(500, 103);
+            this.label180.Name = "label180";
+            this.label180.Size = new System.Drawing.Size(206, 26);
+            this.label180.TabIndex = 94;
+            this.label180.Text = "ජංගම දුරකථන දීමනාව";
+            this.label180.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label181
+            // 
+            this.label181.AutoSize = true;
+            this.label181.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label181.ForeColor = System.Drawing.Color.Black;
+            this.label181.Location = new System.Drawing.Point(67, 103);
+            this.label181.Name = "label181";
+            this.label181.Size = new System.Drawing.Size(139, 26);
+            this.label181.TabIndex = 81;
+            this.label181.Text = "ඉන්ධන දීමනාව";
+            this.label181.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.textBox1.Location = new System.Drawing.Point(748, 22);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(150, 33);
+            this.textBox1.TabIndex = 102;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.textBox2.Location = new System.Drawing.Point(243, 22);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(150, 33);
+            this.textBox2.TabIndex = 78;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.textBox3.Location = new System.Drawing.Point(748, 61);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(150, 33);
+            this.textBox3.TabIndex = 103;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.textBox4.Location = new System.Drawing.Point(243, 61);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(150, 33);
+            this.textBox4.TabIndex = 90;
+            // 
+            // label182
+            // 
+            this.label182.AutoSize = true;
+            this.label182.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label182.ForeColor = System.Drawing.Color.Black;
+            this.label182.Location = new System.Drawing.Point(605, 25);
+            this.label182.Name = "label182";
+            this.label182.Size = new System.Drawing.Size(134, 26);
+            this.label182.TabIndex = 91;
+            this.label182.Text = "පඩි පත් අංකය";
+            this.label182.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label183
+            // 
+            this.label183.AutoSize = true;
+            this.label183.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label183.ForeColor = System.Drawing.Color.Black;
+            this.label183.Location = new System.Drawing.Point(112, 25);
+            this.label183.Name = "label183";
+            this.label183.Size = new System.Drawing.Size(125, 26);
+            this.label183.TabIndex = 92;
+            this.label183.Text = "වැටුප් ශ්‍රේණිය";
+            this.label183.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.textBox5.Location = new System.Drawing.Point(748, 100);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(150, 33);
+            this.textBox5.TabIndex = 104;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.textBox6.Location = new System.Drawing.Point(243, 216);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(150, 33);
+            this.textBox6.TabIndex = 101;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.textBox7.Location = new System.Drawing.Point(748, 178);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(150, 33);
+            this.textBox7.TabIndex = 106;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.textBox8.Location = new System.Drawing.Point(243, 100);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(150, 33);
+            this.textBox8.TabIndex = 96;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.textBox9.Location = new System.Drawing.Point(748, 139);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(150, 33);
+            this.textBox9.TabIndex = 105;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.textBox10.Location = new System.Drawing.Point(243, 139);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(150, 33);
+            this.textBox10.TabIndex = 97;
+            // 
+            // cash_issued_day
+            // 
+            this.cash_issued_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.cash_issued_day.FormattingEnabled = true;
+            this.cash_issued_day.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.cash_issued_day.Location = new System.Drawing.Point(397, 61);
+            this.cash_issued_day.Name = "cash_issued_day";
+            this.cash_issued_day.Size = new System.Drawing.Size(91, 34);
+            this.cash_issued_day.TabIndex = 50;
+            this.cash_issued_day.Text = "    දිනය";
+            // 
+            // cash_issued_month
+            // 
+            this.cash_issued_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.cash_issued_month.FormattingEnabled = true;
+            this.cash_issued_month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.cash_issued_month.Location = new System.Drawing.Point(300, 61);
+            this.cash_issued_month.Name = "cash_issued_month";
+            this.cash_issued_month.Size = new System.Drawing.Size(91, 34);
+            this.cash_issued_month.TabIndex = 49;
+            this.cash_issued_month.Text = "   මාසය";
+            // 
+            // cash_issued_year
+            // 
+            this.cash_issued_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.cash_issued_year.FormattingEnabled = true;
+            this.cash_issued_year.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946"});
+            this.cash_issued_year.Location = new System.Drawing.Point(191, 61);
+            this.cash_issued_year.Name = "cash_issued_year";
+            this.cash_issued_year.Size = new System.Drawing.Size(103, 34);
+            this.cash_issued_year.TabIndex = 48;
+            this.cash_issued_year.Text = "   වර්ෂය";
+            // 
+            // label184
+            // 
+            this.label184.AutoSize = true;
+            this.label184.Location = new System.Drawing.Point(146, 103);
+            this.label184.Name = "label184";
+            this.label184.Size = new System.Drawing.Size(39, 26);
+            this.label184.TabIndex = 44;
+            this.label184.Text = "මිල";
+            this.label184.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label185
+            // 
+            this.label185.AutoSize = true;
+            this.label185.Location = new System.Drawing.Point(39, 64);
+            this.label185.Name = "label185";
+            this.label185.Size = new System.Drawing.Size(146, 26);
+            this.label185.TabIndex = 45;
+            this.label185.Text = "නිකුත් කළ දිනය";
+            this.label185.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label186
+            // 
+            this.label186.AutoSize = true;
+            this.label186.Location = new System.Drawing.Point(26, 25);
+            this.label186.Name = "label186";
+            this.label186.Size = new System.Drawing.Size(159, 26);
+            this.label186.TabIndex = 43;
+            this.label186.Text = "අනුමත ප්‍රතිලාභය";
+            this.label186.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // cash_issued_price
+            // 
+            this.cash_issued_price.Location = new System.Drawing.Point(191, 101);
+            this.cash_issued_price.Name = "cash_issued_price";
+            this.cash_issued_price.Size = new System.Drawing.Size(200, 33);
+            this.cash_issued_price.TabIndex = 47;
+            // 
+            // cash_approved_benefit
+            // 
+            this.cash_approved_benefit.Location = new System.Drawing.Point(191, 22);
+            this.cash_approved_benefit.Name = "cash_approved_benefit";
+            this.cash_approved_benefit.Size = new System.Drawing.Size(200, 33);
+            this.cash_approved_benefit.TabIndex = 46;
+            // 
+            // noncash_issued_day
+            // 
+            this.noncash_issued_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.noncash_issued_day.FormattingEnabled = true;
+            this.noncash_issued_day.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.noncash_issued_day.Location = new System.Drawing.Point(400, 61);
+            this.noncash_issued_day.Name = "noncash_issued_day";
+            this.noncash_issued_day.Size = new System.Drawing.Size(91, 34);
+            this.noncash_issued_day.TabIndex = 49;
+            this.noncash_issued_day.Text = "    දිනය";
+            // 
+            // noncash_issued_month
+            // 
+            this.noncash_issued_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.noncash_issued_month.FormattingEnabled = true;
+            this.noncash_issued_month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.noncash_issued_month.Location = new System.Drawing.Point(303, 61);
+            this.noncash_issued_month.Name = "noncash_issued_month";
+            this.noncash_issued_month.Size = new System.Drawing.Size(91, 34);
+            this.noncash_issued_month.TabIndex = 48;
+            this.noncash_issued_month.Text = "   මාසය";
+            // 
+            // noncash_issued_year
+            // 
+            this.noncash_issued_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.noncash_issued_year.FormattingEnabled = true;
+            this.noncash_issued_year.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946"});
+            this.noncash_issued_year.Location = new System.Drawing.Point(194, 61);
+            this.noncash_issued_year.Name = "noncash_issued_year";
+            this.noncash_issued_year.Size = new System.Drawing.Size(103, 34);
+            this.noncash_issued_year.TabIndex = 47;
+            this.noncash_issued_year.Text = "   වර්ෂය";
+            // 
+            // label187
+            // 
+            this.label187.AutoSize = true;
+            this.label187.Location = new System.Drawing.Point(42, 64);
+            this.label187.Name = "label187";
+            this.label187.Size = new System.Drawing.Size(146, 26);
+            this.label187.TabIndex = 45;
+            this.label187.Text = "නිකුත් කළ දිනය";
+            this.label187.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label188
+            // 
+            this.label188.AutoSize = true;
+            this.label188.Location = new System.Drawing.Point(149, 143);
+            this.label188.Name = "label188";
+            this.label188.Size = new System.Drawing.Size(39, 26);
+            this.label188.TabIndex = 41;
+            this.label188.Text = "මිල";
+            this.label188.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label189
+            // 
+            this.label189.AutoSize = true;
+            this.label189.Location = new System.Drawing.Point(106, 104);
+            this.label189.Name = "label189";
+            this.label189.Size = new System.Drawing.Size(82, 26);
+            this.label189.TabIndex = 42;
+            this.label189.Text = "ප්‍රමාණය";
+            this.label189.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label190
+            // 
+            this.label190.AutoSize = true;
+            this.label190.Location = new System.Drawing.Point(29, 25);
+            this.label190.Name = "label190";
+            this.label190.Size = new System.Drawing.Size(159, 26);
+            this.label190.TabIndex = 40;
+            this.label190.Text = "අනුමත ප්‍රතිලාභය";
+            this.label190.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // noncash_price
+            // 
+            this.noncash_price.Location = new System.Drawing.Point(194, 140);
+            this.noncash_price.Name = "noncash_price";
+            this.noncash_price.Size = new System.Drawing.Size(100, 33);
+            this.noncash_price.TabIndex = 46;
+            // 
+            // noncash_quantity
+            // 
+            this.noncash_quantity.Location = new System.Drawing.Point(194, 101);
+            this.noncash_quantity.Name = "noncash_quantity";
+            this.noncash_quantity.Size = new System.Drawing.Size(100, 33);
+            this.noncash_quantity.TabIndex = 44;
+            // 
+            // noncash_approved_benefit
+            // 
+            this.noncash_approved_benefit.Location = new System.Drawing.Point(194, 22);
+            this.noncash_approved_benefit.Name = "noncash_approved_benefit";
+            this.noncash_approved_benefit.Size = new System.Drawing.Size(200, 33);
+            this.noncash_approved_benefit.TabIndex = 43;
+            // 
+            // passport_renewal_day
+            // 
+            this.passport_renewal_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.passport_renewal_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.passport_renewal_day.FormattingEnabled = true;
+            this.passport_renewal_day.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.passport_renewal_day.Location = new System.Drawing.Point(472, 221);
+            this.passport_renewal_day.Name = "passport_renewal_day";
+            this.passport_renewal_day.Size = new System.Drawing.Size(91, 34);
+            this.passport_renewal_day.TabIndex = 56;
+            this.passport_renewal_day.Text = "    දිනය";
+            // 
+            // passport_issued_day
+            // 
+            this.passport_issued_day.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.passport_issued_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.passport_issued_day.FormattingEnabled = true;
+            this.passport_issued_day.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.passport_issued_day.Location = new System.Drawing.Point(472, 181);
+            this.passport_issued_day.Name = "passport_issued_day";
+            this.passport_issued_day.Size = new System.Drawing.Size(91, 34);
+            this.passport_issued_day.TabIndex = 55;
+            this.passport_issued_day.Text = "    දිනය";
+            // 
+            // passport_renewal_month
+            // 
+            this.passport_renewal_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.passport_renewal_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.passport_renewal_month.FormattingEnabled = true;
+            this.passport_renewal_month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.passport_renewal_month.Location = new System.Drawing.Point(375, 221);
+            this.passport_renewal_month.Name = "passport_renewal_month";
+            this.passport_renewal_month.Size = new System.Drawing.Size(91, 34);
+            this.passport_renewal_month.TabIndex = 54;
+            this.passport_renewal_month.Text = "   මාසය";
+            // 
+            // passport_issued_month
+            // 
+            this.passport_issued_month.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.passport_issued_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.passport_issued_month.FormattingEnabled = true;
+            this.passport_issued_month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.passport_issued_month.Location = new System.Drawing.Point(375, 181);
+            this.passport_issued_month.Name = "passport_issued_month";
+            this.passport_issued_month.Size = new System.Drawing.Size(91, 34);
+            this.passport_issued_month.TabIndex = 53;
+            this.passport_issued_month.Text = "   මාසය";
+            // 
+            // passport_renewal_year
+            // 
+            this.passport_renewal_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.passport_renewal_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.passport_renewal_year.FormattingEnabled = true;
+            this.passport_renewal_year.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946"});
+            this.passport_renewal_year.Location = new System.Drawing.Point(266, 221);
+            this.passport_renewal_year.Name = "passport_renewal_year";
+            this.passport_renewal_year.Size = new System.Drawing.Size(103, 34);
+            this.passport_renewal_year.TabIndex = 51;
+            this.passport_renewal_year.Text = "   වර්ෂය";
+            // 
+            // passport_issued_year
+            // 
+            this.passport_issued_year.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.passport_issued_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.passport_issued_year.FormattingEnabled = true;
+            this.passport_issued_year.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946"});
+            this.passport_issued_year.Location = new System.Drawing.Point(266, 181);
+            this.passport_issued_year.Name = "passport_issued_year";
+            this.passport_issued_year.Size = new System.Drawing.Size(103, 34);
+            this.passport_issued_year.TabIndex = 52;
+            this.passport_issued_year.Text = "   වර්ෂය";
+            // 
+            // passport_status_deactive
+            // 
+            this.passport_status_deactive.AutoSize = true;
+            this.passport_status_deactive.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.passport_status_deactive.Location = new System.Drawing.Point(405, 261);
+            this.passport_status_deactive.Name = "passport_status_deactive";
+            this.passport_status_deactive.Size = new System.Drawing.Size(74, 30);
+            this.passport_status_deactive.TabIndex = 50;
+            this.passport_status_deactive.TabStop = true;
+            this.passport_status_deactive.Text = "අක්‍රීය";
+            this.passport_status_deactive.UseVisualStyleBackColor = true;
+            // 
+            // passport_status_active
+            // 
+            this.passport_status_active.AutoSize = true;
+            this.passport_status_active.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.passport_status_active.Location = new System.Drawing.Point(266, 261);
+            this.passport_status_active.Name = "passport_status_active";
+            this.passport_status_active.Size = new System.Drawing.Size(77, 30);
+            this.passport_status_active.TabIndex = 49;
+            this.passport_status_active.TabStop = true;
+            this.passport_status_active.Text = "සක්‍රීය";
+            this.passport_status_active.UseVisualStyleBackColor = true;
+            // 
+            // label162
+            // 
+            this.label162.AutoSize = true;
+            this.label162.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label162.Location = new System.Drawing.Point(184, 263);
+            this.label162.Name = "label162";
+            this.label162.Size = new System.Drawing.Size(73, 26);
+            this.label162.TabIndex = 42;
+            this.label162.Text = "තත්වය";
+            this.label162.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label163
+            // 
+            this.label163.AutoSize = true;
+            this.label163.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label163.Location = new System.Drawing.Point(119, 224);
+            this.label163.Name = "label163";
+            this.label163.Size = new System.Drawing.Size(138, 26);
+            this.label163.TabIndex = 43;
+            this.label163.Text = "අළුත් කළ දිනය";
+            this.label163.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label164
+            // 
+            this.label164.AutoSize = true;
+            this.label164.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label164.Location = new System.Drawing.Point(182, 67);
+            this.label164.Name = "label164";
+            this.label164.Size = new System.Drawing.Size(75, 26);
+            this.label164.TabIndex = 44;
+            this.label164.Text = "තනතුර";
+            this.label164.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label165
+            // 
+            this.label165.AutoSize = true;
+            this.label165.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label165.Location = new System.Drawing.Point(111, 184);
+            this.label165.Name = "label165";
+            this.label165.Size = new System.Drawing.Size(146, 26);
+            this.label165.TabIndex = 45;
+            this.label165.Text = "නිකුත් කළ දිනය";
+            this.label165.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label166
+            // 
+            this.label166.AutoSize = true;
+            this.label166.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label166.Location = new System.Drawing.Point(201, 28);
+            this.label166.Name = "label166";
+            this.label166.Size = new System.Drawing.Size(56, 26);
+            this.label166.TabIndex = 46;
+            this.label166.Text = "නිලය";
+            this.label166.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label167
+            // 
+            this.label167.AutoSize = true;
+            this.label167.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label167.Location = new System.Drawing.Point(85, 145);
+            this.label167.Name = "label167";
+            this.label167.Size = new System.Drawing.Size(172, 26);
+            this.label167.TabIndex = 47;
+            this.label167.Text = "නිකුත් කළ ස්ථානය";
+            this.label167.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label168
+            // 
+            this.label168.AutoSize = true;
+            this.label168.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label168.Location = new System.Drawing.Point(20, 106);
+            this.label168.Name = "label168";
+            this.label168.Size = new System.Drawing.Size(241, 26);
+            this.label168.TabIndex = 48;
+            this.label168.Text = "විදේශ ගමන් බලපත්‍ර අංකය ";
+            this.label168.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // passport_post
+            // 
+            this.passport_post.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.passport_post.Location = new System.Drawing.Point(266, 64);
+            this.passport_post.Name = "passport_post";
+            this.passport_post.Size = new System.Drawing.Size(282, 33);
+            this.passport_post.TabIndex = 41;
+            // 
+            // passport_rank
+            // 
+            this.passport_rank.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.passport_rank.Location = new System.Drawing.Point(266, 25);
+            this.passport_rank.Name = "passport_rank";
+            this.passport_rank.Size = new System.Drawing.Size(282, 33);
+            this.passport_rank.TabIndex = 40;
+            // 
+            // passport_issued_place
+            // 
+            this.passport_issued_place.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.passport_issued_place.Location = new System.Drawing.Point(266, 142);
+            this.passport_issued_place.Name = "passport_issued_place";
+            this.passport_issued_place.Size = new System.Drawing.Size(282, 33);
+            this.passport_issued_place.TabIndex = 39;
+            // 
+            // passport_no
+            // 
+            this.passport_no.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.passport_no.Location = new System.Drawing.Point(266, 103);
+            this.passport_no.Name = "passport_no";
+            this.passport_no.Size = new System.Drawing.Size(282, 33);
+            this.passport_no.TabIndex = 38;
             // 
             // frmSearch
             // 
@@ -7688,126 +8121,18 @@
         private System.Windows.Forms.Label label141;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage11;
-        private System.Windows.Forms.ComboBox comboBox72;
-        private System.Windows.Forms.ComboBox comboBox73;
-        private System.Windows.Forms.ComboBox comboBox74;
-        private System.Windows.Forms.ComboBox comboBox75;
-        private System.Windows.Forms.ComboBox comboBox76;
-        private System.Windows.Forms.ComboBox comboBox77;
-        private System.Windows.Forms.Label label123;
-        private System.Windows.Forms.TextBox textBox65;
-        private System.Windows.Forms.Label label124;
-        private System.Windows.Forms.ComboBox comboBox78;
-        private System.Windows.Forms.ComboBox comboBox79;
-        private System.Windows.Forms.Label label125;
-        private System.Windows.Forms.TextBox textBox66;
-        private System.Windows.Forms.TextBox textBox67;
-        private System.Windows.Forms.Label label126;
-        private System.Windows.Forms.Label label127;
-        private System.Windows.Forms.TextBox textBox68;
-        private System.Windows.Forms.Label label128;
-        private System.Windows.Forms.Label label129;
-        private System.Windows.Forms.Label label130;
         private System.Windows.Forms.TabPage tabPage12;
-        private System.Windows.Forms.ComboBox comboBox80;
-        private System.Windows.Forms.ComboBox comboBox81;
-        private System.Windows.Forms.ComboBox comboBox82;
-        private System.Windows.Forms.ComboBox comboBox83;
-        private System.Windows.Forms.ComboBox comboBox84;
-        private System.Windows.Forms.ComboBox comboBox85;
-        private System.Windows.Forms.ComboBox comboBox86;
-        private System.Windows.Forms.Label label131;
-        private System.Windows.Forms.Label label132;
-        private System.Windows.Forms.TextBox textBox69;
-        private System.Windows.Forms.Label label133;
-        private System.Windows.Forms.TextBox textBox70;
-        private System.Windows.Forms.Label label134;
-        private System.Windows.Forms.Label label135;
         private System.Windows.Forms.TabPage tabPage13;
-        private System.Windows.Forms.Label label136;
-        private System.Windows.Forms.Label label137;
-        private System.Windows.Forms.TextBox textBox71;
-        private System.Windows.Forms.ComboBox comboBox87;
-        private System.Windows.Forms.Label label138;
-        private System.Windows.Forms.TextBox textBox72;
-        private System.Windows.Forms.TextBox textBox73;
-        private System.Windows.Forms.Label label139;
-        private System.Windows.Forms.ComboBox comboBox88;
-        private System.Windows.Forms.Label label140;
         private System.Windows.Forms.TabPage tabPersonalDetails;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label169;
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage14;
-        private System.Windows.Forms.Label label170;
-        private System.Windows.Forms.Label label171;
-        private System.Windows.Forms.Label label172;
-        private System.Windows.Forms.Label label173;
-        private System.Windows.Forms.Label label174;
-        private System.Windows.Forms.Label label175;
-        private System.Windows.Forms.Label label176;
-        private System.Windows.Forms.Label label177;
-        private System.Windows.Forms.Label label178;
-        private System.Windows.Forms.Label label179;
-        private System.Windows.Forms.Label label180;
-        private System.Windows.Forms.Label label181;
-        private System.Windows.Forms.Label label182;
-        private System.Windows.Forms.Label label183;
-        private System.Windows.Forms.Label label184;
-        private System.Windows.Forms.Label label185;
-        private System.Windows.Forms.Label label186;
-        private System.Windows.Forms.Label label187;
-        private System.Windows.Forms.TextBox textBox90;
-        private System.Windows.Forms.TextBox textBox91;
-        private System.Windows.Forms.TextBox textBox92;
-        private System.Windows.Forms.TextBox textBox93;
-        private System.Windows.Forms.Label label188;
-        private System.Windows.Forms.Label label189;
-        private System.Windows.Forms.TextBox textBox94;
-        private System.Windows.Forms.TextBox textBox95;
-        private System.Windows.Forms.TextBox textBox96;
-        private System.Windows.Forms.TextBox textBox97;
-        private System.Windows.Forms.TextBox textBox98;
-        private System.Windows.Forms.TextBox textBox99;
-        private System.Windows.Forms.TextBox textBox100;
         private System.Windows.Forms.TabPage tabPage15;
-        private System.Windows.Forms.ComboBox comboBox95;
-        private System.Windows.Forms.ComboBox comboBox96;
-        private System.Windows.Forms.ComboBox comboBox97;
-        private System.Windows.Forms.Label label190;
-        private System.Windows.Forms.Label label191;
-        private System.Windows.Forms.Label label192;
-        private System.Windows.Forms.TextBox textBox101;
-        private System.Windows.Forms.TextBox textBox102;
         private System.Windows.Forms.TabPage tabPage16;
-        private System.Windows.Forms.ComboBox comboBox98;
-        private System.Windows.Forms.ComboBox comboBox99;
-        private System.Windows.Forms.ComboBox comboBox100;
-        private System.Windows.Forms.Label label193;
-        private System.Windows.Forms.Label label194;
-        private System.Windows.Forms.Label label195;
-        private System.Windows.Forms.Label label196;
-        private System.Windows.Forms.TextBox textBox103;
-        private System.Windows.Forms.TextBox textBox104;
-        private System.Windows.Forms.TextBox textBox105;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label197;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label162;
-        private System.Windows.Forms.Label label163;
-        private System.Windows.Forms.Label label164;
-        private System.Windows.Forms.Label label165;
-        private System.Windows.Forms.Label label166;
-        private System.Windows.Forms.Label label167;
-        private System.Windows.Forms.Label label168;
-        private System.Windows.Forms.TextBox textBox85;
-        private System.Windows.Forms.TextBox textBox86;
-        private System.Windows.Forms.TextBox textBox87;
-        private System.Windows.Forms.TextBox textBox88;
-        private System.Windows.Forms.TextBox textBox89;
-        private System.Windows.Forms.TextBox textBox106;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button btnPensionAndDeath;
         private System.Windows.Forms.CheckBox cbxPensionAndDeath;
@@ -7878,5 +8203,118 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox qual_institute;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox day;
+        private System.Windows.Forms.ComboBox insurance_ended_month;
+        private System.Windows.Forms.ComboBox insurance_ended_year;
+        private System.Windows.Forms.ComboBox insurance_started_day;
+        private System.Windows.Forms.ComboBox insurance_started_month;
+        private System.Windows.Forms.ComboBox insurance_started_year;
+        private System.Windows.Forms.ComboBox insurance_type;
+        private System.Windows.Forms.Label label131;
+        private System.Windows.Forms.Label label132;
+        private System.Windows.Forms.TextBox insurance_notes;
+        private System.Windows.Forms.Label label133;
+        private System.Windows.Forms.TextBox insurance_value;
+        private System.Windows.Forms.Label label134;
+        private System.Windows.Forms.Label label135;
+        private System.Windows.Forms.ComboBox bank_account_closed_day;
+        private System.Windows.Forms.ComboBox bank_account_closed_month;
+        private System.Windows.Forms.ComboBox bank_account_closed_year;
+        private System.Windows.Forms.ComboBox bank_account_created_day;
+        private System.Windows.Forms.ComboBox bank_account_created_month;
+        private System.Windows.Forms.ComboBox bank_account_created_year;
+        private System.Windows.Forms.Label label123;
+        private System.Windows.Forms.TextBox bank_account_name;
+        private System.Windows.Forms.Label label124;
+        private System.Windows.Forms.ComboBox bank_account_type;
+        private System.Windows.Forms.ComboBox bank_name;
+        private System.Windows.Forms.Label label125;
+        private System.Windows.Forms.TextBox bank_branch_name;
+        private System.Windows.Forms.Label label126;
+        private System.Windows.Forms.Label label127;
+        private System.Windows.Forms.Label label128;
+        private System.Windows.Forms.Label label129;
+        private System.Windows.Forms.TextBox bank_qualified_year;
+        private System.Windows.Forms.TextBox bank_qualification;
+        private System.Windows.Forms.Label label130;
+        private System.Windows.Forms.Label label136;
+        private System.Windows.Forms.Label label137;
+        private System.Windows.Forms.TextBox tax_no;
+        private System.Windows.Forms.ComboBox tax_status;
+        private System.Windows.Forms.Label label138;
+        private System.Windows.Forms.TextBox tax_notes;
+        private System.Windows.Forms.TextBox tax_type;
+        private System.Windows.Forms.Label label139;
+        private System.Windows.Forms.ComboBox tax_paying_method;
+        private System.Windows.Forms.Label label140;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label157;
+        private System.Windows.Forms.Label label158;
+        private System.Windows.Forms.Label label159;
+        private System.Windows.Forms.Label label160;
+        private System.Windows.Forms.Label label161;
+        private System.Windows.Forms.Label label170;
+        private System.Windows.Forms.Label label171;
+        private System.Windows.Forms.Label label172;
+        private System.Windows.Forms.Label label173;
+        private System.Windows.Forms.Label label174;
+        private System.Windows.Forms.Label label175;
+        private System.Windows.Forms.Label label176;
+        private System.Windows.Forms.Label label177;
+        private System.Windows.Forms.Label label178;
+        private System.Windows.Forms.Label label179;
+        private System.Windows.Forms.Label label180;
+        private System.Windows.Forms.Label label181;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label182;
+        private System.Windows.Forms.Label label183;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.ComboBox cash_issued_day;
+        private System.Windows.Forms.ComboBox cash_issued_month;
+        private System.Windows.Forms.ComboBox cash_issued_year;
+        private System.Windows.Forms.Label label184;
+        private System.Windows.Forms.Label label185;
+        private System.Windows.Forms.Label label186;
+        private System.Windows.Forms.TextBox cash_issued_price;
+        private System.Windows.Forms.TextBox cash_approved_benefit;
+        private System.Windows.Forms.ComboBox noncash_issued_day;
+        private System.Windows.Forms.ComboBox noncash_issued_month;
+        private System.Windows.Forms.ComboBox noncash_issued_year;
+        private System.Windows.Forms.Label label187;
+        private System.Windows.Forms.Label label188;
+        private System.Windows.Forms.Label label189;
+        private System.Windows.Forms.Label label190;
+        private System.Windows.Forms.TextBox noncash_price;
+        private System.Windows.Forms.TextBox noncash_quantity;
+        private System.Windows.Forms.TextBox noncash_approved_benefit;
+        private System.Windows.Forms.ComboBox passport_renewal_day;
+        private System.Windows.Forms.ComboBox passport_issued_day;
+        private System.Windows.Forms.ComboBox passport_renewal_month;
+        private System.Windows.Forms.ComboBox passport_issued_month;
+        private System.Windows.Forms.ComboBox passport_renewal_year;
+        private System.Windows.Forms.ComboBox passport_issued_year;
+        private System.Windows.Forms.RadioButton passport_status_deactive;
+        private System.Windows.Forms.RadioButton passport_status_active;
+        private System.Windows.Forms.Label label162;
+        private System.Windows.Forms.Label label163;
+        private System.Windows.Forms.Label label164;
+        private System.Windows.Forms.Label label165;
+        private System.Windows.Forms.Label label166;
+        private System.Windows.Forms.Label label167;
+        private System.Windows.Forms.Label label168;
+        private System.Windows.Forms.TextBox passport_post;
+        private System.Windows.Forms.TextBox passport_rank;
+        private System.Windows.Forms.TextBox passport_issued_place;
+        private System.Windows.Forms.TextBox passport_no;
     }
 }

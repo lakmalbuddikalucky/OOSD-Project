@@ -11,6 +11,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+
 namespace OOSD_Project
 {
     public partial class frmSearch : Form
@@ -26,12 +30,12 @@ namespace OOSD_Project
             //Load employee numbers to combo box
             List<string> em_nos = EmployeeHandler.getAllEmployees();
             employee_no.Text = "Select employee number";
-
+            /*
             foreach (string Txt in em_nos)
             {
                 employee_no.Items.Add(Txt);
 
-            }
+            }*/
         }
 
         public static frmSearch getForm()
@@ -238,6 +242,86 @@ namespace OOSD_Project
         private void textBox64_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCreateReport_Click(object sender, EventArgs e)
+        {
+            // _______________________________________________________1_______________________________________________________
+            // Setting pagetype, margins and encryption
+            iTextSharp.text.Rectangle pageType = iTextSharp.text.PageSize.A4;
+            float marginLeft = 72;
+            float marginRight = 36;
+            float marginTop = 60;
+            float marginBottom = 50;
+            String reportName = "Test.pdf";
+
+            Document report = new Document(pageType, marginLeft, marginRight, marginTop, marginBottom);
+            PdfWriter writer = PdfWriter.GetInstance(report, new FileStream(reportName, FileMode.Create));
+            //writer.SetEncryption(PdfWriter.STRENGTH40BITS, "Good", "Bad", PdfWriter.ALLOW_COPY);
+            report.Open();
+
+            // _______________________________________________________2_______________________________________________________
+            // Setting Document properties(Meta data)
+            // 1. Title
+            // 2. Subject
+            // 3. Keywords
+            // 4. Creator
+            // 5. Author
+            // 6. Header
+            report.AddTitle("Employee Details Report");
+            report.AddSubject("This file is generated for administrative use only");
+            report.AddKeywords("Civil Security Department, Employee Management System, Version 1.0.0, Report Generator");
+            report.AddCreator("Ozious Technologies");
+            report.AddAuthor("Eranga Heshan");
+            report.AddHeader("Owner", "Civil Security Department");
+
+            // _______________________________________________________3_______________________________________________________
+            // Setup the font factory
+            /*
+            int totalFonts = FontFactory.RegisterDirectory("C:\\WINDOWS\\Fonts");
+            StringBuilder sb = new StringBuilder();
+            foreach (string fontname in FontFactory.RegisteredFonts) { sb.Append(fontname + "\n"); }
+            report.Add(new Paragraph("All Fonts:\n" + sb.ToString()));
+            */
+            iTextSharp.text.Font fontHeader_1 = FontFactory.GetFont("Calibri", 30, iTextSharp.text.Font.BOLD, new iTextSharp.text.BaseColor(0, 0, 0));
+            iTextSharp.text.Font fontHeader_2 = FontFactory.GetFont("Calibri", 15, iTextSharp.text.Font.BOLD, new iTextSharp.text.BaseColor(125, 125, 125));
+
+            // _______________________________________________________x_______________________________________________________
+            // Create header
+            PdfContentByte cb = writer.DirectContent;
+            cb.MoveTo(marginLeft, marginTop);
+            cb.LineTo(500, marginTop);
+            cb.Stroke();
+
+            Paragraph paraHeader_1 = new Paragraph("Civil Security Department", fontHeader_1);
+            paraHeader_1.Alignment = Element.ALIGN_CENTER;
+            paraHeader_1.SpacingAfter = 0f;
+            report.Add(paraHeader_1);
+
+            Paragraph paraHeader_2 = new Paragraph("Employee Detailed Report", fontHeader_2);
+            paraHeader_2.Alignment = Element.ALIGN_CENTER;
+            paraHeader_2.SpacingAfter = 10f;
+            report.Add(paraHeader_2);
+
+            // _______________________________________________________x_______________________________________________________
+            // Adding employee image
+            iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(imgEmployee.ImageLocation);
+            img.ScaleToFit(100f, 100f);
+            img.Border = iTextSharp.text.Rectangle.BOX;
+            img.BorderColor = iTextSharp.text.BaseColor.BLACK;
+            img.BorderWidth = 5f;
+            img.Alignment = iTextSharp.text.Image.TEXTWRAP | iTextSharp.text.Image.ALIGN_RIGHT | iTextSharp.text.Image.ALIGN_TOP;
+            img.IndentationLeft = 50f;
+            img.SpacingAfter = 20f;
+            img.SpacingBefore = 20f;
+            report.Add(img);
+
+            Paragraph para1 = new Paragraph("Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... ");
+            para1.Alignment = Element.ALIGN_JUSTIFIED;
+            report.Add(para1);
+
+            report.Close();
+            this.Close();
         }
     }
 }

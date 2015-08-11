@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSearch));
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,7 +56,7 @@
             this.btnVisaDetails = new System.Windows.Forms.Button();
             this.cbxVisaDetails = new System.Windows.Forms.CheckBox();
             this.btnEditDetails = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgEmployee = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -372,31 +371,10 @@
             this.label141 = new System.Windows.Forms.Label();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label169 = new System.Windows.Forms.Label();
-            this.tabControl4 = new System.Windows.Forms.TabControl();
-            this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.tabPage15 = new System.Windows.Forms.TabPage();
-            this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label197 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.day = new System.Windows.Forms.ComboBox();
-            this.insurance_ended_month = new System.Windows.Forms.ComboBox();
-            this.insurance_ended_year = new System.Windows.Forms.ComboBox();
-            this.insurance_started_day = new System.Windows.Forms.ComboBox();
-            this.insurance_started_month = new System.Windows.Forms.ComboBox();
-            this.insurance_started_year = new System.Windows.Forms.ComboBox();
-            this.insurance_type = new System.Windows.Forms.ComboBox();
-            this.label131 = new System.Windows.Forms.Label();
-            this.label132 = new System.Windows.Forms.Label();
-            this.insurance_notes = new System.Windows.Forms.TextBox();
-            this.label133 = new System.Windows.Forms.Label();
-            this.insurance_value = new System.Windows.Forms.TextBox();
-            this.label134 = new System.Windows.Forms.Label();
-            this.label135 = new System.Windows.Forms.Label();
+            this.label129 = new System.Windows.Forms.Label();
+            this.bank_qualified_year = new System.Windows.Forms.TextBox();
+            this.bank_qualification = new System.Windows.Forms.TextBox();
+            this.label130 = new System.Windows.Forms.Label();
             this.bank_account_closed_day = new System.Windows.Forms.ComboBox();
             this.bank_account_closed_month = new System.Windows.Forms.ComboBox();
             this.bank_account_closed_year = new System.Windows.Forms.ComboBox();
@@ -413,10 +391,22 @@
             this.label126 = new System.Windows.Forms.Label();
             this.label127 = new System.Windows.Forms.Label();
             this.label128 = new System.Windows.Forms.Label();
-            this.label129 = new System.Windows.Forms.Label();
-            this.bank_qualified_year = new System.Windows.Forms.TextBox();
-            this.bank_qualification = new System.Windows.Forms.TextBox();
-            this.label130 = new System.Windows.Forms.Label();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.day = new System.Windows.Forms.ComboBox();
+            this.insurance_ended_month = new System.Windows.Forms.ComboBox();
+            this.insurance_ended_year = new System.Windows.Forms.ComboBox();
+            this.insurance_started_day = new System.Windows.Forms.ComboBox();
+            this.insurance_started_month = new System.Windows.Forms.ComboBox();
+            this.insurance_started_year = new System.Windows.Forms.ComboBox();
+            this.insurance_type = new System.Windows.Forms.ComboBox();
+            this.label131 = new System.Windows.Forms.Label();
+            this.label132 = new System.Windows.Forms.Label();
+            this.insurance_notes = new System.Windows.Forms.TextBox();
+            this.label133 = new System.Windows.Forms.Label();
+            this.insurance_value = new System.Windows.Forms.TextBox();
+            this.label134 = new System.Windows.Forms.Label();
+            this.label135 = new System.Windows.Forms.Label();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
             this.label136 = new System.Windows.Forms.Label();
             this.label137 = new System.Windows.Forms.Label();
             this.tax_no = new System.Windows.Forms.TextBox();
@@ -427,6 +417,10 @@
             this.label139 = new System.Windows.Forms.Label();
             this.tax_paying_method = new System.Windows.Forms.ComboBox();
             this.label140 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label169 = new System.Windows.Forms.Label();
+            this.tabControl4 = new System.Windows.Forms.TabControl();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -459,6 +453,7 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
             this.cash_issued_day = new System.Windows.Forms.ComboBox();
             this.cash_issued_month = new System.Windows.Forms.ComboBox();
             this.cash_issued_year = new System.Windows.Forms.ComboBox();
@@ -467,6 +462,7 @@
             this.label186 = new System.Windows.Forms.Label();
             this.cash_issued_price = new System.Windows.Forms.TextBox();
             this.cash_approved_benefit = new System.Windows.Forms.TextBox();
+            this.tabPage16 = new System.Windows.Forms.TabPage();
             this.noncash_issued_day = new System.Windows.Forms.ComboBox();
             this.noncash_issued_month = new System.Windows.Forms.ComboBox();
             this.noncash_issued_year = new System.Windows.Forms.ComboBox();
@@ -477,6 +473,9 @@
             this.noncash_price = new System.Windows.Forms.TextBox();
             this.noncash_quantity = new System.Windows.Forms.TextBox();
             this.noncash_approved_benefit = new System.Windows.Forms.TextBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label197 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.passport_renewal_day = new System.Windows.Forms.ComboBox();
             this.passport_issued_day = new System.Windows.Forms.ComboBox();
             this.passport_renewal_month = new System.Windows.Forms.ComboBox();
@@ -496,11 +495,12 @@
             this.passport_rank = new System.Windows.Forms.TextBox();
             this.passport_issued_place = new System.Windows.Forms.TextBox();
             this.passport_no = new System.Windows.Forms.TextBox();
+            this.btnCreateReport = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgEmployee)).BeginInit();
             this.flowLayoutPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -569,6 +569,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Controls.Add(this.btnCreateReport);
             this.panel2.Controls.Add(this.btnPrev);
             this.panel2.Controls.Add(this.btnSave);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -861,14 +862,18 @@
             this.btnEditDetails.Text = "Edit Details";
             this.btnEditDetails.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // imgEmployee
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(457, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 154);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.imgEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.imgEmployee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imgEmployee.ImageLocation = "C:\\Users\\Eranga\\Pictures\\FB Cover Photos & Profile Pics\\Google Profile Picture 00" +
+    "2.bmp";
+            this.imgEmployee.Location = new System.Drawing.Point(457, 14);
+            this.imgEmployee.Name = "imgEmployee";
+            this.imgEmployee.Size = new System.Drawing.Size(150, 154);
+            this.imgEmployee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgEmployee.TabIndex = 0;
+            this.imgEmployee.TabStop = false;
             // 
             // flowLayoutPanel
             // 
@@ -990,7 +995,7 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel12.Controls.Add(this.pictureBox1);
+            this.panel12.Controls.Add(this.imgEmployee);
             this.panel12.Location = new System.Drawing.Point(3, 135);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(1049, 191);
@@ -5377,586 +5382,37 @@
             this.tabPage11.TabIndex = 0;
             this.tabPage11.Text = "Bank";
             // 
-            // tabPage12
+            // label129
             // 
-            this.tabPage12.BackColor = System.Drawing.Color.White;
-            this.tabPage12.Controls.Add(this.day);
-            this.tabPage12.Controls.Add(this.insurance_ended_month);
-            this.tabPage12.Controls.Add(this.insurance_ended_year);
-            this.tabPage12.Controls.Add(this.insurance_started_day);
-            this.tabPage12.Controls.Add(this.insurance_started_month);
-            this.tabPage12.Controls.Add(this.insurance_started_year);
-            this.tabPage12.Controls.Add(this.insurance_type);
-            this.tabPage12.Controls.Add(this.label131);
-            this.tabPage12.Controls.Add(this.label132);
-            this.tabPage12.Controls.Add(this.insurance_notes);
-            this.tabPage12.Controls.Add(this.label133);
-            this.tabPage12.Controls.Add(this.insurance_value);
-            this.tabPage12.Controls.Add(this.label134);
-            this.tabPage12.Controls.Add(this.label135);
-            this.tabPage12.Location = new System.Drawing.Point(4, 34);
-            this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(1041, 357);
-            this.tabPage12.TabIndex = 1;
-            this.tabPage12.Text = "Insurance";
+            this.label129.AutoSize = true;
+            this.label129.Location = new System.Drawing.Point(25, 308);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(180, 26);
+            this.label129.TabIndex = 62;
+            this.label129.Text = "සුදුසුකම් ලැබූ වර්ෂය";
             // 
-            // tabPage13
+            // bank_qualified_year
             // 
-            this.tabPage13.Controls.Add(this.label136);
-            this.tabPage13.Controls.Add(this.label137);
-            this.tabPage13.Controls.Add(this.tax_no);
-            this.tabPage13.Controls.Add(this.tax_status);
-            this.tabPage13.Controls.Add(this.label138);
-            this.tabPage13.Controls.Add(this.tax_notes);
-            this.tabPage13.Controls.Add(this.tax_type);
-            this.tabPage13.Controls.Add(this.label139);
-            this.tabPage13.Controls.Add(this.tax_paying_method);
-            this.tabPage13.Controls.Add(this.label140);
-            this.tabPage13.Location = new System.Drawing.Point(4, 34);
-            this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Size = new System.Drawing.Size(1041, 357);
-            this.tabPage13.TabIndex = 2;
-            this.tabPage13.Text = "Tax";
-            this.tabPage13.UseVisualStyleBackColor = true;
+            this.bank_qualified_year.Location = new System.Drawing.Point(211, 301);
+            this.bank_qualified_year.Name = "bank_qualified_year";
+            this.bank_qualified_year.Size = new System.Drawing.Size(120, 33);
+            this.bank_qualified_year.TabIndex = 61;
             // 
-            // panel8
+            // bank_qualification
             // 
-            this.panel8.BackColor = System.Drawing.Color.LightGray;
-            this.panel8.Controls.Add(this.label169);
-            this.panel8.ForeColor = System.Drawing.Color.Teal;
-            this.panel8.Location = new System.Drawing.Point(3, 2105);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1049, 42);
-            this.panel8.TabIndex = 17;
+            this.bank_qualification.Location = new System.Drawing.Point(211, 262);
+            this.bank_qualification.Name = "bank_qualification";
+            this.bank_qualification.Size = new System.Drawing.Size(200, 33);
+            this.bank_qualification.TabIndex = 60;
             // 
-            // label169
+            // label130
             // 
-            this.label169.AutoSize = true;
-            this.label169.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label169.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label169.Location = new System.Drawing.Point(465, 11);
-            this.label169.Name = "label169";
-            this.label169.Size = new System.Drawing.Size(126, 24);
-            this.label169.TabIndex = 6;
-            this.label169.Text = "වැටුප් තොරතුරු";
-            // 
-            // tabControl4
-            // 
-            this.tabControl4.Controls.Add(this.tabPage14);
-            this.tabControl4.Controls.Add(this.tabPage15);
-            this.tabControl4.Controls.Add(this.tabPage16);
-            this.tabControl4.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl4.ItemSize = new System.Drawing.Size(200, 30);
-            this.tabControl4.Location = new System.Drawing.Point(3, 2153);
-            this.tabControl4.Name = "tabControl4";
-            this.tabControl4.Padding = new System.Drawing.Point(0, 0);
-            this.tabControl4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(1049, 447);
-            this.tabControl4.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl4.TabIndex = 20;
-            // 
-            // tabPage14
-            // 
-            this.tabPage14.BackColor = System.Drawing.Color.White;
-            this.tabPage14.Controls.Add(this.comboBox1);
-            this.tabPage14.Controls.Add(this.comboBox2);
-            this.tabPage14.Controls.Add(this.comboBox3);
-            this.tabPage14.Controls.Add(this.label157);
-            this.tabPage14.Controls.Add(this.label158);
-            this.tabPage14.Controls.Add(this.label159);
-            this.tabPage14.Controls.Add(this.label160);
-            this.tabPage14.Controls.Add(this.label161);
-            this.tabPage14.Controls.Add(this.label170);
-            this.tabPage14.Controls.Add(this.label171);
-            this.tabPage14.Controls.Add(this.label172);
-            this.tabPage14.Controls.Add(this.label173);
-            this.tabPage14.Controls.Add(this.label174);
-            this.tabPage14.Controls.Add(this.label175);
-            this.tabPage14.Controls.Add(this.label176);
-            this.tabPage14.Controls.Add(this.label177);
-            this.tabPage14.Controls.Add(this.label178);
-            this.tabPage14.Controls.Add(this.label179);
-            this.tabPage14.Controls.Add(this.label180);
-            this.tabPage14.Controls.Add(this.label181);
-            this.tabPage14.Controls.Add(this.textBox1);
-            this.tabPage14.Controls.Add(this.textBox2);
-            this.tabPage14.Controls.Add(this.textBox3);
-            this.tabPage14.Controls.Add(this.textBox4);
-            this.tabPage14.Controls.Add(this.label182);
-            this.tabPage14.Controls.Add(this.label183);
-            this.tabPage14.Controls.Add(this.textBox5);
-            this.tabPage14.Controls.Add(this.textBox6);
-            this.tabPage14.Controls.Add(this.textBox7);
-            this.tabPage14.Controls.Add(this.textBox8);
-            this.tabPage14.Controls.Add(this.textBox9);
-            this.tabPage14.Controls.Add(this.textBox10);
-            this.tabPage14.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage14.ForeColor = System.Drawing.Color.Transparent;
-            this.tabPage14.Location = new System.Drawing.Point(4, 34);
-            this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(1041, 409);
-            this.tabPage14.TabIndex = 0;
-            this.tabPage14.Text = "Remuneration";
-            // 
-            // tabPage15
-            // 
-            this.tabPage15.BackColor = System.Drawing.Color.White;
-            this.tabPage15.Controls.Add(this.cash_issued_day);
-            this.tabPage15.Controls.Add(this.cash_issued_month);
-            this.tabPage15.Controls.Add(this.cash_issued_year);
-            this.tabPage15.Controls.Add(this.label184);
-            this.tabPage15.Controls.Add(this.label185);
-            this.tabPage15.Controls.Add(this.label186);
-            this.tabPage15.Controls.Add(this.cash_issued_price);
-            this.tabPage15.Controls.Add(this.cash_approved_benefit);
-            this.tabPage15.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPage15.Location = new System.Drawing.Point(4, 34);
-            this.tabPage15.Name = "tabPage15";
-            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(1041, 409);
-            this.tabPage15.TabIndex = 1;
-            this.tabPage15.Text = "Cash Benefits";
-            // 
-            // tabPage16
-            // 
-            this.tabPage16.AutoScroll = true;
-            this.tabPage16.Controls.Add(this.noncash_issued_day);
-            this.tabPage16.Controls.Add(this.noncash_issued_month);
-            this.tabPage16.Controls.Add(this.noncash_issued_year);
-            this.tabPage16.Controls.Add(this.label187);
-            this.tabPage16.Controls.Add(this.label188);
-            this.tabPage16.Controls.Add(this.label189);
-            this.tabPage16.Controls.Add(this.label190);
-            this.tabPage16.Controls.Add(this.noncash_price);
-            this.tabPage16.Controls.Add(this.noncash_quantity);
-            this.tabPage16.Controls.Add(this.noncash_approved_benefit);
-            this.tabPage16.Location = new System.Drawing.Point(4, 34);
-            this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Size = new System.Drawing.Size(1041, 409);
-            this.tabPage16.TabIndex = 2;
-            this.tabPage16.Text = "Non Cash Benefits";
-            this.tabPage16.UseVisualStyleBackColor = true;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.LightGray;
-            this.panel11.Controls.Add(this.label197);
-            this.panel11.ForeColor = System.Drawing.Color.Teal;
-            this.panel11.Location = new System.Drawing.Point(3, 2606);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1049, 42);
-            this.panel11.TabIndex = 18;
-            // 
-            // label197
-            // 
-            this.label197.AutoSize = true;
-            this.label197.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label197.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label197.Location = new System.Drawing.Point(450, 10);
-            this.label197.Name = "label197";
-            this.label197.Size = new System.Drawing.Size(188, 24);
-            this.label197.TabIndex = 6;
-            this.label197.Text = "ගමන්  බලපත්‍ර තොරතුරු";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel10.Controls.Add(this.passport_renewal_day);
-            this.panel10.Controls.Add(this.passport_issued_day);
-            this.panel10.Controls.Add(this.passport_renewal_month);
-            this.panel10.Controls.Add(this.passport_issued_month);
-            this.panel10.Controls.Add(this.passport_renewal_year);
-            this.panel10.Controls.Add(this.passport_issued_year);
-            this.panel10.Controls.Add(this.passport_status_deactive);
-            this.panel10.Controls.Add(this.passport_status_active);
-            this.panel10.Controls.Add(this.label162);
-            this.panel10.Controls.Add(this.label163);
-            this.panel10.Controls.Add(this.label164);
-            this.panel10.Controls.Add(this.label165);
-            this.panel10.Controls.Add(this.label166);
-            this.panel10.Controls.Add(this.label167);
-            this.panel10.Controls.Add(this.label168);
-            this.panel10.Controls.Add(this.passport_post);
-            this.panel10.Controls.Add(this.passport_rank);
-            this.panel10.Controls.Add(this.passport_issued_place);
-            this.panel10.Controls.Add(this.passport_no);
-            this.panel10.Location = new System.Drawing.Point(3, 2654);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1049, 362);
-            this.panel10.TabIndex = 21;
-            // 
-            // day
-            // 
-            this.day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.day.FormattingEnabled = true;
-            this.day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.day.Location = new System.Drawing.Point(532, 139);
-            this.day.Name = "day";
-            this.day.Size = new System.Drawing.Size(91, 34);
-            this.day.TabIndex = 56;
-            this.day.Text = "    දිනය";
-            // 
-            // insurance_ended_month
-            // 
-            this.insurance_ended_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.insurance_ended_month.FormattingEnabled = true;
-            this.insurance_ended_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.insurance_ended_month.Location = new System.Drawing.Point(435, 139);
-            this.insurance_ended_month.Name = "insurance_ended_month";
-            this.insurance_ended_month.Size = new System.Drawing.Size(91, 34);
-            this.insurance_ended_month.TabIndex = 55;
-            this.insurance_ended_month.Text = "   මාසය";
-            // 
-            // insurance_ended_year
-            // 
-            this.insurance_ended_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.insurance_ended_year.FormattingEnabled = true;
-            this.insurance_ended_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.insurance_ended_year.Location = new System.Drawing.Point(326, 139);
-            this.insurance_ended_year.Name = "insurance_ended_year";
-            this.insurance_ended_year.Size = new System.Drawing.Size(103, 34);
-            this.insurance_ended_year.TabIndex = 54;
-            this.insurance_ended_year.Text = "   වර්ෂය";
-            // 
-            // insurance_started_day
-            // 
-            this.insurance_started_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.insurance_started_day.FormattingEnabled = true;
-            this.insurance_started_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.insurance_started_day.Location = new System.Drawing.Point(532, 100);
-            this.insurance_started_day.Name = "insurance_started_day";
-            this.insurance_started_day.Size = new System.Drawing.Size(91, 34);
-            this.insurance_started_day.TabIndex = 53;
-            this.insurance_started_day.Text = "    දිනය";
-            // 
-            // insurance_started_month
-            // 
-            this.insurance_started_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.insurance_started_month.FormattingEnabled = true;
-            this.insurance_started_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.insurance_started_month.Location = new System.Drawing.Point(435, 100);
-            this.insurance_started_month.Name = "insurance_started_month";
-            this.insurance_started_month.Size = new System.Drawing.Size(91, 34);
-            this.insurance_started_month.TabIndex = 52;
-            this.insurance_started_month.Text = "   මාසය";
-            // 
-            // insurance_started_year
-            // 
-            this.insurance_started_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.insurance_started_year.FormattingEnabled = true;
-            this.insurance_started_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.insurance_started_year.Location = new System.Drawing.Point(326, 100);
-            this.insurance_started_year.Name = "insurance_started_year";
-            this.insurance_started_year.Size = new System.Drawing.Size(103, 34);
-            this.insurance_started_year.TabIndex = 51;
-            this.insurance_started_year.Text = "   වර්ෂය";
-            // 
-            // insurance_type
-            // 
-            this.insurance_type.FormattingEnabled = true;
-            this.insurance_type.Location = new System.Drawing.Point(326, 22);
-            this.insurance_type.Name = "insurance_type";
-            this.insurance_type.Size = new System.Drawing.Size(121, 34);
-            this.insurance_type.TabIndex = 50;
-            // 
-            // label131
-            // 
-            this.label131.AutoSize = true;
-            this.label131.Location = new System.Drawing.Point(248, 182);
-            this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(74, 26);
-            this.label131.TabIndex = 49;
-            this.label131.Text = "සටහන්";
-            // 
-            // label132
-            // 
-            this.label132.AutoSize = true;
-            this.label132.Location = new System.Drawing.Point(30, 145);
-            this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(292, 26);
-            this.label132.TabIndex = 48;
-            this.label132.Text = "රක්ෂණය කල් ඉකුත්වන කළ දිනය";
-            // 
-            // insurance_notes
-            // 
-            this.insurance_notes.Location = new System.Drawing.Point(326, 179);
-            this.insurance_notes.Multiline = true;
-            this.insurance_notes.Name = "insurance_notes";
-            this.insurance_notes.Size = new System.Drawing.Size(350, 159);
-            this.insurance_notes.TabIndex = 47;
-            // 
-            // label133
-            // 
-            this.label133.AutoSize = true;
-            this.label133.Location = new System.Drawing.Point(62, 106);
-            this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(258, 26);
-            this.label133.TabIndex = 46;
-            this.label133.Text = "රක්ෂණය ආරම්භක කළ දිනය";
-            // 
-            // insurance_value
-            // 
-            this.insurance_value.Location = new System.Drawing.Point(326, 62);
-            this.insurance_value.Name = "insurance_value";
-            this.insurance_value.Size = new System.Drawing.Size(200, 33);
-            this.insurance_value.TabIndex = 45;
-            // 
-            // label134
-            // 
-            this.label134.AutoSize = true;
-            this.label134.Location = new System.Drawing.Point(93, 65);
-            this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(227, 26);
-            this.label134.TabIndex = 44;
-            this.label134.Text = "රක්ෂණයේ වටිනාකම (රු.)";
-            // 
-            // label135
-            // 
-            this.label135.AutoSize = true;
-            this.label135.Location = new System.Drawing.Point(185, 25);
-            this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(137, 26);
-            this.label135.TabIndex = 43;
-            this.label135.Text = "රක්ෂණ වර්ගය";
+            this.label130.AutoSize = true;
+            this.label130.Location = new System.Drawing.Point(122, 265);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(84, 26);
+            this.label130.TabIndex = 59;
+            this.label130.Text = "සුදුසුකම";
             // 
             // bank_account_closed_day
             // 
@@ -6344,37 +5800,418 @@
             this.label128.TabIndex = 43;
             this.label128.Text = "බැංකුවේ නම";
             // 
-            // label129
+            // tabPage12
             // 
-            this.label129.AutoSize = true;
-            this.label129.Location = new System.Drawing.Point(25, 308);
-            this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(180, 26);
-            this.label129.TabIndex = 62;
-            this.label129.Text = "සුදුසුකම් ලැබූ වර්ෂය";
+            this.tabPage12.BackColor = System.Drawing.Color.White;
+            this.tabPage12.Controls.Add(this.day);
+            this.tabPage12.Controls.Add(this.insurance_ended_month);
+            this.tabPage12.Controls.Add(this.insurance_ended_year);
+            this.tabPage12.Controls.Add(this.insurance_started_day);
+            this.tabPage12.Controls.Add(this.insurance_started_month);
+            this.tabPage12.Controls.Add(this.insurance_started_year);
+            this.tabPage12.Controls.Add(this.insurance_type);
+            this.tabPage12.Controls.Add(this.label131);
+            this.tabPage12.Controls.Add(this.label132);
+            this.tabPage12.Controls.Add(this.insurance_notes);
+            this.tabPage12.Controls.Add(this.label133);
+            this.tabPage12.Controls.Add(this.insurance_value);
+            this.tabPage12.Controls.Add(this.label134);
+            this.tabPage12.Controls.Add(this.label135);
+            this.tabPage12.Location = new System.Drawing.Point(4, 34);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage12.Size = new System.Drawing.Size(1041, 357);
+            this.tabPage12.TabIndex = 1;
+            this.tabPage12.Text = "Insurance";
             // 
-            // bank_qualified_year
+            // day
             // 
-            this.bank_qualified_year.Location = new System.Drawing.Point(211, 301);
-            this.bank_qualified_year.Name = "bank_qualified_year";
-            this.bank_qualified_year.Size = new System.Drawing.Size(120, 33);
-            this.bank_qualified_year.TabIndex = 61;
+            this.day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.day.FormattingEnabled = true;
+            this.day.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.day.Location = new System.Drawing.Point(532, 139);
+            this.day.Name = "day";
+            this.day.Size = new System.Drawing.Size(91, 34);
+            this.day.TabIndex = 56;
+            this.day.Text = "    දිනය";
             // 
-            // bank_qualification
+            // insurance_ended_month
             // 
-            this.bank_qualification.Location = new System.Drawing.Point(211, 262);
-            this.bank_qualification.Name = "bank_qualification";
-            this.bank_qualification.Size = new System.Drawing.Size(200, 33);
-            this.bank_qualification.TabIndex = 60;
+            this.insurance_ended_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.insurance_ended_month.FormattingEnabled = true;
+            this.insurance_ended_month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.insurance_ended_month.Location = new System.Drawing.Point(435, 139);
+            this.insurance_ended_month.Name = "insurance_ended_month";
+            this.insurance_ended_month.Size = new System.Drawing.Size(91, 34);
+            this.insurance_ended_month.TabIndex = 55;
+            this.insurance_ended_month.Text = "   මාසය";
             // 
-            // label130
+            // insurance_ended_year
             // 
-            this.label130.AutoSize = true;
-            this.label130.Location = new System.Drawing.Point(122, 265);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(84, 26);
-            this.label130.TabIndex = 59;
-            this.label130.Text = "සුදුසුකම";
+            this.insurance_ended_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.insurance_ended_year.FormattingEnabled = true;
+            this.insurance_ended_year.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946"});
+            this.insurance_ended_year.Location = new System.Drawing.Point(326, 139);
+            this.insurance_ended_year.Name = "insurance_ended_year";
+            this.insurance_ended_year.Size = new System.Drawing.Size(103, 34);
+            this.insurance_ended_year.TabIndex = 54;
+            this.insurance_ended_year.Text = "   වර්ෂය";
+            // 
+            // insurance_started_day
+            // 
+            this.insurance_started_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.insurance_started_day.FormattingEnabled = true;
+            this.insurance_started_day.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.insurance_started_day.Location = new System.Drawing.Point(532, 100);
+            this.insurance_started_day.Name = "insurance_started_day";
+            this.insurance_started_day.Size = new System.Drawing.Size(91, 34);
+            this.insurance_started_day.TabIndex = 53;
+            this.insurance_started_day.Text = "    දිනය";
+            // 
+            // insurance_started_month
+            // 
+            this.insurance_started_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.insurance_started_month.FormattingEnabled = true;
+            this.insurance_started_month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.insurance_started_month.Location = new System.Drawing.Point(435, 100);
+            this.insurance_started_month.Name = "insurance_started_month";
+            this.insurance_started_month.Size = new System.Drawing.Size(91, 34);
+            this.insurance_started_month.TabIndex = 52;
+            this.insurance_started_month.Text = "   මාසය";
+            // 
+            // insurance_started_year
+            // 
+            this.insurance_started_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.insurance_started_year.FormattingEnabled = true;
+            this.insurance_started_year.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946"});
+            this.insurance_started_year.Location = new System.Drawing.Point(326, 100);
+            this.insurance_started_year.Name = "insurance_started_year";
+            this.insurance_started_year.Size = new System.Drawing.Size(103, 34);
+            this.insurance_started_year.TabIndex = 51;
+            this.insurance_started_year.Text = "   වර්ෂය";
+            // 
+            // insurance_type
+            // 
+            this.insurance_type.FormattingEnabled = true;
+            this.insurance_type.Location = new System.Drawing.Point(326, 22);
+            this.insurance_type.Name = "insurance_type";
+            this.insurance_type.Size = new System.Drawing.Size(121, 34);
+            this.insurance_type.TabIndex = 50;
+            // 
+            // label131
+            // 
+            this.label131.AutoSize = true;
+            this.label131.Location = new System.Drawing.Point(248, 182);
+            this.label131.Name = "label131";
+            this.label131.Size = new System.Drawing.Size(74, 26);
+            this.label131.TabIndex = 49;
+            this.label131.Text = "සටහන්";
+            // 
+            // label132
+            // 
+            this.label132.AutoSize = true;
+            this.label132.Location = new System.Drawing.Point(30, 145);
+            this.label132.Name = "label132";
+            this.label132.Size = new System.Drawing.Size(292, 26);
+            this.label132.TabIndex = 48;
+            this.label132.Text = "රක්ෂණය කල් ඉකුත්වන කළ දිනය";
+            // 
+            // insurance_notes
+            // 
+            this.insurance_notes.Location = new System.Drawing.Point(326, 179);
+            this.insurance_notes.Multiline = true;
+            this.insurance_notes.Name = "insurance_notes";
+            this.insurance_notes.Size = new System.Drawing.Size(350, 159);
+            this.insurance_notes.TabIndex = 47;
+            // 
+            // label133
+            // 
+            this.label133.AutoSize = true;
+            this.label133.Location = new System.Drawing.Point(62, 106);
+            this.label133.Name = "label133";
+            this.label133.Size = new System.Drawing.Size(258, 26);
+            this.label133.TabIndex = 46;
+            this.label133.Text = "රක්ෂණය ආරම්භක කළ දිනය";
+            // 
+            // insurance_value
+            // 
+            this.insurance_value.Location = new System.Drawing.Point(326, 62);
+            this.insurance_value.Name = "insurance_value";
+            this.insurance_value.Size = new System.Drawing.Size(200, 33);
+            this.insurance_value.TabIndex = 45;
+            // 
+            // label134
+            // 
+            this.label134.AutoSize = true;
+            this.label134.Location = new System.Drawing.Point(93, 65);
+            this.label134.Name = "label134";
+            this.label134.Size = new System.Drawing.Size(227, 26);
+            this.label134.TabIndex = 44;
+            this.label134.Text = "රක්ෂණයේ වටිනාකම (රු.)";
+            // 
+            // label135
+            // 
+            this.label135.AutoSize = true;
+            this.label135.Location = new System.Drawing.Point(185, 25);
+            this.label135.Name = "label135";
+            this.label135.Size = new System.Drawing.Size(137, 26);
+            this.label135.TabIndex = 43;
+            this.label135.Text = "රක්ෂණ වර්ගය";
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.Controls.Add(this.label136);
+            this.tabPage13.Controls.Add(this.label137);
+            this.tabPage13.Controls.Add(this.tax_no);
+            this.tabPage13.Controls.Add(this.tax_status);
+            this.tabPage13.Controls.Add(this.label138);
+            this.tabPage13.Controls.Add(this.tax_notes);
+            this.tabPage13.Controls.Add(this.tax_type);
+            this.tabPage13.Controls.Add(this.label139);
+            this.tabPage13.Controls.Add(this.tax_paying_method);
+            this.tabPage13.Controls.Add(this.label140);
+            this.tabPage13.Location = new System.Drawing.Point(4, 34);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Size = new System.Drawing.Size(1041, 357);
+            this.tabPage13.TabIndex = 2;
+            this.tabPage13.Text = "Tax";
+            this.tabPage13.UseVisualStyleBackColor = true;
             // 
             // label136
             // 
@@ -6458,6 +6295,87 @@
             this.label140.Size = new System.Drawing.Size(97, 26);
             this.label140.TabIndex = 12;
             this.label140.Text = "බදු වර්ගය";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.LightGray;
+            this.panel8.Controls.Add(this.label169);
+            this.panel8.ForeColor = System.Drawing.Color.Teal;
+            this.panel8.Location = new System.Drawing.Point(3, 2105);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1049, 42);
+            this.panel8.TabIndex = 17;
+            // 
+            // label169
+            // 
+            this.label169.AutoSize = true;
+            this.label169.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label169.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label169.Location = new System.Drawing.Point(465, 11);
+            this.label169.Name = "label169";
+            this.label169.Size = new System.Drawing.Size(126, 24);
+            this.label169.TabIndex = 6;
+            this.label169.Text = "වැටුප් තොරතුරු";
+            // 
+            // tabControl4
+            // 
+            this.tabControl4.Controls.Add(this.tabPage14);
+            this.tabControl4.Controls.Add(this.tabPage15);
+            this.tabControl4.Controls.Add(this.tabPage16);
+            this.tabControl4.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl4.ItemSize = new System.Drawing.Size(200, 30);
+            this.tabControl4.Location = new System.Drawing.Point(3, 2153);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.Padding = new System.Drawing.Point(0, 0);
+            this.tabControl4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(1049, 447);
+            this.tabControl4.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl4.TabIndex = 20;
+            // 
+            // tabPage14
+            // 
+            this.tabPage14.BackColor = System.Drawing.Color.White;
+            this.tabPage14.Controls.Add(this.comboBox1);
+            this.tabPage14.Controls.Add(this.comboBox2);
+            this.tabPage14.Controls.Add(this.comboBox3);
+            this.tabPage14.Controls.Add(this.label157);
+            this.tabPage14.Controls.Add(this.label158);
+            this.tabPage14.Controls.Add(this.label159);
+            this.tabPage14.Controls.Add(this.label160);
+            this.tabPage14.Controls.Add(this.label161);
+            this.tabPage14.Controls.Add(this.label170);
+            this.tabPage14.Controls.Add(this.label171);
+            this.tabPage14.Controls.Add(this.label172);
+            this.tabPage14.Controls.Add(this.label173);
+            this.tabPage14.Controls.Add(this.label174);
+            this.tabPage14.Controls.Add(this.label175);
+            this.tabPage14.Controls.Add(this.label176);
+            this.tabPage14.Controls.Add(this.label177);
+            this.tabPage14.Controls.Add(this.label178);
+            this.tabPage14.Controls.Add(this.label179);
+            this.tabPage14.Controls.Add(this.label180);
+            this.tabPage14.Controls.Add(this.label181);
+            this.tabPage14.Controls.Add(this.textBox1);
+            this.tabPage14.Controls.Add(this.textBox2);
+            this.tabPage14.Controls.Add(this.textBox3);
+            this.tabPage14.Controls.Add(this.textBox4);
+            this.tabPage14.Controls.Add(this.label182);
+            this.tabPage14.Controls.Add(this.label183);
+            this.tabPage14.Controls.Add(this.textBox5);
+            this.tabPage14.Controls.Add(this.textBox6);
+            this.tabPage14.Controls.Add(this.textBox7);
+            this.tabPage14.Controls.Add(this.textBox8);
+            this.tabPage14.Controls.Add(this.textBox9);
+            this.tabPage14.Controls.Add(this.textBox10);
+            this.tabPage14.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage14.ForeColor = System.Drawing.Color.Transparent;
+            this.tabPage14.Location = new System.Drawing.Point(4, 34);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(1041, 409);
+            this.tabPage14.TabIndex = 0;
+            this.tabPage14.Text = "Remuneration";
             // 
             // comboBox1
             // 
@@ -6918,6 +6836,25 @@
             this.textBox10.Size = new System.Drawing.Size(150, 33);
             this.textBox10.TabIndex = 97;
             // 
+            // tabPage15
+            // 
+            this.tabPage15.BackColor = System.Drawing.Color.White;
+            this.tabPage15.Controls.Add(this.cash_issued_day);
+            this.tabPage15.Controls.Add(this.cash_issued_month);
+            this.tabPage15.Controls.Add(this.cash_issued_year);
+            this.tabPage15.Controls.Add(this.label184);
+            this.tabPage15.Controls.Add(this.label185);
+            this.tabPage15.Controls.Add(this.label186);
+            this.tabPage15.Controls.Add(this.cash_issued_price);
+            this.tabPage15.Controls.Add(this.cash_approved_benefit);
+            this.tabPage15.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tabPage15.Location = new System.Drawing.Point(4, 34);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage15.Size = new System.Drawing.Size(1041, 409);
+            this.tabPage15.TabIndex = 1;
+            this.tabPage15.Text = "Cash Benefits";
+            // 
             // cash_issued_day
             // 
             this.cash_issued_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
@@ -7112,6 +7049,26 @@
             this.cash_approved_benefit.Name = "cash_approved_benefit";
             this.cash_approved_benefit.Size = new System.Drawing.Size(200, 33);
             this.cash_approved_benefit.TabIndex = 46;
+            // 
+            // tabPage16
+            // 
+            this.tabPage16.AutoScroll = true;
+            this.tabPage16.Controls.Add(this.noncash_issued_day);
+            this.tabPage16.Controls.Add(this.noncash_issued_month);
+            this.tabPage16.Controls.Add(this.noncash_issued_year);
+            this.tabPage16.Controls.Add(this.label187);
+            this.tabPage16.Controls.Add(this.label188);
+            this.tabPage16.Controls.Add(this.label189);
+            this.tabPage16.Controls.Add(this.label190);
+            this.tabPage16.Controls.Add(this.noncash_price);
+            this.tabPage16.Controls.Add(this.noncash_quantity);
+            this.tabPage16.Controls.Add(this.noncash_approved_benefit);
+            this.tabPage16.Location = new System.Drawing.Point(4, 34);
+            this.tabPage16.Name = "tabPage16";
+            this.tabPage16.Size = new System.Drawing.Size(1041, 409);
+            this.tabPage16.TabIndex = 2;
+            this.tabPage16.Text = "Non Cash Benefits";
+            this.tabPage16.UseVisualStyleBackColor = true;
             // 
             // noncash_issued_day
             // 
@@ -7324,6 +7281,54 @@
             this.noncash_approved_benefit.Name = "noncash_approved_benefit";
             this.noncash_approved_benefit.Size = new System.Drawing.Size(200, 33);
             this.noncash_approved_benefit.TabIndex = 43;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.LightGray;
+            this.panel11.Controls.Add(this.label197);
+            this.panel11.ForeColor = System.Drawing.Color.Teal;
+            this.panel11.Location = new System.Drawing.Point(3, 2606);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1049, 42);
+            this.panel11.TabIndex = 18;
+            // 
+            // label197
+            // 
+            this.label197.AutoSize = true;
+            this.label197.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label197.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label197.Location = new System.Drawing.Point(450, 10);
+            this.label197.Name = "label197";
+            this.label197.Size = new System.Drawing.Size(188, 24);
+            this.label197.TabIndex = 6;
+            this.label197.Text = "ගමන්  බලපත්‍ර තොරතුරු";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel10.Controls.Add(this.passport_renewal_day);
+            this.panel10.Controls.Add(this.passport_issued_day);
+            this.panel10.Controls.Add(this.passport_renewal_month);
+            this.panel10.Controls.Add(this.passport_issued_month);
+            this.panel10.Controls.Add(this.passport_renewal_year);
+            this.panel10.Controls.Add(this.passport_issued_year);
+            this.panel10.Controls.Add(this.passport_status_deactive);
+            this.panel10.Controls.Add(this.passport_status_active);
+            this.panel10.Controls.Add(this.label162);
+            this.panel10.Controls.Add(this.label163);
+            this.panel10.Controls.Add(this.label164);
+            this.panel10.Controls.Add(this.label165);
+            this.panel10.Controls.Add(this.label166);
+            this.panel10.Controls.Add(this.label167);
+            this.panel10.Controls.Add(this.label168);
+            this.panel10.Controls.Add(this.passport_post);
+            this.panel10.Controls.Add(this.passport_rank);
+            this.panel10.Controls.Add(this.passport_issued_place);
+            this.panel10.Controls.Add(this.passport_no);
+            this.panel10.Location = new System.Drawing.Point(3, 2654);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1049, 362);
+            this.panel10.TabIndex = 21;
             // 
             // passport_renewal_day
             // 
@@ -7766,6 +7771,19 @@
             this.passport_no.Size = new System.Drawing.Size(282, 33);
             this.passport_no.TabIndex = 38;
             // 
+            // btnCreateReport
+            // 
+            this.btnCreateReport.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnCreateReport.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.btnCreateReport.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCreateReport.Location = new System.Drawing.Point(1118, 13);
+            this.btnCreateReport.Name = "btnCreateReport";
+            this.btnCreateReport.Size = new System.Drawing.Size(194, 35);
+            this.btnCreateReport.TabIndex = 4;
+            this.btnCreateReport.Text = "වාර්තාව සකසන්න";
+            this.btnCreateReport.UseVisualStyleBackColor = false;
+            this.btnCreateReport.Click += new System.EventHandler(this.btnCreateReport_Click);
+            // 
             // frmSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7788,7 +7806,7 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgEmployee)).EndInit();
             this.flowLayoutPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -7856,7 +7874,7 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgEmployee;
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel;
         private System.Windows.Forms.Panel panel1;
@@ -8316,5 +8334,6 @@
         private System.Windows.Forms.TextBox passport_rank;
         private System.Windows.Forms.TextBox passport_issued_place;
         private System.Windows.Forms.TextBox passport_no;
+        private System.Windows.Forms.Button btnCreateReport;
     }
 }

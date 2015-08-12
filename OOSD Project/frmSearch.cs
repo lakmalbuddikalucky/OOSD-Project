@@ -35,7 +35,6 @@ namespace OOSD_Project
             /*foreach (string Txt in em_nos)
             {
                 employee_no.Items.Add(Txt);
-
             }*/
         }
 

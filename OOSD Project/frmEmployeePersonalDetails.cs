@@ -48,8 +48,7 @@ namespace OOSD_Project
             occupation.BackColor = Color.White;
             first_name.BackColor = Color.White;
             nic_no.BackColor = Color.White;
-            dob_year.BackColor = Color.White;
-            dob_month.BackColor = Color.White;
+            
             dob_date.BackColor = Color.White;
             action_status.BackColor = Color.White;
             blood_group.BackColor = Color.White;
@@ -101,9 +100,7 @@ namespace OOSD_Project
             wsd_rank.BackColor = Color.White;
             wsd_division.BackColor = Color.White;
             wsd_post.BackColor = Color.White;
-            wsd_date_of_post_y.BackColor = Color.White;
-            wsd_date_of_post_m.BackColor = Color.White;
-            wsd_date_of_post_d.BackColor = Color.White;
+            
             wsd_salary_station.BackColor = Color.White;
             wsd_responsibility.BackColor = Color.White;
             wsd_power.BackColor = Color.White;
@@ -444,8 +441,6 @@ namespace OOSD_Project
             employee.setAction_status(action_status.Text);
             employee.setBlood_grouph(blood_group.Text);
             employee.setDate_issued(date_issued.Text);
-            employee.setDate_of_birth(dob_year.Text, dob_month.Text, dob_date.Text);
-            employee.setDate_of_marriage(marry_year.Text, marry_month.Text, marry_date.Text);
             employee.setEmployee_no(employee_no.Text);
             employee.setEmployee_type(employee_type.Text);
             employee.setEpf_no(epf_no.Text);
@@ -625,7 +620,6 @@ namespace OOSD_Project
             dd.relation = depend_relation.Text;
             dd.salutation = depend_salutation.Text;
             dd.status = depend_status.Text;
-            dd.setDate_of_post(depend_date_of_post_yr.Text, depend_date_of_post_m.Text, depend_date_of_post_d.Text);
 
             if (depend_deathade.Checked) { dd.deathade = true; }
             else { dd.deathade = false; }
@@ -647,9 +641,6 @@ namespace OOSD_Project
         private void btnClear3_Click(object sender, EventArgs e)
         {
             depend_birth_certificate = null;
-            depend_date_of_post_d = null;
-            depend_date_of_post_m = null;
-            depend_date_of_post_yr = null;
             depend_deathade.Checked = false;
             depend_education = null;
             depend_full_name = null;
@@ -704,7 +695,6 @@ namespace OOSD_Project
             wd.rank = wsd_rank.Text;
             wd.responsibility = wsd_responsibility.Text;
             wd.salary_station = wsd_salary_station.Text;
-            wd.setDate_of_post(wsd_date_of_post_y.Text, wsd_date_of_post_m.Text, wsd_date_of_post_d.Text);
 
             bool status = WorkstationDetailsHandler.addWorkstationDetails(wd);
 

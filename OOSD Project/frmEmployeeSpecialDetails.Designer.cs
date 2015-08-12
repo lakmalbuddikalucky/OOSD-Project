@@ -62,6 +62,9 @@
             this.qual_institute = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.we_date_perma_date = new System.Windows.Forms.DateTimePicker();
+            this.we_date_to_date = new System.Windows.Forms.DateTimePicker();
+            this.we_date_from_date = new System.Windows.Forms.DateTimePicker();
             this.btnClear2 = new System.Windows.Forms.Button();
             this.btnSave2 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
@@ -96,6 +99,10 @@
             this.ea_type = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.member_active_date_insti_date = new System.Windows.Forms.DateTimePicker();
+            this.member_active_date_person_date = new System.Windows.Forms.DateTimePicker();
+            this.member_renewal_date = new System.Windows.Forms.DateTimePicker();
+            this.member_begin_date_date = new System.Windows.Forms.DateTimePicker();
             this.btnClear4 = new System.Windows.Forms.Button();
             this.btnSave4 = new System.Windows.Forms.Button();
             this.label34 = new System.Windows.Forms.Label();
@@ -123,13 +130,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
-            this.we_date_from_date = new System.Windows.Forms.DateTimePicker();
-            this.we_date_to_date = new System.Windows.Forms.DateTimePicker();
-            this.we_date_perma_date = new System.Windows.Forms.DateTimePicker();
-            this.member_begin_date_date = new System.Windows.Forms.DateTimePicker();
-            this.member_renewal_date = new System.Windows.Forms.DateTimePicker();
-            this.member_active_date_person_date = new System.Windows.Forms.DateTimePicker();
-            this.member_active_date_insti_date = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -507,6 +507,27 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Working Experience";
             // 
+            // we_date_perma_date
+            // 
+            this.we_date_perma_date.Location = new System.Drawing.Point(306, 458);
+            this.we_date_perma_date.Name = "we_date_perma_date";
+            this.we_date_perma_date.Size = new System.Drawing.Size(320, 33);
+            this.we_date_perma_date.TabIndex = 62;
+            // 
+            // we_date_to_date
+            // 
+            this.we_date_to_date.Location = new System.Drawing.Point(306, 420);
+            this.we_date_to_date.Name = "we_date_to_date";
+            this.we_date_to_date.Size = new System.Drawing.Size(320, 33);
+            this.we_date_to_date.TabIndex = 61;
+            // 
+            // we_date_from_date
+            // 
+            this.we_date_from_date.Location = new System.Drawing.Point(306, 381);
+            this.we_date_from_date.Name = "we_date_from_date";
+            this.we_date_from_date.Size = new System.Drawing.Size(320, 33);
+            this.we_date_from_date.TabIndex = 60;
+            // 
             // btnClear2
             // 
             this.btnClear2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -836,6 +857,34 @@
             this.tabPage4.Text = "Membership";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // member_active_date_insti_date
+            // 
+            this.member_active_date_insti_date.Location = new System.Drawing.Point(510, 376);
+            this.member_active_date_insti_date.Name = "member_active_date_insti_date";
+            this.member_active_date_insti_date.Size = new System.Drawing.Size(320, 33);
+            this.member_active_date_insti_date.TabIndex = 67;
+            // 
+            // member_active_date_person_date
+            // 
+            this.member_active_date_person_date.Location = new System.Drawing.Point(510, 339);
+            this.member_active_date_person_date.Name = "member_active_date_person_date";
+            this.member_active_date_person_date.Size = new System.Drawing.Size(320, 33);
+            this.member_active_date_person_date.TabIndex = 66;
+            // 
+            // member_renewal_date
+            // 
+            this.member_renewal_date.Location = new System.Drawing.Point(306, 266);
+            this.member_renewal_date.Name = "member_renewal_date";
+            this.member_renewal_date.Size = new System.Drawing.Size(320, 33);
+            this.member_renewal_date.TabIndex = 65;
+            // 
+            // member_begin_date_date
+            // 
+            this.member_begin_date_date.Location = new System.Drawing.Point(306, 228);
+            this.member_begin_date_date.Name = "member_begin_date_date";
+            this.member_begin_date_date.Size = new System.Drawing.Size(320, 33);
+            this.member_begin_date_date.TabIndex = 64;
+            // 
             // btnClear4
             // 
             this.btnClear4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1068,7 +1117,7 @@
             // 
             this.btnNext.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnNext.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(93, 10);
+            this.btnNext.Location = new System.Drawing.Point(90, 11);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 42);
             this.btnNext.TabIndex = 6;
@@ -1080,62 +1129,13 @@
             // 
             this.btnPrev.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnPrev.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrev.Location = new System.Drawing.Point(12, 10);
+            this.btnPrev.Location = new System.Drawing.Point(9, 11);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(75, 42);
             this.btnPrev.TabIndex = 5;
             this.btnPrev.Text = "Previous";
             this.btnPrev.UseVisualStyleBackColor = false;
             this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
-            // 
-            // we_date_from_date
-            // 
-            this.we_date_from_date.Location = new System.Drawing.Point(306, 381);
-            this.we_date_from_date.Name = "we_date_from_date";
-            this.we_date_from_date.Size = new System.Drawing.Size(320, 33);
-            this.we_date_from_date.TabIndex = 60;
-            // 
-            // we_date_to_date
-            // 
-            this.we_date_to_date.Location = new System.Drawing.Point(306, 420);
-            this.we_date_to_date.Name = "we_date_to_date";
-            this.we_date_to_date.Size = new System.Drawing.Size(320, 33);
-            this.we_date_to_date.TabIndex = 61;
-            // 
-            // we_date_perma_date
-            // 
-            this.we_date_perma_date.Location = new System.Drawing.Point(306, 458);
-            this.we_date_perma_date.Name = "we_date_perma_date";
-            this.we_date_perma_date.Size = new System.Drawing.Size(320, 33);
-            this.we_date_perma_date.TabIndex = 62;
-            // 
-            // member_begin_date_date
-            // 
-            this.member_begin_date_date.Location = new System.Drawing.Point(306, 228);
-            this.member_begin_date_date.Name = "member_begin_date_date";
-            this.member_begin_date_date.Size = new System.Drawing.Size(320, 33);
-            this.member_begin_date_date.TabIndex = 64;
-            // 
-            // member_renewal_date
-            // 
-            this.member_renewal_date.Location = new System.Drawing.Point(306, 266);
-            this.member_renewal_date.Name = "member_renewal_date";
-            this.member_renewal_date.Size = new System.Drawing.Size(320, 33);
-            this.member_renewal_date.TabIndex = 65;
-            // 
-            // member_active_date_person_date
-            // 
-            this.member_active_date_person_date.Location = new System.Drawing.Point(510, 339);
-            this.member_active_date_person_date.Name = "member_active_date_person_date";
-            this.member_active_date_person_date.Size = new System.Drawing.Size(320, 33);
-            this.member_active_date_person_date.TabIndex = 66;
-            // 
-            // member_active_date_insti_date
-            // 
-            this.member_active_date_insti_date.Location = new System.Drawing.Point(510, 376);
-            this.member_active_date_insti_date.Name = "member_active_date_insti_date";
-            this.member_active_date_insti_date.Size = new System.Drawing.Size(320, 33);
-            this.member_active_date_insti_date.TabIndex = 67;
             // 
             // frmEmployeeSpecialDetails
             // 

@@ -91,7 +91,6 @@ namespace OOSD_Project
             we.telephone = we_telephone.Text;
             
             
-            
 
             bool status = WorkingExperienceHandler.addWorkingExperience(we);
 
@@ -146,10 +145,9 @@ namespace OOSD_Project
             we_responsibility.Text = null;
             we_telephone.Text = null;
 
-   
+            
             we_date_to_date.Text = null;
-          
-      
+            
 
         }
 

@@ -81,6 +81,7 @@
             this.desciplinary_breaking_year = new System.Windows.Forms.ComboBox();
             this.desciplinary_breaking_month = new System.Windows.Forms.ComboBox();
             this.desciplinary_breaking_day = new System.Windows.Forms.ComboBox();
+            this.btnCheckDisciplinaryDetails = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -96,6 +97,7 @@
             this.desciplinary_employee_no.Name = "desciplinary_employee_no";
             this.desciplinary_employee_no.Size = new System.Drawing.Size(200, 32);
             this.desciplinary_employee_no.TabIndex = 1;
+            this.desciplinary_employee_no.SelectedIndexChanged += new System.EventHandler(this.desciplinary_employee_no_SelectedIndexChanged);
             // 
             // label17
             // 
@@ -212,6 +214,7 @@
             this.desciplinary_full_name.Name = "desciplinary_full_name";
             this.desciplinary_full_name.Size = new System.Drawing.Size(300, 33);
             this.desciplinary_full_name.TabIndex = 2;
+            this.desciplinary_full_name.TextChanged += new System.EventHandler(this.desciplinary_full_name_TextChanged);
             // 
             // desciplinary_post
             // 
@@ -220,6 +223,7 @@
             this.desciplinary_post.Name = "desciplinary_post";
             this.desciplinary_post.Size = new System.Drawing.Size(150, 33);
             this.desciplinary_post.TabIndex = 3;
+            this.desciplinary_post.TextChanged += new System.EventHandler(this.desciplinary_post_TextChanged);
             // 
             // desciplinary_rank
             // 
@@ -228,6 +232,7 @@
             this.desciplinary_rank.Name = "desciplinary_rank";
             this.desciplinary_rank.Size = new System.Drawing.Size(150, 33);
             this.desciplinary_rank.TabIndex = 4;
+            this.desciplinary_rank.TextChanged += new System.EventHandler(this.desciplinary_rank_TextChanged);
             // 
             // label13
             // 
@@ -260,6 +265,7 @@
             this.desciplinary_inquiry_officer.Name = "desciplinary_inquiry_officer";
             this.desciplinary_inquiry_officer.Size = new System.Drawing.Size(249, 33);
             this.desciplinary_inquiry_officer.TabIndex = 18;
+            this.desciplinary_inquiry_officer.TextChanged += new System.EventHandler(this.desciplinary_inquiry_officer_TextChanged);
             // 
             // desciplinary_verdict_of_director_general
             // 
@@ -269,6 +275,7 @@
             this.desciplinary_verdict_of_director_general.Name = "desciplinary_verdict_of_director_general";
             this.desciplinary_verdict_of_director_general.Size = new System.Drawing.Size(249, 50);
             this.desciplinary_verdict_of_director_general.TabIndex = 14;
+            this.desciplinary_verdict_of_director_general.TextChanged += new System.EventHandler(this.desciplinary_verdict_of_director_general_TextChanged);
             // 
             // desciplinary_breaking
             // 
@@ -278,6 +285,7 @@
             this.desciplinary_breaking.Name = "desciplinary_breaking";
             this.desciplinary_breaking.Size = new System.Drawing.Size(250, 50);
             this.desciplinary_breaking.TabIndex = 5;
+            this.desciplinary_breaking.TextChanged += new System.EventHandler(this.desciplinary_breaking_TextChanged);
             // 
             // desciplinary_given_sentence
             // 
@@ -287,6 +295,7 @@
             this.desciplinary_given_sentence.Name = "desciplinary_given_sentence";
             this.desciplinary_given_sentence.Size = new System.Drawing.Size(250, 50);
             this.desciplinary_given_sentence.TabIndex = 10;
+            this.desciplinary_given_sentence.TextChanged += new System.EventHandler(this.desciplinary_given_sentence_TextChanged);
             // 
             // desciplinary_request_of_main_administration_officer
             // 
@@ -296,6 +305,7 @@
             this.desciplinary_request_of_main_administration_officer.Name = "desciplinary_request_of_main_administration_officer";
             this.desciplinary_request_of_main_administration_officer.Size = new System.Drawing.Size(250, 50);
             this.desciplinary_request_of_main_administration_officer.TabIndex = 9;
+            this.desciplinary_request_of_main_administration_officer.TextChanged += new System.EventHandler(this.desciplinary_request_of_main_administration_officer_TextChanged);
             // 
             // panel2
             // 
@@ -1256,11 +1266,23 @@
             this.desciplinary_breaking_day.TabIndex = 8;
             this.desciplinary_breaking_day.Text = "    දිනය";
             // 
+            // btnCheckDisciplinaryDetails
+            // 
+            this.btnCheckDisciplinaryDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckDisciplinaryDetails.Location = new System.Drawing.Point(948, 461);
+            this.btnCheckDisciplinaryDetails.Name = "btnCheckDisciplinaryDetails";
+            this.btnCheckDisciplinaryDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckDisciplinaryDetails.TabIndex = 66;
+            this.btnCheckDisciplinaryDetails.Text = "Check";
+            this.btnCheckDisciplinaryDetails.UseVisualStyleBackColor = true;
+            this.btnCheckDisciplinaryDetails.Click += new System.EventHandler(this.btnCheckDisciplinaryDetails_Click);
+            // 
             // frmDisciplinaryDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 741);
+            this.Controls.Add(this.btnCheckDisciplinaryDetails);
             this.Controls.Add(this.desciplinary_breaking_day);
             this.Controls.Add(this.desciplinary_given_sentence_day);
             this.Controls.Add(this.desciplinary_verdict_of_director_general_day);
@@ -1365,5 +1387,6 @@
         private System.Windows.Forms.ComboBox desciplinary_breaking_year;
         private System.Windows.Forms.ComboBox desciplinary_breaking_month;
         private System.Windows.Forms.ComboBox desciplinary_breaking_day;
+        private System.Windows.Forms.Button btnCheckDisciplinaryDetails;
     }
 }

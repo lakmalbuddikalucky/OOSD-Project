@@ -39,7 +39,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnCheck = new System.Windows.Forms.Button();
+            this.btnCheckPersonalDetails = new System.Windows.Forms.Button();
             this.btnClear1 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.blood_group = new System.Windows.Forms.ComboBox();
@@ -84,6 +84,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnCheckConcatDetails = new System.Windows.Forms.Button();
             this.btnSave2 = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
@@ -136,6 +137,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnCheckDependentDetails = new System.Windows.Forms.Button();
             this.btnClear3 = new System.Windows.Forms.Button();
             this.btnSave3 = new System.Windows.Forms.Button();
             this.depend_medical = new System.Windows.Forms.CheckBox();
@@ -173,6 +175,7 @@
             this.label56 = new System.Windows.Forms.Label();
             this.depend_salutation = new System.Windows.Forms.ComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnCheckEmergencyDetails = new System.Windows.Forms.Button();
             this.btnSave4 = new System.Windows.Forms.Button();
             this.label81 = new System.Windows.Forms.Label();
             this.emg_employee_no = new System.Windows.Forms.TextBox();
@@ -199,6 +202,7 @@
             this.label75 = new System.Windows.Forms.Label();
             this.emg_salutation = new System.Windows.Forms.ComboBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnCheckWorkStationDetails = new System.Windows.Forms.Button();
             this.btnSave5 = new System.Windows.Forms.Button();
             this.wsd_date_of_post_d = new System.Windows.Forms.ComboBox();
             this.wsd_date_of_post_m = new System.Windows.Forms.ComboBox();
@@ -335,7 +339,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.btnCheck);
+            this.tabPage1.Controls.Add(this.btnCheckPersonalDetails);
             this.tabPage1.Controls.Add(this.btnClear1);
             this.tabPage1.Controls.Add(this.label21);
             this.tabPage1.Controls.Add(this.blood_group);
@@ -388,15 +392,15 @@
             this.tabPage1.Text = "Personal Details";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // btnCheck
+            // btnCheckPersonalDetails
             // 
-            this.btnCheck.Location = new System.Drawing.Point(243, 569);
-            this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(75, 33);
-            this.btnCheck.TabIndex = 56;
-            this.btnCheck.Text = "Check";
-            this.btnCheck.UseVisualStyleBackColor = true;
-            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            this.btnCheckPersonalDetails.Location = new System.Drawing.Point(243, 569);
+            this.btnCheckPersonalDetails.Name = "btnCheckPersonalDetails";
+            this.btnCheckPersonalDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckPersonalDetails.TabIndex = 56;
+            this.btnCheckPersonalDetails.Text = "Check";
+            this.btnCheckPersonalDetails.UseVisualStyleBackColor = true;
+            this.btnCheckPersonalDetails.Click += new System.EventHandler(this.btnCheckPersonalDetails_Click);
             // 
             // btnClear1
             // 
@@ -918,7 +922,6 @@
             this.dob_date.Size = new System.Drawing.Size(91, 34);
             this.dob_date.TabIndex = 36;
             this.dob_date.Text = "    දිනය";
-            this.dob_date.SelectedIndexChanged += new System.EventHandler(this.dob_date_SelectedIndexChanged);
             // 
             // dob_month
             // 
@@ -942,7 +945,6 @@
             this.dob_month.Size = new System.Drawing.Size(91, 34);
             this.dob_month.TabIndex = 33;
             this.dob_month.Text = "   මාසය";
-            this.dob_month.SelectedIndexChanged += new System.EventHandler(this.dob_month_SelectedIndexChanged);
             // 
             // dob_year
             // 
@@ -1092,7 +1094,6 @@
             this.occupation.Name = "occupation";
             this.occupation.Size = new System.Drawing.Size(200, 34);
             this.occupation.TabIndex = 20;
-            this.occupation.SelectedIndexChanged += new System.EventHandler(this.occupation_SelectedIndexChanged);
             // 
             // employee_type
             // 
@@ -1178,6 +1179,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.btnCheckConcatDetails);
             this.tabPage2.Controls.Add(this.btnSave2);
             this.tabPage2.Controls.Add(this.label36);
             this.tabPage2.Controls.Add(this.label37);
@@ -1236,6 +1238,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Contact Details";
             // 
+            // btnCheckConcatDetails
+            // 
+            this.btnCheckConcatDetails.Location = new System.Drawing.Point(234, 581);
+            this.btnCheckConcatDetails.Name = "btnCheckConcatDetails";
+            this.btnCheckConcatDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckConcatDetails.TabIndex = 57;
+            this.btnCheckConcatDetails.Text = "Check";
+            this.btnCheckConcatDetails.UseVisualStyleBackColor = true;
+            this.btnCheckConcatDetails.Click += new System.EventHandler(this.btnCheckConcatDetails_Click);
+            // 
             // btnSave2
             // 
             this.btnSave2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1271,6 +1283,7 @@
             this.cur_email.Name = "cur_email";
             this.cur_email.Size = new System.Drawing.Size(200, 33);
             this.cur_email.TabIndex = 49;
+            this.cur_email.TextChanged += new System.EventHandler(this.cur_email_TextChanged);
             // 
             // cur_fax
             // 
@@ -1278,6 +1291,7 @@
             this.cur_fax.Name = "cur_fax";
             this.cur_fax.Size = new System.Drawing.Size(200, 33);
             this.cur_fax.TabIndex = 47;
+            this.cur_fax.TextChanged += new System.EventHandler(this.cur_fax_TextChanged);
             // 
             // cur_mobile
             // 
@@ -1285,6 +1299,7 @@
             this.cur_mobile.Name = "cur_mobile";
             this.cur_mobile.Size = new System.Drawing.Size(200, 33);
             this.cur_mobile.TabIndex = 45;
+            this.cur_mobile.TextChanged += new System.EventHandler(this.cur_mobile_TextChanged);
             // 
             // cur_teleophone
             // 
@@ -1292,6 +1307,7 @@
             this.cur_teleophone.Name = "cur_teleophone";
             this.cur_teleophone.Size = new System.Drawing.Size(200, 33);
             this.cur_teleophone.TabIndex = 43;
+            this.cur_teleophone.TextChanged += new System.EventHandler(this.cur_teleophone_TextChanged);
             // 
             // cur_city
             // 
@@ -1307,6 +1323,7 @@
             this.cur_address.Name = "cur_address";
             this.cur_address.Size = new System.Drawing.Size(350, 82);
             this.cur_address.TabIndex = 29;
+            this.cur_address.TextChanged += new System.EventHandler(this.cur_address_TextChanged);
             // 
             // cur_home_no
             // 
@@ -1314,6 +1331,7 @@
             this.cur_home_no.Name = "cur_home_no";
             this.cur_home_no.Size = new System.Drawing.Size(200, 33);
             this.cur_home_no.TabIndex = 27;
+            this.cur_home_no.TextChanged += new System.EventHandler(this.cur_home_no_TextChanged);
             // 
             // perm_email
             // 
@@ -1321,6 +1339,7 @@
             this.perm_email.Name = "perm_email";
             this.perm_email.Size = new System.Drawing.Size(200, 33);
             this.perm_email.TabIndex = 24;
+            this.perm_email.TextChanged += new System.EventHandler(this.perm_email_TextChanged);
             // 
             // perm_fax
             // 
@@ -1328,6 +1347,7 @@
             this.perm_fax.Name = "perm_fax";
             this.perm_fax.Size = new System.Drawing.Size(200, 33);
             this.perm_fax.TabIndex = 22;
+            this.perm_fax.TextChanged += new System.EventHandler(this.perm_fax_TextChanged);
             // 
             // perm_mobile
             // 
@@ -1335,6 +1355,7 @@
             this.perm_mobile.Name = "perm_mobile";
             this.perm_mobile.Size = new System.Drawing.Size(200, 33);
             this.perm_mobile.TabIndex = 20;
+            this.perm_mobile.TextChanged += new System.EventHandler(this.perm_mobile_TextChanged);
             // 
             // perm_teleophone
             // 
@@ -1342,6 +1363,7 @@
             this.perm_teleophone.Name = "perm_teleophone";
             this.perm_teleophone.Size = new System.Drawing.Size(200, 33);
             this.perm_teleophone.TabIndex = 18;
+            this.perm_teleophone.TextChanged += new System.EventHandler(this.perm_teleophone_TextChanged);
             // 
             // perm_city
             // 
@@ -1349,6 +1371,7 @@
             this.perm_city.Name = "perm_city";
             this.perm_city.Size = new System.Drawing.Size(200, 33);
             this.perm_city.TabIndex = 6;
+            this.perm_city.TextChanged += new System.EventHandler(this.perm_city_TextChanged);
             // 
             // perm_address
             // 
@@ -1357,6 +1380,7 @@
             this.perm_address.Name = "perm_address";
             this.perm_address.Size = new System.Drawing.Size(350, 82);
             this.perm_address.TabIndex = 2;
+            this.perm_address.TextChanged += new System.EventHandler(this.perm_address_TextChanged);
             // 
             // perm_home_no
             // 
@@ -1364,6 +1388,7 @@
             this.perm_home_no.Name = "perm_home_no";
             this.perm_home_no.Size = new System.Drawing.Size(200, 33);
             this.perm_home_no.TabIndex = 0;
+            this.perm_home_no.TextChanged += new System.EventHandler(this.perm_home_no_TextChanged);
             // 
             // label38
             // 
@@ -1565,6 +1590,7 @@
             this.perm_polling_division.Name = "perm_polling_division";
             this.perm_polling_division.Size = new System.Drawing.Size(200, 34);
             this.perm_polling_division.TabIndex = 16;
+            this.perm_polling_division.SelectedIndexChanged += new System.EventHandler(this.perm_polling_division_SelectedIndexChanged);
             // 
             // label29
             // 
@@ -1582,6 +1608,7 @@
             this.perm_grama.Name = "perm_grama";
             this.perm_grama.Size = new System.Drawing.Size(200, 34);
             this.perm_grama.TabIndex = 14;
+            this.perm_grama.SelectedIndexChanged += new System.EventHandler(this.perm_grama_SelectedIndexChanged);
             // 
             // label28
             // 
@@ -1599,6 +1626,7 @@
             this.perm_uc.Name = "perm_uc";
             this.perm_uc.Size = new System.Drawing.Size(200, 34);
             this.perm_uc.TabIndex = 12;
+            this.perm_uc.SelectedIndexChanged += new System.EventHandler(this.perm_uc_SelectedIndexChanged);
             // 
             // label27
             // 
@@ -1616,6 +1644,7 @@
             this.perm_district.Name = "perm_district";
             this.perm_district.Size = new System.Drawing.Size(200, 34);
             this.perm_district.TabIndex = 10;
+            this.perm_district.SelectedIndexChanged += new System.EventHandler(this.perm_district_SelectedIndexChanged);
             // 
             // label25
             // 
@@ -1634,6 +1663,7 @@
             this.perm_province.Name = "perm_province";
             this.perm_province.Size = new System.Drawing.Size(200, 34);
             this.perm_province.TabIndex = 8;
+            this.perm_province.SelectedIndexChanged += new System.EventHandler(this.perm_province_SelectedIndexChanged);
             // 
             // label26
             // 
@@ -1664,6 +1694,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btnCheckDependentDetails);
             this.tabPage3.Controls.Add(this.btnClear3);
             this.tabPage3.Controls.Add(this.btnSave3);
             this.tabPage3.Controls.Add(this.depend_medical);
@@ -1706,6 +1737,16 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Dependent Details";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnCheckDependentDetails
+            // 
+            this.btnCheckDependentDetails.Location = new System.Drawing.Point(243, 557);
+            this.btnCheckDependentDetails.Name = "btnCheckDependentDetails";
+            this.btnCheckDependentDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckDependentDetails.TabIndex = 57;
+            this.btnCheckDependentDetails.Text = "Check";
+            this.btnCheckDependentDetails.UseVisualStyleBackColor = true;
+            this.btnCheckDependentDetails.Click += new System.EventHandler(this.btnCheckDependentDetails_Click);
             // 
             // btnClear3
             // 
@@ -1779,6 +1820,7 @@
             this.depend_full_name.Name = "depend_full_name";
             this.depend_full_name.Size = new System.Drawing.Size(200, 33);
             this.depend_full_name.TabIndex = 22;
+            this.depend_full_name.TextChanged += new System.EventHandler(this.depend_full_name_TextChanged);
             // 
             // depend_marriage_certificate
             // 
@@ -1793,6 +1835,7 @@
             this.depend_birth_certificate.Name = "depend_birth_certificate";
             this.depend_birth_certificate.Size = new System.Drawing.Size(600, 33);
             this.depend_birth_certificate.TabIndex = 17;
+            this.depend_birth_certificate.TextChanged += new System.EventHandler(this.depend_birth_certificate_TextChanged);
             // 
             // depend_note
             // 
@@ -2002,6 +2045,7 @@
             this.depend_relation.Name = "depend_relation";
             this.depend_relation.Size = new System.Drawing.Size(200, 34);
             this.depend_relation.TabIndex = 2;
+            this.depend_relation.SelectedIndexChanged += new System.EventHandler(this.depend_relation_SelectedIndexChanged);
             // 
             // label56
             // 
@@ -2022,6 +2066,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.btnCheckEmergencyDetails);
             this.tabPage4.Controls.Add(this.btnSave4);
             this.tabPage4.Controls.Add(this.label81);
             this.tabPage4.Controls.Add(this.emg_employee_no);
@@ -2054,6 +2099,16 @@
             this.tabPage4.Text = "Emergency Contact";
             this.tabPage4.UseVisualStyleBackColor = true;
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            // 
+            // btnCheckEmergencyDetails
+            // 
+            this.btnCheckEmergencyDetails.Location = new System.Drawing.Point(246, 420);
+            this.btnCheckEmergencyDetails.Name = "btnCheckEmergencyDetails";
+            this.btnCheckEmergencyDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckEmergencyDetails.TabIndex = 58;
+            this.btnCheckEmergencyDetails.Text = "Check";
+            this.btnCheckEmergencyDetails.UseVisualStyleBackColor = true;
+            this.btnCheckEmergencyDetails.Click += new System.EventHandler(this.btnCheckEmergencyDetails_Click);
             // 
             // btnSave4
             // 
@@ -2088,6 +2143,7 @@
             this.emg_office_tp.Name = "emg_office_tp";
             this.emg_office_tp.Size = new System.Drawing.Size(200, 33);
             this.emg_office_tp.TabIndex = 50;
+            this.emg_office_tp.TextChanged += new System.EventHandler(this.emg_office_tp_TextChanged);
             // 
             // emg_mobile_no
             // 
@@ -2095,6 +2151,7 @@
             this.emg_mobile_no.Name = "emg_mobile_no";
             this.emg_mobile_no.Size = new System.Drawing.Size(200, 33);
             this.emg_mobile_no.TabIndex = 44;
+            this.emg_mobile_no.TextChanged += new System.EventHandler(this.emg_mobile_no_TextChanged);
             // 
             // emg_personal_tp
             // 
@@ -2102,6 +2159,7 @@
             this.emg_personal_tp.Name = "emg_personal_tp";
             this.emg_personal_tp.Size = new System.Drawing.Size(200, 33);
             this.emg_personal_tp.TabIndex = 42;
+            this.emg_personal_tp.TextChanged += new System.EventHandler(this.emg_personal_tp_TextChanged);
             // 
             // emg_official_address
             // 
@@ -2117,6 +2175,7 @@
             this.emg_full_name.Name = "emg_full_name";
             this.emg_full_name.Size = new System.Drawing.Size(200, 33);
             this.emg_full_name.TabIndex = 38;
+            this.emg_full_name.TextChanged += new System.EventHandler(this.emg_full_name_TextChanged);
             // 
             // emg_personal_address
             // 
@@ -2268,6 +2327,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.btnCheckWorkStationDetails);
             this.tabPage5.Controls.Add(this.btnSave5);
             this.tabPage5.Controls.Add(this.wsd_date_of_post_d);
             this.tabPage5.Controls.Add(this.wsd_date_of_post_m);
@@ -2291,6 +2351,16 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "WorkstationDetails";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // btnCheckWorkStationDetails
+            // 
+            this.btnCheckWorkStationDetails.Location = new System.Drawing.Point(243, 309);
+            this.btnCheckWorkStationDetails.Name = "btnCheckWorkStationDetails";
+            this.btnCheckWorkStationDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckWorkStationDetails.TabIndex = 59;
+            this.btnCheckWorkStationDetails.Text = "Check";
+            this.btnCheckWorkStationDetails.UseVisualStyleBackColor = true;
+            this.btnCheckWorkStationDetails.Click += new System.EventHandler(this.btnCheckWorkStationDetails_Click);
             // 
             // btnSave5
             // 
@@ -2385,6 +2455,7 @@
             this.wsd_power.Name = "wsd_power";
             this.wsd_power.Size = new System.Drawing.Size(200, 34);
             this.wsd_power.TabIndex = 8;
+            this.wsd_power.SelectedIndexChanged += new System.EventHandler(this.wsd_power_SelectedIndexChanged);
             // 
             // wsd_post
             // 
@@ -2393,6 +2464,7 @@
             this.wsd_post.Name = "wsd_post";
             this.wsd_post.Size = new System.Drawing.Size(200, 34);
             this.wsd_post.TabIndex = 7;
+            this.wsd_post.SelectedIndexChanged += new System.EventHandler(this.wsd_post_SelectedIndexChanged);
             // 
             // wsd_responsibility
             // 
@@ -2401,6 +2473,7 @@
             this.wsd_responsibility.Name = "wsd_responsibility";
             this.wsd_responsibility.Size = new System.Drawing.Size(200, 34);
             this.wsd_responsibility.TabIndex = 6;
+            this.wsd_responsibility.SelectedIndexChanged += new System.EventHandler(this.wsd_responsibility_SelectedIndexChanged);
             // 
             // wsd_salary_station
             // 
@@ -2409,6 +2482,7 @@
             this.wsd_salary_station.Name = "wsd_salary_station";
             this.wsd_salary_station.Size = new System.Drawing.Size(200, 34);
             this.wsd_salary_station.TabIndex = 5;
+            this.wsd_salary_station.SelectedIndexChanged += new System.EventHandler(this.wsd_salary_station_SelectedIndexChanged);
             // 
             // wsd_rank
             // 
@@ -2417,6 +2491,7 @@
             this.wsd_rank.Name = "wsd_rank";
             this.wsd_rank.Size = new System.Drawing.Size(200, 34);
             this.wsd_rank.TabIndex = 4;
+            this.wsd_rank.SelectedIndexChanged += new System.EventHandler(this.wsd_rank_SelectedIndexChanged);
             // 
             // label50
             // 
@@ -2434,6 +2509,7 @@
             this.wsd_division.Name = "wsd_division";
             this.wsd_division.Size = new System.Drawing.Size(200, 34);
             this.wsd_division.TabIndex = 2;
+            this.wsd_division.SelectedIndexChanged += new System.EventHandler(this.wsd_division_SelectedIndexChanged);
             // 
             // label49
             // 
@@ -2741,7 +2817,11 @@
         private System.Windows.Forms.Button btnSave3;
         private System.Windows.Forms.Button btnSave4;
         private System.Windows.Forms.Button btnSave5;
-        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Button btnCheckPersonalDetails;
+        private System.Windows.Forms.Button btnCheckConcatDetails;
+        private System.Windows.Forms.Button btnCheckDependentDetails;
+        private System.Windows.Forms.Button btnCheckEmergencyDetails;
+        private System.Windows.Forms.Button btnCheckWorkStationDetails;
     }
 }
 

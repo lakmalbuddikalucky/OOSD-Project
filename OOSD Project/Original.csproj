@@ -227,6 +227,7 @@
     <Compile Include="UserLogin\LoginSession.cs" />
     <Compile Include="UserLogin\LoginValidator.cs" />
     <Compile Include="UserLogin\UserLog.cs" />
+    <Compile Include="Validator.cs" />
     <EmbeddedResource Include="frmAddNotification.resx">
       <DependentUpon>frmAddNotification.cs</DependentUpon>
     </EmbeddedResource>

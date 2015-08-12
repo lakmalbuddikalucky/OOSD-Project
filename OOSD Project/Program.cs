@@ -23,11 +23,9 @@ namespace OOSD_Project
             Application.Run(new frmMain());
 
             //Application.Run(new frmLogin());
-<<<<<<< HEAD
-            Application.Run(new frmDisciplinaryDetails());
-=======
+            //Application.Run(new frmDisciplinaryDetails());
             //Application.Run(new frmSearch());
->>>>>>> origin/master
+
 
         }
     }

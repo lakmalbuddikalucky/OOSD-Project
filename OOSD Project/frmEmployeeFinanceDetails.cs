@@ -28,7 +28,6 @@ namespace OOSD_Project
             return form;
         }
 
-<<<<<<< HEAD
         private void setBankDetailsToWhite()
         {
             bank_name.BackColor = Color.White;
@@ -127,8 +126,6 @@ namespace OOSD_Project
             return state;
         }
 
-=======
->>>>>>> origin/master
         private void btnPrev_Click(object sender, EventArgs e)
         {
             frmEmployeeSpecialDetails.getForm().Show();
@@ -141,7 +138,6 @@ namespace OOSD_Project
             this.Hide();
         }
 
-<<<<<<< HEAD
         private void btnCheckBankDetails_Click(object sender, EventArgs e)
         {
             validateBankDetails();
@@ -187,15 +183,5 @@ namespace OOSD_Project
         {
             validateTaxDetails();
         }
-=======
-
-     
-
-
-
-       
-
- 
->>>>>>> origin/master
     }
 }

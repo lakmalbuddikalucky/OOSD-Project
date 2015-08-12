@@ -89,10 +89,7 @@ namespace OOSD_Project
             we.resign_reason = we_resign_reason.Text;
             we.responsibility = we_responsibility.Text;
             we.telephone = we_telephone.Text;
-
-            we.setDate_from(we_date_from_y.Text, we_date_from_m.Text, we_date_from_d.Text);
-            we.setDate_to(we_date_to_y.Text, we_date_to_m.Text, we_date_to_date.Text);
-            we.setDate_perma(we_date_perma_y.Text, we_date_perma_m.Text, we_date_perma_d.Text);
+            
             
             
 
@@ -149,15 +146,10 @@ namespace OOSD_Project
             we_responsibility.Text = null;
             we_telephone.Text = null;
 
-            we_date_from_y.Text = null;
-            we_date_from_m.Text = null;
-            we_date_from_d.Text = null;
-            we_date_to_y.Text = null;
-            we_date_to_m.Text = null;
+   
             we_date_to_date.Text = null;
-            we_date_perma_y.Text = null;
-            we_date_perma_m.Text = null;
-            we_date_perma_d.Text = null;
+          
+      
 
         }
 
@@ -192,11 +184,7 @@ namespace OOSD_Project
             if (member_personal_payment.Checked) { m.personal_payment = true; }
             else { m.personal_payment = false; }
 
-            m.setActive_date_insti(member_active_date_insti_y.Text, member_active_date_insti_m.Text, member_active_date_insti_d.Text);
-            m.setActive_date_person(member_active_date_person_y.Text, member_active_date_person_m.Text, member_active_date_person_d.Text);
-
-            m.setBegin_date(member_begin_date_y.Text, member_begin_date_m.Text, member_begin_date_d.Text);
-            m.setRenewal_date(member_renewal_date_y.Text, member_renewal_date_m.Text, member_renewal_date_d.Text);
+            
 
             m.status = member_status.Text;
             

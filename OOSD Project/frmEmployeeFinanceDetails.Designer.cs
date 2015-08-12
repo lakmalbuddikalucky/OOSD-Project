@@ -93,6 +93,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCheckBankDetails = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -348,6 +349,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.btnCheckBankDetails);
             this.tabPage1.Controls.Add(this.bank_account_closed_day);
             this.tabPage1.Controls.Add(this.bank_account_closed_month);
             this.tabPage1.Controls.Add(this.bank_account_closed_year);
@@ -1233,6 +1235,17 @@
             this.panel1.Size = new System.Drawing.Size(1360, 768);
             this.panel1.TabIndex = 4;
             // 
+            // btnCheckBankDetails
+            // 
+            this.btnCheckBankDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckBankDetails.Location = new System.Drawing.Point(306, 512);
+            this.btnCheckBankDetails.Name = "btnCheckBankDetails";
+            this.btnCheckBankDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckBankDetails.TabIndex = 67;
+            this.btnCheckBankDetails.Text = "Check";
+            this.btnCheckBankDetails.UseVisualStyleBackColor = true;
+            this.btnCheckBankDetails.Click += new System.EventHandler(this.btnCheckBankDetails_Click);
+            // 
             // frmEmployeeFinanceDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1331,5 +1344,6 @@
         private System.Windows.Forms.ComboBox insurance_started_day;
         private System.Windows.Forms.ComboBox insurance_started_month;
         private System.Windows.Forms.ComboBox insurance_started_year;
+        private System.Windows.Forms.Button btnCheckBankDetails;
     }
 }

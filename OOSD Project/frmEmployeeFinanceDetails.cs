@@ -28,6 +28,27 @@ namespace OOSD_Project
             return form;
         }
 
+        private bool validateBankDetails()
+        {
+            bool state = false;
+            if(bank_name.Text == "")
+            {
+                bank_name.BackColor = Color.RosyBrown;
+                state = false;
+            }
+            if(bank_branch_name.Text == "" || !Validator.text(bank_branch_name.Text))
+            {
+                bank_branch_name.BackColor = Color.RosyBrown;
+                state = false;
+            }
+            if(bank_account_name.Text == "" || !Validator.number(bank_account_name.Text))
+            {
+                bank_account_name.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            return state;
+        }
         private void btnPrev_Click(object sender, EventArgs e)
         {
             frmEmployeeSpecialDetails.getForm().Show();
@@ -40,13 +61,9 @@ namespace OOSD_Project
             this.Hide();
         }
 
+        private void btnCheckBankDetails_Click(object sender, EventArgs e)
+        {
 
-     
-
-
-
-       
-
- 
+        }
     }
 }

@@ -38,5 +38,10 @@ namespace OOSD_Project
         {
             return true;
         }
+
+        public static bool number(string number) {
+            return Regex.IsMatch(number, @" /^\d +/");
+        }
+
     }
 }

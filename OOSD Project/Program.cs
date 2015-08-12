@@ -23,7 +23,7 @@ namespace OOSD_Project
             //Application.Run(new frmMain());
 
             //Application.Run(new frmLogin());
-            Application.Run(new frmSearch());
+            Application.Run(new frmDisciplinaryDetails());
 
         }
     }

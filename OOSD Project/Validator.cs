@@ -33,5 +33,10 @@ namespace OOSD_Project
         {
             return Regex.IsMatch(nic, @" ^\d{10}$[v,V]");
         }
+
+        public static bool epf(string epf)
+        {
+            return true;
+        }
     }
 }

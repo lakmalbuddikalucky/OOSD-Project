@@ -38,81 +38,403 @@ namespace OOSD_Project
             return form;
         }
 
-        private bool validate()
+        private void setPersonalDetailsToWhite()
         {
+            //Set personal details field's background color to white
+            employee_no.BackColor = Color.White;
+            employee_type.BackColor = Color.White;
+            epf_no.BackColor = Color.White;
+            salutation.BackColor = Color.White;
+            occupation.BackColor = Color.White;
+            first_name.BackColor = Color.White;
+            nic_no.BackColor = Color.White;
+            dob_year.BackColor = Color.White;
+            dob_month.BackColor = Color.White;
+            dob_date.BackColor = Color.White;
+            action_status.BackColor = Color.White;
+            blood_group.BackColor = Color.White;
+        }
+
+        private void setContactDetailsToWhiate()
+        {
+
+            perm_home_no.BackColor = Color.White;
+            perm_address.BackColor = Color.White;
+            perm_city.BackColor = Color.White;
+            perm_province.BackColor = Color.White;
+            perm_district.BackColor = Color.White;
+            perm_uc.BackColor = Color.White;
+            perm_grama.BackColor = Color.White;
+            perm_polling_division.BackColor = Color.White;
+            perm_teleophone.BackColor = Color.White;
+            perm_mobile.BackColor = Color.White;
+            perm_fax.BackColor = Color.White;
+            perm_email.BackColor = Color.White;
+            cur_city.BackColor = Color.White;
+            cur_teleophone.BackColor = Color.White;
+            cur_mobile.BackColor = Color.White;
+            cur_fax.BackColor = Color.White;
+            cur_email.BackColor = Color.White;
+            cur_home_no.BackColor = Color.White;
+            cur_address.BackColor = Color.White;
+        }
+
+        private void setDependentDetailsToWhite()
+        {
+            depend_nic_no.BackColor = Color.White;
+            depend_full_name.BackColor = Color.White;
+            depend_office_tp.BackColor = Color.White;
+            depend_personal_tp.BackColor = Color.White;
+        }
+
+        private void setEmergencyContactDetailsToWhite()
+        {
+            emg_full_name.BackColor = Color.White;
+            emg_personal_tp.BackColor = Color.White;
+            emg_mobile_no.BackColor = Color.White;
+            emg_office_tp.BackColor = Color.White;
+            emg_nic_no.BackColor = Color.White;
+        }
+
+        private void setWorkstationDetailsToWhite()
+        {
+            wsd_rank.BackColor = Color.White;
+            wsd_division.BackColor = Color.White;
+            wsd_post.BackColor = Color.White;
+            wsd_date_of_post_y.BackColor = Color.White;
+            wsd_date_of_post_m.BackColor = Color.White;
+            wsd_date_of_post_d.BackColor = Color.White;
+            wsd_salary_station.BackColor = Color.White;
+            wsd_responsibility.BackColor = Color.White;
+            wsd_power.BackColor = Color.White;
+        }
+
+        private bool validatePersonalDetails()
+        {
+            setPersonalDetailsToWhite();
+            bool state = true;
             if (employee_no.Text == "")
             {
                 employee_no.BackColor = Color.RosyBrown;
-                return false;
+                state = false;
             }
 
             if (employee_type.Text == "")
             {
                 employee_type.BackColor = Color.RosyBrown;
-                return false;
+                state = false;
             }
 
-            if (epf_no.Text == "")
+            if (epf_no.Text == "" || !Validator.epf(epf_no.Text)) 
             {
                 epf_no.BackColor = Color.RosyBrown; ;
-                return false;
+                state = false;
             }
 
             if (salutation.Text == "")
             {
                 salutation.BackColor = Color.RosyBrown; ;
-                return false;
+                state = false;
             }
 
             if (occupation.Text == "")
             {
                 occupation.BackColor = Color.RosyBrown; ;
-                return false;
+                state = false;
             }
 
-            if (first_name.Text == "")
+            if (first_name.Text == "" || !Validator.text(first_name.Text))
             {
                 first_name.BackColor = Color.RosyBrown;
-                return false;
+                state = false;
             }
 
             if (nic_no.Text == "")
             {
                 nic_no.BackColor = Color.RosyBrown;
-                return false;
+                state = false;
             }
-
-            if (dob_year.Text == "")
-            {
-                dob_year.BackColor = Color.RosyBrown;
-                return false;
-            }
-
-            if (dob_month.Text == "")
-            {
-                dob_month.BackColor = Color.RosyBrown;
-                return false;
-            }
-
-            if (dob_date.Text == "")
-            {
-                dob_date.BackColor = Color.RosyBrown;
-                return false;
-            }
-
 
             if (action_status.Text == "")
             {
                 action_status.BackColor = Color.RosyBrown;
-                return false;
+                state = false;
             }
 
             if (blood_group.Text == "")
             {
                 blood_group.BackColor = Color.RosyBrown;
-                return false;
+                state = false;
             }
-            return true;
+            return state;
+        }
+
+        private bool validateContactDetails()
+        {
+            //Compulsory validations
+            setContactDetailsToWhiate();
+            bool state = true;
+            if (perm_home_no.Text == "")
+            {
+                perm_home_no.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (perm_address.Text == "")
+            {
+                perm_address.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (perm_city.Text == "" || !Validator.text(perm_city.Text))
+            {
+                perm_city.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (perm_province.Text == "")
+            {
+                perm_province.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (perm_district.Text == "")
+            {
+                perm_district.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (perm_uc.Text == "")
+            {
+                perm_uc.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (perm_grama.Text == "")
+            {
+                perm_grama.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (perm_polling_division.Text == "")
+            {
+                perm_polling_division.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (perm_teleophone.Text != "" && !Validator.contactNumber(perm_teleophone.Text))
+            {
+                perm_teleophone.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (perm_mobile.Text != "" && !Validator.contactNumber(perm_mobile.Text))
+            {
+                perm_mobile.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (perm_mobile.Text == "" && perm_teleophone.Text == "")
+            {
+                perm_teleophone.BackColor = Color.RosyBrown;
+                perm_mobile.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (perm_fax.Text != "" && Validator.fax(perm_fax.Text))
+            {
+                perm_fax.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (perm_email.Text != "" && !Validator.email(perm_email.Text))
+            {
+                perm_email.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            //Not compulsory validations
+            if (cur_city.Text != "" && !Validator.text(cur_city.Text))
+            {
+                cur_city.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (cur_teleophone.Text != "" && !Validator.contactNumber(cur_teleophone.Text))
+            {
+                cur_teleophone.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (cur_mobile.Text != "" && !Validator.contactNumber(cur_mobile.Text))
+            {
+                cur_mobile.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (cur_fax.Text != "" && !Validator.fax(cur_fax.Text))
+            {
+                cur_fax.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (cur_email.Text != "" && !Validator.email(cur_email.Text))
+            {
+                cur_email.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            //Data duplication validation
+            /*
+            if(perm_home_no.Text != "" && cur_home_no.Text != "" && perm_home_no.Text == cur_home_no.Text)
+            {
+                perm_home_no.BackColor = Color.BurlyWood;
+                cur_home_no.BackColor = Color.BurlyWood;
+                state = false;
+            }
+
+            if(perm_address.Text != "" && cur_address.Text != "" && perm_address.Text == cur_address.Text)
+            {
+                perm_address.BackColor = Color.BurlyWood;
+                cur_address.BackColor = Color.BurlyWood;
+                state = false;
+            }
+
+            if(perm_mobile.Text != "" && cur_mobile.Text != "" && perm_mobile.Text == cur_mobile.Text)
+            {
+                perm_mobile.BackColor = Color.BurlyWood;
+                cur_mobile.BackColor = Color.BurlyWood;
+                state = false;
+            }
+
+            if(perm_fax.Text != "" && cur_fax.Text != "" && perm_fax.Text == cur_fax.Text)
+            {
+                perm_fax.BackColor = Color.BurlyWood;
+                cur_fax.BackColor = Color.BurlyWood;
+                state = false;
+            }
+
+            if(perm_email.Text != "" && cur_email.Text != "" && perm_email.Text == cur_email.Text)
+            {
+                perm_email.BackColor = Color.BurlyWood;
+                cur_email.BackColor = Color.BurlyWood;
+                state = false;
+            }*/
+            return state;
+        }
+
+        private bool validateDependentDetails()
+        {
+            setDependentDetailsToWhite();
+            bool state = true;
+            if (depend_full_name.Text == "" || !Validator.text(depend_full_name.Text))
+            {
+                depend_full_name.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (depend_relation.Text == "" || !Validator.text(depend_relation.Text))
+            {
+                depend_relation.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (depend_birth_certificate.Text == "")
+            {
+                depend_birth_certificate.BackColor = Color.RosyBrown;
+                state = false;
+            }
+            return state;
+        }
+
+        private bool validateEmergencyContactDetails()
+        {
+            setEmergencyContactDetailsToWhite();
+            bool state = true;
+            if (emg_full_name.Text == "" || !Validator.text(emg_full_name.Text))
+            {
+                emg_full_name.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (emg_personal_tp.Text != "" && !Validator.contactNumber(emg_personal_tp.Text))
+            {
+                emg_personal_tp.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (emg_mobile_no.Text != "" && !Validator.contactNumber(emg_mobile_no.Text))
+            {
+                emg_mobile_no.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (emg_office_tp.Text != "" && !Validator.contactNumber(emg_office_tp.Text))
+            {
+                emg_office_tp.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (emg_mobile_no.Text == "" && emg_personal_tp.Text == "")
+            {
+                emg_personal_tp.BackColor = Color.RosyBrown;
+                emg_mobile_no.BackColor = Color.RosyBrown;
+                emg_office_tp.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (emg_nic_no.Text != "" && !Validator.nic(emg_nic_no.Text))
+            {
+                emg_nic_no.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+
+
+            return state;
+        }
+
+        private bool validateWorkstationDetails()
+        {
+            setWorkstationDetailsToWhite();
+            bool state = true;
+            if (wsd_rank.Text == "")
+            {
+                wsd_rank.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (wsd_division.Text == "")
+            {
+                wsd_division.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (wsd_post.Text == "")
+            {
+                wsd_post.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+
+            if (wsd_salary_station.Text == "")
+            {
+                wsd_salary_station.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (wsd_responsibility.Text == "")
+            {
+                wsd_responsibility.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if (wsd_power.Text == "")
+            {
+                wsd_power.BackColor = Color.RosyBrown;
+                state = false;
+            }
+            return state;
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -394,9 +716,29 @@ namespace OOSD_Project
             else { MessageBox.Show("Failed to add workstation details...!"); }
         }
 
-        private void btnCheck_Click(object sender, EventArgs e)
+        private void btnCheckPersonalDetails_Click(object sender, EventArgs e)
         {
-            validate();
+            validatePersonalDetails();
+        }
+
+        private void btnCheckConcatDetails_Click(object sender, EventArgs e)
+        {
+            validateContactDetails();
+        }
+
+        private void btnCheckDependentDetails_Click(object sender, EventArgs e)
+        {
+            validateDependentDetails();
+        }
+
+        private void btnCheckEmergencyDetails_Click(object sender, EventArgs e)
+        {
+            validateEmergencyContactDetails();
+        }
+
+        private void btnCheckWorkStationDetails_Click(object sender, EventArgs e)
+        {
+            validateWorkstationDetails();
         }
 
         private void employee_no_TextChanged(object sender, EventArgs e)
@@ -419,11 +761,6 @@ namespace OOSD_Project
             salutation.BackColor = Color.White;
         }
 
-        private void occupation_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            occupation.BackColor = Color.White;
-        }
-
         private void first_name_TextChanged(object sender, EventArgs e)
         {
             first_name.BackColor = Color.White;
@@ -434,21 +771,6 @@ namespace OOSD_Project
             nic_no.BackColor = Color.White;
         }
 
-        private void dob_year_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            dob_year.BackColor = Color.White;
-        }
-
-        private void dob_month_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            dob_month.BackColor = Color.White;
-        }
-
-        private void dob_date_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            dob_date.BackColor = Color.White;
-        }
-
         private void action_status_SelectedIndexChanged(object sender, EventArgs e)
         {
             action_status.BackColor = Color.White;
@@ -457,6 +779,174 @@ namespace OOSD_Project
         private void blood_group_SelectedIndexChanged(object sender, EventArgs e)
         {
             blood_group.BackColor = Color.White;
+        }
+
+        private void perm_home_no_TextChanged(object sender, EventArgs e)
+        {
+            perm_home_no.BackColor = Color.White;
+        }
+
+        private void perm_address_TextChanged(object sender, EventArgs e)
+        {
+            perm_address.BackColor = Color.White;
+        }
+
+        private void perm_city_TextChanged(object sender, EventArgs e)
+        {
+            perm_city.BackColor = Color.White;
+        }
+
+        private void perm_province_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            perm_province.BackColor = Color.White;
+        }
+
+        private void perm_district_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            perm_district.BackColor = Color.White;
+        }
+
+        private void perm_uc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            perm_uc.BackColor = Color.White;
+        }
+
+        private void perm_grama_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            perm_grama.BackColor = Color.White;
+        }
+
+        private void perm_polling_division_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            perm_polling_division.BackColor = Color.White;
+        }
+
+        private void perm_teleophone_TextChanged(object sender, EventArgs e)
+        {
+            perm_teleophone.BackColor = Color.White;
+            perm_mobile.BackColor = Color.White;
+        }
+
+        private void perm_mobile_TextChanged(object sender, EventArgs e)
+        {
+            perm_teleophone.BackColor = Color.White;
+            perm_mobile.BackColor = Color.White;
+        }
+
+        private void perm_fax_TextChanged(object sender, EventArgs e)
+        {
+            perm_fax.BackColor = Color.White;
+        }
+
+        private void perm_email_TextChanged(object sender, EventArgs e)
+        {
+            perm_email.BackColor = Color.White;
+        }
+
+        private void cur_email_TextChanged(object sender, EventArgs e)
+        {
+            cur_email.BackColor = Color.White;
+        }
+
+        private void cur_fax_TextChanged(object sender, EventArgs e)
+        {
+            cur_fax.BackColor = Color.White;
+        }
+
+        private void cur_mobile_TextChanged(object sender, EventArgs e)
+        {
+            cur_mobile.BackColor = Color.White;
+        }
+
+        private void cur_teleophone_TextChanged(object sender, EventArgs e)
+        {
+            cur_teleophone.BackColor = Color.White;
+        }
+
+        private void cur_home_no_TextChanged(object sender, EventArgs e)
+        {
+            cur_home_no.BackColor = Color.White;
+        }
+
+        private void cur_address_TextChanged(object sender, EventArgs e)
+        {
+            cur_address.BackColor = Color.White;
+        }
+
+        private void depend_relation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            depend_relation.BackColor = Color.White;
+        }
+
+        private void depend_full_name_TextChanged(object sender, EventArgs e)
+        {
+            depend_full_name.BackColor = Color.White;
+        }
+
+        private void depend_birth_certificate_TextChanged(object sender, EventArgs e)
+        {
+            depend_birth_certificate.BackColor = Color.White;
+        }
+
+        private void emg_full_name_TextChanged(object sender, EventArgs e)
+        {
+            emg_full_name.BackColor = Color.White;
+        }
+
+        private void emg_personal_tp_TextChanged(object sender, EventArgs e)
+        {
+            emg_personal_tp.BackColor = Color.White;
+            emg_mobile_no.BackColor = Color.White;
+            emg_office_tp.BackColor = Color.White;
+        }
+
+        private void emg_mobile_no_TextChanged(object sender, EventArgs e)
+        {
+            emg_personal_tp.BackColor = Color.White;
+            emg_mobile_no.BackColor = Color.White;
+            emg_office_tp.BackColor = Color.White;
+        }
+
+        private void emg_office_tp_TextChanged(object sender, EventArgs e)
+        {
+            emg_personal_tp.BackColor = Color.White;
+            emg_mobile_no.BackColor = Color.White;
+            emg_office_tp.BackColor = Color.White;
+        }
+
+        private void wsd_rank_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            wsd_rank.BackColor = Color.White;
+        }
+
+        private void wsd_division_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            wsd_division.BackColor = Color.White;
+        }
+
+        private void wsd_post_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            wsd_post.BackColor = Color.White;
+        }
+
+        private void wsd_salary_station_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            wsd_salary_station.BackColor = Color.White;
+        }
+
+        private void wsd_responsibility_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            wsd_responsibility.BackColor = Color.White;
+        }
+
+        private void wsd_power_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            wsd_power.BackColor = Color.White;
+        }
+
+        private void dob_year_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

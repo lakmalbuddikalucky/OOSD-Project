@@ -23,8 +23,9 @@ namespace OOSD_Project
             //Application.Run(new frmMain());
 
             //Application.Run(new frmLogin());
-            Application.Run(new frmDisciplinaryDetails());
-
+            
+            Application.Run(new frmEmployeeFinanceDetails());
+            //Application.Run(new frmEmployeePersonalDetails());
 
         }
     }

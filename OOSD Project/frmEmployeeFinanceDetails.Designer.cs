@@ -55,6 +55,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tabEmployeeFinanceDetails = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnCheckBankDetails = new System.Windows.Forms.Button();
             this.bank_account_closed_day = new System.Windows.Forms.ComboBox();
             this.bank_account_closed_month = new System.Windows.Forms.ComboBox();
             this.bank_account_closed_year = new System.Windows.Forms.ComboBox();
@@ -93,7 +94,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCheckBankDetails = new System.Windows.Forms.Button();
+            this.btnCheckInsuaranceDetails = new System.Windows.Forms.Button();
+            this.btnCheckTaxDetails = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -377,6 +379,17 @@
             this.tabPage1.Size = new System.Drawing.Size(1062, 670);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Bank";
+            // 
+            // btnCheckBankDetails
+            // 
+            this.btnCheckBankDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckBankDetails.Location = new System.Drawing.Point(306, 512);
+            this.btnCheckBankDetails.Name = "btnCheckBankDetails";
+            this.btnCheckBankDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckBankDetails.TabIndex = 67;
+            this.btnCheckBankDetails.Text = "Check";
+            this.btnCheckBankDetails.UseVisualStyleBackColor = true;
+            this.btnCheckBankDetails.Click += new System.EventHandler(this.btnCheckBankDetails_Click);
             // 
             // bank_account_closed_day
             // 
@@ -695,6 +708,7 @@
             this.bank_account_name.Name = "bank_account_name";
             this.bank_account_name.Size = new System.Drawing.Size(200, 33);
             this.bank_account_name.TabIndex = 24;
+            this.bank_account_name.TextChanged += new System.EventHandler(this.bank_account_name_TextChanged);
             // 
             // label10
             // 
@@ -712,6 +726,7 @@
             this.bank_account_type.Name = "bank_account_type";
             this.bank_account_type.Size = new System.Drawing.Size(200, 34);
             this.bank_account_type.TabIndex = 20;
+            this.bank_account_type.SelectedIndexChanged += new System.EventHandler(this.bank_account_type_SelectedIndexChanged);
             // 
             // bank_name
             // 
@@ -720,6 +735,7 @@
             this.bank_name.Name = "bank_name";
             this.bank_name.Size = new System.Drawing.Size(200, 34);
             this.bank_name.TabIndex = 19;
+            this.bank_name.SelectedIndexChanged += new System.EventHandler(this.bank_name_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -745,6 +761,7 @@
             this.bank_branch_name.Name = "bank_branch_name";
             this.bank_branch_name.Size = new System.Drawing.Size(200, 33);
             this.bank_branch_name.TabIndex = 7;
+            this.bank_branch_name.TextChanged += new System.EventHandler(this.bank_branch_name_TextChanged);
             // 
             // label6
             // 
@@ -776,6 +793,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.btnCheckInsuaranceDetails);
             this.tabPage2.Controls.Add(this.day);
             this.tabPage2.Controls.Add(this.insurance_ended_month);
             this.tabPage2.Controls.Add(this.insurance_ended_year);
@@ -1106,6 +1124,7 @@
             this.insurance_type.Name = "insurance_type";
             this.insurance_type.Size = new System.Drawing.Size(121, 34);
             this.insurance_type.TabIndex = 26;
+            this.insurance_type.SelectedIndexChanged += new System.EventHandler(this.insurance_type_SelectedIndexChanged);
             // 
             // insurance_notes
             // 
@@ -1130,6 +1149,7 @@
             this.insurance_value.Name = "insurance_value";
             this.insurance_value.Size = new System.Drawing.Size(200, 33);
             this.insurance_value.TabIndex = 4;
+            this.insurance_value.TextChanged += new System.EventHandler(this.insurance_value_TextChanged);
             // 
             // label14
             // 
@@ -1151,6 +1171,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btnCheckTaxDetails);
             this.tabPage3.Controls.Add(this.label19);
             this.tabPage3.Controls.Add(this.label18);
             this.tabPage3.Controls.Add(this.tax_no);
@@ -1235,16 +1256,27 @@
             this.panel1.Size = new System.Drawing.Size(1360, 768);
             this.panel1.TabIndex = 4;
             // 
-            // btnCheckBankDetails
+            // btnCheckInsuaranceDetails
             // 
-            this.btnCheckBankDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckBankDetails.Location = new System.Drawing.Point(306, 512);
-            this.btnCheckBankDetails.Name = "btnCheckBankDetails";
-            this.btnCheckBankDetails.Size = new System.Drawing.Size(75, 33);
-            this.btnCheckBankDetails.TabIndex = 67;
-            this.btnCheckBankDetails.Text = "Check";
-            this.btnCheckBankDetails.UseVisualStyleBackColor = true;
-            this.btnCheckBankDetails.Click += new System.EventHandler(this.btnCheckBankDetails_Click);
+            this.btnCheckInsuaranceDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckInsuaranceDetails.Location = new System.Drawing.Point(306, 393);
+            this.btnCheckInsuaranceDetails.Name = "btnCheckInsuaranceDetails";
+            this.btnCheckInsuaranceDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckInsuaranceDetails.TabIndex = 68;
+            this.btnCheckInsuaranceDetails.Text = "Check";
+            this.btnCheckInsuaranceDetails.UseVisualStyleBackColor = true;
+            this.btnCheckInsuaranceDetails.Click += new System.EventHandler(this.btnCheckInsuaranceDetails_Click);
+            // 
+            // btnCheckTaxDetails
+            // 
+            this.btnCheckTaxDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckTaxDetails.Location = new System.Drawing.Point(306, 394);
+            this.btnCheckTaxDetails.Name = "btnCheckTaxDetails";
+            this.btnCheckTaxDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckTaxDetails.TabIndex = 69;
+            this.btnCheckTaxDetails.Text = "Check";
+            this.btnCheckTaxDetails.UseVisualStyleBackColor = true;
+            this.btnCheckTaxDetails.Click += new System.EventHandler(this.btnCheckTaxDetails_Click);
             // 
             // frmEmployeeFinanceDetails
             // 
@@ -1345,5 +1377,7 @@
         private System.Windows.Forms.ComboBox insurance_started_month;
         private System.Windows.Forms.ComboBox insurance_started_year;
         private System.Windows.Forms.Button btnCheckBankDetails;
+        private System.Windows.Forms.Button btnCheckInsuaranceDetails;
+        private System.Windows.Forms.Button btnCheckTaxDetails;
     }
 }

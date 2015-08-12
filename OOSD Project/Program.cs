@@ -20,10 +20,10 @@ namespace OOSD_Project
             Application.SetCompatibleTextRenderingDefault(false);
 
             //Application.Run(new frmLogin());
-            //Application.Run(new frmMain());
+            Application.Run(new frmMain());
 
             //Application.Run(new frmLogin());
-            Application.Run(new frmSearch());
+            //Application.Run(new frmSearch());
 
         }
     }

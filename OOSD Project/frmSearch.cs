@@ -28,11 +28,11 @@ namespace OOSD_Project
             employee_no.Text = "Select employee number";
 
 
-            /*foreach (string Txt in em_nos)
+            foreach (string Txt in em_nos)
             {
                 employee_no.Items.Add(Txt);
 
-            }*/
+            }
         }
 
         public static frmSearch getForm()

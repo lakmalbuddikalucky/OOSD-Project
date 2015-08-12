@@ -38,6 +38,7 @@ namespace OOSD_Project
         {
             return true;
         }
+<<<<<<< HEAD
 
         public static bool number(string number) {
             return Regex.IsMatch(number, @"^[1-9]\d*$");
@@ -57,5 +58,7 @@ namespace OOSD_Project
             else
                 return true;
         }
+=======
+>>>>>>> origin/master
     }
 }

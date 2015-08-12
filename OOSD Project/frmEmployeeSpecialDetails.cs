@@ -91,7 +91,7 @@ namespace OOSD_Project
             we.telephone = we_telephone.Text;
 
             we.setDate_from(we_date_from_y.Text, we_date_from_m.Text, we_date_from_d.Text);
-            we.setDate_to(we_date_to_y.Text, we_date_to_m.Text, we_date_to_d.Text);
+            we.setDate_to(we_date_to_y.Text, we_date_to_m.Text, we_date_to_date.Text);
             we.setDate_perma(we_date_perma_y.Text, we_date_perma_m.Text, we_date_perma_d.Text);
             
             
@@ -154,7 +154,7 @@ namespace OOSD_Project
             we_date_from_d.Text = null;
             we_date_to_y.Text = null;
             we_date_to_m.Text = null;
-            we_date_to_d.Text = null;
+            we_date_to_date.Text = null;
             we_date_perma_y.Text = null;
             we_date_perma_m.Text = null;
             we_date_perma_d.Text = null;

@@ -56,20 +56,12 @@
             this.label35 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.interdict_unattended_day_from = new System.Windows.Forms.ComboBox();
-            this.interdict_unattended_month_from = new System.Windows.Forms.ComboBox();
-            this.interdict_unattended_year_from = new System.Windows.Forms.ComboBox();
-            this.interdict_year_from = new System.Windows.Forms.ComboBox();
-            this.interdict_month_from = new System.Windows.Forms.ComboBox();
-            this.interdict_day_from = new System.Windows.Forms.ComboBox();
-            this.interdict_unattended_year_to = new System.Windows.Forms.ComboBox();
-            this.interdict_unattended_month_to = new System.Windows.Forms.ComboBox();
-            this.interdict_unattended_day_to = new System.Windows.Forms.ComboBox();
             this.interdict_rejoined = new System.Windows.Forms.RadioButton();
             this.interdict_not_rejoined = new System.Windows.Forms.RadioButton();
-            this.interdict_year_to = new System.Windows.Forms.ComboBox();
-            this.interdict_month_to = new System.Windows.Forms.ComboBox();
-            this.interdict_day_to = new System.Windows.Forms.ComboBox();
+            this.interdict_unattended_date_from = new System.Windows.Forms.DateTimePicker();
+            this.interdict_unattended_date_to = new System.Windows.Forms.DateTimePicker();
+            this.interdict_date_to = new System.Windows.Forms.DateTimePicker();
+            this.interdict_date_from = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -359,468 +351,6 @@
             this.label2.Text = "තාවකාලිකව වැඩ තහනම් කීරීම\r\nදින දක්වා";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // interdict_unattended_day_from
-            // 
-            this.interdict_unattended_day_from.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.interdict_unattended_day_from.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.interdict_unattended_day_from.FormattingEnabled = true;
-            this.interdict_unattended_day_from.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.interdict_unattended_day_from.Location = new System.Drawing.Point(814, 309);
-            this.interdict_unattended_day_from.Name = "interdict_unattended_day_from";
-            this.interdict_unattended_day_from.Size = new System.Drawing.Size(91, 34);
-            this.interdict_unattended_day_from.TabIndex = 8;
-            this.interdict_unattended_day_from.Text = "    දිනය";
-            // 
-            // interdict_unattended_month_from
-            // 
-            this.interdict_unattended_month_from.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.interdict_unattended_month_from.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.interdict_unattended_month_from.FormattingEnabled = true;
-            this.interdict_unattended_month_from.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.interdict_unattended_month_from.Location = new System.Drawing.Point(717, 309);
-            this.interdict_unattended_month_from.Name = "interdict_unattended_month_from";
-            this.interdict_unattended_month_from.Size = new System.Drawing.Size(91, 34);
-            this.interdict_unattended_month_from.TabIndex = 7;
-            this.interdict_unattended_month_from.Text = "   මාසය";
-            // 
-            // interdict_unattended_year_from
-            // 
-            this.interdict_unattended_year_from.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.interdict_unattended_year_from.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.interdict_unattended_year_from.FormattingEnabled = true;
-            this.interdict_unattended_year_from.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.interdict_unattended_year_from.Location = new System.Drawing.Point(608, 309);
-            this.interdict_unattended_year_from.Name = "interdict_unattended_year_from";
-            this.interdict_unattended_year_from.Size = new System.Drawing.Size(103, 34);
-            this.interdict_unattended_year_from.TabIndex = 6;
-            this.interdict_unattended_year_from.Text = "   වර්ෂය";
-            // 
-            // interdict_year_from
-            // 
-            this.interdict_year_from.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.interdict_year_from.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.interdict_year_from.FormattingEnabled = true;
-            this.interdict_year_from.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.interdict_year_from.Location = new System.Drawing.Point(608, 445);
-            this.interdict_year_from.Name = "interdict_year_from";
-            this.interdict_year_from.Size = new System.Drawing.Size(103, 34);
-            this.interdict_year_from.TabIndex = 14;
-            this.interdict_year_from.Text = "   වර්ෂය";
-            // 
-            // interdict_month_from
-            // 
-            this.interdict_month_from.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.interdict_month_from.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.interdict_month_from.FormattingEnabled = true;
-            this.interdict_month_from.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.interdict_month_from.Location = new System.Drawing.Point(717, 445);
-            this.interdict_month_from.Name = "interdict_month_from";
-            this.interdict_month_from.Size = new System.Drawing.Size(91, 34);
-            this.interdict_month_from.TabIndex = 15;
-            this.interdict_month_from.Text = "   මාසය";
-            // 
-            // interdict_day_from
-            // 
-            this.interdict_day_from.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.interdict_day_from.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.interdict_day_from.FormattingEnabled = true;
-            this.interdict_day_from.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.interdict_day_from.Location = new System.Drawing.Point(814, 445);
-            this.interdict_day_from.Name = "interdict_day_from";
-            this.interdict_day_from.Size = new System.Drawing.Size(91, 34);
-            this.interdict_day_from.TabIndex = 16;
-            this.interdict_day_from.Text = "    දිනය";
-            // 
-            // interdict_unattended_year_to
-            // 
-            this.interdict_unattended_year_to.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.interdict_unattended_year_to.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.interdict_unattended_year_to.FormattingEnabled = true;
-            this.interdict_unattended_year_to.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.interdict_unattended_year_to.Location = new System.Drawing.Point(608, 350);
-            this.interdict_unattended_year_to.Name = "interdict_unattended_year_to";
-            this.interdict_unattended_year_to.Size = new System.Drawing.Size(103, 34);
-            this.interdict_unattended_year_to.TabIndex = 9;
-            this.interdict_unattended_year_to.Text = "   වර්ෂය";
-            // 
-            // interdict_unattended_month_to
-            // 
-            this.interdict_unattended_month_to.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.interdict_unattended_month_to.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.interdict_unattended_month_to.FormattingEnabled = true;
-            this.interdict_unattended_month_to.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.interdict_unattended_month_to.Location = new System.Drawing.Point(717, 350);
-            this.interdict_unattended_month_to.Name = "interdict_unattended_month_to";
-            this.interdict_unattended_month_to.Size = new System.Drawing.Size(91, 34);
-            this.interdict_unattended_month_to.TabIndex = 10;
-            this.interdict_unattended_month_to.Text = "   මාසය";
-            // 
-            // interdict_unattended_day_to
-            // 
-            this.interdict_unattended_day_to.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.interdict_unattended_day_to.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.interdict_unattended_day_to.FormattingEnabled = true;
-            this.interdict_unattended_day_to.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.interdict_unattended_day_to.Location = new System.Drawing.Point(814, 350);
-            this.interdict_unattended_day_to.Name = "interdict_unattended_day_to";
-            this.interdict_unattended_day_to.Size = new System.Drawing.Size(91, 34);
-            this.interdict_unattended_day_to.TabIndex = 11;
-            this.interdict_unattended_day_to.Text = "    දිනය";
-            // 
             // interdict_rejoined
             // 
             this.interdict_rejoined.AutoSize = true;
@@ -845,179 +375,49 @@
             this.interdict_not_rejoined.Text = "නැවත බඳවා නොගැනීමක් ";
             this.interdict_not_rejoined.UseVisualStyleBackColor = true;
             // 
-            // interdict_year_to
+            // interdict_unattended_date_from
             // 
-            this.interdict_year_to.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.interdict_year_to.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.interdict_year_to.FormattingEnabled = true;
-            this.interdict_year_to.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.interdict_year_to.Location = new System.Drawing.Point(608, 548);
-            this.interdict_year_to.Name = "interdict_year_to";
-            this.interdict_year_to.Size = new System.Drawing.Size(103, 34);
-            this.interdict_year_to.TabIndex = 17;
-            this.interdict_year_to.Text = "   වර්ෂය";
+            this.interdict_unattended_date_from.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.interdict_unattended_date_from.Location = new System.Drawing.Point(608, 310);
+            this.interdict_unattended_date_from.Name = "interdict_unattended_date_from";
+            this.interdict_unattended_date_from.Size = new System.Drawing.Size(297, 31);
+            this.interdict_unattended_date_from.TabIndex = 94;
             // 
-            // interdict_month_to
+            // interdict_unattended_date_to
             // 
-            this.interdict_month_to.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.interdict_month_to.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.interdict_month_to.FormattingEnabled = true;
-            this.interdict_month_to.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.interdict_month_to.Location = new System.Drawing.Point(717, 548);
-            this.interdict_month_to.Name = "interdict_month_to";
-            this.interdict_month_to.Size = new System.Drawing.Size(91, 34);
-            this.interdict_month_to.TabIndex = 18;
-            this.interdict_month_to.Text = "   මාසය";
+            this.interdict_unattended_date_to.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.interdict_unattended_date_to.Location = new System.Drawing.Point(608, 349);
+            this.interdict_unattended_date_to.Name = "interdict_unattended_date_to";
+            this.interdict_unattended_date_to.Size = new System.Drawing.Size(297, 31);
+            this.interdict_unattended_date_to.TabIndex = 95;
             // 
-            // interdict_day_to
+            // interdict_date_to
             // 
-            this.interdict_day_to.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.interdict_day_to.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.interdict_day_to.FormattingEnabled = true;
-            this.interdict_day_to.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.interdict_day_to.Location = new System.Drawing.Point(814, 548);
-            this.interdict_day_to.Name = "interdict_day_to";
-            this.interdict_day_to.Size = new System.Drawing.Size(91, 34);
-            this.interdict_day_to.TabIndex = 19;
-            this.interdict_day_to.Text = "    දිනය";
+            this.interdict_date_to.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.interdict_date_to.Location = new System.Drawing.Point(608, 547);
+            this.interdict_date_to.Name = "interdict_date_to";
+            this.interdict_date_to.Size = new System.Drawing.Size(297, 31);
+            this.interdict_date_to.TabIndex = 96;
+            // 
+            // interdict_date_from
+            // 
+            this.interdict_date_from.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.interdict_date_from.Location = new System.Drawing.Point(608, 445);
+            this.interdict_date_from.Name = "interdict_date_from";
+            this.interdict_date_from.Size = new System.Drawing.Size(297, 31);
+            this.interdict_date_from.TabIndex = 97;
             // 
             // frmInterdict_Suspend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 741);
+            this.Controls.Add(this.interdict_date_from);
+            this.Controls.Add(this.interdict_date_to);
+            this.Controls.Add(this.interdict_unattended_date_to);
+            this.Controls.Add(this.interdict_unattended_date_from);
             this.Controls.Add(this.interdict_not_rejoined);
             this.Controls.Add(this.interdict_rejoined);
-            this.Controls.Add(this.interdict_day_to);
-            this.Controls.Add(this.interdict_month_to);
-            this.Controls.Add(this.interdict_day_from);
-            this.Controls.Add(this.interdict_month_from);
-            this.Controls.Add(this.interdict_unattended_day_to);
-            this.Controls.Add(this.interdict_unattended_day_from);
-            this.Controls.Add(this.interdict_year_to);
-            this.Controls.Add(this.interdict_unattended_month_to);
-            this.Controls.Add(this.interdict_year_from);
-            this.Controls.Add(this.interdict_unattended_year_to);
-            this.Controls.Add(this.interdict_unattended_month_from);
-            this.Controls.Add(this.interdict_unattended_year_from);
             this.Controls.Add(this.interdict_employee_no);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label1);
@@ -1080,20 +480,12 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox interdict_unattended_day_from;
-        private System.Windows.Forms.ComboBox interdict_unattended_month_from;
-        private System.Windows.Forms.ComboBox interdict_unattended_year_from;
-        private System.Windows.Forms.ComboBox interdict_year_from;
-        private System.Windows.Forms.ComboBox interdict_month_from;
-        private System.Windows.Forms.ComboBox interdict_day_from;
-        private System.Windows.Forms.ComboBox interdict_unattended_year_to;
-        private System.Windows.Forms.ComboBox interdict_unattended_month_to;
-        private System.Windows.Forms.ComboBox interdict_unattended_day_to;
         private System.Windows.Forms.RadioButton interdict_rejoined;
         private System.Windows.Forms.RadioButton interdict_not_rejoined;
-        private System.Windows.Forms.ComboBox interdict_year_to;
-        private System.Windows.Forms.ComboBox interdict_month_to;
-        private System.Windows.Forms.ComboBox interdict_day_to;
+        private System.Windows.Forms.DateTimePicker interdict_unattended_date_from;
+        private System.Windows.Forms.DateTimePicker interdict_unattended_date_to;
+        private System.Windows.Forms.DateTimePicker interdict_date_to;
+        private System.Windows.Forms.DateTimePicker interdict_date_from;
 
     }
 }

@@ -64,15 +64,6 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnClear2 = new System.Windows.Forms.Button();
             this.btnSave2 = new System.Windows.Forms.Button();
-            this.we_date_perma_d = new System.Windows.Forms.ComboBox();
-            this.we_date_perma_m = new System.Windows.Forms.ComboBox();
-            this.we_date_perma_y = new System.Windows.Forms.ComboBox();
-            this.we_date_to_d = new System.Windows.Forms.ComboBox();
-            this.we_date_to_m = new System.Windows.Forms.ComboBox();
-            this.we_date_to_y = new System.Windows.Forms.ComboBox();
-            this.we_date_from_d = new System.Windows.Forms.ComboBox();
-            this.we_date_from_m = new System.Windows.Forms.ComboBox();
-            this.we_date_from_y = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.we_award = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -107,18 +98,6 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.btnClear4 = new System.Windows.Forms.Button();
             this.btnSave4 = new System.Windows.Forms.Button();
-            this.member_active_date_insti_d = new System.Windows.Forms.ComboBox();
-            this.member_active_date_insti_m = new System.Windows.Forms.ComboBox();
-            this.member_active_date_insti_y = new System.Windows.Forms.ComboBox();
-            this.member_active_date_person_d = new System.Windows.Forms.ComboBox();
-            this.member_active_date_person_m = new System.Windows.Forms.ComboBox();
-            this.member_active_date_person_y = new System.Windows.Forms.ComboBox();
-            this.member_renewal_date_d = new System.Windows.Forms.ComboBox();
-            this.member_renewal_date_m = new System.Windows.Forms.ComboBox();
-            this.member_renewal_date_y = new System.Windows.Forms.ComboBox();
-            this.member_begin_date_d = new System.Windows.Forms.ComboBox();
-            this.member_begin_date_m = new System.Windows.Forms.ComboBox();
-            this.member_begin_date_y = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.member_institutional_payment = new System.Windows.Forms.CheckBox();
@@ -144,6 +123,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
+            this.we_date_from_date = new System.Windows.Forms.DateTimePicker();
+            this.we_date_to_date = new System.Windows.Forms.DateTimePicker();
+            this.we_date_perma_date = new System.Windows.Forms.DateTimePicker();
+            this.member_begin_date_date = new System.Windows.Forms.DateTimePicker();
+            this.member_renewal_date = new System.Windows.Forms.DateTimePicker();
+            this.member_active_date_person_date = new System.Windows.Forms.DateTimePicker();
+            this.member_active_date_insti_date = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -487,17 +473,11 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.we_date_perma_date);
+            this.tabPage2.Controls.Add(this.we_date_to_date);
+            this.tabPage2.Controls.Add(this.we_date_from_date);
             this.tabPage2.Controls.Add(this.btnClear2);
             this.tabPage2.Controls.Add(this.btnSave2);
-            this.tabPage2.Controls.Add(this.we_date_perma_d);
-            this.tabPage2.Controls.Add(this.we_date_perma_m);
-            this.tabPage2.Controls.Add(this.we_date_perma_y);
-            this.tabPage2.Controls.Add(this.we_date_to_d);
-            this.tabPage2.Controls.Add(this.we_date_to_m);
-            this.tabPage2.Controls.Add(this.we_date_to_y);
-            this.tabPage2.Controls.Add(this.we_date_from_d);
-            this.tabPage2.Controls.Add(this.we_date_from_m);
-            this.tabPage2.Controls.Add(this.we_date_from_y);
             this.tabPage2.Controls.Add(this.label24);
             this.tabPage2.Controls.Add(this.we_award);
             this.tabPage2.Controls.Add(this.label23);
@@ -548,459 +528,6 @@
             this.btnSave2.Text = "තැන්පතු කරන්න ";
             this.btnSave2.UseVisualStyleBackColor = true;
             this.btnSave2.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // we_date_perma_d
-            // 
-            this.we_date_perma_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.we_date_perma_d.FormattingEnabled = true;
-            this.we_date_perma_d.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.we_date_perma_d.Location = new System.Drawing.Point(512, 458);
-            this.we_date_perma_d.Name = "we_date_perma_d";
-            this.we_date_perma_d.Size = new System.Drawing.Size(91, 34);
-            this.we_date_perma_d.TabIndex = 45;
-            this.we_date_perma_d.Text = "    දිනය";
-            // 
-            // we_date_perma_m
-            // 
-            this.we_date_perma_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.we_date_perma_m.FormattingEnabled = true;
-            this.we_date_perma_m.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.we_date_perma_m.Location = new System.Drawing.Point(415, 458);
-            this.we_date_perma_m.Name = "we_date_perma_m";
-            this.we_date_perma_m.Size = new System.Drawing.Size(91, 34);
-            this.we_date_perma_m.TabIndex = 44;
-            this.we_date_perma_m.Text = "   මාසය";
-            // 
-            // we_date_perma_y
-            // 
-            this.we_date_perma_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.we_date_perma_y.FormattingEnabled = true;
-            this.we_date_perma_y.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.we_date_perma_y.Location = new System.Drawing.Point(306, 458);
-            this.we_date_perma_y.Name = "we_date_perma_y";
-            this.we_date_perma_y.Size = new System.Drawing.Size(103, 34);
-            this.we_date_perma_y.TabIndex = 43;
-            this.we_date_perma_y.Text = "   වර්ෂය";
-            // 
-            // we_date_to_d
-            // 
-            this.we_date_to_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.we_date_to_d.FormattingEnabled = true;
-            this.we_date_to_d.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.we_date_to_d.Location = new System.Drawing.Point(512, 419);
-            this.we_date_to_d.Name = "we_date_to_d";
-            this.we_date_to_d.Size = new System.Drawing.Size(91, 34);
-            this.we_date_to_d.TabIndex = 42;
-            this.we_date_to_d.Text = "    දිනය";
-            // 
-            // we_date_to_m
-            // 
-            this.we_date_to_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.we_date_to_m.FormattingEnabled = true;
-            this.we_date_to_m.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.we_date_to_m.Location = new System.Drawing.Point(415, 419);
-            this.we_date_to_m.Name = "we_date_to_m";
-            this.we_date_to_m.Size = new System.Drawing.Size(91, 34);
-            this.we_date_to_m.TabIndex = 41;
-            this.we_date_to_m.Text = "   මාසය";
-            // 
-            // we_date_to_y
-            // 
-            this.we_date_to_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.we_date_to_y.FormattingEnabled = true;
-            this.we_date_to_y.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.we_date_to_y.Location = new System.Drawing.Point(306, 419);
-            this.we_date_to_y.Name = "we_date_to_y";
-            this.we_date_to_y.Size = new System.Drawing.Size(103, 34);
-            this.we_date_to_y.TabIndex = 40;
-            this.we_date_to_y.Text = "   වර්ෂය";
-            // 
-            // we_date_from_d
-            // 
-            this.we_date_from_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.we_date_from_d.FormattingEnabled = true;
-            this.we_date_from_d.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.we_date_from_d.Location = new System.Drawing.Point(512, 381);
-            this.we_date_from_d.Name = "we_date_from_d";
-            this.we_date_from_d.Size = new System.Drawing.Size(91, 34);
-            this.we_date_from_d.TabIndex = 39;
-            this.we_date_from_d.Text = "    දිනය";
-            // 
-            // we_date_from_m
-            // 
-            this.we_date_from_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.we_date_from_m.FormattingEnabled = true;
-            this.we_date_from_m.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.we_date_from_m.Location = new System.Drawing.Point(415, 381);
-            this.we_date_from_m.Name = "we_date_from_m";
-            this.we_date_from_m.Size = new System.Drawing.Size(91, 34);
-            this.we_date_from_m.TabIndex = 38;
-            this.we_date_from_m.Text = "   මාසය";
-            // 
-            // we_date_from_y
-            // 
-            this.we_date_from_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.we_date_from_y.FormattingEnabled = true;
-            this.we_date_from_y.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.we_date_from_y.Location = new System.Drawing.Point(306, 381);
-            this.we_date_from_y.Name = "we_date_from_y";
-            this.we_date_from_y.Size = new System.Drawing.Size(103, 34);
-            this.we_date_from_y.TabIndex = 37;
-            this.we_date_from_y.Text = "   වර්ෂය";
             // 
             // label24
             // 
@@ -1278,20 +805,12 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.member_active_date_insti_date);
+            this.tabPage4.Controls.Add(this.member_active_date_person_date);
+            this.tabPage4.Controls.Add(this.member_renewal_date);
+            this.tabPage4.Controls.Add(this.member_begin_date_date);
             this.tabPage4.Controls.Add(this.btnClear4);
             this.tabPage4.Controls.Add(this.btnSave4);
-            this.tabPage4.Controls.Add(this.member_active_date_insti_d);
-            this.tabPage4.Controls.Add(this.member_active_date_insti_m);
-            this.tabPage4.Controls.Add(this.member_active_date_insti_y);
-            this.tabPage4.Controls.Add(this.member_active_date_person_d);
-            this.tabPage4.Controls.Add(this.member_active_date_person_m);
-            this.tabPage4.Controls.Add(this.member_active_date_person_y);
-            this.tabPage4.Controls.Add(this.member_renewal_date_d);
-            this.tabPage4.Controls.Add(this.member_renewal_date_m);
-            this.tabPage4.Controls.Add(this.member_renewal_date_y);
-            this.tabPage4.Controls.Add(this.member_begin_date_d);
-            this.tabPage4.Controls.Add(this.member_begin_date_m);
-            this.tabPage4.Controls.Add(this.member_begin_date_y);
             this.tabPage4.Controls.Add(this.label34);
             this.tabPage4.Controls.Add(this.label33);
             this.tabPage4.Controls.Add(this.member_institutional_payment);
@@ -1337,610 +856,6 @@
             this.btnSave4.Text = "තැන්පතු කරන්න ";
             this.btnSave4.UseVisualStyleBackColor = true;
             this.btnSave4.Click += new System.EventHandler(this.btnSave4_Click);
-            // 
-            // member_active_date_insti_d
-            // 
-            this.member_active_date_insti_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.member_active_date_insti_d.FormattingEnabled = true;
-            this.member_active_date_insti_d.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.member_active_date_insti_d.Location = new System.Drawing.Point(716, 379);
-            this.member_active_date_insti_d.Name = "member_active_date_insti_d";
-            this.member_active_date_insti_d.Size = new System.Drawing.Size(91, 34);
-            this.member_active_date_insti_d.TabIndex = 48;
-            this.member_active_date_insti_d.Text = "    දිනය";
-            // 
-            // member_active_date_insti_m
-            // 
-            this.member_active_date_insti_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.member_active_date_insti_m.FormattingEnabled = true;
-            this.member_active_date_insti_m.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.member_active_date_insti_m.Location = new System.Drawing.Point(619, 379);
-            this.member_active_date_insti_m.Name = "member_active_date_insti_m";
-            this.member_active_date_insti_m.Size = new System.Drawing.Size(91, 34);
-            this.member_active_date_insti_m.TabIndex = 47;
-            this.member_active_date_insti_m.Text = "   මාසය";
-            // 
-            // member_active_date_insti_y
-            // 
-            this.member_active_date_insti_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.member_active_date_insti_y.FormattingEnabled = true;
-            this.member_active_date_insti_y.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.member_active_date_insti_y.Location = new System.Drawing.Point(510, 379);
-            this.member_active_date_insti_y.Name = "member_active_date_insti_y";
-            this.member_active_date_insti_y.Size = new System.Drawing.Size(103, 34);
-            this.member_active_date_insti_y.TabIndex = 46;
-            this.member_active_date_insti_y.Text = "   වර්ෂය";
-            // 
-            // member_active_date_person_d
-            // 
-            this.member_active_date_person_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.member_active_date_person_d.FormattingEnabled = true;
-            this.member_active_date_person_d.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.member_active_date_person_d.Location = new System.Drawing.Point(716, 338);
-            this.member_active_date_person_d.Name = "member_active_date_person_d";
-            this.member_active_date_person_d.Size = new System.Drawing.Size(91, 34);
-            this.member_active_date_person_d.TabIndex = 45;
-            this.member_active_date_person_d.Text = "    දිනය";
-            // 
-            // member_active_date_person_m
-            // 
-            this.member_active_date_person_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.member_active_date_person_m.FormattingEnabled = true;
-            this.member_active_date_person_m.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.member_active_date_person_m.Location = new System.Drawing.Point(619, 338);
-            this.member_active_date_person_m.Name = "member_active_date_person_m";
-            this.member_active_date_person_m.Size = new System.Drawing.Size(91, 34);
-            this.member_active_date_person_m.TabIndex = 44;
-            this.member_active_date_person_m.Text = "   මාසය";
-            // 
-            // member_active_date_person_y
-            // 
-            this.member_active_date_person_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.member_active_date_person_y.FormattingEnabled = true;
-            this.member_active_date_person_y.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.member_active_date_person_y.Location = new System.Drawing.Point(510, 338);
-            this.member_active_date_person_y.Name = "member_active_date_person_y";
-            this.member_active_date_person_y.Size = new System.Drawing.Size(103, 34);
-            this.member_active_date_person_y.TabIndex = 43;
-            this.member_active_date_person_y.Text = "   වර්ෂය";
-            // 
-            // member_renewal_date_d
-            // 
-            this.member_renewal_date_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.member_renewal_date_d.FormattingEnabled = true;
-            this.member_renewal_date_d.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.member_renewal_date_d.Location = new System.Drawing.Point(512, 267);
-            this.member_renewal_date_d.Name = "member_renewal_date_d";
-            this.member_renewal_date_d.Size = new System.Drawing.Size(91, 34);
-            this.member_renewal_date_d.TabIndex = 42;
-            this.member_renewal_date_d.Text = "    දිනය";
-            // 
-            // member_renewal_date_m
-            // 
-            this.member_renewal_date_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.member_renewal_date_m.FormattingEnabled = true;
-            this.member_renewal_date_m.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.member_renewal_date_m.Location = new System.Drawing.Point(415, 267);
-            this.member_renewal_date_m.Name = "member_renewal_date_m";
-            this.member_renewal_date_m.Size = new System.Drawing.Size(91, 34);
-            this.member_renewal_date_m.TabIndex = 41;
-            this.member_renewal_date_m.Text = "   මාසය";
-            // 
-            // member_renewal_date_y
-            // 
-            this.member_renewal_date_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.member_renewal_date_y.FormattingEnabled = true;
-            this.member_renewal_date_y.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.member_renewal_date_y.Location = new System.Drawing.Point(306, 267);
-            this.member_renewal_date_y.Name = "member_renewal_date_y";
-            this.member_renewal_date_y.Size = new System.Drawing.Size(103, 34);
-            this.member_renewal_date_y.TabIndex = 40;
-            this.member_renewal_date_y.Text = "   වර්ෂය";
-            // 
-            // member_begin_date_d
-            // 
-            this.member_begin_date_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.member_begin_date_d.FormattingEnabled = true;
-            this.member_begin_date_d.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.member_begin_date_d.Location = new System.Drawing.Point(512, 227);
-            this.member_begin_date_d.Name = "member_begin_date_d";
-            this.member_begin_date_d.Size = new System.Drawing.Size(91, 34);
-            this.member_begin_date_d.TabIndex = 39;
-            this.member_begin_date_d.Text = "    දිනය";
-            // 
-            // member_begin_date_m
-            // 
-            this.member_begin_date_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.member_begin_date_m.FormattingEnabled = true;
-            this.member_begin_date_m.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.member_begin_date_m.Location = new System.Drawing.Point(415, 227);
-            this.member_begin_date_m.Name = "member_begin_date_m";
-            this.member_begin_date_m.Size = new System.Drawing.Size(91, 34);
-            this.member_begin_date_m.TabIndex = 38;
-            this.member_begin_date_m.Text = "   මාසය";
-            // 
-            // member_begin_date_y
-            // 
-            this.member_begin_date_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.member_begin_date_y.FormattingEnabled = true;
-            this.member_begin_date_y.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.member_begin_date_y.Location = new System.Drawing.Point(306, 227);
-            this.member_begin_date_y.Name = "member_begin_date_y";
-            this.member_begin_date_y.Size = new System.Drawing.Size(103, 34);
-            this.member_begin_date_y.TabIndex = 37;
-            this.member_begin_date_y.Text = "   වර්ෂය";
             // 
             // label34
             // 
@@ -2173,6 +1088,55 @@
             this.btnPrev.UseVisualStyleBackColor = false;
             this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
+            // we_date_from_date
+            // 
+            this.we_date_from_date.Location = new System.Drawing.Point(306, 381);
+            this.we_date_from_date.Name = "we_date_from_date";
+            this.we_date_from_date.Size = new System.Drawing.Size(320, 33);
+            this.we_date_from_date.TabIndex = 60;
+            // 
+            // we_date_to_date
+            // 
+            this.we_date_to_date.Location = new System.Drawing.Point(306, 420);
+            this.we_date_to_date.Name = "we_date_to_date";
+            this.we_date_to_date.Size = new System.Drawing.Size(320, 33);
+            this.we_date_to_date.TabIndex = 61;
+            // 
+            // we_date_perma_date
+            // 
+            this.we_date_perma_date.Location = new System.Drawing.Point(306, 458);
+            this.we_date_perma_date.Name = "we_date_perma_date";
+            this.we_date_perma_date.Size = new System.Drawing.Size(320, 33);
+            this.we_date_perma_date.TabIndex = 62;
+            // 
+            // member_begin_date_date
+            // 
+            this.member_begin_date_date.Location = new System.Drawing.Point(306, 228);
+            this.member_begin_date_date.Name = "member_begin_date_date";
+            this.member_begin_date_date.Size = new System.Drawing.Size(320, 33);
+            this.member_begin_date_date.TabIndex = 64;
+            // 
+            // member_renewal_date
+            // 
+            this.member_renewal_date.Location = new System.Drawing.Point(306, 266);
+            this.member_renewal_date.Name = "member_renewal_date";
+            this.member_renewal_date.Size = new System.Drawing.Size(320, 33);
+            this.member_renewal_date.TabIndex = 65;
+            // 
+            // member_active_date_person_date
+            // 
+            this.member_active_date_person_date.Location = new System.Drawing.Point(510, 339);
+            this.member_active_date_person_date.Name = "member_active_date_person_date";
+            this.member_active_date_person_date.Size = new System.Drawing.Size(320, 33);
+            this.member_active_date_person_date.TabIndex = 66;
+            // 
+            // member_active_date_insti_date
+            // 
+            this.member_active_date_insti_date.Location = new System.Drawing.Point(510, 376);
+            this.member_active_date_insti_date.Name = "member_active_date_insti_date";
+            this.member_active_date_insti_date.Size = new System.Drawing.Size(320, 33);
+            this.member_active_date_insti_date.TabIndex = 67;
+            // 
             // frmEmployeeSpecialDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2296,27 +1260,6 @@
         private System.Windows.Forms.ComboBox language_name;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
-        private System.Windows.Forms.ComboBox we_date_perma_d;
-        private System.Windows.Forms.ComboBox we_date_perma_m;
-        private System.Windows.Forms.ComboBox we_date_perma_y;
-        private System.Windows.Forms.ComboBox we_date_to_d;
-        private System.Windows.Forms.ComboBox we_date_to_m;
-        private System.Windows.Forms.ComboBox we_date_to_y;
-        private System.Windows.Forms.ComboBox we_date_from_d;
-        private System.Windows.Forms.ComboBox we_date_from_m;
-        private System.Windows.Forms.ComboBox we_date_from_y;
-        private System.Windows.Forms.ComboBox member_active_date_insti_d;
-        private System.Windows.Forms.ComboBox member_active_date_insti_m;
-        private System.Windows.Forms.ComboBox member_active_date_insti_y;
-        private System.Windows.Forms.ComboBox member_active_date_person_d;
-        private System.Windows.Forms.ComboBox member_active_date_person_m;
-        private System.Windows.Forms.ComboBox member_active_date_person_y;
-        private System.Windows.Forms.ComboBox member_renewal_date_d;
-        private System.Windows.Forms.ComboBox member_renewal_date_m;
-        private System.Windows.Forms.ComboBox member_renewal_date_y;
-        private System.Windows.Forms.ComboBox member_begin_date_d;
-        private System.Windows.Forms.ComboBox member_begin_date_m;
-        private System.Windows.Forms.ComboBox member_begin_date_y;
         private System.Windows.Forms.Button btnClear1;
         private System.Windows.Forms.Button btnSave1;
         private System.Windows.Forms.Button btnClear2;
@@ -2325,6 +1268,13 @@
         private System.Windows.Forms.Button btnSave3;
         private System.Windows.Forms.Button btnClear4;
         private System.Windows.Forms.Button btnSave4;
+        private System.Windows.Forms.DateTimePicker we_date_from_date;
+        private System.Windows.Forms.DateTimePicker we_date_perma_date;
+        private System.Windows.Forms.DateTimePicker we_date_to_date;
+        private System.Windows.Forms.DateTimePicker member_active_date_insti_date;
+        private System.Windows.Forms.DateTimePicker member_active_date_person_date;
+        private System.Windows.Forms.DateTimePicker member_renewal_date;
+        private System.Windows.Forms.DateTimePicker member_begin_date_date;
     }
 }
 

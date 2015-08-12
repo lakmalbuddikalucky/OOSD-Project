@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmResignation));
-            this.resignation_day = new System.Windows.Forms.ComboBox();
-            this.resignation_month = new System.Windows.Forms.ComboBox();
-            this.resignation_year = new System.Windows.Forms.ComboBox();
             this.resignation_employee_no = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -57,169 +54,14 @@
             this.lblCaption = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.resignation_letter_submitted_year = new System.Windows.Forms.ComboBox();
-            this.resignation_letter_submitted_month = new System.Windows.Forms.ComboBox();
-            this.resignation_letter_submitted_day = new System.Windows.Forms.ComboBox();
             this.btn_resignation_browse = new System.Windows.Forms.Button();
+            this.resignation_letter_submitted_date = new System.Windows.Forms.DateTimePicker();
+            this.resignation_date = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // resignation_day
-            // 
-            this.resignation_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.resignation_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.resignation_day.FormattingEnabled = true;
-            this.resignation_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.resignation_day.Location = new System.Drawing.Point(812, 293);
-            this.resignation_day.Name = "resignation_day";
-            this.resignation_day.Size = new System.Drawing.Size(91, 34);
-            this.resignation_day.TabIndex = 137;
-            this.resignation_day.Text = "    දිනය";
-            // 
-            // resignation_month
-            // 
-            this.resignation_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.resignation_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.resignation_month.FormattingEnabled = true;
-            this.resignation_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.resignation_month.Location = new System.Drawing.Point(715, 293);
-            this.resignation_month.Name = "resignation_month";
-            this.resignation_month.Size = new System.Drawing.Size(91, 34);
-            this.resignation_month.TabIndex = 136;
-            this.resignation_month.Text = "   මාසය";
-            // 
-            // resignation_year
-            // 
-            this.resignation_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.resignation_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.resignation_year.FormattingEnabled = true;
-            this.resignation_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.resignation_year.Location = new System.Drawing.Point(606, 293);
-            this.resignation_year.Name = "resignation_year";
-            this.resignation_year.Size = new System.Drawing.Size(103, 34);
-            this.resignation_year.TabIndex = 135;
-            this.resignation_year.Text = "   වර්ෂය";
             // 
             // resignation_employee_no
             // 
@@ -479,160 +321,6 @@
             this.label2.Text = "ඉල්ලා අස්වීමේ ලිපිය භාරදුන් දිනය";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // resignation_letter_submitted_year
-            // 
-            this.resignation_letter_submitted_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.resignation_letter_submitted_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.resignation_letter_submitted_year.FormattingEnabled = true;
-            this.resignation_letter_submitted_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.resignation_letter_submitted_year.Location = new System.Drawing.Point(606, 253);
-            this.resignation_letter_submitted_year.Name = "resignation_letter_submitted_year";
-            this.resignation_letter_submitted_year.Size = new System.Drawing.Size(103, 34);
-            this.resignation_letter_submitted_year.TabIndex = 135;
-            this.resignation_letter_submitted_year.Text = "   වර්ෂය";
-            // 
-            // resignation_letter_submitted_month
-            // 
-            this.resignation_letter_submitted_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.resignation_letter_submitted_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.resignation_letter_submitted_month.FormattingEnabled = true;
-            this.resignation_letter_submitted_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.resignation_letter_submitted_month.Location = new System.Drawing.Point(715, 253);
-            this.resignation_letter_submitted_month.Name = "resignation_letter_submitted_month";
-            this.resignation_letter_submitted_month.Size = new System.Drawing.Size(91, 34);
-            this.resignation_letter_submitted_month.TabIndex = 136;
-            this.resignation_letter_submitted_month.Text = "   මාසය";
-            // 
-            // resignation_letter_submitted_day
-            // 
-            this.resignation_letter_submitted_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.resignation_letter_submitted_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.resignation_letter_submitted_day.FormattingEnabled = true;
-            this.resignation_letter_submitted_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.resignation_letter_submitted_day.Location = new System.Drawing.Point(812, 253);
-            this.resignation_letter_submitted_day.Name = "resignation_letter_submitted_day";
-            this.resignation_letter_submitted_day.Size = new System.Drawing.Size(91, 34);
-            this.resignation_letter_submitted_day.TabIndex = 137;
-            this.resignation_letter_submitted_day.Text = "    දිනය";
-            // 
             // btn_resignation_browse
             // 
             this.btn_resignation_browse.Location = new System.Drawing.Point(912, 391);
@@ -642,18 +330,30 @@
             this.btn_resignation_browse.Text = "Browse";
             this.btn_resignation_browse.UseVisualStyleBackColor = true;
             // 
+            // resignation_letter_submitted_date
+            // 
+            this.resignation_letter_submitted_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resignation_letter_submitted_date.Location = new System.Drawing.Point(606, 255);
+            this.resignation_letter_submitted_date.Name = "resignation_letter_submitted_date";
+            this.resignation_letter_submitted_date.Size = new System.Drawing.Size(297, 31);
+            this.resignation_letter_submitted_date.TabIndex = 153;
+            // 
+            // resignation_date
+            // 
+            this.resignation_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resignation_date.Location = new System.Drawing.Point(606, 294);
+            this.resignation_date.Name = "resignation_date";
+            this.resignation_date.Size = new System.Drawing.Size(297, 31);
+            this.resignation_date.TabIndex = 154;
+            // 
             // frmResignation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 741);
+            this.Controls.Add(this.resignation_date);
+            this.Controls.Add(this.resignation_letter_submitted_date);
             this.Controls.Add(this.btn_resignation_browse);
-            this.Controls.Add(this.resignation_letter_submitted_day);
-            this.Controls.Add(this.resignation_day);
-            this.Controls.Add(this.resignation_letter_submitted_month);
-            this.Controls.Add(this.resignation_month);
-            this.Controls.Add(this.resignation_letter_submitted_year);
-            this.Controls.Add(this.resignation_year);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.resignation_employee_no);
             this.Controls.Add(this.label1);
@@ -687,9 +387,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox resignation_day;
-        private System.Windows.Forms.ComboBox resignation_month;
-        private System.Windows.Forms.ComboBox resignation_year;
         private System.Windows.Forms.ComboBox resignation_employee_no;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -715,9 +412,8 @@
         private System.Windows.Forms.Label lblCaption;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox resignation_letter_submitted_year;
-        private System.Windows.Forms.ComboBox resignation_letter_submitted_month;
-        private System.Windows.Forms.ComboBox resignation_letter_submitted_day;
         private System.Windows.Forms.Button btn_resignation_browse;
+        private System.Windows.Forms.DateTimePicker resignation_letter_submitted_date;
+        private System.Windows.Forms.DateTimePicker resignation_date;
     }
 }

@@ -63,15 +63,9 @@
             this.employee_no = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.lblCaption = new System.Windows.Forms.Label();
-            this.training_started_day = new System.Windows.Forms.ComboBox();
-            this.training_started_month = new System.Windows.Forms.ComboBox();
-            this.training_started_year = new System.Windows.Forms.ComboBox();
-            this.training_ending_year = new System.Windows.Forms.ComboBox();
-            this.training_ending_month = new System.Windows.Forms.ComboBox();
-            this.training_ending_day = new System.Windows.Forms.ComboBox();
-            this.training_new_ending_year = new System.Windows.Forms.ComboBox();
-            this.training_new_ending_month = new System.Windows.Forms.ComboBox();
-            this.training_new_ending_day = new System.Windows.Forms.ComboBox();
+            this.training_new_ending_date = new System.Windows.Forms.DateTimePicker();
+            this.training_ending_date = new System.Windows.Forms.DateTimePicker();
+            this.training_started_date = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -431,482 +425,38 @@
             this.lblCaption.TabIndex = 35;
             this.lblCaption.Text = "               Training";
             // 
-            // training_started_day
+            // training_new_ending_date
             // 
-            this.training_started_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.training_started_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.training_started_day.FormattingEnabled = true;
-            this.training_started_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.training_started_day.Location = new System.Drawing.Point(681, 309);
-            this.training_started_day.Name = "training_started_day";
-            this.training_started_day.Size = new System.Drawing.Size(91, 34);
-            this.training_started_day.TabIndex = 9;
-            this.training_started_day.Text = "    දිනය";
+            this.training_new_ending_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.training_new_ending_date.Location = new System.Drawing.Point(978, 349);
+            this.training_new_ending_date.Name = "training_new_ending_date";
+            this.training_new_ending_date.Size = new System.Drawing.Size(297, 31);
+            this.training_new_ending_date.TabIndex = 155;
             // 
-            // training_started_month
+            // training_ending_date
             // 
-            this.training_started_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.training_started_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.training_started_month.FormattingEnabled = true;
-            this.training_started_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.training_started_month.Location = new System.Drawing.Point(584, 309);
-            this.training_started_month.Name = "training_started_month";
-            this.training_started_month.Size = new System.Drawing.Size(91, 34);
-            this.training_started_month.TabIndex = 8;
-            this.training_started_month.Text = "   මාසය";
+            this.training_ending_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.training_ending_date.Location = new System.Drawing.Point(978, 311);
+            this.training_ending_date.Name = "training_ending_date";
+            this.training_ending_date.Size = new System.Drawing.Size(297, 31);
+            this.training_ending_date.TabIndex = 156;
             // 
-            // training_started_year
+            // training_started_date
             // 
-            this.training_started_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.training_started_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.training_started_year.FormattingEnabled = true;
-            this.training_started_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.training_started_year.Location = new System.Drawing.Point(475, 309);
-            this.training_started_year.Name = "training_started_year";
-            this.training_started_year.Size = new System.Drawing.Size(103, 34);
-            this.training_started_year.TabIndex = 7;
-            this.training_started_year.Text = "   වර්ෂය";
-            // 
-            // training_ending_year
-            // 
-            this.training_ending_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.training_ending_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.training_ending_year.FormattingEnabled = true;
-            this.training_ending_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.training_ending_year.Location = new System.Drawing.Point(978, 309);
-            this.training_ending_year.Name = "training_ending_year";
-            this.training_ending_year.Size = new System.Drawing.Size(103, 34);
-            this.training_ending_year.TabIndex = 10;
-            this.training_ending_year.Text = "   වර්ෂය";
-            // 
-            // training_ending_month
-            // 
-            this.training_ending_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.training_ending_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.training_ending_month.FormattingEnabled = true;
-            this.training_ending_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.training_ending_month.Location = new System.Drawing.Point(1087, 309);
-            this.training_ending_month.Name = "training_ending_month";
-            this.training_ending_month.Size = new System.Drawing.Size(91, 34);
-            this.training_ending_month.TabIndex = 11;
-            this.training_ending_month.Text = "   මාසය";
-            // 
-            // training_ending_day
-            // 
-            this.training_ending_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.training_ending_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.training_ending_day.FormattingEnabled = true;
-            this.training_ending_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.training_ending_day.Location = new System.Drawing.Point(1184, 309);
-            this.training_ending_day.Name = "training_ending_day";
-            this.training_ending_day.Size = new System.Drawing.Size(91, 34);
-            this.training_ending_day.TabIndex = 12;
-            this.training_ending_day.Text = "    දිනය";
-            // 
-            // training_new_ending_year
-            // 
-            this.training_new_ending_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.training_new_ending_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.training_new_ending_year.FormattingEnabled = true;
-            this.training_new_ending_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.training_new_ending_year.Location = new System.Drawing.Point(978, 349);
-            this.training_new_ending_year.Name = "training_new_ending_year";
-            this.training_new_ending_year.Size = new System.Drawing.Size(103, 34);
-            this.training_new_ending_year.TabIndex = 14;
-            this.training_new_ending_year.Text = "   වර්ෂය";
-            // 
-            // training_new_ending_month
-            // 
-            this.training_new_ending_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.training_new_ending_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.training_new_ending_month.FormattingEnabled = true;
-            this.training_new_ending_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.training_new_ending_month.Location = new System.Drawing.Point(1087, 349);
-            this.training_new_ending_month.Name = "training_new_ending_month";
-            this.training_new_ending_month.Size = new System.Drawing.Size(91, 34);
-            this.training_new_ending_month.TabIndex = 15;
-            this.training_new_ending_month.Text = "   මාසය";
-            // 
-            // training_new_ending_day
-            // 
-            this.training_new_ending_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.training_new_ending_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.training_new_ending_day.FormattingEnabled = true;
-            this.training_new_ending_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.training_new_ending_day.Location = new System.Drawing.Point(1184, 349);
-            this.training_new_ending_day.Name = "training_new_ending_day";
-            this.training_new_ending_day.Size = new System.Drawing.Size(91, 34);
-            this.training_new_ending_day.TabIndex = 16;
-            this.training_new_ending_day.Text = "    දිනය";
+            this.training_started_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.training_started_date.Location = new System.Drawing.Point(475, 311);
+            this.training_started_date.Name = "training_started_date";
+            this.training_started_date.Size = new System.Drawing.Size(297, 31);
+            this.training_started_date.TabIndex = 157;
             // 
             // frmTraining
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 741);
-            this.Controls.Add(this.training_new_ending_day);
-            this.Controls.Add(this.training_ending_day);
-            this.Controls.Add(this.training_new_ending_month);
-            this.Controls.Add(this.training_ending_month);
-            this.Controls.Add(this.training_started_day);
-            this.Controls.Add(this.training_new_ending_year);
-            this.Controls.Add(this.training_ending_year);
-            this.Controls.Add(this.training_started_month);
-            this.Controls.Add(this.training_started_year);
+            this.Controls.Add(this.training_started_date);
+            this.Controls.Add(this.training_ending_date);
+            this.Controls.Add(this.training_new_ending_date);
             this.Controls.Add(this.training_employee_no);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label17);
@@ -983,14 +533,8 @@
         private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label lblCaption;
-        private System.Windows.Forms.ComboBox training_started_day;
-        private System.Windows.Forms.ComboBox training_started_month;
-        private System.Windows.Forms.ComboBox training_started_year;
-        private System.Windows.Forms.ComboBox training_ending_year;
-        private System.Windows.Forms.ComboBox training_ending_month;
-        private System.Windows.Forms.ComboBox training_ending_day;
-        private System.Windows.Forms.ComboBox training_new_ending_year;
-        private System.Windows.Forms.ComboBox training_new_ending_month;
-        private System.Windows.Forms.ComboBox training_new_ending_day;
+        private System.Windows.Forms.DateTimePicker training_new_ending_date;
+        private System.Windows.Forms.DateTimePicker training_ending_date;
+        private System.Windows.Forms.DateTimePicker training_started_date;
     }
 }

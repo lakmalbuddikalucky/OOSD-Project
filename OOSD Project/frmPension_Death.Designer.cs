@@ -34,13 +34,10 @@
             this.employee_no = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.lblCaption = new System.Windows.Forms.Label();
-            this.pension_informed_day = new System.Windows.Forms.ComboBox();
-            this.pension_informed_year = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.full_name = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pension_employee_no = new System.Windows.Forms.ComboBox();
-            this.pension_informed_month = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pension_full_name = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -53,10 +50,9 @@
             this.pension_dead = new System.Windows.Forms.RadioButton();
             this.pension_retired = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pension_died_day = new System.Windows.Forms.ComboBox();
-            this.pension_died_month = new System.Windows.Forms.ComboBox();
-            this.pension_died_year = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.pension_informed_date = new System.Windows.Forms.DateTimePicker();
+            this.pension_died_date = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -114,136 +110,6 @@
             this.lblCaption.TabIndex = 84;
             this.lblCaption.Text = "               Pension && Deaths";
             // 
-            // pension_informed_day
-            // 
-            this.pension_informed_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.pension_informed_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.pension_informed_day.FormattingEnabled = true;
-            this.pension_informed_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.pension_informed_day.Location = new System.Drawing.Point(818, 128);
-            this.pension_informed_day.Name = "pension_informed_day";
-            this.pension_informed_day.Size = new System.Drawing.Size(91, 34);
-            this.pension_informed_day.TabIndex = 7;
-            this.pension_informed_day.Text = "    දිනය";
-            // 
-            // pension_informed_year
-            // 
-            this.pension_informed_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.pension_informed_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.pension_informed_year.FormattingEnabled = true;
-            this.pension_informed_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.pension_informed_year.Location = new System.Drawing.Point(612, 128);
-            this.pension_informed_year.Name = "pension_informed_year";
-            this.pension_informed_year.Size = new System.Drawing.Size(103, 34);
-            this.pension_informed_year.TabIndex = 5;
-            this.pension_informed_year.Text = "   වර්ෂය";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -285,30 +151,6 @@
             this.pension_employee_no.Name = "pension_employee_no";
             this.pension_employee_no.Size = new System.Drawing.Size(200, 32);
             this.pension_employee_no.TabIndex = 3;
-            // 
-            // pension_informed_month
-            // 
-            this.pension_informed_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.pension_informed_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.pension_informed_month.FormattingEnabled = true;
-            this.pension_informed_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.pension_informed_month.Location = new System.Drawing.Point(721, 128);
-            this.pension_informed_month.Name = "pension_informed_month";
-            this.pension_informed_month.Size = new System.Drawing.Size(91, 34);
-            this.pension_informed_month.TabIndex = 6;
-            this.pension_informed_month.Text = "   මාසය";
             // 
             // label9
             // 
@@ -430,15 +272,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.pension_died_day);
+            this.groupBox1.Controls.Add(this.pension_informed_date);
+            this.groupBox1.Controls.Add(this.pension_died_date);
             this.groupBox1.Controls.Add(this.pension_dead);
-            this.groupBox1.Controls.Add(this.pension_informed_day);
-            this.groupBox1.Controls.Add(this.pension_died_month);
-            this.groupBox1.Controls.Add(this.pension_informed_year);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.pension_died_year);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.pension_informed_month);
             this.groupBox1.Controls.Add(this.pension_employee_no);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.pension_notes);
@@ -452,160 +290,6 @@
             this.groupBox1.TabIndex = 102;
             this.groupBox1.TabStop = false;
             // 
-            // pension_died_day
-            // 
-            this.pension_died_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.pension_died_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.pension_died_day.FormattingEnabled = true;
-            this.pension_died_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.pension_died_day.Location = new System.Drawing.Point(351, 128);
-            this.pension_died_day.Name = "pension_died_day";
-            this.pension_died_day.Size = new System.Drawing.Size(91, 34);
-            this.pension_died_day.TabIndex = 10;
-            this.pension_died_day.Text = "    දිනය";
-            // 
-            // pension_died_month
-            // 
-            this.pension_died_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.pension_died_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.pension_died_month.FormattingEnabled = true;
-            this.pension_died_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.pension_died_month.Location = new System.Drawing.Point(254, 128);
-            this.pension_died_month.Name = "pension_died_month";
-            this.pension_died_month.Size = new System.Drawing.Size(91, 34);
-            this.pension_died_month.TabIndex = 9;
-            this.pension_died_month.Text = "   මාසය";
-            // 
-            // pension_died_year
-            // 
-            this.pension_died_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.pension_died_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.pension_died_year.FormattingEnabled = true;
-            this.pension_died_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.pension_died_year.Location = new System.Drawing.Point(145, 128);
-            this.pension_died_year.Name = "pension_died_year";
-            this.pension_died_year.Size = new System.Drawing.Size(103, 34);
-            this.pension_died_year.TabIndex = 8;
-            this.pension_died_year.Text = "   වර්ෂය";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -617,6 +301,22 @@
             this.label6.TabIndex = 59;
             this.label6.Text = "මියගිය දිනය";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pension_informed_date
+            // 
+            this.pension_informed_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pension_informed_date.Location = new System.Drawing.Point(612, 128);
+            this.pension_informed_date.Name = "pension_informed_date";
+            this.pension_informed_date.Size = new System.Drawing.Size(294, 31);
+            this.pension_informed_date.TabIndex = 103;
+            // 
+            // pension_died_date
+            // 
+            this.pension_died_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pension_died_date.Location = new System.Drawing.Point(145, 130);
+            this.pension_died_date.Name = "pension_died_date";
+            this.pension_died_date.Size = new System.Drawing.Size(300, 31);
+            this.pension_died_date.TabIndex = 104;
             // 
             // frmPension_Death
             // 
@@ -651,13 +351,10 @@
         private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label lblCaption;
-        private System.Windows.Forms.ComboBox pension_informed_day;
-        private System.Windows.Forms.ComboBox pension_informed_year;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox full_name;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ComboBox pension_employee_no;
-        private System.Windows.Forms.ComboBox pension_informed_month;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox pension_full_name;
         private System.Windows.Forms.Label label13;
@@ -670,9 +367,8 @@
         private System.Windows.Forms.RadioButton pension_dead;
         private System.Windows.Forms.RadioButton pension_retired;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox pension_died_day;
-        private System.Windows.Forms.ComboBox pension_died_month;
-        private System.Windows.Forms.ComboBox pension_died_year;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker pension_informed_date;
+        private System.Windows.Forms.DateTimePicker pension_died_date;
     }
 }

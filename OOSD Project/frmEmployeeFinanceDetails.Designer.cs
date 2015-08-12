@@ -55,6 +55,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tabEmployeeFinanceDetails = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+<<<<<<< HEAD
             this.btnCheckBankDetails = new System.Windows.Forms.Button();
             this.bank_account_closed_day = new System.Windows.Forms.ComboBox();
             this.bank_account_closed_month = new System.Windows.Forms.ComboBox();
@@ -62,6 +63,10 @@
             this.bank_account_created_day = new System.Windows.Forms.ComboBox();
             this.bank_account_created_month = new System.Windows.Forms.ComboBox();
             this.bank_account_created_year = new System.Windows.Forms.ComboBox();
+=======
+            this.bank_account_closed_year = new System.Windows.Forms.DateTimePicker();
+            this.bank_account_started_year = new System.Windows.Forms.DateTimePicker();
+>>>>>>> origin/master
             this.label4 = new System.Windows.Forms.Label();
             this.bank_account_name = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -74,12 +79,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.day = new System.Windows.Forms.ComboBox();
-            this.insurance_ended_month = new System.Windows.Forms.ComboBox();
-            this.insurance_ended_year = new System.Windows.Forms.ComboBox();
-            this.insurance_started_day = new System.Windows.Forms.ComboBox();
-            this.insurance_started_month = new System.Windows.Forms.ComboBox();
-            this.insurance_started_year = new System.Windows.Forms.ComboBox();
+            this.insurance_ended_year = new System.Windows.Forms.DateTimePicker();
+            this.insurance_started_date = new System.Windows.Forms.DateTimePicker();
             this.insurance_type = new System.Windows.Forms.ComboBox();
             this.insurance_notes = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -94,8 +95,11 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.btnCheckInsuaranceDetails = new System.Windows.Forms.Button();
             this.btnCheckTaxDetails = new System.Windows.Forms.Button();
+=======
+>>>>>>> origin/master
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -269,7 +273,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(120, 480);
+            this.label8.Location = new System.Drawing.Point(120, 316);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(180, 26);
             this.label8.TabIndex = 16;
@@ -277,14 +281,14 @@
             // 
             // bank_qualified_year
             // 
-            this.bank_qualified_year.Location = new System.Drawing.Point(306, 473);
+            this.bank_qualified_year.Location = new System.Drawing.Point(306, 309);
             this.bank_qualified_year.Name = "bank_qualified_year";
             this.bank_qualified_year.Size = new System.Drawing.Size(120, 33);
             this.bank_qualified_year.TabIndex = 15;
             // 
             // bank_qualification
             // 
-            this.bank_qualification.Location = new System.Drawing.Point(306, 434);
+            this.bank_qualification.Location = new System.Drawing.Point(306, 270);
             this.bank_qualification.Name = "bank_qualification";
             this.bank_qualification.Size = new System.Drawing.Size(200, 33);
             this.bank_qualification.TabIndex = 14;
@@ -351,13 +355,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.btnCheckBankDetails);
-            this.tabPage1.Controls.Add(this.bank_account_closed_day);
-            this.tabPage1.Controls.Add(this.bank_account_closed_month);
             this.tabPage1.Controls.Add(this.bank_account_closed_year);
-            this.tabPage1.Controls.Add(this.bank_account_created_day);
-            this.tabPage1.Controls.Add(this.bank_account_created_month);
-            this.tabPage1.Controls.Add(this.bank_account_created_year);
+            this.tabPage1.Controls.Add(this.bank_account_started_year);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.bank_account_name);
             this.tabPage1.Controls.Add(this.label10);
@@ -380,6 +379,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Bank";
             // 
+<<<<<<< HEAD
             // btnCheckBankDetails
             // 
             this.btnCheckBankDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -456,242 +456,21 @@
             this.bank_account_closed_month.TabIndex = 41;
             this.bank_account_closed_month.Text = "   මාසය";
             // 
+=======
+>>>>>>> origin/master
             // bank_account_closed_year
             // 
-            this.bank_account_closed_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.bank_account_closed_year.FormattingEnabled = true;
-            this.bank_account_closed_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
             this.bank_account_closed_year.Location = new System.Drawing.Point(306, 230);
             this.bank_account_closed_year.Name = "bank_account_closed_year";
-            this.bank_account_closed_year.Size = new System.Drawing.Size(103, 34);
-            this.bank_account_closed_year.TabIndex = 40;
-            this.bank_account_closed_year.Text = "   වර්ෂය";
+            this.bank_account_closed_year.Size = new System.Drawing.Size(310, 33);
+            this.bank_account_closed_year.TabIndex = 44;
             // 
-            // bank_account_created_day
+            // bank_account_started_year
             // 
-            this.bank_account_created_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.bank_account_created_day.FormattingEnabled = true;
-            this.bank_account_created_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.bank_account_created_day.Location = new System.Drawing.Point(512, 191);
-            this.bank_account_created_day.Name = "bank_account_created_day";
-            this.bank_account_created_day.Size = new System.Drawing.Size(91, 34);
-            this.bank_account_created_day.TabIndex = 39;
-            this.bank_account_created_day.Text = "    දිනය";
-            // 
-            // bank_account_created_month
-            // 
-            this.bank_account_created_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.bank_account_created_month.FormattingEnabled = true;
-            this.bank_account_created_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.bank_account_created_month.Location = new System.Drawing.Point(415, 191);
-            this.bank_account_created_month.Name = "bank_account_created_month";
-            this.bank_account_created_month.Size = new System.Drawing.Size(91, 34);
-            this.bank_account_created_month.TabIndex = 38;
-            this.bank_account_created_month.Text = "   මාසය";
-            // 
-            // bank_account_created_year
-            // 
-            this.bank_account_created_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.bank_account_created_year.FormattingEnabled = true;
-            this.bank_account_created_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.bank_account_created_year.Location = new System.Drawing.Point(306, 191);
-            this.bank_account_created_year.Name = "bank_account_created_year";
-            this.bank_account_created_year.Size = new System.Drawing.Size(103, 34);
-            this.bank_account_created_year.TabIndex = 37;
-            this.bank_account_created_year.Text = "   වර්ෂය";
+            this.bank_account_started_year.Location = new System.Drawing.Point(306, 191);
+            this.bank_account_started_year.Name = "bank_account_started_year";
+            this.bank_account_started_year.Size = new System.Drawing.Size(310, 33);
+            this.bank_account_started_year.TabIndex = 43;
             // 
             // label4
             // 
@@ -740,7 +519,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(217, 437);
+            this.label7.Location = new System.Drawing.Point(217, 273);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 26);
             this.label7.TabIndex = 13;
@@ -793,13 +572,14 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.tabPage2.Controls.Add(this.btnCheckInsuaranceDetails);
             this.tabPage2.Controls.Add(this.day);
             this.tabPage2.Controls.Add(this.insurance_ended_month);
+=======
+>>>>>>> origin/master
             this.tabPage2.Controls.Add(this.insurance_ended_year);
-            this.tabPage2.Controls.Add(this.insurance_started_day);
-            this.tabPage2.Controls.Add(this.insurance_started_month);
-            this.tabPage2.Controls.Add(this.insurance_started_year);
+            this.tabPage2.Controls.Add(this.insurance_started_date);
             this.tabPage2.Controls.Add(this.insurance_type);
             this.tabPage2.Controls.Add(this.label17);
             this.tabPage2.Controls.Add(this.label16);
@@ -815,307 +595,19 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Insurance";
             // 
-            // day
-            // 
-            this.day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.day.FormattingEnabled = true;
-            this.day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.day.Location = new System.Drawing.Point(512, 147);
-            this.day.Name = "day";
-            this.day.Size = new System.Drawing.Size(91, 34);
-            this.day.TabIndex = 42;
-            this.day.Text = "    දිනය";
-            // 
-            // insurance_ended_month
-            // 
-            this.insurance_ended_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.insurance_ended_month.FormattingEnabled = true;
-            this.insurance_ended_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.insurance_ended_month.Location = new System.Drawing.Point(415, 147);
-            this.insurance_ended_month.Name = "insurance_ended_month";
-            this.insurance_ended_month.Size = new System.Drawing.Size(91, 34);
-            this.insurance_ended_month.TabIndex = 41;
-            this.insurance_ended_month.Text = "   මාසය";
-            // 
             // insurance_ended_year
             // 
-            this.insurance_ended_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.insurance_ended_year.FormattingEnabled = true;
-            this.insurance_ended_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.insurance_ended_year.Location = new System.Drawing.Point(306, 147);
+            this.insurance_ended_year.Location = new System.Drawing.Point(306, 146);
             this.insurance_ended_year.Name = "insurance_ended_year";
-            this.insurance_ended_year.Size = new System.Drawing.Size(103, 34);
-            this.insurance_ended_year.TabIndex = 40;
-            this.insurance_ended_year.Text = "   වර්ෂය";
+            this.insurance_ended_year.Size = new System.Drawing.Size(310, 33);
+            this.insurance_ended_year.TabIndex = 45;
             // 
-            // insurance_started_day
+            // insurance_started_date
             // 
-            this.insurance_started_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.insurance_started_day.FormattingEnabled = true;
-            this.insurance_started_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.insurance_started_day.Location = new System.Drawing.Point(512, 108);
-            this.insurance_started_day.Name = "insurance_started_day";
-            this.insurance_started_day.Size = new System.Drawing.Size(91, 34);
-            this.insurance_started_day.TabIndex = 39;
-            this.insurance_started_day.Text = "    දිනය";
-            // 
-            // insurance_started_month
-            // 
-            this.insurance_started_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.insurance_started_month.FormattingEnabled = true;
-            this.insurance_started_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.insurance_started_month.Location = new System.Drawing.Point(415, 108);
-            this.insurance_started_month.Name = "insurance_started_month";
-            this.insurance_started_month.Size = new System.Drawing.Size(91, 34);
-            this.insurance_started_month.TabIndex = 38;
-            this.insurance_started_month.Text = "   මාසය";
-            // 
-            // insurance_started_year
-            // 
-            this.insurance_started_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.insurance_started_year.FormattingEnabled = true;
-            this.insurance_started_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.insurance_started_year.Location = new System.Drawing.Point(306, 108);
-            this.insurance_started_year.Name = "insurance_started_year";
-            this.insurance_started_year.Size = new System.Drawing.Size(103, 34);
-            this.insurance_started_year.TabIndex = 37;
-            this.insurance_started_year.Text = "   වර්ෂය";
+            this.insurance_started_date.Location = new System.Drawing.Point(306, 109);
+            this.insurance_started_date.Name = "insurance_started_date";
+            this.insurance_started_date.Size = new System.Drawing.Size(310, 33);
+            this.insurance_started_date.TabIndex = 44;
             // 
             // insurance_type
             // 
@@ -1256,6 +748,7 @@
             this.panel1.Size = new System.Drawing.Size(1360, 768);
             this.panel1.TabIndex = 4;
             // 
+<<<<<<< HEAD
             // btnCheckInsuaranceDetails
             // 
             this.btnCheckInsuaranceDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1278,6 +771,8 @@
             this.btnCheckTaxDetails.UseVisualStyleBackColor = true;
             this.btnCheckTaxDetails.Click += new System.EventHandler(this.btnCheckTaxDetails_Click);
             // 
+=======
+>>>>>>> origin/master
             // frmEmployeeFinanceDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1364,6 +859,7 @@
         private System.Windows.Forms.ComboBox tax_status;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
+<<<<<<< HEAD
         private System.Windows.Forms.ComboBox bank_account_closed_day;
         private System.Windows.Forms.ComboBox bank_account_closed_month;
         private System.Windows.Forms.ComboBox bank_account_closed_year;
@@ -1379,5 +875,11 @@
         private System.Windows.Forms.Button btnCheckBankDetails;
         private System.Windows.Forms.Button btnCheckInsuaranceDetails;
         private System.Windows.Forms.Button btnCheckTaxDetails;
+=======
+        private System.Windows.Forms.DateTimePicker bank_account_started_year;
+        private System.Windows.Forms.DateTimePicker bank_account_closed_year;
+        private System.Windows.Forms.DateTimePicker insurance_ended_year;
+        private System.Windows.Forms.DateTimePicker insurance_started_date;
+>>>>>>> origin/master
     }
 }

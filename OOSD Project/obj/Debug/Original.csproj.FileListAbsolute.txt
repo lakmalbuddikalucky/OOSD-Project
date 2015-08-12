@@ -1,0 +1,33 @@
+D:\C# Programs\OOSD Project\OOSD Project\bin\Debug\OOSD Project.exe.config
+D:\C# Programs\OOSD Project\OOSD Project\bin\Debug\OOSD Project.exe
+D:\C# Programs\OOSD Project\OOSD Project\bin\Debug\OOSD Project.pdb
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\Original.csprojResolveAssemblyReference.cache
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.frmEmployeeFinanceDetails.resources
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.Form1.resources
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.frmLogin.resources
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.frmMain.resources
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.frmTransport.resources
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.Form2.resources
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.Properties.Resources.resources
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\Original.csproj.GenerateResource.Cache
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\OOSD Project.exe
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\OOSD Project.pdb
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.frmPassportDetails.resources
+D:\C# Programs\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.frmEmployeeRemunerationAndBenefits.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\bin\Debug\OOSD Project.exe.config
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\OOSD Project.exe
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\OOSD Project.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\bin\Debug\OOSD Project.exe
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\bin\Debug\OOSD Project.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\Original.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.frmEmployeeFinanceDetails.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.Form1.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.frmLogin.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.frmMain.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.frmPassportDetails.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.frmEmployeeRemunerationAndBenefits.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.frmTransport.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.Form2.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\OOSD_Project.Properties.Resources.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\obj\Debug\Original.csproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2013\Projects\OOSD Project\OOSD Project\bin\Debug\MySql.Data.dll

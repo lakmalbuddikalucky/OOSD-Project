@@ -133,9 +133,6 @@ C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\Origina
 C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\bin\x64\Debug\OOSD Project.exe
 C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\bin\x64\Debug\OOSD Project.pdb
 C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\bin\x64\Debug\MySql.Data.dll
-C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\bin\x64\Debug\itextsharp.dll
-C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\bin\x64\Debug\itextsharp.pdfa.dll
-C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\bin\x64\Debug\itextsharp.xtra.dll
 C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\bin\x64\Debug\itextsharp.xml
 C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\bin\x64\Debug\OOSD Project.exe.config
 C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD Project.exe
@@ -166,6 +163,7 @@ C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_P
 C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeePersonalDetails.resources
 C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.Properties.Resources.resources
 C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\Original.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\Roshan\Documents\GitHub\OOSD-Project\OOSD Project\bin\x64\Debug\OOSD Project.exe.config
 C:\Users\Roshan\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD Project.exe
 C:\Users\Roshan\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD Project.pdb
@@ -195,3 +193,8 @@ C:\Users\Roshan\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Pr
 C:\Users\Roshan\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeePersonalDetails.resources
 C:\Users\Roshan\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.Properties.Resources.resources
 C:\Users\Roshan\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\Original.csproj.GenerateResource.Cache
+=======
+C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmAddNotification.resources
+C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmNotifications.resources
+C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmSettings.resources
+>>>>>>> origin/master

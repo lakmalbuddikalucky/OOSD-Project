@@ -30,9 +30,7 @@ namespace OOSD_Project
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            frmMain form10 = new frmMain();
-            form10.Show();
-            this.Dispose();
+            frmMain.getForm().Show();
         }
 
         private void btnNext_Click(object sender, EventArgs e)

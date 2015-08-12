@@ -31,12 +31,34 @@ namespace OOSD_Project
 
         public static bool nic(string nic)
         {
-            return Regex.IsMatch(nic, @" ^\d{10}$[v,V]");
+            return Regex.IsMatch(nic, @"^\d{9}(X|V)$");
         }
 
         public static bool epf(string epf)
         {
             return true;
         }
+<<<<<<< HEAD
+
+        public static bool number(string number) {
+            return Regex.IsMatch(number, @"^[1-9]\d*$");
+        }
+
+        public static bool money(string money)
+        {
+            return Regex.IsMatch(money, @"^\d+\.\d{0,2}$") || number(money);
+        }
+
+        public static bool dateDiff(DateTime endDate, DateTime startDate)
+        {
+            TimeSpan ts = endDate - startDate;
+            int totalDays = (int)Math.Ceiling(ts.TotalDays);
+            if (ts.TotalDays < 1 && ts.TotalDays > 0)
+                return false;
+            else
+                return true;
+        }
+=======
+>>>>>>> origin/master
     }
 }

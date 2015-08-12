@@ -146,7 +146,7 @@ namespace OOSD_Project
                 state = false;
             }
 
-            if (nic_no.Text == "")
+            if (nic_no.Text == "" || !Validator.nic(nic_no.Text))
             {
                 nic_no.BackColor = Color.RosyBrown;
                 state = false;
@@ -336,6 +336,12 @@ namespace OOSD_Project
                 state = false;
             }
 
+            if(depend_nic_no.Text != "" && !Validator.nic(nic_no.Text))
+            {
+                depend_nic_no.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
             if (depend_birth_certificate.Text == "")
             {
                 depend_birth_certificate.BackColor = Color.RosyBrown;
@@ -351,6 +357,12 @@ namespace OOSD_Project
             if (emg_full_name.Text == "" || !Validator.text(emg_full_name.Text))
             {
                 emg_full_name.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if(emg_nic_no.Text != "" && !Validator.nic(emg_nic_no.Text))
+            {
+                emg_nic_no.BackColor = Color.RosyBrown;
                 state = false;
             }
 
@@ -514,8 +526,9 @@ namespace OOSD_Project
 
         }
 
-        private void textBox40_TextChanged(object sender, EventArgs e)
+        private void emg_nic_no_TextChanged(object sender, EventArgs e)
         {
+            emg_nic_no.BackColor = Color.White;
 
         }
 
@@ -937,6 +950,11 @@ namespace OOSD_Project
         private void dob_year_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void depend_nic_no_TextChanged(object sender, EventArgs e)
+        {
+            depend_nic_no.BackColor = Color.White;
         }
     }
 }

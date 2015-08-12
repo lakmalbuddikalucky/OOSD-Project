@@ -1570,6 +1570,7 @@
             this.depend_nic_no.Name = "depend_nic_no";
             this.depend_nic_no.Size = new System.Drawing.Size(200, 33);
             this.depend_nic_no.TabIndex = 4;
+            this.depend_nic_no.TextChanged += new System.EventHandler(this.depend_nic_no_TextChanged);
             // 
             // label68
             // 
@@ -1858,7 +1859,7 @@
             this.emg_nic_no.Name = "emg_nic_no";
             this.emg_nic_no.Size = new System.Drawing.Size(200, 33);
             this.emg_nic_no.TabIndex = 34;
-            this.emg_nic_no.TextChanged += new System.EventHandler(this.textBox40_TextChanged);
+            this.emg_nic_no.TextChanged += new System.EventHandler(this.emg_nic_no_TextChanged);
             // 
             // label80
             // 

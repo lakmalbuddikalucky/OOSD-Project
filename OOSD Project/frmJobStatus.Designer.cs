@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJobStatus));
-            this.job_probation_to_permanent_started_day = new System.Windows.Forms.ComboBox();
-            this.job_probation_to_permanent_started_month = new System.Windows.Forms.ComboBox();
-            this.job_probation_started_day = new System.Windows.Forms.ComboBox();
-            this.job_contract_started_day = new System.Windows.Forms.ComboBox();
-            this.job_probation_started_month = new System.Windows.Forms.ComboBox();
-            this.job_probation_to_permanent_started_year = new System.Windows.Forms.ComboBox();
-            this.job_probation_started_year = new System.Windows.Forms.ComboBox();
-            this.job_contract_started_month = new System.Windows.Forms.ComboBox();
-            this.job_contract_started_year = new System.Windows.Forms.ComboBox();
             this.job_employee_no = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -62,488 +53,23 @@
             this.lblCaption = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.job_contract_ended_year = new System.Windows.Forms.ComboBox();
-            this.job_contract_ended_month = new System.Windows.Forms.ComboBox();
-            this.job_contract_ended_day = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.job_probation_ended_year = new System.Windows.Forms.ComboBox();
-            this.job_probation_ended_month = new System.Windows.Forms.ComboBox();
-            this.job_probation_ended_day = new System.Windows.Forms.ComboBox();
             this.job_probation_to_permanent_status = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.job_contract_to_permanent_started_year = new System.Windows.Forms.ComboBox();
-            this.job_contract_to_permanent_started_month = new System.Windows.Forms.ComboBox();
-            this.job_contract_to_permanent_started_day = new System.Windows.Forms.ComboBox();
             this.job_employee_type = new System.Windows.Forms.ComboBox();
             this.job_probation_time = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.job_contract_to_permanent_started_date = new System.Windows.Forms.DateTimePicker();
+            this.job_probation_to_permanent_started_date = new System.Windows.Forms.DateTimePicker();
+            this.job_probation_ended_date = new System.Windows.Forms.DateTimePicker();
+            this.job_probation_started_date = new System.Windows.Forms.DateTimePicker();
+            this.job_contract_ended_date = new System.Windows.Forms.DateTimePicker();
+            this.job_contract_started_date = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // job_probation_to_permanent_started_day
-            // 
-            this.job_probation_to_permanent_started_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_probation_to_permanent_started_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_probation_to_permanent_started_day.FormattingEnabled = true;
-            this.job_probation_to_permanent_started_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.job_probation_to_permanent_started_day.Location = new System.Drawing.Point(849, 539);
-            this.job_probation_to_permanent_started_day.Name = "job_probation_to_permanent_started_day";
-            this.job_probation_to_permanent_started_day.Size = new System.Drawing.Size(91, 34);
-            this.job_probation_to_permanent_started_day.TabIndex = 22;
-            this.job_probation_to_permanent_started_day.Text = "    දිනය";
-            // 
-            // job_probation_to_permanent_started_month
-            // 
-            this.job_probation_to_permanent_started_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_probation_to_permanent_started_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_probation_to_permanent_started_month.FormattingEnabled = true;
-            this.job_probation_to_permanent_started_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.job_probation_to_permanent_started_month.Location = new System.Drawing.Point(752, 539);
-            this.job_probation_to_permanent_started_month.Name = "job_probation_to_permanent_started_month";
-            this.job_probation_to_permanent_started_month.Size = new System.Drawing.Size(91, 34);
-            this.job_probation_to_permanent_started_month.TabIndex = 21;
-            this.job_probation_to_permanent_started_month.Text = "   මාසය";
-            // 
-            // job_probation_started_day
-            // 
-            this.job_probation_started_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_probation_started_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_probation_started_day.FormattingEnabled = true;
-            this.job_probation_started_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.job_probation_started_day.Location = new System.Drawing.Point(849, 426);
-            this.job_probation_started_day.Name = "job_probation_started_day";
-            this.job_probation_started_day.Size = new System.Drawing.Size(91, 34);
-            this.job_probation_started_day.TabIndex = 15;
-            this.job_probation_started_day.Text = "    දිනය";
-            // 
-            // job_contract_started_day
-            // 
-            this.job_contract_started_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_contract_started_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_contract_started_day.FormattingEnabled = true;
-            this.job_contract_started_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.job_contract_started_day.Location = new System.Drawing.Point(849, 307);
-            this.job_contract_started_day.Name = "job_contract_started_day";
-            this.job_contract_started_day.Size = new System.Drawing.Size(91, 34);
-            this.job_contract_started_day.TabIndex = 8;
-            this.job_contract_started_day.Text = "    දිනය";
-            // 
-            // job_probation_started_month
-            // 
-            this.job_probation_started_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_probation_started_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_probation_started_month.FormattingEnabled = true;
-            this.job_probation_started_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.job_probation_started_month.Location = new System.Drawing.Point(752, 426);
-            this.job_probation_started_month.Name = "job_probation_started_month";
-            this.job_probation_started_month.Size = new System.Drawing.Size(91, 34);
-            this.job_probation_started_month.TabIndex = 14;
-            this.job_probation_started_month.Text = "   මාසය";
-            // 
-            // job_probation_to_permanent_started_year
-            // 
-            this.job_probation_to_permanent_started_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_probation_to_permanent_started_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_probation_to_permanent_started_year.FormattingEnabled = true;
-            this.job_probation_to_permanent_started_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.job_probation_to_permanent_started_year.Location = new System.Drawing.Point(643, 539);
-            this.job_probation_to_permanent_started_year.Name = "job_probation_to_permanent_started_year";
-            this.job_probation_to_permanent_started_year.Size = new System.Drawing.Size(103, 34);
-            this.job_probation_to_permanent_started_year.TabIndex = 20;
-            this.job_probation_to_permanent_started_year.Text = "   වර්ෂය";
-            // 
-            // job_probation_started_year
-            // 
-            this.job_probation_started_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_probation_started_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_probation_started_year.FormattingEnabled = true;
-            this.job_probation_started_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.job_probation_started_year.Location = new System.Drawing.Point(643, 426);
-            this.job_probation_started_year.Name = "job_probation_started_year";
-            this.job_probation_started_year.Size = new System.Drawing.Size(103, 34);
-            this.job_probation_started_year.TabIndex = 13;
-            this.job_probation_started_year.Text = "   වර්ෂය";
-            // 
-            // job_contract_started_month
-            // 
-            this.job_contract_started_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_contract_started_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_contract_started_month.FormattingEnabled = true;
-            this.job_contract_started_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.job_contract_started_month.Location = new System.Drawing.Point(752, 307);
-            this.job_contract_started_month.Name = "job_contract_started_month";
-            this.job_contract_started_month.Size = new System.Drawing.Size(91, 34);
-            this.job_contract_started_month.TabIndex = 7;
-            this.job_contract_started_month.Text = "   මාසය";
-            // 
-            // job_contract_started_year
-            // 
-            this.job_contract_started_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_contract_started_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_contract_started_year.FormattingEnabled = true;
-            this.job_contract_started_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.job_contract_started_year.Location = new System.Drawing.Point(643, 307);
-            this.job_contract_started_year.Name = "job_contract_started_year";
-            this.job_contract_started_year.Size = new System.Drawing.Size(103, 34);
-            this.job_contract_started_year.TabIndex = 6;
-            this.job_contract_started_year.Text = "   වර්ෂය";
             // 
             // job_employee_no
             // 
@@ -798,160 +324,6 @@
             this.label3.Text = "කොන්ත්‍රාත් කාලය අවසන් කළ දිනය";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // job_contract_ended_year
-            // 
-            this.job_contract_ended_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_contract_ended_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_contract_ended_year.FormattingEnabled = true;
-            this.job_contract_ended_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.job_contract_ended_year.Location = new System.Drawing.Point(643, 347);
-            this.job_contract_ended_year.Name = "job_contract_ended_year";
-            this.job_contract_ended_year.Size = new System.Drawing.Size(103, 34);
-            this.job_contract_ended_year.TabIndex = 9;
-            this.job_contract_ended_year.Text = "   වර්ෂය";
-            // 
-            // job_contract_ended_month
-            // 
-            this.job_contract_ended_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_contract_ended_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_contract_ended_month.FormattingEnabled = true;
-            this.job_contract_ended_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.job_contract_ended_month.Location = new System.Drawing.Point(752, 347);
-            this.job_contract_ended_month.Name = "job_contract_ended_month";
-            this.job_contract_ended_month.Size = new System.Drawing.Size(91, 34);
-            this.job_contract_ended_month.TabIndex = 10;
-            this.job_contract_ended_month.Text = "   මාසය";
-            // 
-            // job_contract_ended_day
-            // 
-            this.job_contract_ended_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_contract_ended_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_contract_ended_day.FormattingEnabled = true;
-            this.job_contract_ended_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.job_contract_ended_day.Location = new System.Drawing.Point(849, 347);
-            this.job_contract_ended_day.Name = "job_contract_ended_day";
-            this.job_contract_ended_day.Size = new System.Drawing.Size(91, 34);
-            this.job_contract_ended_day.TabIndex = 11;
-            this.job_contract_ended_day.Text = "    දිනය";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -963,160 +335,6 @@
             this.label4.TabIndex = 121;
             this.label4.Text = "පරිවාස කාලය අවසන් දිනය";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // job_probation_ended_year
-            // 
-            this.job_probation_ended_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_probation_ended_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_probation_ended_year.FormattingEnabled = true;
-            this.job_probation_ended_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.job_probation_ended_year.Location = new System.Drawing.Point(643, 466);
-            this.job_probation_ended_year.Name = "job_probation_ended_year";
-            this.job_probation_ended_year.Size = new System.Drawing.Size(103, 34);
-            this.job_probation_ended_year.TabIndex = 16;
-            this.job_probation_ended_year.Text = "   වර්ෂය";
-            // 
-            // job_probation_ended_month
-            // 
-            this.job_probation_ended_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_probation_ended_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_probation_ended_month.FormattingEnabled = true;
-            this.job_probation_ended_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.job_probation_ended_month.Location = new System.Drawing.Point(752, 466);
-            this.job_probation_ended_month.Name = "job_probation_ended_month";
-            this.job_probation_ended_month.Size = new System.Drawing.Size(91, 34);
-            this.job_probation_ended_month.TabIndex = 17;
-            this.job_probation_ended_month.Text = "   මාසය";
-            // 
-            // job_probation_ended_day
-            // 
-            this.job_probation_ended_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_probation_ended_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_probation_ended_day.FormattingEnabled = true;
-            this.job_probation_ended_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.job_probation_ended_day.Location = new System.Drawing.Point(849, 466);
-            this.job_probation_ended_day.Name = "job_probation_ended_day";
-            this.job_probation_ended_day.Size = new System.Drawing.Size(91, 34);
-            this.job_probation_ended_day.TabIndex = 18;
-            this.job_probation_ended_day.Text = "    දිනය";
             // 
             // job_probation_to_permanent_status
             // 
@@ -1140,160 +358,6 @@
             this.label5.TabIndex = 126;
             this.label5.Text = "කොන්ත්‍රාත් පදනමේ සිට ස්ථිර වූ දිනය";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // job_contract_to_permanent_started_year
-            // 
-            this.job_contract_to_permanent_started_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_contract_to_permanent_started_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_contract_to_permanent_started_year.FormattingEnabled = true;
-            this.job_contract_to_permanent_started_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.job_contract_to_permanent_started_year.Location = new System.Drawing.Point(643, 579);
-            this.job_contract_to_permanent_started_year.Name = "job_contract_to_permanent_started_year";
-            this.job_contract_to_permanent_started_year.Size = new System.Drawing.Size(103, 34);
-            this.job_contract_to_permanent_started_year.TabIndex = 23;
-            this.job_contract_to_permanent_started_year.Text = "   වර්ෂය";
-            // 
-            // job_contract_to_permanent_started_month
-            // 
-            this.job_contract_to_permanent_started_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_contract_to_permanent_started_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_contract_to_permanent_started_month.FormattingEnabled = true;
-            this.job_contract_to_permanent_started_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.job_contract_to_permanent_started_month.Location = new System.Drawing.Point(752, 579);
-            this.job_contract_to_permanent_started_month.Name = "job_contract_to_permanent_started_month";
-            this.job_contract_to_permanent_started_month.Size = new System.Drawing.Size(91, 34);
-            this.job_contract_to_permanent_started_month.TabIndex = 24;
-            this.job_contract_to_permanent_started_month.Text = "   මාසය";
-            // 
-            // job_contract_to_permanent_started_day
-            // 
-            this.job_contract_to_permanent_started_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_contract_to_permanent_started_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.job_contract_to_permanent_started_day.FormattingEnabled = true;
-            this.job_contract_to_permanent_started_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.job_contract_to_permanent_started_day.Location = new System.Drawing.Point(849, 579);
-            this.job_contract_to_permanent_started_day.Name = "job_contract_to_permanent_started_day";
-            this.job_contract_to_permanent_started_day.Size = new System.Drawing.Size(91, 34);
-            this.job_contract_to_permanent_started_day.TabIndex = 25;
-            this.job_contract_to_permanent_started_day.Text = "    දිනය";
             // 
             // job_employee_type
             // 
@@ -1329,30 +393,66 @@
             this.label6.Text = "පරිවාස කාලය";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // job_contract_to_permanent_started_date
+            // 
+            this.job_contract_to_permanent_started_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.job_contract_to_permanent_started_date.Location = new System.Drawing.Point(643, 579);
+            this.job_contract_to_permanent_started_date.Name = "job_contract_to_permanent_started_date";
+            this.job_contract_to_permanent_started_date.Size = new System.Drawing.Size(295, 31);
+            this.job_contract_to_permanent_started_date.TabIndex = 128;
+            // 
+            // job_probation_to_permanent_started_date
+            // 
+            this.job_probation_to_permanent_started_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.job_probation_to_permanent_started_date.Location = new System.Drawing.Point(643, 542);
+            this.job_probation_to_permanent_started_date.Name = "job_probation_to_permanent_started_date";
+            this.job_probation_to_permanent_started_date.Size = new System.Drawing.Size(295, 31);
+            this.job_probation_to_permanent_started_date.TabIndex = 129;
+            // 
+            // job_probation_ended_date
+            // 
+            this.job_probation_ended_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.job_probation_ended_date.Location = new System.Drawing.Point(643, 466);
+            this.job_probation_ended_date.Name = "job_probation_ended_date";
+            this.job_probation_ended_date.Size = new System.Drawing.Size(295, 31);
+            this.job_probation_ended_date.TabIndex = 130;
+            // 
+            // job_probation_started_date
+            // 
+            this.job_probation_started_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.job_probation_started_date.Location = new System.Drawing.Point(643, 429);
+            this.job_probation_started_date.Name = "job_probation_started_date";
+            this.job_probation_started_date.Size = new System.Drawing.Size(295, 31);
+            this.job_probation_started_date.TabIndex = 131;
+            // 
+            // job_contract_ended_date
+            // 
+            this.job_contract_ended_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.job_contract_ended_date.Location = new System.Drawing.Point(643, 347);
+            this.job_contract_ended_date.Name = "job_contract_ended_date";
+            this.job_contract_ended_date.Size = new System.Drawing.Size(295, 31);
+            this.job_contract_ended_date.TabIndex = 132;
+            // 
+            // job_contract_started_date
+            // 
+            this.job_contract_started_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.job_contract_started_date.Location = new System.Drawing.Point(643, 310);
+            this.job_contract_started_date.Name = "job_contract_started_date";
+            this.job_contract_started_date.Size = new System.Drawing.Size(295, 31);
+            this.job_contract_started_date.TabIndex = 133;
+            // 
             // frmJobStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 741);
+            this.Controls.Add(this.job_contract_started_date);
+            this.Controls.Add(this.job_contract_ended_date);
+            this.Controls.Add(this.job_probation_started_date);
+            this.Controls.Add(this.job_probation_ended_date);
+            this.Controls.Add(this.job_probation_to_permanent_started_date);
+            this.Controls.Add(this.job_contract_to_permanent_started_date);
             this.Controls.Add(this.job_probation_to_permanent_status);
-            this.Controls.Add(this.job_contract_to_permanent_started_day);
-            this.Controls.Add(this.job_probation_to_permanent_started_day);
-            this.Controls.Add(this.job_contract_to_permanent_started_month);
-            this.Controls.Add(this.job_probation_to_permanent_started_month);
-            this.Controls.Add(this.job_probation_ended_day);
-            this.Controls.Add(this.job_probation_started_day);
-            this.Controls.Add(this.job_contract_ended_day);
-            this.Controls.Add(this.job_contract_started_day);
-            this.Controls.Add(this.job_probation_ended_month);
-            this.Controls.Add(this.job_probation_started_month);
-            this.Controls.Add(this.job_contract_to_permanent_started_year);
-            this.Controls.Add(this.job_probation_to_permanent_started_year);
-            this.Controls.Add(this.job_probation_ended_year);
-            this.Controls.Add(this.job_contract_ended_month);
-            this.Controls.Add(this.job_probation_started_year);
-            this.Controls.Add(this.job_contract_ended_year);
-            this.Controls.Add(this.job_contract_started_month);
-            this.Controls.Add(this.job_contract_started_year);
             this.Controls.Add(this.job_employee_type);
             this.Controls.Add(this.job_employee_no);
             this.Controls.Add(this.label3);
@@ -1390,15 +490,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox job_probation_to_permanent_started_day;
-        private System.Windows.Forms.ComboBox job_probation_to_permanent_started_month;
-        private System.Windows.Forms.ComboBox job_probation_started_day;
-        private System.Windows.Forms.ComboBox job_contract_started_day;
-        private System.Windows.Forms.ComboBox job_probation_started_month;
-        private System.Windows.Forms.ComboBox job_probation_to_permanent_started_year;
-        private System.Windows.Forms.ComboBox job_probation_started_year;
-        private System.Windows.Forms.ComboBox job_contract_started_month;
-        private System.Windows.Forms.ComboBox job_contract_started_year;
         private System.Windows.Forms.ComboBox job_employee_no;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label1;
@@ -1423,20 +514,17 @@
         private System.Windows.Forms.Label lblCaption;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox job_contract_ended_year;
-        private System.Windows.Forms.ComboBox job_contract_ended_month;
-        private System.Windows.Forms.ComboBox job_contract_ended_day;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox job_probation_ended_year;
-        private System.Windows.Forms.ComboBox job_probation_ended_month;
-        private System.Windows.Forms.ComboBox job_probation_ended_day;
         private System.Windows.Forms.CheckBox job_probation_to_permanent_status;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox job_contract_to_permanent_started_year;
-        private System.Windows.Forms.ComboBox job_contract_to_permanent_started_month;
-        private System.Windows.Forms.ComboBox job_contract_to_permanent_started_day;
         private System.Windows.Forms.ComboBox job_employee_type;
         private System.Windows.Forms.TextBox job_probation_time;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker job_contract_to_permanent_started_date;
+        private System.Windows.Forms.DateTimePicker job_probation_to_permanent_started_date;
+        private System.Windows.Forms.DateTimePicker job_probation_ended_date;
+        private System.Windows.Forms.DateTimePicker job_probation_started_date;
+        private System.Windows.Forms.DateTimePicker job_contract_ended_date;
+        private System.Windows.Forms.DateTimePicker job_contract_started_date;
     }
 }

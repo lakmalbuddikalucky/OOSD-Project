@@ -39,6 +39,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.marry_date = new System.Windows.Forms.DateTimePicker();
+            this.dob_date = new System.Windows.Forms.DateTimePicker();
             this.btnCheckPersonalDetails = new System.Windows.Forms.Button();
             this.btnClear1 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
@@ -56,17 +58,11 @@
             this.nationality = new System.Windows.Forms.TextBox();
             this.epf_no = new System.Windows.Forms.TextBox();
             this.employee_no = new System.Windows.Forms.TextBox();
-            this.marry_date = new System.Windows.Forms.ComboBox();
-            this.marry_month = new System.Windows.Forms.ComboBox();
-            this.marry_year = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.action_status = new System.Windows.Forms.ComboBox();
             this.married = new System.Windows.Forms.CheckBox();
-            this.dob_date = new System.Windows.Forms.ComboBox();
-            this.dob_month = new System.Windows.Forms.ComboBox();
-            this.dob_year = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -154,9 +150,6 @@
             this.depend_personal_address = new System.Windows.Forms.TextBox();
             this.depend_nic_no = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.depend_date_of_post_d = new System.Windows.Forms.ComboBox();
-            this.depend_date_of_post_m = new System.Windows.Forms.ComboBox();
-            this.depend_date_of_post_yr = new System.Windows.Forms.ComboBox();
             this.label67 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -202,11 +195,9 @@
             this.label75 = new System.Windows.Forms.Label();
             this.emg_salutation = new System.Windows.Forms.ComboBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.wsd_date_of_post_date = new System.Windows.Forms.DateTimePicker();
             this.btnCheckWorkStationDetails = new System.Windows.Forms.Button();
             this.btnSave5 = new System.Windows.Forms.Button();
-            this.wsd_date_of_post_d = new System.Windows.Forms.ComboBox();
-            this.wsd_date_of_post_m = new System.Windows.Forms.ComboBox();
-            this.wsd_date_of_post_y = new System.Windows.Forms.ComboBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
@@ -226,6 +217,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.depend_date_of_post_date = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -339,6 +331,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.marry_date);
+            this.tabPage1.Controls.Add(this.dob_date);
             this.tabPage1.Controls.Add(this.btnCheckPersonalDetails);
             this.tabPage1.Controls.Add(this.btnClear1);
             this.tabPage1.Controls.Add(this.label21);
@@ -356,17 +350,11 @@
             this.tabPage1.Controls.Add(this.nationality);
             this.tabPage1.Controls.Add(this.epf_no);
             this.tabPage1.Controls.Add(this.employee_no);
-            this.tabPage1.Controls.Add(this.marry_date);
-            this.tabPage1.Controls.Add(this.marry_month);
-            this.tabPage1.Controls.Add(this.marry_year);
             this.tabPage1.Controls.Add(this.label19);
             this.tabPage1.Controls.Add(this.label23);
             this.tabPage1.Controls.Add(this.label22);
             this.tabPage1.Controls.Add(this.action_status);
             this.tabPage1.Controls.Add(this.married);
-            this.tabPage1.Controls.Add(this.dob_date);
-            this.tabPage1.Controls.Add(this.dob_month);
-            this.tabPage1.Controls.Add(this.dob_year);
             this.tabPage1.Controls.Add(this.label18);
             this.tabPage1.Controls.Add(this.label17);
             this.tabPage1.Controls.Add(this.label16);
@@ -391,6 +379,20 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Personal Details";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // marry_date
+            // 
+            this.marry_date.Location = new System.Drawing.Point(243, 490);
+            this.marry_date.Name = "marry_date";
+            this.marry_date.Size = new System.Drawing.Size(331, 33);
+            this.marry_date.TabIndex = 58;
+            // 
+            // dob_date
+            // 
+            this.dob_date.Location = new System.Drawing.Point(242, 423);
+            this.dob_date.Name = "dob_date";
+            this.dob_date.Size = new System.Drawing.Size(331, 33);
+            this.dob_date.TabIndex = 57;
             // 
             // btnCheckPersonalDetails
             // 
@@ -607,157 +609,6 @@
             this.employee_no.TabIndex = 5;
             this.employee_no.TextChanged += new System.EventHandler(this.employee_no_TextChanged);
             // 
-            // marry_date
-            // 
-            this.marry_date.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.marry_date.FormattingEnabled = true;
-            this.marry_date.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.marry_date.Location = new System.Drawing.Point(452, 489);
-            this.marry_date.Name = "marry_date";
-            this.marry_date.Size = new System.Drawing.Size(91, 34);
-            this.marry_date.TabIndex = 47;
-            this.marry_date.Text = "    දිනය";
-            // 
-            // marry_month
-            // 
-            this.marry_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.marry_month.FormattingEnabled = true;
-            this.marry_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.marry_month.Location = new System.Drawing.Point(355, 489);
-            this.marry_month.Name = "marry_month";
-            this.marry_month.Size = new System.Drawing.Size(91, 34);
-            this.marry_month.TabIndex = 46;
-            this.marry_month.Text = "   මාසය";
-            // 
-            // marry_year
-            // 
-            this.marry_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.marry_year.FormattingEnabled = true;
-            this.marry_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.marry_year.Location = new System.Drawing.Point(244, 489);
-            this.marry_year.Name = "marry_year";
-            this.marry_year.Size = new System.Drawing.Size(105, 34);
-            this.marry_year.TabIndex = 45;
-            this.marry_year.Text = "   වර්ෂය";
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -880,158 +731,6 @@
             this.married.TabIndex = 38;
             this.married.Text = "විවාහක ";
             this.married.UseVisualStyleBackColor = true;
-            // 
-            // dob_date
-            // 
-            this.dob_date.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.dob_date.FormattingEnabled = true;
-            this.dob_date.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.dob_date.Location = new System.Drawing.Point(450, 421);
-            this.dob_date.Name = "dob_date";
-            this.dob_date.Size = new System.Drawing.Size(91, 34);
-            this.dob_date.TabIndex = 36;
-            this.dob_date.Text = "    දිනය";
-            // 
-            // dob_month
-            // 
-            this.dob_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.dob_month.FormattingEnabled = true;
-            this.dob_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.dob_month.Location = new System.Drawing.Point(353, 421);
-            this.dob_month.Name = "dob_month";
-            this.dob_month.Size = new System.Drawing.Size(91, 34);
-            this.dob_month.TabIndex = 33;
-            this.dob_month.Text = "   මාසය";
-            // 
-            // dob_year
-            // 
-            this.dob_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.dob_year.FormattingEnabled = true;
-            this.dob_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.dob_year.Location = new System.Drawing.Point(244, 421);
-            this.dob_year.Name = "dob_year";
-            this.dob_year.Size = new System.Drawing.Size(103, 34);
-            this.dob_year.TabIndex = 32;
-            this.dob_year.Text = "   වර්ෂය";
-            this.dob_year.SelectedIndexChanged += new System.EventHandler(this.dob_year_SelectedIndexChanged);
             // 
             // label18
             // 
@@ -1694,6 +1393,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.depend_date_of_post_date);
             this.tabPage3.Controls.Add(this.btnCheckDependentDetails);
             this.tabPage3.Controls.Add(this.btnClear3);
             this.tabPage3.Controls.Add(this.btnSave3);
@@ -1711,9 +1411,6 @@
             this.tabPage3.Controls.Add(this.depend_personal_address);
             this.tabPage3.Controls.Add(this.depend_nic_no);
             this.tabPage3.Controls.Add(this.label68);
-            this.tabPage3.Controls.Add(this.depend_date_of_post_d);
-            this.tabPage3.Controls.Add(this.depend_date_of_post_m);
-            this.tabPage3.Controls.Add(this.depend_date_of_post_yr);
             this.tabPage3.Controls.Add(this.label67);
             this.tabPage3.Controls.Add(this.label66);
             this.tabPage3.Controls.Add(this.button2);
@@ -1882,36 +1579,6 @@
             this.label68.Size = new System.Drawing.Size(160, 26);
             this.label68.TabIndex = 29;
             this.label68.Text = "කාර්යාලීය ලිපිනය";
-            // 
-            // depend_date_of_post_d
-            // 
-            this.depend_date_of_post_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.depend_date_of_post_d.FormattingEnabled = true;
-            this.depend_date_of_post_d.Location = new System.Drawing.Point(941, 70);
-            this.depend_date_of_post_d.Name = "depend_date_of_post_d";
-            this.depend_date_of_post_d.Size = new System.Drawing.Size(105, 34);
-            this.depend_date_of_post_d.TabIndex = 27;
-            this.depend_date_of_post_d.Text = "   දිනය";
-            // 
-            // depend_date_of_post_m
-            // 
-            this.depend_date_of_post_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.depend_date_of_post_m.FormattingEnabled = true;
-            this.depend_date_of_post_m.Location = new System.Drawing.Point(830, 70);
-            this.depend_date_of_post_m.Name = "depend_date_of_post_m";
-            this.depend_date_of_post_m.Size = new System.Drawing.Size(105, 34);
-            this.depend_date_of_post_m.TabIndex = 26;
-            this.depend_date_of_post_m.Text = "   මාසය";
-            // 
-            // depend_date_of_post_yr
-            // 
-            this.depend_date_of_post_yr.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.depend_date_of_post_yr.FormattingEnabled = true;
-            this.depend_date_of_post_yr.Location = new System.Drawing.Point(719, 70);
-            this.depend_date_of_post_yr.Name = "depend_date_of_post_yr";
-            this.depend_date_of_post_yr.Size = new System.Drawing.Size(105, 34);
-            this.depend_date_of_post_yr.TabIndex = 25;
-            this.depend_date_of_post_yr.Text = "   වර්ෂය";
             // 
             // label67
             // 
@@ -2327,11 +1994,9 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.wsd_date_of_post_date);
             this.tabPage5.Controls.Add(this.btnCheckWorkStationDetails);
             this.tabPage5.Controls.Add(this.btnSave5);
-            this.tabPage5.Controls.Add(this.wsd_date_of_post_d);
-            this.tabPage5.Controls.Add(this.wsd_date_of_post_m);
-            this.tabPage5.Controls.Add(this.wsd_date_of_post_y);
             this.tabPage5.Controls.Add(this.label55);
             this.tabPage5.Controls.Add(this.label54);
             this.tabPage5.Controls.Add(this.label53);
@@ -2351,6 +2016,13 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "WorkstationDetails";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // wsd_date_of_post_date
+            // 
+            this.wsd_date_of_post_date.Location = new System.Drawing.Point(243, 150);
+            this.wsd_date_of_post_date.Name = "wsd_date_of_post_date";
+            this.wsd_date_of_post_date.Size = new System.Drawing.Size(320, 33);
+            this.wsd_date_of_post_date.TabIndex = 60;
             // 
             // btnCheckWorkStationDetails
             // 
@@ -2372,36 +2044,6 @@
             this.btnSave5.Text = "තැන්පතු කරන්න";
             this.btnSave5.UseVisualStyleBackColor = true;
             this.btnSave5.Click += new System.EventHandler(this.btnSave5_Click);
-            // 
-            // wsd_date_of_post_d
-            // 
-            this.wsd_date_of_post_d.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.wsd_date_of_post_d.FormattingEnabled = true;
-            this.wsd_date_of_post_d.Location = new System.Drawing.Point(465, 150);
-            this.wsd_date_of_post_d.Name = "wsd_date_of_post_d";
-            this.wsd_date_of_post_d.Size = new System.Drawing.Size(105, 34);
-            this.wsd_date_of_post_d.TabIndex = 16;
-            this.wsd_date_of_post_d.Text = "   දිනය";
-            // 
-            // wsd_date_of_post_m
-            // 
-            this.wsd_date_of_post_m.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.wsd_date_of_post_m.FormattingEnabled = true;
-            this.wsd_date_of_post_m.Location = new System.Drawing.Point(354, 150);
-            this.wsd_date_of_post_m.Name = "wsd_date_of_post_m";
-            this.wsd_date_of_post_m.Size = new System.Drawing.Size(105, 34);
-            this.wsd_date_of_post_m.TabIndex = 15;
-            this.wsd_date_of_post_m.Text = "   මාසය";
-            // 
-            // wsd_date_of_post_y
-            // 
-            this.wsd_date_of_post_y.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.wsd_date_of_post_y.FormattingEnabled = true;
-            this.wsd_date_of_post_y.Location = new System.Drawing.Point(243, 150);
-            this.wsd_date_of_post_y.Name = "wsd_date_of_post_y";
-            this.wsd_date_of_post_y.Size = new System.Drawing.Size(105, 34);
-            this.wsd_date_of_post_y.TabIndex = 14;
-            this.wsd_date_of_post_y.Text = "   වර්ෂය";
             // 
             // label55
             // 
@@ -2588,6 +2230,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee";
             // 
+            // depend_date_of_post_date
+            // 
+            this.depend_date_of_post_date.Location = new System.Drawing.Point(719, 70);
+            this.depend_date_of_post_date.Name = "depend_date_of_post_date";
+            this.depend_date_of_post_date.Size = new System.Drawing.Size(331, 33);
+            this.depend_date_of_post_date.TabIndex = 58;
+            // 
             // frmEmployeePersonalDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2654,17 +2303,11 @@
         private System.Windows.Forms.TextBox nationality;
         private System.Windows.Forms.TextBox epf_no;
         private System.Windows.Forms.TextBox employee_no;
-        private System.Windows.Forms.ComboBox marry_date;
-        private System.Windows.Forms.ComboBox marry_month;
-        private System.Windows.Forms.ComboBox marry_year;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.ComboBox action_status;
         private System.Windows.Forms.CheckBox married;
-        private System.Windows.Forms.ComboBox dob_date;
-        private System.Windows.Forms.ComboBox dob_month;
-        private System.Windows.Forms.ComboBox dob_year;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
@@ -2747,9 +2390,6 @@
         private System.Windows.Forms.TextBox depend_personal_address;
         private System.Windows.Forms.TextBox depend_nic_no;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.ComboBox depend_date_of_post_d;
-        private System.Windows.Forms.ComboBox depend_date_of_post_m;
-        private System.Windows.Forms.ComboBox depend_date_of_post_yr;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Button button2;
@@ -2793,9 +2433,6 @@
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.ComboBox emg_salutation;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.ComboBox wsd_date_of_post_d;
-        private System.Windows.Forms.ComboBox wsd_date_of_post_m;
-        private System.Windows.Forms.ComboBox wsd_date_of_post_y;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;
@@ -2822,6 +2459,10 @@
         private System.Windows.Forms.Button btnCheckDependentDetails;
         private System.Windows.Forms.Button btnCheckEmergencyDetails;
         private System.Windows.Forms.Button btnCheckWorkStationDetails;
+        private System.Windows.Forms.DateTimePicker marry_date;
+        private System.Windows.Forms.DateTimePicker dob_date;
+        private System.Windows.Forms.DateTimePicker wsd_date_of_post_date;
+        private System.Windows.Forms.DateTimePicker depend_date_of_post_date;
     }
 }
 

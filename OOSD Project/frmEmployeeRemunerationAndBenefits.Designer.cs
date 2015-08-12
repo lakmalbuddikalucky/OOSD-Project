@@ -32,9 +32,6 @@
             this.lblCaption = new System.Windows.Forms.Label();
             this.tabRemunerationAndBenefits = new System.Windows.Forms.TabControl();
             this.tabPersonalDetails = new System.Windows.Forms.TabPage();
-            this.remun_salary_increased_day = new System.Windows.Forms.ComboBox();
-            this.remun_salary_increased_month = new System.Windows.Forms.ComboBox();
-            this.remun_salary_increased_year = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -65,18 +62,12 @@
             this.remun_other_allowances = new System.Windows.Forms.TextBox();
             this.remun_house_allowance = new System.Windows.Forms.TextBox();
             this.tabCashBenefits = new System.Windows.Forms.TabPage();
-            this.cash_issued_day = new System.Windows.Forms.ComboBox();
-            this.cash_issued_month = new System.Windows.Forms.ComboBox();
-            this.cash_issued_year = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cash_issued_price = new System.Windows.Forms.TextBox();
             this.cash_approved_benefit = new System.Windows.Forms.TextBox();
             this.tabNonCashBenefits = new System.Windows.Forms.TabPage();
-            this.noncash_issued_day = new System.Windows.Forms.ComboBox();
-            this.noncash_issued_month = new System.Windows.Forms.ComboBox();
-            this.noncash_issued_year = new System.Windows.Forms.ComboBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -100,6 +91,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
+            this.remun_salary_increased_date = new System.Windows.Forms.DateTimePicker();
+            this.cash_issued_date = new System.Windows.Forms.DateTimePicker();
+            this.noncash_issued_date = new System.Windows.Forms.DateTimePicker();
             this.tabRemunerationAndBenefits.SuspendLayout();
             this.tabPersonalDetails.SuspendLayout();
             this.tabCashBenefits.SuspendLayout();
@@ -141,9 +135,7 @@
             // tabPersonalDetails
             // 
             this.tabPersonalDetails.BackColor = System.Drawing.Color.White;
-            this.tabPersonalDetails.Controls.Add(this.remun_salary_increased_day);
-            this.tabPersonalDetails.Controls.Add(this.remun_salary_increased_month);
-            this.tabPersonalDetails.Controls.Add(this.remun_salary_increased_year);
+            this.tabPersonalDetails.Controls.Add(this.remun_salary_increased_date);
             this.tabPersonalDetails.Controls.Add(this.label23);
             this.tabPersonalDetails.Controls.Add(this.label24);
             this.tabPersonalDetails.Controls.Add(this.label25);
@@ -182,157 +174,6 @@
             this.tabPersonalDetails.TabIndex = 0;
             this.tabPersonalDetails.Text = "Remuneration";
             this.tabPersonalDetails.Click += new System.EventHandler(this.tabPersonalDetails_Click);
-            // 
-            // remun_salary_increased_day
-            // 
-            this.remun_salary_increased_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.remun_salary_increased_day.FormattingEnabled = true;
-            this.remun_salary_increased_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.remun_salary_increased_day.Location = new System.Drawing.Point(427, 183);
-            this.remun_salary_increased_day.Name = "remun_salary_increased_day";
-            this.remun_salary_increased_day.Size = new System.Drawing.Size(91, 32);
-            this.remun_salary_increased_day.TabIndex = 45;
-            this.remun_salary_increased_day.Text = "    දිනය";
-            // 
-            // remun_salary_increased_month
-            // 
-            this.remun_salary_increased_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.remun_salary_increased_month.FormattingEnabled = true;
-            this.remun_salary_increased_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.remun_salary_increased_month.Location = new System.Drawing.Point(330, 183);
-            this.remun_salary_increased_month.Name = "remun_salary_increased_month";
-            this.remun_salary_increased_month.Size = new System.Drawing.Size(91, 32);
-            this.remun_salary_increased_month.TabIndex = 44;
-            this.remun_salary_increased_month.Text = "   මාසය";
-            // 
-            // remun_salary_increased_year
-            // 
-            this.remun_salary_increased_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.remun_salary_increased_year.FormattingEnabled = true;
-            this.remun_salary_increased_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.remun_salary_increased_year.Location = new System.Drawing.Point(221, 183);
-            this.remun_salary_increased_year.Name = "remun_salary_increased_year";
-            this.remun_salary_increased_year.Size = new System.Drawing.Size(103, 32);
-            this.remun_salary_increased_year.TabIndex = 43;
-            this.remun_salary_increased_year.Text = "   වර්ෂය";
             // 
             // label23
             // 
@@ -645,9 +486,7 @@
             // tabCashBenefits
             // 
             this.tabCashBenefits.BackColor = System.Drawing.Color.White;
-            this.tabCashBenefits.Controls.Add(this.cash_issued_day);
-            this.tabCashBenefits.Controls.Add(this.cash_issued_month);
-            this.tabCashBenefits.Controls.Add(this.cash_issued_year);
+            this.tabCashBenefits.Controls.Add(this.cash_issued_date);
             this.tabCashBenefits.Controls.Add(this.label27);
             this.tabCashBenefits.Controls.Add(this.label3);
             this.tabCashBenefits.Controls.Add(this.label1);
@@ -660,157 +499,6 @@
             this.tabCashBenefits.Size = new System.Drawing.Size(1124, 422);
             this.tabCashBenefits.TabIndex = 1;
             this.tabCashBenefits.Text = "Cash Benefits";
-            // 
-            // cash_issued_day
-            // 
-            this.cash_issued_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.cash_issued_day.FormattingEnabled = true;
-            this.cash_issued_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.cash_issued_day.Location = new System.Drawing.Point(383, 65);
-            this.cash_issued_day.Name = "cash_issued_day";
-            this.cash_issued_day.Size = new System.Drawing.Size(91, 34);
-            this.cash_issued_day.TabIndex = 42;
-            this.cash_issued_day.Text = "    දිනය";
-            // 
-            // cash_issued_month
-            // 
-            this.cash_issued_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.cash_issued_month.FormattingEnabled = true;
-            this.cash_issued_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.cash_issued_month.Location = new System.Drawing.Point(286, 65);
-            this.cash_issued_month.Name = "cash_issued_month";
-            this.cash_issued_month.Size = new System.Drawing.Size(91, 34);
-            this.cash_issued_month.TabIndex = 41;
-            this.cash_issued_month.Text = "   මාසය";
-            // 
-            // cash_issued_year
-            // 
-            this.cash_issued_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.cash_issued_year.FormattingEnabled = true;
-            this.cash_issued_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.cash_issued_year.Location = new System.Drawing.Point(177, 65);
-            this.cash_issued_year.Name = "cash_issued_year";
-            this.cash_issued_year.Size = new System.Drawing.Size(103, 34);
-            this.cash_issued_year.TabIndex = 40;
-            this.cash_issued_year.Text = "   වර්ෂය";
             // 
             // label27
             // 
@@ -859,9 +547,7 @@
             // tabNonCashBenefits
             // 
             this.tabNonCashBenefits.AutoScroll = true;
-            this.tabNonCashBenefits.Controls.Add(this.noncash_issued_day);
-            this.tabNonCashBenefits.Controls.Add(this.noncash_issued_month);
-            this.tabNonCashBenefits.Controls.Add(this.noncash_issued_year);
+            this.tabNonCashBenefits.Controls.Add(this.noncash_issued_date);
             this.tabNonCashBenefits.Controls.Add(this.label31);
             this.tabNonCashBenefits.Controls.Add(this.label28);
             this.tabNonCashBenefits.Controls.Add(this.label29);
@@ -876,157 +562,6 @@
             this.tabNonCashBenefits.Text = "Non Cash Benefits";
             this.tabNonCashBenefits.UseVisualStyleBackColor = true;
             this.tabNonCashBenefits.Click += new System.EventHandler(this.tabNonCashBenefits_Click);
-            // 
-            // noncash_issued_day
-            // 
-            this.noncash_issued_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.noncash_issued_day.FormattingEnabled = true;
-            this.noncash_issued_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.noncash_issued_day.Location = new System.Drawing.Point(383, 65);
-            this.noncash_issued_day.Name = "noncash_issued_day";
-            this.noncash_issued_day.Size = new System.Drawing.Size(91, 34);
-            this.noncash_issued_day.TabIndex = 39;
-            this.noncash_issued_day.Text = "    දිනය";
-            // 
-            // noncash_issued_month
-            // 
-            this.noncash_issued_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.noncash_issued_month.FormattingEnabled = true;
-            this.noncash_issued_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.noncash_issued_month.Location = new System.Drawing.Point(286, 65);
-            this.noncash_issued_month.Name = "noncash_issued_month";
-            this.noncash_issued_month.Size = new System.Drawing.Size(91, 34);
-            this.noncash_issued_month.TabIndex = 38;
-            this.noncash_issued_month.Text = "   මාසය";
-            // 
-            // noncash_issued_year
-            // 
-            this.noncash_issued_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.noncash_issued_year.FormattingEnabled = true;
-            this.noncash_issued_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.noncash_issued_year.Location = new System.Drawing.Point(177, 65);
-            this.noncash_issued_year.Name = "noncash_issued_year";
-            this.noncash_issued_year.Size = new System.Drawing.Size(103, 34);
-            this.noncash_issued_year.TabIndex = 37;
-            this.noncash_issued_year.Text = "   වර්ෂය";
             // 
             // label31
             // 
@@ -1254,6 +789,27 @@
             this.btnPrev.UseVisualStyleBackColor = false;
             this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
+            // remun_salary_increased_date
+            // 
+            this.remun_salary_increased_date.Location = new System.Drawing.Point(221, 183);
+            this.remun_salary_increased_date.Name = "remun_salary_increased_date";
+            this.remun_salary_increased_date.Size = new System.Drawing.Size(316, 32);
+            this.remun_salary_increased_date.TabIndex = 15;
+            // 
+            // cash_issued_date
+            // 
+            this.cash_issued_date.Location = new System.Drawing.Point(177, 65);
+            this.cash_issued_date.Name = "cash_issued_date";
+            this.cash_issued_date.Size = new System.Drawing.Size(320, 33);
+            this.cash_issued_date.TabIndex = 18;
+            // 
+            // noncash_issued_date
+            // 
+            this.noncash_issued_date.Location = new System.Drawing.Point(178, 65);
+            this.noncash_issued_date.Name = "noncash_issued_date";
+            this.noncash_issued_date.Size = new System.Drawing.Size(320, 33);
+            this.noncash_issued_date.TabIndex = 22;
+            // 
             // frmEmployeeRemunerationAndBenefits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1352,19 +908,13 @@
         private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.ComboBox cash_issued_day;
-        private System.Windows.Forms.ComboBox cash_issued_month;
-        private System.Windows.Forms.ComboBox cash_issued_year;
-        private System.Windows.Forms.ComboBox noncash_issued_day;
-        private System.Windows.Forms.ComboBox noncash_issued_month;
-        private System.Windows.Forms.ComboBox noncash_issued_year;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
-        private System.Windows.Forms.ComboBox remun_salary_increased_day;
-        private System.Windows.Forms.ComboBox remun_salary_increased_month;
-        private System.Windows.Forms.ComboBox remun_salary_increased_year;
+        private System.Windows.Forms.DateTimePicker remun_salary_increased_date;
+        private System.Windows.Forms.DateTimePicker cash_issued_date;
+        private System.Windows.Forms.DateTimePicker noncash_issued_date;
 
     }
 }

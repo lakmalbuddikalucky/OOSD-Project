@@ -38,12 +38,8 @@
             this.employee_no = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.passport_renewal_day = new System.Windows.Forms.ComboBox();
-            this.passport_issued_day = new System.Windows.Forms.ComboBox();
-            this.passport_renewal_month = new System.Windows.Forms.ComboBox();
-            this.passport_issued_month = new System.Windows.Forms.ComboBox();
-            this.passport_renewal_year = new System.Windows.Forms.ComboBox();
-            this.passport_issued_year = new System.Windows.Forms.ComboBox();
+            this.passport_renewal_date = new System.Windows.Forms.DateTimePicker();
+            this.passport_issued_date = new System.Windows.Forms.DateTimePicker();
             this.passport_status_deactive = new System.Windows.Forms.RadioButton();
             this.passport_status_active = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
@@ -152,12 +148,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Controls.Add(this.passport_renewal_day);
-            this.panel1.Controls.Add(this.passport_issued_day);
-            this.panel1.Controls.Add(this.passport_renewal_month);
-            this.panel1.Controls.Add(this.passport_issued_month);
-            this.panel1.Controls.Add(this.passport_renewal_year);
-            this.panel1.Controls.Add(this.passport_issued_year);
+            this.panel1.Controls.Add(this.passport_renewal_date);
+            this.panel1.Controls.Add(this.passport_issued_date);
             this.panel1.Controls.Add(this.passport_status_deactive);
             this.panel1.Controls.Add(this.passport_status_active);
             this.panel1.Controls.Add(this.label9);
@@ -176,313 +168,21 @@
             this.panel1.Size = new System.Drawing.Size(900, 600);
             this.panel1.TabIndex = 19;
             // 
-            // passport_renewal_day
+            // passport_renewal_date
             // 
-            this.passport_renewal_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.passport_renewal_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.passport_renewal_day.FormattingEnabled = true;
-            this.passport_renewal_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.passport_renewal_day.Location = new System.Drawing.Point(477, 224);
-            this.passport_renewal_day.Name = "passport_renewal_day";
-            this.passport_renewal_day.Size = new System.Drawing.Size(91, 34);
-            this.passport_renewal_day.TabIndex = 37;
-            this.passport_renewal_day.Text = "    දිනය";
+            this.passport_renewal_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passport_renewal_date.Location = new System.Drawing.Point(271, 223);
+            this.passport_renewal_date.Name = "passport_renewal_date";
+            this.passport_renewal_date.Size = new System.Drawing.Size(294, 31);
+            this.passport_renewal_date.TabIndex = 39;
             // 
-            // passport_issued_day
+            // passport_issued_date
             // 
-            this.passport_issued_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.passport_issued_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.passport_issued_day.FormattingEnabled = true;
-            this.passport_issued_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.passport_issued_day.Location = new System.Drawing.Point(477, 184);
-            this.passport_issued_day.Name = "passport_issued_day";
-            this.passport_issued_day.Size = new System.Drawing.Size(91, 34);
-            this.passport_issued_day.TabIndex = 37;
-            this.passport_issued_day.Text = "    දිනය";
-            // 
-            // passport_renewal_month
-            // 
-            this.passport_renewal_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.passport_renewal_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.passport_renewal_month.FormattingEnabled = true;
-            this.passport_renewal_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.passport_renewal_month.Location = new System.Drawing.Point(380, 224);
-            this.passport_renewal_month.Name = "passport_renewal_month";
-            this.passport_renewal_month.Size = new System.Drawing.Size(91, 34);
-            this.passport_renewal_month.TabIndex = 36;
-            this.passport_renewal_month.Text = "   මාසය";
-            // 
-            // passport_issued_month
-            // 
-            this.passport_issued_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.passport_issued_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.passport_issued_month.FormattingEnabled = true;
-            this.passport_issued_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.passport_issued_month.Location = new System.Drawing.Point(380, 184);
-            this.passport_issued_month.Name = "passport_issued_month";
-            this.passport_issued_month.Size = new System.Drawing.Size(91, 34);
-            this.passport_issued_month.TabIndex = 36;
-            this.passport_issued_month.Text = "   මාසය";
-            // 
-            // passport_renewal_year
-            // 
-            this.passport_renewal_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.passport_renewal_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.passport_renewal_year.FormattingEnabled = true;
-            this.passport_renewal_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.passport_renewal_year.Location = new System.Drawing.Point(271, 224);
-            this.passport_renewal_year.Name = "passport_renewal_year";
-            this.passport_renewal_year.Size = new System.Drawing.Size(103, 34);
-            this.passport_renewal_year.TabIndex = 35;
-            this.passport_renewal_year.Text = "   වර්ෂය";
-            // 
-            // passport_issued_year
-            // 
-            this.passport_issued_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.passport_issued_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.passport_issued_year.FormattingEnabled = true;
-            this.passport_issued_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.passport_issued_year.Location = new System.Drawing.Point(271, 184);
-            this.passport_issued_year.Name = "passport_issued_year";
-            this.passport_issued_year.Size = new System.Drawing.Size(103, 34);
-            this.passport_issued_year.TabIndex = 35;
-            this.passport_issued_year.Text = "   වර්ෂය";
+            this.passport_issued_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passport_issued_date.Location = new System.Drawing.Point(271, 184);
+            this.passport_issued_date.Name = "passport_issued_date";
+            this.passport_issued_date.Size = new System.Drawing.Size(294, 31);
+            this.passport_issued_date.TabIndex = 38;
             // 
             // passport_status_deactive
             // 
@@ -590,7 +290,7 @@
             this.passport_post.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.passport_post.Location = new System.Drawing.Point(271, 67);
             this.passport_post.Name = "passport_post";
-            this.passport_post.Size = new System.Drawing.Size(282, 33);
+            this.passport_post.Size = new System.Drawing.Size(294, 33);
             this.passport_post.TabIndex = 23;
             // 
             // passport_rank
@@ -598,7 +298,7 @@
             this.passport_rank.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.passport_rank.Location = new System.Drawing.Point(271, 28);
             this.passport_rank.Name = "passport_rank";
-            this.passport_rank.Size = new System.Drawing.Size(282, 33);
+            this.passport_rank.Size = new System.Drawing.Size(294, 33);
             this.passport_rank.TabIndex = 21;
             // 
             // passport_issued_place
@@ -606,7 +306,7 @@
             this.passport_issued_place.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.passport_issued_place.Location = new System.Drawing.Point(271, 145);
             this.passport_issued_place.Name = "passport_issued_place";
-            this.passport_issued_place.Size = new System.Drawing.Size(282, 33);
+            this.passport_issued_place.Size = new System.Drawing.Size(294, 33);
             this.passport_issued_place.TabIndex = 19;
             // 
             // passport_no
@@ -614,7 +314,7 @@
             this.passport_no.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.passport_no.Location = new System.Drawing.Point(271, 106);
             this.passport_no.Name = "passport_no";
-            this.passport_no.Size = new System.Drawing.Size(282, 33);
+            this.passport_no.Size = new System.Drawing.Size(294, 33);
             this.passport_no.TabIndex = 17;
             // 
             // btnSave
@@ -733,11 +433,7 @@
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.ComboBox passport_renewal_day;
-        private System.Windows.Forms.ComboBox passport_issued_day;
-        private System.Windows.Forms.ComboBox passport_renewal_month;
-        private System.Windows.Forms.ComboBox passport_issued_month;
-        private System.Windows.Forms.ComboBox passport_renewal_year;
-        private System.Windows.Forms.ComboBox passport_issued_year;
+        private System.Windows.Forms.DateTimePicker passport_renewal_date;
+        private System.Windows.Forms.DateTimePicker passport_issued_date;
     }
 }

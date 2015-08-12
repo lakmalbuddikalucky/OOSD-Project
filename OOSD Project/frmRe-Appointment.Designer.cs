@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRe_Appointment));
-            this.reappointment_rojoining_day = new System.Windows.Forms.ComboBox();
-            this.reappointment_rojoining_month = new System.Windows.Forms.ComboBox();
-            this.reappointment_rojoining_year = new System.Windows.Forms.ComboBox();
             this.reappointment_employee_no = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -60,165 +57,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.reappointment_suspension_approved_note = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.reappointment_rojoining_date = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // reappointment_rojoining_day
-            // 
-            this.reappointment_rojoining_day.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.reappointment_rojoining_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.reappointment_rojoining_day.FormattingEnabled = true;
-            this.reappointment_rojoining_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.reappointment_rojoining_day.Location = new System.Drawing.Point(862, 404);
-            this.reappointment_rojoining_day.Name = "reappointment_rojoining_day";
-            this.reappointment_rojoining_day.Size = new System.Drawing.Size(91, 34);
-            this.reappointment_rojoining_day.TabIndex = 10;
-            this.reappointment_rojoining_day.Text = "    දිනය";
-            // 
-            // reappointment_rojoining_month
-            // 
-            this.reappointment_rojoining_month.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.reappointment_rojoining_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.reappointment_rojoining_month.FormattingEnabled = true;
-            this.reappointment_rojoining_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.reappointment_rojoining_month.Location = new System.Drawing.Point(765, 404);
-            this.reappointment_rojoining_month.Name = "reappointment_rojoining_month";
-            this.reappointment_rojoining_month.Size = new System.Drawing.Size(91, 34);
-            this.reappointment_rojoining_month.TabIndex = 9;
-            this.reappointment_rojoining_month.Text = "   මාසය";
-            // 
-            // reappointment_rojoining_year
-            // 
-            this.reappointment_rojoining_year.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.reappointment_rojoining_year.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.reappointment_rojoining_year.FormattingEnabled = true;
-            this.reappointment_rojoining_year.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010",
-            "2009",
-            "2008",
-            "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002",
-            "2001",
-            "2000",
-            "1999",
-            "1998",
-            "1997",
-            "1996",
-            "1995",
-            "1994",
-            "1993",
-            "1992",
-            "1991",
-            "1990",
-            "1989",
-            "1988",
-            "1987",
-            "1986",
-            "1985",
-            "1984",
-            "1983",
-            "1982",
-            "1981",
-            "1980",
-            "1979",
-            "1978",
-            "1977",
-            "1976",
-            "1975",
-            "1974",
-            "1973",
-            "1972",
-            "1971",
-            "1970",
-            "1969",
-            "1968",
-            "1967",
-            "1966",
-            "1965",
-            "1964",
-            "1963",
-            "1962",
-            "1961",
-            "1960",
-            "1959",
-            "1958",
-            "1957",
-            "1956",
-            "1955",
-            "1954",
-            "1953",
-            "1952",
-            "1951",
-            "1950",
-            "1949",
-            "1948",
-            "1947",
-            "1946"});
-            this.reappointment_rojoining_year.Location = new System.Drawing.Point(656, 404);
-            this.reappointment_rojoining_year.Name = "reappointment_rojoining_year";
-            this.reappointment_rojoining_year.Size = new System.Drawing.Size(103, 34);
-            this.reappointment_rojoining_year.TabIndex = 8;
-            this.reappointment_rojoining_year.Text = "   වර්ෂය";
             // 
             // reappointment_employee_no
             // 
@@ -508,14 +352,20 @@
             this.label3.Text = "සේවය අත්හිටුවීම සහතික කල සටහන";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // reappointment_rojoining_date
+            // 
+            this.reappointment_rojoining_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reappointment_rojoining_date.Location = new System.Drawing.Point(656, 407);
+            this.reappointment_rojoining_date.Name = "reappointment_rojoining_date";
+            this.reappointment_rojoining_date.Size = new System.Drawing.Size(297, 31);
+            this.reappointment_rojoining_date.TabIndex = 128;
+            // 
             // frmRe_Appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 741);
-            this.Controls.Add(this.reappointment_rojoining_day);
-            this.Controls.Add(this.reappointment_rojoining_month);
-            this.Controls.Add(this.reappointment_rojoining_year);
+            this.Controls.Add(this.reappointment_rojoining_date);
             this.Controls.Add(this.reappointment_employee_no);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
@@ -552,9 +402,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox reappointment_rojoining_day;
-        private System.Windows.Forms.ComboBox reappointment_rojoining_month;
-        private System.Windows.Forms.ComboBox reappointment_rojoining_year;
         private System.Windows.Forms.ComboBox reappointment_employee_no;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label12;
@@ -583,5 +430,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox reappointment_suspension_approved_note;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker reappointment_rojoining_date;
     }
 }

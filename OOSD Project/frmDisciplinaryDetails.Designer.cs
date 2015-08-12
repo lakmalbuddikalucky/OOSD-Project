@@ -34,8 +34,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.btnPrev = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -146,30 +144,6 @@
             this.label1.TabIndex = 62;
             this.label1.Text = "ප්‍රධාන විධායක \r\nනිලධාරියාගේ නිර්දේශය";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // btnNext
-            // 
-            this.btnNext.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnNext.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(97, 10);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 42);
-            this.btnNext.TabIndex = 8;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = false;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // btnPrev
-            // 
-            this.btnPrev.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPrev.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrev.Location = new System.Drawing.Point(12, 10);
-            this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(75, 42);
-            this.btnPrev.TabIndex = 7;
-            this.btnPrev.Text = "Previous";
-            this.btnPrev.UseVisualStyleBackColor = false;
-            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // label12
             // 
@@ -326,11 +300,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
-            this.panel2.Controls.Add(this.btnNext);
-            this.panel2.Controls.Add(this.btnPrev);
             this.panel2.Controls.Add(this.btnSave);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 708);
+            this.panel2.Location = new System.Drawing.Point(0, 681);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1360, 60);
             this.panel2.TabIndex = 49;
@@ -338,12 +310,13 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(948, 13);
+            this.btnSave.Location = new System.Drawing.Point(1184, 13);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 35);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "තැන්පතු කරන්න ";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label35
             // 
@@ -376,7 +349,7 @@
             this.panel4.Controls.Add(this.label34);
             this.panel4.Location = new System.Drawing.Point(8, 8);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(284, 633);
+            this.panel4.Size = new System.Drawing.Size(284, 607);
             this.panel4.TabIndex = 6;
             // 
             // pictureBox1
@@ -450,7 +423,7 @@
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.desciplinary_suspended_time);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12.75F);
-            this.groupBox1.Location = new System.Drawing.Point(351, 539);
+            this.groupBox1.Location = new System.Drawing.Point(350, 516);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(679, 162);
             this.groupBox1.TabIndex = 65;
@@ -1287,7 +1260,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1360, 768);
+            this.ClientSize = new System.Drawing.Size(1360, 741);
             this.Controls.Add(this.desciplinary_breaking_day);
             this.Controls.Add(this.desciplinary_given_sentence_day);
             this.Controls.Add(this.desciplinary_verdict_of_director_general_day);
@@ -1323,9 +1296,8 @@
             this.Controls.Add(this.label35);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.lblCaption);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmDisciplinaryDetails";
-            this.Text = "frmDisciplinary";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -1346,8 +1318,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label8;

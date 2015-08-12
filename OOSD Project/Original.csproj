@@ -107,10 +107,16 @@
     <Compile Include="DBTableClass\Transport.cs" />
     <Compile Include="DBTableClass\WorkingExperience.cs" />
     <Compile Include="DBTableClass\WorkstationDetails.cs" />
+    <Compile Include="frmAddNotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNotification.designer.cs">
+      <DependentUpon>frmAddNotification.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDisciplinaryDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDisciplinaryDetails.Designer.cs">
+    <Compile Include="frmDisciplinaryDetails.designer.cs">
       <DependentUpon>frmDisciplinaryDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmployeeFinanceDetails.cs">
@@ -128,13 +134,13 @@
     <Compile Include="frmInterdict_Suspend.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInterdict_Suspend.Designer.cs">
+    <Compile Include="frmInterdict_Suspend.designer.cs">
       <DependentUpon>frmInterdict_Suspend.cs</DependentUpon>
     </Compile>
     <Compile Include="frmJobStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmJobStatus.Designer.cs">
+    <Compile Include="frmJobStatus.designer.cs">
       <DependentUpon>frmJobStatus.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
@@ -149,23 +155,17 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNotifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotifications.designer.cs">
+      <DependentUpon>frmNotifications.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPassportDetails.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPassportDetails.Designer.cs">
       <DependentUpon>frmPassportDetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPension_Death.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPension_Death.Designer.cs">
-      <DependentUpon>frmPension_Death.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmRe-Appointment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRe-Appointment.Designer.cs">
-      <DependentUpon>frmRe-Appointment.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmployeeRemunerationAndBenefits.cs">
       <SubType>Form</SubType>
@@ -173,10 +173,22 @@
     <Compile Include="frmEmployeeRemunerationAndBenefits.Designer.cs">
       <DependentUpon>frmEmployeeRemunerationAndBenefits.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPension_Death.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPension_Death.designer.cs">
+      <DependentUpon>frmPension_Death.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRe-Appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRe-Appointment.designer.cs">
+      <DependentUpon>frmRe-Appointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmResignation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmResignation.Designer.cs">
+    <Compile Include="frmResignation.designer.cs">
       <DependentUpon>frmResignation.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSearch.cs">
@@ -185,10 +197,16 @@
     <Compile Include="frmSearch.designer.cs">
       <DependentUpon>frmSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTraining.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTraining.Designer.cs">
+    <Compile Include="frmTraining.designer.cs">
       <DependentUpon>frmTraining.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTransport.cs">
@@ -209,6 +227,9 @@
     <Compile Include="UserLogin\LoginSession.cs" />
     <Compile Include="UserLogin\LoginValidator.cs" />
     <Compile Include="UserLogin\UserLog.cs" />
+    <EmbeddedResource Include="frmAddNotification.resx">
+      <DependentUpon>frmAddNotification.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDisciplinaryDetails.resx">
       <DependentUpon>frmDisciplinaryDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,8 +251,14 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNotifications.resx">
+      <DependentUpon>frmNotifications.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPassportDetails.resx">
       <DependentUpon>frmPassportDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeRemunerationAndBenefits.resx">
+      <DependentUpon>frmEmployeeRemunerationAndBenefits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPension_Death.resx">
       <DependentUpon>frmPension_Death.cs</DependentUpon>
@@ -239,14 +266,14 @@
     <EmbeddedResource Include="frmRe-Appointment.resx">
       <DependentUpon>frmRe-Appointment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEmployeeRemunerationAndBenefits.resx">
-      <DependentUpon>frmEmployeeRemunerationAndBenefits.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmResignation.resx">
       <DependentUpon>frmResignation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSearch.resx">
       <DependentUpon>frmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTraining.resx">
       <DependentUpon>frmTraining.cs</DependentUpon>

@@ -51,8 +51,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.btnPrev = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -688,33 +686,10 @@
             this.label35.TabIndex = 115;
             this.label35.Text = "Employee";
             // 
-            // btnNext
-            // 
-            this.btnNext.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnNext.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(97, 10);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 42);
-            this.btnNext.TabIndex = 8;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = false;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // btnPrev
-            // 
-            this.btnPrev.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPrev.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrev.Location = new System.Drawing.Point(12, 10);
-            this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(75, 42);
-            this.btnPrev.TabIndex = 7;
-            this.btnPrev.Text = "Previous";
-            this.btnPrev.UseVisualStyleBackColor = false;
-            // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(948, 13);
+            this.btnSave.Location = new System.Drawing.Point(1184, 13);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 35);
             this.btnSave.TabIndex = 0;
@@ -724,11 +699,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
-            this.panel2.Controls.Add(this.btnNext);
-            this.panel2.Controls.Add(this.btnPrev);
             this.panel2.Controls.Add(this.btnSave);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 708);
+            this.panel2.Location = new System.Drawing.Point(0, 681);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1360, 60);
             this.panel2.TabIndex = 117;
@@ -743,7 +716,7 @@
             this.panel4.Controls.Add(this.label34);
             this.panel4.Location = new System.Drawing.Point(8, 8);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(284, 633);
+            this.panel4.Size = new System.Drawing.Size(284, 607);
             this.panel4.TabIndex = 6;
             // 
             // pictureBox1
@@ -1360,7 +1333,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1360, 768);
+            this.ClientSize = new System.Drawing.Size(1360, 741);
             this.Controls.Add(this.job_probation_to_permanent_status);
             this.Controls.Add(this.job_contract_to_permanent_started_day);
             this.Controls.Add(this.job_probation_to_permanent_started_day);
@@ -1402,9 +1375,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblCaption);
             this.Controls.Add(this.panel3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmJobStatus";
-            this.Text = "frmJobStatus";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -1440,8 +1412,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;

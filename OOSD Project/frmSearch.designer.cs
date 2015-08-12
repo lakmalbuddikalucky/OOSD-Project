@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSearch));
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnAddNotification = new System.Windows.Forms.Button();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.btnPensionAndDeath = new System.Windows.Forms.Button();
             this.cbxPensionAndDeath = new System.Windows.Forms.CheckBox();
@@ -56,7 +58,7 @@
             this.btnVisaDetails = new System.Windows.Forms.Button();
             this.cbxVisaDetails = new System.Windows.Forms.CheckBox();
             this.btnEditDetails = new System.Windows.Forms.Button();
-            this.imgEmployee = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -495,12 +497,11 @@
             this.passport_rank = new System.Windows.Forms.TextBox();
             this.passport_issued_place = new System.Windows.Forms.TextBox();
             this.passport_no = new System.Windows.Forms.TextBox();
-            this.btnCreateReport = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -549,7 +550,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(107, 9);
+            this.label13.Location = new System.Drawing.Point(109, 9);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(121, 45);
             this.label13.TabIndex = 1;
@@ -560,7 +561,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(0, 9);
+            this.label1.Location = new System.Drawing.Point(2, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 45);
             this.label1.TabIndex = 0;
@@ -569,7 +570,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
-            this.panel2.Controls.Add(this.btnCreateReport);
             this.panel2.Controls.Add(this.btnPrev);
             this.panel2.Controls.Add(this.btnSave);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -618,6 +618,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel4.Controls.Add(this.btnAddNotification);
             this.panel4.Controls.Add(this.splitter1);
             this.panel4.Controls.Add(this.btnPensionAndDeath);
             this.panel4.Controls.Add(this.cbxPensionAndDeath);
@@ -643,6 +644,20 @@
             this.panel4.Size = new System.Drawing.Size(278, 638);
             this.panel4.TabIndex = 6;
             // 
+            // btnAddNotification
+            // 
+            this.btnAddNotification.BackColor = System.Drawing.Color.Teal;
+            this.btnAddNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNotification.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNotification.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAddNotification.Location = new System.Drawing.Point(5, 93);
+            this.btnAddNotification.Name = "btnAddNotification";
+            this.btnAddNotification.Size = new System.Drawing.Size(262, 87);
+            this.btnAddNotification.TabIndex = 20;
+            this.btnAddNotification.Text = "Add Notification";
+            this.btnAddNotification.UseVisualStyleBackColor = false;
+            this.btnAddNotification.Click += new System.EventHandler(this.btnAddNotification_Click);
+            // 
             // splitter1
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
@@ -663,6 +678,7 @@
             this.btnPensionAndDeath.TabIndex = 18;
             this.btnPensionAndDeath.Text = "Pension and Death";
             this.btnPensionAndDeath.UseVisualStyleBackColor = false;
+            this.btnPensionAndDeath.Click += new System.EventHandler(this.btnPensionAndDeath_Click);
             // 
             // cbxPensionAndDeath
             // 
@@ -685,6 +701,7 @@
             this.btnReAppoinment.TabIndex = 16;
             this.btnReAppoinment.Text = "Re-appoinment";
             this.btnReAppoinment.UseVisualStyleBackColor = false;
+            this.btnReAppoinment.Click += new System.EventHandler(this.btnReAppoinment_Click);
             // 
             // cbxReAppoinment
             // 
@@ -707,6 +724,7 @@
             this.btnResignation.TabIndex = 14;
             this.btnResignation.Text = "Resignation";
             this.btnResignation.UseVisualStyleBackColor = false;
+            this.btnResignation.Click += new System.EventHandler(this.btnResignation_Click);
             // 
             // cbxResignation
             // 
@@ -729,6 +747,7 @@
             this.btnInterdict.TabIndex = 12;
             this.btnInterdict.Text = "Interdict/Suspend";
             this.btnInterdict.UseVisualStyleBackColor = false;
+            this.btnInterdict.Click += new System.EventHandler(this.btnInterdict_Click);
             // 
             // cbxInterdict
             // 
@@ -751,6 +770,7 @@
             this.btnJobStatus.TabIndex = 10;
             this.btnJobStatus.Text = "Job Status";
             this.btnJobStatus.UseVisualStyleBackColor = false;
+            this.btnJobStatus.Click += new System.EventHandler(this.btnJobStatus_Click);
             // 
             // cbxJobStatus
             // 
@@ -773,6 +793,7 @@
             this.btnTraining.TabIndex = 8;
             this.btnTraining.Text = "Training";
             this.btnTraining.UseVisualStyleBackColor = false;
+            this.btnTraining.Click += new System.EventHandler(this.btnTraining_Click);
             // 
             // cbxTraining
             // 
@@ -795,6 +816,7 @@
             this.btnDisciplinaryAction.TabIndex = 6;
             this.btnDisciplinaryAction.Text = "Deciplinary Action";
             this.btnDisciplinaryAction.UseVisualStyleBackColor = false;
+            this.btnDisciplinaryAction.Click += new System.EventHandler(this.btnDisciplinaryAction_Click);
             // 
             // cbxDeciplinaryAction
             // 
@@ -817,6 +839,7 @@
             this.btnLeaveRequest.TabIndex = 4;
             this.btnLeaveRequest.Text = "Leave Request";
             this.btnLeaveRequest.UseVisualStyleBackColor = false;
+            this.btnLeaveRequest.Click += new System.EventHandler(this.btnLeaveRequest_Click);
             // 
             // cbxLeaveRequest
             // 
@@ -839,6 +862,7 @@
             this.btnVisaDetails.TabIndex = 2;
             this.btnVisaDetails.Text = "Visa Details";
             this.btnVisaDetails.UseVisualStyleBackColor = false;
+            this.btnVisaDetails.Click += new System.EventHandler(this.btnVisaDetails_Click);
             // 
             // cbxVisaDetails
             // 
@@ -857,23 +881,20 @@
             this.btnEditDetails.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEditDetails.Location = new System.Drawing.Point(5, 0);
             this.btnEditDetails.Name = "btnEditDetails";
-            this.btnEditDetails.Size = new System.Drawing.Size(262, 194);
+            this.btnEditDetails.Size = new System.Drawing.Size(262, 87);
             this.btnEditDetails.TabIndex = 0;
             this.btnEditDetails.Text = "Edit Details";
             this.btnEditDetails.UseVisualStyleBackColor = false;
+            this.btnEditDetails.Click += new System.EventHandler(this.btnEditDetails_Click);
             // 
-            // imgEmployee
+            // pictureBox1
             // 
-            this.imgEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.imgEmployee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imgEmployee.ImageLocation = "C:\\Users\\Eranga\\Pictures\\FB Cover Photos & Profile Pics\\Google Profile Picture 00" +
-    "2.bmp";
-            this.imgEmployee.Location = new System.Drawing.Point(457, 14);
-            this.imgEmployee.Name = "imgEmployee";
-            this.imgEmployee.Size = new System.Drawing.Size(150, 154);
-            this.imgEmployee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgEmployee.TabIndex = 0;
-            this.imgEmployee.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(457, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 154);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // flowLayoutPanel
             // 
@@ -995,7 +1016,7 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel12.Controls.Add(this.imgEmployee);
+            this.panel12.Controls.Add(this.pictureBox1);
             this.panel12.Location = new System.Drawing.Point(3, 135);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(1049, 191);
@@ -7771,19 +7792,6 @@
             this.passport_no.Size = new System.Drawing.Size(282, 33);
             this.passport_no.TabIndex = 38;
             // 
-            // btnCreateReport
-            // 
-            this.btnCreateReport.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCreateReport.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.btnCreateReport.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCreateReport.Location = new System.Drawing.Point(1118, 13);
-            this.btnCreateReport.Name = "btnCreateReport";
-            this.btnCreateReport.Size = new System.Drawing.Size(194, 35);
-            this.btnCreateReport.TabIndex = 4;
-            this.btnCreateReport.Text = "වාර්තාව සකසන්න";
-            this.btnCreateReport.UseVisualStyleBackColor = false;
-            this.btnCreateReport.Click += new System.EventHandler(this.btnCreateReport_Click);
-            // 
             // frmSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7806,7 +7814,7 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.flowLayoutPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -7874,7 +7882,7 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox imgEmployee;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel;
         private System.Windows.Forms.Panel panel1;
@@ -8334,6 +8342,6 @@
         private System.Windows.Forms.TextBox passport_rank;
         private System.Windows.Forms.TextBox passport_issued_place;
         private System.Windows.Forms.TextBox passport_no;
-        private System.Windows.Forms.Button btnCreateReport;
+        private System.Windows.Forms.Button btnAddNotification;
     }
 }

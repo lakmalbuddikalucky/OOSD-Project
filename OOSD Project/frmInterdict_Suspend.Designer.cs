@@ -52,8 +52,6 @@
             this.interdict_more_notes = new System.Windows.Forms.TextBox();
             this.interdict_reason = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.btnPrev = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.label35 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -146,7 +144,7 @@
             this.panel4.Controls.Add(this.label34);
             this.panel4.Location = new System.Drawing.Point(8, 8);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(284, 633);
+            this.panel4.Size = new System.Drawing.Size(284, 607);
             this.panel4.TabIndex = 6;
             // 
             // interdict_employee_no
@@ -311,42 +309,17 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
-            this.panel2.Controls.Add(this.btnNext);
-            this.panel2.Controls.Add(this.btnPrev);
             this.panel2.Controls.Add(this.btnSave);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 708);
+            this.panel2.Location = new System.Drawing.Point(0, 681);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1360, 60);
             this.panel2.TabIndex = 81;
             // 
-            // btnNext
-            // 
-            this.btnNext.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnNext.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(97, 10);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 42);
-            this.btnNext.TabIndex = 8;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = false;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // btnPrev
-            // 
-            this.btnPrev.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPrev.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrev.Location = new System.Drawing.Point(12, 10);
-            this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(75, 42);
-            this.btnPrev.TabIndex = 7;
-            this.btnPrev.Text = "Previous";
-            this.btnPrev.UseVisualStyleBackColor = false;
-            // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(948, 13);
+            this.btnSave.Location = new System.Drawing.Point(1184, 13);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 35);
             this.btnSave.TabIndex = 0;
@@ -1030,7 +1003,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1360, 768);
+            this.ClientSize = new System.Drawing.Size(1360, 741);
             this.Controls.Add(this.interdict_not_rejoined);
             this.Controls.Add(this.interdict_rejoined);
             this.Controls.Add(this.interdict_day_to);
@@ -1065,9 +1038,8 @@
             this.Controls.Add(this.label35);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.lblCaption);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmInterdict_Suspend";
-            this.Text = "frmInterdict_Suspend";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
@@ -1104,8 +1076,6 @@
         private System.Windows.Forms.TextBox interdict_more_notes;
         private System.Windows.Forms.TextBox interdict_reason;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Panel panel3;

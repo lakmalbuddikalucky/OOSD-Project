@@ -137,3 +137,32 @@ C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\bin\x64\Debug\itextsh
 C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\bin\x64\Debug\itextsharp.pdfa.dll
 C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\bin\x64\Debug\itextsharp.xtra.dll
 C:\Users\Eranga\Documents\GitHub\OOSD-Project\OOSD Project\bin\x64\Debug\itextsharp.xml
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\bin\x64\Debug\OOSD Project.exe.config
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD Project.exe
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD Project.pdb
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\bin\x64\Debug\OOSD Project.exe
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\bin\x64\Debug\OOSD Project.pdb
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\bin\x64\Debug\MySql.Data.dll
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\bin\x64\Debug\itextsharp.xml
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\Original.csprojResolveAssemblyReference.cache
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmAddNotification.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmDisciplinaryDetails.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeeFinanceDetails.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeeSpecialDetails.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmInterdict_Suspend.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmJobStatus.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmLogin.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmMain.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmNotifications.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmPassportDetails.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeeRemunerationAndBenefits.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmPension_Death.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmRe_Appointment.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmResignation.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmSearch.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmSettings.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmTraining.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmTransport.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeePersonalDetails.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\OOSD_Project.Properties.Resources.resources
+C:\Users\130372T\Documents\GitHub\OOSD Project\OOSD Project\obj\x64\Debug\Original.csproj.GenerateResource.Cache

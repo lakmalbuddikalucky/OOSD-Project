@@ -8,17 +8,19 @@ namespace OOSD_Project.DBTableClass
 {
     class CashBenefit
     {
-        string approved_benefit { set; get; }
-        float price { set; get; }
+        public string approved_benefit { set; get; }
+        public float price { set; get; }
 
-        public CashBenefit()
-        {
 
-        }
-        public CashBenefit(string approved_benefit, float price)
+        DateTime date_issued;
+        public DateTime getdate_issued()
         {
-            this.approved_benefit = approved_benefit;
-            this.price = price;
+            return date_issued;
         }
+        public void setdate_issued(DateTime dt)
+        {
+            this.date_issued = dt;
+        }
+
     }
 }

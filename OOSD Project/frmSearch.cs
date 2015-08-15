@@ -305,6 +305,39 @@ namespace OOSD_Project
 
 
 
+            //Load remuneration details
+            Remuneration r = RemunerationHandler.getRemuneration();
+
+            remun_basic_salary.Text = r.basic_salary.ToString();
+            remun_fuel_allowance.Text = r.fuel_allowance.ToString();
+            remun_housing_allowance.Text = r.housing_allowance.ToString();
+            remun_salary_increase_amount.Text = r.salary_increase_amount.ToString();
+            remun_other_allowance.Text = r.other_allowance.ToString();
+            remun_current_total_salary.Text = r.current_total_salary.ToString();
+            remun_salary_grade.Text = r.salary_grade;
+            remun_salary_increase_date.Value = r.getsalary_increase_date();
+            remun_salary_slip_no.Text = r.salary_slip_no;
+            remun_mobile_phone_allowance.Text = r.mobile_phone_allowance.ToString();
+            remun_transport_allowance.Text = r.transport_allowance.ToString();
+
+
+            //Load cash benefit details
+            CashBenefit cb = BenefitsHandler.getCashBenefit();
+
+            cash_approved_benefit.Text = cb.approved_benefit;
+            cash_issued_price.Text = cb.price.ToString();
+            cash_issued_date.Value = cb.getdate_issued();
+
+
+            //Load noncahs benefit details
+            NonCashBenefit ncb = BenefitsHandler.getNonCashBenefit();
+
+            noncash_approved_benefit.Text = ncb.approved_benefit;
+            noncash_price.Text = ncb.price.ToString();
+            noncash_quantity.Text = ncb.amount.ToString();
+            noncash_issued_date.Value = ncb.getdate_issued();
+
+
         }
 
         private void wsd_rank_SelectedIndexChanged(object sender, EventArgs e)
@@ -452,6 +485,11 @@ namespace OOSD_Project
 
             report.Close();
             this.Close();
+        }
+
+        private void remun_other_allowances1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
     }

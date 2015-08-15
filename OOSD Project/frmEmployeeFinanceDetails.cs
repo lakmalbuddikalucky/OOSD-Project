@@ -224,7 +224,7 @@ namespace OOSD_Project
             FinanceInsurance fi = new FinanceInsurance();
             
             fi.type = insurance_type.Text;
-            fi.value = double.Parse(insurance_value.Text.ToString());
+            fi.value = Convert.ToDouble(insurance_value.Text);
             fi.setBegin_date(insurance_started_date.Value.Date);
             fi.setEnd_date(insurance_ended_date.Value.Date);
             fi.note = insurance_notes.Text;

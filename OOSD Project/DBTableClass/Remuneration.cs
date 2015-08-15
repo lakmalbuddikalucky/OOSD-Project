@@ -10,15 +10,25 @@ namespace OOSD_Project.DBTableClass
     {
         public string salary_grade { set; get; }
         public string salary_slip_no { set; get; }
-        public string basic_salary { set; get; }
-        public string transport_allowance { set; get; }
-        public string fuel_allowance { set; get; }
-        public string mobile_phone_allowance { set; get; }
-        public string housing_allowance { set; get; }
-        public string other_allowance { set; get; }
-        public DateTime salary_increase_date { set; get; }
-        public string salary_increase_amount { set; get; }
-        public string current_total_salary { set; get; }
+        public float basic_salary { set; get; }
+        public float transport_allowance { set; get; }
+        public float fuel_allowance { set; get; }
+        public float mobile_phone_allowance { set; get; }
+        public float housing_allowance { set; get; }
+        public float other_allowance { set; get; }
+
+        DateTime salary_increase_date;
+        public DateTime getsalary_increase_date()
+        {
+            return salary_increase_date;
+        }
+        public void setsalary_increase_date(DateTime dt)
+        {
+            this.salary_increase_date = dt;
+        }
+
+        public float salary_increase_amount { set; get; }
+        public float current_total_salary { set; get; }
 
     }
 }

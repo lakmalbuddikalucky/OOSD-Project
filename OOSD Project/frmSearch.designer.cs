@@ -237,7 +237,6 @@
             this.label122 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPersonalDetails = new System.Windows.Forms.TabPage();
-            this.remun_salary_increased_date = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -255,16 +254,6 @@
             this.label152 = new System.Windows.Forms.Label();
             this.label153 = new System.Windows.Forms.Label();
             this.label154 = new System.Windows.Forms.Label();
-            this.remun_salary_no = new System.Windows.Forms.TextBox();
-            this.remun_salary_grade = new System.Windows.Forms.TextBox();
-            this.remun_transport_allowance = new System.Windows.Forms.TextBox();
-            this.remun_basic_salary = new System.Windows.Forms.TextBox();
-            this.remun_telephone_allowance = new System.Windows.Forms.TextBox();
-            this.remun_present_salary = new System.Windows.Forms.TextBox();
-            this.remun_increased_by = new System.Windows.Forms.TextBox();
-            this.remun_fuel_allowance = new System.Windows.Forms.TextBox();
-            this.remun_other_allowances = new System.Windows.Forms.TextBox();
-            this.remun_house_allowance = new System.Windows.Forms.TextBox();
             this.label155 = new System.Windows.Forms.Label();
             this.label156 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -391,7 +380,7 @@
             this.label169 = new System.Windows.Forms.Label();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.remun_salary_increase_date = new System.Windows.Forms.DateTimePicker();
             this.label157 = new System.Windows.Forms.Label();
             this.label158 = new System.Windows.Forms.Label();
             this.label159 = new System.Windows.Forms.Label();
@@ -409,18 +398,18 @@
             this.label179 = new System.Windows.Forms.Label();
             this.label180 = new System.Windows.Forms.Label();
             this.label181 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.remun_salary_slip_no = new System.Windows.Forms.TextBox();
+            this.remun_salary_grade = new System.Windows.Forms.TextBox();
+            this.remun_transport_allowance = new System.Windows.Forms.TextBox();
+            this.remun_basic_salary = new System.Windows.Forms.TextBox();
             this.label182 = new System.Windows.Forms.Label();
             this.label183 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.remun_mobile_phone_allowance = new System.Windows.Forms.TextBox();
+            this.remun_current_total_salary = new System.Windows.Forms.TextBox();
+            this.remun_salary_increase_amount = new System.Windows.Forms.TextBox();
+            this.remun_fuel_allowance = new System.Windows.Forms.TextBox();
+            this.remun_other_allowance = new System.Windows.Forms.TextBox();
+            this.remun_housing_allowance = new System.Windows.Forms.TextBox();
             this.tabPage15 = new System.Windows.Forms.TabPage();
             this.cash_issued_date = new System.Windows.Forms.DateTimePicker();
             this.label184 = new System.Windows.Forms.Label();
@@ -2712,7 +2701,6 @@
             // tabPersonalDetails
             // 
             this.tabPersonalDetails.BackColor = System.Drawing.Color.White;
-            this.tabPersonalDetails.Controls.Add(this.remun_salary_increased_date);
             this.tabPersonalDetails.Controls.Add(this.label11);
             this.tabPersonalDetails.Controls.Add(this.label12);
             this.tabPersonalDetails.Controls.Add(this.label19);
@@ -2730,16 +2718,6 @@
             this.tabPersonalDetails.Controls.Add(this.label152);
             this.tabPersonalDetails.Controls.Add(this.label153);
             this.tabPersonalDetails.Controls.Add(this.label154);
-            this.tabPersonalDetails.Controls.Add(this.remun_salary_no);
-            this.tabPersonalDetails.Controls.Add(this.remun_salary_grade);
-            this.tabPersonalDetails.Controls.Add(this.remun_transport_allowance);
-            this.tabPersonalDetails.Controls.Add(this.remun_basic_salary);
-            this.tabPersonalDetails.Controls.Add(this.remun_telephone_allowance);
-            this.tabPersonalDetails.Controls.Add(this.remun_present_salary);
-            this.tabPersonalDetails.Controls.Add(this.remun_increased_by);
-            this.tabPersonalDetails.Controls.Add(this.remun_fuel_allowance);
-            this.tabPersonalDetails.Controls.Add(this.remun_other_allowances);
-            this.tabPersonalDetails.Controls.Add(this.remun_house_allowance);
             this.tabPersonalDetails.Controls.Add(this.label155);
             this.tabPersonalDetails.Controls.Add(this.label156);
             this.tabPersonalDetails.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2750,13 +2728,6 @@
             this.tabPersonalDetails.Size = new System.Drawing.Size(1041, 613);
             this.tabPersonalDetails.TabIndex = 0;
             this.tabPersonalDetails.Text = "Remuneration";
-            // 
-            // remun_salary_increased_date
-            // 
-            this.remun_salary_increased_date.Location = new System.Drawing.Point(227, 192);
-            this.remun_salary_increased_date.Name = "remun_salary_increased_date";
-            this.remun_salary_increased_date.Size = new System.Drawing.Size(316, 32);
-            this.remun_salary_increased_date.TabIndex = 75;
             // 
             // label11
             // 
@@ -2961,86 +2932,6 @@
             this.label154.TabIndex = 49;
             this.label154.Text = "ඉන්ධන දීමනාව";
             this.label154.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // remun_salary_no
-            // 
-            this.remun_salary_no.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_salary_no.Location = new System.Drawing.Point(732, 36);
-            this.remun_salary_no.Name = "remun_salary_no";
-            this.remun_salary_no.Size = new System.Drawing.Size(150, 33);
-            this.remun_salary_no.TabIndex = 70;
-            // 
-            // remun_salary_grade
-            // 
-            this.remun_salary_grade.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_salary_grade.Location = new System.Drawing.Point(227, 36);
-            this.remun_salary_grade.Name = "remun_salary_grade";
-            this.remun_salary_grade.Size = new System.Drawing.Size(150, 33);
-            this.remun_salary_grade.TabIndex = 46;
-            // 
-            // remun_transport_allowance
-            // 
-            this.remun_transport_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_transport_allowance.Location = new System.Drawing.Point(732, 75);
-            this.remun_transport_allowance.Name = "remun_transport_allowance";
-            this.remun_transport_allowance.Size = new System.Drawing.Size(150, 33);
-            this.remun_transport_allowance.TabIndex = 71;
-            // 
-            // remun_basic_salary
-            // 
-            this.remun_basic_salary.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_basic_salary.Location = new System.Drawing.Point(227, 75);
-            this.remun_basic_salary.Name = "remun_basic_salary";
-            this.remun_basic_salary.Size = new System.Drawing.Size(150, 33);
-            this.remun_basic_salary.TabIndex = 58;
-            // 
-            // remun_telephone_allowance
-            // 
-            this.remun_telephone_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_telephone_allowance.Location = new System.Drawing.Point(732, 114);
-            this.remun_telephone_allowance.Name = "remun_telephone_allowance";
-            this.remun_telephone_allowance.Size = new System.Drawing.Size(150, 33);
-            this.remun_telephone_allowance.TabIndex = 72;
-            // 
-            // remun_present_salary
-            // 
-            this.remun_present_salary.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_present_salary.Location = new System.Drawing.Point(227, 230);
-            this.remun_present_salary.Name = "remun_present_salary";
-            this.remun_present_salary.Size = new System.Drawing.Size(150, 33);
-            this.remun_present_salary.TabIndex = 69;
-            // 
-            // remun_increased_by
-            // 
-            this.remun_increased_by.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_increased_by.Location = new System.Drawing.Point(732, 192);
-            this.remun_increased_by.Name = "remun_increased_by";
-            this.remun_increased_by.Size = new System.Drawing.Size(150, 33);
-            this.remun_increased_by.TabIndex = 74;
-            // 
-            // remun_fuel_allowance
-            // 
-            this.remun_fuel_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_fuel_allowance.Location = new System.Drawing.Point(227, 114);
-            this.remun_fuel_allowance.Name = "remun_fuel_allowance";
-            this.remun_fuel_allowance.Size = new System.Drawing.Size(150, 33);
-            this.remun_fuel_allowance.TabIndex = 64;
-            // 
-            // remun_other_allowances
-            // 
-            this.remun_other_allowances.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_other_allowances.Location = new System.Drawing.Point(732, 153);
-            this.remun_other_allowances.Name = "remun_other_allowances";
-            this.remun_other_allowances.Size = new System.Drawing.Size(150, 33);
-            this.remun_other_allowances.TabIndex = 73;
-            // 
-            // remun_house_allowance
-            // 
-            this.remun_house_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_house_allowance.Location = new System.Drawing.Point(227, 153);
-            this.remun_house_allowance.Name = "remun_house_allowance";
-            this.remun_house_allowance.Size = new System.Drawing.Size(150, 33);
-            this.remun_house_allowance.TabIndex = 65;
             // 
             // label155
             // 
@@ -4237,7 +4128,7 @@
             // tabPage14
             // 
             this.tabPage14.BackColor = System.Drawing.Color.White;
-            this.tabPage14.Controls.Add(this.dateTimePicker1);
+            this.tabPage14.Controls.Add(this.remun_salary_increase_date);
             this.tabPage14.Controls.Add(this.label157);
             this.tabPage14.Controls.Add(this.label158);
             this.tabPage14.Controls.Add(this.label159);
@@ -4255,18 +4146,18 @@
             this.tabPage14.Controls.Add(this.label179);
             this.tabPage14.Controls.Add(this.label180);
             this.tabPage14.Controls.Add(this.label181);
-            this.tabPage14.Controls.Add(this.textBox1);
-            this.tabPage14.Controls.Add(this.textBox2);
-            this.tabPage14.Controls.Add(this.textBox3);
-            this.tabPage14.Controls.Add(this.textBox4);
+            this.tabPage14.Controls.Add(this.remun_salary_slip_no);
+            this.tabPage14.Controls.Add(this.remun_salary_grade);
+            this.tabPage14.Controls.Add(this.remun_transport_allowance);
+            this.tabPage14.Controls.Add(this.remun_basic_salary);
             this.tabPage14.Controls.Add(this.label182);
             this.tabPage14.Controls.Add(this.label183);
-            this.tabPage14.Controls.Add(this.textBox5);
-            this.tabPage14.Controls.Add(this.textBox6);
-            this.tabPage14.Controls.Add(this.textBox7);
-            this.tabPage14.Controls.Add(this.textBox8);
-            this.tabPage14.Controls.Add(this.textBox9);
-            this.tabPage14.Controls.Add(this.textBox10);
+            this.tabPage14.Controls.Add(this.remun_mobile_phone_allowance);
+            this.tabPage14.Controls.Add(this.remun_current_total_salary);
+            this.tabPage14.Controls.Add(this.remun_salary_increase_amount);
+            this.tabPage14.Controls.Add(this.remun_fuel_allowance);
+            this.tabPage14.Controls.Add(this.remun_other_allowance);
+            this.tabPage14.Controls.Add(this.remun_housing_allowance);
             this.tabPage14.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage14.ForeColor = System.Drawing.Color.Transparent;
             this.tabPage14.Location = new System.Drawing.Point(4, 34);
@@ -4276,12 +4167,12 @@
             this.tabPage14.TabIndex = 0;
             this.tabPage14.Text = "Remuneration";
             // 
-            // dateTimePicker1
+            // remun_salary_increase_date
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(243, 177);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(316, 32);
-            this.dateTimePicker1.TabIndex = 107;
+            this.remun_salary_increase_date.Location = new System.Drawing.Point(243, 177);
+            this.remun_salary_increase_date.Name = "remun_salary_increase_date";
+            this.remun_salary_increase_date.Size = new System.Drawing.Size(316, 32);
+            this.remun_salary_increase_date.TabIndex = 107;
             // 
             // label157
             // 
@@ -4487,37 +4378,37 @@
             this.label181.Text = "ඉන්ධන දීමනාව";
             this.label181.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // remun_salary_slip_no
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox1.Location = new System.Drawing.Point(748, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 33);
-            this.textBox1.TabIndex = 102;
+            this.remun_salary_slip_no.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_salary_slip_no.Location = new System.Drawing.Point(748, 22);
+            this.remun_salary_slip_no.Name = "remun_salary_slip_no";
+            this.remun_salary_slip_no.Size = new System.Drawing.Size(150, 33);
+            this.remun_salary_slip_no.TabIndex = 102;
             // 
-            // textBox2
+            // remun_salary_grade
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox2.Location = new System.Drawing.Point(243, 22);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 33);
-            this.textBox2.TabIndex = 78;
+            this.remun_salary_grade.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_salary_grade.Location = new System.Drawing.Point(243, 22);
+            this.remun_salary_grade.Name = "remun_salary_grade";
+            this.remun_salary_grade.Size = new System.Drawing.Size(150, 33);
+            this.remun_salary_grade.TabIndex = 78;
             // 
-            // textBox3
+            // remun_transport_allowance
             // 
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox3.Location = new System.Drawing.Point(748, 61);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 33);
-            this.textBox3.TabIndex = 103;
+            this.remun_transport_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_transport_allowance.Location = new System.Drawing.Point(748, 61);
+            this.remun_transport_allowance.Name = "remun_transport_allowance";
+            this.remun_transport_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_transport_allowance.TabIndex = 103;
             // 
-            // textBox4
+            // remun_basic_salary
             // 
-            this.textBox4.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox4.Location = new System.Drawing.Point(243, 61);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 33);
-            this.textBox4.TabIndex = 90;
+            this.remun_basic_salary.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_basic_salary.Location = new System.Drawing.Point(243, 61);
+            this.remun_basic_salary.Name = "remun_basic_salary";
+            this.remun_basic_salary.Size = new System.Drawing.Size(150, 33);
+            this.remun_basic_salary.TabIndex = 90;
             // 
             // label182
             // 
@@ -4543,53 +4434,53 @@
             this.label183.Text = "වැටුප් ශ්‍රේණිය";
             this.label183.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox5
+            // remun_mobile_phone_allowance
             // 
-            this.textBox5.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox5.Location = new System.Drawing.Point(748, 100);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 33);
-            this.textBox5.TabIndex = 104;
+            this.remun_mobile_phone_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_mobile_phone_allowance.Location = new System.Drawing.Point(748, 100);
+            this.remun_mobile_phone_allowance.Name = "remun_mobile_phone_allowance";
+            this.remun_mobile_phone_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_mobile_phone_allowance.TabIndex = 104;
             // 
-            // textBox6
+            // remun_current_total_salary
             // 
-            this.textBox6.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox6.Location = new System.Drawing.Point(243, 216);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(150, 33);
-            this.textBox6.TabIndex = 101;
+            this.remun_current_total_salary.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_current_total_salary.Location = new System.Drawing.Point(243, 216);
+            this.remun_current_total_salary.Name = "remun_current_total_salary";
+            this.remun_current_total_salary.Size = new System.Drawing.Size(150, 33);
+            this.remun_current_total_salary.TabIndex = 101;
             // 
-            // textBox7
+            // remun_salary_increase_amount
             // 
-            this.textBox7.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox7.Location = new System.Drawing.Point(748, 178);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 33);
-            this.textBox7.TabIndex = 106;
+            this.remun_salary_increase_amount.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_salary_increase_amount.Location = new System.Drawing.Point(748, 178);
+            this.remun_salary_increase_amount.Name = "remun_salary_increase_amount";
+            this.remun_salary_increase_amount.Size = new System.Drawing.Size(150, 33);
+            this.remun_salary_increase_amount.TabIndex = 106;
             // 
-            // textBox8
+            // remun_fuel_allowance
             // 
-            this.textBox8.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox8.Location = new System.Drawing.Point(243, 100);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(150, 33);
-            this.textBox8.TabIndex = 96;
+            this.remun_fuel_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_fuel_allowance.Location = new System.Drawing.Point(243, 100);
+            this.remun_fuel_allowance.Name = "remun_fuel_allowance";
+            this.remun_fuel_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_fuel_allowance.TabIndex = 96;
             // 
-            // textBox9
+            // remun_other_allowance
             // 
-            this.textBox9.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox9.Location = new System.Drawing.Point(748, 139);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(150, 33);
-            this.textBox9.TabIndex = 105;
+            this.remun_other_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_other_allowance.Location = new System.Drawing.Point(748, 139);
+            this.remun_other_allowance.Name = "remun_other_allowance";
+            this.remun_other_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_other_allowance.TabIndex = 105;
             // 
-            // textBox10
+            // remun_housing_allowance
             // 
-            this.textBox10.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.textBox10.Location = new System.Drawing.Point(243, 139);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(150, 33);
-            this.textBox10.TabIndex = 97;
+            this.remun_housing_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.remun_housing_allowance.Location = new System.Drawing.Point(243, 139);
+            this.remun_housing_allowance.Name = "remun_housing_allowance";
+            this.remun_housing_allowance.Size = new System.Drawing.Size(150, 33);
+            this.remun_housing_allowance.TabIndex = 97;
             // 
             // tabPage15
             // 
@@ -5127,18 +5018,18 @@
         private System.Windows.Forms.Label label179;
         private System.Windows.Forms.Label label180;
         private System.Windows.Forms.Label label181;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox remun_salary_slip_no;
+        private System.Windows.Forms.TextBox remun_salary_grade;
+        private System.Windows.Forms.TextBox remun_transport_allowance;
+        private System.Windows.Forms.TextBox remun_basic_salary;
         private System.Windows.Forms.Label label182;
         private System.Windows.Forms.Label label183;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox remun_mobile_phone_allowance;
+        private System.Windows.Forms.TextBox remun_current_total_salary;
+        private System.Windows.Forms.TextBox remun_salary_increase_amount;
+        private System.Windows.Forms.TextBox remun_fuel_allowance;
+        private System.Windows.Forms.TextBox remun_other_allowance;
+        private System.Windows.Forms.TextBox remun_housing_allowance;
         private System.Windows.Forms.Label label184;
         private System.Windows.Forms.Label label185;
         private System.Windows.Forms.Label label186;
@@ -5331,7 +5222,6 @@
         private System.Windows.Forms.DateTimePicker wsd_date_of_post_date;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPersonalDetails;
-        private System.Windows.Forms.DateTimePicker remun_salary_increased_date;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label19;
@@ -5349,16 +5239,6 @@
         private System.Windows.Forms.Label label152;
         private System.Windows.Forms.Label label153;
         private System.Windows.Forms.Label label154;
-        private System.Windows.Forms.TextBox remun_salary_no;
-        private System.Windows.Forms.TextBox remun_salary_grade;
-        private System.Windows.Forms.TextBox remun_transport_allowance;
-        private System.Windows.Forms.TextBox remun_basic_salary;
-        private System.Windows.Forms.TextBox remun_telephone_allowance;
-        private System.Windows.Forms.TextBox remun_present_salary;
-        private System.Windows.Forms.TextBox remun_increased_by;
-        private System.Windows.Forms.TextBox remun_fuel_allowance;
-        private System.Windows.Forms.TextBox remun_other_allowances;
-        private System.Windows.Forms.TextBox remun_house_allowance;
         private System.Windows.Forms.Label label155;
         private System.Windows.Forms.Label label156;
         private System.Windows.Forms.TabPage tabPage6;
@@ -5439,7 +5319,7 @@
         private System.Windows.Forms.DateTimePicker member_active_date_person_date;
         private System.Windows.Forms.DateTimePicker member_renewal_date;
         private System.Windows.Forms.DateTimePicker member_begin_date_date;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker remun_salary_increase_date;
         private System.Windows.Forms.DateTimePicker cash_issued_date;
         private System.Windows.Forms.DateTimePicker noncash_issued_date;
         private System.Windows.Forms.DateTimePicker passport_renewal_date;

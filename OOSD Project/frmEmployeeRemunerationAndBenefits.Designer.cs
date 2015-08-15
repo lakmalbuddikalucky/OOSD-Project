@@ -32,7 +32,9 @@
             this.lblCaption = new System.Windows.Forms.Label();
             this.tabRemunerationAndBenefits = new System.Windows.Forms.TabControl();
             this.tabPersonalDetails = new System.Windows.Forms.TabPage();
+            this.remun_salary_increased_date = new System.Windows.Forms.DateTimePicker();
             this.label23 = new System.Windows.Forms.Label();
+            this.btnSave1 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -62,12 +64,16 @@
             this.remun_other_allowances = new System.Windows.Forms.TextBox();
             this.remun_house_allowance = new System.Windows.Forms.TextBox();
             this.tabCashBenefits = new System.Windows.Forms.TabPage();
+            this.btnSave2 = new System.Windows.Forms.Button();
+            this.cash_issued_date = new System.Windows.Forms.DateTimePicker();
             this.label27 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cash_issued_price = new System.Windows.Forms.TextBox();
             this.cash_approved_benefit = new System.Windows.Forms.TextBox();
             this.tabNonCashBenefits = new System.Windows.Forms.TabPage();
+            this.btnSave3 = new System.Windows.Forms.Button();
+            this.noncash_issued_date = new System.Windows.Forms.DateTimePicker();
             this.label31 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -87,13 +93,9 @@
             this.employee_no = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
-            this.remun_salary_increased_date = new System.Windows.Forms.DateTimePicker();
-            this.cash_issued_date = new System.Windows.Forms.DateTimePicker();
-            this.noncash_issued_date = new System.Windows.Forms.DateTimePicker();
             this.tabRemunerationAndBenefits.SuspendLayout();
             this.tabPersonalDetails.SuspendLayout();
             this.tabCashBenefits.SuspendLayout();
@@ -137,6 +139,7 @@
             this.tabPersonalDetails.BackColor = System.Drawing.Color.White;
             this.tabPersonalDetails.Controls.Add(this.remun_salary_increased_date);
             this.tabPersonalDetails.Controls.Add(this.label23);
+            this.tabPersonalDetails.Controls.Add(this.btnSave1);
             this.tabPersonalDetails.Controls.Add(this.label24);
             this.tabPersonalDetails.Controls.Add(this.label25);
             this.tabPersonalDetails.Controls.Add(this.label26);
@@ -175,6 +178,13 @@
             this.tabPersonalDetails.Text = "Remuneration";
             this.tabPersonalDetails.Click += new System.EventHandler(this.tabPersonalDetails_Click);
             // 
+            // remun_salary_increased_date
+            // 
+            this.remun_salary_increased_date.Location = new System.Drawing.Point(221, 183);
+            this.remun_salary_increased_date.Name = "remun_salary_increased_date";
+            this.remun_salary_increased_date.Size = new System.Drawing.Size(316, 32);
+            this.remun_salary_increased_date.TabIndex = 15;
+            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -186,6 +196,19 @@
             this.label23.TabIndex = 6;
             this.label23.Text = ".රු";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnSave1
+            // 
+            this.btnSave1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSave1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave1.ForeColor = System.Drawing.Color.Black;
+            this.btnSave1.Location = new System.Drawing.Point(584, 292);
+            this.btnSave1.Name = "btnSave1";
+            this.btnSave1.Size = new System.Drawing.Size(164, 35);
+            this.btnSave1.TabIndex = 0;
+            this.btnSave1.Text = "තැන්පතු කරන්න ";
+            this.btnSave1.UseVisualStyleBackColor = true;
+            this.btnSave1.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label24
             // 
@@ -486,6 +509,7 @@
             // tabCashBenefits
             // 
             this.tabCashBenefits.BackColor = System.Drawing.Color.White;
+            this.tabCashBenefits.Controls.Add(this.btnSave2);
             this.tabCashBenefits.Controls.Add(this.cash_issued_date);
             this.tabCashBenefits.Controls.Add(this.label27);
             this.tabCashBenefits.Controls.Add(this.label3);
@@ -499,6 +523,26 @@
             this.tabCashBenefits.Size = new System.Drawing.Size(1124, 422);
             this.tabCashBenefits.TabIndex = 1;
             this.tabCashBenefits.Text = "Cash Benefits";
+            // 
+            // btnSave2
+            // 
+            this.btnSave2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSave2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave2.ForeColor = System.Drawing.Color.Black;
+            this.btnSave2.Location = new System.Drawing.Point(584, 292);
+            this.btnSave2.Name = "btnSave2";
+            this.btnSave2.Size = new System.Drawing.Size(164, 35);
+            this.btnSave2.TabIndex = 19;
+            this.btnSave2.Text = "තැන්පතු කරන්න ";
+            this.btnSave2.UseVisualStyleBackColor = true;
+            this.btnSave2.Click += new System.EventHandler(this.btnSave2_Click);
+            // 
+            // cash_issued_date
+            // 
+            this.cash_issued_date.Location = new System.Drawing.Point(177, 65);
+            this.cash_issued_date.Name = "cash_issued_date";
+            this.cash_issued_date.Size = new System.Drawing.Size(320, 33);
+            this.cash_issued_date.TabIndex = 18;
             // 
             // label27
             // 
@@ -547,6 +591,7 @@
             // tabNonCashBenefits
             // 
             this.tabNonCashBenefits.AutoScroll = true;
+            this.tabNonCashBenefits.Controls.Add(this.btnSave3);
             this.tabNonCashBenefits.Controls.Add(this.noncash_issued_date);
             this.tabNonCashBenefits.Controls.Add(this.label31);
             this.tabNonCashBenefits.Controls.Add(this.label28);
@@ -562,6 +607,26 @@
             this.tabNonCashBenefits.Text = "Non Cash Benefits";
             this.tabNonCashBenefits.UseVisualStyleBackColor = true;
             this.tabNonCashBenefits.Click += new System.EventHandler(this.tabNonCashBenefits_Click);
+            // 
+            // btnSave3
+            // 
+            this.btnSave3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSave3.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave3.ForeColor = System.Drawing.Color.Black;
+            this.btnSave3.Location = new System.Drawing.Point(584, 292);
+            this.btnSave3.Name = "btnSave3";
+            this.btnSave3.Size = new System.Drawing.Size(164, 35);
+            this.btnSave3.TabIndex = 23;
+            this.btnSave3.Text = "තැන්පතු කරන්න ";
+            this.btnSave3.UseVisualStyleBackColor = true;
+            this.btnSave3.Click += new System.EventHandler(this.btnSave3_Click);
+            // 
+            // noncash_issued_date
+            // 
+            this.noncash_issued_date.Location = new System.Drawing.Point(178, 65);
+            this.noncash_issued_date.Name = "noncash_issued_date";
+            this.noncash_issued_date.Size = new System.Drawing.Size(320, 33);
+            this.noncash_issued_date.TabIndex = 22;
             // 
             // label31
             // 
@@ -742,23 +807,11 @@
             this.label35.TabIndex = 7;
             this.label35.Text = "Employee";
             // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(948, 13);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(164, 35);
-            this.btnSave.TabIndex = 0;
-            this.btnSave.Text = "තැන්පතු කරන්න ";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Controls.Add(this.btnNext);
             this.panel2.Controls.Add(this.btnPrev);
-            this.panel2.Controls.Add(this.btnSave);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 610);
             this.panel2.Name = "panel2";
@@ -788,27 +841,6 @@
             this.btnPrev.Text = "Previous";
             this.btnPrev.UseVisualStyleBackColor = false;
             this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
-            // 
-            // remun_salary_increased_date
-            // 
-            this.remun_salary_increased_date.Location = new System.Drawing.Point(221, 183);
-            this.remun_salary_increased_date.Name = "remun_salary_increased_date";
-            this.remun_salary_increased_date.Size = new System.Drawing.Size(316, 32);
-            this.remun_salary_increased_date.TabIndex = 15;
-            // 
-            // cash_issued_date
-            // 
-            this.cash_issued_date.Location = new System.Drawing.Point(177, 65);
-            this.cash_issued_date.Name = "cash_issued_date";
-            this.cash_issued_date.Size = new System.Drawing.Size(320, 33);
-            this.cash_issued_date.TabIndex = 18;
-            // 
-            // noncash_issued_date
-            // 
-            this.noncash_issued_date.Location = new System.Drawing.Point(178, 65);
-            this.noncash_issued_date.Name = "noncash_issued_date";
-            this.noncash_issued_date.Size = new System.Drawing.Size(320, 33);
-            this.noncash_issued_date.TabIndex = 22;
             // 
             // frmEmployeeRemunerationAndBenefits
             // 
@@ -908,13 +940,15 @@
         private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnSave1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.DateTimePicker remun_salary_increased_date;
         private System.Windows.Forms.DateTimePicker cash_issued_date;
         private System.Windows.Forms.DateTimePicker noncash_issued_date;
+        private System.Windows.Forms.Button btnSave2;
+        private System.Windows.Forms.Button btnSave3;
 
     }
 }

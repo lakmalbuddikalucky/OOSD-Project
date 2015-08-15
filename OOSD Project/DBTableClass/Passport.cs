@@ -12,8 +12,28 @@ namespace OOSD_Project.DBTableClass
         public string post { set; get; }
         public string number { set; get; }
         public string place_of_issue { set; get; }
-        public DateTime date_of_issue { set; get; }
-        public DateTime date_of_renewal { set; get; }
+
+        DateTime date_of_issue;
+        public DateTime getdate_of_issue()
+        {
+            return date_of_issue;
+        }
+        public void setdate_of_issue(DateTime dt)
+        {
+            this.date_of_issue = dt;
+        }
+
+
+        DateTime date_of_renewal;
+        public DateTime getdate_of_renewal()
+        {
+            return date_of_renewal;
+        }
+        public void setdate_of_renewal(DateTime dt)
+        {
+            this.date_of_renewal = dt;
+        }
+
         public bool status { set; get; }
 
     }

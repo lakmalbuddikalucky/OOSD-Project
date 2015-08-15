@@ -89,6 +89,7 @@
     <Compile Include="DBHandler\FinanceTaxHandler.cs" />
     <Compile Include="DBHandler\LanguageHandler.cs" />
     <Compile Include="DBHandler\MembershipHandler.cs" />
+    <Compile Include="DBHandler\PassportHandler.cs" />
     <Compile Include="DBHandler\QualificationsHandler.cs" />
     <Compile Include="DBHandler\RemunerationHandler.cs" />
     <Compile Include="DBHandler\WorkingExperienceHandler.cs" />

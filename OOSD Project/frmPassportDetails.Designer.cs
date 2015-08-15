@@ -150,6 +150,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.Controls.Add(this.passport_renewal_date);
             this.panel1.Controls.Add(this.passport_issued_date);
+            this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.passport_status_deactive);
             this.panel1.Controls.Add(this.passport_status_active);
             this.panel1.Controls.Add(this.label9);
@@ -320,7 +321,7 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(948, 13);
+            this.btnSave.Location = new System.Drawing.Point(587, 489);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 35);
             this.btnSave.TabIndex = 0;
@@ -333,7 +334,6 @@
             this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Controls.Add(this.btnNext);
             this.panel2.Controls.Add(this.btnPrev);
-            this.panel2.Controls.Add(this.btnSave);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 610);
             this.panel2.Name = "panel2";

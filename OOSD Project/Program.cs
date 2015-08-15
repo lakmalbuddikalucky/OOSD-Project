@@ -24,7 +24,7 @@ namespace OOSD_Project
 
             //Application.Run(new frmLogin());
 
-            //Application.Run(new frmEmployeeRemunerationAndBenefits());
+            //Application.Run(new frmPassportDetails());
             //Application.Run(new frmEmployeeFinanceDetails());
             //Application.Run(new frmEmployeePersonalDetails());
 

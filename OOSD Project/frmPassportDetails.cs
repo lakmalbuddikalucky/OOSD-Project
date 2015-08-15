@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OOSD_Project.DBHandler;
+using OOSD_Project.DBTableClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,7 +32,30 @@ namespace OOSD_Project
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            frmMain.getForm().Show();
+            Passport p = new Passport();
+
+            p.number = passport_no.Text;
+            p.place_of_issue = passport_issued_place.Text;
+            p.post = passport_post.Text;
+            p.rank = passport_rank.Text;
+            p.setdate_of_issue(passport_issued_date.Value.Date);
+            p.setdate_of_renewal(passport_renewal_date.Value.Date);
+
+            if (passport_status_active.Checked) { p.status = true; }
+            else { p.status = false; }
+
+            bool state = PassportHandler.addPassport(p);
+
+            if (state)
+            {
+                MessageBox.Show("Employee passport details added succesfully...!");
+
+            }
+            else
+            {
+                MessageBox.Show("Adding employee personal pasport failed...!");
+            }
+            //frmMain.getForm().Show();
         }
 
         private void btnNext_Click(object sender, EventArgs e)

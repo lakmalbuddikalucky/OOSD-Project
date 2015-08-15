@@ -338,6 +338,19 @@ namespace OOSD_Project
             noncash_issued_date.Value = ncb.getdate_issued();
 
 
+            //Load Passport details
+            Passport p = PassportHandler.getPassport();
+
+            passport_post.Text = p.post;
+            passport_rank.Text = p.rank;
+            passport_no.Text = p.number;
+            passport_issued_date.Value = p.getdate_of_issue();
+            passport_renewal_date.Value = p.getdate_of_renewal();
+            passport_issued_place.Text = p.place_of_issue;
+
+            if (p.status) { passport_status_active.Checked = true; }
+            else { passport_status_deactive.Checked = true; }
+
         }
 
         private void wsd_rank_SelectedIndexChanged(object sender, EventArgs e)

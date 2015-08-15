@@ -19,6 +19,12 @@ namespace OOSD_Project
         public frmEmployeeSpecialDetails()
         {
             InitializeComponent();
+
+            if (!(Employee.emp_no == null)) {
+                employee_no_combo_special.Text = Employee.emp_no;
+                full_name_special.Text = Employee.employee_name;
+            }
+
         }
 
         public static frmEmployeeSpecialDetails getForm()
@@ -118,11 +124,11 @@ namespace OOSD_Project
 
             if (status)
             {
-                MessageBox.Show("Extracurricular ectivity details added successfully...!");
+                MessageBox.Show("Extracurricular activity details added successfully...!");
                 //btnSave4.Enabled = true;
                 //btnSave5.Enabled = true;
             }
-            else { MessageBox.Show("Failed to add extracurricular ectivity experience details...!"); }
+            else { MessageBox.Show("Failed to add extracurricular activity experience details...!"); }
 
         }
 

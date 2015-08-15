@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OOSD_Project.DBHandler;
+using OOSD_Project.DBTableClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +19,12 @@ namespace OOSD_Project
         public frmEmployeeFinanceDetails()
         {
             InitializeComponent();
+
+            if (!(Employee.emp_no == null))
+            {
+                employee_no.Text = Employee.emp_no;
+                full_name.Text = Employee.employee_name;
+            }
         }
 
         public static frmEmployeeFinanceDetails getForm()
@@ -32,7 +40,7 @@ namespace OOSD_Project
         {
             bank_name.BackColor = Color.White;
             bank_branch_name.BackColor = Color.White;
-            bank_account_name.BackColor = Color.White;
+            bank_account_number.BackColor = Color.White;
             bank_account_type.BackColor = Color.White;
         }
 
@@ -64,9 +72,9 @@ namespace OOSD_Project
                 bank_branch_name.BackColor = Color.RosyBrown;
                 state = false;
             }
-            if(bank_account_name.Text == "" || !Validator.number(bank_account_name.Text))
+            if(bank_account_number.Text == "" || !Validator.number(bank_account_number.Text))
             {
-                bank_account_name.BackColor = Color.RosyBrown;
+                bank_account_number.BackColor = Color.RosyBrown;
                 state = false;
             }
 
@@ -156,7 +164,7 @@ namespace OOSD_Project
 
         private void bank_account_name_TextChanged(object sender, EventArgs e)
         {
-            bank_account_name.BackColor = Color.White;
+            bank_account_number.BackColor = Color.White;
         }
 
         private void bank_account_type_SelectedIndexChanged(object sender, EventArgs e)
@@ -182,6 +190,80 @@ namespace OOSD_Project
         private void btnCheckTaxDetails_Click(object sender, EventArgs e)
         {
             validateTaxDetails();
+        }
+
+        private void btnSave1_Click(object sender, EventArgs e)
+        {
+            FinanceBank fb = new FinanceBank();
+
+            fb.bank_name = bank_name.Text;
+            fb.branch_name = bank_branch_name.Text;
+            fb.account_number = bank_account_number.Text;
+            fb.account_type = bank_account_type.Text;
+            fb.setBegin_date(bank_account_started_date.Value.Date);
+            fb.setEnd_date(bank_account_closed_date.Value.Date);
+            fb.Qual_year = bank_qualified_year.Text;
+            fb.qualification = bank_qualification.Text;
+
+            bool state = FinanceBankHandler.addFinanceBank(fb);
+
+            if (state)
+            {
+                MessageBox.Show("Employee bank details added succesfully...!");
+
+            }
+            else
+            {
+                MessageBox.Show("Adding employee personal details failed...!");
+            }
+
+        }
+
+        private void btnSave2_Click(object sender, EventArgs e)
+        {
+            FinanceInsurance fi = new FinanceInsurance();
+            
+            fi.type = insurance_type.Text;
+            fi.value = double.Parse(insurance_value.Text.ToString());
+            fi.setBegin_date(insurance_started_date.Value.Date);
+            fi.setEnd_date(insurance_ended_date.Value.Date);
+            fi.note = insurance_notes.Text;
+
+            bool state = FinanceInsuranceHandler.addFinanceInsurance(fi);
+
+            if (state)
+            {
+                MessageBox.Show("Employee insurance details added succesfully...!");
+
+            }
+            else
+            {
+                MessageBox.Show("Adding employee insurance details failed...!");
+            }
+
+        }
+
+        private void btnSave3_Click(object sender, EventArgs e)
+        {
+            FinanceTax ft = new FinanceTax();
+
+            ft.type = tax_type.Text;
+            ft.number = tax_no.Text;
+            ft.payment_method = tax_paying_method.Text;
+            ft.status = tax_status.Text;
+            ft.note = tax_notes.Text;
+
+            bool state = FinanceTaxHandler.addFinanceTax(ft);
+
+            if (state)
+            {
+                MessageBox.Show("Employee tax details added succesfully...!");
+
+            }
+            else
+            {
+                MessageBox.Show("Adding employee tax details failed...!");
+            }
         }
     }
 }

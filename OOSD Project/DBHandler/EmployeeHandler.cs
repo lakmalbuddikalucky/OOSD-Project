@@ -34,8 +34,10 @@ namespace OOSD_Project.Database
 
                     if (reader.Read())
                     {
-                        Employee.employee_id = int.Parse(reader.GetString(0));
-                        Console.Write(Employee.employee_id);
+                        Employee.employee_id = int.Parse(reader["idemployee"].ToString());
+                        Employee.emp_no = reader["employee_no"].ToString();
+                        Employee.employee_name = reader["full_name"].ToString();
+                        Console.Write(Employee.employee_id+"\n  "+Employee.emp_no+"\n  "+Employee.employee_name+"\n  ");
                     }
 
                     reader.Close();
@@ -82,6 +84,8 @@ namespace OOSD_Project.Database
                 if (reader.Read())
                 {
                     Employee.employee_id = int.Parse(reader["idemployee"].ToString());
+                    Employee.emp_no = reader["employee_no"].ToString();
+                    Employee.employee_name = reader["full_name"].ToString();
 
                     Console.Write(Employee.employee_id+"\n");
 

@@ -84,6 +84,9 @@
     <Compile Include="DBHandler\EmergencyContactHandler.cs" />
     <Compile Include="DBHandler\EmployeeHandler.cs" />
     <Compile Include="DBHandler\ExtracurricularActivityHandler.cs" />
+    <Compile Include="DBHandler\FinanceBankHandler.cs" />
+    <Compile Include="DBHandler\FinanceInsuranceHandler.cs" />
+    <Compile Include="DBHandler\FinanceTaxHandler.cs" />
     <Compile Include="DBHandler\LanguageHandler.cs" />
     <Compile Include="DBHandler\MembershipHandler.cs" />
     <Compile Include="DBHandler\QualificationsHandler.cs" />

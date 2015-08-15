@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeFinanceDetails));
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,9 +53,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tabEmployeeFinanceDetails = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.bank_account_started_year = new System.Windows.Forms.DateTimePicker();
+            this.bank_account_closed_date = new System.Windows.Forms.DateTimePicker();
+            this.bank_account_started_date = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.bank_account_name = new System.Windows.Forms.TextBox();
+            this.bank_account_number = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.bank_account_type = new System.Windows.Forms.ComboBox();
             this.bank_name = new System.Windows.Forms.ComboBox();
@@ -68,6 +67,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.insurance_ended_date = new System.Windows.Forms.DateTimePicker();
             this.btnCheckInsuaranceDetails = new System.Windows.Forms.Button();
             this.insurance_started_date = new System.Windows.Forms.DateTimePicker();
             this.insurance_type = new System.Windows.Forms.ComboBox();
@@ -91,8 +91,12 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bank_account_closed_date = new System.Windows.Forms.DateTimePicker();
-            this.insurance_ended_date = new System.Windows.Forms.DateTimePicker();
+            this.btnClear1 = new System.Windows.Forms.Button();
+            this.btnSave1 = new System.Windows.Forms.Button();
+            this.btnClear2 = new System.Windows.Forms.Button();
+            this.btnSave2 = new System.Windows.Forms.Button();
+            this.btnClear3 = new System.Windows.Forms.Button();
+            this.btnSave3 = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,26 +108,6 @@
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1133, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 35);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "අවලංගු කරන්න";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(948, 13);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(164, 35);
-            this.btnSave.TabIndex = 0;
-            this.btnSave.Text = "තැන්පතු කරන්න ";
-            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
@@ -222,8 +206,6 @@
             this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Controls.Add(this.btnNext);
             this.panel2.Controls.Add(this.btnPrev);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.btnSave);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 708);
             this.panel2.Name = "panel2";
@@ -348,10 +330,12 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.btnClear1);
+            this.tabPage1.Controls.Add(this.btnSave1);
             this.tabPage1.Controls.Add(this.bank_account_closed_date);
-            this.tabPage1.Controls.Add(this.bank_account_started_year);
+            this.tabPage1.Controls.Add(this.bank_account_started_date);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.bank_account_name);
+            this.tabPage1.Controls.Add(this.bank_account_number);
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.bank_account_type);
             this.tabPage1.Controls.Add(this.bank_name);
@@ -372,12 +356,19 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Bank";
             // 
-            // bank_account_started_year
+            // bank_account_closed_date
             // 
-            this.bank_account_started_year.Location = new System.Drawing.Point(306, 191);
-            this.bank_account_started_year.Name = "bank_account_started_year";
-            this.bank_account_started_year.Size = new System.Drawing.Size(310, 33);
-            this.bank_account_started_year.TabIndex = 43;
+            this.bank_account_closed_date.Location = new System.Drawing.Point(306, 231);
+            this.bank_account_closed_date.Name = "bank_account_closed_date";
+            this.bank_account_closed_date.Size = new System.Drawing.Size(310, 33);
+            this.bank_account_closed_date.TabIndex = 44;
+            // 
+            // bank_account_started_date
+            // 
+            this.bank_account_started_date.Location = new System.Drawing.Point(306, 191);
+            this.bank_account_started_date.Name = "bank_account_started_date";
+            this.bank_account_started_date.Size = new System.Drawing.Size(310, 33);
+            this.bank_account_started_date.TabIndex = 43;
             // 
             // label4
             // 
@@ -388,13 +379,13 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "ගිණුම් අංකය";
             // 
-            // bank_account_name
+            // bank_account_number
             // 
-            this.bank_account_name.Location = new System.Drawing.Point(306, 111);
-            this.bank_account_name.Name = "bank_account_name";
-            this.bank_account_name.Size = new System.Drawing.Size(200, 33);
-            this.bank_account_name.TabIndex = 24;
-            this.bank_account_name.TextChanged += new System.EventHandler(this.bank_account_name_TextChanged);
+            this.bank_account_number.Location = new System.Drawing.Point(306, 111);
+            this.bank_account_number.Name = "bank_account_number";
+            this.bank_account_number.Size = new System.Drawing.Size(200, 33);
+            this.bank_account_number.TabIndex = 24;
+            this.bank_account_number.TextChanged += new System.EventHandler(this.bank_account_name_TextChanged);
             // 
             // label10
             // 
@@ -479,6 +470,8 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.btnClear2);
+            this.tabPage2.Controls.Add(this.btnSave2);
             this.tabPage2.Controls.Add(this.insurance_ended_date);
             this.tabPage2.Controls.Add(this.btnCheckInsuaranceDetails);
             this.tabPage2.Controls.Add(this.insurance_started_date);
@@ -496,6 +489,13 @@
             this.tabPage2.Size = new System.Drawing.Size(1062, 670);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Insurance";
+            // 
+            // insurance_ended_date
+            // 
+            this.insurance_ended_date.Location = new System.Drawing.Point(308, 148);
+            this.insurance_ended_date.Name = "insurance_ended_date";
+            this.insurance_ended_date.Size = new System.Drawing.Size(325, 33);
+            this.insurance_ended_date.TabIndex = 69;
             // 
             // btnCheckInsuaranceDetails
             // 
@@ -569,6 +569,8 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btnClear3);
+            this.tabPage3.Controls.Add(this.btnSave3);
             this.tabPage3.Controls.Add(this.btnCheckTaxDetails);
             this.tabPage3.Controls.Add(this.label19);
             this.tabPage3.Controls.Add(this.label18);
@@ -762,19 +764,68 @@
             this.panel1.Size = new System.Drawing.Size(1360, 768);
             this.panel1.TabIndex = 4;
             // 
-            // bank_account_closed_date
+            // btnClear1
             // 
-            this.bank_account_closed_date.Location = new System.Drawing.Point(306, 231);
-            this.bank_account_closed_date.Name = "bank_account_closed_date";
-            this.bank_account_closed_date.Size = new System.Drawing.Size(310, 33);
-            this.bank_account_closed_date.TabIndex = 44;
+            this.btnClear1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear1.Location = new System.Drawing.Point(740, 571);
+            this.btnClear1.Name = "btnClear1";
+            this.btnClear1.Size = new System.Drawing.Size(150, 35);
+            this.btnClear1.TabIndex = 59;
+            this.btnClear1.Text = "අවලංගු කරන්න";
+            this.btnClear1.UseVisualStyleBackColor = true;
             // 
-            // insurance_ended_date
+            // btnSave1
             // 
-            this.insurance_ended_date.Location = new System.Drawing.Point(308, 148);
-            this.insurance_ended_date.Name = "insurance_ended_date";
-            this.insurance_ended_date.Size = new System.Drawing.Size(325, 33);
-            this.insurance_ended_date.TabIndex = 69;
+            this.btnSave1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave1.Location = new System.Drawing.Point(896, 571);
+            this.btnSave1.Name = "btnSave1";
+            this.btnSave1.Size = new System.Drawing.Size(150, 35);
+            this.btnSave1.TabIndex = 58;
+            this.btnSave1.Text = "තැන්පතු කරන්න ";
+            this.btnSave1.UseVisualStyleBackColor = true;
+            this.btnSave1.Click += new System.EventHandler(this.btnSave1_Click);
+            // 
+            // btnClear2
+            // 
+            this.btnClear2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear2.Location = new System.Drawing.Point(740, 571);
+            this.btnClear2.Name = "btnClear2";
+            this.btnClear2.Size = new System.Drawing.Size(150, 35);
+            this.btnClear2.TabIndex = 71;
+            this.btnClear2.Text = "අවලංගු කරන්න";
+            this.btnClear2.UseVisualStyleBackColor = true;
+            // 
+            // btnSave2
+            // 
+            this.btnSave2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave2.Location = new System.Drawing.Point(896, 571);
+            this.btnSave2.Name = "btnSave2";
+            this.btnSave2.Size = new System.Drawing.Size(150, 35);
+            this.btnSave2.TabIndex = 70;
+            this.btnSave2.Text = "තැන්පතු කරන්න ";
+            this.btnSave2.UseVisualStyleBackColor = true;
+            this.btnSave2.Click += new System.EventHandler(this.btnSave2_Click);
+            // 
+            // btnClear3
+            // 
+            this.btnClear3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear3.Location = new System.Drawing.Point(740, 571);
+            this.btnClear3.Name = "btnClear3";
+            this.btnClear3.Size = new System.Drawing.Size(150, 35);
+            this.btnClear3.TabIndex = 71;
+            this.btnClear3.Text = "අවලංගු කරන්න";
+            this.btnClear3.UseVisualStyleBackColor = true;
+            // 
+            // btnSave3
+            // 
+            this.btnSave3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave3.Location = new System.Drawing.Point(896, 571);
+            this.btnSave3.Name = "btnSave3";
+            this.btnSave3.Size = new System.Drawing.Size(150, 35);
+            this.btnSave3.TabIndex = 70;
+            this.btnSave3.Text = "තැන්පතු කරන්න ";
+            this.btnSave3.UseVisualStyleBackColor = true;
+            this.btnSave3.Click += new System.EventHandler(this.btnSave3_Click);
             // 
             // frmEmployeeFinanceDetails
             // 
@@ -810,8 +861,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label1;
@@ -851,7 +900,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox bank_account_name;
+        private System.Windows.Forms.TextBox bank_account_number;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox bank_account_type;
         private System.Windows.Forms.ComboBox bank_name;
@@ -879,11 +928,17 @@
         private System.Windows.Forms.Button btnCheckInsuaranceDetails;
         private System.Windows.Forms.Button btnCheckTaxDetails;
 
-        private System.Windows.Forms.DateTimePicker bank_account_started_year;
+        private System.Windows.Forms.DateTimePicker bank_account_started_date;
         //private System.Windows.Forms.DateTimePicker bank_account_closed_year;
         //private System.Windows.Forms.DateTimePicker insurance_ended_year;
         private System.Windows.Forms.DateTimePicker insurance_started_date;
         private System.Windows.Forms.DateTimePicker bank_account_closed_date;
         private System.Windows.Forms.DateTimePicker insurance_ended_date;
+        private System.Windows.Forms.Button btnClear1;
+        private System.Windows.Forms.Button btnSave1;
+        private System.Windows.Forms.Button btnClear2;
+        private System.Windows.Forms.Button btnSave2;
+        private System.Windows.Forms.Button btnClear3;
+        private System.Windows.Forms.Button btnSave3;
     }
 }

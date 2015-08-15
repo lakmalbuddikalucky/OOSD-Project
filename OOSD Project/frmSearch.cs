@@ -32,11 +32,13 @@ namespace OOSD_Project
             List<string> em_nos = EmployeeHandler.getAllEmployees();
             employee_no.Text = "Select employee number";
 
-            foreach (string Txt in em_nos)
+            if (!(em_nos == null))
             {
-                employee_no.Items.Add(Txt);
+                foreach (string Txt in em_nos)
+                {
+                    employee_no.Items.Add(Txt);
+                }
             }
-
         }
 
         public static frmSearch getForm()
@@ -81,6 +83,7 @@ namespace OOSD_Project
             this.first_name.Text = em.getFirst_name();
             this.last_name.Text = em.getLast_name();
             this.employee_nic.Text = em.getNic_no();
+            this.employee_name.Text = em.getFull_name();
             this.date_issued.Text = em.date_issued;
             this.nationality.Text = em.getNationality();
             this.religion.Text = em.getReligion();
@@ -263,7 +266,44 @@ namespace OOSD_Project
             }
 
             language_name.SelectedIndex = 0;
-            
+
+
+
+            //Load finance bank details
+            FinanceBank fb = FinanceBankHandler.getFinanceBank();
+
+            bank_name.Text = fb.bank_name;
+            bank_branch_name.Text = fb.branch_name;
+            bank_account_name.Text = fb.account_number;
+            bank_account_type.Text = fb.account_type;
+            bank_qualification.Text = fb.qualification;
+            bank_qualified_year.Text = fb.Qual_year;
+
+            bank_account_started_year.Value = fb.getBegin_date();
+            bank_account_closed_year.Value = fb.getEnd_date();
+
+
+            //Load finance insurance details
+            FinanceInsurance fi = FinanceInsuranceHandler.getFinanceInsurance();
+
+            insurance_type.Text = fi.type;
+            insurance_value.Text = fi.value.ToString();
+            insurance_notes.Text = fi.note;
+
+            insurance_started_date.Value = fi.getBegin_date();
+            insurance_ended_year.Value = fb.getEnd_date();
+
+
+            //Load finance tax details
+            FinanceTax ft = FinanceTaxHandler.getFinanceTax();
+
+            tax_type.Text = ft.type;
+            tax_no.Text = ft.number;
+            tax_notes.Text = ft.note;
+            tax_paying_method.Text = ft.payment_method;
+            tax_status.Text = ft.status;
+
+
 
         }
 

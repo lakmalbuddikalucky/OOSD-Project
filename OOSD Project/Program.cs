@@ -25,11 +25,11 @@ namespace OOSD_Project
             //Application.Run(new frmLogin());
 
             
-            //Application.Run(new frmEmployeeFinanceDetails());
+            Application.Run(new frmEmployeeFinanceDetails());
             //Application.Run(new frmEmployeePersonalDetails());
 
             //Application.Run(new frmDisciplinaryDetails());
-            Application.Run(new frmSearch());
+            //Application.Run(new frmSearch());
 
         }
     }

@@ -133,6 +133,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.depend_date_of_post_date = new System.Windows.Forms.DateTimePicker();
             this.btnCheckDependentDetails = new System.Windows.Forms.Button();
             this.btnClear3 = new System.Windows.Forms.Button();
             this.btnSave3 = new System.Windows.Forms.Button();
@@ -217,7 +218,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.depend_date_of_post_date = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -413,6 +413,7 @@
             this.btnClear1.TabIndex = 55;
             this.btnClear1.Text = "අවලංගු කරන්න";
             this.btnClear1.UseVisualStyleBackColor = true;
+            this.btnClear1.Click += new System.EventHandler(this.btnClear1_Click);
             // 
             // label21
             // 
@@ -1435,6 +1436,13 @@
             this.tabPage3.Text = "Dependent Details";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // depend_date_of_post_date
+            // 
+            this.depend_date_of_post_date.Location = new System.Drawing.Point(719, 70);
+            this.depend_date_of_post_date.Name = "depend_date_of_post_date";
+            this.depend_date_of_post_date.Size = new System.Drawing.Size(331, 33);
+            this.depend_date_of_post_date.TabIndex = 58;
+            // 
             // btnCheckDependentDetails
             // 
             this.btnCheckDependentDetails.Location = new System.Drawing.Point(243, 557);
@@ -2230,13 +2238,6 @@
             this.label1.Size = new System.Drawing.Size(168, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee";
-            // 
-            // depend_date_of_post_date
-            // 
-            this.depend_date_of_post_date.Location = new System.Drawing.Point(719, 70);
-            this.depend_date_of_post_date.Name = "depend_date_of_post_date";
-            this.depend_date_of_post_date.Size = new System.Drawing.Size(331, 33);
-            this.depend_date_of_post_date.TabIndex = 58;
             // 
             // frmEmployeePersonalDetails
             // 

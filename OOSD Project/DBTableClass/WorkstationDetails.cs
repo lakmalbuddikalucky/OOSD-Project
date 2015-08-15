@@ -11,17 +11,16 @@ namespace OOSD_Project.DBTableClass
         public string rank { set; get; }
         public string division { set; get; }
         public string post { set; get; }
-        
-        
-        public string date_of_post;
-        public string getDate_of_post()
+
+
+        DateTime date_of_post;
+        public DateTime getDate_of_post()
         {
-            return this.date_of_post;
+            return date_of_post;
         }
-        public void setDate_of_post(string year, string month, string date)
+        public void setDate_of_post(DateTime dt)
         {
-            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
-            this.date_of_post = dt.ToString("yyyy-MM-dd");
+            this.date_of_post = dt;
         }
 
 

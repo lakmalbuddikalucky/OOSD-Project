@@ -22,7 +22,7 @@ namespace OOSD_Project.Database
                 {
 
                     MySqlCommand cmd = new MySqlCommand();
-                    cmd.CommandText = "INSERT INTO employee (employee_no, full_name, image_url, old_employee_no, employee_type, epf_no, salutation, occupation, initials, first_name, last_name, nic_no, date_issued, nationality, religion, date_of_birth, place_of_birth, married, date_of_marriage, action_status, blood_group) VALUES (N'" + em.getEmployee_no() + "', N'" + em.getFull_name() + "', N'" + em.getImg_url() + "', N'" + em.getOld_employee_no() + "', N'" + em.getEmployee_type() + "', N'" + em.getEpf_no() + "', N'" + em.getSalutation() + "', N'" + em.getOccupation() + "', N'" + em.getInitials() + "', N'" + em.getFirst_name() + "', N'" + em.getLast_name() + "', N'" + em.getNic_no() + "', '" + em.getDate_issued() + "', N'" + em.getNationality() + "', N'" + em.getReligion() + "', '" + em.getDate_of_birth() + "', N'" + em.getPlace_of_birth() + "', " + em.getMarried() + ", '" + em.getDate_of_marriage() + "', N'" + em.getAction_status() + "', N'" + em.getBlood_group() + "')";
+                    cmd.CommandText = "INSERT INTO employee (employee_no, full_name, image_url, old_employee_no, employee_type, epf_no, salutation, occupation, initials, first_name, last_name, nic_no, date_issued, nationality, religion, date_of_birth, place_of_birth, married, date_of_marriage, action_status, blood_group) VALUES (N'" + em.getEmployee_no() + "', N'" + em.getFull_name() + "', N'" + em.getImg_url() + "', N'" + em.getOld_employee_no() + "', N'" + em.getEmployee_type() + "', N'" + em.getEpf_no() + "', N'" + em.getSalutation() + "', N'" + em.getOccupation() + "', N'" + em.getInitials() + "', N'" + em.getFirst_name() + "', N'" + em.getLast_name() + "', N'" + em.getNic_no() + "', '" + em.getDate_issued() + "', N'" + em.getNationality() + "', N'" + em.getReligion() + "', '" + em.getDate_of_birth().ToString("yyyy-MM-dd") + "', N'" + em.getPlace_of_birth() + "', " + em.getMarried() + ", '" + em.getDate_of_marriage().ToString("yyyy-MM-dd") + "', N'" + em.getAction_status() + "', N'" + em.getBlood_group() + "')";
                     cmd.Connection = dbcon.connection;
                     cmd.Prepare();
                     cmd.ExecuteNonQuery();
@@ -83,11 +83,14 @@ namespace OOSD_Project.Database
                 {
                     Employee.employee_id = int.Parse(reader["idemployee"].ToString());
 
+                    Console.Write(Employee.employee_id+"\n");
+
                     e.setAction_status(reader["action_status"].ToString());
                     e.setBlood_grouph(reader["blood_group"].ToString());
                     e.setDate_issued(reader["date_issued"].ToString());
-                    e.date_of_birth = reader["action_status"].ToString();
-                    e.date_of_marriage = reader["action_status"].ToString();
+
+                    e.setDate_of_birth(Convert.ToDateTime(reader["date_of_birth"]));
+                    e.setDate_of_marriage(Convert.ToDateTime(reader["date_of_marriage"]));
 
                     e.setEmployee_no(reader["employee_no"].ToString());
                     e.setEmployee_type(reader["employee_type"].ToString());

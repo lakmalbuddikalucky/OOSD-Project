@@ -9,7 +9,7 @@ namespace OOSD_Project.DBTableClass
     class Employee
     {
 
-        public static int employee_id=8;
+        public static int employee_id=0;
 
 
         string employee_no;
@@ -178,16 +178,17 @@ namespace OOSD_Project.DBTableClass
         }
 
 
-        public string date_of_birth;
-        public string getDate_of_birth()
+        DateTime date_of_birth;
+        public DateTime getDate_of_birth()
         {
             return date_of_birth;
         }
-        public void setDate_of_birth(string year, string month, string date)
+        public void setDate_of_birth(DateTime dt)
         {
-            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
-            this.date_of_birth = dt.ToString("yyyy-MM-dd");
+            
+            this.date_of_birth = dt;
         }
+        
 
 
         string place_of_birth;
@@ -212,17 +213,18 @@ namespace OOSD_Project.DBTableClass
         }
 
 
-        public string date_of_marriage;
-        public string getDate_of_marriage()
+        DateTime date_of_marriage;
+        public DateTime getDate_of_marriage()
         {
             return date_of_marriage;
         }
-        public void setDate_of_marriage(string year, string month, string date)
+        public void setDate_of_marriage(DateTime dt)
         {
-            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
-            this.date_of_marriage = dt.ToString("yyyy-MM-dd");
+
+            this.date_of_marriage = dt;
         }
 
+        
 
         string action_status;
         public string getAction_status()

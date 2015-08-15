@@ -14,15 +14,16 @@ namespace OOSD_Project.DBTableClass
         public string full_name { set; get; }
         public string relation { set; get; }
 
-        
-        public string date_of_post;
-        public void setDate_of_post(string year, string month, string date)
+
+        DateTime date_of_post;
+        public DateTime getDate_of_post()
         {
-            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
-            this.date_of_post = dt.ToString("yyyy-MM-dd");
-        }
-        public string getDate_of_post() {
             return date_of_post;
+        }
+        public void setDate_of_post(DateTime dt)
+        {
+
+            this.date_of_post = dt;
         }
 
 
@@ -43,7 +44,7 @@ namespace OOSD_Project.DBTableClass
         {
 
         }
-        public DependentDetails(string salutation, string full_name, string relation, string date_of_post, string nic_no, string personal_tp, string office_tp, string personal_address, string official_address, string education, string status, string note, string birth_certificate, string marriage_certificate, bool deathade, bool doctor)
+        public DependentDetails(string salutation, string full_name, string relation, DateTime date_of_post, string nic_no, string personal_tp, string office_tp, string personal_address, string official_address, string education, string status, string note, string birth_certificate, string marriage_certificate, bool deathade, bool doctor)
         {
             this.salutation = salutation;
             this.full_name = full_name;

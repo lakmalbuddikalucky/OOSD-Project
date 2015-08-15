@@ -14,6 +14,7 @@ using System.Windows.Forms;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
+using System.Globalization;
 
 namespace OOSD_Project
 {
@@ -32,11 +33,11 @@ namespace OOSD_Project
             employee_no.Text = "Select employee number";
 
 
-            /*foreach (string Txt in em_nos)
+            foreach (string Txt in em_nos)
             {
                 employee_no.Items.Add(Txt);
 
-            }*/
+            }
         }
 
         public static frmSearch getForm()
@@ -66,9 +67,12 @@ namespace OOSD_Project
 
         private void employee_no_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Console.Write("Load...\n");
             
             //Load personal details
             Employee em = EmployeeHandler.getEmployee(employee_no.Text);
+
+            //Console.Write(em.date_of_birth + "\n\n");
 
             this.action_status.Text = em.getAction_status();
             this.employee_type.Text = em.getEmployee_type();
@@ -87,6 +91,10 @@ namespace OOSD_Project
             this.place_of_birth.Text = em.getPlace_of_birth();
             this.blood_group.Text = em.getBlood_group();
             this.nic_no.Text = em.getNic_no();
+
+            this.dob_date.Value = em.getDate_of_birth();
+            
+            this.marry_date.Value = em.getDate_of_marriage();
 
             if (em.getMarried() == 1) { this.married.Checked = true; }
             else { { this.married.Checked = false; } }
@@ -127,6 +135,7 @@ namespace OOSD_Project
             DependentDetails dd = DependentDetailsHandler.getDependentDetails();
 
             depend_birth_certificate.Text = dd.birth_certificate;
+            depend_date_of_post_date.Value = dd.getDate_of_post();
 
             if (dd.deathade == true) { depend_deathade.Checked = true; }
             else { depend_deathade.Checked = false; }
@@ -173,10 +182,11 @@ namespace OOSD_Project
             wsd_rank.Text = wsd.rank;
             wsd_responsibility.Text = wsd.responsibility;
             wsd_salary_station.Text = wsd.salary_station;
+            wsd_date_of_post_date.Value = wsd.getDate_of_post();
 
 
             //Load qualification details
-            Qualification q = QualificationsHandler.getQualification();
+            /*Qualification q = QualificationsHandler.getQualification();
 
             qualification_no.Text = q.qualification_no;
             qual_institute.Text = q.institute;
@@ -232,6 +242,7 @@ namespace OOSD_Project
 
             if (mem.institutional_payment == true) { member_institutional_payment.Checked = true; }
             else { member_institutional_payment.Checked = false; }*/
+            
 
         }
 

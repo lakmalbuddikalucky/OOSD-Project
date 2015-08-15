@@ -22,8 +22,8 @@ namespace OOSD_Project.Database
             server = "localhost";
             database = "ozious";
             user = "root";
-            password = "root";
-            port = "3307";
+            password = "123";
+            port = "3306";
             string connectionString = "SERVER=" + server + ";" + "PORT=" + port + ";" + "DATABASE=" + database + ";" + "UID=" + user + ";" + "PASSWORD=" + password + ";Charset=utf8;";
             connection = new MySqlConnection(connectionString);
         }

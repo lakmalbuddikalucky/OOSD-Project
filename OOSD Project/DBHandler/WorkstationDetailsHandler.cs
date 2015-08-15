@@ -22,7 +22,7 @@ namespace OOSD_Project.DBHandler
             if (dbcon.openConnection())
             {
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "INSERT INTO workstation_details (rank, division, post, date_of_post, salary_station, responsibility, power, employee_idemployee) VALUES (N'" + wd.rank + "', N'" + wd.division + "', N'" + wd.post + "', '" + wd.getDate_of_post() + "', N'" + wd.salary_station + "', N'" + wd.responsibility + "', N'" + wd.power + "', " + Employee.employee_id + ")";
+                cmd.CommandText = "INSERT INTO workstation_details (rank, division, post, date_of_post, salary_station, responsibility, power, employee_idemployee) VALUES (N'" + wd.rank + "', N'" + wd.division + "', N'" + wd.post + "', '" + wd.getDate_of_post().ToString("yyyy-MM-dd") + "', N'" + wd.salary_station + "', N'" + wd.responsibility + "', N'" + wd.power + "', " + Employee.employee_id + ")";
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
@@ -77,7 +77,7 @@ namespace OOSD_Project.DBHandler
                     wd.rank = reader["rank"].ToString();
                     wd.responsibility = reader["responsibility"].ToString();
                     wd.salary_station = reader["salary_station"].ToString();
-                    wd.date_of_post = reader["date_of_post"].ToString();
+                    wd.setDate_of_post(Convert.ToDateTime(reader["date_of_post"]));
                 }
 
                 reader.Close();

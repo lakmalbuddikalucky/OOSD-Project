@@ -459,6 +459,8 @@ namespace OOSD_Project
             //employee.setImg_url();
             employee.setInitials(initials.Text);
             employee.setLast_name(last_name.Text);
+            employee.setDate_of_birth(dob_date.Value.Date);
+            employee.setDate_of_marriage(marry_date.Value.Date);
 
             if (married.Checked) { employee.setMarried(1); }
             else { employee.setMarried(0); }
@@ -619,6 +621,7 @@ namespace OOSD_Project
             DependentDetails dd = new DependentDetails();
 
             dd.birth_certificate = depend_birth_certificate.Text;
+            dd.setDate_of_post(depend_date_of_post_date.Value.Date);
             dd.education = depend_education.Text;
             dd.full_name = depend_full_name.Text;
             dd.marriage_certificate = depend_marriage_certificate.Text;
@@ -651,6 +654,8 @@ namespace OOSD_Project
 
         private void btnClear3_Click(object sender, EventArgs e)
         {
+            //Clear sependent details fields
+
             depend_birth_certificate = null;
             depend_deathade.Checked = false;
             depend_education = null;
@@ -670,6 +675,7 @@ namespace OOSD_Project
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //Save emergency contact details
 
             EmergencyContact ec = new EmergencyContact();
             ec.employee_no = emg_employee_no.Text;
@@ -698,6 +704,8 @@ namespace OOSD_Project
         private void btnSave5_Click(object sender, EventArgs e)
         {
 
+            //Save Workstation details
+
             WorkstationDetails wd = new WorkstationDetails();
 
             wd.division = wsd_division.Text;
@@ -706,6 +714,7 @@ namespace OOSD_Project
             wd.rank = wsd_rank.Text;
             wd.responsibility = wsd_responsibility.Text;
             wd.salary_station = wsd_salary_station.Text;
+            wd.setDate_of_post(wsd_date_of_post_date.Value.Date);
 
             bool status = WorkstationDetailsHandler.addWorkstationDetails(wd);
 
@@ -953,6 +962,11 @@ namespace OOSD_Project
         private void depend_nic_no_TextChanged(object sender, EventArgs e)
         {
             depend_nic_no.BackColor = Color.White;
+        }
+
+        private void btnClear1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

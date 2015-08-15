@@ -45,5 +45,51 @@ namespace OOSD_Project.DBHandler
             //}
 
         }
+
+
+
+        public static List<string> getLanguages()
+        {
+            List<string> languages = new List<string>();
+
+            DBConnector dbcon = new DBConnector();
+
+            //try
+            //{
+            if (dbcon.openConnection())
+            {
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "SELECT * FROM language WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    languages.Add(reader["language_name"].ToString());
+                }
+
+                reader.Close();
+
+                dbcon.closeConnection();
+
+                return languages;
+            }
+            else
+            {
+                dbcon.closeConnection();
+                return null;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //dbcon.closeConnection();
+            //return false;
+            //}
+
+        }
+
     }
 }

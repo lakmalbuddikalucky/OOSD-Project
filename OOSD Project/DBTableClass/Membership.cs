@@ -15,27 +15,25 @@ namespace OOSD_Project.DBTableClass
         public string contribution { set; get; }
 
 
-        public string begin_date;
-        public string getBegin_date()
+        DateTime begin_date;
+        public DateTime getBegin_date()
         {
             return begin_date;
         }
-        public void setBegin_date(string year, string month, string date)
+        public void setBegin_date(DateTime dt)
         {
-            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
-            this.begin_date = dt.ToString("yyyy-MM-dd");
+            this.begin_date = dt;
         }
 
 
-        public string renewal_date;
-        public string getRenewal_date()
+        DateTime renewal_date;
+        public DateTime getRenewal_date()
         {
             return renewal_date;
         }
-        public void setRenewal_date(string year, string month, string date)
+        public void setRenewal_date(DateTime dt)
         {
-            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
-            this.renewal_date = dt.ToString("yyyy-MM-dd");
+            this.renewal_date = dt;
         }
 
 
@@ -43,30 +41,28 @@ namespace OOSD_Project.DBTableClass
         public bool personal_payment { set; get; }
 
 
-        public string active_date_person;
-        public string getActive_date_person()
+        DateTime active_date_person;
+        public DateTime getActive_date_person()
         {
             return active_date_person;
         }
-        public void setActive_date_person(string year, string month, string date)
+        public void setActive_date_person(DateTime dt)
         {
-            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
-            this.active_date_person = dt.ToString("yyyy-MM-dd");
+            this.active_date_person = dt;
         }
 
 
         public bool institutional_payment { set; get; }
 
 
-        public string active_date_insti;
-        public string getActive_date_insti()
+        DateTime active_date_insti;
+        public DateTime getActive_date_insti()
         {
             return active_date_insti;
         }
-        public void setActive_date_insti(string year, string month, string date)
+        public void setActive_date_insti(DateTime dt)
         {
-            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
-            this.active_date_insti = dt.ToString("yyyy-MM-dd");
+            this.active_date_insti = dt;
         }
 
     }

@@ -32,12 +32,11 @@ namespace OOSD_Project
             List<string> em_nos = EmployeeHandler.getAllEmployees();
             employee_no.Text = "Select employee number";
 
-
             foreach (string Txt in em_nos)
             {
                 employee_no.Items.Add(Txt);
-
             }
+
         }
 
         public static frmSearch getForm()
@@ -67,12 +66,9 @@ namespace OOSD_Project
 
         private void employee_no_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Console.Write("Load...\n");
-            
+           
             //Load personal details
             Employee em = EmployeeHandler.getEmployee(employee_no.Text);
-
-            //Console.Write(em.date_of_birth + "\n\n");
 
             this.action_status.Text = em.getAction_status();
             this.employee_type.Text = em.getEmployee_type();
@@ -186,7 +182,7 @@ namespace OOSD_Project
 
 
             //Load qualification details
-            /*Qualification q = QualificationsHandler.getQualification();
+            Qualification q = QualificationsHandler.getQualification();
 
             qualification_no.Text = q.qualification_no;
             qual_institute.Text = q.institute;
@@ -195,8 +191,6 @@ namespace OOSD_Project
             qual_qualification.Text = q.qualification;
             qual_status.Text = q.status;
             qual_year.Text = q.year;
-
-            Console.Write(q.highest_qualification + "\n");
 
             if (q.highest_qualification == true) { qual_highest_qualification.Checked = true; }
             else { qual_highest_qualification.Checked = false; }
@@ -216,6 +210,15 @@ namespace OOSD_Project
             we_institute.Text = we.institute;
             we_resign_reason.Text = we.resign_reason;
             we_telephone.Text = we.telephone;
+            we_responsibility.Text = we.responsibility;
+
+            we_date_from_date.Value = we.getDate_from();
+            we_date_to_date.Value = we.getDate_to();
+            we_date_perma_date.Value = we.getDate_perma();
+
+            if (we.occupation_relevant == true) { we_occupation_relevant.Checked = true; }
+            else { we_occupation_relevant.Checked = false; }
+
 
 
             //Load extra curricular activity details
@@ -228,7 +231,7 @@ namespace OOSD_Project
 
 
             //Load membership details
-            /*Membership mem = MembershipHandler.getMembership();
+            Membership mem = MembershipHandler.getMembership();
 
             member_contribution.Text = mem.contribution;
             member_id.Text = mem.member_id;
@@ -237,11 +240,29 @@ namespace OOSD_Project
             member_status.Text = mem.status;
             memebr_post_name.Text = mem.post_name;
 
+            member_begin_date_date.Value = mem.getBegin_date();
+            member_renewal_date.Value = mem.getRenewal_date();
+            member_active_date_person_date.Value = mem.getActive_date_person();
+            member_active_date_insti_date.Value = mem.getActive_date_insti();
+
             if (mem.personal_payment == true) { member_personal_payment.Checked = true; }
             else { member_personal_payment.Checked = false; }
 
             if (mem.institutional_payment == true) { member_institutional_payment.Checked = true; }
-            else { member_institutional_payment.Checked = false; }*/
+            else { member_institutional_payment.Checked = false; }
+
+
+
+
+            //Load languages to combo box
+            List<string> languages = LanguageHandler.getLanguages();
+
+            foreach (string Txt in languages)
+            {
+                language_name.Items.Add(Txt);
+            }
+
+            language_name.SelectedIndex = 0;
             
 
         }

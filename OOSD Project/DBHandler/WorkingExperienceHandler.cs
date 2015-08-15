@@ -22,7 +22,7 @@ namespace OOSD_Project.DBHandler
                 if (dbcon.openConnection())
                 {
                     MySqlCommand cmd = new MySqlCommand();
-                    cmd.CommandText = "INSERT INTO working_experience (institute, address, telephone, email, department, contact, date_from, date_to, date_perma, resign_reason, responsibility, occupation_relevant, award, employee_idemployee) VALUES (N'" + we.institute + "', N'" + we.address + "', N'" + we.telephone + "', N'" + we.email + "', N'" + we.department + "', N'" + we.contact + "', '" + we.getDate_from() + "', '" + we.getDate_to() + "', '" + we.getDate_perma() + "', N'" + we.resign_reason + "', N'" + we.responsibility + "', " + we.occupation_relevant + ", N'" + we.award + "', " + Employee.employee_id + ")";
+                    cmd.CommandText = "INSERT INTO working_experience (institute, address, telephone, email, department, contact, date_from, date_to, date_perma, resign_reason, responsibility, occupation_relevant, award, employee_idemployee) VALUES (N'" + we.institute + "', N'" + we.address + "', N'" + we.telephone + "', N'" + we.email + "', N'" + we.department + "', N'" + we.contact + "', '" + we.getDate_from().ToString("yyyy-MM-dd") + "', '" + we.getDate_to().ToString("yyyy-MM-dd") + "', '" + we.getDate_perma().ToString("yyyy-MM-dd") + "', N'" + we.resign_reason + "', N'" + we.responsibility + "', " + we.occupation_relevant + ", N'" + we.award + "', " + Employee.employee_id + ")";
                     cmd.Connection = dbcon.connection;
                     cmd.Prepare();
                     cmd.ExecuteNonQuery();
@@ -81,9 +81,10 @@ namespace OOSD_Project.DBHandler
                     if (reader["occupation_relevant"].ToString() == "True") { we.occupation_relevant = true; }
                     else { we.occupation_relevant = false; }
 
-                    we.date_from = reader["date_from"].ToString();
-                    we.date_perma = reader["date_perma"].ToString();
-                    we.date_to = reader["date_to"].ToString();
+                    we.setDate_from(Convert.ToDateTime(reader["date_from"]));
+                    we.setDate_to(Convert.ToDateTime(reader["date_to"]));
+                    we.setDate_perma(Convert.ToDateTime(reader["date_perma"]));
+
 
                 }
 

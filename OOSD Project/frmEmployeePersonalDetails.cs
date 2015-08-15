@@ -534,11 +534,15 @@ namespace OOSD_Project
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            //frmEmployeeSpecialDetails form3 = new frmEmployeeSpecialDetails();
-            //form3.Show();
-            frmEmployeeSpecialDetails.getForm().Show();
-            this.Hide();
-            
+
+            if (!(Employee.employee_id == 0))
+            {
+                //frmEmployeeSpecialDetails form3 = new frmEmployeeSpecialDetails();
+                //form3.Show();
+                frmEmployeeSpecialDetails.getForm().Show();
+                this.Hide();
+            }
+
         }
 
         private void btnPrev_Click(object sender, EventArgs e)
@@ -562,8 +566,8 @@ namespace OOSD_Project
 
             if (exists)
             {
-                employee_no_combo.ForeColor = Color.Red;
-                employee_no.ForeColor = Color.Red;
+                employee_no_combo.ForeColor = Color.RosyBrown;
+                employee_no.ForeColor = Color.RosyBrown;
             }
             else
             {
@@ -967,6 +971,24 @@ namespace OOSD_Project
         private void btnClear1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void employee_no_KeyUp(object sender, KeyEventArgs e)
+        {
+            employee_no_combo.Text = employee_no.Text;
+
+            bool exists = EmployeeHandler.checkEmployee(employee_no.Text);
+
+            if (exists)
+            {
+                employee_no_combo.ForeColor = Color.RosyBrown;
+                employee_no.ForeColor = Color.RosyBrown;
+            }
+            else
+            {
+                employee_no_combo.ForeColor = Color.Black;
+                employee_no.ForeColor = Color.Black;
+            }
         }
     }
 }

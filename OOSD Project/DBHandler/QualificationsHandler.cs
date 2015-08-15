@@ -76,7 +76,7 @@ namespace OOSD_Project.DBHandler
                     q.note = reader["note"].ToString();
                     q.qualification = reader["qualification"].ToString();
                     q.year = reader["year"].ToString();
-
+                    q.qualification_no = reader["qualification_no"].ToString();
 
                     if (reader["occupation_relevant"].ToString() == "True") { q.occupation_relevant = true; }
                     else { q.occupation_relevant = false; }

@@ -14,40 +14,41 @@ namespace OOSD_Project.DBTableClass
         public string email { set; get; }
         public string department { set; get; }
         public string contact { set; get; }
-        
-        
-        public string date_from;
-        public string getDate_from()
+
+
+        DateTime date_from;
+        public DateTime getDate_from()
         {
             return date_from;
         }
-        public void setDate_from(string year, string month, string date)
+        public void setDate_from(DateTime dt)
         {
-            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
-            this.date_from = dt.ToString("yyyy-MM-dd");
+
+            this.date_from = dt;
         }
 
 
-        public string date_to;
-        public string getDate_to()
+        DateTime date_to;
+        public DateTime getDate_to()
         {
             return date_to;
         }
-        public void setDate_to(string year, string month, string date)
+        public void setDate_to(DateTime dt)
         {
-            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
-            this.date_to = dt.ToString("yyyy-MM-dd");
+
+            this.date_to = dt;
         }
 
-        public string date_perma;
-        public string getDate_perma()
+
+        DateTime date_perma;
+        public DateTime getDate_perma()
         {
             return date_perma;
         }
-        public void setDate_perma(string year, string month, string date)
+        public void setDate_perma(DateTime dt)
         {
-            DateTime dt = Convert.ToDateTime(month + "/" + date + "/" + year);
-            this.date_perma = dt.ToString("yyyy-MM-dd");
+
+            this.date_perma = dt;
         }
      
 

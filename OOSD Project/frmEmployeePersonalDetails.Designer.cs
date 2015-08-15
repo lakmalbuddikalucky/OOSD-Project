@@ -609,6 +609,7 @@
             this.employee_no.Size = new System.Drawing.Size(201, 33);
             this.employee_no.TabIndex = 5;
             this.employee_no.TextChanged += new System.EventHandler(this.employee_no_TextChanged);
+            this.employee_no.KeyUp += new System.Windows.Forms.KeyEventHandler(this.employee_no_KeyUp);
             // 
             // label19
             // 

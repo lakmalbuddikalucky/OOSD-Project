@@ -51,7 +51,10 @@ namespace OOSD_Project
 
         private void logoutButton_Click(object sender, EventArgs e)
         {
-            LoginSession.expireSession(LoginInfo.UserID);
+            if (!(LoginInfo.UserID == "ozious"))
+            {
+                LoginSession.expireSession(LoginInfo.UserID);
+            }
 
             frmLogin form1 = new frmLogin();
             form1.Show();

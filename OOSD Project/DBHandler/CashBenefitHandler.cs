@@ -16,7 +16,7 @@ namespace OOSD_Project.Handler
             DBConnector dbCon = new DBConnector();
             if (dbCon.openConnection())
             {
-                string query = "INSERT INTO `ozious`.`cash_benefit` (`idcash_benefit`,`approved_benefit`,`date_issued`,`price`,`employee_idemployee`) VALUES(<{idcash_benefit: }>,<{approved_benefit: }>,<{date_issued: }>,<{price: }>,<{employee_idemployee: }>)";
+                //string query = "INSERT INTO `ozious`.`cash_benefit` (`idcash_benefit`,`approved_benefit`,`date_issued`,`price`,`employee_idemployee`) VALUES(<{idcash_benefit: }>,<{approved_benefit: }>,<{date_issued: }>,<{price: }>,<{employee_idemployee: }>)";
             }
         }
     }

@@ -35,8 +35,9 @@ namespace OOSD_Project.Database
                 connection.Open();
                 return true;
             }
-            catch (MySqlException e)
+            catch (MySqlException ex)
             {
+                Console.Write(ex.Message+"\n");
                 return false;
             }
         }
@@ -50,6 +51,7 @@ namespace OOSD_Project.Database
             }
             catch (MySqlException ex)
             {
+                Console.Write(ex.Message + "\n");
                 return false;
             }
         }

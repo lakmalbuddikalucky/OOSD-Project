@@ -291,7 +291,7 @@
             this.we_date_from_date = new System.Windows.Forms.DateTimePicker();
             this.label16 = new System.Windows.Forms.Label();
             this.we_award = new System.Windows.Forms.TextBox();
-            this.textBox52 = new System.Windows.Forms.TextBox();
+            this.we_responsibility = new System.Windows.Forms.TextBox();
             this.we_resign_reason = new System.Windows.Forms.TextBox();
             this.we_contact = new System.Windows.Forms.TextBox();
             this.we_department = new System.Windows.Forms.TextBox();
@@ -301,7 +301,7 @@
             this.we_institute = new System.Windows.Forms.TextBox();
             this.label97 = new System.Windows.Forms.Label();
             this.label98 = new System.Windows.Forms.Label();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.we_occupation_relevant = new System.Windows.Forms.CheckBox();
             this.label99 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
             this.label101 = new System.Windows.Forms.Label();
@@ -349,6 +349,8 @@
             this.label141 = new System.Windows.Forms.Label();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.bank_account_closed_year = new System.Windows.Forms.DateTimePicker();
+            this.bank_account_started_year = new System.Windows.Forms.DateTimePicker();
             this.label129 = new System.Windows.Forms.Label();
             this.bank_qualified_year = new System.Windows.Forms.TextBox();
             this.bank_qualification = new System.Windows.Forms.TextBox();
@@ -364,6 +366,8 @@
             this.label127 = new System.Windows.Forms.Label();
             this.label128 = new System.Windows.Forms.Label();
             this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.insurance_ended_year = new System.Windows.Forms.DateTimePicker();
+            this.insurance_started_date = new System.Windows.Forms.DateTimePicker();
             this.insurance_type = new System.Windows.Forms.ComboBox();
             this.label131 = new System.Windows.Forms.Label();
             this.label132 = new System.Windows.Forms.Label();
@@ -451,10 +455,6 @@
             this.passport_rank = new System.Windows.Forms.TextBox();
             this.passport_issued_place = new System.Windows.Forms.TextBox();
             this.passport_no = new System.Windows.Forms.TextBox();
-            this.bank_account_closed_year = new System.Windows.Forms.DateTimePicker();
-            this.bank_account_started_year = new System.Windows.Forms.DateTimePicker();
-            this.insurance_ended_year = new System.Windows.Forms.DateTimePicker();
-            this.insurance_started_date = new System.Windows.Forms.DateTimePicker();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -3249,7 +3249,7 @@
             this.tabPage7.Controls.Add(this.we_date_from_date);
             this.tabPage7.Controls.Add(this.label16);
             this.tabPage7.Controls.Add(this.we_award);
-            this.tabPage7.Controls.Add(this.textBox52);
+            this.tabPage7.Controls.Add(this.we_responsibility);
             this.tabPage7.Controls.Add(this.we_resign_reason);
             this.tabPage7.Controls.Add(this.we_contact);
             this.tabPage7.Controls.Add(this.we_department);
@@ -3259,7 +3259,7 @@
             this.tabPage7.Controls.Add(this.we_institute);
             this.tabPage7.Controls.Add(this.label97);
             this.tabPage7.Controls.Add(this.label98);
-            this.tabPage7.Controls.Add(this.checkBox6);
+            this.tabPage7.Controls.Add(this.we_occupation_relevant);
             this.tabPage7.Controls.Add(this.label99);
             this.tabPage7.Controls.Add(this.label100);
             this.tabPage7.Controls.Add(this.label101);
@@ -3314,13 +3314,13 @@
             this.we_award.Size = new System.Drawing.Size(350, 150);
             this.we_award.TabIndex = 24;
             // 
-            // textBox52
+            // we_responsibility
             // 
-            this.textBox52.Location = new System.Drawing.Point(306, 537);
-            this.textBox52.Multiline = true;
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(200, 29);
-            this.textBox52.TabIndex = 22;
+            this.we_responsibility.Location = new System.Drawing.Point(306, 537);
+            this.we_responsibility.Multiline = true;
+            this.we_responsibility.Name = "we_responsibility";
+            this.we_responsibility.Size = new System.Drawing.Size(200, 29);
+            this.we_responsibility.TabIndex = 22;
             // 
             // we_resign_reason
             // 
@@ -3390,16 +3390,16 @@
             this.label98.TabIndex = 21;
             this.label98.Text = "ඉවත්වීමට හේතුව";
             // 
-            // checkBox6
+            // we_occupation_relevant
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(137, 579);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox6.Size = new System.Drawing.Size(179, 30);
-            this.checkBox6.TabIndex = 20;
-            this.checkBox6.Text = "රැකියාවට අනුකූල";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.we_occupation_relevant.AutoSize = true;
+            this.we_occupation_relevant.Location = new System.Drawing.Point(137, 579);
+            this.we_occupation_relevant.Name = "we_occupation_relevant";
+            this.we_occupation_relevant.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.we_occupation_relevant.Size = new System.Drawing.Size(179, 30);
+            this.we_occupation_relevant.TabIndex = 20;
+            this.we_occupation_relevant.Text = "රැකියාවට අනුකූල";
+            this.we_occupation_relevant.UseVisualStyleBackColor = true;
             // 
             // label99
             // 
@@ -3863,6 +3863,20 @@
             this.tabPage11.TabIndex = 0;
             this.tabPage11.Text = "Bank";
             // 
+            // bank_account_closed_year
+            // 
+            this.bank_account_closed_year.Location = new System.Drawing.Point(211, 222);
+            this.bank_account_closed_year.Name = "bank_account_closed_year";
+            this.bank_account_closed_year.Size = new System.Drawing.Size(310, 33);
+            this.bank_account_closed_year.TabIndex = 64;
+            // 
+            // bank_account_started_year
+            // 
+            this.bank_account_started_year.Location = new System.Drawing.Point(211, 183);
+            this.bank_account_started_year.Name = "bank_account_started_year";
+            this.bank_account_started_year.Size = new System.Drawing.Size(310, 33);
+            this.bank_account_started_year.TabIndex = 63;
+            // 
             // label129
             // 
             this.label129.AutoSize = true;
@@ -3998,6 +4012,20 @@
             this.tabPage12.Size = new System.Drawing.Size(1041, 357);
             this.tabPage12.TabIndex = 1;
             this.tabPage12.Text = "Insurance";
+            // 
+            // insurance_ended_year
+            // 
+            this.insurance_ended_year.Location = new System.Drawing.Point(326, 138);
+            this.insurance_ended_year.Name = "insurance_ended_year";
+            this.insurance_ended_year.Size = new System.Drawing.Size(310, 33);
+            this.insurance_ended_year.TabIndex = 52;
+            // 
+            // insurance_started_date
+            // 
+            this.insurance_started_date.Location = new System.Drawing.Point(326, 101);
+            this.insurance_started_date.Name = "insurance_started_date";
+            this.insurance_started_date.Size = new System.Drawing.Size(310, 33);
+            this.insurance_started_date.TabIndex = 51;
             // 
             // insurance_type
             // 
@@ -4910,34 +4938,6 @@
             this.passport_no.Size = new System.Drawing.Size(294, 33);
             this.passport_no.TabIndex = 38;
             // 
-            // bank_account_closed_year
-            // 
-            this.bank_account_closed_year.Location = new System.Drawing.Point(211, 222);
-            this.bank_account_closed_year.Name = "bank_account_closed_year";
-            this.bank_account_closed_year.Size = new System.Drawing.Size(310, 33);
-            this.bank_account_closed_year.TabIndex = 64;
-            // 
-            // bank_account_started_year
-            // 
-            this.bank_account_started_year.Location = new System.Drawing.Point(211, 183);
-            this.bank_account_started_year.Name = "bank_account_started_year";
-            this.bank_account_started_year.Size = new System.Drawing.Size(310, 33);
-            this.bank_account_started_year.TabIndex = 63;
-            // 
-            // insurance_ended_year
-            // 
-            this.insurance_ended_year.Location = new System.Drawing.Point(326, 138);
-            this.insurance_ended_year.Name = "insurance_ended_year";
-            this.insurance_ended_year.Size = new System.Drawing.Size(310, 33);
-            this.insurance_ended_year.TabIndex = 52;
-            // 
-            // insurance_started_date
-            // 
-            this.insurance_started_date.Location = new System.Drawing.Point(326, 101);
-            this.insurance_started_date.Name = "insurance_started_date";
-            this.insurance_started_date.Size = new System.Drawing.Size(310, 33);
-            this.insurance_started_date.TabIndex = 51;
-            // 
             // frmSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5383,7 +5383,7 @@
         private System.Windows.Forms.DateTimePicker we_date_from_date;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox we_award;
-        private System.Windows.Forms.TextBox textBox52;
+        private System.Windows.Forms.TextBox we_responsibility;
         private System.Windows.Forms.TextBox we_resign_reason;
         private System.Windows.Forms.TextBox we_contact;
         private System.Windows.Forms.TextBox we_department;
@@ -5393,7 +5393,7 @@
         private System.Windows.Forms.TextBox we_institute;
         private System.Windows.Forms.Label label97;
         private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox we_occupation_relevant;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label100;
         private System.Windows.Forms.Label label101;

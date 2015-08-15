@@ -89,7 +89,9 @@ namespace OOSD_Project
             we.resign_reason = we_resign_reason.Text;
             we.responsibility = we_responsibility.Text;
             we.telephone = we_telephone.Text;
-            
+            we.setDate_from(we_date_from_date.Value.Date);
+            we.setDate_to(we_date_to_date.Value.Date);
+            we.setDate_perma(we_date_perma_date.Value.Date);
             
 
             bool status = WorkingExperienceHandler.addWorkingExperience(we);
@@ -176,13 +178,16 @@ namespace OOSD_Project
             m.post_name = memebr_post_name.Text;
             m.method = member_method.Text;
 
+            m.setBegin_date(member_begin_date_date.Value.Date);
+            m.setRenewal_date(member_renewal_date.Value.Date);
+            m.setActive_date_insti(member_active_date_insti_date.Value.Date);
+            m.setActive_date_person(member_active_date_person_date.Value.Date);
+
             if (member_institutional_payment.Checked) { m.institutional_payment = true; }
             else { m.institutional_payment = false; }
 
             if (member_personal_payment.Checked) { m.personal_payment = true; }
             else { m.personal_payment = false; }
-
-            
 
             m.status = member_status.Text;
             

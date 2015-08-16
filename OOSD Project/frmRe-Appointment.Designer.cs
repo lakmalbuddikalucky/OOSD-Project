@@ -220,6 +220,7 @@
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "තැන්පතු කරන්න ";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // panel2
             // 

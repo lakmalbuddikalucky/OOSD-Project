@@ -64,10 +64,12 @@ namespace OOSD_Project.DBHandler
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                Remuneration r = new Remuneration();
+                Remuneration r = null;
 
                 if (reader.Read())
                 {
+                    r = new Remuneration();
+
                     r.salary_grade = reader["salary_grade"].ToString();
                     r.salary_slip_no = reader["salary_slip_no"].ToString();
                     r.basic_salary = (float)Convert.ToDouble(reader["basic_salary"].ToString());

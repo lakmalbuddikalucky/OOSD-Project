@@ -64,10 +64,12 @@ namespace OOSD_Project.DBHandler
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                WorkingExperience we = new WorkingExperience();
+                WorkingExperience we = null;
 
                 if (reader.Read())
                 {
+                    we = new WorkingExperience();
+
                     we.address = reader["address"].ToString();
                     we.award = reader["award"].ToString();
                     we.contact = reader["contact"].ToString();

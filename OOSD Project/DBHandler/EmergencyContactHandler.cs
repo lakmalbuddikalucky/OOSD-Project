@@ -66,10 +66,11 @@ namespace OOSD_Project.DBHandler
 
                 Console.Write(Employee.employee_id + "\n");
 
-                EmergencyContact ec = new EmergencyContact();
+                EmergencyContact ec = null;
 
                 if (reader.Read())
                 {
+                    ec = new EmergencyContact();
 
                     ec.full_name = reader["full_name"].ToString();
                     ec.int_ext = reader["int_ext"].ToString();

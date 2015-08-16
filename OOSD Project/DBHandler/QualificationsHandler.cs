@@ -66,10 +66,12 @@ namespace OOSD_Project.DBHandler
 
                 Console.Write(Employee.employee_id + "\n");
 
-                Qualification q = new Qualification();
+                Qualification q = null;
 
                 if (reader.Read())
                 {
+                    q = new Qualification();
+                     
                     q.institute = reader["institute"].ToString();
                     q.months = reader["months"].ToString();
                     q.status = reader["status"].ToString();

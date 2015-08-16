@@ -66,10 +66,12 @@ namespace OOSD_Project.DBHandler
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                Membership mem = new Membership();
+                Membership mem = null;
 
                 if (reader.Read())
                 {
+                    mem = new Membership();
+
                     mem.contribution = reader["contribution"].ToString();
                     mem.institute = reader["institute"].ToString();
                     mem.member_id = reader["member_id"].ToString();

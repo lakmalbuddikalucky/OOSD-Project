@@ -51,6 +51,7 @@ namespace OOSD_Project.DBHandler
         public static List<string> getLanguages()
         {
             List<string> languages = new List<string>();
+            languages.Add("");
 
             DBConnector dbcon = new DBConnector();
 

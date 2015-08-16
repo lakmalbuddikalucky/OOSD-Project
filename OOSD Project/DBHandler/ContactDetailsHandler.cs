@@ -64,10 +64,11 @@ namespace OOSD_Project.DBHandler
 
                 Console.Write(Employee.employee_id+"\n");
 
-                ContactDetails cd = new ContactDetails();
+                ContactDetails cd = null;
 
                 if (reader.Read())
                 {
+                    cd = new ContactDetails();
 
                     cd.cur_address=reader["cur_address"].ToString();
                     cd.cur_city = reader["cur_city"].ToString();

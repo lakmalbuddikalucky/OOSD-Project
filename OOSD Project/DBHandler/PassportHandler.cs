@@ -64,10 +64,11 @@ namespace OOSD_Project.DBHandler
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                Passport p = new Passport();
+                Passport p = null;
 
                 if (reader.Read())
                 {
+                    p = new Passport();
 
                     if (reader["status"].ToString() == "True") { p.status=true; }
                     else { p.status = false; }

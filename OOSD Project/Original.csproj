@@ -81,6 +81,7 @@
     <Compile Include="DBHandler\BenefitsHandler.cs" />
     <Compile Include="DBHandler\ContactDetailsHandler.cs" />
     <Compile Include="DBHandler\DependentDetailsHandler.cs" />
+    <Compile Include="DBHandler\DisciplinaryDetailsHandler.cs" />
     <Compile Include="DBHandler\EmergencyContactHandler.cs" />
     <Compile Include="DBHandler\EmployeeHandler.cs" />
     <Compile Include="DBHandler\ExtracurricularActivityHandler.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="DBTableClass\CashBenefit.cs" />
     <Compile Include="DBTableClass\ContactDetails.cs" />
     <Compile Include="DBTableClass\DependentDetails.cs" />
+    <Compile Include="DBTableClass\DisciplinaryDetails.cs" />
     <Compile Include="DBTableClass\EmergencyContact.cs" />
     <Compile Include="DBTableClass\Employee.cs" />
     <Compile Include="DBTableClass\ExtracurricularActivity.cs" />

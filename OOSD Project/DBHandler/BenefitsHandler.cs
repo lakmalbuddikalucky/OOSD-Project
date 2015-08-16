@@ -63,10 +63,11 @@ namespace OOSD_Project.DBHandler
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                CashBenefit cb = new CashBenefit();
+                CashBenefit cb = null;
 
                 if (reader.Read())
                 {
+                    cb = new CashBenefit();
 
                     cb.approved_benefit = reader["approved_benefit"].ToString();
                     cb.price = (float)Convert.ToDouble(reader["price"].ToString());
@@ -147,10 +148,11 @@ namespace OOSD_Project.DBHandler
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                NonCashBenefit ncb = new NonCashBenefit();
+                NonCashBenefit ncb = null;
 
                 if (reader.Read())
                 {
+                    ncb = new NonCashBenefit();
 
                     ncb.approved_benefit = reader["approved_benefit"].ToString();
                     ncb.price = (float)Convert.ToDouble(reader["price"].ToString());

@@ -67,10 +67,11 @@ namespace OOSD_Project.DBHandler
 
                 Console.Write(Employee.employee_id + "\n");
 
-                DependentDetails dd = new DependentDetails();
+                DependentDetails dd = null;
 
                 if (reader.Read())
                 {
+                    dd = new DependentDetails();
 
                     dd.birth_certificate = reader["birth_certificate"].ToString();
                     dd.setDate_of_post(Convert.ToDateTime(reader["date_of_post"]));

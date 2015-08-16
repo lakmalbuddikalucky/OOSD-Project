@@ -64,10 +64,11 @@ namespace OOSD_Project.DBHandler
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                FinanceTax ft = new FinanceTax();
+                FinanceTax ft = null;
 
                 if (reader.Read())
                 {
+                    ft = new FinanceTax();
                     ft.type = reader["type"].ToString();
                     ft.number = reader["number"].ToString();
                     ft.note = reader["note"].ToString();

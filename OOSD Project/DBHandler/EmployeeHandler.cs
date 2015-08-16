@@ -79,10 +79,12 @@ namespace OOSD_Project.Database
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                Employee e = new Employee();
+                Employee e = null;
 
                 if (reader.Read())
                 {
+                    e = new Employee();
+
                     Employee.employee_id = int.Parse(reader["idemployee"].ToString());
                     Employee.emp_no = reader["employee_no"].ToString();
                     Employee.employee_name = reader["full_name"].ToString();

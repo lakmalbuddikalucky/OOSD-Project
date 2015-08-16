@@ -64,10 +64,12 @@ namespace OOSD_Project.DBHandler
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                FinanceBank fb = new FinanceBank();
+                FinanceBank fb = null;
 
                 if (reader.Read())
                 {
+                    fb = new FinanceBank(); 
+
                     fb.bank_name = reader["bank_name"].ToString();
                     fb.branch_name = reader["branch_name"].ToString();
                     fb.account_number = reader["account_number"].ToString();

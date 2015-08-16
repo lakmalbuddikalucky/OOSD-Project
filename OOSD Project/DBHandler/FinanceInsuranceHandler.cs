@@ -63,10 +63,12 @@ namespace OOSD_Project.DBHandler
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                FinanceInsurance fi = new FinanceInsurance();
+                FinanceInsurance fi = null;
 
                 if (reader.Read())
                 {
+                    fi = new FinanceInsurance();
+
                     fi.type = reader["type"].ToString();
                     fi.value = double.Parse(reader["value"].ToString());
                     fi.note = reader["note"].ToString();

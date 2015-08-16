@@ -64,10 +64,12 @@ namespace OOSD_Project.DBHandler
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                ExtracurricularActivity ea = new ExtracurricularActivity();
+                ExtracurricularActivity ea = null;
 
                 if (reader.Read())
                 {
+                    ea = new ExtracurricularActivity();
+
                     ea.award = reader["award"].ToString();
                     ea.method = reader["method"].ToString();
                     ea.type = reader["type"].ToString();

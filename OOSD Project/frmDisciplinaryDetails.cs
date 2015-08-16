@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OOSD_Project.DBHandler;
+using OOSD_Project.DBTableClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +19,15 @@ namespace OOSD_Project
         public frmDisciplinaryDetails()
         {
             InitializeComponent();
+
+            if (!(DisciplinaryDetailsHandler.getDisciplinaryDetails() == null))
+            {
+                loadDetails();
+                employee_no.Text = Employee.emp_no;
+                full_name.Text = Employee.employee_name;
+                desciplinary_employee_no.Text = Employee.emp_no;
+                desciplinary_full_name.Text = Employee.employee_name;
+            }
         }
 
         public static frmDisciplinaryDetails getForm()
@@ -26,6 +37,27 @@ namespace OOSD_Project
                 form = new frmDisciplinaryDetails();
             }
             return form;
+        }
+
+
+        public void loadDetails() {
+
+            DisciplinaryDetails dd = DisciplinaryDetailsHandler.getDisciplinaryDetails();
+
+            desciplinary_rank.Text = dd.rank;
+            desciplinary_post.Text = dd.post;
+            desciplinary_verdict_of_director_general.Text = dd.verdict_of_director_general;
+            desciplinary_breaking.Text = dd.breaking;
+            desciplinary_given_sentence.Text = dd.given_sentence;
+            desciplinary_inquiry_officer.Text = dd.inquiry_officer;
+            desciplinary_request_of_main_administration_officer.Text = dd.request_main_admin;
+            desciplinary_suspended_time.Text = dd.suspended_time;
+            desciplinary_verdict_of_director_general_date.Value = dd.verdict_of_director_general_date;
+            disciplinary_given_sentence_date.Value = dd.given_sentence_date;
+            disciplinary_breaking_date.Value = dd.breaking_date;
+            disciplinary_rejoined_date.Value = dd.rejoined_date;
+            desciplinary_suspended_time.Text = dd.suspended_time;
+
         }
 
         private bool validateDiciplinaryDetails()
@@ -97,6 +129,55 @@ namespace OOSD_Project
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            bool desc_present = true;
+            if (DisciplinaryDetailsHandler.getDisciplinaryDetails() == null)
+            {
+                desc_present = false;
+            }
+            
+            DisciplinaryDetails dd = null;
+
+            if (!desc_present)
+            {
+                dd = new DisciplinaryDetails();
+            }
+            else {
+                dd = DisciplinaryDetailsHandler.getDisciplinaryDetails();
+            }
+
+            dd.rank = desciplinary_rank.Text;
+            dd.post = desciplinary_post.Text;
+            dd.verdict_of_director_general = desciplinary_verdict_of_director_general.Text;
+            dd.breaking = desciplinary_breaking.Text;
+            dd.given_sentence = desciplinary_given_sentence.Text;
+            dd.inquiry_officer = desciplinary_inquiry_officer.Text;
+            dd.request_main_admin = desciplinary_request_of_main_administration_officer.Text;
+            dd.suspended_time = desciplinary_suspended_time.Text;
+            dd.verdict_of_director_general_date = desciplinary_verdict_of_director_general_date.Value.Date;
+            dd.given_sentence_date = disciplinary_given_sentence_date.Value.Date;
+            dd.breaking_date = disciplinary_breaking_date.Value.Date;
+            dd.rejoined_date = disciplinary_rejoined_date.Value.Date;
+            dd.suspended_time = desciplinary_suspended_time.Text;
+
+            bool state;
+
+            if (!desc_present)
+            {
+                state = DisciplinaryDetailsHandler.addDisciplinaryDetails(dd);
+            }
+            else {
+                state = DisciplinaryDetailsHandler.updateDisciplinaryDetails(dd);
+            }
+
+            if (state)
+            {
+                MessageBox.Show("Employee Disciplinary details updated succesfully...!");
+
+            }
+            else
+            {
+                MessageBox.Show("Updating Disciplinary personal details failed...!");
+            }
 
         }
 

@@ -67,10 +67,12 @@ namespace OOSD_Project.DBHandler
 
                 Console.Write(Employee.employee_id + "\n");
 
-                WorkstationDetails wd = new WorkstationDetails();
+                WorkstationDetails wd = null;
 
                 if (reader.Read())
                 {
+                    wd = new WorkstationDetails();
+
                     wd.division = reader["division"].ToString();
                     wd.post = reader["post"].ToString();
                     wd.power = reader["power"].ToString();

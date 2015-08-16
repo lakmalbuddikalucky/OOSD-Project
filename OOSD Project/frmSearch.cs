@@ -334,7 +334,7 @@ namespace OOSD_Project
             report.AddHeader("Owner", "Civil Security Department");
 
             // _______________________________________________________3_______________________________________________________
-            // Setup the font factory
+            // Setup the fonts factory
             /*
             int totalFonts = FontFactory.RegisterDirectory("C:\\WINDOWS\\Fonts");
             StringBuilder sb = new StringBuilder();
@@ -343,6 +343,9 @@ namespace OOSD_Project
             */
             iTextSharp.text.Font fontHeader_1 = FontFactory.GetFont("Calibri", 30, iTextSharp.text.Font.BOLD, new iTextSharp.text.BaseColor(0, 0, 0));
             iTextSharp.text.Font fontHeader_2 = FontFactory.GetFont("Calibri", 15, iTextSharp.text.Font.BOLD, new iTextSharp.text.BaseColor(125, 125, 125));
+            iTextSharp.text.Font fontContentTopic = FontFactory.GetFont("Calibri", 12, iTextSharp.text.Font.NORMAL, new iTextSharp.text.BaseColor(125, 125, 125));
+            iTextSharp.text.Font fontSubContentTopic = FontFactory.GetFont("Calibri", 9, iTextSharp.text.Font.BOLD, new iTextSharp.text.BaseColor(0, 0, 0));
+            iTextSharp.text.Font fontContent = FontFactory.GetFont("Calibri", 9, iTextSharp.text.Font.NORMAL, new iTextSharp.text.BaseColor(0, 0, 0));
 
             // _______________________________________________________x_______________________________________________________
             // Create header
@@ -374,9 +377,87 @@ namespace OOSD_Project
             img.SpacingBefore = 20f;
             report.Add(img);
 
-            Paragraph para1 = new Paragraph("Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... Testing... ");
-            para1.Alignment = Element.ALIGN_JUSTIFIED;
-            report.Add(para1);
+            // Seting dummy values
+            txt_em_no.Text = "C100";
+            employee_type.Text = "Commander";
+            epf_no.Text = "EPF 100";
+            salutation.Text = "Mr.";
+            occupation.Text = "Staff Training Officer";
+
+            Paragraph paratContentTopic_1 = new Paragraph("Employee No", fontContentTopic);
+            report.Add(paratContentTopic_1);
+            Paragraph paratContent_1 = new Paragraph(txt_em_no.Text, fontContent);
+            report.Add(paratContent_1);
+
+            Paragraph paratContentTopic_2 = new Paragraph("Old employee No", fontContentTopic);
+            report.Add(paratContentTopic_2);
+            Paragraph paratContent_2 = new Paragraph(old_employee_no.Text, fontContent);
+            report.Add(paratContent_2);
+
+            Paragraph paratContentTopic_3 = new Paragraph("Employee Type", fontContentTopic);
+            report.Add(paratContentTopic_3);
+            Paragraph paratContent_3 = new Paragraph(employee_type.Text, fontContent);
+            report.Add(paratContent_3);
+
+            Paragraph paratContentTopic_4 = new Paragraph("EPF No", fontContentTopic);
+            report.Add(paratContentTopic_4);
+            Paragraph paratContent_4 = new Paragraph(epf_no.Text, fontContent);
+            report.Add(paratContent_4);
+
+            Paragraph paratContentTopic_5 = new Paragraph("Salutation", fontContentTopic);
+            report.Add(paratContentTopic_5);
+            Paragraph paratContent_5 = new Paragraph(salutation.Text, fontContent);
+            report.Add(paratContent_5);
+
+            Paragraph paratContentTopic_6 = new Paragraph("Occupation", fontContentTopic);
+            report.Add(paratContentTopic_6);
+            Paragraph paratContent_6 = new Paragraph(occupation.Text, fontContent);
+            report.Add(paratContent_6);
+
+            Paragraph paratContentTopic_7 = new Paragraph("Initials", fontContentTopic);
+            report.Add(paratContentTopic_7);
+            Paragraph paratContent_7 = new Paragraph(initials.Text, fontContent);
+            report.Add(paratContent_7);
+
+            if (perm_home_no.Text != "")
+            {
+                Paragraph paratContentTopic_8 = new Paragraph("Home No", fontContentTopic);
+                report.Add(paratContentTopic_8);
+                Paragraph paratContent_8 = new Paragraph(perm_home_no.Text, fontContent);
+                report.Add(paratContent_8);
+            }
+
+            if (perm_address.Text != "")
+            {
+                Paragraph paratContentTopic_9 = new Paragraph("Permenent Address", fontContentTopic);
+                report.Add(paratContentTopic_9);
+                Paragraph paratContent_9 = new Paragraph(perm_address.Text, fontContent);
+                report.Add(paratContent_9);
+            }
+
+            if (wsd_rank.Text != "")
+            {
+                Paragraph paratContentTopic_10 = new Paragraph("Rank", fontContentTopic);
+                report.Add(paratContentTopic_10);
+                Paragraph paratContent_10 = new Paragraph(wsd_rank.Text, fontContent);
+                report.Add(paratContent_10);
+            }
+
+            if (wsd_division.Text != "")
+            {
+                Paragraph paratContentTopic_11 = new Paragraph("Division", fontContentTopic);
+                report.Add(paratContentTopic_11);
+                Paragraph paratContent_11 = new Paragraph(wsd_division.Text, fontContent);
+                report.Add(paratContent_11);
+            }
+
+            if (wsd_post.Text != "")
+            {
+                Paragraph paratContentTopic_12 = new Paragraph("Post", fontContentTopic);
+                report.Add(paratContentTopic_12);
+                Paragraph paratContent_12 = new Paragraph(wsd_post.Text, fontContent);
+                report.Add(paratContent_12);
+            }
 
             report.Close();
             this.Close();

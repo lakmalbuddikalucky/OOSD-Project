@@ -176,7 +176,7 @@ namespace OOSD_Project
             }
             else
             {
-                MessageBox.Show("Updating Disciplinary personal details failed...!");
+                MessageBox.Show("Updating Disciplinary details failed...!");
             }
 
         }

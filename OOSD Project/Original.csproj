@@ -93,6 +93,7 @@
     <Compile Include="DBHandler\PassportHandler.cs" />
     <Compile Include="DBHandler\QualificationsHandler.cs" />
     <Compile Include="DBHandler\RemunerationHandler.cs" />
+    <Compile Include="DBHandler\TrainingHandler.cs" />
     <Compile Include="DBHandler\WorkingExperienceHandler.cs" />
     <Compile Include="DBHandler\WorkstationDetailsHandler.cs" />
     <Compile Include="DBTableClass\CashBenefit.cs" />
@@ -111,6 +112,7 @@
     <Compile Include="DBTableClass\Passport.cs" />
     <Compile Include="DBTableClass\Qualification.cs" />
     <Compile Include="DBTableClass\Remuneration.cs" />
+    <Compile Include="DBTableClass\Training.cs" />
     <Compile Include="DBTableClass\Transport.cs" />
     <Compile Include="DBTableClass\WorkingExperience.cs" />
     <Compile Include="DBTableClass\WorkstationDetails.cs" />

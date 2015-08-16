@@ -33,11 +33,11 @@
             this.label13 = new System.Windows.Forms.Label();
             this.labrel1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.not_content = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.qualification_no = new System.Windows.Forms.TextBox();
+            this.not_title = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.not_emp_no = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -98,55 +98,64 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 68);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1336, 304);
             this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
-            // textBox1
+            // not_content
             // 
-            this.textBox1.Location = new System.Drawing.Point(209, 500);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(641, 166);
-            this.textBox1.TabIndex = 49;
+            this.not_content.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.not_content.Location = new System.Drawing.Point(260, 500);
+            this.not_content.Multiline = true;
+            this.not_content.Name = "not_content";
+            this.not_content.Size = new System.Drawing.Size(590, 166);
+            this.not_content.TabIndex = 49;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(154, 503);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.Size = new System.Drawing.Size(83, 25);
             this.label3.TabIndex = 48;
             this.label3.Text = "විස්තරය";
             // 
-            // qualification_no
+            // not_title
             // 
-            this.qualification_no.Location = new System.Drawing.Point(209, 400);
-            this.qualification_no.Name = "qualification_no";
-            this.qualification_no.Size = new System.Drawing.Size(641, 20);
-            this.qualification_no.TabIndex = 47;
+            this.not_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.not_title.Location = new System.Drawing.Point(260, 400);
+            this.not_title.Name = "not_title";
+            this.not_title.Size = new System.Drawing.Size(590, 31);
+            this.not_title.TabIndex = 47;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(147, 403);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.Size = new System.Drawing.Size(95, 25);
             this.label1.TabIndex = 46;
             this.label1.Text = "මාතෘකාව";
             // 
-            // textBox2
+            // not_emp_no
             // 
-            this.textBox2.Location = new System.Drawing.Point(209, 448);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(173, 20);
-            this.textBox2.TabIndex = 51;
+            this.not_emp_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.not_emp_no.Location = new System.Drawing.Point(260, 448);
+            this.not_emp_no.Name = "not_emp_no";
+            this.not_emp_no.Size = new System.Drawing.Size(197, 31);
+            this.not_emp_no.TabIndex = 51;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(127, 451);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 13);
+            this.label4.Size = new System.Drawing.Size(127, 25);
             this.label4.TabIndex = 50;
             this.label4.Text = "සේවක අංකය";
             // 
@@ -166,7 +175,7 @@
             this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 708);
+            this.panel2.Location = new System.Drawing.Point(0, 689);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1360, 60);
@@ -176,18 +185,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1360, 768);
+            this.ClientSize = new System.Drawing.Size(1360, 749);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.not_emp_no);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.not_content);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.qualification_no);
+            this.Controls.Add(this.not_title);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel5);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmNotifications";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNotifications";
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -205,12 +215,12 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label labrel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox not_content;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox qualification_no;
+        private System.Windows.Forms.TextBox not_title;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox not_emp_no;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
     }

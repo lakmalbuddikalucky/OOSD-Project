@@ -22,7 +22,7 @@ namespace OOSD_Project
             //Application.Run(new frmLogin());
             //Application.Run(new frmMain());
 
-            Application.Run(new frmLogin());
+            Application.Run(new frmNotifications());
 
             //Application.Run(new frmPassportDetails());
             //Application.Run(new frmEmployeeFinanceDetails());

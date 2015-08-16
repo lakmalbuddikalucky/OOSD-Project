@@ -88,6 +88,7 @@
     <Compile Include="DBHandler\FinanceBankHandler.cs" />
     <Compile Include="DBHandler\FinanceInsuranceHandler.cs" />
     <Compile Include="DBHandler\FinanceTaxHandler.cs" />
+    <Compile Include="DBHandler\InterdictSuspendHandler.cs" />
     <Compile Include="DBHandler\JobStatusHandler.cs" />
     <Compile Include="DBHandler\LanguageHandler.cs" />
     <Compile Include="DBHandler\MembershipHandler.cs" />
@@ -108,6 +109,7 @@
     <Compile Include="DBTableClass\FinanceBank.cs" />
     <Compile Include="DBTableClass\FinanceInsurance.cs" />
     <Compile Include="DBTableClass\FinanceTax.cs" />
+    <Compile Include="DBTableClass\InterdictSuspend.cs" />
     <Compile Include="DBTableClass\JobStatus.cs" />
     <Compile Include="DBTableClass\Language.cs" />
     <Compile Include="DBTableClass\Membership.cs" />

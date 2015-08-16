@@ -19,6 +19,13 @@ namespace OOSD_Project
         public frmPassportDetails()
         {
             InitializeComponent();
+
+            if (!(Employee.emp_no == null))
+            {
+                employee_no.Text = Employee.emp_no;
+                full_name.Text = Employee.employee_name;
+            }
+
         }
 
         public static frmPassportDetails getForm()

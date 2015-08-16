@@ -20,13 +20,15 @@ namespace OOSD_Project
         {
             InitializeComponent();
 
+            employee_no.Text = Employee.emp_no;
+            full_name.Text = Employee.employee_name;
+            training_employee_no.Text = Employee.emp_no;
+            training_full_name.Text = Employee.employee_name;
+
             if (!(TrainingHandler.getTraining() == null))
             {
                 loadDetails();
-                employee_no.Text = Employee.emp_no;
-                full_name.Text = Employee.employee_name;
-                training_employee_no.Text = Employee.emp_no;
-                training_full_name.Text = Employee.employee_name;
+                
             }
         }
 

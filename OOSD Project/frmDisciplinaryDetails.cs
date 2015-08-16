@@ -20,13 +20,15 @@ namespace OOSD_Project
         {
             InitializeComponent();
 
+            employee_no.Text = Employee.emp_no;
+            full_name.Text = Employee.employee_name;
+            desciplinary_employee_no.Text = Employee.emp_no;
+            desciplinary_full_name.Text = Employee.employee_name;
+
             if (!(DisciplinaryDetailsHandler.getDisciplinaryDetails() == null))
             {
                 loadDetails();
-                employee_no.Text = Employee.emp_no;
-                full_name.Text = Employee.employee_name;
-                desciplinary_employee_no.Text = Employee.emp_no;
-                desciplinary_full_name.Text = Employee.employee_name;
+                
             }
         }
 

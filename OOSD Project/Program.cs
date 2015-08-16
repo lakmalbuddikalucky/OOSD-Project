@@ -22,14 +22,14 @@ namespace OOSD_Project
             //Application.Run(new frmLogin());
             //Application.Run(new frmMain());
 
-            Application.Run(new frmNotifications());
+            //Application.Run(new frmNotifications());
 
             //Application.Run(new frmPassportDetails());
             //Application.Run(new frmEmployeeFinanceDetails());
             //Application.Run(new frmEmployeePersonalDetails());
 
             //Application.Run(new frmDisciplinaryDetails());
-            //Application.Run(new frmSearch());
+            Application.Run(new frmSearch());
 
         }
     }

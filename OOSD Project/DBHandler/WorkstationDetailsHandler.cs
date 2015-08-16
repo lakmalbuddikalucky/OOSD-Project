@@ -103,5 +103,42 @@ namespace OOSD_Project.DBHandler
 
         }
 
+
+        public static bool updateWorkstationDetails(WorkstationDetails ws)
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "UPDATE workstation_details SET rank=N'" + ws.rank + "', division=N'" + ws.division + "', post=N'" + ws.post + "', date_of_post='" + ws.getDate_of_post().ToString("yyyy-MM-dd") + "', salary_station=N'" + ws.salary_station + "', responsibility=N'" + ws.responsibility + "', power=N'" + ws.power + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+
+                dbcon.closeConnection();
+
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return false;
+            //}
+
+        }
+
     }
 }

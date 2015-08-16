@@ -110,5 +110,43 @@ namespace OOSD_Project.DBHandler
 
 
 
+        public static bool updateEmergencyContact(EmergencyContact ec)
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "UPDATE emergency_contact SET salutation=N'" + ec.salutation + "', full_name=N'" + ec.full_name + "', relation=N'" + ec.relation + "', nic_no=N'" + ec.nic_no + "', personal_address=N'" + ec.personal_address + "', official_address=N'" + ec.official_address + "', personal_tp=N'" + ec.personal_tp + "', official_tp=N'" + ec.office_tp + "', mobile_no=N'" + ec.mobile_no + "', employee_no=N'" + ec.employee_no + "', int_ext=N'" + ec.int_ext + "', priority=N'" + ec.priority + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+
+                dbcon.closeConnection();
+
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return false;
+            //}
+
+        }
+
+
+
     }
 }

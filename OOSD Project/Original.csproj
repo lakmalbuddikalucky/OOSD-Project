@@ -93,6 +93,7 @@
     <Compile Include="DBHandler\LanguageHandler.cs" />
     <Compile Include="DBHandler\MembershipHandler.cs" />
     <Compile Include="DBHandler\PassportHandler.cs" />
+    <Compile Include="DBHandler\PensionAndDeathHandler.cs" />
     <Compile Include="DBHandler\QualificationsHandler.cs" />
     <Compile Include="DBHandler\ReAppointmentHandler.cs" />
     <Compile Include="DBHandler\RemunerationHandler.cs" />
@@ -115,6 +116,7 @@
     <Compile Include="DBTableClass\Membership.cs" />
     <Compile Include="DBTableClass\NonCashBenefit.cs" />
     <Compile Include="DBTableClass\Passport.cs" />
+    <Compile Include="DBTableClass\PensionAndDeath.cs" />
     <Compile Include="DBTableClass\Qualification.cs" />
     <Compile Include="DBTableClass\ReAppointment.cs" />
     <Compile Include="DBTableClass\Remuneration.cs" />

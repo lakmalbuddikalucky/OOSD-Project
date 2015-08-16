@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace OOSD_Project.DBHandler
 {
-    class InterdictSuspendHandler
+    class PensionAndDeathHandler
     {
 
-        public static bool addInterdictSuspend(InterdictSuspend s)
+        public static bool addPensionAndDeath(PensionAndDeath pd)
         {
 
             DBConnector dbcon = new DBConnector();
@@ -22,7 +22,7 @@ namespace OOSD_Project.DBHandler
             if (dbcon.openConnection())
             {
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "INSERT INTO interdict_suspend (post, rank, reason, unattended_from, unattended_to, rejoined, suspend_from, suspend_to, more_notes, employee_idemployee) VALUES (N'" + s.post + "', N'" + s.rank + "', N'" + s.reason + "', '" + s.unattended_from.ToString("yyyy-MM-dd") + "', '" + s.unattended_to.ToString("yyyy-MM-dd") + "', " + s.rejoined + ", '" + s.suspend_from.ToString("yyyy-MM-dd") + "', '" + s.suspend_to.ToString("yyyy-MM-dd") + "', N'" + s.more_notes + "', " + Employee.employee_id + ")";
+                cmd.CommandText = "INSERT INTO pension_death (retired, dead, died_date, informed_date, note, employee_idemployee) VALUES (" + pd.retired + ", " + pd.dead + ", '" + pd.died_date.ToString("yyyy-MM-dd") + "', '" + pd.informed_date.ToString("yyyy-MM-dd") + "', N'" + pd.note + "', " + Employee.employee_id + ")";
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
@@ -49,7 +49,7 @@ namespace OOSD_Project.DBHandler
 
 
 
-        public static bool addInterdictSuspendRecord()
+        public static bool addPensionAndDeathRecord()
         {
 
             DBConnector dbcon = new DBConnector();
@@ -59,7 +59,7 @@ namespace OOSD_Project.DBHandler
             if (dbcon.openConnection())
             {
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "INSERT INTO interdict_suspend (unattended_from, unattended_to, suspend_from, suspend_to, employee_idemployee) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd") + "', '" + DateTime.Now.ToString("yyyy-MM-dd") + "', '" + DateTime.Now.ToString("yyyy-MM-dd") + "', '" + DateTime.Now.ToString("yyyy-MM-dd") + "', " + Employee.employee_id + ")";
+                cmd.CommandText = "INSERT INTO pension_death (died_date, informed_date, employee_idemployee) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd") + "', '" + DateTime.Now.ToString("yyyy-MM-dd") + "', " + Employee.employee_id + ")";
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
@@ -87,7 +87,7 @@ namespace OOSD_Project.DBHandler
 
 
 
-        public static bool updateInterdictSuspend(InterdictSuspend s)
+        public static bool updatePensionAndDeath(PensionAndDeath pd)
         {
             DBConnector dbcon = new DBConnector();
 
@@ -96,7 +96,7 @@ namespace OOSD_Project.DBHandler
             if (dbcon.openConnection())
             {
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE interdict_suspend SET post=N'" + s.post + "', rank=N'" + s.rank + "', reason=N'" + s.reason + "', unattended_from='" + s.unattended_from.ToString("yyyy-MM-dd") + "', unattended_to='" + s.unattended_to.ToString("yyyy-MM-dd") + "', rejoined=" + s.rejoined + ", suspend_from='" + s.suspend_from.ToString("yyyy-MM-dd") + "', suspend_to='" + s.suspend_to.ToString("yyyy-MM-dd") + "', more_notes='" + s.more_notes + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE pension_death SET retired=" + pd.retired + ", dead=" + pd.dead + ", died_date='" + pd.died_date.ToString("yyyy-MM-dd") + "', informed_date='" + pd.informed_date.ToString("yyyy-MM-dd") + "', note=N'" + pd.note + "' WHERE employee_idemployee=" + Employee.employee_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
@@ -122,7 +122,7 @@ namespace OOSD_Project.DBHandler
         }
 
 
-        public static InterdictSuspend getInterdictSuspend()
+        public static PensionAndDeath getPensionAndDeath()
         {
 
             //try
@@ -134,30 +134,29 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "SELECT * FROM interdict_suspend WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "SELECT * FROM pension_death WHERE employee_idemployee=" + Employee.employee_id;
                 cmd.Connection = dbcon.connection;
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
                 Console.Write(Employee.employee_id + "\n");
 
-                InterdictSuspend s = null;
+                PensionAndDeath pd = null;
 
                 if (reader.Read())
                 {
-                    s = new InterdictSuspend();
+                    pd = new PensionAndDeath();
 
-                    s.post = reader["post"].ToString();
-                    s.rank = reader["rank"].ToString();
-                    s.reason = reader["reason"].ToString();
-                    s.more_notes = reader["more_notes"].ToString();
-                    s.unattended_from = Convert.ToDateTime(reader["unattended_from"]);
-                    s.unattended_to = Convert.ToDateTime(reader["unattended_to"]);
-                    s.suspend_from = Convert.ToDateTime(reader["suspend_from"]);
-                    s.suspend_to = Convert.ToDateTime(reader["suspend_to"]);
+                    pd.note = reader["note"].ToString();
 
-                    if (reader["rejoined"].ToString() == "True") { s.rejoined = true; }
-                    else { s.rejoined = false; }
+                    pd.died_date = Convert.ToDateTime(reader["died_date"]);
+                    pd.informed_date = Convert.ToDateTime(reader["informed_date"]);
+
+                    if (reader["retired"].ToString() == "True") { pd.retired = true; }
+                    else { pd.retired = false; }
+
+                    if (reader["dead"].ToString() == "True") { pd.dead = true; }
+                    else { pd.dead = false; }
 
 
                 }
@@ -166,7 +165,7 @@ namespace OOSD_Project.DBHandler
 
                 dbcon.closeConnection();
 
-                return s;
+                return pd;
             }
             else
             {

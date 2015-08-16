@@ -97,5 +97,42 @@ namespace OOSD_Project.DBHandler
 
         }
 
+
+        public static bool updateExtracurricularActivity(ExtracurricularActivity ea)
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "UPDATE extracurricular_activity SET type=N'" + ea.type + "', method=N'" + ea.method + "', award=N'" + ea.award + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+
+                dbcon.closeConnection();
+
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return false;
+            //}
+
+        }
+
     }
 }

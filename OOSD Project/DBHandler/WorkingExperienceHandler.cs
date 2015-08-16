@@ -112,5 +112,41 @@ namespace OOSD_Project.DBHandler
         }
 
 
+        public static bool updateWorkingExperience(WorkingExperience we)
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "UPDATE working_experience SET institute=N'" + we.institute + "', address=N'" + we.address + "', telephone=N'" + we.telephone + "', email=" + we.email + ", department=" + we.department + ", contact=N'" + we.contact + "', date_from='" + we.getDate_from().ToString("yyyy-MM-dd") + "', date_to=N'" + we.getDate_to().ToString("yyyy-MM-dd") + "', date_perma='" + we.getDate_perma().ToString("yyyy-MM-dd") + "', resign_reason=N'" + we.resign_reason + "', responsibility=N'" + we.responsibility + "', occupation_relevant=" + we.occupation_relevant + ", award=N'" + we.award + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+
+                dbcon.closeConnection();
+
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return false;
+            //}
+
+        }
+
     }
 }

@@ -66,6 +66,10 @@ namespace OOSD_Project
             updateDependentDetails();
             updateEmergencyContact();
             updateWorkstation();
+            updateQualification();
+            updateWorkingExperience();
+            updateExtraCurAc();
+            updateMembership();
 
 
             /*frmMain form10 = new frmMain();
@@ -734,6 +738,105 @@ namespace OOSD_Project
             bool state = WorkstationDetailsHandler.updateWorkstationDetails(wd);
 
             Console.Write(state + "\n");
+        }
+
+
+        public void updateQualification()
+        {
+            Qualification q = new Qualification();
+
+            if (qual_highest_qualification.Checked) { q.highest_qualification = true; }
+            else { q.highest_qualification = false; }
+
+            if (qual_occupation_relevant.Checked) { q.occupation_relevant = true; }
+            else { q.occupation_relevant = false; }
+
+            q.institute = qual_institute.Text;
+            q.months = qual_months.Text;
+            q.note = qual_note.Text;
+            q.qualification = qual_qualification.Text;
+            q.qualification_no = qualification_no.Text;
+            q.status = qual_status.Text;
+            q.year = qual_year.Text;
+
+            bool state = QualificationsHandler.updateQualifications(q);
+
+            Console.Write(state + "\n");
+        }
+
+
+        public void updateWorkingExperience()
+        {
+            WorkingExperience we = new WorkingExperience();
+
+            we.address = we_address.Text;
+            we.award = we_award.Text;
+            we.contact = we_contact.Text;
+            we.department = we_department.Text;
+            we.email = we_department.Text;
+            we.institute = we_institute.Text;
+
+            if (we_occupation_relevant.Checked) { we.occupation_relevant = true; }
+            else { we.occupation_relevant = false; }
+
+            we.resign_reason = we_resign_reason.Text;
+            we.responsibility = we_responsibility.Text;
+            we.telephone = we_telephone.Text;
+            we.setDate_from(we_date_from_date.Value.Date);
+            we.setDate_to(we_date_to_date.Value.Date);
+            we.setDate_perma(we_date_perma_date.Value.Date);
+
+            bool state = WorkingExperienceHandler.updateWorkingExperience(we);
+
+            Console.Write(state + "\n");
+        }
+
+
+        public void updateExtraCurAc()
+        {
+            ExtracurricularActivity eca = new ExtracurricularActivity();
+
+            eca.award = ea_award.Text;
+            eca.method = ea_method.Text;
+            eca.type = ea_type.Text;
+
+            bool state = ExtracurricularActivityHandler.updateExtracurricularActivity(eca);
+
+            Console.Write(state + "\n");
+        }
+
+
+        public void updateMembership()
+        {
+            Membership m = new Membership();
+
+            m.contribution = member_contribution.Text;
+            m.institute = member_institute.Text;
+            m.member_id = member_id.Text;
+            m.post_name = memebr_post_name.Text;
+            m.method = member_method.Text;
+
+            m.setBegin_date(member_begin_date_date.Value.Date);
+            m.setRenewal_date(member_renewal_date.Value.Date);
+            m.setActive_date_insti(member_active_date_insti_date.Value.Date);
+            m.setActive_date_person(member_active_date_person_date.Value.Date);
+
+            if (member_institutional_payment.Checked) { m.institutional_payment = true; }
+            else { m.institutional_payment = false; }
+
+            if (member_personal_payment.Checked) { m.personal_payment = true; }
+            else { m.personal_payment = false; }
+
+            bool state = MembershipHandler.updateMembership(m);
+
+            Console.Write(state + "\n");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Language l = new Language();
+            l.language_name = language_name.Text;
+            bool status = LanguageHandler.addLanguage(l);
         }
 
 

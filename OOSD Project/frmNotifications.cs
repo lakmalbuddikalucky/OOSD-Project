@@ -51,8 +51,8 @@ namespace OOSD_Project
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "SELECT title AS Title, content AS Content, date AS Date, employee_name AS Employee, employee_number AS Employee_Number FROM notification";
-                //cmd.CommandText = "SELECT * FROM notification WHERE date='" + DateTime.Now + "'";
+                cmd.CommandText = "SELECT idnotification AS Notification_ID, title AS Title, content AS Content, date AS Date, employee_name AS Employee, employee_number AS Employee_Number FROM notification WHERE date=@dt";
+                cmd.Parameters.Add("@dt", MySql.Data.MySqlClient.MySqlDbType.Date).Value = DateTime.Today; 
                 cmd.Connection = dbcon.connection;
 
 

@@ -8,6 +8,8 @@ namespace OOSD_Project.DBTableClass
 {
     class Remuneration
     {
+        public string rank { set; get; }
+        public string post { set; get; }
         public string salary_grade { set; get; }
         public string salary_slip_no { set; get; }
         public float basic_salary { set; get; }

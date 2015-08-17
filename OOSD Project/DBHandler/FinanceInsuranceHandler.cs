@@ -98,5 +98,42 @@ namespace OOSD_Project.DBHandler
             //}
 
         }
+
+
+        public static bool updateFinanceInsurance(FinanceInsurance fi)
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "UPDATE finance_insurance SET type=N'" + fi.type + "', value=" + fi.value + ", begin_date='" + fi.getBegin_date().ToString("yyyy-MM-dd") + "', end_date='" + fi.getEnd_date().ToString("yyyy-MM-dd") + "', note=N'" + fi.note + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+
+                dbcon.closeConnection();
+
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return false;
+            //}
+
+        }
     }
 }

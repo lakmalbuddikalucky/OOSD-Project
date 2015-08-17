@@ -104,5 +104,43 @@ namespace OOSD_Project.DBHandler
         }
 
 
+
+        public static bool updateFinanceBank(FinanceBank fb)
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "UPDATE finance_bank SET bank_name=N'" + fb.bank_name + "', branch_name=N'" + fb.branch_name + "', account_number=N'" + fb.account_number + "', account_type=N'" + fb.account_type + "', begin_date='" + fb.getBegin_date().ToString("yyyy-MM-dd") + "', end_date='" + fb.getEnd_date().ToString("yyyy-MM-dd") + "', qualification=N'" + fb.qualification + "', qual_year=N'" + fb.Qual_year + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+
+                dbcon.closeConnection();
+
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return false;
+            //}
+
+        }
+
+
     }
 }

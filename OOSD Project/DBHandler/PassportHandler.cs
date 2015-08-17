@@ -104,5 +104,42 @@ namespace OOSD_Project.DBHandler
 
         }
 
+
+        public static bool updatePassport(Passport p)
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "UPDATE passport SET rank=N'" + p.rank + "', post=N'" + p.post + "', passport_no=N'" + p.number + "', place_of_issue=N'" + p.place_of_issue + "', date_of_issue='" + p.getdate_of_issue().ToString("yyyy-MM-dd") + "', date_of_renewal='" + p.getdate_of_renewal().ToString("yyyy-MM-dd") + "', status=" + p.status + " WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+
+                dbcon.closeConnection();
+
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return false;
+            //}
+
+        }
+
     }
 }

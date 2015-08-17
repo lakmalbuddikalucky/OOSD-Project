@@ -22,7 +22,7 @@ namespace OOSD_Project.DBHandler
             if (dbcon.openConnection())
             {
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "INSERT INTO remuneration (salary_grade, salary_slip_no, basic_salary, transport_allowance, fuel_allowance, mobile_phone_allowance, housing_allowance, other_allowance, salary_increase_date, salary_increase_amount, current_total_salary, employee_idemployee) VALUES (N'" + r.salary_grade + "', N'" + r.salary_slip_no + "', " + r.basic_salary + ", " + r.transport_allowance + ", " + r.fuel_allowance + ", " + r.mobile_phone_allowance + ", " + r.housing_allowance + ", " + r.other_allowance + ", '" + r.getsalary_increase_date().ToString("yyyy-MM-dd") + "', " + r.salary_increase_amount + ", " + r.current_total_salary + ", " + Employee.employee_id + ")";
+                cmd.CommandText = "INSERT INTO remuneration (rank, post, salary_grade, salary_slip_no, basic_salary, transport_allowance, fuel_allowance, mobile_phone_allowance, housing_allowance, other_allowance, salary_increase_date, salary_increase_amount, current_total_salary, employee_idemployee) VALUES (N'" + r.rank + "', N'" + r.post + "', N'" + r.salary_grade + "', N'" + r.salary_slip_no + "', " + r.basic_salary + ", " + r.transport_allowance + ", " + r.fuel_allowance + ", " + r.mobile_phone_allowance + ", " + r.housing_allowance + ", " + r.other_allowance + ", '" + r.getsalary_increase_date().ToString("yyyy-MM-dd") + "', " + r.salary_increase_amount + ", " + r.current_total_salary + ", " + Employee.employee_id + ")";
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
@@ -70,6 +70,8 @@ namespace OOSD_Project.DBHandler
                 {
                     r = new Remuneration();
 
+                    //r.rank = reader["rank"].ToString();
+                    //r.post = reader["post"].ToString();
                     r.salary_grade = reader["salary_grade"].ToString();
                     r.salary_slip_no = reader["salary_slip_no"].ToString();
                     r.basic_salary = (float)Convert.ToDouble(reader["basic_salary"].ToString());
@@ -103,6 +105,43 @@ namespace OOSD_Project.DBHandler
             //{
             //int errorcode = e.Number;
             //return null;
+            //}
+
+        }
+
+
+        public static bool updateRemuneration(Remuneration r)
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "UPDATE remuneration SET salary_grade=N'" + r.salary_grade + "', salary_slip_no=" + r.salary_slip_no + ", basic_salary=" + r.basic_salary + ", transport_allowance=" + r.transport_allowance + ", fuel_allowance=" + r.fuel_allowance + ", mobile_phone_allowance=" + r.mobile_phone_allowance + ", housing_allowance=" + r.housing_allowance + ", other_allowance=" + r.other_allowance + ", salary_increase_date='" + r.getsalary_increase_date().ToString("yyyy-MM-dd") + "', salary_increase_amount=" + r.salary_increase_amount + ", current_total_salary=" + r.current_total_salary + " WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+
+                dbcon.closeConnection();
+
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return false;
             //}
 
         }

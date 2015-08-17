@@ -70,6 +70,10 @@ namespace OOSD_Project
             updateWorkingExperience();
             updateExtraCurAc();
             updateMembership();
+            updateFinance();
+            updateRemuneration();
+            updateBenefits();
+            updatePassport();
 
 
             /*frmMain form10 = new frmMain();
@@ -839,6 +843,101 @@ namespace OOSD_Project
             bool status = LanguageHandler.addLanguage(l);
         }
 
+        public void updateFinance()
+        {
+            //Update finance bank details
+            FinanceBank fb = new FinanceBank();
+            fb.bank_name = bank_name.Text;
+            fb.branch_name = bank_branch_name.Text;
+            fb.account_number = bank_account_name.Text;
+            fb.account_type = bank_account_type.Text;
+            fb.setBegin_date(bank_account_started_year.Value.Date);
+            fb.setEnd_date(bank_account_closed_year.Value.Date);
+            fb.Qual_year = bank_qualified_year.Text;
+            fb.qualification = bank_qualification.Text;
+            bool state = FinanceBankHandler.updateFinanceBank(fb);
+            Console.Write(state + "\n");
+
+            //Update finance insurance details
+            FinanceInsurance fi = new FinanceInsurance();
+            fi.type = insurance_type.Text;
+            fi.value = Convert.ToDouble(insurance_value.Text);
+            fi.setBegin_date(insurance_started_date.Value.Date);
+            fi.setEnd_date(insurance_ended_year.Value.Date);
+            fi.note = insurance_notes.Text;
+            state = FinanceInsuranceHandler.updateFinanceInsurance(fi);
+            Console.Write(state + "\n");
+
+            //Update finance tax details
+            FinanceTax ft = new FinanceTax();
+            ft.type = tax_type.Text;
+            ft.number = tax_no.Text;
+            ft.payment_method = tax_paying_method.Text;
+            ft.status = tax_status.Text;
+            ft.note = tax_notes.Text;
+            state = FinanceTaxHandler.updateFinanceTax(ft);
+            Console.Write(state + "\n");
+        }
+
+
+        public void updateRemuneration()
+        {
+            Remuneration r = new Remuneration();
+
+            r.salary_grade = remun_salary_grade.Text;
+            r.salary_slip_no = remun_salary_slip_no.Text;
+            r.basic_salary = (float)Convert.ToDouble(remun_basic_salary.Text);
+            r.transport_allowance = (float)Convert.ToDouble(remun_transport_allowance.Text);
+            r.fuel_allowance = (float)Convert.ToDouble(remun_fuel_allowance.Text);
+            r.mobile_phone_allowance = (float)Convert.ToDouble(remun_mobile_phone_allowance.Text);
+            r.housing_allowance = (float)Convert.ToDouble(remun_housing_allowance.Text);
+            r.other_allowance = (float)Convert.ToDouble(remun_other_allowance.Text);
+            r.salary_increase_amount = (float)Convert.ToDouble(remun_salary_increase_amount.Text);
+            r.current_total_salary = (float)Convert.ToDouble(remun_current_total_salary.Text);
+            r.setsalary_increase_date(remun_salary_increase_date.Value.Date);
+            bool state = RemunerationHandler.updateRemuneration(r);
+            Console.Write(state + "\n");
+        }
+
+
+
+        public void updateBenefits()
+        {
+            CashBenefit cb = new CashBenefit();
+            cb.approved_benefit = cash_approved_benefit.Text;
+            cb.price = (float)Convert.ToDouble(cash_issued_price.Text);
+            cb.setdate_issued(cash_issued_date.Value.Date);
+            bool state = BenefitsHandler.updateCashBenefit(cb);
+            Console.Write(state + "\n");
+
+            NonCashBenefit ncb = new NonCashBenefit();
+            ncb.approved_benefit = noncash_approved_benefit.Text;
+            ncb.price = (float)Convert.ToDouble(noncash_price.Text);
+            ncb.amount = (float)Convert.ToDouble(noncash_quantity.Text);
+            ncb.setdate_issued(noncash_issued_date.Value.Date);
+            state = BenefitsHandler.updateNonCashBenefit(ncb);
+            Console.Write(state + "\n");
+
+        }
+
+
+        public void updatePassport()
+        {
+            Passport p = new Passport();
+
+            p.number = passport_no.Text;
+            p.place_of_issue = passport_issued_place.Text;
+            p.post = passport_post.Text;
+            p.rank = passport_rank.Text;
+            p.setdate_of_issue(passport_issued_date.Value.Date);
+            p.setdate_of_renewal(passport_renewal_date.Value.Date);
+
+            if (passport_status_active.Checked) { p.status = true; }
+            else { p.status = false; }
+
+            bool state = PassportHandler.updatePassport(p);
+            Console.Write(state + "\n");
+        }
 
     }
 }

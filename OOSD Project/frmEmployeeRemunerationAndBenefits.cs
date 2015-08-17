@@ -56,6 +56,8 @@ namespace OOSD_Project
 
             Remuneration r = new Remuneration();
 
+            r.rank = remun_rank.Text;
+            r.post = remun_post.Text;
             r.salary_grade = remun_salary_grade.Text;
             r.salary_slip_no = remun_salary_no.Text;
             r.basic_salary = (float)Convert.ToDouble(remun_basic_salary.Text);

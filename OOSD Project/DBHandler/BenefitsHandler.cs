@@ -183,5 +183,79 @@ namespace OOSD_Project.DBHandler
         }
 
 
+        public static bool updateCashBenefit(CashBenefit cb)
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "UPDATE cash_benefit SET approved_benefit=N'" + cb.approved_benefit + "', date_issued='" + cb.getdate_issued().ToString("yyyy-MM-dd") + "', price=" + cb.price + " WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+
+                dbcon.closeConnection();
+
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return false;
+            //}
+
+        }
+
+
+        public static bool updateNonCashBenefit(NonCashBenefit ncb)
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "UPDATE noncash_benefit SET approved_benefit=N'" + ncb.approved_benefit + "', date_issued='" + ncb.getdate_issued().ToString("yyyy-MM-dd") + "', amount=" + ncb.amount + ", price=" + ncb.price + " WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+
+                dbcon.closeConnection();
+
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return false;
+            //}
+
+        }
+
+
     }
 }

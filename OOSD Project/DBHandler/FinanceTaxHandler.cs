@@ -98,5 +98,41 @@ namespace OOSD_Project.DBHandler
             //}
 
         }
+
+        public static bool updateFinanceTax(FinanceTax ft)
+        {
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "UPDATE finance_tax SET type=N'" + ft.type + "', number=" + ft.number + ", payment_method=N'" + ft.payment_method + "', status=N'" + ft.status + "', note=N'" + ft.note + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.Connection = dbcon.connection;
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+
+                dbcon.closeConnection();
+
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return false;
+            //}
+
+        }
     }
 }

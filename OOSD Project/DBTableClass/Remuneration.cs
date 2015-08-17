@@ -8,6 +8,7 @@ namespace OOSD_Project.DBTableClass
 {
     class Remuneration
     {
+        public int r_id { set; get; }
         public string rank { set; get; }
         public string post { set; get; }
         public string salary_grade { set; get; }

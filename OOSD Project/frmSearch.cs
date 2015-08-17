@@ -22,6 +22,9 @@ namespace OOSD_Project
     {
         private static frmSearch form;
 
+        private int cd_id,dd_id,ec_id,ws_id,q_id,we_id,ea_id,mem_id;
+        private int fb_id,fi_id,ft_id,r_id,cb_id,ncb_id,p_id;
+
         public frmSearch()
         {
             //search
@@ -294,6 +297,7 @@ namespace OOSD_Project
 
             if (!(cd == null))
             {
+                this.cd_id = cd.cd_id;
                 this.perm_address.Text = cd.perm_address;
                 this.perm_city.Text = cd.perm_city;
                 this.perm_district.Text = cd.perm_district;
@@ -328,27 +332,28 @@ namespace OOSD_Project
 
             if (!(dd == null))
             {
-                depend_birth_certificate.Text = dd.birth_certificate;
-                depend_date_of_post_date.Value = dd.getDate_of_post();
+                this.dd_id = dd.dd_id;
+                this.depend_birth_certificate.Text = dd.birth_certificate;
+                this.depend_date_of_post_date.Value = dd.getDate_of_post();
 
-                if (dd.deathade == true) { depend_deathade.Checked = true; }
-                else { depend_deathade.Checked = false; }
+                if (dd.deathade == true) { this.depend_deathade.Checked = true; }
+                else { this.depend_deathade.Checked = false; }
 
-                if (dd.doctor == true) { depend_medical.Checked = true; }
-                else { depend_medical.Checked = false; }
+                if (dd.doctor == true) { this.depend_medical.Checked = true; }
+                else { this.depend_medical.Checked = false; }
 
-                depend_education.Text = dd.education;
-                depend_full_name.Text = dd.full_name;
-                depend_marriage_certificate.Text = dd.marriage_certificate;
-                depend_nic_no.Text = dd.nic_no;
-                depend_note.Text = dd.note;
-                depend_office_tp.Text = dd.office_tp;
-                depend_official_address.Text = dd.official_address;
-                depend_personal_address.Text = dd.personal_address;
-                depend_personal_tp.Text = dd.personal_tp;
-                depend_relation.Text = dd.relation;
-                depend_salutation.Text = dd.salutation;
-                depend_status.Text = dd.status;
+                this.depend_education.Text = dd.education;
+                this.depend_full_name.Text = dd.full_name;
+                this.depend_marriage_certificate.Text = dd.marriage_certificate;
+                this.depend_nic_no.Text = dd.nic_no;
+                this.depend_note.Text = dd.note;
+                this.depend_office_tp.Text = dd.office_tp;
+                this.depend_official_address.Text = dd.official_address;
+                this.depend_personal_address.Text = dd.personal_address;
+                this.depend_personal_tp.Text = dd.personal_tp;
+                this.depend_relation.Text = dd.relation;
+                this.depend_salutation.Text = dd.salutation;
+                this.depend_status.Text = dd.status;
             }
         }
 
@@ -359,18 +364,19 @@ namespace OOSD_Project
 
             if (!(ec == null))
             {
-                emg_employee_no.Text = ec.employee_no;
-                emg_full_name.Text = ec.full_name;
-                emg_int_ext.Text = ec.int_ext;
-                emg_mobile_no.Text = ec.mobile_no;
-                emg_nic_no.Text = ec.nic_no;
-                emg_office_tp.Text = ec.office_tp;
-                emg_official_address.Text = ec.official_address;
-                emg_personal_address.Text = ec.personal_address;
-                emg_personal_tp.Text = ec.personal_tp;
-                emg_priority.Text = ec.priority;
-                emg_relation.Text = ec.relation;
-                emg_salutation.Text = ec.salutation;
+                this.ec_id = ec.ec_id;
+                this.emg_employee_no.Text = ec.employee_no;
+                this.emg_full_name.Text = ec.full_name;
+                this.emg_int_ext.Text = ec.int_ext;
+                this.emg_mobile_no.Text = ec.mobile_no;
+                this.emg_nic_no.Text = ec.nic_no;
+                this.emg_office_tp.Text = ec.office_tp;
+                this.emg_official_address.Text = ec.official_address;
+                this.emg_personal_address.Text = ec.personal_address;
+                this.emg_personal_tp.Text = ec.personal_tp;
+                this.emg_priority.Text = ec.priority;
+                this.emg_relation.Text = ec.relation;
+                this.emg_salutation.Text = ec.salutation;
             }
         }
 
@@ -381,13 +387,14 @@ namespace OOSD_Project
 
             if (!(wsd == null))
             {
-                wsd_division.Text = wsd.division;
-                wsd_post.Text = wsd.post;
-                wsd_power.Text = wsd.power;
-                wsd_rank.Text = wsd.rank;
-                wsd_responsibility.Text = wsd.responsibility;
-                wsd_salary_station.Text = wsd.salary_station;
-                wsd_date_of_post_date.Value = wsd.getDate_of_post();
+                this.ws_id = wsd.ws_id;
+                this.wsd_division.Text = wsd.division;
+                this.wsd_post.Text = wsd.post;
+                this.wsd_power.Text = wsd.power;
+                this.wsd_rank.Text = wsd.rank;
+                this.wsd_responsibility.Text = wsd.responsibility;
+                this.wsd_salary_station.Text = wsd.salary_station;
+                this.wsd_date_of_post_date.Value = wsd.getDate_of_post();
             }
         }
 
@@ -398,19 +405,20 @@ namespace OOSD_Project
 
             if (!(q == null))
             {
-                qualification_no.Text = q.qualification_no;
-                qual_institute.Text = q.institute;
-                qual_months.Text = q.months;
-                qual_note.Text = q.note;
-                qual_qualification.Text = q.qualification;
-                qual_status.Text = q.status;
-                qual_year.Text = q.year;
+                this.q_id = q.q_id;
+                this.qualification_no.Text = q.qualification_no;
+                this.qual_institute.Text = q.institute;
+                this.qual_months.Text = q.months;
+                this.qual_note.Text = q.note;
+                this.qual_qualification.Text = q.qualification;
+                this.qual_status.Text = q.status;
+                this.qual_year.Text = q.year;
 
-                if (q.highest_qualification == true) { qual_highest_qualification.Checked = true; }
-                else { qual_highest_qualification.Checked = false; }
+                if (q.highest_qualification == true) { this.qual_highest_qualification.Checked = true; }
+                else { this.qual_highest_qualification.Checked = false; }
 
-                if (q.occupation_relevant == true) { qual_occupation_relevant.Checked = true; }
-                else { qual_occupation_relevant.Checked = false; }
+                if (q.occupation_relevant == true) { this.qual_occupation_relevant.Checked = true; }
+                else { this.qual_occupation_relevant.Checked = false; }
             }
 
         }
@@ -422,22 +430,23 @@ namespace OOSD_Project
 
             if (!(we == null))
             {
-                we_address.Text = we.address;
-                we_award.Text = we.award;
-                we_contact.Text = we.contact;
-                we_department.Text = we.department;
-                we_email.Text = we.email;
-                we_institute.Text = we.institute;
-                we_resign_reason.Text = we.resign_reason;
-                we_telephone.Text = we.telephone;
-                we_responsibility.Text = we.responsibility;
+                this.we_id = we.we_id;
+                this.we_address.Text = we.address;
+                this.we_award.Text = we.award;
+                this.we_contact.Text = we.contact;
+                this.we_department.Text = we.department;
+                this.we_email.Text = we.email;
+                this.we_institute.Text = we.institute;
+                this.we_resign_reason.Text = we.resign_reason;
+                this.we_telephone.Text = we.telephone;
+                this.we_responsibility.Text = we.responsibility;
 
-                we_date_from_date.Value = we.getDate_from();
-                we_date_to_date.Value = we.getDate_to();
-                we_date_perma_date.Value = we.getDate_perma();
+                this.we_date_from_date.Value = we.getDate_from();
+                this.we_date_to_date.Value = we.getDate_to();
+                this.we_date_perma_date.Value = we.getDate_perma();
 
-                if (we.occupation_relevant == true) { we_occupation_relevant.Checked = true; }
-                else { we_occupation_relevant.Checked = false; }
+                if (we.occupation_relevant == true) { this.we_occupation_relevant.Checked = true; }
+                else { this.we_occupation_relevant.Checked = false; }
             }
         }
 
@@ -448,9 +457,10 @@ namespace OOSD_Project
 
             if (!(ea == null))
             {
-                ea_award.Text = ea.award;
-                ea_method.Text = ea.method;
-                ea_type.Text = ea.type;
+                this.ea_id = ea.ea_id;
+                this.ea_award.Text = ea.award;
+                this.ea_method.Text = ea.method;
+                this.ea_type.Text = ea.type;
             }
         }
 
@@ -461,23 +471,24 @@ namespace OOSD_Project
 
             if (!(mem == null))
             {
-                member_contribution.Text = mem.contribution;
-                member_id.Text = mem.member_id;
-                member_institute.Text = mem.institute;
-                member_method.Text = mem.method;
-                member_status.Text = mem.status;
-                memebr_post_name.Text = mem.post_name;
+                this.mem_id = mem.mem_id;
+                this.member_contribution.Text = mem.contribution;
+                this.member_id.Text = mem.member_id;
+                this.member_institute.Text = mem.institute;
+                this.member_method.Text = mem.method;
+                this.member_status.Text = mem.status;
+                this.memebr_post_name.Text = mem.post_name;
 
-                member_begin_date_date.Value = mem.getBegin_date();
-                member_renewal_date.Value = mem.getRenewal_date();
-                member_active_date_person_date.Value = mem.getActive_date_person();
-                member_active_date_insti_date.Value = mem.getActive_date_insti();
+                this.member_begin_date_date.Value = mem.getBegin_date();
+                this.member_renewal_date.Value = mem.getRenewal_date();
+                this.member_active_date_person_date.Value = mem.getActive_date_person();
+                this.member_active_date_insti_date.Value = mem.getActive_date_insti();
 
-                if (mem.personal_payment == true) { member_personal_payment.Checked = true; }
-                else { member_personal_payment.Checked = false; }
+                if (mem.personal_payment == true) { this.member_personal_payment.Checked = true; }
+                else { this.member_personal_payment.Checked = false; }
 
-                if (mem.institutional_payment == true) { member_institutional_payment.Checked = true; }
-                else { member_institutional_payment.Checked = false; }
+                if (mem.institutional_payment == true) { this.member_institutional_payment.Checked = true; }
+                else { this.member_institutional_payment.Checked = false; }
             }
         }
 
@@ -505,6 +516,7 @@ namespace OOSD_Project
 
             if (!(fb == null))
             {
+                this.fb_id = fb.fb_id;
                 bank_name.Text = fb.bank_name;
                 bank_branch_name.Text = fb.branch_name;
                 bank_account_name.Text = fb.account_number;
@@ -522,12 +534,13 @@ namespace OOSD_Project
 
             if (!(fi == null))
             {
-                insurance_type.Text = fi.type;
-                insurance_value.Text = fi.value.ToString();
-                insurance_notes.Text = fi.note;
+                this.fi_id = fi.fi_id;
+                this.insurance_type.Text = fi.type;
+                this.insurance_value.Text = fi.value.ToString();
+                this.insurance_notes.Text = fi.note;
 
-                insurance_started_date.Value = fi.getBegin_date();
-                insurance_ended_year.Value = fb.getEnd_date();
+                this.insurance_started_date.Value = fi.getBegin_date();
+                this.insurance_ended_year.Value = fb.getEnd_date();
             }
 
 
@@ -536,11 +549,12 @@ namespace OOSD_Project
 
             if (!(ft == null))
             {
-                tax_type.Text = ft.type;
-                tax_no.Text = ft.number;
-                tax_notes.Text = ft.note;
-                tax_paying_method.Text = ft.payment_method;
-                tax_status.Text = ft.status;
+                this.ft_id = ft.ft_id;
+                this.tax_type.Text = ft.type;
+                this.tax_no.Text = ft.number;
+                this.tax_notes.Text = ft.note;
+                this.tax_paying_method.Text = ft.payment_method;
+                this.tax_status.Text = ft.status;
             }
         }
 
@@ -552,17 +566,18 @@ namespace OOSD_Project
 
             if (!(r == null))
             {
-                remun_basic_salary.Text = r.basic_salary.ToString();
-                remun_fuel_allowance.Text = r.fuel_allowance.ToString();
-                remun_housing_allowance.Text = r.housing_allowance.ToString();
-                remun_salary_increase_amount.Text = r.salary_increase_amount.ToString();
-                remun_other_allowance.Text = r.other_allowance.ToString();
-                remun_current_total_salary.Text = r.current_total_salary.ToString();
-                remun_salary_grade.Text = r.salary_grade;
-                remun_salary_increase_date.Value = r.getsalary_increase_date();
-                remun_salary_slip_no.Text = r.salary_slip_no;
-                remun_mobile_phone_allowance.Text = r.mobile_phone_allowance.ToString();
-                remun_transport_allowance.Text = r.transport_allowance.ToString();
+                this.r_id = r.r_id;
+                this.remun_basic_salary.Text = r.basic_salary.ToString();
+                this.remun_fuel_allowance.Text = r.fuel_allowance.ToString();
+                this.remun_housing_allowance.Text = r.housing_allowance.ToString();
+                this.remun_salary_increase_amount.Text = r.salary_increase_amount.ToString();
+                this.remun_other_allowance.Text = r.other_allowance.ToString();
+                this.remun_current_total_salary.Text = r.current_total_salary.ToString();
+                this.remun_salary_grade.Text = r.salary_grade;
+                this.remun_salary_increase_date.Value = r.getsalary_increase_date();
+                this.remun_salary_slip_no.Text = r.salary_slip_no;
+                this.remun_mobile_phone_allowance.Text = r.mobile_phone_allowance.ToString();
+                this.remun_transport_allowance.Text = r.transport_allowance.ToString();
             }
 
 
@@ -571,9 +586,10 @@ namespace OOSD_Project
 
             if (!(cb == null))
             {
-                cash_approved_benefit.Text = cb.approved_benefit;
-                cash_issued_price.Text = cb.price.ToString();
-                cash_issued_date.Value = cb.getdate_issued();
+                this.cb_id = cb.cb_id;
+                this.cash_approved_benefit.Text = cb.approved_benefit;
+                this.cash_issued_price.Text = cb.price.ToString();
+                this.cash_issued_date.Value = cb.getdate_issued();
             }
 
 
@@ -582,10 +598,11 @@ namespace OOSD_Project
 
             if (!(ncb == null))
             {
-                noncash_approved_benefit.Text = ncb.approved_benefit;
-                noncash_price.Text = ncb.price.ToString();
-                noncash_quantity.Text = ncb.amount.ToString();
-                noncash_issued_date.Value = ncb.getdate_issued();
+                this.ncb_id = ncb.ncb_id;
+                this.noncash_approved_benefit.Text = ncb.approved_benefit;
+                this.noncash_price.Text = ncb.price.ToString();
+                this.noncash_quantity.Text = ncb.amount.ToString();
+                this.noncash_issued_date.Value = ncb.getdate_issued();
             }
         }
 
@@ -597,15 +614,16 @@ namespace OOSD_Project
 
             if (!(p == null))
             {
-                passport_post.Text = p.post;
-                passport_rank.Text = p.rank;
-                passport_no.Text = p.number;
-                passport_issued_date.Value = p.getdate_of_issue();
-                passport_renewal_date.Value = p.getdate_of_renewal();
-                passport_issued_place.Text = p.place_of_issue;
+                this.p_id = p.p_id;
+                this.passport_post.Text = p.post;
+                this.passport_rank.Text = p.rank;
+                this.passport_no.Text = p.number;
+                this.passport_issued_date.Value = p.getdate_of_issue();
+                this.passport_renewal_date.Value = p.getdate_of_renewal();
+                this.passport_issued_place.Text = p.place_of_issue;
 
-                if (p.status) { passport_status_active.Checked = true; }
-                else { passport_status_deactive.Checked = true; }
+                if (p.status) { this.passport_status_active.Checked = true; }
+                else { this.passport_status_deactive.Checked = true; }
             }
         }
 
@@ -615,30 +633,30 @@ namespace OOSD_Project
         {
             Employee employee = new Employee();
 
-            employee.setAction_status(action_status.Text);
-            employee.setBlood_grouph(blood_group.Text);
-            employee.setDate_issued(date_issued.Text);
-            employee.setEmployee_no(employee_no.Text);
-            employee.setEmployee_type(employee_type.Text);
-            employee.setEpf_no(epf_no.Text);
-            employee.setFirst_name(first_name.Text);
+            employee.setAction_status(this.action_status.Text);
+            employee.setBlood_grouph(this.blood_group.Text);
+            employee.setDate_issued(this.date_issued.Text);
+            employee.setEmployee_no(this.employee_no.Text);
+            employee.setEmployee_type(this.employee_type.Text);
+            employee.setEpf_no(this.epf_no.Text);
+            employee.setFirst_name(this.first_name.Text);
             //employee.setFull_name(full_name.Text);
             //employee.setImg_url();
-            employee.setInitials(initials.Text);
-            employee.setLast_name(last_name.Text);
-            employee.setDate_of_birth(dob_date.Value.Date);
-            employee.setDate_of_marriage(marry_date.Value.Date);
+            employee.setInitials(this.initials.Text);
+            employee.setLast_name(this.last_name.Text);
+            employee.setDate_of_birth(this.dob_date.Value.Date);
+            employee.setDate_of_marriage(this.marry_date.Value.Date);
 
-            if (married.Checked) { employee.setMarried(1); }
+            if (this.married.Checked) { employee.setMarried(1); }
             else { employee.setMarried(0); }
 
-            employee.setNationality(nationality.Text);
-            employee.setNic_no(nic_no.Text);
-            employee.setOccupation(occupation.Text);
-            employee.setOld_employee_no(old_employee_no.Text);
-            employee.setPlace_of_birth(place_of_birth.Text);
-            employee.setReligion(religion.Text);
-            employee.setSalutation(salutation.Text);
+            employee.setNationality(this.nationality.Text);
+            employee.setNic_no(this.nic_no.Text);
+            employee.setOccupation(this.occupation.Text);
+            employee.setOld_employee_no(this.old_employee_no.Text);
+            employee.setPlace_of_birth(this.place_of_birth.Text);
+            employee.setReligion(this.religion.Text);
+            employee.setSalutation(this.salutation.Text);
 
             bool state = EmployeeHandler.updateEmployee(employee);
 
@@ -650,30 +668,31 @@ namespace OOSD_Project
         public void updateContactDetails()
         {
             ContactDetails cd = new ContactDetails();
-            cd.cur_address = cur_address.Text;
-            cd.cur_city = cur_city.Text;
-            cd.cur_district = cur_district.Text;
-            cd.cur_email = cur_email.Text;
-            cd.cur_fax = cur_fax.Text;
-            cd.cur_grama = cur_grama.Text;
-            cd.cur_home_no = cur_home_no.Text;
-            cd.cur_mobile = cur_mobile.Text;
-            cd.cur_polling_division = cur_polling_division.Text;
-            cd.cur_province = cur_province.Text;
-            cd.cur_teleophone = cur_teleophone.Text;
-            cd.cur_uc = cur_uc.Text;
-            cd.perm_address = perm_address.Text;
-            cd.perm_city = perm_city.Text;
-            cd.perm_district = perm_district.Text;
-            cd.perm_email = perm_email.Text;
-            cd.perm_fax = perm_fax.Text;
-            cd.perm_grama = perm_grama.Text;
-            cd.perm_home_no = perm_home_no.Text;
-            cd.perm_mobile = perm_mobile.Text;
-            cd.perm_polling_division = perm_polling_division.Text;
-            cd.perm_province = perm_province.Text;
-            cd.perm_teleophone = perm_teleophone.Text;
-            cd.perm_uc = perm_uc.Text;
+            cd.cd_id = this.cd_id;
+            cd.cur_address = this.cur_address.Text;
+            cd.cur_city = this.cur_city.Text;
+            cd.cur_district = this.cur_district.Text;
+            cd.cur_email = this.cur_email.Text;
+            cd.cur_fax = this.cur_fax.Text;
+            cd.cur_grama = this.cur_grama.Text;
+            cd.cur_home_no = this.cur_home_no.Text;
+            cd.cur_mobile = this.cur_mobile.Text;
+            cd.cur_polling_division = this.cur_polling_division.Text;
+            cd.cur_province = this.cur_province.Text;
+            cd.cur_teleophone = this.cur_teleophone.Text;
+            cd.cur_uc = this.cur_uc.Text;
+            cd.perm_address = this.perm_address.Text;
+            cd.perm_city = this.perm_city.Text;
+            cd.perm_district = this.perm_district.Text;
+            cd.perm_email = this.perm_email.Text;
+            cd.perm_fax = this.perm_fax.Text;
+            cd.perm_grama = this.perm_grama.Text;
+            cd.perm_home_no = this.perm_home_no.Text;
+            cd.perm_mobile = this.perm_mobile.Text;
+            cd.perm_polling_division = this.perm_polling_division.Text;
+            cd.perm_province = this.perm_province.Text;
+            cd.perm_teleophone = this.perm_teleophone.Text;
+            cd.perm_uc = this.perm_uc.Text;
 
             bool state = ContactDetailsHandler.updateContactDetails(cd);
 
@@ -684,20 +703,21 @@ namespace OOSD_Project
         public void updateDependentDetails() {
             DependentDetails dd = new DependentDetails();
 
-            dd.birth_certificate = depend_birth_certificate.Text;
-            dd.setDate_of_post(depend_date_of_post_date.Value.Date);
-            dd.education = depend_education.Text;
-            dd.full_name = depend_full_name.Text;
-            dd.marriage_certificate = depend_marriage_certificate.Text;
-            dd.nic_no = depend_nic_no.Text;
-            dd.note = depend_note.Text;
-            dd.office_tp = depend_office_tp.Text;
-            dd.official_address = depend_official_address.Text;
-            dd.personal_address = depend_personal_address.Text;
-            dd.personal_tp = depend_personal_tp.Text;
-            dd.relation = depend_relation.Text;
-            dd.salutation = depend_salutation.Text;
-            dd.status = depend_status.Text;
+            dd.dd_id = this.dd_id;
+            dd.birth_certificate = this.depend_birth_certificate.Text;
+            dd.setDate_of_post(this.depend_date_of_post_date.Value.Date);
+            dd.education = this.depend_education.Text;
+            dd.full_name = this.depend_full_name.Text;
+            dd.marriage_certificate = this.depend_marriage_certificate.Text;
+            dd.nic_no = this.depend_nic_no.Text;
+            dd.note = this.depend_note.Text;
+            dd.office_tp = this.depend_office_tp.Text;
+            dd.official_address = this.depend_official_address.Text;
+            dd.personal_address = this.depend_personal_address.Text;
+            dd.personal_tp = this.depend_personal_tp.Text;
+            dd.relation = this.depend_relation.Text;
+            dd.salutation = this.depend_salutation.Text;
+            dd.status = this.depend_status.Text;
 
             bool state = DependentDetailsHandler.updateDependentDetails(dd);
 
@@ -708,18 +728,19 @@ namespace OOSD_Project
         public void updateEmergencyContact()
         {
             EmergencyContact ec = new EmergencyContact();
-            ec.employee_no = emg_employee_no.Text;
-            ec.full_name = emg_full_name.Text;
-            ec.int_ext = emg_int_ext.Text;
-            ec.mobile_no = emg_mobile_no.Text;
-            ec.nic_no = emg_nic_no.Text;
-            ec.office_tp = emg_office_tp.Text;
-            ec.official_address = emg_official_address.Text;
-            ec.personal_address = emg_personal_address.Text;
-            ec.personal_tp = emg_personal_tp.Text;
-            ec.priority = emg_priority.Text;
-            ec.relation = emg_relation.Text;
-            ec.salutation = emg_salutation.Text;
+            ec.ec_id = this.ec_id;
+            ec.employee_no = this.emg_employee_no.Text;
+            ec.full_name = this.emg_full_name.Text;
+            ec.int_ext = this.emg_int_ext.Text;
+            ec.mobile_no = this.emg_mobile_no.Text;
+            ec.nic_no = this.emg_nic_no.Text;
+            ec.office_tp = this.emg_office_tp.Text;
+            ec.official_address = this.emg_official_address.Text;
+            ec.personal_address = this.emg_personal_address.Text;
+            ec.personal_tp = this.emg_personal_tp.Text;
+            ec.priority = this.emg_priority.Text;
+            ec.relation = this.emg_relation.Text;
+            ec.salutation = this.emg_salutation.Text;
 
             bool state = EmergencyContactHandler.updateEmergencyContact(ec);
 
@@ -731,13 +752,14 @@ namespace OOSD_Project
         {
             WorkstationDetails wd = new WorkstationDetails();
 
-            wd.division = wsd_division.Text;
-            wd.post = wsd_post.Text;
-            wd.power = wsd_power.Text;
-            wd.rank = wsd_rank.Text;
-            wd.responsibility = wsd_responsibility.Text;
-            wd.salary_station = wsd_salary_station.Text;
-            wd.setDate_of_post(wsd_date_of_post_date.Value.Date);
+            wd.ws_id = this.ws_id;
+            wd.division = this.wsd_division.Text;
+            wd.post = this.wsd_post.Text;
+            wd.power = this.wsd_power.Text;
+            wd.rank = this.wsd_rank.Text;
+            wd.responsibility = this.wsd_responsibility.Text;
+            wd.salary_station = this.wsd_salary_station.Text;
+            wd.setDate_of_post(this.wsd_date_of_post_date.Value.Date);
 
             bool state = WorkstationDetailsHandler.updateWorkstationDetails(wd);
 
@@ -749,19 +771,20 @@ namespace OOSD_Project
         {
             Qualification q = new Qualification();
 
-            if (qual_highest_qualification.Checked) { q.highest_qualification = true; }
+            q.q_id = this.q_id;
+            if (this.qual_highest_qualification.Checked) { q.highest_qualification = true; }
             else { q.highest_qualification = false; }
 
-            if (qual_occupation_relevant.Checked) { q.occupation_relevant = true; }
+            if (this.qual_occupation_relevant.Checked) { q.occupation_relevant = true; }
             else { q.occupation_relevant = false; }
 
-            q.institute = qual_institute.Text;
-            q.months = qual_months.Text;
-            q.note = qual_note.Text;
-            q.qualification = qual_qualification.Text;
-            q.qualification_no = qualification_no.Text;
-            q.status = qual_status.Text;
-            q.year = qual_year.Text;
+            q.institute = this.qual_institute.Text;
+            q.months = this.qual_months.Text;
+            q.note = this.qual_note.Text;
+            q.qualification = this.qual_qualification.Text;
+            q.qualification_no = this.qualification_no.Text;
+            q.status = this.qual_status.Text;
+            q.year = this.qual_year.Text;
 
             bool state = QualificationsHandler.updateQualifications(q);
 
@@ -773,22 +796,23 @@ namespace OOSD_Project
         {
             WorkingExperience we = new WorkingExperience();
 
-            we.address = we_address.Text;
-            we.award = we_award.Text;
-            we.contact = we_contact.Text;
-            we.department = we_department.Text;
-            we.email = we_department.Text;
-            we.institute = we_institute.Text;
+            we.we_id = this.we_id;
+            we.address = this.we_address.Text;
+            we.award = this.we_award.Text;
+            we.contact = this.we_contact.Text;
+            we.department = this.we_department.Text;
+            we.email = this.we_department.Text;
+            we.institute = this.we_institute.Text;
 
-            if (we_occupation_relevant.Checked) { we.occupation_relevant = true; }
+            if (this.we_occupation_relevant.Checked) { we.occupation_relevant = true; }
             else { we.occupation_relevant = false; }
 
-            we.resign_reason = we_resign_reason.Text;
-            we.responsibility = we_responsibility.Text;
-            we.telephone = we_telephone.Text;
-            we.setDate_from(we_date_from_date.Value.Date);
-            we.setDate_to(we_date_to_date.Value.Date);
-            we.setDate_perma(we_date_perma_date.Value.Date);
+            we.resign_reason = this.we_resign_reason.Text;
+            we.responsibility = this.we_responsibility.Text;
+            we.telephone = this.we_telephone.Text;
+            we.setDate_from(this.we_date_from_date.Value.Date);
+            we.setDate_to(this.we_date_to_date.Value.Date);
+            we.setDate_perma(this.we_date_perma_date.Value.Date);
 
             bool state = WorkingExperienceHandler.updateWorkingExperience(we);
 
@@ -800,9 +824,10 @@ namespace OOSD_Project
         {
             ExtracurricularActivity eca = new ExtracurricularActivity();
 
-            eca.award = ea_award.Text;
-            eca.method = ea_method.Text;
-            eca.type = ea_type.Text;
+            eca.ea_id = this.ea_id;
+            eca.award = this.ea_award.Text;
+            eca.method = this.ea_method.Text;
+            eca.type = this.ea_type.Text;
 
             bool state = ExtracurricularActivityHandler.updateExtracurricularActivity(eca);
 
@@ -814,21 +839,22 @@ namespace OOSD_Project
         {
             Membership m = new Membership();
 
-            m.contribution = member_contribution.Text;
-            m.institute = member_institute.Text;
-            m.member_id = member_id.Text;
-            m.post_name = memebr_post_name.Text;
-            m.method = member_method.Text;
+            m.mem_id = this.mem_id;
+            m.contribution = this.member_contribution.Text;
+            m.institute = this.member_institute.Text;
+            m.member_id = this.member_id.Text;
+            m.post_name = this.memebr_post_name.Text;
+            m.method = this.member_method.Text;
 
-            m.setBegin_date(member_begin_date_date.Value.Date);
-            m.setRenewal_date(member_renewal_date.Value.Date);
-            m.setActive_date_insti(member_active_date_insti_date.Value.Date);
-            m.setActive_date_person(member_active_date_person_date.Value.Date);
+            m.setBegin_date(this.member_begin_date_date.Value.Date);
+            m.setRenewal_date(this.member_renewal_date.Value.Date);
+            m.setActive_date_insti(this.member_active_date_insti_date.Value.Date);
+            m.setActive_date_person(this.member_active_date_person_date.Value.Date);
 
-            if (member_institutional_payment.Checked) { m.institutional_payment = true; }
+            if (this.member_institutional_payment.Checked) { m.institutional_payment = true; }
             else { m.institutional_payment = false; }
 
-            if (member_personal_payment.Checked) { m.personal_payment = true; }
+            if (this.member_personal_payment.Checked) { m.personal_payment = true; }
             else { m.personal_payment = false; }
 
             bool state = MembershipHandler.updateMembership(m);
@@ -839,7 +865,7 @@ namespace OOSD_Project
         private void button3_Click(object sender, EventArgs e)
         {
             Language l = new Language();
-            l.language_name = language_name.Text;
+            l.language_name = this.language_name.Text;
             bool status = LanguageHandler.addLanguage(l);
         }
 
@@ -847,34 +873,37 @@ namespace OOSD_Project
         {
             //Update finance bank details
             FinanceBank fb = new FinanceBank();
-            fb.bank_name = bank_name.Text;
-            fb.branch_name = bank_branch_name.Text;
-            fb.account_number = bank_account_name.Text;
-            fb.account_type = bank_account_type.Text;
-            fb.setBegin_date(bank_account_started_year.Value.Date);
-            fb.setEnd_date(bank_account_closed_year.Value.Date);
-            fb.Qual_year = bank_qualified_year.Text;
-            fb.qualification = bank_qualification.Text;
+            fb.fb_id = this.fb_id;
+            fb.bank_name = this.bank_name.Text;
+            fb.branch_name = this.bank_branch_name.Text;
+            fb.account_number = this.bank_account_name.Text;
+            fb.account_type = this.bank_account_type.Text;
+            fb.setBegin_date(this.bank_account_started_year.Value.Date);
+            fb.setEnd_date(this.bank_account_closed_year.Value.Date);
+            fb.Qual_year = this.bank_qualified_year.Text;
+            fb.qualification = this.bank_qualification.Text;
             bool state = FinanceBankHandler.updateFinanceBank(fb);
             Console.Write(state + "\n");
 
             //Update finance insurance details
             FinanceInsurance fi = new FinanceInsurance();
-            fi.type = insurance_type.Text;
-            fi.value = Convert.ToDouble(insurance_value.Text);
-            fi.setBegin_date(insurance_started_date.Value.Date);
-            fi.setEnd_date(insurance_ended_year.Value.Date);
-            fi.note = insurance_notes.Text;
+            fi.fi_id = this.fi_id;
+            fi.type = this.insurance_type.Text;
+            fi.value = Convert.ToDouble(this.insurance_value.Text);
+            fi.setBegin_date(this.insurance_started_date.Value.Date);
+            fi.setEnd_date(this.insurance_ended_year.Value.Date);
+            fi.note = this.insurance_notes.Text;
             state = FinanceInsuranceHandler.updateFinanceInsurance(fi);
             Console.Write(state + "\n");
 
             //Update finance tax details
             FinanceTax ft = new FinanceTax();
-            ft.type = tax_type.Text;
-            ft.number = tax_no.Text;
-            ft.payment_method = tax_paying_method.Text;
-            ft.status = tax_status.Text;
-            ft.note = tax_notes.Text;
+            ft.ft_id = this.ft_id;
+            ft.type = this.tax_type.Text;
+            ft.number = this.tax_no.Text;
+            ft.payment_method = this.tax_paying_method.Text;
+            ft.status = this.tax_status.Text;
+            ft.note = this.tax_notes.Text;
             state = FinanceTaxHandler.updateFinanceTax(ft);
             Console.Write(state + "\n");
         }
@@ -884,17 +913,18 @@ namespace OOSD_Project
         {
             Remuneration r = new Remuneration();
 
-            r.salary_grade = remun_salary_grade.Text;
-            r.salary_slip_no = remun_salary_slip_no.Text;
-            r.basic_salary = (float)Convert.ToDouble(remun_basic_salary.Text);
-            r.transport_allowance = (float)Convert.ToDouble(remun_transport_allowance.Text);
-            r.fuel_allowance = (float)Convert.ToDouble(remun_fuel_allowance.Text);
-            r.mobile_phone_allowance = (float)Convert.ToDouble(remun_mobile_phone_allowance.Text);
-            r.housing_allowance = (float)Convert.ToDouble(remun_housing_allowance.Text);
-            r.other_allowance = (float)Convert.ToDouble(remun_other_allowance.Text);
-            r.salary_increase_amount = (float)Convert.ToDouble(remun_salary_increase_amount.Text);
-            r.current_total_salary = (float)Convert.ToDouble(remun_current_total_salary.Text);
-            r.setsalary_increase_date(remun_salary_increase_date.Value.Date);
+            r.r_id = this.r_id;
+            r.salary_grade = this.remun_salary_grade.Text;
+            r.salary_slip_no = this.remun_salary_slip_no.Text;
+            r.basic_salary = (float)Convert.ToDouble(this.remun_basic_salary.Text);
+            r.transport_allowance = (float)Convert.ToDouble(this.remun_transport_allowance.Text);
+            r.fuel_allowance = (float)Convert.ToDouble(this.remun_fuel_allowance.Text);
+            r.mobile_phone_allowance = (float)Convert.ToDouble(this.remun_mobile_phone_allowance.Text);
+            r.housing_allowance = (float)Convert.ToDouble(this.remun_housing_allowance.Text);
+            r.other_allowance = (float)Convert.ToDouble(this.remun_other_allowance.Text);
+            r.salary_increase_amount = (float)Convert.ToDouble(this.remun_salary_increase_amount.Text);
+            r.current_total_salary = (float)Convert.ToDouble(this.remun_current_total_salary.Text);
+            r.setsalary_increase_date(this.remun_salary_increase_date.Value.Date);
             bool state = RemunerationHandler.updateRemuneration(r);
             Console.Write(state + "\n");
         }
@@ -904,17 +934,19 @@ namespace OOSD_Project
         public void updateBenefits()
         {
             CashBenefit cb = new CashBenefit();
-            cb.approved_benefit = cash_approved_benefit.Text;
-            cb.price = (float)Convert.ToDouble(cash_issued_price.Text);
-            cb.setdate_issued(cash_issued_date.Value.Date);
+            cb.cb_id = this.cb_id;
+            cb.approved_benefit = this.cash_approved_benefit.Text;
+            cb.price = (float)Convert.ToDouble(this.cash_issued_price.Text);
+            cb.setdate_issued(this.cash_issued_date.Value.Date);
             bool state = BenefitsHandler.updateCashBenefit(cb);
             Console.Write(state + "\n");
 
             NonCashBenefit ncb = new NonCashBenefit();
-            ncb.approved_benefit = noncash_approved_benefit.Text;
-            ncb.price = (float)Convert.ToDouble(noncash_price.Text);
-            ncb.amount = (float)Convert.ToDouble(noncash_quantity.Text);
-            ncb.setdate_issued(noncash_issued_date.Value.Date);
+            ncb.ncb_id = this.ncb_id;
+            ncb.approved_benefit = this.noncash_approved_benefit.Text;
+            ncb.price = (float)Convert.ToDouble(this.noncash_price.Text);
+            ncb.amount = (float)Convert.ToDouble(this.noncash_quantity.Text);
+            ncb.setdate_issued(this.noncash_issued_date.Value.Date);
             state = BenefitsHandler.updateNonCashBenefit(ncb);
             Console.Write(state + "\n");
 
@@ -925,14 +957,15 @@ namespace OOSD_Project
         {
             Passport p = new Passport();
 
-            p.number = passport_no.Text;
-            p.place_of_issue = passport_issued_place.Text;
-            p.post = passport_post.Text;
-            p.rank = passport_rank.Text;
-            p.setdate_of_issue(passport_issued_date.Value.Date);
-            p.setdate_of_renewal(passport_renewal_date.Value.Date);
+            p.p_id = this.p_id;
+            p.number = this.passport_no.Text;
+            p.place_of_issue = this.passport_issued_place.Text;
+            p.post = this.passport_post.Text;
+            p.rank = this.passport_rank.Text;
+            p.setdate_of_issue(this.passport_issued_date.Value.Date);
+            p.setdate_of_renewal(this.passport_renewal_date.Value.Date);
 
-            if (passport_status_active.Checked) { p.status = true; }
+            if (this.passport_status_active.Checked) { p.status = true; }
             else { p.status = false; }
 
             bool state = PassportHandler.updatePassport(p);

@@ -8,7 +8,7 @@ namespace OOSD_Project.DBTableClass
 {
     class FinanceBank
     {
-
+        public int fb_id { set; get; }
         public string bank_name { set; get; }
         public string branch_name { set; get; }
         public string account_number { set; get; }

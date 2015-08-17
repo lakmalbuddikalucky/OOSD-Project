@@ -8,6 +8,7 @@ namespace OOSD_Project.DBTableClass
 {
     class Passport
     {
+        public int p_id { set; get; }
         public string rank { set; get; }
         public string post { set; get; }
         public string number { set; get; }

@@ -69,6 +69,7 @@ namespace OOSD_Project.DBHandler
                 if (reader.Read())
                 {
                     ft = new FinanceTax();
+                    ft.ft_id = int.Parse(reader["idfinance_tax"].ToString());
                     ft.type = reader["type"].ToString();
                     ft.number = reader["number"].ToString();
                     ft.note = reader["note"].ToString();
@@ -111,7 +112,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE finance_tax SET type=N'" + ft.type + "', number=" + ft.number + ", payment_method=N'" + ft.payment_method + "', status=N'" + ft.status + "', note=N'" + ft.note + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE finance_tax SET type=N'" + ft.type + "', number=" + ft.number + ", payment_method=N'" + ft.payment_method + "', status=N'" + ft.status + "', note=N'" + ft.note + "' WHERE employee_idemployee=" + Employee.employee_id + " AND idfinance_tax=" + ft.ft_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

@@ -8,6 +8,7 @@ namespace OOSD_Project.DBTableClass
 {
     class WorkingExperience
     {
+        public int we_id { set; get; }
         public string institute { set; get; }
         public string address { set; get; }
         public string telephone { set; get; }

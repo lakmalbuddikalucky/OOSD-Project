@@ -8,6 +8,7 @@ namespace OOSD_Project.DBTableClass
 {
     class FinanceInsurance
     {
+        public int fi_id { set; get; }
         public string type { set; get; }
         public double value { set; get; }
 

@@ -70,6 +70,7 @@ namespace OOSD_Project.DBHandler
                 {
                     cd = new ContactDetails();
 
+                    cd.cd_id = int.Parse(reader["idcontact_details"].ToString());
                     cd.cur_address=reader["cur_address"].ToString();
                     cd.cur_city = reader["cur_city"].ToString();
                     cd.cur_district = reader["cur_district"].ToString();
@@ -132,7 +133,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE contact_details SET perm_home_no=N'" + cd.perm_home_no + "', perm_address=N'" + cd.perm_address + "', perm_city=N'" + cd.perm_city + "', perm_province=N'" + cd.perm_province + "', perm_district=N'" + cd.perm_district + "', perm_uc=N'" + cd.perm_uc + "', perm_grama=N'" + cd.perm_grama + "', perm_polling_division=N'" + cd.perm_polling_division + "', perm_teleophone=N'" + cd.perm_teleophone + "', perm_mobile=N'" + cd.perm_mobile + "', perm_fax=N'" + cd.perm_fax + "', perm_email=N'" + cd.perm_email + "', cur_home_no=N'" + cd.cur_home_no + "', cur_address=N'" + cd.cur_address + "', cur_city=N'" + cd.cur_city + "', cur_province=N'" + cd.cur_province + "', cur_district=N'" + cd.cur_district + "', cur_uc=N'" + cd.cur_uc + "', cur_grama=N'" + cd.cur_grama + "', cur_polling_division=N'" + cd.cur_polling_division + "', cur_teleophone=N'" + cd.cur_teleophone + "', cur_mobile=N'" + cd.cur_mobile + "', cur_fax=N'" + cd.cur_fax + "', cur_email=N'" + cd.cur_email + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE contact_details SET perm_home_no=N'" + cd.perm_home_no + "', perm_address=N'" + cd.perm_address + "', perm_city=N'" + cd.perm_city + "', perm_province=N'" + cd.perm_province + "', perm_district=N'" + cd.perm_district + "', perm_uc=N'" + cd.perm_uc + "', perm_grama=N'" + cd.perm_grama + "', perm_polling_division=N'" + cd.perm_polling_division + "', perm_teleophone=N'" + cd.perm_teleophone + "', perm_mobile=N'" + cd.perm_mobile + "', perm_fax=N'" + cd.perm_fax + "', perm_email=N'" + cd.perm_email + "', cur_home_no=N'" + cd.cur_home_no + "', cur_address=N'" + cd.cur_address + "', cur_city=N'" + cd.cur_city + "', cur_province=N'" + cd.cur_province + "', cur_district=N'" + cd.cur_district + "', cur_uc=N'" + cd.cur_uc + "', cur_grama=N'" + cd.cur_grama + "', cur_polling_division=N'" + cd.cur_polling_division + "', cur_teleophone=N'" + cd.cur_teleophone + "', cur_mobile=N'" + cd.cur_mobile + "', cur_fax=N'" + cd.cur_fax + "', cur_email=N'" + cd.cur_email + "' WHERE employee_idemployee=" + Employee.employee_id + " AND idcontact_details="+cd.cd_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

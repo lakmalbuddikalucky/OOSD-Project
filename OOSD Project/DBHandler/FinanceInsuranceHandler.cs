@@ -69,6 +69,7 @@ namespace OOSD_Project.DBHandler
                 {
                     fi = new FinanceInsurance();
 
+                    fi.fi_id = int.Parse(reader["idfinance_insurance"].ToString());
                     fi.type = reader["type"].ToString();
                     fi.value = double.Parse(reader["value"].ToString());
                     fi.note = reader["note"].ToString();
@@ -112,7 +113,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE finance_insurance SET type=N'" + fi.type + "', value=" + fi.value + ", begin_date='" + fi.getBegin_date().ToString("yyyy-MM-dd") + "', end_date='" + fi.getEnd_date().ToString("yyyy-MM-dd") + "', note=N'" + fi.note + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE finance_insurance SET type=N'" + fi.type + "', value=" + fi.value + ", begin_date='" + fi.getBegin_date().ToString("yyyy-MM-dd") + "', end_date='" + fi.getEnd_date().ToString("yyyy-MM-dd") + "', note=N'" + fi.note + "' WHERE employee_idemployee=" + Employee.employee_id + " AND idfinance_insurance=" + fi.fi_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

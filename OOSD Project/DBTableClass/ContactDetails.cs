@@ -8,6 +8,7 @@ namespace OOSD_Project.DBTableClass
 {
     class ContactDetails
     {
+        public int cd_id { set; get; }
         public string perm_home_no { set; get; }
         public string perm_address { set; get; }
         public string perm_city { set; get; }

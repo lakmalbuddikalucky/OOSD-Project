@@ -68,8 +68,8 @@ namespace OOSD_Project.DBHandler
 
                 if (reader.Read())
                 {
-                    fb = new FinanceBank(); 
-
+                    fb = new FinanceBank();
+                    fb.fb_id = int.Parse(reader["idfinance_bank"].ToString());
                     fb.bank_name = reader["bank_name"].ToString();
                     fb.branch_name = reader["branch_name"].ToString();
                     fb.account_number = reader["account_number"].ToString();
@@ -117,7 +117,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE finance_bank SET bank_name=N'" + fb.bank_name + "', branch_name=N'" + fb.branch_name + "', account_number=N'" + fb.account_number + "', account_type=N'" + fb.account_type + "', begin_date='" + fb.getBegin_date().ToString("yyyy-MM-dd") + "', end_date='" + fb.getEnd_date().ToString("yyyy-MM-dd") + "', qualification=N'" + fb.qualification + "', qual_year=N'" + fb.Qual_year + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE finance_bank SET bank_name=N'" + fb.bank_name + "', branch_name=N'" + fb.branch_name + "', account_number=N'" + fb.account_number + "', account_type=N'" + fb.account_type + "', begin_date='" + fb.getBegin_date().ToString("yyyy-MM-dd") + "', end_date='" + fb.getEnd_date().ToString("yyyy-MM-dd") + "', qualification=N'" + fb.qualification + "', qual_year=N'" + fb.Qual_year + "' WHERE employee_idemployee=" + Employee.employee_id + " AND idfinance_bank=" + fb.fb_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

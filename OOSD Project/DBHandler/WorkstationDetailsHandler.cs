@@ -73,6 +73,7 @@ namespace OOSD_Project.DBHandler
                 {
                     wd = new WorkstationDetails();
 
+                    wd.ws_id = int.Parse(reader["idworkstation_details"].ToString());
                     wd.division = reader["division"].ToString();
                     wd.post = reader["post"].ToString();
                     wd.power = reader["power"].ToString();
@@ -116,7 +117,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE workstation_details SET rank=N'" + ws.rank + "', division=N'" + ws.division + "', post=N'" + ws.post + "', date_of_post='" + ws.getDate_of_post().ToString("yyyy-MM-dd") + "', salary_station=N'" + ws.salary_station + "', responsibility=N'" + ws.responsibility + "', power=N'" + ws.power + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE workstation_details SET rank=N'" + ws.rank + "', division=N'" + ws.division + "', post=N'" + ws.post + "', date_of_post='" + ws.getDate_of_post().ToString("yyyy-MM-dd") + "', salary_station=N'" + ws.salary_station + "', responsibility=N'" + ws.responsibility + "', power=N'" + ws.power + "' WHERE employee_idemployee=" + Employee.employee_id + " AND idworkstation_details=" + ws.ws_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

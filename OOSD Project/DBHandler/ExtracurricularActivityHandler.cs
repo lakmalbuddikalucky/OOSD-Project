@@ -70,6 +70,7 @@ namespace OOSD_Project.DBHandler
                 {
                     ea = new ExtracurricularActivity();
 
+                    ea.ea_id = int.Parse(reader["idextracurricular_activity"].ToString());
                     ea.award = reader["award"].ToString();
                     ea.method = reader["method"].ToString();
                     ea.type = reader["type"].ToString();
@@ -110,7 +111,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE extracurricular_activity SET type=N'" + ea.type + "', method=N'" + ea.method + "', award=N'" + ea.award + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE extracurricular_activity SET type=N'" + ea.type + "', method=N'" + ea.method + "', award=N'" + ea.award + "' WHERE employee_idemployee=" + Employee.employee_id + " AND idextracurricular_activity=" + ea.ea_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

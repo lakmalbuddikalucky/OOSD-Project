@@ -8,6 +8,7 @@ namespace OOSD_Project.DBTableClass
 {
     class Membership
     {
+        public int mem_id { set; get; }
         public string institute { set; get; }
         public string post_name { set; get; }
         public string method { set; get; }

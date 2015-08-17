@@ -8,6 +8,7 @@ namespace OOSD_Project.DBTableClass
 {
     class WorkstationDetails
     {
+        public int ws_id { set; get; }
         public string rank { set; get; }
         public string division { set; get; }
         public string post { set; get; }

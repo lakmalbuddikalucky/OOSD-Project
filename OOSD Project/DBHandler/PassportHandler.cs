@@ -72,7 +72,7 @@ namespace OOSD_Project.DBHandler
 
                     if (reader["status"].ToString() == "True") { p.status=true; }
                     else { p.status = false; }
-
+                    p.p_id = int.Parse(reader[idpassport"].ToString());
                     p.rank = reader["rank"].ToString();
                     p.post = reader["post"].ToString();
                     p.number = reader["passport_no"].ToString();
@@ -117,7 +117,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE passport SET rank=N'" + p.rank + "', post=N'" + p.post + "', passport_no=N'" + p.number + "', place_of_issue=N'" + p.place_of_issue + "', date_of_issue='" + p.getdate_of_issue().ToString("yyyy-MM-dd") + "', date_of_renewal='" + p.getdate_of_renewal().ToString("yyyy-MM-dd") + "', status=" + p.status + " WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE passport SET rank=N'" + p.rank + "', post=N'" + p.post + "', passport_no=N'" + p.number + "', place_of_issue=N'" + p.place_of_issue + "', date_of_issue='" + p.getdate_of_issue().ToString("yyyy-MM-dd") + "', date_of_renewal='" + p.getdate_of_renewal().ToString("yyyy-MM-dd") + "', status=" + p.status + " WHERE employee_idemployee=" + Employee.employee_id + " AND idpassport=" + p.p_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

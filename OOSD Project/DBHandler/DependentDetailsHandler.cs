@@ -73,6 +73,7 @@ namespace OOSD_Project.DBHandler
                 {
                     dd = new DependentDetails();
 
+                    dd.dd_id = int.Parse(reader["iddependent_details"].ToString());
                     dd.birth_certificate = reader["birth_certificate"].ToString();
                     dd.setDate_of_post(Convert.ToDateTime(reader["date_of_post"]));
 
@@ -132,7 +133,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE dependent_details SET salutation=N'" + dd.salutation + "', full_name=N'" + dd.full_name + "', relation=N'" + dd.relation + "', date_of_post='" + dd.getDate_of_post().ToString("yyyy-MM-dd") + "', nic_no=N'" + dd.nic_no + "', office_tp=N'" + dd.office_tp + "', personal_address=N'" + dd.personal_address + "', official_address=N'" + dd.official_address + "', personal_tp=N'" + dd.personal_tp + "', education=N'" + dd.education + "', status=N'" + dd.status + "', note=N'" + dd.note + "', birth_certificate=N'" + dd.birth_certificate + "', marriage_certificate=N'" + dd.marriage_certificate + "', deathade=" + dd.deathade + ", doctor=" + dd.doctor + " WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE dependent_details SET salutation=N'" + dd.salutation + "', full_name=N'" + dd.full_name + "', relation=N'" + dd.relation + "', date_of_post='" + dd.getDate_of_post().ToString("yyyy-MM-dd") + "', nic_no=N'" + dd.nic_no + "', office_tp=N'" + dd.office_tp + "', personal_address=N'" + dd.personal_address + "', official_address=N'" + dd.official_address + "', personal_tp=N'" + dd.personal_tp + "', education=N'" + dd.education + "', status=N'" + dd.status + "', note=N'" + dd.note + "', birth_certificate=N'" + dd.birth_certificate + "', marriage_certificate=N'" + dd.marriage_certificate + "', deathade=" + dd.deathade + ", doctor=" + dd.doctor + " WHERE employee_idemployee=" + Employee.employee_id + " AND iddependent_details=" + dd.dd_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

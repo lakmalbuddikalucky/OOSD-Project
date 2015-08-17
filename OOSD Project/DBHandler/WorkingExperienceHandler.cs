@@ -70,6 +70,7 @@ namespace OOSD_Project.DBHandler
                 {
                     we = new WorkingExperience();
 
+                    we.we_id = int.Parse(reader["idworking_experience"].ToString());
                     we.address = reader["address"].ToString();
                     we.award = reader["award"].ToString();
                     we.contact = reader["contact"].ToString();
@@ -124,7 +125,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE working_experience SET institute=N'" + we.institute + "', address=N'" + we.address + "', telephone=N'" + we.telephone + "', email=" + we.email + ", department=" + we.department + ", contact=N'" + we.contact + "', date_from='" + we.getDate_from().ToString("yyyy-MM-dd") + "', date_to=N'" + we.getDate_to().ToString("yyyy-MM-dd") + "', date_perma='" + we.getDate_perma().ToString("yyyy-MM-dd") + "', resign_reason=N'" + we.resign_reason + "', responsibility=N'" + we.responsibility + "', occupation_relevant=" + we.occupation_relevant + ", award=N'" + we.award + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE working_experience SET institute=N'" + we.institute + "', address=N'" + we.address + "', telephone=N'" + we.telephone + "', email=" + we.email + ", department=" + we.department + ", contact=N'" + we.contact + "', date_from='" + we.getDate_from().ToString("yyyy-MM-dd") + "', date_to=N'" + we.getDate_to().ToString("yyyy-MM-dd") + "', date_perma='" + we.getDate_perma().ToString("yyyy-MM-dd") + "', resign_reason=N'" + we.resign_reason + "', responsibility=N'" + we.responsibility + "', occupation_relevant=" + we.occupation_relevant + ", award=N'" + we.award + "' WHERE employee_idemployee=" + Employee.employee_id + " AND idworking_experience=" + we.we_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

@@ -69,6 +69,7 @@ namespace OOSD_Project.DBHandler
                 {
                     cb = new CashBenefit();
 
+                    cb.cb_id = int.Parse(reader["idcash_benefit"].ToString());
                     cb.approved_benefit = reader["approved_benefit"].ToString();
                     cb.price = (float)Convert.ToDouble(reader["price"].ToString());
                     cb.setdate_issued(Convert.ToDateTime(reader["date_issued"]));
@@ -154,6 +155,7 @@ namespace OOSD_Project.DBHandler
                 {
                     ncb = new NonCashBenefit();
 
+                    ncb.ncb_id = int.Parse(reader["idnoncash_benefit"].ToString());
                     ncb.approved_benefit = reader["approved_benefit"].ToString();
                     ncb.price = (float)Convert.ToDouble(reader["price"].ToString());
                     ncb.setdate_issued(Convert.ToDateTime(reader["date_issued"]));
@@ -195,7 +197,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE cash_benefit SET approved_benefit=N'" + cb.approved_benefit + "', date_issued='" + cb.getdate_issued().ToString("yyyy-MM-dd") + "', price=" + cb.price + " WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE cash_benefit SET approved_benefit=N'" + cb.approved_benefit + "', date_issued='" + cb.getdate_issued().ToString("yyyy-MM-dd") + "', price=" + cb.price + " WHERE employee_idemployee=" + Employee.employee_id + " AND idcash_benefit=" + cb.cb_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
@@ -232,7 +234,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE noncash_benefit SET approved_benefit=N'" + ncb.approved_benefit + "', date_issued='" + ncb.getdate_issued().ToString("yyyy-MM-dd") + "', amount=" + ncb.amount + ", price=" + ncb.price + " WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE noncash_benefit SET approved_benefit=N'" + ncb.approved_benefit + "', date_issued='" + ncb.getdate_issued().ToString("yyyy-MM-dd") + "', amount=" + ncb.amount + ", price=" + ncb.price + " WHERE employee_idemployee=" + Employee.employee_id + " AND idnoncash_benefit=" + ncb.ncb_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

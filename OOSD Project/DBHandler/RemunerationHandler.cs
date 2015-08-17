@@ -70,6 +70,7 @@ namespace OOSD_Project.DBHandler
                 {
                     r = new Remuneration();
 
+                    r.r_id = int.Parse(reader["idremuneration"].ToString());
                     //r.rank = reader["rank"].ToString();
                     //r.post = reader["post"].ToString();
                     r.salary_grade = reader["salary_grade"].ToString();
@@ -122,7 +123,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE remuneration SET salary_grade=N'" + r.salary_grade + "', salary_slip_no=" + r.salary_slip_no + ", basic_salary=" + r.basic_salary + ", transport_allowance=" + r.transport_allowance + ", fuel_allowance=" + r.fuel_allowance + ", mobile_phone_allowance=" + r.mobile_phone_allowance + ", housing_allowance=" + r.housing_allowance + ", other_allowance=" + r.other_allowance + ", salary_increase_date='" + r.getsalary_increase_date().ToString("yyyy-MM-dd") + "', salary_increase_amount=" + r.salary_increase_amount + ", current_total_salary=" + r.current_total_salary + " WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE remuneration SET salary_grade=N'" + r.salary_grade + "', salary_slip_no=" + r.salary_slip_no + ", basic_salary=" + r.basic_salary + ", transport_allowance=" + r.transport_allowance + ", fuel_allowance=" + r.fuel_allowance + ", mobile_phone_allowance=" + r.mobile_phone_allowance + ", housing_allowance=" + r.housing_allowance + ", other_allowance=" + r.other_allowance + ", salary_increase_date='" + r.getsalary_increase_date().ToString("yyyy-MM-dd") + "', salary_increase_amount=" + r.salary_increase_amount + ", current_total_salary=" + r.current_total_salary + " WHERE employee_idemployee=" + Employee.employee_id + " AND idremuneration=" + r.r_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

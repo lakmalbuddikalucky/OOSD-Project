@@ -71,7 +71,8 @@ namespace OOSD_Project.DBHandler
                 if (reader.Read())
                 {
                     q = new Qualification();
-                     
+
+                    q.q_id = int.Parse(reader["idqualification"].ToString());
                     q.institute = reader["institute"].ToString();
                     q.months = reader["months"].ToString();
                     q.status = reader["status"].ToString();
@@ -122,7 +123,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE qualification SET qualification_no=N'" + q.qualification_no + "', institute=N'" + q.institute + "', months=N'" + q.months + "', occupation_relevant=" + q.occupation_relevant + ", highest_qualification=" + q.highest_qualification + ", status=N'" + q.status + "', note=N'" + q.note + "', qualification=N'" + q.qualification + "', year=N'" + q.year + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE qualification SET qualification_no=N'" + q.qualification_no + "', institute=N'" + q.institute + "', months=N'" + q.months + "', occupation_relevant=" + q.occupation_relevant + ", highest_qualification=" + q.highest_qualification + ", status=N'" + q.status + "', note=N'" + q.note + "', qualification=N'" + q.qualification + "', year=N'" + q.year + "' WHERE employee_idemployee=" + Employee.employee_id + " AND idqualification=" + q.q_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

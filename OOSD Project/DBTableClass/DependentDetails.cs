@@ -8,8 +8,8 @@ namespace OOSD_Project.DBTableClass
 {
     class DependentDetails
     {
-        
 
+        public int dd_id { set; get; }
         public string salutation { set; get; }
         public string full_name { set; get; }
         public string relation { set; get; }

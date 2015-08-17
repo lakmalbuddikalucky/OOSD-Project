@@ -72,6 +72,7 @@ namespace OOSD_Project.DBHandler
                 {
                     ec = new EmergencyContact();
 
+                    ec.ec_id = int.Parse(reader["idemergency_contact"].ToString());
                     ec.full_name = reader["full_name"].ToString();
                     ec.int_ext = reader["int_ext"].ToString();
                     ec.mobile_no = reader["mobile_no"].ToString();
@@ -122,7 +123,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE emergency_contact SET salutation=N'" + ec.salutation + "', full_name=N'" + ec.full_name + "', relation=N'" + ec.relation + "', nic_no=N'" + ec.nic_no + "', personal_address=N'" + ec.personal_address + "', official_address=N'" + ec.official_address + "', personal_tp=N'" + ec.personal_tp + "', official_tp=N'" + ec.office_tp + "', mobile_no=N'" + ec.mobile_no + "', employee_no=N'" + ec.employee_no + "', int_ext=N'" + ec.int_ext + "', priority=N'" + ec.priority + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE emergency_contact SET salutation=N'" + ec.salutation + "', full_name=N'" + ec.full_name + "', relation=N'" + ec.relation + "', nic_no=N'" + ec.nic_no + "', personal_address=N'" + ec.personal_address + "', official_address=N'" + ec.official_address + "', personal_tp=N'" + ec.personal_tp + "', official_tp=N'" + ec.office_tp + "', mobile_no=N'" + ec.mobile_no + "', employee_no=N'" + ec.employee_no + "', int_ext=N'" + ec.int_ext + "', priority=N'" + ec.priority + "' WHERE employee_idemployee=" + Employee.employee_id + " AND idemergency_contact=" + ec.ec_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

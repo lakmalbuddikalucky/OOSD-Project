@@ -8,6 +8,8 @@ namespace OOSD_Project.DBTableClass
 {
     class CashBenefit
     {
+
+        public int cb_id { set; get; }
         public string approved_benefit { set; get; }
         public float price { set; get; }
 

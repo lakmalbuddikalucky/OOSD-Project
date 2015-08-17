@@ -8,6 +8,7 @@ namespace OOSD_Project.DBTableClass
 {
     class Qualification
     {
+        public int q_id { set; get; }
         public string qualification_no { set; get; }
         public string institute { set; get; }
         public string months { set; get; }

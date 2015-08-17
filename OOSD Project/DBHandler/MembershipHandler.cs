@@ -72,6 +72,7 @@ namespace OOSD_Project.DBHandler
                 {
                     mem = new Membership();
 
+                    mem.mem_id = int.Parse(reader["idmembership"].ToString());
                     mem.contribution = reader["contribution"].ToString();
                     mem.institute = reader["institute"].ToString();
                     mem.member_id = reader["member_id"].ToString();
@@ -126,7 +127,7 @@ namespace OOSD_Project.DBHandler
             {
 
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "UPDATE membership SET institute=N'" + m.institute + "', post_name=N'" + m.post_name + "', method=N'" + m.method + "', member_id=N'" + m.member_id + "', contribution=N'" + m.contribution + "', begin_date='" + m.getBegin_date().ToString("yyyy-MM-dd") + "', renewal_date='" + m.getRenewal_date().ToString("yyyy-MM-dd") + "', status=N'" + m.status + "', personal_payment=" + m.personal_payment + ", active_date_person='" + m.getActive_date_person().ToString("yyyy-MM-dd") + "', institutional_payment=" + m.institutional_payment + ", active_date_insti='" + m.getActive_date_insti().ToString("yyyy-MM-dd") + "' WHERE employee_idemployee=" + Employee.employee_id;
+                cmd.CommandText = "UPDATE membership SET institute=N'" + m.institute + "', post_name=N'" + m.post_name + "', method=N'" + m.method + "', member_id=N'" + m.member_id + "', contribution=N'" + m.contribution + "', begin_date='" + m.getBegin_date().ToString("yyyy-MM-dd") + "', renewal_date='" + m.getRenewal_date().ToString("yyyy-MM-dd") + "', status=N'" + m.status + "', personal_payment=" + m.personal_payment + ", active_date_person='" + m.getActive_date_person().ToString("yyyy-MM-dd") + "', institutional_payment=" + m.institutional_payment + ", active_date_insti='" + m.getActive_date_insti().ToString("yyyy-MM-dd") + "' WHERE employee_idemployee=" + Employee.employee_id + " AND idmembership=" + m.mem_id;
                 cmd.Connection = dbcon.connection;
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();

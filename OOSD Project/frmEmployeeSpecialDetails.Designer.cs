@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeSpecialDetails));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -42,6 +43,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnCheckQualificationDetails = new System.Windows.Forms.Button();
             this.btnClear1 = new System.Windows.Forms.Button();
             this.btnSave1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -62,6 +64,7 @@
             this.qual_institute = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnCheckWorkExperianceDetails = new System.Windows.Forms.Button();
             this.we_date_perma_date = new System.Windows.Forms.DateTimePicker();
             this.we_date_to_date = new System.Windows.Forms.DateTimePicker();
             this.we_date_from_date = new System.Windows.Forms.DateTimePicker();
@@ -90,6 +93,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.we_institute = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnExtraCurricularActivityDetails = new System.Windows.Forms.Button();
             this.btnClear3 = new System.Windows.Forms.Button();
             this.btnSave3 = new System.Windows.Forms.Button();
             this.label37 = new System.Windows.Forms.Label();
@@ -99,6 +103,7 @@
             this.ea_type = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnCheckMembershipDetails = new System.Windows.Forms.Button();
             this.member_active_date_insti_date = new System.Windows.Forms.DateTimePicker();
             this.member_active_date_person_date = new System.Windows.Forms.DateTimePicker();
             this.member_renewal_date = new System.Windows.Forms.DateTimePicker();
@@ -130,6 +135,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
+            this.erp_we_date_to_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_we_date_perma_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_member_renewal_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_we_date_from_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_member_active_date_person_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_member_active_date_insti_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_member_begin_date_date = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -142,6 +154,13 @@
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_we_date_to_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_we_date_perma_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_member_renewal_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_we_date_from_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_member_active_date_person_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_member_active_date_insti_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_member_begin_date_date)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -274,6 +293,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.btnCheckQualificationDetails);
             this.tabPage1.Controls.Add(this.btnClear1);
             this.tabPage1.Controls.Add(this.btnSave1);
             this.tabPage1.Controls.Add(this.label10);
@@ -300,6 +320,18 @@
             this.tabPage1.Size = new System.Drawing.Size(1062, 670);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Qualifications";
+            // 
+            // btnCheckQualificationDetails
+            // 
+            this.btnCheckQualificationDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckQualificationDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckQualificationDetails.Location = new System.Drawing.Point(6, 6);
+            this.btnCheckQualificationDetails.Name = "btnCheckQualificationDetails";
+            this.btnCheckQualificationDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckQualificationDetails.TabIndex = 58;
+            this.btnCheckQualificationDetails.Text = "Check";
+            this.btnCheckQualificationDetails.UseVisualStyleBackColor = true;
+            this.btnCheckQualificationDetails.Click += new System.EventHandler(this.btnCheckQualificationDetails_Click);
             // 
             // btnClear1
             // 
@@ -359,6 +391,7 @@
             this.qual_year.Name = "qual_year";
             this.qual_year.Size = new System.Drawing.Size(120, 33);
             this.qual_year.TabIndex = 15;
+            this.qual_year.TextChanged += new System.EventHandler(this.qual_year_TextChanged);
             // 
             // qual_qualification
             // 
@@ -366,6 +399,7 @@
             this.qual_qualification.Name = "qual_qualification";
             this.qual_qualification.Size = new System.Drawing.Size(200, 33);
             this.qual_qualification.TabIndex = 14;
+            this.qual_qualification.TextChanged += new System.EventHandler(this.qual_qualification_TextChanged);
             // 
             // label7
             // 
@@ -428,6 +462,7 @@
             this.qual_months.Name = "qual_months";
             this.qual_months.Size = new System.Drawing.Size(100, 33);
             this.qual_months.TabIndex = 7;
+            this.qual_months.TextChanged += new System.EventHandler(this.qual_months_TextChanged);
             // 
             // label6
             // 
@@ -444,6 +479,7 @@
             this.qualification_no.Name = "qualification_no";
             this.qualification_no.Size = new System.Drawing.Size(200, 33);
             this.qualification_no.TabIndex = 5;
+            this.qualification_no.TextChanged += new System.EventHandler(this.qualification_no_TextChanged);
             // 
             // label5
             // 
@@ -460,6 +496,7 @@
             this.qual_institute.Name = "qual_institute";
             this.qual_institute.Size = new System.Drawing.Size(200, 33);
             this.qual_institute.TabIndex = 1;
+            this.qual_institute.TextChanged += new System.EventHandler(this.qual_institute_TextChanged);
             // 
             // label2
             // 
@@ -473,6 +510,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.btnCheckWorkExperianceDetails);
             this.tabPage2.Controls.Add(this.we_date_perma_date);
             this.tabPage2.Controls.Add(this.we_date_to_date);
             this.tabPage2.Controls.Add(this.we_date_from_date);
@@ -507,12 +545,25 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Working Experience";
             // 
+            // btnCheckWorkExperianceDetails
+            // 
+            this.btnCheckWorkExperianceDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckWorkExperianceDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckWorkExperianceDetails.Location = new System.Drawing.Point(6, 6);
+            this.btnCheckWorkExperianceDetails.Name = "btnCheckWorkExperianceDetails";
+            this.btnCheckWorkExperianceDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckWorkExperianceDetails.TabIndex = 63;
+            this.btnCheckWorkExperianceDetails.Text = "Check";
+            this.btnCheckWorkExperianceDetails.UseVisualStyleBackColor = true;
+            this.btnCheckWorkExperianceDetails.Click += new System.EventHandler(this.btnCheckWorkExperianceDetails_Click);
+            // 
             // we_date_perma_date
             // 
             this.we_date_perma_date.Location = new System.Drawing.Point(306, 458);
             this.we_date_perma_date.Name = "we_date_perma_date";
             this.we_date_perma_date.Size = new System.Drawing.Size(320, 33);
             this.we_date_perma_date.TabIndex = 62;
+            this.we_date_perma_date.ValueChanged += new System.EventHandler(this.we_date_perma_date_ValueChanged);
             // 
             // we_date_to_date
             // 
@@ -520,6 +571,7 @@
             this.we_date_to_date.Name = "we_date_to_date";
             this.we_date_to_date.Size = new System.Drawing.Size(320, 33);
             this.we_date_to_date.TabIndex = 61;
+            this.we_date_to_date.ValueChanged += new System.EventHandler(this.we_date_to_date_ValueChanged);
             // 
             // we_date_from_date
             // 
@@ -527,6 +579,7 @@
             this.we_date_from_date.Name = "we_date_from_date";
             this.we_date_from_date.Size = new System.Drawing.Size(320, 33);
             this.we_date_from_date.TabIndex = 60;
+            this.we_date_from_date.ValueChanged += new System.EventHandler(this.we_date_from_date_ValueChanged);
             // 
             // btnClear2
             // 
@@ -669,6 +722,7 @@
             this.we_department.Name = "we_department";
             this.we_department.Size = new System.Drawing.Size(200, 33);
             this.we_department.TabIndex = 8;
+            this.we_department.TextChanged += new System.EventHandler(this.we_department_TextChanged);
             // 
             // label16
             // 
@@ -685,6 +739,7 @@
             this.we_email.Name = "we_email";
             this.we_email.Size = new System.Drawing.Size(200, 33);
             this.we_email.TabIndex = 6;
+            this.we_email.TextChanged += new System.EventHandler(this.we_email_TextChanged);
             // 
             // label15
             // 
@@ -701,6 +756,7 @@
             this.we_telephone.Name = "we_telephone";
             this.we_telephone.Size = new System.Drawing.Size(200, 33);
             this.we_telephone.TabIndex = 4;
+            this.we_telephone.TextChanged += new System.EventHandler(this.we_telephone_TextChanged);
             // 
             // label14
             // 
@@ -718,6 +774,7 @@
             this.we_address.Name = "we_address";
             this.we_address.Size = new System.Drawing.Size(350, 150);
             this.we_address.TabIndex = 2;
+            this.we_address.TextChanged += new System.EventHandler(this.we_address_TextChanged);
             // 
             // label9
             // 
@@ -734,9 +791,11 @@
             this.we_institute.Name = "we_institute";
             this.we_institute.Size = new System.Drawing.Size(200, 33);
             this.we_institute.TabIndex = 0;
+            this.we_institute.TextChanged += new System.EventHandler(this.we_institute_TextChanged);
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btnExtraCurricularActivityDetails);
             this.tabPage3.Controls.Add(this.btnClear3);
             this.tabPage3.Controls.Add(this.btnSave3);
             this.tabPage3.Controls.Add(this.label37);
@@ -751,6 +810,18 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Extra Curricular Activities";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnExtraCurricularActivityDetails
+            // 
+            this.btnExtraCurricularActivityDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExtraCurricularActivityDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnExtraCurricularActivityDetails.Location = new System.Drawing.Point(6, 6);
+            this.btnExtraCurricularActivityDetails.Name = "btnExtraCurricularActivityDetails";
+            this.btnExtraCurricularActivityDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnExtraCurricularActivityDetails.TabIndex = 64;
+            this.btnExtraCurricularActivityDetails.Text = "Check";
+            this.btnExtraCurricularActivityDetails.UseVisualStyleBackColor = true;
+            this.btnExtraCurricularActivityDetails.Click += new System.EventHandler(this.btnExtraCurricularActivityDetails_Click);
             // 
             // btnClear3
             // 
@@ -826,6 +897,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.btnCheckMembershipDetails);
             this.tabPage4.Controls.Add(this.member_active_date_insti_date);
             this.tabPage4.Controls.Add(this.member_active_date_person_date);
             this.tabPage4.Controls.Add(this.member_renewal_date);
@@ -857,12 +929,25 @@
             this.tabPage4.Text = "Membership";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // btnCheckMembershipDetails
+            // 
+            this.btnCheckMembershipDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckMembershipDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckMembershipDetails.Location = new System.Drawing.Point(6, 6);
+            this.btnCheckMembershipDetails.Name = "btnCheckMembershipDetails";
+            this.btnCheckMembershipDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckMembershipDetails.TabIndex = 68;
+            this.btnCheckMembershipDetails.Text = "Check";
+            this.btnCheckMembershipDetails.UseVisualStyleBackColor = true;
+            this.btnCheckMembershipDetails.Click += new System.EventHandler(this.btnCheckMembershipDetails_Click);
+            // 
             // member_active_date_insti_date
             // 
             this.member_active_date_insti_date.Location = new System.Drawing.Point(510, 376);
             this.member_active_date_insti_date.Name = "member_active_date_insti_date";
             this.member_active_date_insti_date.Size = new System.Drawing.Size(320, 33);
             this.member_active_date_insti_date.TabIndex = 67;
+            this.member_active_date_insti_date.ValueChanged += new System.EventHandler(this.member_active_date_insti_date_ValueChanged);
             // 
             // member_active_date_person_date
             // 
@@ -870,6 +955,7 @@
             this.member_active_date_person_date.Name = "member_active_date_person_date";
             this.member_active_date_person_date.Size = new System.Drawing.Size(320, 33);
             this.member_active_date_person_date.TabIndex = 66;
+            this.member_active_date_person_date.ValueChanged += new System.EventHandler(this.member_active_date_person_date_ValueChanged);
             // 
             // member_renewal_date
             // 
@@ -877,6 +963,7 @@
             this.member_renewal_date.Name = "member_renewal_date";
             this.member_renewal_date.Size = new System.Drawing.Size(320, 33);
             this.member_renewal_date.TabIndex = 65;
+            this.member_renewal_date.ValueChanged += new System.EventHandler(this.member_renewal_date_ValueChanged);
             // 
             // member_begin_date_date
             // 
@@ -884,6 +971,7 @@
             this.member_begin_date_date.Name = "member_begin_date_date";
             this.member_begin_date_date.Size = new System.Drawing.Size(320, 33);
             this.member_begin_date_date.TabIndex = 64;
+            this.member_begin_date_date.ValueChanged += new System.EventHandler(this.member_begin_date_date_ValueChanged);
             // 
             // btnClear4
             // 
@@ -1012,6 +1100,7 @@
             this.member_id.Name = "member_id";
             this.member_id.Size = new System.Drawing.Size(200, 33);
             this.member_id.TabIndex = 7;
+            this.member_id.TextChanged += new System.EventHandler(this.member_id_TextChanged);
             // 
             // label27
             // 
@@ -1062,6 +1151,7 @@
             this.member_institute.Name = "member_institute";
             this.member_institute.Size = new System.Drawing.Size(200, 33);
             this.member_institute.TabIndex = 1;
+            this.member_institute.TextChanged += new System.EventHandler(this.member_institute_TextChanged);
             // 
             // tabPage5
             // 
@@ -1137,6 +1227,34 @@
             this.btnPrev.UseVisualStyleBackColor = false;
             this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
+            // erp_we_date_to_date
+            // 
+            this.erp_we_date_to_date.ContainerControl = this;
+            // 
+            // erp_we_date_perma_date
+            // 
+            this.erp_we_date_perma_date.ContainerControl = this;
+            // 
+            // erp_member_renewal_date
+            // 
+            this.erp_member_renewal_date.ContainerControl = this;
+            // 
+            // erp_we_date_from_date
+            // 
+            this.erp_we_date_from_date.ContainerControl = this;
+            // 
+            // erp_member_active_date_person_date
+            // 
+            this.erp_member_active_date_person_date.ContainerControl = this;
+            // 
+            // erp_member_active_date_insti_date
+            // 
+            this.erp_member_active_date_insti_date.ContainerControl = this;
+            // 
+            // erp_member_begin_date_date
+            // 
+            this.erp_member_begin_date_date.ContainerControl = this;
+            // 
             // frmEmployeeSpecialDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1167,6 +1285,13 @@
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.erp_we_date_to_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_we_date_perma_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_member_renewal_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_we_date_from_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_member_active_date_person_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_member_active_date_insti_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_member_begin_date_date)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1275,6 +1400,17 @@
         private System.Windows.Forms.DateTimePicker member_active_date_person_date;
         private System.Windows.Forms.DateTimePicker member_renewal_date;
         private System.Windows.Forms.DateTimePicker member_begin_date_date;
+        private System.Windows.Forms.Button btnCheckQualificationDetails;
+        private System.Windows.Forms.Button btnCheckWorkExperianceDetails;
+        private System.Windows.Forms.ErrorProvider erp_we_date_to_date;
+        private System.Windows.Forms.ErrorProvider erp_we_date_perma_date;
+        private System.Windows.Forms.Button btnExtraCurricularActivityDetails;
+        private System.Windows.Forms.Button btnCheckMembershipDetails;
+        private System.Windows.Forms.ErrorProvider erp_member_renewal_date;
+        private System.Windows.Forms.ErrorProvider erp_we_date_from_date;
+        private System.Windows.Forms.ErrorProvider erp_member_active_date_person_date;
+        private System.Windows.Forms.ErrorProvider erp_member_active_date_insti_date;
+        private System.Windows.Forms.ErrorProvider erp_member_begin_date_date;
     }
 }
 

@@ -34,12 +34,14 @@ namespace OOSD_Project
             bank_branch_name.BackColor = Color.White;
             bank_account_name.BackColor = Color.White;
             bank_account_type.BackColor = Color.White;
+            erp_bank_account_started_date.Dispose();
         }
 
         private void setInsuranceToWhite()
         {
             insurance_type.BackColor = Color.White;
             insurance_value.BackColor = Color.White;
+            erp_insuarance_started_date.Dispose();
         }
 
         private void setTaxDetailsToWhite()
@@ -76,6 +78,18 @@ namespace OOSD_Project
                 state = false;
             }
 
+            if(!Validator.dateDiff(DateTime.Today, bank_account_started_date.Value))
+            {
+                erp_bank_account_started_date.SetError(bank_account_started_date, "Invalid date");
+                state = false;
+            }
+
+            if (!Validator.dateDiff(bank_account_closed_date.Value,bank_account_started_date.Value))
+            {
+                erp_bank_account_closed_date.SetError(bank_account_closed_date, "Invalid date");
+                state = false;
+            }
+
             return state;
         }
 
@@ -94,6 +108,20 @@ namespace OOSD_Project
                 insurance_value.BackColor = Color.RosyBrown;
                 state = false;
             }
+
+            if(!Validator.dateDiff(DateTime.Today, insurance_started_date.Value))
+            {
+                erp_insuarance_started_date.SetError(insurance_started_date, "Invalid date");
+                state = false;
+            }
+
+            if(!Validator.dateDiff(insurance_ended_date.Value, insurance_started_date.Value))
+            {
+                erp_insurance_ended_date.SetError(insurance_ended_date, "Invalid date");
+                state = false;
+            }
+
+
             return state;
         }
 
@@ -182,6 +210,53 @@ namespace OOSD_Project
         private void btnCheckTaxDetails_Click(object sender, EventArgs e)
         {
             validateTaxDetails();
+        }
+
+        private void btnCheckBankDetails_Click_1(object sender, EventArgs e)
+        {
+            validateBankDetails();
+        }
+
+        private void bank_account_started_date_ValueChanged(object sender, EventArgs e)
+        {
+            erp_bank_account_started_date.Dispose();
+            erp_bank_account_closed_date.Dispose();
+        }
+
+        private void bank_account_closed_date_ValueChanged(object sender, EventArgs e)
+        {
+            erp_bank_account_closed_date.Dispose();
+        }
+
+        private void insurance_started_date_ValueChanged(object sender, EventArgs e)
+        {
+            erp_insuarance_started_date.Dispose();
+            erp_insurance_ended_date.Dispose();
+        }
+
+        private void insurance_ended_date_ValueChanged(object sender, EventArgs e)
+        {
+            erp_insurance_ended_date.Dispose();
+        }
+
+        private void tax_type_TextChanged(object sender, EventArgs e)
+        {
+            tax_type.BackColor = Color.White;
+        }
+
+        private void tax_no_TextChanged(object sender, EventArgs e)
+        {
+            tax_no.BackColor = Color.White;
+        }
+
+        private void tax_paying_method_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tax_paying_method.BackColor = Color.White;
+        }
+
+        private void tax_status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tax_status.BackColor = Color.White;
         }
     }
 }

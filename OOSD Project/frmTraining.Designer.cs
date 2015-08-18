@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTraining));
             this.training_employee_no = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.training_course_type = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.training_country = new System.Windows.Forms.TextBox();
             this.training_extended_days = new System.Windows.Forms.TextBox();
             this.training_institute = new System.Windows.Forms.TextBox();
             this.training_result = new System.Windows.Forms.TextBox();
@@ -66,10 +66,18 @@
             this.training_new_ending_date = new System.Windows.Forms.DateTimePicker();
             this.training_ending_date = new System.Windows.Forms.DateTimePicker();
             this.training_started_date = new System.Windows.Forms.DateTimePicker();
+            this.btnCheckTrainingDetails = new System.Windows.Forms.Button();
+            this.erp_training_ending_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_training_new_ending_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.training_country = new System.Windows.Forms.ComboBox();
+            this.erp_training_started_date = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_training_ending_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_training_new_ending_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_training_started_date)).BeginInit();
             this.SuspendLayout();
             // 
             // training_employee_no
@@ -80,6 +88,7 @@
             this.training_employee_no.Name = "training_employee_no";
             this.training_employee_no.Size = new System.Drawing.Size(200, 32);
             this.training_employee_no.TabIndex = 1;
+            this.training_employee_no.SelectedIndexChanged += new System.EventHandler(this.training_employee_no_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -227,6 +236,7 @@
             // 
             // training_full_name
             // 
+            this.training_full_name.Enabled = false;
             this.training_full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.training_full_name.Location = new System.Drawing.Point(475, 114);
             this.training_full_name.Name = "training_full_name";
@@ -240,6 +250,7 @@
             this.training_course_name.Name = "training_course_name";
             this.training_course_name.Size = new System.Drawing.Size(150, 33);
             this.training_course_name.TabIndex = 3;
+            this.training_course_name.TextChanged += new System.EventHandler(this.training_course_name_TextChanged);
             // 
             // training_course_type
             // 
@@ -248,6 +259,7 @@
             this.training_course_type.Name = "training_course_type";
             this.training_course_type.Size = new System.Drawing.Size(150, 33);
             this.training_course_type.TabIndex = 4;
+            this.training_course_type.TextChanged += new System.EventHandler(this.training_course_type_TextChanged);
             // 
             // label13
             // 
@@ -273,14 +285,6 @@
             this.label7.Text = "සේවක අංකය";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // training_country
-            // 
-            this.training_country.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.training_country.Location = new System.Drawing.Point(475, 388);
-            this.training_country.Name = "training_country";
-            this.training_country.Size = new System.Drawing.Size(150, 33);
-            this.training_country.TabIndex = 17;
-            // 
             // training_extended_days
             // 
             this.training_extended_days.Font = new System.Drawing.Font("Calibri", 15.75F);
@@ -288,6 +292,8 @@
             this.training_extended_days.Name = "training_extended_days";
             this.training_extended_days.Size = new System.Drawing.Size(100, 33);
             this.training_extended_days.TabIndex = 13;
+            this.training_extended_days.TextChanged += new System.EventHandler(this.training_extended_days_TextChanged);
+            this.training_extended_days.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.training_extended_days_KeyPress);
             // 
             // training_institute
             // 
@@ -296,6 +302,7 @@
             this.training_institute.Name = "training_institute";
             this.training_institute.Size = new System.Drawing.Size(150, 33);
             this.training_institute.TabIndex = 5;
+            this.training_institute.TextChanged += new System.EventHandler(this.training_institute_TextChanged);
             // 
             // training_result
             // 
@@ -312,6 +319,7 @@
             this.training_payments.Name = "training_payments";
             this.training_payments.Size = new System.Drawing.Size(150, 33);
             this.training_payments.TabIndex = 6;
+            this.training_payments.TextChanged += new System.EventHandler(this.training_payments_TextChanged);
             // 
             // panel2
             // 
@@ -432,6 +440,7 @@
             this.training_new_ending_date.Name = "training_new_ending_date";
             this.training_new_ending_date.Size = new System.Drawing.Size(297, 31);
             this.training_new_ending_date.TabIndex = 155;
+            this.training_new_ending_date.ValueChanged += new System.EventHandler(this.training_new_ending_date_ValueChanged);
             // 
             // training_ending_date
             // 
@@ -440,6 +449,7 @@
             this.training_ending_date.Name = "training_ending_date";
             this.training_ending_date.Size = new System.Drawing.Size(297, 31);
             this.training_ending_date.TabIndex = 156;
+            this.training_ending_date.ValueChanged += new System.EventHandler(this.training_ending_date_ValueChanged);
             // 
             // training_started_date
             // 
@@ -448,12 +458,246 @@
             this.training_started_date.Name = "training_started_date";
             this.training_started_date.Size = new System.Drawing.Size(297, 31);
             this.training_started_date.TabIndex = 157;
+            this.training_started_date.ValueChanged += new System.EventHandler(this.training_started_date_ValueChanged);
+            // 
+            // btnCheckTrainingDetails
+            // 
+            this.btnCheckTrainingDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckTrainingDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckTrainingDetails.Location = new System.Drawing.Point(475, 466);
+            this.btnCheckTrainingDetails.Name = "btnCheckTrainingDetails";
+            this.btnCheckTrainingDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckTrainingDetails.TabIndex = 158;
+            this.btnCheckTrainingDetails.Text = "Check";
+            this.btnCheckTrainingDetails.UseVisualStyleBackColor = true;
+            this.btnCheckTrainingDetails.Click += new System.EventHandler(this.btnCheckTrainingDetails_Click);
+            // 
+            // erp_training_ending_date
+            // 
+            this.erp_training_ending_date.ContainerControl = this;
+            // 
+            // erp_training_new_ending_date
+            // 
+            this.erp_training_new_ending_date.ContainerControl = this;
+            // 
+            // training_country
+            // 
+            this.training_country.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.training_country.FormattingEnabled = true;
+            this.training_country.Items.AddRange(new object[] {
+            "Afghanistan",
+            " Albania",
+            " Algeria",
+            " Andorra",
+            " Angola",
+            " Antigua & Deps",
+            " Argentina",
+            " Armenia",
+            " Australia",
+            " Austria",
+            " Azerbaijan",
+            " Bahamas",
+            " Bahrain",
+            " Bangladesh",
+            " Barbados",
+            " Belarus",
+            " Belgium",
+            " Belize",
+            " Benin",
+            " Bhutan",
+            " Bolivia",
+            " Bosnia Herzegovina",
+            " Botswana",
+            " Brazil",
+            " Brunei",
+            " Bulgaria",
+            " Burkina",
+            " Burundi",
+            " Cambodia",
+            " Cameroon",
+            " Canada",
+            " Cape Verde",
+            " Central African Rep",
+            " Chad",
+            " Chile",
+            " China",
+            " Colombia",
+            " Comoros",
+            " Congo",
+            " Congo {Democratic Rep}",
+            " Costa Rica",
+            " Croatia",
+            " Cuba",
+            " Cyprus",
+            " Czech Republic",
+            " Denmark",
+            " Djibouti",
+            " Dominica",
+            " Dominican Republic",
+            " East Timor",
+            " Ecuador",
+            " Egypt",
+            " El Salvador",
+            " Equatorial Guinea",
+            " Eritrea",
+            " Estonia",
+            " Ethiopia",
+            " Fiji",
+            " Finland",
+            " France",
+            " Gabon",
+            " Gambia",
+            " Georgia",
+            " Germany",
+            " Ghana",
+            " Greece",
+            " Grenada",
+            " Guatemala",
+            " Guinea",
+            " Guinea-Bissau",
+            " Guyana",
+            " Haiti",
+            " Honduras",
+            " Hungary",
+            " Iceland",
+            " India",
+            " Indonesia",
+            " Iran",
+            " Iraq",
+            " Ireland {Republic}",
+            " Israel",
+            " Italy",
+            " Ivory Coast",
+            " Jamaica",
+            " Japan",
+            " Jordan",
+            " Kazakhstan",
+            " Kenya",
+            " Kiribati",
+            " Korea North",
+            " Korea South",
+            " Kosovo",
+            " Kuwait",
+            " Kyrgyzstan",
+            " Laos",
+            " Latvia",
+            " Lebanon",
+            " Lesotho",
+            " Liberia",
+            " Libya",
+            " Liechtenstein",
+            " Lithuania",
+            " Luxembourg",
+            " Macedonia",
+            " Madagascar",
+            " Malawi",
+            " Malaysia",
+            " Maldives",
+            " Mali",
+            " Malta",
+            " Marshall Islands",
+            " Mauritania",
+            " Mauritius",
+            " Mexico",
+            " Micronesia",
+            " Moldova",
+            " Monaco",
+            " Mongolia",
+            " Montenegro",
+            " Morocco",
+            " Mozambique",
+            " Myanmar, {Burma}",
+            " Namibia",
+            " Nauru",
+            " Nepal",
+            " Netherlands",
+            " New Zealand",
+            " Nicaragua",
+            " Niger",
+            " Nigeria",
+            " Norway",
+            " Oman",
+            " Pakistan",
+            " Palau",
+            " Panama",
+            " Papua New Guinea",
+            " Paraguay",
+            " Peru",
+            " Philippines",
+            " Poland",
+            " Portugal",
+            " Qatar",
+            " Romania",
+            " Russian Federation",
+            " Rwanda",
+            " St Kitts & Nevis",
+            " St Lucia",
+            " Saint Vincent & the Grenadines",
+            " Samoa",
+            " San Marino",
+            " Sao Tome & Principe",
+            " Saudi Arabia",
+            " Senegal",
+            " Serbia",
+            " Seychelles",
+            " Sierra Leone",
+            " Singapore",
+            " Slovakia",
+            " Slovenia",
+            " Solomon Islands",
+            " Somalia",
+            " South Africa",
+            " South Sudan",
+            " Spain",
+            " Sri Lanka",
+            " Sudan",
+            " Suriname",
+            " Swaziland",
+            " Sweden",
+            " Switzerland",
+            " Syria",
+            " Taiwan",
+            " Tajikistan",
+            " Tanzania",
+            " Thailand",
+            " Togo",
+            " Tonga",
+            " Trinidad & Tobago",
+            " Tunisia",
+            " Turkey",
+            " Turkmenistan",
+            " Tuvalu",
+            " Uganda",
+            " Ukraine",
+            " United Arab Emirates",
+            " United Kingdom",
+            " United States",
+            " Uruguay",
+            " Uzbekistan",
+            " Vanuatu",
+            " Vatican City",
+            " Venezuela",
+            " Vietnam",
+            " Yemen",
+            " Zambia",
+            " Zimbabwe"});
+            this.training_country.Location = new System.Drawing.Point(475, 390);
+            this.training_country.Name = "training_country";
+            this.training_country.Size = new System.Drawing.Size(150, 31);
+            this.training_country.TabIndex = 159;
+            this.training_country.SelectedIndexChanged += new System.EventHandler(this.training_country_SelectedIndexChanged);
+            // 
+            // erp_training_started_date
+            // 
+            this.erp_training_started_date.ContainerControl = this;
             // 
             // frmTraining
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 741);
+            this.Controls.Add(this.training_country);
+            this.Controls.Add(this.btnCheckTrainingDetails);
             this.Controls.Add(this.training_started_date);
             this.Controls.Add(this.training_ending_date);
             this.Controls.Add(this.training_new_ending_date);
@@ -475,7 +719,6 @@
             this.Controls.Add(this.training_course_type);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.training_country);
             this.Controls.Add(this.training_extended_days);
             this.Controls.Add(this.training_institute);
             this.Controls.Add(this.training_result);
@@ -492,6 +735,9 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_training_ending_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_training_new_ending_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_training_started_date)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -517,7 +763,6 @@
         private System.Windows.Forms.TextBox training_course_type;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox training_country;
         private System.Windows.Forms.TextBox training_extended_days;
         private System.Windows.Forms.TextBox training_institute;
         private System.Windows.Forms.TextBox training_result;
@@ -536,5 +781,10 @@
         private System.Windows.Forms.DateTimePicker training_new_ending_date;
         private System.Windows.Forms.DateTimePicker training_ending_date;
         private System.Windows.Forms.DateTimePicker training_started_date;
+        private System.Windows.Forms.Button btnCheckTrainingDetails;
+        private System.Windows.Forms.ErrorProvider erp_training_ending_date;
+        private System.Windows.Forms.ErrorProvider erp_training_new_ending_date;
+        private System.Windows.Forms.ComboBox training_country;
+        private System.Windows.Forms.ErrorProvider erp_training_started_date;
     }
 }

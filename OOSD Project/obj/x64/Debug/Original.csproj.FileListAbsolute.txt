@@ -26,3 +26,4 @@ C:\Users\Roshan\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Pr
 C:\Users\Roshan\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\Original.csproj.GenerateResource.Cache
 C:\Users\Roshan\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD Project.exe
 C:\Users\Roshan\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD Project.pdb
+C:\Users\Roshan\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\Original.csprojResolveAssemblyReference.cache

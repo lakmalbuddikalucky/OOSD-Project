@@ -28,9 +28,50 @@ namespace OOSD_Project
             return form;
         }
 
+        private bool validateReAppoinmentDetails()
+        {
+
+            bool state = true;
+            if(!Validator.validate(reappointment_employee_no, VALIDATE_TYPE.NOT_NULL))
+            {
+                state = false;
+            }
+
+            if(!Validator.validate(reappointment_suspension__system, VALIDATE_TYPE.NOT_NULL))
+            {
+                state = false;
+            }
+
+            if (!Validator.validate(reappointment_suspension_reason, VALIDATE_TYPE.NOT_NULL))
+            {
+                state = false;
+            }
+
+            return state;
+        }
         private void btnNext_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCheckReApoinmentDetails_Click(object sender, EventArgs e)
+        {
+            validateReAppoinmentDetails();
+        }
+
+        private void reappointment_employee_no_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            reappointment_employee_no.BackColor = Color.White;
+        }
+
+        private void reappointment_suspension__system_TextChanged(object sender, EventArgs e)
+        {
+            reappointment_suspension__system.BackColor = Color.White;
+        }
+
+        private void reappointment_suspension_reason_TextChanged(object sender, EventArgs e)
+        {
+            reappointment_suspension_reason.BackColor = Color.White;
         }
     }
 }

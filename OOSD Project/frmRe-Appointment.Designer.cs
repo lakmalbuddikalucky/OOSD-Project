@@ -58,6 +58,7 @@
             this.reappointment_suspension_approved_note = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.reappointment_rojoining_date = new System.Windows.Forms.DateTimePicker();
+            this.btnCheckReApoinmentDetails = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,6 +73,7 @@
             this.reappointment_employee_no.Name = "reappointment_employee_no";
             this.reappointment_employee_no.Size = new System.Drawing.Size(200, 32);
             this.reappointment_employee_no.TabIndex = 1;
+            this.reappointment_employee_no.SelectedIndexChanged += new System.EventHandler(this.reappointment_employee_no_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -135,6 +137,7 @@
             // 
             // reappointment_full_name
             // 
+            this.reappointment_full_name.Enabled = false;
             this.reappointment_full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.reappointment_full_name.Location = new System.Drawing.Point(656, 136);
             this.reappointment_full_name.Name = "reappointment_full_name";
@@ -143,6 +146,7 @@
             // 
             // reappointment_post
             // 
+            this.reappointment_post.Enabled = false;
             this.reappointment_post.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.reappointment_post.Location = new System.Drawing.Point(656, 175);
             this.reappointment_post.Name = "reappointment_post";
@@ -151,6 +155,7 @@
             // 
             // reappointment_rank
             // 
+            this.reappointment_rank.Enabled = false;
             this.reappointment_rank.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.reappointment_rank.Location = new System.Drawing.Point(656, 214);
             this.reappointment_rank.Name = "reappointment_rank";
@@ -198,6 +203,7 @@
             this.reappointment_suspension_reason.Name = "reappointment_suspension_reason";
             this.reappointment_suspension_reason.Size = new System.Drawing.Size(250, 50);
             this.reappointment_suspension_reason.TabIndex = 6;
+            this.reappointment_suspension_reason.TextChanged += new System.EventHandler(this.reappointment_suspension_reason_TextChanged);
             // 
             // label35
             // 
@@ -318,6 +324,7 @@
             this.reappointment_suspension__system.Name = "reappointment_suspension__system";
             this.reappointment_suspension__system.Size = new System.Drawing.Size(150, 33);
             this.reappointment_suspension__system.TabIndex = 5;
+            this.reappointment_suspension__system.TextChanged += new System.EventHandler(this.reappointment_suspension__system_TextChanged);
             // 
             // label2
             // 
@@ -360,11 +367,24 @@
             this.reappointment_rojoining_date.Size = new System.Drawing.Size(297, 31);
             this.reappointment_rojoining_date.TabIndex = 128;
             // 
+            // btnCheckReApoinmentDetails
+            // 
+            this.btnCheckReApoinmentDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckReApoinmentDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckReApoinmentDetails.Location = new System.Drawing.Point(303, 63);
+            this.btnCheckReApoinmentDetails.Name = "btnCheckReApoinmentDetails";
+            this.btnCheckReApoinmentDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckReApoinmentDetails.TabIndex = 129;
+            this.btnCheckReApoinmentDetails.Text = "Check";
+            this.btnCheckReApoinmentDetails.UseVisualStyleBackColor = true;
+            this.btnCheckReApoinmentDetails.Click += new System.EventHandler(this.btnCheckReApoinmentDetails_Click);
+            // 
             // frmRe_Appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 741);
+            this.Controls.Add(this.btnCheckReApoinmentDetails);
             this.Controls.Add(this.reappointment_rojoining_date);
             this.Controls.Add(this.reappointment_employee_no);
             this.Controls.Add(this.label1);
@@ -431,5 +451,6 @@
         private System.Windows.Forms.TextBox reappointment_suspension_approved_note;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker reappointment_rojoining_date;
+        private System.Windows.Forms.Button btnCheckReApoinmentDetails;
     }
 }

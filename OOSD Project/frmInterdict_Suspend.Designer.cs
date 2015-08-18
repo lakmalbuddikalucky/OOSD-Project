@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInterdict_Suspend));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label33 = new System.Windows.Forms.Label();
@@ -62,10 +63,17 @@
             this.interdict_unattended_date_to = new System.Windows.Forms.DateTimePicker();
             this.interdict_date_to = new System.Windows.Forms.DateTimePicker();
             this.interdict_date_from = new System.Windows.Forms.DateTimePicker();
+            this.btnCheckInterdictSuspendDetails = new System.Windows.Forms.Button();
+            this.erp_interdict_unattended_date_to = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_interdict_unattended_date_from = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_interdict_date_to = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_interdict_unattended_date_to)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_interdict_unattended_date_from)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_interdict_date_to)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -147,6 +155,7 @@
             this.interdict_employee_no.Name = "interdict_employee_no";
             this.interdict_employee_no.Size = new System.Drawing.Size(200, 32);
             this.interdict_employee_no.TabIndex = 1;
+            this.interdict_employee_no.SelectedIndexChanged += new System.EventHandler(this.interdict_employee_no_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -234,27 +243,33 @@
             // 
             // interdict_full_name
             // 
+            this.interdict_full_name.Enabled = false;
             this.interdict_full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.interdict_full_name.Location = new System.Drawing.Point(608, 136);
             this.interdict_full_name.Name = "interdict_full_name";
             this.interdict_full_name.Size = new System.Drawing.Size(300, 33);
             this.interdict_full_name.TabIndex = 2;
+            this.interdict_full_name.TextChanged += new System.EventHandler(this.interdict_full_name_TextChanged);
             // 
             // interdict_post
             // 
+            this.interdict_post.Enabled = false;
             this.interdict_post.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.interdict_post.Location = new System.Drawing.Point(608, 175);
             this.interdict_post.Name = "interdict_post";
             this.interdict_post.Size = new System.Drawing.Size(150, 33);
             this.interdict_post.TabIndex = 3;
+            this.interdict_post.TextChanged += new System.EventHandler(this.interdict_post_TextChanged);
             // 
             // interdict_rank
             // 
+            this.interdict_rank.Enabled = false;
             this.interdict_rank.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.interdict_rank.Location = new System.Drawing.Point(608, 214);
             this.interdict_rank.Name = "interdict_rank";
             this.interdict_rank.Size = new System.Drawing.Size(150, 33);
             this.interdict_rank.TabIndex = 4;
+            this.interdict_rank.TextChanged += new System.EventHandler(this.interdict_rank_TextChanged);
             // 
             // label13
             // 
@@ -362,10 +377,12 @@
             this.interdict_rejoined.TabStop = true;
             this.interdict_rejoined.Text = "නැවත බඳවා ගැනීමක් ";
             this.interdict_rejoined.UseVisualStyleBackColor = true;
+            this.interdict_rejoined.CheckedChanged += new System.EventHandler(this.interdict_rejoined_CheckedChanged);
             // 
             // interdict_not_rejoined
             // 
             this.interdict_not_rejoined.AutoSize = true;
+            this.interdict_not_rejoined.Checked = true;
             this.interdict_not_rejoined.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.interdict_not_rejoined.Location = new System.Drawing.Point(902, 388);
             this.interdict_not_rejoined.Name = "interdict_not_rejoined";
@@ -374,6 +391,7 @@
             this.interdict_not_rejoined.TabStop = true;
             this.interdict_not_rejoined.Text = "නැවත බඳවා නොගැනීමක් ";
             this.interdict_not_rejoined.UseVisualStyleBackColor = true;
+            this.interdict_not_rejoined.CheckedChanged += new System.EventHandler(this.interdict_not_rejoined_CheckedChanged);
             // 
             // interdict_unattended_date_from
             // 
@@ -382,6 +400,7 @@
             this.interdict_unattended_date_from.Name = "interdict_unattended_date_from";
             this.interdict_unattended_date_from.Size = new System.Drawing.Size(297, 31);
             this.interdict_unattended_date_from.TabIndex = 94;
+            this.interdict_unattended_date_from.ValueChanged += new System.EventHandler(this.interdict_unattended_date_from_ValueChanged);
             // 
             // interdict_unattended_date_to
             // 
@@ -390,14 +409,17 @@
             this.interdict_unattended_date_to.Name = "interdict_unattended_date_to";
             this.interdict_unattended_date_to.Size = new System.Drawing.Size(297, 31);
             this.interdict_unattended_date_to.TabIndex = 95;
+            this.interdict_unattended_date_to.ValueChanged += new System.EventHandler(this.interdict_unattended_date_to_ValueChanged);
             // 
             // interdict_date_to
             // 
+            this.interdict_date_to.Enabled = false;
             this.interdict_date_to.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.interdict_date_to.Location = new System.Drawing.Point(608, 547);
             this.interdict_date_to.Name = "interdict_date_to";
             this.interdict_date_to.Size = new System.Drawing.Size(297, 31);
             this.interdict_date_to.TabIndex = 96;
+            this.interdict_date_to.ValueChanged += new System.EventHandler(this.interdict_date_to_ValueChanged);
             // 
             // interdict_date_from
             // 
@@ -406,12 +428,38 @@
             this.interdict_date_from.Name = "interdict_date_from";
             this.interdict_date_from.Size = new System.Drawing.Size(297, 31);
             this.interdict_date_from.TabIndex = 97;
+            this.interdict_date_from.ValueChanged += new System.EventHandler(this.interdict_date_from_ValueChanged);
+            // 
+            // btnCheckInterdictSuspendDetails
+            // 
+            this.btnCheckInterdictSuspendDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckInterdictSuspendDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckInterdictSuspendDetails.Location = new System.Drawing.Point(303, 63);
+            this.btnCheckInterdictSuspendDetails.Name = "btnCheckInterdictSuspendDetails";
+            this.btnCheckInterdictSuspendDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckInterdictSuspendDetails.TabIndex = 98;
+            this.btnCheckInterdictSuspendDetails.Text = "Check";
+            this.btnCheckInterdictSuspendDetails.UseVisualStyleBackColor = true;
+            this.btnCheckInterdictSuspendDetails.Click += new System.EventHandler(this.btnCheckInterdictSuspendDetails_Click);
+            // 
+            // erp_interdict_unattended_date_to
+            // 
+            this.erp_interdict_unattended_date_to.ContainerControl = this;
+            // 
+            // erp_interdict_unattended_date_from
+            // 
+            this.erp_interdict_unattended_date_from.ContainerControl = this;
+            // 
+            // erp_interdict_date_to
+            // 
+            this.erp_interdict_date_to.ContainerControl = this;
             // 
             // frmInterdict_Suspend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 741);
+            this.Controls.Add(this.btnCheckInterdictSuspendDetails);
             this.Controls.Add(this.interdict_date_from);
             this.Controls.Add(this.interdict_date_to);
             this.Controls.Add(this.interdict_unattended_date_to);
@@ -446,6 +494,9 @@
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.erp_interdict_unattended_date_to)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_interdict_unattended_date_from)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_interdict_date_to)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,6 +537,9 @@
         private System.Windows.Forms.DateTimePicker interdict_unattended_date_to;
         private System.Windows.Forms.DateTimePicker interdict_date_to;
         private System.Windows.Forms.DateTimePicker interdict_date_from;
-
+        private System.Windows.Forms.Button btnCheckInterdictSuspendDetails;
+        private System.Windows.Forms.ErrorProvider erp_interdict_unattended_date_to;
+        private System.Windows.Forms.ErrorProvider erp_interdict_unattended_date_from;
+        private System.Windows.Forms.ErrorProvider erp_interdict_date_to;
     }
 }

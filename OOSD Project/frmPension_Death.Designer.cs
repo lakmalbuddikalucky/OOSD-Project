@@ -28,36 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPension_Death));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label33 = new System.Windows.Forms.Label();
             this.employee_no = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.lblCaption = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.full_name = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pension_employee_no = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pension_full_name = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pension_notes = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.label35 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pension_dead = new System.Windows.Forms.RadioButton();
             this.pension_retired = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pension_full_name = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pension_notes = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pension_employee_no = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pension_informed_date = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.pension_died_date = new System.Windows.Forms.DateTimePicker();
+            this.pension_informed_date = new System.Windows.Forms.DateTimePicker();
+            this.gb_dead = new System.Windows.Forms.GroupBox();
+            this.pension_dead = new System.Windows.Forms.RadioButton();
+            this.btnCheckPensionDeadDetails = new System.Windows.Forms.Button();
+            this.erp_pension_died_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_pension_informed_date = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gb_dead.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_pension_died_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_pension_informed_date)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -110,18 +116,6 @@
             this.lblCaption.TabIndex = 84;
             this.lblCaption.Text = "               Pension && Deaths";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(470, 131);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 26);
-            this.label3.TabIndex = 98;
-            this.label3.Text = "දැනුම් දුන් දිනය";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // full_name
             // 
             this.full_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -142,68 +136,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(284, 607);
             this.panel4.TabIndex = 6;
-            // 
-            // pension_employee_no
-            // 
-            this.pension_employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pension_employee_no.FormattingEnabled = true;
-            this.pension_employee_no.Location = new System.Drawing.Point(145, 51);
-            this.pension_employee_no.Name = "pension_employee_no";
-            this.pension_employee_no.Size = new System.Drawing.Size(200, 32);
-            this.pension_employee_no.TabIndex = 3;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(65, 171);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 26);
-            this.label9.TabIndex = 90;
-            this.label9.Text = "සටහන්";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pension_full_name
-            // 
-            this.pension_full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.pension_full_name.Location = new System.Drawing.Point(145, 89);
-            this.pension_full_name.Name = "pension_full_name";
-            this.pension_full_name.Size = new System.Drawing.Size(300, 33);
-            this.pension_full_name.TabIndex = 4;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(15, 92);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(124, 26);
-            this.label13.TabIndex = 89;
-            this.label13.Text = "සම්පූර්ණ නම";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(12, 53);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(127, 26);
-            this.label7.TabIndex = 88;
-            this.label7.Text = "සේවක අංකය";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pension_notes
-            // 
-            this.pension_notes.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.pension_notes.Location = new System.Drawing.Point(145, 168);
-            this.pension_notes.Multiline = true;
-            this.pension_notes.Name = "pension_notes";
-            this.pension_notes.Size = new System.Drawing.Size(297, 142);
-            this.pension_notes.TabIndex = 11;
             // 
             // panel2
             // 
@@ -246,21 +178,11 @@
             this.panel3.Size = new System.Drawing.Size(300, 708);
             this.panel3.TabIndex = 86;
             // 
-            // pension_dead
-            // 
-            this.pension_dead.AutoSize = true;
-            this.pension_dead.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.pension_dead.Location = new System.Drawing.Point(6, 0);
-            this.pension_dead.Name = "pension_dead";
-            this.pension_dead.Size = new System.Drawing.Size(108, 30);
-            this.pension_dead.TabIndex = 2;
-            this.pension_dead.TabStop = true;
-            this.pension_dead.Text = "මියගොස්";
-            this.pension_dead.UseVisualStyleBackColor = true;
-            // 
             // pension_retired
             // 
+            this.pension_retired.AccessibleName = "a";
             this.pension_retired.AutoSize = true;
+            this.pension_retired.Checked = true;
             this.pension_retired.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.pension_retired.Location = new System.Drawing.Point(331, 98);
             this.pension_retired.Name = "pension_retired";
@@ -269,26 +191,71 @@
             this.pension_retired.TabStop = true;
             this.pension_retired.Text = "විශ්‍රාමික";
             this.pension_retired.UseVisualStyleBackColor = true;
+            this.pension_retired.CheckedChanged += new System.EventHandler(this.pension_retired_CheckedChanged);
             // 
-            // groupBox1
+            // pension_full_name
             // 
-            this.groupBox1.Controls.Add(this.pension_informed_date);
-            this.groupBox1.Controls.Add(this.pension_died_date);
-            this.groupBox1.Controls.Add(this.pension_dead);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.pension_employee_no);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.pension_notes);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.pension_full_name);
-            this.groupBox1.Font = new System.Drawing.Font("Calibri", 12.75F);
-            this.groupBox1.Location = new System.Drawing.Point(325, 136);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(949, 316);
-            this.groupBox1.TabIndex = 102;
-            this.groupBox1.TabStop = false;
+            this.pension_full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.pension_full_name.Location = new System.Drawing.Point(145, 89);
+            this.pension_full_name.Name = "pension_full_name";
+            this.pension_full_name.Size = new System.Drawing.Size(300, 33);
+            this.pension_full_name.TabIndex = 4;
+            this.pension_full_name.TextChanged += new System.EventHandler(this.pension_full_name_TextChanged);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(15, 92);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(124, 26);
+            this.label13.TabIndex = 89;
+            this.label13.Text = "සම්පූර්ණ නම";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(12, 53);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(127, 26);
+            this.label7.TabIndex = 88;
+            this.label7.Text = "සේවක අංකය";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pension_notes
+            // 
+            this.pension_notes.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.pension_notes.Location = new System.Drawing.Point(145, 168);
+            this.pension_notes.Multiline = true;
+            this.pension_notes.Name = "pension_notes";
+            this.pension_notes.Size = new System.Drawing.Size(297, 142);
+            this.pension_notes.TabIndex = 11;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(65, 171);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 26);
+            this.label9.TabIndex = 90;
+            this.label9.Text = "සටහන්";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pension_employee_no
+            // 
+            this.pension_employee_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pension_employee_no.FormattingEnabled = true;
+            this.pension_employee_no.Location = new System.Drawing.Point(145, 51);
+            this.pension_employee_no.Name = "pension_employee_no";
+            this.pension_employee_no.Size = new System.Drawing.Size(200, 32);
+            this.pension_employee_no.TabIndex = 3;
+            this.pension_employee_no.SelectedIndexChanged += new System.EventHandler(this.pension_employee_no_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -302,13 +269,17 @@
             this.label6.Text = "මියගිය දිනය";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // pension_informed_date
+            // label3
             // 
-            this.pension_informed_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pension_informed_date.Location = new System.Drawing.Point(612, 128);
-            this.pension_informed_date.Name = "pension_informed_date";
-            this.pension_informed_date.Size = new System.Drawing.Size(294, 31);
-            this.pension_informed_date.TabIndex = 103;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 15.75F);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(470, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(136, 26);
+            this.label3.TabIndex = 98;
+            this.label3.Text = "දැනුම් දුන් දිනය";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pension_died_date
             // 
@@ -317,13 +288,77 @@
             this.pension_died_date.Name = "pension_died_date";
             this.pension_died_date.Size = new System.Drawing.Size(300, 31);
             this.pension_died_date.TabIndex = 104;
+            this.pension_died_date.ValueChanged += new System.EventHandler(this.pension_died_date_ValueChanged);
+            // 
+            // pension_informed_date
+            // 
+            this.pension_informed_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pension_informed_date.Location = new System.Drawing.Point(612, 128);
+            this.pension_informed_date.Name = "pension_informed_date";
+            this.pension_informed_date.Size = new System.Drawing.Size(294, 31);
+            this.pension_informed_date.TabIndex = 103;
+            this.pension_informed_date.ValueChanged += new System.EventHandler(this.pension_informed_date_ValueChanged);
+            // 
+            // gb_dead
+            // 
+            this.gb_dead.Controls.Add(this.pension_informed_date);
+            this.gb_dead.Controls.Add(this.pension_died_date);
+            this.gb_dead.Controls.Add(this.label3);
+            this.gb_dead.Controls.Add(this.label6);
+            this.gb_dead.Controls.Add(this.pension_employee_no);
+            this.gb_dead.Controls.Add(this.label9);
+            this.gb_dead.Controls.Add(this.pension_notes);
+            this.gb_dead.Controls.Add(this.label7);
+            this.gb_dead.Controls.Add(this.label13);
+            this.gb_dead.Controls.Add(this.pension_full_name);
+            this.gb_dead.Font = new System.Drawing.Font("Calibri", 12.75F);
+            this.gb_dead.Location = new System.Drawing.Point(331, 169);
+            this.gb_dead.Name = "gb_dead";
+            this.gb_dead.Size = new System.Drawing.Size(949, 316);
+            this.gb_dead.TabIndex = 102;
+            this.gb_dead.TabStop = false;
+            // 
+            // pension_dead
+            // 
+            this.pension_dead.AutoSize = true;
+            this.pension_dead.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pension_dead.Location = new System.Drawing.Point(331, 134);
+            this.pension_dead.Name = "pension_dead";
+            this.pension_dead.Size = new System.Drawing.Size(108, 29);
+            this.pension_dead.TabIndex = 104;
+            this.pension_dead.TabStop = true;
+            this.pension_dead.Text = "මියගොස්";
+            this.pension_dead.UseVisualStyleBackColor = true;
+            this.pension_dead.CheckedChanged += new System.EventHandler(this.pension_dead_CheckedChanged_1);
+            // 
+            // btnCheckPensionDeadDetails
+            // 
+            this.btnCheckPensionDeadDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckPensionDeadDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckPensionDeadDetails.Location = new System.Drawing.Point(303, 63);
+            this.btnCheckPensionDeadDetails.Name = "btnCheckPensionDeadDetails";
+            this.btnCheckPensionDeadDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckPensionDeadDetails.TabIndex = 105;
+            this.btnCheckPensionDeadDetails.Text = "Check";
+            this.btnCheckPensionDeadDetails.UseVisualStyleBackColor = true;
+            this.btnCheckPensionDeadDetails.Click += new System.EventHandler(this.btnCheckPensionDeadDetails_Click);
+            // 
+            // erp_pension_died_date
+            // 
+            this.erp_pension_died_date.ContainerControl = this;
+            // 
+            // erp_pension_informed_date
+            // 
+            this.erp_pension_informed_date.ContainerControl = this;
             // 
             // frmPension_Death
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 741);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnCheckPensionDeadDetails);
+            this.Controls.Add(this.pension_dead);
+            this.Controls.Add(this.gb_dead);
             this.Controls.Add(this.pension_retired);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label35);
@@ -337,8 +372,10 @@
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gb_dead.ResumeLayout(false);
+            this.gb_dead.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_pension_died_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_pension_informed_date)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,24 +388,27 @@
         private System.Windows.Forms.ComboBox employee_no;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label lblCaption;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox full_name;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.ComboBox pension_employee_no;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox pension_full_name;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox pension_notes;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RadioButton pension_dead;
         private System.Windows.Forms.RadioButton pension_retired;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox pension_full_name;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox pension_notes;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox pension_employee_no;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker pension_informed_date;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker pension_died_date;
+        private System.Windows.Forms.DateTimePicker pension_informed_date;
+        private System.Windows.Forms.GroupBox gb_dead;
+        private System.Windows.Forms.RadioButton pension_dead;
+        private System.Windows.Forms.Button btnCheckPensionDeadDetails;
+        private System.Windows.Forms.ErrorProvider erp_pension_died_date;
+        private System.Windows.Forms.ErrorProvider erp_pension_informed_date;
     }
 }

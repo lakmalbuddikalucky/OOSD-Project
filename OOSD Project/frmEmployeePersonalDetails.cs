@@ -161,6 +161,19 @@ namespace OOSD_Project
                 blood_group.BackColor = Color.RosyBrown;
                 state = false;
             }
+
+            if (!Validator.dateDiff(DateTime.Today, dob_date.Value))
+            {
+                erp_dob_date.SetError(dob_date, "Invalid date");
+                state = false;
+            }
+
+            if(!Validator.dateDiff(DateTime.Today, marry_date.Value))
+            {
+                erp_marry_date.SetError(marry_date, "Invalid date");
+                state = false;
+            }
+
             return state;
         }
 
@@ -441,6 +454,13 @@ namespace OOSD_Project
                 wsd_power.BackColor = Color.RosyBrown;
                 state = false;
             }
+
+            if(!Validator.dateDiff(DateTime.Today, wsd_date_of_post_date.Value))
+            {
+                erp_wsd_date_of_post_date.SetError(wsd_date_of_post_date, "Invalid date");
+                state = false;
+            }
+
             return state;
         }
         private void btnSave_Click(object sender, EventArgs e)
@@ -953,6 +973,21 @@ namespace OOSD_Project
         private void depend_nic_no_TextChanged(object sender, EventArgs e)
         {
             depend_nic_no.BackColor = Color.White;
+        }
+
+        private void dob_date_ValueChanged(object sender, EventArgs e)
+        {
+            erp_dob_date.Dispose();
+        }
+
+        private void marry_date_ValueChanged(object sender, EventArgs e)
+        {
+            erp_marry_date.Dispose();
+        }
+
+        private void wsd_date_of_post_date_ValueChanged(object sender, EventArgs e)
+        {
+            erp_wsd_date_of_post_date.Dispose();
         }
     }
 }

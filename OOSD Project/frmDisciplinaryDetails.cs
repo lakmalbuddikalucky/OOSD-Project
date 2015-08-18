@@ -31,58 +31,97 @@ namespace OOSD_Project
         private bool validateDiciplinaryDetails()
         {
             bool state = true;
-            if(desciplinary_employee_no.Text == "")
+            if (!Validator.validate(desciplinary_employee_no, VALIDATE_TYPE.NOT_NULL))
             {
-                desciplinary_employee_no.BackColor = Color.RosyBrown;
-                state = false;
-            }
-            if (desciplinary_full_name.Text == "" || !Validator.text(desciplinary_full_name.Text))
-            {
-                desciplinary_full_name.BackColor = Color.RosyBrown;
                 state = false;
             }
 
-            if (desciplinary_post.Text == "" || !Validator.text(desciplinary_post.Text))
+            if (!Validator.validate(desciplinary_full_name, VALIDATE_TYPE.NOT_NULL) || !Validator.validate(desciplinary_full_name, VALIDATE_TYPE.TEXT))
             {
-                desciplinary_post.BackColor = Color.RosyBrown;
                 state = false;
             }
 
-            if (desciplinary_rank.Text == "" || !Validator.text(desciplinary_rank.Text))
+            if (!Validator.validate(desciplinary_post, VALIDATE_TYPE.NOT_NULL) || !Validator.validate(desciplinary_post, VALIDATE_TYPE.TEXT))
             {
-                desciplinary_rank.BackColor = Color.RosyBrown;
                 state = false;
             }
 
-            if (desciplinary_breaking.Text == "" || !Validator.text(desciplinary_breaking.Text))
+            if (!Validator.validate(desciplinary_rank, VALIDATE_TYPE.NOT_NULL) || !Validator.validate(desciplinary_rank, VALIDATE_TYPE.TEXT))
             {
-                desciplinary_breaking.BackColor = Color.RosyBrown;
                 state = false;
             }
 
-            if (desciplinary_request_of_main_administration_officer.Text == "" || !Validator.text(desciplinary_request_of_main_administration_officer.Text))
+            if(!Validator.validate(desciplinary_breaking,VALIDATE_TYPE.NOT_NULL) || !Validator.validate(desciplinary_breaking, VALIDATE_TYPE.TEXT))
             {
-                desciplinary_request_of_main_administration_officer.BackColor = Color.RosyBrown;
                 state = false;
             }
 
-            if(desciplinary_given_sentence.Text == "" || !Validator.text(desciplinary_given_sentence.Text)){
-                desciplinary_given_sentence.BackColor = Color.RosyBrown;
+            if(!Validator.validate(desciplinary_request_of_main_administration_officer,VALIDATE_TYPE.NOT_NULL) || !Validator.validate(desciplinary_request_of_main_administration_officer, VALIDATE_TYPE.TEXT))
+            {
                 state = false;
             }
 
-            if (desciplinary_verdict_of_director_general.Text == "" || !Validator.text(desciplinary_verdict_of_director_general.Text))
+            if(!Validator.validate(desciplinary_given_sentence,VALIDATE_TYPE.NOT_NULL) || !Validator.validate(desciplinary_given_sentence, VALIDATE_TYPE.TEXT))
             {
-                desciplinary_verdict_of_director_general.BackColor = Color.RosyBrown;
                 state = false;
             }
 
-            if (desciplinary_inquiry_officer.Text == "" || !Validator.text(desciplinary_inquiry_officer.Text))
+            if(!Validator.validate(desciplinary_verdict_of_director_general,VALIDATE_TYPE.NOT_NULL) || !Validator.validate(desciplinary_verdict_of_director_general, VALIDATE_TYPE.TEXT))
             {
-                desciplinary_inquiry_officer.BackColor = Color.RosyBrown;
+                state = false;
+            }
+
+            if(!Validator.validate(desciplinary_inquiry_officer,VALIDATE_TYPE.NOT_NULL) || !Validator.validate(desciplinary_inquiry_officer, VALIDATE_TYPE.TEXT))
+            {
+                state = false;
+            }
+
+            if(!Validator.validate(ref disciplinary_rejoined_date,ref disciplinary_suspended_date, VALIDATE_TYPE.DATE_DIFF))
+            {
+                erp_disciplinary_rejoined_date.SetError(disciplinary_rejoined_date, "Invalid date");
+                state = false;
+            }
+            else
+            {
+                erp_disciplinary_rejoined_date.Dispose();
+            }
+
+            if (!Validator.validate(ref disciplinary_given_sentence_date, ref disciplinary_date, VALIDATE_TYPE.DATE_DIFF))
+            {
+                erp_disciplinary_given_sentence_date.SetError(disciplinary_given_sentence_date, "Invalid date");
+                state = false;
+            }
+            else
+            {
+                erp_disciplinary_given_sentence_date.Dispose();
+            }
+
+            if(!Validator.validate(ref desciplinary_verdict_of_director_general_date,ref disciplinary_given_sentence_date, VALIDATE_TYPE.DATE_DIFF))
+            {
+                erp_desciplinary_verdict_of_director_general_date.SetError(desciplinary_verdict_of_director_general_date, "Invalid date");
+                state = false;
+            }
+            else
+            {
+                erp_desciplinary_verdict_of_director_general_date.Dispose();
+            }
+
+            if(!Validator.dateDiff(DateTime.Today, disciplinary_date.Value))
+            {
+                erp_disciplinary_date.SetError(disciplinary_date, "Invalid date");
                 state = false;
             }
             return state;
+        }
+
+        private bool validateNewDiciplinaryDetails()
+        {
+            if (Validator.validate(desciplinary_employee_no,VALIDATE_TYPE.NOT_NULL) &&
+                Validator.validate(desciplinary_employee_no,VALIDATE_TYPE.NUMBER))
+            {
+                return true;
+            }
+            return false;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -148,6 +187,33 @@ namespace OOSD_Project
         private void btnCheckDisciplinaryDetails_Click(object sender, EventArgs e)
         {
             validateDiciplinaryDetails();
+        }
+
+        private void disciplinary_suspended_date_ValueChanged(object sender, EventArgs e)
+        {
+            erp_disciplinary_rejoined_date.Dispose();
+        }
+
+        private void disciplinary_rejoined_date_ValueChanged(object sender, EventArgs e)
+        {
+            erp_disciplinary_rejoined_date.Dispose();
+        }
+
+        private void disciplinary_date_ValueChanged(object sender, EventArgs e)
+        {
+            erp_disciplinary_date.Dispose();
+            erp_disciplinary_given_sentence_date.Dispose();
+        }
+
+        private void disciplinary_given_sentence_date_ValueChanged(object sender, EventArgs e)
+        {
+            erp_disciplinary_given_sentence_date.Dispose();
+            erp_desciplinary_verdict_of_director_general_date.Dispose();
+        }
+
+        private void desciplinary_verdict_of_director_general_date_ValueChanged(object sender, EventArgs e)
+        {
+            erp_desciplinary_verdict_of_director_general_date.Dispose();
         }
     }
 }

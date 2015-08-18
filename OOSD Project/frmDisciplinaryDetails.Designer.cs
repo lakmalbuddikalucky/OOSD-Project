@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDisciplinaryDetails));
             this.desciplinary_employee_no = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -61,22 +62,30 @@
             this.label34 = new System.Windows.Forms.Label();
             this.lblCaption = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.disciplinary_rejoined_date = new System.Windows.Forms.DateTimePicker();
+            this.disciplinary_suspended_date = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.desciplinary_suspended_time = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCheckDisciplinaryDetails = new System.Windows.Forms.Button();
-            this.disciplinary_suspended_date = new System.Windows.Forms.DateTimePicker();
-            this.disciplinary_rejoined_date = new System.Windows.Forms.DateTimePicker();
-            this.bank_account_started_year = new System.Windows.Forms.DateTimePicker();
+            this.disciplinary_date = new System.Windows.Forms.DateTimePicker();
             this.disciplinary_given_sentence_date = new System.Windows.Forms.DateTimePicker();
             this.desciplinary_verdict_of_director_general_date = new System.Windows.Forms.DateTimePicker();
+            this.erp_disciplinary_rejoined_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_disciplinary_given_sentence_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_desciplinary_verdict_of_director_general_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_disciplinary_date = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_disciplinary_rejoined_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_disciplinary_given_sentence_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_desciplinary_verdict_of_director_general_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_disciplinary_date)).BeginInit();
             this.SuspendLayout();
             // 
             // desciplinary_employee_no
@@ -426,6 +435,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "තාවකාලිකව සේවය අත්හිටවූවා නම්:";
             // 
+            // disciplinary_rejoined_date
+            // 
+            this.disciplinary_rejoined_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.disciplinary_rejoined_date.Location = new System.Drawing.Point(257, 80);
+            this.disciplinary_rejoined_date.Name = "disciplinary_rejoined_date";
+            this.disciplinary_rejoined_date.Size = new System.Drawing.Size(310, 31);
+            this.disciplinary_rejoined_date.TabIndex = 61;
+            this.disciplinary_rejoined_date.ValueChanged += new System.EventHandler(this.disciplinary_rejoined_date_ValueChanged);
+            // 
+            // disciplinary_suspended_date
+            // 
+            this.disciplinary_suspended_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.disciplinary_suspended_date.Location = new System.Drawing.Point(257, 38);
+            this.disciplinary_suspended_date.Name = "disciplinary_suspended_date";
+            this.disciplinary_suspended_date.Size = new System.Drawing.Size(310, 31);
+            this.disciplinary_suspended_date.TabIndex = 60;
+            this.disciplinary_suspended_date.ValueChanged += new System.EventHandler(this.disciplinary_suspended_date_ValueChanged);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -485,7 +512,7 @@
             // btnCheckDisciplinaryDetails
             // 
             this.btnCheckDisciplinaryDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckDisciplinaryDetails.Location = new System.Drawing.Point(948, 461);
+            this.btnCheckDisciplinaryDetails.Location = new System.Drawing.Point(306, 63);
             this.btnCheckDisciplinaryDetails.Name = "btnCheckDisciplinaryDetails";
             this.btnCheckDisciplinaryDetails.Size = new System.Drawing.Size(75, 33);
             this.btnCheckDisciplinaryDetails.TabIndex = 66;
@@ -493,29 +520,14 @@
             this.btnCheckDisciplinaryDetails.UseVisualStyleBackColor = true;
             this.btnCheckDisciplinaryDetails.Click += new System.EventHandler(this.btnCheckDisciplinaryDetails_Click);
             // 
-            // disciplinary_suspended_date
+            // disciplinary_date
             // 
-            this.disciplinary_suspended_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disciplinary_suspended_date.Location = new System.Drawing.Point(257, 38);
-            this.disciplinary_suspended_date.Name = "disciplinary_suspended_date";
-            this.disciplinary_suspended_date.Size = new System.Drawing.Size(310, 31);
-            this.disciplinary_suspended_date.TabIndex = 60;
-            // 
-            // disciplinary_rejoined_date
-            // 
-            this.disciplinary_rejoined_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disciplinary_rejoined_date.Location = new System.Drawing.Point(257, 80);
-            this.disciplinary_rejoined_date.Name = "disciplinary_rejoined_date";
-            this.disciplinary_rejoined_date.Size = new System.Drawing.Size(310, 31);
-            this.disciplinary_rejoined_date.TabIndex = 61;
-            // 
-            // bank_account_started_year
-            // 
-            this.bank_account_started_year.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bank_account_started_year.Location = new System.Drawing.Point(948, 253);
-            this.bank_account_started_year.Name = "bank_account_started_year";
-            this.bank_account_started_year.Size = new System.Drawing.Size(310, 31);
-            this.bank_account_started_year.TabIndex = 67;
+            this.disciplinary_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.disciplinary_date.Location = new System.Drawing.Point(948, 253);
+            this.disciplinary_date.Name = "disciplinary_date";
+            this.disciplinary_date.Size = new System.Drawing.Size(310, 31);
+            this.disciplinary_date.TabIndex = 67;
+            this.disciplinary_date.ValueChanged += new System.EventHandler(this.disciplinary_date_ValueChanged);
             // 
             // disciplinary_given_sentence_date
             // 
@@ -525,6 +537,7 @@
             this.disciplinary_given_sentence_date.Name = "disciplinary_given_sentence_date";
             this.disciplinary_given_sentence_date.Size = new System.Drawing.Size(310, 31);
             this.disciplinary_given_sentence_date.TabIndex = 68;
+            this.disciplinary_given_sentence_date.ValueChanged += new System.EventHandler(this.disciplinary_given_sentence_date_ValueChanged);
             // 
             // desciplinary_verdict_of_director_general_date
             // 
@@ -533,6 +546,23 @@
             this.desciplinary_verdict_of_director_general_date.Name = "desciplinary_verdict_of_director_general_date";
             this.desciplinary_verdict_of_director_general_date.Size = new System.Drawing.Size(309, 31);
             this.desciplinary_verdict_of_director_general_date.TabIndex = 69;
+            this.desciplinary_verdict_of_director_general_date.ValueChanged += new System.EventHandler(this.desciplinary_verdict_of_director_general_date_ValueChanged);
+            // 
+            // erp_disciplinary_rejoined_date
+            // 
+            this.erp_disciplinary_rejoined_date.ContainerControl = this;
+            // 
+            // erp_disciplinary_given_sentence_date
+            // 
+            this.erp_disciplinary_given_sentence_date.ContainerControl = this;
+            // 
+            // erp_desciplinary_verdict_of_director_general_date
+            // 
+            this.erp_desciplinary_verdict_of_director_general_date.ContainerControl = this;
+            // 
+            // erp_disciplinary_date
+            // 
+            this.erp_disciplinary_date.ContainerControl = this;
             // 
             // frmDisciplinaryDetails
             // 
@@ -541,7 +571,7 @@
             this.ClientSize = new System.Drawing.Size(1360, 741);
             this.Controls.Add(this.desciplinary_verdict_of_director_general_date);
             this.Controls.Add(this.disciplinary_given_sentence_date);
-            this.Controls.Add(this.bank_account_started_year);
+            this.Controls.Add(this.disciplinary_date);
             this.Controls.Add(this.btnCheckDisciplinaryDetails);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
@@ -579,6 +609,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_disciplinary_rejoined_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_disciplinary_given_sentence_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_desciplinary_verdict_of_director_general_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_disciplinary_date)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -626,8 +660,12 @@
         private System.Windows.Forms.Button btnCheckDisciplinaryDetails;
         private System.Windows.Forms.DateTimePicker disciplinary_rejoined_date;
         private System.Windows.Forms.DateTimePicker disciplinary_suspended_date;
-        private System.Windows.Forms.DateTimePicker bank_account_started_year;
+        private System.Windows.Forms.DateTimePicker disciplinary_date;
         private System.Windows.Forms.DateTimePicker disciplinary_given_sentence_date;
         private System.Windows.Forms.DateTimePicker desciplinary_verdict_of_director_general_date;
+        private System.Windows.Forms.ErrorProvider erp_disciplinary_rejoined_date;
+        private System.Windows.Forms.ErrorProvider erp_disciplinary_given_sentence_date;
+        private System.Windows.Forms.ErrorProvider erp_desciplinary_verdict_of_director_general_date;
+        private System.Windows.Forms.ErrorProvider erp_disciplinary_date;
     }
 }

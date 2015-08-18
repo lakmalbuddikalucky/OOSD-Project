@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPassportDetails));
             this.lblCaption = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -58,11 +59,16 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
             this.label35 = new System.Windows.Forms.Label();
+            this.btnCheckPassportDetails = new System.Windows.Forms.Button();
+            this.erp_passport_issued_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_passport_renewal_date = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_passport_issued_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_passport_renewal_date)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCaption
@@ -148,6 +154,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Controls.Add(this.btnCheckPassportDetails);
             this.panel1.Controls.Add(this.passport_renewal_date);
             this.panel1.Controls.Add(this.passport_issued_date);
             this.panel1.Controls.Add(this.passport_status_deactive);
@@ -175,6 +182,7 @@
             this.passport_renewal_date.Name = "passport_renewal_date";
             this.passport_renewal_date.Size = new System.Drawing.Size(294, 31);
             this.passport_renewal_date.TabIndex = 39;
+            this.passport_renewal_date.ValueChanged += new System.EventHandler(this.passport_renewal_date_ValueChanged);
             // 
             // passport_issued_date
             // 
@@ -183,6 +191,7 @@
             this.passport_issued_date.Name = "passport_issued_date";
             this.passport_issued_date.Size = new System.Drawing.Size(294, 31);
             this.passport_issued_date.TabIndex = 38;
+            this.passport_issued_date.ValueChanged += new System.EventHandler(this.passport_issued_date_ValueChanged);
             // 
             // passport_status_deactive
             // 
@@ -292,6 +301,7 @@
             this.passport_post.Name = "passport_post";
             this.passport_post.Size = new System.Drawing.Size(294, 33);
             this.passport_post.TabIndex = 23;
+            this.passport_post.TextChanged += new System.EventHandler(this.passport_post_TextChanged);
             // 
             // passport_rank
             // 
@@ -300,6 +310,7 @@
             this.passport_rank.Name = "passport_rank";
             this.passport_rank.Size = new System.Drawing.Size(294, 33);
             this.passport_rank.TabIndex = 21;
+            this.passport_rank.TextChanged += new System.EventHandler(this.passport_rank_TextChanged);
             // 
             // passport_issued_place
             // 
@@ -308,6 +319,7 @@
             this.passport_issued_place.Name = "passport_issued_place";
             this.passport_issued_place.Size = new System.Drawing.Size(294, 33);
             this.passport_issued_place.TabIndex = 19;
+            this.passport_issued_place.TextChanged += new System.EventHandler(this.passport_issued_place_TextChanged);
             // 
             // passport_no
             // 
@@ -316,6 +328,7 @@
             this.passport_no.Name = "passport_no";
             this.passport_no.Size = new System.Drawing.Size(294, 33);
             this.passport_no.TabIndex = 17;
+            this.passport_no.TextChanged += new System.EventHandler(this.passport_no_TextChanged);
             // 
             // btnSave
             // 
@@ -376,6 +389,25 @@
             this.label35.TabIndex = 21;
             this.label35.Text = "Employee";
             // 
+            // btnCheckPassportDetails
+            // 
+            this.btnCheckPassportDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckPassportDetails.Location = new System.Drawing.Point(7, 3);
+            this.btnCheckPassportDetails.Name = "btnCheckPassportDetails";
+            this.btnCheckPassportDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckPassportDetails.TabIndex = 67;
+            this.btnCheckPassportDetails.Text = "Check";
+            this.btnCheckPassportDetails.UseVisualStyleBackColor = true;
+            this.btnCheckPassportDetails.Click += new System.EventHandler(this.btnCheckPassportDetails_Click);
+            // 
+            // erp_passport_issued_date
+            // 
+            this.erp_passport_issued_date.ContainerControl = this;
+            // 
+            // erp_passport_renewal_date
+            // 
+            this.erp_passport_renewal_date.ContainerControl = this;
+            // 
             // frmPassportDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,6 +431,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.erp_passport_issued_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_passport_renewal_date)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -435,5 +469,8 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.DateTimePicker passport_renewal_date;
         private System.Windows.Forms.DateTimePicker passport_issued_date;
+        private System.Windows.Forms.Button btnCheckPassportDetails;
+        private System.Windows.Forms.ErrorProvider erp_passport_issued_date;
+        private System.Windows.Forms.ErrorProvider erp_passport_renewal_date;
     }
 }

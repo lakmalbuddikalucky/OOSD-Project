@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmResignation));
             this.resignation_employee_no = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,10 +58,15 @@
             this.btn_resignation_browse = new System.Windows.Forms.Button();
             this.resignation_letter_submitted_date = new System.Windows.Forms.DateTimePicker();
             this.resignation_date = new System.Windows.Forms.DateTimePicker();
+            this.btnCheckResignationDetails = new System.Windows.Forms.Button();
+            this.erp_resignation_letter_submitted_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_resignation_date = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_resignation_letter_submitted_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_resignation_date)).BeginInit();
             this.SuspendLayout();
             // 
             // resignation_employee_no
@@ -71,6 +77,7 @@
             this.resignation_employee_no.Name = "resignation_employee_no";
             this.resignation_employee_no.Size = new System.Drawing.Size(200, 32);
             this.resignation_employee_no.TabIndex = 128;
+            this.resignation_employee_no.SelectedIndexChanged += new System.EventHandler(this.resignation_employee_no_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -203,6 +210,7 @@
             // 
             // resignation_full_name
             // 
+            this.resignation_full_name.Enabled = false;
             this.resignation_full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.resignation_full_name.Location = new System.Drawing.Point(606, 136);
             this.resignation_full_name.Name = "resignation_full_name";
@@ -211,6 +219,7 @@
             // 
             // resignation_post
             // 
+            this.resignation_post.Enabled = false;
             this.resignation_post.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.resignation_post.Location = new System.Drawing.Point(606, 175);
             this.resignation_post.Name = "resignation_post";
@@ -219,6 +228,7 @@
             // 
             // resignation_rank
             // 
+            this.resignation_rank.Enabled = false;
             this.resignation_rank.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.resignation_rank.Location = new System.Drawing.Point(606, 214);
             this.resignation_rank.Name = "resignation_rank";
@@ -239,11 +249,13 @@
             // 
             // resignation_letter
             // 
+            this.resignation_letter.Enabled = false;
             this.resignation_letter.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.resignation_letter.Location = new System.Drawing.Point(606, 389);
             this.resignation_letter.Name = "resignation_letter";
             this.resignation_letter.Size = new System.Drawing.Size(300, 33);
             this.resignation_letter.TabIndex = 134;
+            this.resignation_letter.TextChanged += new System.EventHandler(this.resignation_letter_TextChanged);
             // 
             // label7
             // 
@@ -337,6 +349,7 @@
             this.resignation_letter_submitted_date.Name = "resignation_letter_submitted_date";
             this.resignation_letter_submitted_date.Size = new System.Drawing.Size(297, 31);
             this.resignation_letter_submitted_date.TabIndex = 153;
+            this.resignation_letter_submitted_date.ValueChanged += new System.EventHandler(this.resignation_letter_submitted_date_ValueChanged);
             // 
             // resignation_date
             // 
@@ -345,12 +358,33 @@
             this.resignation_date.Name = "resignation_date";
             this.resignation_date.Size = new System.Drawing.Size(297, 31);
             this.resignation_date.TabIndex = 154;
+            this.resignation_date.ValueChanged += new System.EventHandler(this.resignation_date_ValueChanged);
+            // 
+            // btnCheckResignationDetails
+            // 
+            this.btnCheckResignationDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckResignationDetails.Location = new System.Drawing.Point(303, 68);
+            this.btnCheckResignationDetails.Name = "btnCheckResignationDetails";
+            this.btnCheckResignationDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckResignationDetails.TabIndex = 155;
+            this.btnCheckResignationDetails.Text = "Check";
+            this.btnCheckResignationDetails.UseVisualStyleBackColor = true;
+            this.btnCheckResignationDetails.Click += new System.EventHandler(this.btnCheckResignationDetails_Click);
+            // 
+            // erp_resignation_letter_submitted_date
+            // 
+            this.erp_resignation_letter_submitted_date.ContainerControl = this;
+            // 
+            // erp_resignation_date
+            // 
+            this.erp_resignation_date.ContainerControl = this;
             // 
             // frmResignation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 741);
+            this.Controls.Add(this.btnCheckResignationDetails);
             this.Controls.Add(this.resignation_date);
             this.Controls.Add(this.resignation_letter_submitted_date);
             this.Controls.Add(this.btn_resignation_browse);
@@ -380,6 +414,8 @@
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.erp_resignation_letter_submitted_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_resignation_date)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,5 +451,8 @@
         private System.Windows.Forms.Button btn_resignation_browse;
         private System.Windows.Forms.DateTimePicker resignation_letter_submitted_date;
         private System.Windows.Forms.DateTimePicker resignation_date;
+        private System.Windows.Forms.Button btnCheckResignationDetails;
+        private System.Windows.Forms.ErrorProvider erp_resignation_letter_submitted_date;
+        private System.Windows.Forms.ErrorProvider erp_resignation_date;
     }
 }

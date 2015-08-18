@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeFinanceDetails));
             this.button1 = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
@@ -55,7 +56,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tabEmployeeFinanceDetails = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.bank_account_started_year = new System.Windows.Forms.DateTimePicker();
+            this.btnCheckBankDetails = new System.Windows.Forms.Button();
+            this.bank_account_closed_date = new System.Windows.Forms.DateTimePicker();
+            this.bank_account_started_date = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.bank_account_name = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -68,6 +71,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.insurance_ended_date = new System.Windows.Forms.DateTimePicker();
             this.btnCheckInsuaranceDetails = new System.Windows.Forms.Button();
             this.insurance_started_date = new System.Windows.Forms.DateTimePicker();
             this.insurance_type = new System.Windows.Forms.ComboBox();
@@ -82,17 +86,13 @@
             this.label18 = new System.Windows.Forms.Label();
             this.tax_no = new System.Windows.Forms.TextBox();
             this.tax_status = new System.Windows.Forms.ComboBox();
-            this.btnCheckBankDetails = new System.Windows.Forms.Button();
-            this.bank_account_closed_day = new System.Windows.Forms.ComboBox();
-            this.bank_account_closed_month = new System.Windows.Forms.ComboBox();
-            this.bank_account_created_day = new System.Windows.Forms.ComboBox();
-            this.bank_account_created_month = new System.Windows.Forms.ComboBox();
-            this.bank_account_created_year = new System.Windows.Forms.ComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bank_account_closed_date = new System.Windows.Forms.DateTimePicker();
-            this.insurance_ended_date = new System.Windows.Forms.DateTimePicker();
+            this.erp_insuarance_started_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_bank_account_started_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_bank_account_closed_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_insurance_ended_date = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -103,6 +103,10 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_insuarance_started_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_bank_account_started_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_bank_account_closed_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_insurance_ended_date)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -182,14 +186,15 @@
             this.tax_notes.Multiline = true;
             this.tax_notes.Name = "tax_notes";
             this.tax_notes.Size = new System.Drawing.Size(350, 200);
-            this.tax_notes.TabIndex = 6;
+            this.tax_notes.TabIndex = 5;
             // 
             // tax_type
             // 
             this.tax_type.Location = new System.Drawing.Point(306, 30);
             this.tax_type.Name = "tax_type";
             this.tax_type.Size = new System.Drawing.Size(200, 33);
-            this.tax_type.TabIndex = 5;
+            this.tax_type.TabIndex = 1;
+            this.tax_type.TextChanged += new System.EventHandler(this.tax_type_TextChanged);
             // 
             // label36
             // 
@@ -207,6 +212,7 @@
             this.tax_paying_method.Name = "tax_paying_method";
             this.tax_paying_method.Size = new System.Drawing.Size(121, 34);
             this.tax_paying_method.TabIndex = 3;
+            this.tax_paying_method.SelectedIndexChanged += new System.EventHandler(this.tax_paying_method_SelectedIndexChanged);
             // 
             // label35
             // 
@@ -277,14 +283,14 @@
             this.bank_qualified_year.Location = new System.Drawing.Point(306, 309);
             this.bank_qualified_year.Name = "bank_qualified_year";
             this.bank_qualified_year.Size = new System.Drawing.Size(120, 33);
-            this.bank_qualified_year.TabIndex = 15;
+            this.bank_qualified_year.TabIndex = 8;
             // 
             // bank_qualification
             // 
             this.bank_qualification.Location = new System.Drawing.Point(306, 270);
             this.bank_qualification.Name = "bank_qualification";
             this.bank_qualification.Size = new System.Drawing.Size(200, 33);
-            this.bank_qualification.TabIndex = 14;
+            this.bank_qualification.TabIndex = 7;
             // 
             // pictureBox1
             // 
@@ -348,8 +354,9 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.btnCheckBankDetails);
             this.tabPage1.Controls.Add(this.bank_account_closed_date);
-            this.tabPage1.Controls.Add(this.bank_account_started_year);
+            this.tabPage1.Controls.Add(this.bank_account_started_date);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.bank_account_name);
             this.tabPage1.Controls.Add(this.label10);
@@ -372,12 +379,35 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Bank";
             // 
-            // bank_account_started_year
+            // btnCheckBankDetails
             // 
-            this.bank_account_started_year.Location = new System.Drawing.Point(306, 191);
-            this.bank_account_started_year.Name = "bank_account_started_year";
-            this.bank_account_started_year.Size = new System.Drawing.Size(310, 33);
-            this.bank_account_started_year.TabIndex = 43;
+            this.btnCheckBankDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckBankDetails.Location = new System.Drawing.Point(6, 6);
+            this.btnCheckBankDetails.Name = "btnCheckBankDetails";
+            this.btnCheckBankDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckBankDetails.TabIndex = 9;
+            this.btnCheckBankDetails.Text = "Check";
+            this.btnCheckBankDetails.UseVisualStyleBackColor = true;
+            this.btnCheckBankDetails.Click += new System.EventHandler(this.btnCheckBankDetails_Click_1);
+            // 
+            // bank_account_closed_date
+            // 
+            this.bank_account_closed_date.CalendarTitleForeColor = System.Drawing.Color.AliceBlue;
+            this.bank_account_closed_date.Location = new System.Drawing.Point(306, 231);
+            this.bank_account_closed_date.Name = "bank_account_closed_date";
+            this.bank_account_closed_date.Size = new System.Drawing.Size(310, 33);
+            this.bank_account_closed_date.TabIndex = 6;
+            this.bank_account_closed_date.ValueChanged += new System.EventHandler(this.bank_account_closed_date_ValueChanged);
+            // 
+            // bank_account_started_date
+            // 
+            this.bank_account_started_date.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.bank_account_started_date.CalendarTitleForeColor = System.Drawing.Color.Black;
+            this.bank_account_started_date.Location = new System.Drawing.Point(306, 191);
+            this.bank_account_started_date.Name = "bank_account_started_date";
+            this.bank_account_started_date.Size = new System.Drawing.Size(310, 33);
+            this.bank_account_started_date.TabIndex = 5;
+            this.bank_account_started_date.ValueChanged += new System.EventHandler(this.bank_account_started_date_ValueChanged);
             // 
             // label4
             // 
@@ -393,7 +423,7 @@
             this.bank_account_name.Location = new System.Drawing.Point(306, 111);
             this.bank_account_name.Name = "bank_account_name";
             this.bank_account_name.Size = new System.Drawing.Size(200, 33);
-            this.bank_account_name.TabIndex = 24;
+            this.bank_account_name.TabIndex = 3;
             this.bank_account_name.TextChanged += new System.EventHandler(this.bank_account_name_TextChanged);
             // 
             // label10
@@ -411,7 +441,7 @@
             this.bank_account_type.Location = new System.Drawing.Point(306, 149);
             this.bank_account_type.Name = "bank_account_type";
             this.bank_account_type.Size = new System.Drawing.Size(200, 34);
-            this.bank_account_type.TabIndex = 20;
+            this.bank_account_type.TabIndex = 4;
             this.bank_account_type.SelectedIndexChanged += new System.EventHandler(this.bank_account_type_SelectedIndexChanged);
             // 
             // bank_name
@@ -420,7 +450,7 @@
             this.bank_name.Location = new System.Drawing.Point(306, 30);
             this.bank_name.Name = "bank_name";
             this.bank_name.Size = new System.Drawing.Size(200, 34);
-            this.bank_name.TabIndex = 19;
+            this.bank_name.TabIndex = 1;
             this.bank_name.SelectedIndexChanged += new System.EventHandler(this.bank_name_SelectedIndexChanged);
             // 
             // label7
@@ -446,7 +476,7 @@
             this.bank_branch_name.Location = new System.Drawing.Point(306, 72);
             this.bank_branch_name.Name = "bank_branch_name";
             this.bank_branch_name.Size = new System.Drawing.Size(200, 33);
-            this.bank_branch_name.TabIndex = 7;
+            this.bank_branch_name.TabIndex = 2;
             this.bank_branch_name.TextChanged += new System.EventHandler(this.bank_branch_name_TextChanged);
             // 
             // label6
@@ -497,23 +527,34 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Insurance";
             // 
+            // insurance_ended_date
+            // 
+            this.insurance_ended_date.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.insurance_ended_date.Location = new System.Drawing.Point(308, 148);
+            this.insurance_ended_date.Name = "insurance_ended_date";
+            this.insurance_ended_date.Size = new System.Drawing.Size(325, 33);
+            this.insurance_ended_date.TabIndex = 4;
+            this.insurance_ended_date.ValueChanged += new System.EventHandler(this.insurance_ended_date_ValueChanged);
+            // 
             // btnCheckInsuaranceDetails
             // 
             this.btnCheckInsuaranceDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckInsuaranceDetails.Location = new System.Drawing.Point(306, 393);
+            this.btnCheckInsuaranceDetails.Location = new System.Drawing.Point(6, 6);
             this.btnCheckInsuaranceDetails.Name = "btnCheckInsuaranceDetails";
             this.btnCheckInsuaranceDetails.Size = new System.Drawing.Size(75, 33);
-            this.btnCheckInsuaranceDetails.TabIndex = 68;
+            this.btnCheckInsuaranceDetails.TabIndex = 6;
             this.btnCheckInsuaranceDetails.Text = "Check";
             this.btnCheckInsuaranceDetails.UseVisualStyleBackColor = true;
             this.btnCheckInsuaranceDetails.Click += new System.EventHandler(this.btnCheckInsuaranceDetails_Click);
             // 
             // insurance_started_date
             // 
+            this.insurance_started_date.CalendarMonthBackground = System.Drawing.SystemColors.Menu;
             this.insurance_started_date.Location = new System.Drawing.Point(306, 109);
             this.insurance_started_date.Name = "insurance_started_date";
             this.insurance_started_date.Size = new System.Drawing.Size(327, 33);
-            this.insurance_started_date.TabIndex = 44;
+            this.insurance_started_date.TabIndex = 3;
+            this.insurance_started_date.ValueChanged += new System.EventHandler(this.insurance_started_date_ValueChanged);
             // 
             // insurance_type
             // 
@@ -521,7 +562,7 @@
             this.insurance_type.Location = new System.Drawing.Point(306, 30);
             this.insurance_type.Name = "insurance_type";
             this.insurance_type.Size = new System.Drawing.Size(121, 34);
-            this.insurance_type.TabIndex = 26;
+            this.insurance_type.TabIndex = 1;
             this.insurance_type.SelectedIndexChanged += new System.EventHandler(this.insurance_type_SelectedIndexChanged);
             // 
             // insurance_notes
@@ -530,7 +571,7 @@
             this.insurance_notes.Multiline = true;
             this.insurance_notes.Name = "insurance_notes";
             this.insurance_notes.Size = new System.Drawing.Size(350, 200);
-            this.insurance_notes.TabIndex = 6;
+            this.insurance_notes.TabIndex = 5;
             // 
             // label15
             // 
@@ -546,7 +587,7 @@
             this.insurance_value.Location = new System.Drawing.Point(306, 70);
             this.insurance_value.Name = "insurance_value";
             this.insurance_value.Size = new System.Drawing.Size(200, 33);
-            this.insurance_value.TabIndex = 4;
+            this.insurance_value.TabIndex = 2;
             this.insurance_value.TextChanged += new System.EventHandler(this.insurance_value_TextChanged);
             // 
             // label14
@@ -590,10 +631,10 @@
             // btnCheckTaxDetails
             // 
             this.btnCheckTaxDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckTaxDetails.Location = new System.Drawing.Point(306, 394);
+            this.btnCheckTaxDetails.Location = new System.Drawing.Point(6, 6);
             this.btnCheckTaxDetails.Name = "btnCheckTaxDetails";
             this.btnCheckTaxDetails.Size = new System.Drawing.Size(75, 33);
-            this.btnCheckTaxDetails.TabIndex = 69;
+            this.btnCheckTaxDetails.TabIndex = 6;
             this.btnCheckTaxDetails.Text = "Check";
             this.btnCheckTaxDetails.UseVisualStyleBackColor = true;
             this.btnCheckTaxDetails.Click += new System.EventHandler(this.btnCheckTaxDetails_Click);
@@ -621,7 +662,8 @@
             this.tax_no.Location = new System.Drawing.Point(306, 69);
             this.tax_no.Name = "tax_no";
             this.tax_no.Size = new System.Drawing.Size(200, 33);
-            this.tax_no.TabIndex = 9;
+            this.tax_no.TabIndex = 2;
+            this.tax_no.TextChanged += new System.EventHandler(this.tax_no_TextChanged);
             // 
             // tax_status
             // 
@@ -629,104 +671,8 @@
             this.tax_status.Location = new System.Drawing.Point(306, 148);
             this.tax_status.Name = "tax_status";
             this.tax_status.Size = new System.Drawing.Size(121, 34);
-            this.tax_status.TabIndex = 8;
-            // 
-            // btnCheckBankDetails
-            // 
-            this.btnCheckBankDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckBankDetails.Location = new System.Drawing.Point(306, 512);
-            this.btnCheckBankDetails.Name = "btnCheckBankDetails";
-            this.btnCheckBankDetails.Size = new System.Drawing.Size(75, 33);
-            this.btnCheckBankDetails.TabIndex = 67;
-            this.btnCheckBankDetails.Text = "Check";
-            this.btnCheckBankDetails.UseVisualStyleBackColor = true;
-            this.btnCheckBankDetails.Click += new System.EventHandler(this.btnCheckBankDetails_Click);
-            // 
-            // bank_account_closed_day
-            // 
-            this.bank_account_closed_day.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.bank_account_closed_day.FormattingEnabled = true;
-            this.bank_account_closed_day.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.bank_account_closed_day.Location = new System.Drawing.Point(512, 230);
-            this.bank_account_closed_day.Name = "bank_account_closed_day";
-            this.bank_account_closed_day.Size = new System.Drawing.Size(91, 21);
-            this.bank_account_closed_day.TabIndex = 42;
-            this.bank_account_closed_day.Text = "    දිනය";
-            // 
-            // bank_account_closed_month
-            // 
-            this.bank_account_closed_month.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.bank_account_closed_month.FormattingEnabled = true;
-            this.bank_account_closed_month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.bank_account_closed_month.Location = new System.Drawing.Point(415, 230);
-            this.bank_account_closed_month.Name = "bank_account_closed_month";
-            this.bank_account_closed_month.Size = new System.Drawing.Size(91, 21);
-            this.bank_account_closed_month.TabIndex = 41;
-            this.bank_account_closed_month.Text = "   මාසය";
-            // 
-            // bank_account_created_day
-            // 
-            this.bank_account_created_day.Location = new System.Drawing.Point(0, 0);
-            this.bank_account_created_day.Name = "bank_account_created_day";
-            this.bank_account_created_day.Size = new System.Drawing.Size(121, 21);
-            this.bank_account_created_day.TabIndex = 0;
-            // 
-            // bank_account_created_month
-            // 
-            this.bank_account_created_month.Location = new System.Drawing.Point(0, 0);
-            this.bank_account_created_month.Name = "bank_account_created_month";
-            this.bank_account_created_month.Size = new System.Drawing.Size(121, 21);
-            this.bank_account_created_month.TabIndex = 0;
-            // 
-            // bank_account_created_year
-            // 
-            this.bank_account_created_year.Location = new System.Drawing.Point(0, 0);
-            this.bank_account_created_year.Name = "bank_account_created_year";
-            this.bank_account_created_year.Size = new System.Drawing.Size(121, 21);
-            this.bank_account_created_year.TabIndex = 0;
+            this.tax_status.TabIndex = 4;
+            this.tax_status.SelectedIndexChanged += new System.EventHandler(this.tax_status_SelectedIndexChanged);
             // 
             // panel4
             // 
@@ -762,19 +708,21 @@
             this.panel1.Size = new System.Drawing.Size(1360, 768);
             this.panel1.TabIndex = 4;
             // 
-            // bank_account_closed_date
+            // erp_insuarance_started_date
             // 
-            this.bank_account_closed_date.Location = new System.Drawing.Point(306, 231);
-            this.bank_account_closed_date.Name = "bank_account_closed_date";
-            this.bank_account_closed_date.Size = new System.Drawing.Size(310, 33);
-            this.bank_account_closed_date.TabIndex = 44;
+            this.erp_insuarance_started_date.ContainerControl = this;
             // 
-            // insurance_ended_date
+            // erp_bank_account_started_date
             // 
-            this.insurance_ended_date.Location = new System.Drawing.Point(308, 148);
-            this.insurance_ended_date.Name = "insurance_ended_date";
-            this.insurance_ended_date.Size = new System.Drawing.Size(325, 33);
-            this.insurance_ended_date.TabIndex = 69;
+            this.erp_bank_account_started_date.ContainerControl = this;
+            // 
+            // erp_bank_account_closed_date
+            // 
+            this.erp_bank_account_closed_date.ContainerControl = this;
+            // 
+            // erp_insurance_ended_date
+            // 
+            this.erp_insurance_ended_date.ContainerControl = this;
             // 
             // frmEmployeeFinanceDetails
             // 
@@ -803,6 +751,10 @@
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.erp_insuarance_started_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_bank_account_started_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_bank_account_closed_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_insurance_ended_date)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -862,28 +814,19 @@
         private System.Windows.Forms.ComboBox tax_status;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
-
-        private System.Windows.Forms.ComboBox bank_account_closed_day;
-        private System.Windows.Forms.ComboBox bank_account_closed_month;
-        private System.Windows.Forms.ComboBox bank_account_closed_year;
-        private System.Windows.Forms.ComboBox bank_account_created_day;
-        private System.Windows.Forms.ComboBox bank_account_created_month;
-        private System.Windows.Forms.ComboBox bank_account_created_year;
-        private System.Windows.Forms.ComboBox day;
-        private System.Windows.Forms.ComboBox insurance_ended_month;
-        private System.Windows.Forms.ComboBox insurance_ended_year;
-        private System.Windows.Forms.ComboBox insurance_started_day;
-        private System.Windows.Forms.ComboBox insurance_started_month;
-        private System.Windows.Forms.ComboBox insurance_started_year;
-        private System.Windows.Forms.Button btnCheckBankDetails;
         private System.Windows.Forms.Button btnCheckInsuaranceDetails;
         private System.Windows.Forms.Button btnCheckTaxDetails;
 
-        private System.Windows.Forms.DateTimePicker bank_account_started_year;
+        private System.Windows.Forms.DateTimePicker bank_account_started_date;
         //private System.Windows.Forms.DateTimePicker bank_account_closed_year;
         //private System.Windows.Forms.DateTimePicker insurance_ended_year;
         private System.Windows.Forms.DateTimePicker insurance_started_date;
         private System.Windows.Forms.DateTimePicker bank_account_closed_date;
         private System.Windows.Forms.DateTimePicker insurance_ended_date;
+        private System.Windows.Forms.Button btnCheckBankDetails;
+        private System.Windows.Forms.ErrorProvider erp_insuarance_started_date;
+        private System.Windows.Forms.ErrorProvider erp_bank_account_started_date;
+        private System.Windows.Forms.ErrorProvider erp_bank_account_closed_date;
+        private System.Windows.Forms.ErrorProvider erp_insurance_ended_date;
     }
 }

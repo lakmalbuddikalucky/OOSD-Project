@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeRemunerationAndBenefits));
             this.lblCaption = new System.Windows.Forms.Label();
             this.tabRemunerationAndBenefits = new System.Windows.Forms.TabControl();
             this.tabPersonalDetails = new System.Windows.Forms.TabPage();
+            this.btnCheckRemunerationDetails = new System.Windows.Forms.Button();
+            this.remun_salary_increased_date = new System.Windows.Forms.DateTimePicker();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -62,12 +65,16 @@
             this.remun_other_allowances = new System.Windows.Forms.TextBox();
             this.remun_house_allowance = new System.Windows.Forms.TextBox();
             this.tabCashBenefits = new System.Windows.Forms.TabPage();
+            this.btnCheckCashBenefitDetails = new System.Windows.Forms.Button();
+            this.cash_issued_date = new System.Windows.Forms.DateTimePicker();
             this.label27 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cash_issued_price = new System.Windows.Forms.TextBox();
             this.cash_approved_benefit = new System.Windows.Forms.TextBox();
             this.tabNonCashBenefits = new System.Windows.Forms.TabPage();
+            this.btnCheckNonCashBenefitDetails = new System.Windows.Forms.Button();
+            this.noncash_issued_date = new System.Windows.Forms.DateTimePicker();
             this.label31 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -91,9 +98,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
-            this.remun_salary_increased_date = new System.Windows.Forms.DateTimePicker();
-            this.cash_issued_date = new System.Windows.Forms.DateTimePicker();
-            this.noncash_issued_date = new System.Windows.Forms.DateTimePicker();
+            this.erp_remun_salary_increased_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_cash_issued_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_noncash_issued_date = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabRemunerationAndBenefits.SuspendLayout();
             this.tabPersonalDetails.SuspendLayout();
             this.tabCashBenefits.SuspendLayout();
@@ -102,6 +109,9 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_remun_salary_increased_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_cash_issued_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_noncash_issued_date)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCaption
@@ -135,6 +145,7 @@
             // tabPersonalDetails
             // 
             this.tabPersonalDetails.BackColor = System.Drawing.Color.White;
+            this.tabPersonalDetails.Controls.Add(this.btnCheckRemunerationDetails);
             this.tabPersonalDetails.Controls.Add(this.remun_salary_increased_date);
             this.tabPersonalDetails.Controls.Add(this.label23);
             this.tabPersonalDetails.Controls.Add(this.label24);
@@ -175,12 +186,32 @@
             this.tabPersonalDetails.Text = "Remuneration";
             this.tabPersonalDetails.Click += new System.EventHandler(this.tabPersonalDetails_Click);
             // 
+            // btnCheckRemunerationDetails
+            // 
+            this.btnCheckRemunerationDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckRemunerationDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckRemunerationDetails.Location = new System.Drawing.Point(221, 260);
+            this.btnCheckRemunerationDetails.Name = "btnCheckRemunerationDetails";
+            this.btnCheckRemunerationDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckRemunerationDetails.TabIndex = 16;
+            this.btnCheckRemunerationDetails.Text = "Check";
+            this.btnCheckRemunerationDetails.UseVisualStyleBackColor = true;
+            this.btnCheckRemunerationDetails.Click += new System.EventHandler(this.btnCheckRemunerationDetails_Click);
+            // 
+            // remun_salary_increased_date
+            // 
+            this.remun_salary_increased_date.Location = new System.Drawing.Point(221, 142);
+            this.remun_salary_increased_date.Name = "remun_salary_increased_date";
+            this.remun_salary_increased_date.Size = new System.Drawing.Size(316, 32);
+            this.remun_salary_increased_date.TabIndex = 15;
+            this.remun_salary_increased_date.ValueChanged += new System.EventHandler(this.remun_salary_increased_date_ValueChanged);
+            // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(180, 69);
+            this.label23.Location = new System.Drawing.Point(180, 104);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(35, 26);
             this.label23.TabIndex = 6;
@@ -192,7 +223,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(180, 108);
+            this.label24.Location = new System.Drawing.Point(690, 147);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(35, 26);
             this.label24.TabIndex = 7;
@@ -204,7 +235,7 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(180, 147);
+            this.label25.Location = new System.Drawing.Point(690, 29);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(35, 26);
             this.label25.TabIndex = 8;
@@ -252,7 +283,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(690, 147);
+            this.label19.Location = new System.Drawing.Point(690, 185);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(35, 26);
             this.label19.TabIndex = 5;
@@ -264,7 +295,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(690, 186);
+            this.label18.Location = new System.Drawing.Point(185, 185);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(35, 26);
             this.label18.TabIndex = 5;
@@ -276,7 +307,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(534, 186);
+            this.label17.Location = new System.Drawing.Point(29, 185);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(150, 26);
             this.label17.TabIndex = 5;
@@ -288,7 +319,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(61, 186);
+            this.label11.Location = new System.Drawing.Point(61, 145);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(154, 26);
             this.label11.TabIndex = 5;
@@ -300,7 +331,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(560, 147);
+            this.label16.Location = new System.Drawing.Point(565, 183);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(124, 26);
             this.label16.TabIndex = 5;
@@ -312,7 +343,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(54, 147);
+            this.label10.Location = new System.Drawing.Point(559, 29);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(130, 26);
             this.label10.TabIndex = 5;
@@ -336,7 +367,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(538, 69);
+            this.label15.Location = new System.Drawing.Point(543, 69);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(146, 26);
             this.label15.TabIndex = 5;
@@ -348,7 +379,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(77, 69);
+            this.label8.Location = new System.Drawing.Point(77, 104);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(107, 26);
             this.label8.TabIndex = 5;
@@ -360,7 +391,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(478, 108);
+            this.label14.Location = new System.Drawing.Point(483, 108);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(206, 26);
             this.label14.TabIndex = 5;
@@ -372,7 +403,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(45, 108);
+            this.label9.Location = new System.Drawing.Point(550, 147);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(139, 26);
             this.label9.TabIndex = 5;
@@ -382,7 +413,7 @@
             // remun_salary_no
             // 
             this.remun_salary_no.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_salary_no.Location = new System.Drawing.Point(726, 27);
+            this.remun_salary_no.Location = new System.Drawing.Point(221, 23);
             this.remun_salary_no.Name = "remun_salary_no";
             this.remun_salary_no.Size = new System.Drawing.Size(150, 33);
             this.remun_salary_no.TabIndex = 10;
@@ -390,7 +421,7 @@
             // remun_salary_grade
             // 
             this.remun_salary_grade.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_salary_grade.Location = new System.Drawing.Point(221, 27);
+            this.remun_salary_grade.Location = new System.Drawing.Point(221, 62);
             this.remun_salary_grade.Name = "remun_salary_grade";
             this.remun_salary_grade.Size = new System.Drawing.Size(150, 33);
             this.remun_salary_grade.TabIndex = 4;
@@ -406,7 +437,7 @@
             // remun_basic_salary
             // 
             this.remun_basic_salary.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_basic_salary.Location = new System.Drawing.Point(221, 66);
+            this.remun_basic_salary.Location = new System.Drawing.Point(221, 101);
             this.remun_basic_salary.Name = "remun_basic_salary";
             this.remun_basic_salary.Size = new System.Drawing.Size(150, 33);
             this.remun_basic_salary.TabIndex = 5;
@@ -416,7 +447,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(583, 30);
+            this.label13.Location = new System.Drawing.Point(78, 26);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(134, 26);
             this.label13.TabIndex = 5;
@@ -428,7 +459,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(90, 30);
+            this.label7.Location = new System.Drawing.Point(90, 65);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(125, 26);
             this.label7.TabIndex = 5;
@@ -454,7 +485,7 @@
             // remun_increased_by
             // 
             this.remun_increased_by.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_increased_by.Location = new System.Drawing.Point(726, 183);
+            this.remun_increased_by.Location = new System.Drawing.Point(221, 182);
             this.remun_increased_by.Name = "remun_increased_by";
             this.remun_increased_by.Size = new System.Drawing.Size(150, 33);
             this.remun_increased_by.TabIndex = 14;
@@ -462,7 +493,7 @@
             // remun_fuel_allowance
             // 
             this.remun_fuel_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_fuel_allowance.Location = new System.Drawing.Point(221, 105);
+            this.remun_fuel_allowance.Location = new System.Drawing.Point(726, 144);
             this.remun_fuel_allowance.Name = "remun_fuel_allowance";
             this.remun_fuel_allowance.Size = new System.Drawing.Size(150, 33);
             this.remun_fuel_allowance.TabIndex = 6;
@@ -470,7 +501,7 @@
             // remun_other_allowances
             // 
             this.remun_other_allowances.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_other_allowances.Location = new System.Drawing.Point(726, 144);
+            this.remun_other_allowances.Location = new System.Drawing.Point(726, 182);
             this.remun_other_allowances.Name = "remun_other_allowances";
             this.remun_other_allowances.Size = new System.Drawing.Size(150, 33);
             this.remun_other_allowances.TabIndex = 13;
@@ -478,7 +509,7 @@
             // remun_house_allowance
             // 
             this.remun_house_allowance.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.remun_house_allowance.Location = new System.Drawing.Point(221, 144);
+            this.remun_house_allowance.Location = new System.Drawing.Point(726, 26);
             this.remun_house_allowance.Name = "remun_house_allowance";
             this.remun_house_allowance.Size = new System.Drawing.Size(150, 33);
             this.remun_house_allowance.TabIndex = 7;
@@ -486,6 +517,7 @@
             // tabCashBenefits
             // 
             this.tabCashBenefits.BackColor = System.Drawing.Color.White;
+            this.tabCashBenefits.Controls.Add(this.btnCheckCashBenefitDetails);
             this.tabCashBenefits.Controls.Add(this.cash_issued_date);
             this.tabCashBenefits.Controls.Add(this.label27);
             this.tabCashBenefits.Controls.Add(this.label3);
@@ -499,6 +531,26 @@
             this.tabCashBenefits.Size = new System.Drawing.Size(1124, 422);
             this.tabCashBenefits.TabIndex = 1;
             this.tabCashBenefits.Text = "Cash Benefits";
+            // 
+            // btnCheckCashBenefitDetails
+            // 
+            this.btnCheckCashBenefitDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckCashBenefitDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckCashBenefitDetails.Location = new System.Drawing.Point(177, 144);
+            this.btnCheckCashBenefitDetails.Name = "btnCheckCashBenefitDetails";
+            this.btnCheckCashBenefitDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckCashBenefitDetails.TabIndex = 19;
+            this.btnCheckCashBenefitDetails.Text = "Check";
+            this.btnCheckCashBenefitDetails.UseVisualStyleBackColor = true;
+            this.btnCheckCashBenefitDetails.Click += new System.EventHandler(this.btnCheckCashBenefitDetails_Click);
+            // 
+            // cash_issued_date
+            // 
+            this.cash_issued_date.Location = new System.Drawing.Point(177, 65);
+            this.cash_issued_date.Name = "cash_issued_date";
+            this.cash_issued_date.Size = new System.Drawing.Size(320, 33);
+            this.cash_issued_date.TabIndex = 18;
+            this.cash_issued_date.ValueChanged += new System.EventHandler(this.cash_issued_date_ValueChanged);
             // 
             // label27
             // 
@@ -536,6 +588,7 @@
             this.cash_issued_price.Name = "cash_issued_price";
             this.cash_issued_price.Size = new System.Drawing.Size(200, 33);
             this.cash_issued_price.TabIndex = 17;
+            this.cash_issued_price.TextChanged += new System.EventHandler(this.cash_issued_price_TextChanged);
             // 
             // cash_approved_benefit
             // 
@@ -543,10 +596,12 @@
             this.cash_approved_benefit.Name = "cash_approved_benefit";
             this.cash_approved_benefit.Size = new System.Drawing.Size(200, 33);
             this.cash_approved_benefit.TabIndex = 15;
+            this.cash_approved_benefit.TextChanged += new System.EventHandler(this.cash_approved_benefit_TextChanged);
             // 
             // tabNonCashBenefits
             // 
             this.tabNonCashBenefits.AutoScroll = true;
+            this.tabNonCashBenefits.Controls.Add(this.btnCheckNonCashBenefitDetails);
             this.tabNonCashBenefits.Controls.Add(this.noncash_issued_date);
             this.tabNonCashBenefits.Controls.Add(this.label31);
             this.tabNonCashBenefits.Controls.Add(this.label28);
@@ -562,6 +617,26 @@
             this.tabNonCashBenefits.Text = "Non Cash Benefits";
             this.tabNonCashBenefits.UseVisualStyleBackColor = true;
             this.tabNonCashBenefits.Click += new System.EventHandler(this.tabNonCashBenefits_Click);
+            // 
+            // btnCheckNonCashBenefitDetails
+            // 
+            this.btnCheckNonCashBenefitDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckNonCashBenefitDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckNonCashBenefitDetails.Location = new System.Drawing.Point(178, 183);
+            this.btnCheckNonCashBenefitDetails.Name = "btnCheckNonCashBenefitDetails";
+            this.btnCheckNonCashBenefitDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckNonCashBenefitDetails.TabIndex = 23;
+            this.btnCheckNonCashBenefitDetails.Text = "Check";
+            this.btnCheckNonCashBenefitDetails.UseVisualStyleBackColor = true;
+            this.btnCheckNonCashBenefitDetails.Click += new System.EventHandler(this.btnCheckNonCashBenefitDetails_Click);
+            // 
+            // noncash_issued_date
+            // 
+            this.noncash_issued_date.Location = new System.Drawing.Point(178, 65);
+            this.noncash_issued_date.Name = "noncash_issued_date";
+            this.noncash_issued_date.Size = new System.Drawing.Size(320, 33);
+            this.noncash_issued_date.TabIndex = 22;
+            this.noncash_issued_date.ValueChanged += new System.EventHandler(this.noncash_issued_date_ValueChanged);
             // 
             // label31
             // 
@@ -789,26 +864,17 @@
             this.btnPrev.UseVisualStyleBackColor = false;
             this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
-            // remun_salary_increased_date
+            // erp_remun_salary_increased_date
             // 
-            this.remun_salary_increased_date.Location = new System.Drawing.Point(221, 183);
-            this.remun_salary_increased_date.Name = "remun_salary_increased_date";
-            this.remun_salary_increased_date.Size = new System.Drawing.Size(316, 32);
-            this.remun_salary_increased_date.TabIndex = 15;
+            this.erp_remun_salary_increased_date.ContainerControl = this;
             // 
-            // cash_issued_date
+            // erp_cash_issued_date
             // 
-            this.cash_issued_date.Location = new System.Drawing.Point(177, 65);
-            this.cash_issued_date.Name = "cash_issued_date";
-            this.cash_issued_date.Size = new System.Drawing.Size(320, 33);
-            this.cash_issued_date.TabIndex = 18;
+            this.erp_cash_issued_date.ContainerControl = this;
             // 
-            // noncash_issued_date
+            // erp_noncash_issued_date
             // 
-            this.noncash_issued_date.Location = new System.Drawing.Point(178, 65);
-            this.noncash_issued_date.Name = "noncash_issued_date";
-            this.noncash_issued_date.Size = new System.Drawing.Size(320, 33);
-            this.noncash_issued_date.TabIndex = 22;
+            this.erp_noncash_issued_date.ContainerControl = this;
             // 
             // frmEmployeeRemunerationAndBenefits
             // 
@@ -843,6 +909,9 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.erp_remun_salary_increased_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_cash_issued_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_noncash_issued_date)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -915,7 +984,12 @@
         private System.Windows.Forms.DateTimePicker remun_salary_increased_date;
         private System.Windows.Forms.DateTimePicker cash_issued_date;
         private System.Windows.Forms.DateTimePicker noncash_issued_date;
-
+        private System.Windows.Forms.Button btnCheckRemunerationDetails;
+        private System.Windows.Forms.Button btnCheckCashBenefitDetails;
+        private System.Windows.Forms.Button btnCheckNonCashBenefitDetails;
+        private System.Windows.Forms.ErrorProvider erp_remun_salary_increased_date;
+        private System.Windows.Forms.ErrorProvider erp_cash_issued_date;
+        private System.Windows.Forms.ErrorProvider erp_noncash_issued_date;
     }
 }
 

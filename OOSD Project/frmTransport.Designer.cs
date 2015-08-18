@@ -72,6 +72,7 @@
             this.transport_employee_no = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnCheckTransportDetails = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -91,6 +92,7 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1360, 60);
             this.panel5.TabIndex = 4;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // label13
             // 
@@ -230,6 +232,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnCheckTransportDetails);
             this.tabPage1.Controls.Add(this.transport_fuel_limit);
             this.tabPage1.Controls.Add(this.label17);
             this.tabPage1.Controls.Add(this.transport_vehicle_manufactured_year);
@@ -350,6 +353,7 @@
             // 
             // transport_fuel_type
             // 
+            this.transport_fuel_type.BackColor = System.Drawing.SystemColors.HotTrack;
             this.transport_fuel_type.Location = new System.Drawing.Point(262, 454);
             this.transport_fuel_type.Name = "transport_fuel_type";
             this.transport_fuel_type.Size = new System.Drawing.Size(200, 33);
@@ -430,6 +434,7 @@
             // 
             // transport_rank
             // 
+            this.transport_rank.Enabled = false;
             this.transport_rank.Location = new System.Drawing.Point(262, 150);
             this.transport_rank.Name = "transport_rank";
             this.transport_rank.Size = new System.Drawing.Size(200, 33);
@@ -446,6 +451,7 @@
             // 
             // transport_post
             // 
+            this.transport_post.Enabled = false;
             this.transport_post.Location = new System.Drawing.Point(262, 111);
             this.transport_post.Name = "transport_post";
             this.transport_post.Size = new System.Drawing.Size(200, 33);
@@ -462,6 +468,7 @@
             // 
             // transport_full_name
             // 
+            this.transport_full_name.Enabled = false;
             this.transport_full_name.Location = new System.Drawing.Point(262, 72);
             this.transport_full_name.Name = "transport_full_name";
             this.transport_full_name.Size = new System.Drawing.Size(400, 33);
@@ -492,6 +499,17 @@
             this.label2.Size = new System.Drawing.Size(132, 26);
             this.label2.TabIndex = 20;
             this.label2.Text = " සේවක අංකය";
+            // 
+            // btnCheckTransportDetails
+            // 
+            this.btnCheckTransportDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckTransportDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckTransportDetails.Location = new System.Drawing.Point(6, 6);
+            this.btnCheckTransportDetails.Name = "btnCheckTransportDetails";
+            this.btnCheckTransportDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckTransportDetails.TabIndex = 159;
+            this.btnCheckTransportDetails.Text = "Check";
+            this.btnCheckTransportDetails.UseVisualStyleBackColor = true;
             // 
             // frmTransport
             // 
@@ -568,5 +586,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnPrev;
+        private System.Windows.Forms.Button btnCheckTransportDetails;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeePersonalDetails));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -133,6 +134,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.depend_date_of_post_date = new System.Windows.Forms.DateTimePicker();
             this.btnCheckDependentDetails = new System.Windows.Forms.Button();
             this.btnClear3 = new System.Windows.Forms.Button();
             this.btnSave3 = new System.Windows.Forms.Button();
@@ -217,7 +219,9 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.depend_date_of_post_date = new System.Windows.Forms.DateTimePicker();
+            this.erp_dob_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_marry_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_wsd_date_of_post_date = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -230,6 +234,9 @@
             this.tabPage5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_dob_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_marry_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_wsd_date_of_post_date)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -386,6 +393,7 @@
             this.marry_date.Name = "marry_date";
             this.marry_date.Size = new System.Drawing.Size(331, 33);
             this.marry_date.TabIndex = 58;
+            this.marry_date.ValueChanged += new System.EventHandler(this.marry_date_ValueChanged);
             // 
             // dob_date
             // 
@@ -393,6 +401,7 @@
             this.dob_date.Name = "dob_date";
             this.dob_date.Size = new System.Drawing.Size(331, 33);
             this.dob_date.TabIndex = 57;
+            this.dob_date.ValueChanged += new System.EventHandler(this.dob_date_ValueChanged);
             // 
             // btnCheckPersonalDetails
             // 
@@ -1435,6 +1444,13 @@
             this.tabPage3.Text = "Dependent Details";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // depend_date_of_post_date
+            // 
+            this.depend_date_of_post_date.Location = new System.Drawing.Point(719, 70);
+            this.depend_date_of_post_date.Name = "depend_date_of_post_date";
+            this.depend_date_of_post_date.Size = new System.Drawing.Size(331, 33);
+            this.depend_date_of_post_date.TabIndex = 58;
+            // 
             // btnCheckDependentDetails
             // 
             this.btnCheckDependentDetails.Location = new System.Drawing.Point(243, 557);
@@ -2024,6 +2040,7 @@
             this.wsd_date_of_post_date.Name = "wsd_date_of_post_date";
             this.wsd_date_of_post_date.Size = new System.Drawing.Size(320, 33);
             this.wsd_date_of_post_date.TabIndex = 60;
+            this.wsd_date_of_post_date.ValueChanged += new System.EventHandler(this.wsd_date_of_post_date_ValueChanged);
             // 
             // btnCheckWorkStationDetails
             // 
@@ -2231,12 +2248,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee";
             // 
-            // depend_date_of_post_date
+            // erp_dob_date
             // 
-            this.depend_date_of_post_date.Location = new System.Drawing.Point(719, 70);
-            this.depend_date_of_post_date.Name = "depend_date_of_post_date";
-            this.depend_date_of_post_date.Size = new System.Drawing.Size(331, 33);
-            this.depend_date_of_post_date.TabIndex = 58;
+            this.erp_dob_date.ContainerControl = this;
+            // 
+            // erp_marry_date
+            // 
+            this.erp_marry_date.ContainerControl = this;
+            // 
+            // erp_wsd_date_of_post_date
+            // 
+            this.erp_wsd_date_of_post_date.ContainerControl = this;
             // 
             // frmEmployeePersonalDetails
             // 
@@ -2269,6 +2291,9 @@
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_dob_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_marry_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_wsd_date_of_post_date)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2464,6 +2489,9 @@
         private System.Windows.Forms.DateTimePicker dob_date;
         private System.Windows.Forms.DateTimePicker wsd_date_of_post_date;
         private System.Windows.Forms.DateTimePicker depend_date_of_post_date;
+        private System.Windows.Forms.ErrorProvider erp_dob_date;
+        private System.Windows.Forms.ErrorProvider erp_marry_date;
+        private System.Windows.Forms.ErrorProvider erp_wsd_date_of_post_date;
     }
 }
 

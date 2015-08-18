@@ -41,5 +41,10 @@ namespace OOSD_Project
             form10.Show();
             this.Dispose();
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

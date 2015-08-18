@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJobStatus));
             this.job_employee_no = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -65,10 +66,23 @@
             this.job_probation_started_date = new System.Windows.Forms.DateTimePicker();
             this.job_contract_ended_date = new System.Windows.Forms.DateTimePicker();
             this.job_contract_started_date = new System.Windows.Forms.DateTimePicker();
+            this.erp_job_contract_started_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_job_contract_ended_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_job_probation_started_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_job_probation_ended_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_job_probation_to_permanent_started_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erp_job_contract_to_permanent_started_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnCheckJobStatusDetails = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_job_contract_started_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_job_contract_ended_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_job_probation_started_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_job_probation_ended_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_job_probation_to_permanent_started_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_job_contract_to_permanent_started_date)).BeginInit();
             this.SuspendLayout();
             // 
             // job_employee_no
@@ -133,7 +147,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(394, 429);
+            this.label14.Location = new System.Drawing.Point(394, 384);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(243, 26);
             this.label14.TabIndex = 121;
@@ -154,6 +168,7 @@
             // 
             // job_full_name
             // 
+            this.job_full_name.Enabled = false;
             this.job_full_name.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.job_full_name.Location = new System.Drawing.Point(643, 134);
             this.job_full_name.Name = "job_full_name";
@@ -162,6 +177,7 @@
             // 
             // job_post
             // 
+            this.job_post.Enabled = false;
             this.job_post.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.job_post.Location = new System.Drawing.Point(643, 173);
             this.job_post.Name = "job_post";
@@ -170,6 +186,7 @@
             // 
             // job_rank
             // 
+            this.job_rank.Enabled = false;
             this.job_rank.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.job_rank.Location = new System.Drawing.Point(643, 212);
             this.job_rank.Name = "job_rank";
@@ -329,7 +346,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(399, 469);
+            this.label4.Location = new System.Drawing.Point(399, 424);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(238, 26);
             this.label4.TabIndex = 121;
@@ -346,6 +363,7 @@
             this.job_probation_to_permanent_status.TabIndex = 19;
             this.job_probation_to_permanent_status.Text = "පරිවාස කාලයේ සිට ස්ථිර සේවයට";
             this.job_probation_to_permanent_status.UseVisualStyleBackColor = true;
+            this.job_probation_to_permanent_status.CheckedChanged += new System.EventHandler(this.job_probation_to_permanent_status_CheckedChanged);
             // 
             // label5
             // 
@@ -361,6 +379,7 @@
             // 
             // job_employee_type
             // 
+            this.job_employee_type.Enabled = false;
             this.job_employee_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.job_employee_type.FormattingEnabled = true;
             this.job_employee_type.Items.AddRange(new object[] {
@@ -375,8 +394,9 @@
             // 
             // job_probation_time
             // 
+            this.job_probation_time.Enabled = false;
             this.job_probation_time.Font = new System.Drawing.Font("Calibri", 15.75F);
-            this.job_probation_time.Location = new System.Drawing.Point(643, 387);
+            this.job_probation_time.Location = new System.Drawing.Point(643, 458);
             this.job_probation_time.Name = "job_probation_time";
             this.job_probation_time.Size = new System.Drawing.Size(150, 33);
             this.job_probation_time.TabIndex = 12;
@@ -386,7 +406,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(507, 391);
+            this.label6.Location = new System.Drawing.Point(507, 462);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 26);
             this.label6.TabIndex = 125;
@@ -395,35 +415,41 @@
             // 
             // job_contract_to_permanent_started_date
             // 
+            this.job_contract_to_permanent_started_date.Enabled = false;
             this.job_contract_to_permanent_started_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.job_contract_to_permanent_started_date.Location = new System.Drawing.Point(643, 579);
             this.job_contract_to_permanent_started_date.Name = "job_contract_to_permanent_started_date";
             this.job_contract_to_permanent_started_date.Size = new System.Drawing.Size(295, 31);
             this.job_contract_to_permanent_started_date.TabIndex = 128;
+            this.job_contract_to_permanent_started_date.ValueChanged += new System.EventHandler(this.job_contract_to_permanent_started_date_ValueChanged);
             // 
             // job_probation_to_permanent_started_date
             // 
+            this.job_probation_to_permanent_started_date.Enabled = false;
             this.job_probation_to_permanent_started_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.job_probation_to_permanent_started_date.Location = new System.Drawing.Point(643, 542);
             this.job_probation_to_permanent_started_date.Name = "job_probation_to_permanent_started_date";
             this.job_probation_to_permanent_started_date.Size = new System.Drawing.Size(295, 31);
             this.job_probation_to_permanent_started_date.TabIndex = 129;
+            this.job_probation_to_permanent_started_date.ValueChanged += new System.EventHandler(this.job_probation_to_permanent_started_date_ValueChanged);
             // 
             // job_probation_ended_date
             // 
             this.job_probation_ended_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.job_probation_ended_date.Location = new System.Drawing.Point(643, 466);
+            this.job_probation_ended_date.Location = new System.Drawing.Point(643, 424);
             this.job_probation_ended_date.Name = "job_probation_ended_date";
             this.job_probation_ended_date.Size = new System.Drawing.Size(295, 31);
             this.job_probation_ended_date.TabIndex = 130;
+            this.job_probation_ended_date.ValueChanged += new System.EventHandler(this.job_probation_ended_date_ValueChanged);
             // 
             // job_probation_started_date
             // 
             this.job_probation_started_date.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.job_probation_started_date.Location = new System.Drawing.Point(643, 429);
+            this.job_probation_started_date.Location = new System.Drawing.Point(643, 384);
             this.job_probation_started_date.Name = "job_probation_started_date";
             this.job_probation_started_date.Size = new System.Drawing.Size(295, 31);
             this.job_probation_started_date.TabIndex = 131;
+            this.job_probation_started_date.ValueChanged += new System.EventHandler(this.job_probation_started_date_ValueChanged);
             // 
             // job_contract_ended_date
             // 
@@ -432,6 +458,7 @@
             this.job_contract_ended_date.Name = "job_contract_ended_date";
             this.job_contract_ended_date.Size = new System.Drawing.Size(295, 31);
             this.job_contract_ended_date.TabIndex = 132;
+            this.job_contract_ended_date.ValueChanged += new System.EventHandler(this.job_contract_ended_date_ValueChanged);
             // 
             // job_contract_started_date
             // 
@@ -440,12 +467,50 @@
             this.job_contract_started_date.Name = "job_contract_started_date";
             this.job_contract_started_date.Size = new System.Drawing.Size(295, 31);
             this.job_contract_started_date.TabIndex = 133;
+            this.job_contract_started_date.ValueChanged += new System.EventHandler(this.job_contract_started_date_ValueChanged);
+            // 
+            // erp_job_contract_started_date
+            // 
+            this.erp_job_contract_started_date.ContainerControl = this;
+            // 
+            // erp_job_contract_ended_date
+            // 
+            this.erp_job_contract_ended_date.ContainerControl = this;
+            // 
+            // erp_job_probation_started_date
+            // 
+            this.erp_job_probation_started_date.ContainerControl = this;
+            // 
+            // erp_job_probation_ended_date
+            // 
+            this.erp_job_probation_ended_date.ContainerControl = this;
+            // 
+            // erp_job_probation_to_permanent_started_date
+            // 
+            this.erp_job_probation_to_permanent_started_date.ContainerControl = this;
+            // 
+            // erp_job_contract_to_permanent_started_date
+            // 
+            this.erp_job_contract_to_permanent_started_date.ContainerControl = this;
+            // 
+            // btnCheckJobStatusDetails
+            // 
+            this.btnCheckJobStatusDetails.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckJobStatusDetails.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckJobStatusDetails.Location = new System.Drawing.Point(643, 616);
+            this.btnCheckJobStatusDetails.Name = "btnCheckJobStatusDetails";
+            this.btnCheckJobStatusDetails.Size = new System.Drawing.Size(75, 33);
+            this.btnCheckJobStatusDetails.TabIndex = 159;
+            this.btnCheckJobStatusDetails.Text = "Check";
+            this.btnCheckJobStatusDetails.UseVisualStyleBackColor = true;
+            this.btnCheckJobStatusDetails.Click += new System.EventHandler(this.btnCheckJobStatusDetails_Click);
             // 
             // frmJobStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1360, 741);
+            this.Controls.Add(this.btnCheckJobStatusDetails);
             this.Controls.Add(this.job_contract_started_date);
             this.Controls.Add(this.job_contract_ended_date);
             this.Controls.Add(this.job_probation_started_date);
@@ -483,6 +548,12 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.erp_job_contract_started_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_job_contract_ended_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_job_probation_started_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_job_probation_ended_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_job_probation_to_permanent_started_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erp_job_contract_to_permanent_started_date)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -526,5 +597,12 @@
         private System.Windows.Forms.DateTimePicker job_probation_started_date;
         private System.Windows.Forms.DateTimePicker job_contract_ended_date;
         private System.Windows.Forms.DateTimePicker job_contract_started_date;
+        private System.Windows.Forms.ErrorProvider erp_job_contract_started_date;
+        private System.Windows.Forms.ErrorProvider erp_job_contract_ended_date;
+        private System.Windows.Forms.ErrorProvider erp_job_probation_started_date;
+        private System.Windows.Forms.ErrorProvider erp_job_probation_ended_date;
+        private System.Windows.Forms.ErrorProvider erp_job_probation_to_permanent_started_date;
+        private System.Windows.Forms.ErrorProvider erp_job_contract_to_permanent_started_date;
+        private System.Windows.Forms.Button btnCheckJobStatusDetails;
     }
 }

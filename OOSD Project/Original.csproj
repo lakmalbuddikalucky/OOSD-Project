@@ -134,6 +134,12 @@
     <Compile Include="frmAddNotification.designer.cs">
       <DependentUpon>frmAddNotification.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDisciplinaryDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,10 +253,14 @@
     <Compile Include="UserLogin\LoginInfo.cs" />
     <Compile Include="UserLogin\LoginSession.cs" />
     <Compile Include="UserLogin\LoginValidator.cs" />
+    <Compile Include="UserLogin\UserHandler.cs" />
     <Compile Include="UserLogin\UserLog.cs" />
     <Compile Include="Validator.cs" />
     <EmbeddedResource Include="frmAddNotification.resx">
       <DependentUpon>frmAddNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDisciplinaryDetails.resx">
       <DependentUpon>frmDisciplinaryDetails.cs</DependentUpon>

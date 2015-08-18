@@ -17,32 +17,33 @@ namespace OOSD_Project.DBHandler
         {
             DBConnector dbcon = new DBConnector();
 
-            //try
-            //{
-            if (dbcon.openConnection())
+            try
             {
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "INSERT INTO notification (title, content, date, employee_name, employee_number, employee_idemployee, user_iduser) VALUES (N'" + n.Title + "', N'" + n.Content + "', '" + n.Date.ToString("yyyy-MM-dd") + "', N'" + n.Employee_name + "', N'" + n.Employee_number + "', " + n.Employee_idemployee + ", " + n.User_iduser + ")";
-                cmd.Connection = dbcon.connection;
-                cmd.Prepare();
-                cmd.ExecuteNonQuery();
+                if (dbcon.openConnection())
+                {
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.CommandText = "INSERT INTO notification (title, content, date, employee_name, employee_number, employee_idemployee, user_iduser) VALUES (N'" + n.Title + "', N'" + n.Content + "', '" + n.Date.ToString("yyyy-MM-dd") + "', N'" + n.Employee_name + "', N'" + n.Employee_number + "', " + n.Employee_idemployee + ", " + n.User_iduser + ")";
+                    cmd.Connection = dbcon.connection;
+                    cmd.Prepare();
+                    cmd.ExecuteNonQuery();
 
-                dbcon.closeConnection();
-                return true;
+                    dbcon.closeConnection();
+                    return true;
+                }
+                else
+                {
+                    dbcon.closeConnection();
+                    return false;
+                }
+
             }
-            else
+            catch (MySqlException e)
             {
+                int errorcode = e.Number;
+                Console.Write(e.Message + "\n");
                 dbcon.closeConnection();
                 return false;
             }
-
-            /* }
-             catch (MySqlException e)
-             {
-                 int errorcode = e.Number;
-                 dbcon.closeConnection();
-                 return false;
-             }*/
 
         }
 

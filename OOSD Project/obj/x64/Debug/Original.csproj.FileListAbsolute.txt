@@ -55,3 +55,4 @@ C:\Users\User\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Proj
 C:\Users\User\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmEmployeePersonalDetails.resources
 C:\Users\User\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.Properties.Resources.resources
 C:\Users\User\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\Original.csproj.GenerateResource.Cache
+C:\Users\User\Documents\GitHub\OOSD-Project\OOSD Project\obj\x64\Debug\OOSD_Project.frmAddUser.resources

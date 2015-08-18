@@ -121,7 +121,7 @@
   <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAADwZJREFUeF7t3Qm0feUcxnGkjCmzFLEkhYxZKEPInBYyZp4yZ06GMlPKtMpMpiVT
+        DgAACw4BQL7hQQAADwZJREFUeF7t3Qm0feUcxnGkjCmzFLEkhYxZKEPInBYyZp4yZ06GMlPKtMpMpiVT
         KDJmnhWZhWQopYwpRaa/59t7trWdntu5Z+997//cdz+/tT6re55z/u8Z2u85+93Te4F169ZFxBJsGBGF
         DSOisGFEFDaMiMKGEVHYMCIKG0ZEYcOIKGwYEYUNI6KwYUQUNoyIwoYRUdgwIgobRkRhw4gobBgRhQ0j
         orBhRBQ2jIjChhFR2DAiChtGRGHDiChsGBGFDSOisGFEFDaMiMKGEVHYMCIKG0ZEYcOIKGwYEYUNI6Kw
@@ -191,7 +191,7 @@
   <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAADHlJREFUeF7t3QmsJFUZBWBcQBDBUZYIIuISwqKyY1wSVMAlriTEKBBARAGHLTG4
+        DgAACw4BQL7hQQAADHlJREFUeF7t3QmsJFUZBWBcQBDBUZYIIuISwqKyY1wSVMAlriTEKBBARAGHLTG4
         kAgoGgWDCow64hIJbixGcUGIKIJLJCgKCoggCIiKiCiKRlGe5/Q/9dJTc7rrVr3uquLW+ZMv0Od1VfWr
         vDtdy61711pYWDCzCWRoZkGGZhZkaGZBhmYWZGhmQYZmFmRoZkGGZhZkaGZBhmYWZGhmQYZmFmRoZkGG
         ZhZkaGZBhmYWZGhmQYZmFmRoZkGGZhZkaGZBhmYWZGhmQYZmFmRoZkGGZhZkaGZBhmYWZGhmQYZmFmRo
@@ -250,7 +250,7 @@
   <data name="button4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAEAhJREFUeF7t3QfQdFddx3FABGmiFEGCgpTQpAVEgyKIDNJRcQApGUOTBAgygGAA
+        DgAACw4BQL7hQQAAEAhJREFUeF7t3QfQdFddx3FABGmiFEGCgpTQpAVEgyKIDNJRcQApGUOTBAgygGAA
         o6AISLWAAQxVqnSQrgihC0pJQsBQpIgB6UUEfP19c56dOTn57d57997neXnu/f1nPvM++9+zd/ed2bP3
         nnva2Q4cOBARa9hkRBQ2GRGFTUZEYZMRUdhkRBQ2GRGFTUZEYZMRUdhkRBQ2GRGFTUZEYZMRUdhkRBQ2
         GRGFTUZEYZMRUdhkRBQ2GRGFTUZEYZMRUdhkRBQ2GRGFTUZEYZMRUdhkRBQ2GRGFTUZEYZMRUdhkRBQ2

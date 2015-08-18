@@ -53,7 +53,7 @@ namespace OOSD_Project.UserLogin
             dbcon.openConnection();
 
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "UPDATE login_session SET out_time='" + LoginInfo.outTime.ToString("yyyy-MM-dd HH:mm:ss") + "' WHERE idlogin_session='" + LoginInfo.sessionID + "'";
+            cmd.CommandText = "UPDATE login_session SET out_time='" + LoginInfo.outTime.ToString("yyyy-MM-dd HH:mm:ss") + "' WHERE idlogin_session=" + LoginInfo.sessionID + "";
             cmd.Connection = dbcon.connection;
             cmd.Prepare();
             cmd.ExecuteNonQuery();

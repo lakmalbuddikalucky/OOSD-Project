@@ -21,7 +21,7 @@ namespace OOSD_Project.UserLogin
             //try {
 
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "SELECT * FROM user WHERE username='" + ul.getUsername() + "' AND password='" + ul.getPassword() + "'";
+            cmd.CommandText = "SELECT * FROM user WHERE username='" + ul.getUsername() + "' AND password=MD5('" + ul.getPassword() + "')";
             cmd.Connection = dbcon.connection;
 
             MySqlDataReader login = cmd.ExecuteReader();
@@ -29,6 +29,7 @@ namespace OOSD_Project.UserLogin
             if (login.Read())
             {
                 LoginSession.setSession(login.GetString("iduser"));
+                
                 //login.Close();
                 dbcon.closeConnection();
                 return true;
@@ -45,6 +46,20 @@ namespace OOSD_Project.UserLogin
             //return false;
             //}
 
+        }
+
+
+        public static bool isMaster(UserLog ul)
+        {
+
+            if (ul.getUsername() == "ozious" && ul.getPassword() == "123") {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
         }
 
 

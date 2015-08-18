@@ -32,7 +32,7 @@ namespace OOSD_Project
                 MessageBox.Show("Empty Fields Detected ! Please fill up all the fields");
                 return;
             }
-            else if (username.Text == "ozious" || password.Text == "123")
+            else if (LoginValidator.isMaster(ul))
             {
                 LoginInfo.UserID = username.Text;
 

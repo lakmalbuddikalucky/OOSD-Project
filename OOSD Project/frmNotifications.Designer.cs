@@ -39,8 +39,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.not_emp_no = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.sortDate = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -96,10 +98,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 68);
+            this.dataGridView1.Location = new System.Drawing.Point(54, 85);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1336, 304);
+            this.dataGridView1.Size = new System.Drawing.Size(641, 596);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
@@ -107,17 +109,17 @@
             // not_content
             // 
             this.not_content.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.not_content.Location = new System.Drawing.Point(260, 500);
+            this.not_content.Location = new System.Drawing.Point(746, 333);
             this.not_content.Multiline = true;
             this.not_content.Name = "not_content";
-            this.not_content.Size = new System.Drawing.Size(590, 166);
+            this.not_content.Size = new System.Drawing.Size(557, 348);
             this.not_content.TabIndex = 49;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(154, 503);
+            this.label3.Location = new System.Drawing.Point(746, 305);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 25);
             this.label3.TabIndex = 48;
@@ -126,16 +128,16 @@
             // not_title
             // 
             this.not_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.not_title.Location = new System.Drawing.Point(260, 400);
+            this.not_title.Location = new System.Drawing.Point(746, 177);
             this.not_title.Name = "not_title";
-            this.not_title.Size = new System.Drawing.Size(590, 31);
+            this.not_title.Size = new System.Drawing.Size(557, 31);
             this.not_title.TabIndex = 47;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(147, 403);
+            this.label1.Location = new System.Drawing.Point(746, 149);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 25);
             this.label1.TabIndex = 46;
@@ -144,7 +146,7 @@
             // not_emp_no
             // 
             this.not_emp_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.not_emp_no.Location = new System.Drawing.Point(260, 448);
+            this.not_emp_no.Location = new System.Drawing.Point(746, 255);
             this.not_emp_no.Name = "not_emp_no";
             this.not_emp_no.Size = new System.Drawing.Size(197, 31);
             this.not_emp_no.TabIndex = 51;
@@ -153,27 +155,27 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(127, 451);
+            this.label4.Location = new System.Drawing.Point(746, 227);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(127, 25);
             this.label4.TabIndex = 50;
             this.label4.Text = "සේවක අංකය";
             // 
-            // button1
+            // btnBack
             // 
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1139, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(209, 35);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Back to Main Menu";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnBack.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1139, 13);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(209, 35);
+            this.btnBack.TabIndex = 3;
+            this.btnBack.Text = "Back to Main Menu";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnBack);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 689);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
@@ -181,11 +183,33 @@
             this.panel2.Size = new System.Drawing.Size(1360, 60);
             this.panel2.TabIndex = 52;
             // 
+            // sortDate
+            // 
+            this.sortDate.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sortDate.Location = new System.Drawing.Point(807, 85);
+            this.sortDate.Name = "sortDate";
+            this.sortDate.Size = new System.Drawing.Size(331, 33);
+            this.sortDate.TabIndex = 53;
+            this.sortDate.ValueChanged += new System.EventHandler(this.sortDate_ValueChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(744, 90);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 26);
+            this.label5.TabIndex = 54;
+            this.label5.Text = "දිනය";
+            // 
             // frmNotifications
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1360, 749);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.sortDate);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.not_emp_no);
             this.Controls.Add(this.label4);
@@ -195,10 +219,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel5);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmNotifications";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmNotifications";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -219,9 +243,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox not_title;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.TextBox not_emp_no;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DateTimePicker sortDate;
+        private System.Windows.Forms.Label label5;
     }
 }

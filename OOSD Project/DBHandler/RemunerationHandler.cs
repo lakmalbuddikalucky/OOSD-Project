@@ -71,8 +71,8 @@ namespace OOSD_Project.DBHandler
                     r = new Remuneration();
 
                     r.r_id = int.Parse(reader["idremuneration"].ToString());
-                    //r.rank = reader["rank"].ToString();
-                    //r.post = reader["post"].ToString();
+                    r.rank = reader["rank"].ToString();
+                    r.post = reader["post"].ToString();
                     r.salary_grade = reader["salary_grade"].ToString();
                     r.salary_slip_no = reader["salary_slip_no"].ToString();
                     r.basic_salary = (float)Convert.ToDouble(reader["basic_salary"].ToString());

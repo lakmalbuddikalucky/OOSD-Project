@@ -548,7 +548,7 @@
             this.btnSave2.TabIndex = 58;
             this.btnSave2.Text = "තැන්පතු කරන්න ";
             this.btnSave2.UseVisualStyleBackColor = true;
-            this.btnSave2.Click += new System.EventHandler(this.button3_Click);
+            this.btnSave2.Click += new System.EventHandler(this.btnSave2_Click);
             // 
             // label24
             // 

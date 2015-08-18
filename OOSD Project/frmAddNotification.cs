@@ -22,29 +22,36 @@ namespace OOSD_Project
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Notification n = new Notification();
-
-            n.Content = notification_content.Text;
-            n.Date = notification_rem_date.Value.Date;
-            n.Employee_idemployee = Employee.employee_id;
-            n.Employee_name = Employee.employee_name;
-            n.Employee_number = Employee.emp_no;
-            n.Title = notification_title.Text;
-            n.User_iduser = int.Parse(LoginInfo.UserID);
-
-            //Add a new notification
-
-            bool state = NotificationHandler.addNotification(n);
-
-            if (state)
+            try
             {
-                MessageBox.Show("Notification added succesfully...!");
-            }
-            else
-            {
-                MessageBox.Show("Adding Notification failed...!");
-            }
+                Notification n = new Notification();
 
+                n.Content = notification_content.Text;
+                n.Date = notification_rem_date.Value.Date;
+                n.Employee_idemployee = Employee.employee_id;
+                n.Employee_name = Employee.employee_name;
+                n.Employee_number = Employee.emp_no;
+                n.Title = notification_title.Text;
+                n.User_iduser = int.Parse(LoginInfo.UserID);
+
+                //Add a new notification
+
+                bool state = NotificationHandler.addNotification(n);
+
+                if (state)
+                {
+                    MessageBox.Show("Notification added succesfully...!");
+                }
+                else
+                {
+                    MessageBox.Show("Adding Notification failed. Please check again.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Adding Notification failed. Please check again.");
+
+            }
             
         }
     }

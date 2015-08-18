@@ -32,7 +32,7 @@ namespace OOSD_Project
 
 
             //Load employee numbers to combo box
-            List<string> em_nos = EmployeeHandler.getAllEmployees();
+            List<string> em_nos = EmployeeHandler.getAllEmployeeNumbers();
             employee_no.Text = "Select employee number";
 
             if (!(em_nos == null))

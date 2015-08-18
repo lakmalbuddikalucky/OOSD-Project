@@ -72,7 +72,7 @@ namespace OOSD_Project.DBHandler
 
                     if (reader["status"].ToString() == "True") { p.status=true; }
                     else { p.status = false; }
-                    p.p_id = int.Parse(reader[idpassport"].ToString());
+                    p.p_id = int.Parse(reader["idpassport"].ToString());
                     p.rank = reader["rank"].ToString();
                     p.post = reader["post"].ToString();
                     p.number = reader["passport_no"].ToString();

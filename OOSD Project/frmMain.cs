@@ -69,5 +69,31 @@ namespace OOSD_Project
             frmSearch.getForm().Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmNotifications form = new frmNotifications();
+            form.Show();
+            this.Hide();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            
+        
+        }
+
+        private void btnSettings_Click_1(object sender, EventArgs e)
+        {
+            frmSettings formSettings = new frmSettings();
+            formSettings.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmAddUser formAdd = new frmAddUser();
+            formAdd.Show();
+            this.Hide();
+        }
     }
 }

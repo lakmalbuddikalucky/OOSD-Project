@@ -77,7 +77,7 @@ namespace OOSD_Project
             else { MessageBox.Show("Failed to add qualification details...!"); }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnSave2_Click(object sender, EventArgs e)
         {
 
             WorkingExperience we = new WorkingExperience();

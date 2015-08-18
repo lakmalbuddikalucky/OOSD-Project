@@ -218,6 +218,9 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnClear4 = new System.Windows.Forms.Button();
+            this.btnClear2 = new System.Windows.Forms.Button();
+            this.btnClear5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -880,6 +883,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.btnClear2);
             this.tabPage2.Controls.Add(this.btnCheckConcatDetails);
             this.tabPage2.Controls.Add(this.btnSave2);
             this.tabPage2.Controls.Add(this.label36);
@@ -1743,6 +1747,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.btnClear4);
             this.tabPage4.Controls.Add(this.btnCheckEmergencyDetails);
             this.tabPage4.Controls.Add(this.btnSave4);
             this.tabPage4.Controls.Add(this.label81);
@@ -1796,7 +1801,7 @@
             this.btnSave4.TabIndex = 54;
             this.btnSave4.Text = "තැන්පතු කරන්න";
             this.btnSave4.UseVisualStyleBackColor = true;
-            this.btnSave4.Click += new System.EventHandler(this.button3_Click);
+            this.btnSave4.Click += new System.EventHandler(this.btnSave4_Click);
             // 
             // label81
             // 
@@ -2004,6 +2009,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.btnClear5);
             this.tabPage5.Controls.Add(this.wsd_date_of_post_date);
             this.tabPage5.Controls.Add(this.btnCheckWorkStationDetails);
             this.tabPage5.Controls.Add(this.btnSave5);
@@ -2240,6 +2246,36 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee";
             // 
+            // btnClear4
+            // 
+            this.btnClear4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear4.Location = new System.Drawing.Point(740, 573);
+            this.btnClear4.Name = "btnClear4";
+            this.btnClear4.Size = new System.Drawing.Size(150, 35);
+            this.btnClear4.TabIndex = 59;
+            this.btnClear4.Text = "අවලංගු කරන්න";
+            this.btnClear4.UseVisualStyleBackColor = true;
+            // 
+            // btnClear2
+            // 
+            this.btnClear2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear2.Location = new System.Drawing.Point(896, 532);
+            this.btnClear2.Name = "btnClear2";
+            this.btnClear2.Size = new System.Drawing.Size(150, 35);
+            this.btnClear2.TabIndex = 58;
+            this.btnClear2.Text = "අවලංගු කරන්න";
+            this.btnClear2.UseVisualStyleBackColor = true;
+            // 
+            // btnClear5
+            // 
+            this.btnClear5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear5.Location = new System.Drawing.Point(740, 573);
+            this.btnClear5.Name = "btnClear5";
+            this.btnClear5.Size = new System.Drawing.Size(150, 35);
+            this.btnClear5.TabIndex = 61;
+            this.btnClear5.Text = "අවලංගු කරන්න";
+            this.btnClear5.UseVisualStyleBackColor = true;
+            // 
             // frmEmployeePersonalDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2466,6 +2502,9 @@
         private System.Windows.Forms.DateTimePicker dob_date;
         private System.Windows.Forms.DateTimePicker wsd_date_of_post_date;
         private System.Windows.Forms.DateTimePicker depend_date_of_post_date;
+        private System.Windows.Forms.Button btnClear2;
+        private System.Windows.Forms.Button btnClear4;
+        private System.Windows.Forms.Button btnClear5;
     }
 }
 

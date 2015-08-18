@@ -141,7 +141,7 @@ namespace OOSD_Project.Database
 
         }
 
-        public static List<string> getAllEmployees()
+        public static List<string> getAllEmployeeNumbers()
         {
 
             List<string> em_nos = new List<string>();
@@ -186,6 +186,55 @@ namespace OOSD_Project.Database
 
 
         }
+
+
+
+        public static List<string> getAllEmployeeNIC()
+        {
+
+            List<string> em_nos = new List<string>();
+
+            //try
+            //{
+
+            DBConnector dbcon = new DBConnector();
+
+            if (dbcon.openConnection())
+            {
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "SELECT nic_no FROM employee";
+                cmd.Connection = dbcon.connection;
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    em_nos.Add(reader["nic_no"].ToString());
+                }
+
+                reader.Close();
+
+                dbcon.closeConnection();
+
+                return em_nos;
+            }
+            else
+            {
+
+                return null;
+            }
+
+            //}
+            //catch (MySqlException e)
+            //{
+            //int errorcode = e.Number;
+            //return null;
+            //}
+
+
+        }
+
 
 
         public static bool checkEmployee(string id) {

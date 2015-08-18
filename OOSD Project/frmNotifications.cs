@@ -19,7 +19,7 @@ namespace OOSD_Project
         {
             InitializeComponent();
 
-            loadNotifications();
+            loadNotifications(DateTime.Today);
         }
 
         public static frmNotifications getForm()
@@ -31,7 +31,7 @@ namespace OOSD_Project
             return form;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             frmMain formMain = new frmMain();
             formMain.Show();
@@ -40,7 +40,7 @@ namespace OOSD_Project
 
 
 
-        public void loadNotifications()
+        public void loadNotifications(DateTime dt)
         {
             //try
             //{
@@ -52,7 +52,7 @@ namespace OOSD_Project
 
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.CommandText = "SELECT idnotification AS Notification_ID, title AS Title, content AS Content, date AS Date, employee_name AS Employee, employee_number AS Employee_Number FROM notification WHERE date=@dt";
-                cmd.Parameters.Add("@dt", MySql.Data.MySqlClient.MySqlDbType.Date).Value = DateTime.Today; 
+                cmd.Parameters.Add("@dt", MySql.Data.MySqlClient.MySqlDbType.Date).Value = dt; 
                 cmd.Connection = dbcon.connection;
 
 
@@ -84,22 +84,37 @@ namespace OOSD_Project
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            Console.Write(dataGridView1.CurrentCell.RowIndex+"\n");
-
-            if (dataGridView1.CurrentCell.RowIndex >= 0)
+            try
             {
+                Console.Write(dataGridView1.CurrentCell.RowIndex + "\n");
 
-                DataGridViewRow row = this.dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex];
+                if (dataGridView1.CurrentCell.RowIndex >= 0)
+                {
 
-                not_title.Text = row.Cells["Title"].Value.ToString();
-                not_emp_no.Text = row.Cells["Employee_Number"].Value.ToString();
-                not_content.Text = row.Cells["Content"].Value.ToString();
+                    DataGridViewRow row = this.dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex];
+
+                    not_title.Text = row.Cells["Title"].Value.ToString();
+                    not_emp_no.Text = row.Cells["Employee_Number"].Value.ToString();
+                    not_content.Text = row.Cells["Content"].Value.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.Message + "\n");
             }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void sortDate_ValueChanged(object sender, EventArgs e)
+        {
+            loadNotifications(sortDate.Value.Date);
+            not_content.Text = "";
+            not_emp_no.Text = "";
+            not_title.Text = "";
         }
 
 

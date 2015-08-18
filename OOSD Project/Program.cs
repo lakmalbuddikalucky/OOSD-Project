@@ -20,7 +20,7 @@ namespace OOSD_Project
             Application.SetCompatibleTextRenderingDefault(false);
 
             //Application.Run(new frmLogin());
-            //Application.Run(new frmMain());
+            Application.Run(new frmMain());
 
             //Application.Run(new frmNotifications());
 
@@ -29,7 +29,7 @@ namespace OOSD_Project
             //Application.Run(new frmEmployeePersonalDetails());
 
             //Application.Run(new frmDisciplinaryDetails());
-            Application.Run(new frmSearch());
+            //Application.Run(new frmSearch());
 
         }
     }

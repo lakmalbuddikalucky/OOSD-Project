@@ -67,7 +67,9 @@ namespace OOSD_Project
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-
+            frmMain frm = new frmMain();
+            frm.Show();
+            this.Hide();
         }
 
         private void btnPrev_Click(object sender, EventArgs e)

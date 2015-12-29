@@ -15,9 +15,6 @@ namespace OOSD_Project.DBHandler
         public static bool addCashBenefit(CashBenefit cb)
         {
             DBConnector dbcon = new DBConnector();
-
-            //try
-            //{
                 if (dbcon.openConnection())
                 {
                     MySqlCommand cmd = new MySqlCommand();
@@ -34,24 +31,11 @@ namespace OOSD_Project.DBHandler
                     dbcon.closeConnection();
                     return false;
                 }
-
-           /* }
-            catch (MySqlException e)
-            {
-                int errorcode = e.Number;
-                dbcon.closeConnection();
-                return false;
-            }*/
-
         }
 
 
         public static CashBenefit getCashBenefit()
         {
-
-            //try
-            //{
-
             DBConnector dbcon = new DBConnector();
 
             if (dbcon.openConnection())
@@ -73,8 +57,6 @@ namespace OOSD_Project.DBHandler
                     cb.approved_benefit = reader["approved_benefit"].ToString();
                     cb.price = (float)Convert.ToDouble(reader["price"].ToString());
                     cb.setdate_issued(Convert.ToDateTime(reader["date_issued"]));
-
-
                 }
 
                 reader.Close();
@@ -88,14 +70,6 @@ namespace OOSD_Project.DBHandler
 
                 return null;
             }
-
-            //}
-            //catch (MySqlException e)
-            //{
-            //int errorcode = e.Number;
-            //return null;
-            //}
-
         }
 
 
@@ -103,8 +77,6 @@ namespace OOSD_Project.DBHandler
         {
             DBConnector dbcon = new DBConnector();
 
-            //try
-            //{
             if (dbcon.openConnection())
             {
                 MySqlCommand cmd = new MySqlCommand();
@@ -121,23 +93,10 @@ namespace OOSD_Project.DBHandler
                 dbcon.closeConnection();
                 return false;
             }
-
-            /* }
-             catch (MySqlException e)
-             {
-                 int errorcode = e.Number;
-                 dbcon.closeConnection();
-                 return false;
-             }*/
-
         }
 
         public static NonCashBenefit getNonCashBenefit()
         {
-
-            //try
-            //{
-
             DBConnector dbcon = new DBConnector();
 
             if (dbcon.openConnection())
@@ -174,22 +133,11 @@ namespace OOSD_Project.DBHandler
 
                 return null;
             }
-
-            //}
-            //catch (MySqlException e)
-            //{
-            //int errorcode = e.Number;
-            //return null;
-            //}
-
         }
 
 
         public static bool updateCashBenefit(CashBenefit cb)
         {
-
-            //try
-            //{
 
             DBConnector dbcon = new DBConnector();
 
@@ -212,22 +160,11 @@ namespace OOSD_Project.DBHandler
                 return false;
             }
 
-            //}
-            //catch (MySqlException e)
-            //{
-            //int errorcode = e.Number;
-            //return false;
-            //}
-
         }
 
 
         public static bool updateNonCashBenefit(NonCashBenefit ncb)
         {
-
-            //try
-            //{
-
             DBConnector dbcon = new DBConnector();
 
             if (dbcon.openConnection())
@@ -248,13 +185,6 @@ namespace OOSD_Project.DBHandler
 
                 return false;
             }
-
-            //}
-            //catch (MySqlException e)
-            //{
-            //int errorcode = e.Number;
-            //return false;
-            //}
 
         }
 
